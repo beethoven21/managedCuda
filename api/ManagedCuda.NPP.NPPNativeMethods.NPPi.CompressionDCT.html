@@ -1,0 +1,2258 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class NPPNativeMethods.NPPi.CompressionDCT
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class NPPNativeMethods.NPPi.CompressionDCT
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT">
+  
+  
+  <h1 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT" class="text-break">Class NPPNativeMethods.NPPi.CompressionDCT
+  </h1>
+  <div class="markdown level0 summary"><p>Image compression primitives.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">NPPNativeMethods.NPPi.CompressionDCT</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.NPP.html">ManagedCuda.NPP</a></h6>
+  <h6><strong>Assembly</strong>: NPP.dll</h6>
+  <h5 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class CompressionDCT</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiDCTFree_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiDCTFree*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiDCTFree_ManagedCuda_NPP_NppiDCTState_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiDCTFree(ManagedCuda.NPP.NppiDCTState)">nppiDCTFree(NppiDCTState)</h4>
+  <div class="markdown level1 summary"><p>Frees the additional resources of the DCT state structure.
+\see nppiDCTInitAlloc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiDCTFree(NppiDCTState pState)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiDCTState.html">NppiDCTState</a></td>
+        <td><span class="parametername">pState</span></td>
+        <td><p>Pointer to DCT state structure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p>NPP_SUCCESS Indicates no error. Any other value indicates an error
+or a warning
+\return NPP_SIZE_ERROR Indicates an error condition if any image dimension
+has zero or negative value
+\return NPP_NULL_POINTER_ERROR Indicates an error condition if pState
+pointer is NULL</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiDCTInitAlloc_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiDCTInitAlloc*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiDCTInitAlloc_ManagedCuda_NPP_NppiDCTState__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiDCTInitAlloc(ManagedCuda.NPP.NppiDCTState@)">nppiDCTInitAlloc(ref NppiDCTState)</h4>
+  <div class="markdown level1 summary"><p>Initializes DCT state structure and allocates additional resources.
+\see nppiDCTQuantFwd8x8LS_JPEG_8u16s_C1R_NEW(), nppiDCTQuantInv8x8LS_JPEG_16s8u_C1R_NEW.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiDCTInitAlloc(ref NppiDCTState ppState)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiDCTState.html">NppiDCTState</a></td>
+        <td><span class="parametername">ppState</span></td>
+        <td><p>Pointer to pointer to DCT state structure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p>NPP_SUCCESS Indicates no error. Any other value indicates an error
+or a warning
+\return NPP_SIZE_ERROR Indicates an error condition if any image dimension
+has zero or negative value
+\return NPP_NULL_POINTER_ERROR Indicates an error condition if pBufSize
+pointer is NULL</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiDCTInv4x4_WebP_16s_C1R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiDCTInv4x4_WebP_16s_C1R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiDCTInv4x4_WebP_16s_C1R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiDCTInv4x4_WebP_16s_C1R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize)">nppiDCTInv4x4_WebP_16s_C1R(CUdeviceptr, Int32, CUdeviceptr, Int32, NppiSize)</h4>
+  <div class="markdown level1 summary"><p>Inverse DCT in WebP decoding. Input is the bitstream that contains the coefficients of 16x16 blocks.
+These coefficients are based on a 4x4 sub-block unit, e.g.,
+Coeffs in 0th 4x4 block, 1st 4x4 block 2nd 4x4 block, etc.
+Output is the coefficients after inverse DCT transform.
+The output is put in an image format (i.e. raster scan order), different from the input order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiDCTInv4x4_WebP_16s_C1R(CUdeviceptr pSrc, int nSrcStep, CUdeviceptr pDst, int nDstStep, NppiSize oSizeROI)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nDstStep</span></td>
+        <td><p>Destination-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiDCTQuant16Fwd8x8LS_JPEG_8u16s_C1R_NEW_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiDCTQuant16Fwd8x8LS_JPEG_8u16s_C1R_NEW*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiDCTQuant16Fwd8x8LS_JPEG_8u16s_C1R_NEW_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiDCTState_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiDCTQuant16Fwd8x8LS_JPEG_8u16s_C1R_NEW(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiDCTState)">nppiDCTQuant16Fwd8x8LS_JPEG_8u16s_C1R_NEW(CUdeviceptr, Int32, CUdeviceptr, Int32, CUdeviceptr, NppiSize, NppiDCTState)</h4>
+  <div class="markdown level1 summary"><p>Forward DCT, quantization and level shift part of the JPEG encoding, 16-bit short integer.
+Input is expected in 8x8 macro blocks and output is expected to be in 64x1
+macro blocks. The new version of the primitive takes the ROI in image pixel size and
+works with DCT coefficients that are in zig-zag order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiDCTQuant16Fwd8x8LS_JPEG_8u16s_C1R_NEW(CUdeviceptr pSrc, int nSrcStep, CUdeviceptr pDst, int nDstStep, CUdeviceptr pQuantizationTable, NppiSize oSizeROI, NppiDCTState pState)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nDstStep</span></td>
+        <td><p>Image width in pixels x 8 x sizeof(Npp16s).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pQuantizationTable</span></td>
+        <td><p>Quantization Table in zig-zag order.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiDCTState.html">NppiDCTState</a></td>
+        <td><span class="parametername">pState</span></td>
+        <td><p>Pointer to DCT state structure. This structure must be</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiDCTQuant16Inv8x8LS_JPEG_16s8u_C1R_NEW_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiDCTQuant16Inv8x8LS_JPEG_16s8u_C1R_NEW*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiDCTQuant16Inv8x8LS_JPEG_16s8u_C1R_NEW_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiDCTState_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiDCTQuant16Inv8x8LS_JPEG_16s8u_C1R_NEW(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiDCTState)">nppiDCTQuant16Inv8x8LS_JPEG_16s8u_C1R_NEW(CUdeviceptr, Int32, CUdeviceptr, Int32, CUdeviceptr, NppiSize, NppiDCTState)</h4>
+  <div class="markdown level1 summary"><p>Inverse DCT, de-quantization and level shift part of the JPEG decoding, 16-bit short integer.
+Input is expected in 64x1 macro blocks and output is expected to be in 8x8
+macro blocks. The new version of the primitive takes the ROI in image pixel size and
+works with DCT coefficients that are in zig-zag order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiDCTQuant16Inv8x8LS_JPEG_16s8u_C1R_NEW(CUdeviceptr pSrc, int nSrcStep, CUdeviceptr pDst, int nDstStep, CUdeviceptr pQuantizationTable, NppiSize oSizeROI, NppiDCTState pState)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Image width in pixels x 8 x sizeof(Npp16s).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nDstStep</span></td>
+        <td><p>Destination-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pQuantizationTable</span></td>
+        <td><p>Quantization Table in zig-zag order.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiDCTState.html">NppiDCTState</a></td>
+        <td><span class="parametername">pState</span></td>
+        <td><p>Pointer to DCT state structure. This structure must be</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiDCTQuantFwd8x8LS_JPEG_8u16s_C1R_NEW_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiDCTQuantFwd8x8LS_JPEG_8u16s_C1R_NEW*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiDCTQuantFwd8x8LS_JPEG_8u16s_C1R_NEW_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiDCTState_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiDCTQuantFwd8x8LS_JPEG_8u16s_C1R_NEW(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiDCTState)">nppiDCTQuantFwd8x8LS_JPEG_8u16s_C1R_NEW(CUdeviceptr, Int32, CUdeviceptr, Int32, CUdeviceptr, NppiSize, NppiDCTState)</h4>
+  <div class="markdown level1 summary"><p>Forward DCT, quantization and level shift part of the JPEG encoding.
+Input is expected in 8x8 macro blocks and output is expected to be in 64x1
+macro blocks. The new version of the primitive takes the ROI in image pixel size and
+works with DCT coefficients that are in zig-zag order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiDCTQuantFwd8x8LS_JPEG_8u16s_C1R_NEW(CUdeviceptr pSrc, int nSrcStep, CUdeviceptr pDst, int nDstStep, CUdeviceptr pQuantizationTable, NppiSize oSizeROI, NppiDCTState pState)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nDstStep</span></td>
+        <td><p>Image width in pixels x 8 x sizeof(Npp16s).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pQuantizationTable</span></td>
+        <td><p>Quantization Table in zig-zag order.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiDCTState.html">NppiDCTState</a></td>
+        <td><span class="parametername">pState</span></td>
+        <td><p>Pointer to DCT state structure. This structure must be</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p>Error codes:
+- ::NPP_SIZE_ERROR For negative input height/width or not a multiple of
+8 width/height.
+- ::NPP_STEP_ERROR If input image width is not multiple of 8 or does not
+match ROI.
+- ::NPP_NULL_POINTER_ERROR If the destination pointer is 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiDCTQuantInv8x8LS_JPEG_16s8u_C1R_NEW_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiDCTQuantInv8x8LS_JPEG_16s8u_C1R_NEW*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiDCTQuantInv8x8LS_JPEG_16s8u_C1R_NEW_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiDCTState_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiDCTQuantInv8x8LS_JPEG_16s8u_C1R_NEW(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiDCTState)">nppiDCTQuantInv8x8LS_JPEG_16s8u_C1R_NEW(CUdeviceptr, Int32, CUdeviceptr, Int32, CUdeviceptr, NppiSize, NppiDCTState)</h4>
+  <div class="markdown level1 summary"><p>Inverse DCT, de-quantization and level shift part of the JPEG decoding.
+Input is expected in 64x1 macro blocks and output is expected to be in 8x8
+macro blocks. The new version of the primitive takes the ROI in image pixel size and
+works with DCT coefficients that are in zig-zag order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiDCTQuantInv8x8LS_JPEG_16s8u_C1R_NEW(CUdeviceptr pSrc, int nSrcStep, CUdeviceptr pDst, int nDstStep, CUdeviceptr pQuantizationTable, NppiSize oSizeROI, NppiDCTState pState)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Image width in pixels x 8 x sizeof(Npp16s).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nDstStep</span></td>
+        <td><p>Destination-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pQuantizationTable</span></td>
+        <td><p>Quantization Table in zig-zag order.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiDCTState.html">NppiDCTState</a></td>
+        <td><span class="parametername">pState</span></td>
+        <td><p>Pointer to DCT state structure. This structure must be</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p>Error codes:
+- ::NPP_SIZE_ERROR For negative input height/width or not a multiple of
+8 width/height.
+- ::NPP_STEP_ERROR If input image width is not multiple of 8 or does not
+match ROI.
+- ::NPP_NULL_POINTER_ERROR If the destination pointer is 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiDecodeHuffmanScanHost_JPEG_8u16s_P1R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiDecodeHuffmanScanHost_JPEG_8u16s_P1R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiDecodeHuffmanScanHost_JPEG_8u16s_P1R_System_Byte___System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int16___System_Int32_ManagedCuda_NPP_NppiDecodeHuffmanSpec_ManagedCuda_NPP_NppiDecodeHuffmanSpec_ManagedCuda_NPP_NppiSize_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiDecodeHuffmanScanHost_JPEG_8u16s_P1R(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int16[],System.Int32,ManagedCuda.NPP.NppiDecodeHuffmanSpec,ManagedCuda.NPP.NppiDecodeHuffmanSpec,ManagedCuda.NPP.NppiSize)">nppiDecodeHuffmanScanHost_JPEG_8u16s_P1R(Byte[], Int32, Int32, Int32, Int32, Int32, Int32, Int16[], Int32, NppiDecodeHuffmanSpec, NppiDecodeHuffmanSpec, NppiSize)</h4>
+  <div class="markdown level1 summary"><p>Huffman Decoding of the JPEG decoding on the host.
+Input is expected in byte stuffed huffman encoded JPEG scan and output is expected to be 64x1 macro blocks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiDecodeHuffmanScanHost_JPEG_8u16s_P1R(byte[] pSrc, int nLength, int restartInterval, int Ss, int Se, int Ah, int Al, short[] pDst, int nDstStep, NppiDecodeHuffmanSpec pHuffmanTableDC, NppiDecodeHuffmanSpec pHuffmanTableAC, NppiSize oSizeROI)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Byte-stuffed huffman encoded JPEG scan.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nLength</span></td>
+        <td><p>Byte length of the input.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">restartInterval</span></td>
+        <td><p>Restart Interval, see JPEG standard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Ss</span></td>
+        <td><p>Start Coefficient, see JPEG standard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Se</span></td>
+        <td><p>End Coefficient, see JPEG standard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Ah</span></td>
+        <td><p>Bit Approximation High, see JPEG standard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Al</span></td>
+        <td><p>Bit Approximation Low, see JPEG standard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int16</span>[]</td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nDstStep</span></td>
+        <td><p>Destination-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiDecodeHuffmanSpec.html">NppiDecodeHuffmanSpec</a></td>
+        <td><span class="parametername">pHuffmanTableDC</span></td>
+        <td><p>DC Huffman table.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiDecodeHuffmanSpec.html">NppiDecodeHuffmanSpec</a></td>
+        <td><span class="parametername">pHuffmanTableAC</span></td>
+        <td><p>AC Huffman table.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p>Error codes:
+- ::NPP_SIZE_ERROR For negative input height/width or not a multiple of
+8 width/height.
+- ::NPP_STEP_ERROR If input image width is not multiple of 8 or does not
+match ROI.
+- ::NPP_NULL_POINTER_ERROR If the destination pointer is 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiDecodeHuffmanScanHost_JPEG_8u16s_P3R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiDecodeHuffmanScanHost_JPEG_8u16s_P3R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiDecodeHuffmanScanHost_JPEG_8u16s_P3R_System_Byte___System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_IntPtr___System_Int32___ManagedCuda_NPP_NppiDecodeHuffmanSpec___ManagedCuda_NPP_NppiDecodeHuffmanSpec___ManagedCuda_NPP_NppiSize___" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiDecodeHuffmanScanHost_JPEG_8u16s_P3R(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.IntPtr[],System.Int32[],ManagedCuda.NPP.NppiDecodeHuffmanSpec[],ManagedCuda.NPP.NppiDecodeHuffmanSpec[],ManagedCuda.NPP.NppiSize[])">nppiDecodeHuffmanScanHost_JPEG_8u16s_P3R(Byte[], Int32, Int32, Int32, Int32, Int32, Int32, IntPtr[], Int32[], NppiDecodeHuffmanSpec[], NppiDecodeHuffmanSpec[], NppiSize[])</h4>
+  <div class="markdown level1 summary"><p>Huffman Decoding of the JPEG decoding on the host.
+Input is expected in byte stuffed huffman encoded JPEG scan and output is expected to be 64x1 macro blocks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiDecodeHuffmanScanHost_JPEG_8u16s_P3R(byte[] pSrc, int nLength, int nRestartInterval, int nSs, int nSe, int nAh, int nAl, IntPtr[] apDst, int[] aDstStep, NppiDecodeHuffmanSpec[] apHuffmanDCTable, NppiDecodeHuffmanSpec[] apHuffmanACTable, NppiSize[] aSizeROI)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Byte-stuffed huffman encoded JPEG scan.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nLength</span></td>
+        <td><p>Byte length of the input.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nRestartInterval</span></td>
+        <td><p>Restart Interval, see JPEG standard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSs</span></td>
+        <td><p>Start Coefficient, see JPEG standard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSe</span></td>
+        <td><p>End Coefficient, see JPEG standard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nAh</span></td>
+        <td><p>Bit Approximation High, see JPEG standard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nAl</span></td>
+        <td><p>Bit Approximation Low, see JPEG standard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span>[]</td>
+        <td><span class="parametername">apDst</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">aDstStep</span></td>
+        <td><p>Destination-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiDecodeHuffmanSpec.html">NppiDecodeHuffmanSpec</a>[]</td>
+        <td><span class="parametername">apHuffmanDCTable</span></td>
+        <td><p>DC Huffman tables.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiDecodeHuffmanSpec.html">NppiDecodeHuffmanSpec</a>[]</td>
+        <td><span class="parametername">apHuffmanACTable</span></td>
+        <td><p>AC Huffman tables.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a>[]</td>
+        <td><span class="parametername">aSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p>Error codes:
+- ::NPP_SIZE_ERROR For negative input height/width or not a multiple of
+8 width/height.
+- ::NPP_STEP_ERROR If input image width is not multiple of 8 or does not
+match ROI.
+- ::NPP_NULL_POINTER_ERROR If the destination pointer is 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiDecodeHuffmanSpecFreeHost_JPEG_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiDecodeHuffmanSpecFreeHost_JPEG*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiDecodeHuffmanSpecFreeHost_JPEG_ManagedCuda_NPP_NppiDecodeHuffmanSpec_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiDecodeHuffmanSpecFreeHost_JPEG(ManagedCuda.NPP.NppiDecodeHuffmanSpec)">nppiDecodeHuffmanSpecFreeHost_JPEG(NppiDecodeHuffmanSpec)</h4>
+  <div class="markdown level1 summary"><p>Frees the host memory allocated by nppiDecodeHuffmanSpecInitAllocHost_JPEG.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiDecodeHuffmanSpecFreeHost_JPEG(NppiDecodeHuffmanSpec pHuffmanSpec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiDecodeHuffmanSpec.html">NppiDecodeHuffmanSpec</a></td>
+        <td><span class="parametername">pHuffmanSpec</span></td>
+        <td><p>Pointer to the Huffman table for the decoder</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiDecodeHuffmanSpecGetBufSize_JPEG_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiDecodeHuffmanSpecGetBufSize_JPEG*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiDecodeHuffmanSpecGetBufSize_JPEG_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiDecodeHuffmanSpecGetBufSize_JPEG(System.Int32@)">nppiDecodeHuffmanSpecGetBufSize_JPEG(ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the length of the NppiDecodeHuffmanSpec structure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiDecodeHuffmanSpecGetBufSize_JPEG(ref int pSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pSize</span></td>
+        <td><p>Pointer to a variable that will receive the length of the NppiDecodeHuffmanSpec structure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiDecodeHuffmanSpecInitAllocHost_JPEG_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiDecodeHuffmanSpecInitAllocHost_JPEG*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiDecodeHuffmanSpecInitAllocHost_JPEG_System_Byte___ManagedCuda_NPP_NppiHuffmanTableType_ManagedCuda_NPP_NppiDecodeHuffmanSpec__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiDecodeHuffmanSpecInitAllocHost_JPEG(System.Byte[],ManagedCuda.NPP.NppiHuffmanTableType,ManagedCuda.NPP.NppiDecodeHuffmanSpec@)">nppiDecodeHuffmanSpecInitAllocHost_JPEG(Byte[], NppiHuffmanTableType, ref NppiDecodeHuffmanSpec)</h4>
+  <div class="markdown level1 summary"><p>Allocates memory and creates a Huffman table in a format that is suitable for the decoder on the host.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiDecodeHuffmanSpecInitAllocHost_JPEG(byte[] pRawHuffmanTable, NppiHuffmanTableType eTableType, ref NppiDecodeHuffmanSpec ppHuffmanSpec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">pRawHuffmanTable</span></td>
+        <td><p>Huffman table formated as specified in the JPEG standard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiHuffmanTableType.html">NppiHuffmanTableType</a></td>
+        <td><span class="parametername">eTableType</span></td>
+        <td><p>Enum specifying type of table (nppiDCTable or nppiACTable).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiDecodeHuffmanSpec.html">NppiDecodeHuffmanSpec</a></td>
+        <td><span class="parametername">ppHuffmanSpec</span></td>
+        <td><p>Pointer to returned pointer to the Huffman table for the decoder</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p>NPP_NULL_POINTER_ERROR If one of the pointers is 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiDecodeHuffmanSpecInitHost_JPEG_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiDecodeHuffmanSpecInitHost_JPEG*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiDecodeHuffmanSpecInitHost_JPEG_System_Byte___ManagedCuda_NPP_NppiHuffmanTableType_ManagedCuda_NPP_NppiDecodeHuffmanSpec_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiDecodeHuffmanSpecInitHost_JPEG(System.Byte[],ManagedCuda.NPP.NppiHuffmanTableType,ManagedCuda.NPP.NppiDecodeHuffmanSpec)">nppiDecodeHuffmanSpecInitHost_JPEG(Byte[], NppiHuffmanTableType, NppiDecodeHuffmanSpec)</h4>
+  <div class="markdown level1 summary"><p>Creates a Huffman table in a format that is suitable for the decoder on the host.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiDecodeHuffmanSpecInitHost_JPEG(byte[] pRawHuffmanTable, NppiHuffmanTableType eTableType, NppiDecodeHuffmanSpec pHuffmanSpec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">pRawHuffmanTable</span></td>
+        <td><p>Huffman table formated as specified in the JPEG standard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiHuffmanTableType.html">NppiHuffmanTableType</a></td>
+        <td><span class="parametername">eTableType</span></td>
+        <td><p>Enum specifying type of table (nppiDCTable or nppiACTable)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiDecodeHuffmanSpec.html">NppiDecodeHuffmanSpec</a></td>
+        <td><span class="parametername">pHuffmanSpec</span></td>
+        <td><p>Pointer to the Huffman table for the decoder</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p>NPP_NULL_POINTER_ERROR If one of the pointers is 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiEncodeHuffmanGetSize_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiEncodeHuffmanGetSize*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiEncodeHuffmanGetSize_ManagedCuda_NPP_NppiSize_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiEncodeHuffmanGetSize(ManagedCuda.NPP.NppiSize,System.Int32,System.Int32@)">nppiEncodeHuffmanGetSize(NppiSize, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Calculates the size of the temporary buffer for baseline Huffman encoding.
+\see nppiEncodeHuffmanScan_JPEG_8u16s_P1R(), nppiEncodeHuffmanScan_JPEG_8u16s_P3R().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiEncodeHuffmanGetSize(NppiSize oSize, int nChannels, ref int pBufSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSize</span></td>
+        <td><p>Image Dimension.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nChannels</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pBufSize</span></td>
+        <td><p>Pointer to variable that returns the size of the</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p>NPP_SUCCESS Indicates no error. Any other value indicates an error
+or a warning
+\return NPP_SIZE_ERROR Indicates an error condition if any image dimension
+has zero or negative value
+\return NPP_NULL_POINTER_ERROR Indicates an error condition if pBufSize
+pointer is NULL</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiEncodeHuffmanScan_JPEG_8u16s_P1R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiEncodeHuffmanScan_JPEG_8u16s_P1R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiEncodeHuffmanScan_JPEG_8u16s_P1R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32__ManagedCuda_NPP_NppiEncodeHuffmanSpec_ManagedCuda_NPP_NppiEncodeHuffmanSpec_ManagedCuda_NPP_NppiSize_ManagedCuda_BasicTypes_CUdeviceptr_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiEncodeHuffmanScan_JPEG_8u16s_P1R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32@,ManagedCuda.NPP.NppiEncodeHuffmanSpec,ManagedCuda.NPP.NppiEncodeHuffmanSpec,ManagedCuda.NPP.NppiSize,ManagedCuda.BasicTypes.CUdeviceptr)">nppiEncodeHuffmanScan_JPEG_8u16s_P1R(CUdeviceptr, Int32, Int32, Int32, Int32, Int32, Int32, CUdeviceptr, ref Int32, NppiEncodeHuffmanSpec, NppiEncodeHuffmanSpec, NppiSize, CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>Huffman Encoding of the JPEG Encoding.
+Input is expected to be 64x1 macro blocks and output is expected as byte stuffed huffman encoded JPEG scan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiEncodeHuffmanScan_JPEG_8u16s_P1R(CUdeviceptr pSrc, int nSrcStep, int nRestartInterval, int nSs, int nSe, int nAh, int nAl, CUdeviceptr pDst, ref int nLength, NppiEncodeHuffmanSpec pHuffmanTableDC, NppiEncodeHuffmanSpec pHuffmanTableAC, NppiSize oSizeROI, CUdeviceptr pTempStorage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Destination-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nRestartInterval</span></td>
+        <td><p>Restart Interval, see JPEG standard. Currently only values &lt;=0 are supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSs</span></td>
+        <td><p>Start Coefficient, see JPEG standard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSe</span></td>
+        <td><p>End Coefficient, see JPEG standard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nAh</span></td>
+        <td><p>Bit Approximation High, see JPEG standard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nAl</span></td>
+        <td><p>Bit Approximation Low, see JPEG standard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Byte-stuffed huffman encoded JPEG scan.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nLength</span></td>
+        <td><p>Byte length of the huffman encoded JPEG scan.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiEncodeHuffmanSpec.html">NppiEncodeHuffmanSpec</a></td>
+        <td><span class="parametername">pHuffmanTableDC</span></td>
+        <td><p>DC Huffman table.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiEncodeHuffmanSpec.html">NppiEncodeHuffmanSpec</a></td>
+        <td><span class="parametername">pHuffmanTableAC</span></td>
+        <td><p>AC Huffman table.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pTempStorage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p>Error codes:
+- ::NPP_SIZE_ERROR For negative input height/width or not a multiple of
+8 width/height.
+- ::NPP_STEP_ERROR If input image width is not multiple of 8 or does not
+match ROI.
+- ::NPP_NULL_POINTER_ERROR If the destination pointer is 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiEncodeHuffmanScan_JPEG_8u16s_P3R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiEncodeHuffmanScan_JPEG_8u16s_P3R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiEncodeHuffmanScan_JPEG_8u16s_P3R_ManagedCuda_BasicTypes_CUdeviceptr___System_Int32___System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32__ManagedCuda_NPP_NppiEncodeHuffmanSpec___ManagedCuda_NPP_NppiEncodeHuffmanSpec___ManagedCuda_NPP_NppiSize___ManagedCuda_BasicTypes_CUdeviceptr_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiEncodeHuffmanScan_JPEG_8u16s_P3R(ManagedCuda.BasicTypes.CUdeviceptr[],System.Int32[],System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32@,ManagedCuda.NPP.NppiEncodeHuffmanSpec[],ManagedCuda.NPP.NppiEncodeHuffmanSpec[],ManagedCuda.NPP.NppiSize[],ManagedCuda.BasicTypes.CUdeviceptr)">nppiEncodeHuffmanScan_JPEG_8u16s_P3R(CUdeviceptr[], Int32[], Int32, Int32, Int32, Int32, Int32, CUdeviceptr, ref Int32, NppiEncodeHuffmanSpec[], NppiEncodeHuffmanSpec[], NppiSize[], CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>Huffman Encoding of the JPEG Encoding.
+Input is expected to be 64x1 macro blocks and output is expected as byte stuffed huffman encoded JPEG scan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiEncodeHuffmanScan_JPEG_8u16s_P3R(CUdeviceptr[] apSrc, int[] aSrcStep, int nRestartInterval, int nSs, int nSe, int nAh, int nAl, CUdeviceptr pDst, ref int nLength, NppiEncodeHuffmanSpec[] apHuffmanDCTable, NppiEncodeHuffmanSpec[] apHuffmanACTable, NppiSize[] aSizeROI, CUdeviceptr pTempStorage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a>[]</td>
+        <td><span class="parametername">apSrc</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">aSrcStep</span></td>
+        <td><p>Destination-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nRestartInterval</span></td>
+        <td><p>Restart Interval, see JPEG standard. Currently only values &lt;=0 are supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSs</span></td>
+        <td><p>Start Coefficient, see JPEG standard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSe</span></td>
+        <td><p>End Coefficient, see JPEG standard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nAh</span></td>
+        <td><p>Bit Approximation High, see JPEG standard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nAl</span></td>
+        <td><p>Bit Approximation Low, see JPEG standard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Byte-stuffed huffman encoded JPEG scan.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nLength</span></td>
+        <td><p>Byte length of the huffman encoded JPEG scan.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiEncodeHuffmanSpec.html">NppiEncodeHuffmanSpec</a>[]</td>
+        <td><span class="parametername">apHuffmanDCTable</span></td>
+        <td><p>DC Huffman tables.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiEncodeHuffmanSpec.html">NppiEncodeHuffmanSpec</a>[]</td>
+        <td><span class="parametername">apHuffmanACTable</span></td>
+        <td><p>AC Huffman tables.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a>[]</td>
+        <td><span class="parametername">aSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pTempStorage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p>Error codes:
+- ::NPP_SIZE_ERROR For negative input height/width or not a multiple of
+8 width/height.
+- ::NPP_STEP_ERROR If input image width is not multiple of 8 or does not
+match ROI.
+- ::NPP_NULL_POINTER_ERROR If the destination pointer is 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiEncodeHuffmanSpecFree_JPEG_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiEncodeHuffmanSpecFree_JPEG*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiEncodeHuffmanSpecFree_JPEG_ManagedCuda_NPP_NppiEncodeHuffmanSpec_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiEncodeHuffmanSpecFree_JPEG(ManagedCuda.NPP.NppiEncodeHuffmanSpec)">nppiEncodeHuffmanSpecFree_JPEG(NppiEncodeHuffmanSpec)</h4>
+  <div class="markdown level1 summary"><p>Frees the memory allocated by nppiEncodeHuffmanSpecInitAlloc_JPEG.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiEncodeHuffmanSpecFree_JPEG(NppiEncodeHuffmanSpec pHuffmanSpec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiEncodeHuffmanSpec.html">NppiEncodeHuffmanSpec</a></td>
+        <td><span class="parametername">pHuffmanSpec</span></td>
+        <td><p>Pointer to the Huffman table for the encoder</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiEncodeHuffmanSpecGetBufSize_JPEG_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiEncodeHuffmanSpecGetBufSize_JPEG*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiEncodeHuffmanSpecGetBufSize_JPEG_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiEncodeHuffmanSpecGetBufSize_JPEG(System.Int32@)">nppiEncodeHuffmanSpecGetBufSize_JPEG(ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the length of the NppiEncodeHuffmanSpec structure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiEncodeHuffmanSpecGetBufSize_JPEG(ref int pSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pSize</span></td>
+        <td><p>Pointer to a variable that will receive the length of the NppiEncodeHuffmanSpec structure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p>NPP_NULL_POINTER_ERROR If one of the pointers is 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiEncodeHuffmanSpecInit_JPEG_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiEncodeHuffmanSpecInit_JPEG*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiEncodeHuffmanSpecInit_JPEG_System_Byte___ManagedCuda_NPP_NppiHuffmanTableType_ManagedCuda_NPP_NppiEncodeHuffmanSpec_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiEncodeHuffmanSpecInit_JPEG(System.Byte[],ManagedCuda.NPP.NppiHuffmanTableType,ManagedCuda.NPP.NppiEncodeHuffmanSpec)">nppiEncodeHuffmanSpecInit_JPEG(Byte[], NppiHuffmanTableType, NppiEncodeHuffmanSpec)</h4>
+  <div class="markdown level1 summary"><p>Creates a Huffman table in a format that is suitable for the encoder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiEncodeHuffmanSpecInit_JPEG(byte[] pRawHuffmanTable, NppiHuffmanTableType eTableType, NppiEncodeHuffmanSpec pHuffmanSpec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">pRawHuffmanTable</span></td>
+        <td><p>Huffman table formated as specified in the JPEG standard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiHuffmanTableType.html">NppiHuffmanTableType</a></td>
+        <td><span class="parametername">eTableType</span></td>
+        <td><p>Enum specifying type of table (nppiDCTable or nppiACTable).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiEncodeHuffmanSpec.html">NppiEncodeHuffmanSpec</a></td>
+        <td><span class="parametername">pHuffmanSpec</span></td>
+        <td><p>Pointer to the Huffman table for the decoder</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p>NPP_NULL_POINTER_ERROR If one of the pointers is 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiEncodeHuffmanSpecInitAlloc_JPEG_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiEncodeHuffmanSpecInitAlloc_JPEG*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiEncodeHuffmanSpecInitAlloc_JPEG_System_Byte___ManagedCuda_NPP_NppiHuffmanTableType_ManagedCuda_NPP_NppiEncodeHuffmanSpec__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiEncodeHuffmanSpecInitAlloc_JPEG(System.Byte[],ManagedCuda.NPP.NppiHuffmanTableType,ManagedCuda.NPP.NppiEncodeHuffmanSpec@)">nppiEncodeHuffmanSpecInitAlloc_JPEG(Byte[], NppiHuffmanTableType, ref NppiEncodeHuffmanSpec)</h4>
+  <div class="markdown level1 summary"><p>Allocates memory and creates a Huffman table in a format that is suitable for the encoder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiEncodeHuffmanSpecInitAlloc_JPEG(byte[] pRawHuffmanTable, NppiHuffmanTableType eTableType, ref NppiEncodeHuffmanSpec ppHuffmanSpec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">pRawHuffmanTable</span></td>
+        <td><p>Huffman table formated as specified in the JPEG standard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiHuffmanTableType.html">NppiHuffmanTableType</a></td>
+        <td><span class="parametername">eTableType</span></td>
+        <td><p>Enum specifying type of table (nppiDCTable or nppiACTable).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiEncodeHuffmanSpec.html">NppiEncodeHuffmanSpec</a></td>
+        <td><span class="parametername">ppHuffmanSpec</span></td>
+        <td><p>Pointer to returned pointer to the Huffman table for the encoder</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p>NPP_NULL_POINTER_ERROR If one of the pointers is 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiEncodeOptimizeHuffmanGetSize_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiEncodeOptimizeHuffmanGetSize*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiEncodeOptimizeHuffmanGetSize_ManagedCuda_NPP_NppiSize_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiEncodeOptimizeHuffmanGetSize(ManagedCuda.NPP.NppiSize,System.Int32,System.Int32@)">nppiEncodeOptimizeHuffmanGetSize(NppiSize, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Calculates the size of the temporary buffer for optimize Huffman coding.
+See \ref nppiGenerateOptimizeHuffmanTable_JPEG.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiEncodeOptimizeHuffmanGetSize(NppiSize oSize, int nChannels, ref int pBufSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSize</span></td>
+        <td><p>Image Dimension.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nChannels</span></td>
+        <td><p>Number of channels in the image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pBufSize</span></td>
+        <td><p>Pointer to variable that returns the size of the</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p>NPP_SUCCESS Indicates no error. Any other value indicates an error
+or a warning
+\return NPP_SIZE_ERROR Indicates an error condition if any image dimension
+has zero or negative value
+\return NPP_NULL_POINTER_ERROR Indicates an error condition if pBufSize
+pointer is NULL</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiEncodeOptimizeHuffmanScan_JPEG_8u16s_P1R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiEncodeOptimizeHuffmanScan_JPEG_8u16s_P1R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiEncodeOptimizeHuffmanScan_JPEG_8u16s_P1R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiEncodeHuffmanSpec__ManagedCuda_NPP_NppiEncodeHuffmanSpec__ManagedCuda_NPP_NppiSize_ManagedCuda_BasicTypes_CUdeviceptr_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiEncodeOptimizeHuffmanScan_JPEG_8u16s_P1R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiEncodeHuffmanSpec@,ManagedCuda.NPP.NppiEncodeHuffmanSpec@,ManagedCuda.NPP.NppiSize,ManagedCuda.BasicTypes.CUdeviceptr)">nppiEncodeOptimizeHuffmanScan_JPEG_8u16s_P1R(CUdeviceptr, Int32, Int32, Int32, Int32, Int32, Int32, CUdeviceptr, CUdeviceptr, CUdeviceptr, CUdeviceptr, CUdeviceptr, CUdeviceptr, ref NppiEncodeHuffmanSpec, ref NppiEncodeHuffmanSpec, NppiSize, CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>Optimize Huffman Encoding of the JPEG Encoding.
+Input is expected to be 64x1 macro blocks and output is expected as byte stuffed huffman encoded JPEG scan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiEncodeOptimizeHuffmanScan_JPEG_8u16s_P1R(CUdeviceptr pSrc, int nSrcStep, int nRestartInterval, int nSs, int nSe, int nAh, int nAl, CUdeviceptr pDst, CUdeviceptr pLength, CUdeviceptr hpCodesDC, CUdeviceptr hpTableDC, CUdeviceptr hpCodesAC, CUdeviceptr hpTableAC, ref NppiEncodeHuffmanSpec aHuffmanDCTable, ref NppiEncodeHuffmanSpec aHuffmanACTable, NppiSize oSizeROI, CUdeviceptr pTempStorage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Destination-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nRestartInterval</span></td>
+        <td><p>Restart Interval, see JPEG standard. Currently only values &lt;=0 are supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSs</span></td>
+        <td><p>Start Coefficient, see JPEG standard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSe</span></td>
+        <td><p>End Coefficient, see JPEG standard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nAh</span></td>
+        <td><p>Bit Approximation High, see JPEG standard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nAl</span></td>
+        <td><p>Bit Approximation Low, see JPEG standard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Byte-stuffed huffman encoded JPEG scan.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pLength</span></td>
+        <td><p>Pointer to the byte length of the huffman encoded JPEG scan.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">hpCodesDC</span></td>
+        <td><p>Host pointer to the code of the huffman tree for DC component.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">hpTableDC</span></td>
+        <td><p>Host pointer to the table of the huffman tree for DC component.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">hpCodesAC</span></td>
+        <td><p>Host pointer to the code of the huffman tree for AC component.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">hpTableAC</span></td>
+        <td><p>Host pointer to the table of the huffman tree for AC component.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiEncodeHuffmanSpec.html">NppiEncodeHuffmanSpec</a></td>
+        <td><span class="parametername">aHuffmanDCTable</span></td>
+        <td><p>DC Huffman table.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiEncodeHuffmanSpec.html">NppiEncodeHuffmanSpec</a></td>
+        <td><span class="parametername">aHuffmanACTable</span></td>
+        <td><p>AC Huffman table.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pTempStorage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p>Error codes:
+- ::NPP_SIZE_ERROR For negative input height/width or not a multiple of
+8 width/height.
+- ::NPP_STEP_ERROR If input image width is not multiple of 8 or does not
+match ROI.
+- ::NPP_NULL_POINTER_ERROR If the destination pointer is 0.
+- ::NPP_NOT_SUFFICIENT_COMPUTE_CAPABILITY If the device has compute capability &lt; 2.0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiEncodeOptimizeHuffmanScan_JPEG_8u16s_P3R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiEncodeOptimizeHuffmanScan_JPEG_8u16s_P3R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiEncodeOptimizeHuffmanScan_JPEG_8u16s_P3R_ManagedCuda_BasicTypes_CUdeviceptr___System_Int32___System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUdeviceptr___ManagedCuda_BasicTypes_CUdeviceptr___ManagedCuda_BasicTypes_CUdeviceptr___ManagedCuda_BasicTypes_CUdeviceptr___System_IntPtr___System_IntPtr___ManagedCuda_NPP_NppiSize___ManagedCuda_BasicTypes_CUdeviceptr_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiEncodeOptimizeHuffmanScan_JPEG_8u16s_P3R(ManagedCuda.BasicTypes.CUdeviceptr[],System.Int32[],System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUdeviceptr[],ManagedCuda.BasicTypes.CUdeviceptr[],ManagedCuda.BasicTypes.CUdeviceptr[],ManagedCuda.BasicTypes.CUdeviceptr[],System.IntPtr[],System.IntPtr[],ManagedCuda.NPP.NppiSize[],ManagedCuda.BasicTypes.CUdeviceptr)">nppiEncodeOptimizeHuffmanScan_JPEG_8u16s_P3R(CUdeviceptr[], Int32[], Int32, Int32, Int32, Int32, Int32, CUdeviceptr, CUdeviceptr, CUdeviceptr[], CUdeviceptr[], CUdeviceptr[], CUdeviceptr[], IntPtr[], IntPtr[], NppiSize[], CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>Optimize Huffman Encoding of the JPEG Encoding.
+Input is expected to be 64x1 macro blocks and output is expected as byte stuffed huffman encoded JPEG scan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiEncodeOptimizeHuffmanScan_JPEG_8u16s_P3R(CUdeviceptr[] pSrc, int[] aSrcStep, int nRestartInterval, int nSs, int nSe, int nAh, int nAl, CUdeviceptr pDst, CUdeviceptr pLength, CUdeviceptr[] hpCodesDC, CUdeviceptr[] hpTableDC, CUdeviceptr[] hpCodesAC, CUdeviceptr[] hpTableAC, IntPtr[] aHuffmanDCTable, IntPtr[] aHuffmanACTable, NppiSize[] oSizeROI, CUdeviceptr pTempStorage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a>[]</td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">aSrcStep</span></td>
+        <td><p>Destination-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nRestartInterval</span></td>
+        <td><p>Restart Interval, see JPEG standard. Currently only values &lt;=0 are supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSs</span></td>
+        <td><p>Start Coefficient, see JPEG standard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSe</span></td>
+        <td><p>End Coefficient, see JPEG standard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nAh</span></td>
+        <td><p>Bit Approximation High, see JPEG standard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nAl</span></td>
+        <td><p>Bit Approximation Low, see JPEG standard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Byte-stuffed huffman encoded JPEG scan.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pLength</span></td>
+        <td><p>Pointer to the byte length of the huffman encoded JPEG scan.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a>[]</td>
+        <td><span class="parametername">hpCodesDC</span></td>
+        <td><p>Host pointer to the code of the huffman tree for DC component.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a>[]</td>
+        <td><span class="parametername">hpTableDC</span></td>
+        <td><p>Host pointer to the table of the huffman tree for DC component.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a>[]</td>
+        <td><span class="parametername">hpCodesAC</span></td>
+        <td><p>Host pointer to the code of the huffman tree for AC component.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a>[]</td>
+        <td><span class="parametername">hpTableAC</span></td>
+        <td><p>Host pointer to the table of the huffman tree for AC component.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span>[]</td>
+        <td><span class="parametername">aHuffmanDCTable</span></td>
+        <td><p>DC Huffman tables.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span>[]</td>
+        <td><span class="parametername">aHuffmanACTable</span></td>
+        <td><p>AC Huffman tables.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a>[]</td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pTempStorage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p>Error codes:
+- ::NPP_SIZE_ERROR For negative input height/width or not a multiple of
+8 width/height.
+- ::NPP_STEP_ERROR If input image width is not multiple of 8 or does not
+match ROI.
+- ::NPP_NULL_POINTER_ERROR If the destination pointer is 0.
+- ::NPP_NOT_SUFFICIENT_COMPUTE_CAPABILITY If the device has compute capability &lt; 2.0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiJpegDecodeGetDCTBufferSize_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiJpegDecodeGetDCTBufferSize*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiJpegDecodeGetDCTBufferSize_ManagedCuda_NPP_NppiSize_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiJpegDecodeGetDCTBufferSize(ManagedCuda.NPP.NppiSize)">nppiJpegDecodeGetDCTBufferSize(NppiSize)</h4>
+  <div class="markdown level1 summary"><p>Returns how much memory has to be allocated for DCT coefficient buffers
+declared in \ref NppiJpegDecodeJobMemory. The returned value may be bigger than
+simply <code>number of blocks		/// 64		/// sizeof (short)</code>, because decoder
+may use slightly bigger temporary representation of data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SizeT nppiJpegDecodeGetDCTBufferSize(NppiSize oBlocks)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oBlocks</span></td>
+        <td><p>Size of the interleaved component in blocks.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiJpegDecodeGetScanDeadzoneSize_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiJpegDecodeGetScanDeadzoneSize*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiJpegDecodeGetScanDeadzoneSize" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiJpegDecodeGetScanDeadzoneSize">nppiJpegDecodeGetScanDeadzoneSize()</h4>
+  <div class="markdown level1 summary"><p>This function returns how much additional memory has to be available
+after the end of compressed scan data.
+The following buffers: <code>pCpuScan</code> and <code>pGpuScan</code> in \ref NppiJpegDecodeJobMemory
+should have size at least <code>pScan-&gt;length + nppiJpegDecodeGetScanDeadzoneSize()</code>.
+The additional memory is needed because the decoder may perform
+some speculative reads after the end of compressed scan data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SizeT nppiJpegDecodeGetScanDeadzoneSize()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiJpegDecodeJob_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiJpegDecodeJob*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiJpegDecodeJob_ManagedCuda_NPP_NppiJpegDecodeJob__ManagedCuda_NPP_NppiJpegDecodeJobMemory__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiJpegDecodeJob(ManagedCuda.NPP.NppiJpegDecodeJob@,ManagedCuda.NPP.NppiJpegDecodeJobMemory@)">nppiJpegDecodeJob(ref NppiJpegDecodeJob, ref NppiJpegDecodeJobMemory)</h4>
+  <div class="markdown level1 summary"><p>Executes a job -- part of decoding.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiJpegDecodeJob(ref NppiJpegDecodeJob pJob, ref NppiJpegDecodeJobMemory pMemory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiJpegDecodeJob.html">NppiJpegDecodeJob</a></td>
+        <td><span class="parametername">pJob</span></td>
+        <td><p>has to be initialized by \ref nppiJpegDecodeJobCreateMemzero</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiJpegDecodeJobMemory.html">NppiJpegDecodeJobMemory</a></td>
+        <td><span class="parametername">pMemory</span></td>
+        <td><p>has to point to valid structure, except for MEMZERO and FINALIZE</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiJpegDecodeJobCreateFinalize_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiJpegDecodeJobCreateFinalize*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiJpegDecodeJobCreateFinalize_ManagedCuda_NPP_NppiJpegDecodeJob__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiJpegDecodeJobCreateFinalize(ManagedCuda.NPP.NppiJpegDecodeJob@)">nppiJpegDecodeJobCreateFinalize(ref NppiJpegDecodeJob)</h4>
+  <div class="markdown level1 summary"><p>Initializes a job that has to be called at the end of decoding,
+in order to convert temporary representation of DCT coefficients
+to the final one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiJpegDecodeJobCreateFinalize(ref NppiJpegDecodeJob pJob)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiJpegDecodeJob.html">NppiJpegDecodeJob</a></td>
+        <td><span class="parametername">pJob</span></td>
+        <td><p>pJob.pFrame should point to valid frame description.
+pJob.pScan will be overwritten.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiJpegDecodeJobCreateMemzero_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiJpegDecodeJobCreateMemzero*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiJpegDecodeJobCreateMemzero_ManagedCuda_NPP_NppiJpegDecodeJob__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiJpegDecodeJobCreateMemzero(ManagedCuda.NPP.NppiJpegDecodeJob@)">nppiJpegDecodeJobCreateMemzero(ref NppiJpegDecodeJob)</h4>
+  <div class="markdown level1 summary"><p>Initializes a job that has to be called at the beginning of decoding.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiJpegDecodeJobCreateMemzero(ref NppiJpegDecodeJob pJob)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiJpegDecodeJob.html">NppiJpegDecodeJob</a></td>
+        <td><span class="parametername">pJob</span></td>
+        <td><p>pJob.pFrame should point to valid frame description.
+pJob.pScan will be overwritten.
+If the caller had manually zeroed the memory for DCT buffers, (note: whole \ref nppiJpegDecodeDCTBufferSize has to be zeroed) this job doesn't have to be executed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiJpegDecodeJobMemorySize_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiJpegDecodeJobMemorySize*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT_nppiJpegDecodeJobMemorySize_ManagedCuda_NPP_NppiJpegDecodeJob__ManagedCuda_BasicTypes_SizeT__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT.nppiJpegDecodeJobMemorySize(ManagedCuda.NPP.NppiJpegDecodeJob@,ManagedCuda.BasicTypes.SizeT@)">nppiJpegDecodeJobMemorySize(ref NppiJpegDecodeJob, ref SizeT)</h4>
+  <div class="markdown level1 summary"><p>Calculates sizes of additional buffers used by the job.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiJpegDecodeJobMemorySize(ref NppiJpegDecodeJob pJob, ref SizeT aSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiJpegDecodeJob.html">NppiJpegDecodeJob</a></td>
+        <td><span class="parametername">pJob</span></td>
+        <td><p>has to point to properly initialized job</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">aSize</span></td>
+        <td><p>will be filled with \ref NPPI_JPEG_DECODE_N_BUFFERS sizes,</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPNativeMethods_NPPi_CompressionDCT.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPNativeMethods.NPPi.CompressionDCT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPNativeMethods.cs/#L53726" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

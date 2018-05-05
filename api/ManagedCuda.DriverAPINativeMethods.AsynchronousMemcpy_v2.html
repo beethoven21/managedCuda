@@ -1,0 +1,853 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DriverAPINativeMethods.AsynchronousMemcpy_v2
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DriverAPINativeMethods.AsynchronousMemcpy_v2
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2">
+  
+  
+  <h1 id="ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2" data-uid="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2" class="text-break">Class DriverAPINativeMethods.AsynchronousMemcpy_v2
+  </h1>
+  <div class="markdown level0 summary"><p>Any host memory involved must be DMA'able (e.g., allocated with cuMemAllocHost).
+memcpy's done with these functions execute in parallel with the CPU and, if
+the hardware is available, may execute in parallel with the GPU.
+Asynchronous memcpy must be accompanied by appropriate stream synchronization.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DriverAPINativeMethods.AsynchronousMemcpy_v2</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.html">ManagedCuda</a></h6>
+  <h6><strong>Assembly</strong>: ManagedCuda.dll</h6>
+  <h5 id="ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class AsynchronousMemcpy_v2</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_cuMemcpy2DAsync_v2_" data-uid="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2.cuMemcpy2DAsync_v2*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_cuMemcpy2DAsync_v2_ManagedCuda_BasicTypes_CUDAMemCpy2D__ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2.cuMemcpy2DAsync_v2(ManagedCuda.BasicTypes.CUDAMemCpy2D@,ManagedCuda.BasicTypes.CUstream)">cuMemcpy2DAsync_v2(ref CUDAMemCpy2D, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Perform a 2D memory copy according to the parameters specified in <code>pCopy</code>. See <a class="xref" href="ManagedCuda.BasicTypes.CUDAMemCpy2D.html">CUDAMemCpy2D</a>.
+<a class="xref" href="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2.html#ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_cuMemcpy2DAsync_v2_ManagedCuda_BasicTypes_CUDAMemCpy2D__ManagedCuda_BasicTypes_CUstream_">cuMemcpy2DAsync_v2(ref CUDAMemCpy2D, CUstream)</a> returns an error if any pitch is greater than the maximum allowed (<a class="xref" href="ManagedCuda.BasicTypes.CUDeviceProperties.html#ManagedCuda_BasicTypes_CUDeviceProperties_memPitch">memPitch</a>).
+<a class="xref" href="ManagedCuda.DriverAPINativeMethods.MemoryManagement.html#ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemAllocPitch_v2_ManagedCuda_BasicTypes_CUdeviceptr__ManagedCuda_BasicTypes_SizeT__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_System_UInt32_">cuMemAllocPitch_v2(ref CUdeviceptr, ref SizeT, SizeT, SizeT, UInt32)</a> passes back pitches that always work with <a class="xref" href="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2.html#ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_cuMemcpy2DAsync_v2_ManagedCuda_BasicTypes_CUDAMemCpy2D__ManagedCuda_BasicTypes_CUstream_">cuMemcpy2DAsync_v2(ref CUDAMemCpy2D, CUstream)</a>. On intra-device
+memory copies (device &lt;-&gt; device, CUDA array &lt;-&gt; device, CUDA array &lt;-&gt; CUDA array), <a class="xref" href="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2.html#ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_cuMemcpy2DAsync_v2_ManagedCuda_BasicTypes_CUDAMemCpy2D__ManagedCuda_BasicTypes_CUstream_">cuMemcpy2DAsync_v2(ref CUDAMemCpy2D, CUstream)</a> may fail
+for pitches not computed by <a class="xref" href="ManagedCuda.DriverAPINativeMethods.MemoryManagement.html#ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemAllocPitch_v2_ManagedCuda_BasicTypes_CUdeviceptr__ManagedCuda_BasicTypes_SizeT__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_System_UInt32_">cuMemAllocPitch_v2(ref CUdeviceptr, ref SizeT, SizeT, SizeT, UInt32)</a>. <a class="xref" href="ManagedCuda.DriverAPINativeMethods.SynchronousMemcpy_v2.html#ManagedCuda_DriverAPINativeMethods_SynchronousMemcpy_v2_cuMemcpy2DUnaligned_v2_ManagedCuda_BasicTypes_CUDAMemCpy2D__">cuMemcpy2DUnaligned_v2(ref CUDAMemCpy2D)</a> (not async!) does not have this restriction, but
+may run significantly slower in the cases where <a class="xref" href="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2.html#ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_cuMemcpy2DAsync_v2_ManagedCuda_BasicTypes_CUDAMemCpy2D__ManagedCuda_BasicTypes_CUstream_">cuMemcpy2DAsync_v2(ref CUDAMemCpy2D, CUstream)</a> would have returned an error code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuMemcpy2DAsync_v2(ref CUDAMemCpy2D pCopy, CUstream hStream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUDAMemCpy2D.html">CUDAMemCpy2D</a></td>
+        <td><span class="parametername">pCopy</span></td>
+        <td><p>Parameters for the memory copy</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">hStream</span></td>
+        <td><p>Stream identifier</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_cuMemcpy3DAsync_v2_" data-uid="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2.cuMemcpy3DAsync_v2*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_cuMemcpy3DAsync_v2_ManagedCuda_BasicTypes_CUDAMemCpy3D__ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2.cuMemcpy3DAsync_v2(ManagedCuda.BasicTypes.CUDAMemCpy3D@,ManagedCuda.BasicTypes.CUstream)">cuMemcpy3DAsync_v2(ref CUDAMemCpy3D, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Perform a 3D memory copy according to the parameters specified in <code>pCopy</code>. See <a class="xref" href="ManagedCuda.BasicTypes.CUDAMemCpy3D.html">CUDAMemCpy3D</a>.
+<a class="xref" href="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2.html#ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_cuMemcpy3DAsync_v2_ManagedCuda_BasicTypes_CUDAMemCpy3D__ManagedCuda_BasicTypes_CUstream_">cuMemcpy3DAsync_v2(ref CUDAMemCpy3D, CUstream)</a> returns an error if any pitch is greater than the maximum allowed (<a class="xref" href="ManagedCuda.BasicTypes.CUDeviceProperties.html#ManagedCuda_BasicTypes_CUDeviceProperties_memPitch">memPitch</a>).<p>
+<a class="xref" href="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2.html#ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_cuMemcpy3DAsync_v2_ManagedCuda_BasicTypes_CUDAMemCpy3D__ManagedCuda_BasicTypes_CUstream_">cuMemcpy3DAsync_v2(ref CUDAMemCpy3D, CUstream)</a> is asynchronous and can optionally be associated to a stream by passing a non-zero <code>hStream</code>
+argument. It only works on page-locked host memory and returns an error if a pointer to pageable memory is passed
+as input. <p>
+The srcLOD and dstLOD members of the CUDAMemCpy3D structure must be set to 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuMemcpy3DAsync_v2(ref CUDAMemCpy3D pCopy, CUstream hStream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUDAMemCpy3D.html">CUDAMemCpy3D</a></td>
+        <td><span class="parametername">pCopy</span></td>
+        <td><p>Parameters for the memory copy</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">hStream</span></td>
+        <td><p>Stream indetifier</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_cuMemcpy3DPeerAsync_" data-uid="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2.cuMemcpy3DPeerAsync*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_cuMemcpy3DPeerAsync_ManagedCuda_BasicTypes_CUDAMemCpy3DPeer__ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2.cuMemcpy3DPeerAsync(ManagedCuda.BasicTypes.CUDAMemCpy3DPeer@,ManagedCuda.BasicTypes.CUstream)">cuMemcpy3DPeerAsync(ref CUDAMemCpy3DPeer, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Perform a 3D memory copy according to the parameters specified in
+<code>pCopy</code>.  See the definition of the <a class="xref" href="ManagedCuda.BasicTypes.CUDAMemCpy3DPeer.html">CUDAMemCpy3DPeer</a> structure
+for documentation of its parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuMemcpy3DPeerAsync(ref CUDAMemCpy3DPeer pCopy, CUstream hStream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUDAMemCpy3DPeer.html">CUDAMemCpy3DPeer</a></td>
+        <td><span class="parametername">pCopy</span></td>
+        <td><p>Parameters for the memory copy</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">hStream</span></td>
+        <td><p>Stream identifier</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_cuMemcpyAsync_" data-uid="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2.cuMemcpyAsync*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_cuMemcpyAsync_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2.cuMemcpyAsync(ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.CUstream)">cuMemcpyAsync(CUdeviceptr, CUdeviceptr, SizeT, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Copies data between two pointers.
+<code>dst</code> and <code>src</code> are base pointers of the destination and source, respectively.<br>
+<code>ByteCount</code> specifies the number of bytes to copy.
+Note that this function infers the type of the transfer (host to host, host to
+device, device to device, or device to host) from the pointer values.  This
+function is only allowed in contexts which support unified addressing.
+Note that this function is asynchronous and can optionally be associated to
+a stream by passing a non-zero <code>hStream</code> argument</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuMemcpyAsync(CUdeviceptr dst, CUdeviceptr src, SizeT ByteCount, CUstream hStream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">dst</span></td>
+        <td><p>Destination unified virtual address space pointer</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">src</span></td>
+        <td><p>Source unified virtual address space pointer</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">ByteCount</span></td>
+        <td><p>Size of memory copy in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">hStream</span></td>
+        <td><p>Stream identifier</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_cuMemcpyAtoHAsync_v2_" data-uid="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2.cuMemcpyAtoHAsync_v2*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_cuMemcpyAtoHAsync_v2_System_IntPtr_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2.cuMemcpyAtoHAsync_v2(System.IntPtr,ManagedCuda.BasicTypes.CUarray,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.CUstream)">cuMemcpyAtoHAsync_v2(IntPtr, CUarray, SizeT, SizeT, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Copies from one 1D CUDA array to host memory. <code>dstHost</code> specifies the base pointer of the destination. <code>srcArray</code>
+and <code>srcOffset</code> specify the CUDA array handle and starting offset in bytes of the source data. <code>ByteCount</code> specifies
+the number of bytes to copy.<p>
+<a class="xref" href="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2.html#ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_cuMemcpyAtoHAsync_v2_System_IntPtr_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_">cuMemcpyAtoHAsync_v2(IntPtr, CUarray, SizeT, SizeT, CUstream)</a> is asynchronous and can optionally be associated to a stream by passing a non-zero stream <code>hStream</code>
+argument. It only works on page-locked host memory and returns an error if a pointer to pageable memory is passed
+as input.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuMemcpyAtoHAsync_v2(IntPtr dstHost, CUarray srcArray, SizeT srcOffset, SizeT ByteCount, CUstream hStream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">dstHost</span></td>
+        <td><p>Destination pointer</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUarray.html">CUarray</a></td>
+        <td><span class="parametername">srcArray</span></td>
+        <td><p>Source array</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">srcOffset</span></td>
+        <td><p>Offset in bytes of source array</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">ByteCount</span></td>
+        <td><p>Size of memory copy in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">hStream</span></td>
+        <td><p>Stream identifier</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_cuMemcpyDtoDAsync_v2_" data-uid="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2.cuMemcpyDtoDAsync_v2*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_cuMemcpyDtoDAsync_v2_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2.cuMemcpyDtoDAsync_v2(ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.CUstream)">cuMemcpyDtoDAsync_v2(CUdeviceptr, CUdeviceptr, SizeT, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Copies from device memory to device memory. <code>dstDevice</code> and <code>srcDevice</code> are the base pointers of the destination
+and source, respectively. <code>ByteCount</code> specifies the number of bytes to copy. Note that this function is asynchronous
+and can optionally be associated to a stream by passing a non-zero <code>hStream</code> argument.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuMemcpyDtoDAsync_v2(CUdeviceptr dstDevice, CUdeviceptr srcDevice, SizeT ByteCount, CUstream hStream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">dstDevice</span></td>
+        <td><p>Destination device pointer</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">srcDevice</span></td>
+        <td><p>Source device pointer</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">ByteCount</span></td>
+        <td><p>Size of memory copy in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">hStream</span></td>
+        <td><p>Stream identifier</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_cuMemcpyDtoHAsync_v2_" data-uid="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2.cuMemcpyDtoHAsync_v2*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_cuMemcpyDtoHAsync_v2_System_IntPtr_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2.cuMemcpyDtoHAsync_v2(System.IntPtr,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.CUstream)">cuMemcpyDtoHAsync_v2(IntPtr, CUdeviceptr, SizeT, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Copies from device to host memory. <code>dstHost</code> and <code>srcDevice</code> specify the base pointers of the destination and
+source, respectively. <code>ByteCount</code> specifies the number of bytes to copy.<p>
+<a class="xref" href="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2.html#ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_cuMemcpyDtoHAsync_v2_System_IntPtr_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_">cuMemcpyDtoHAsync_v2(IntPtr, CUdeviceptr, SizeT, CUstream)</a> is asynchronous and can optionally be associated to a stream by passing a non-zero
+<code>hStream</code> argument. It only works on page-locked memory and returns an error if a pointer to pageable memory
+is passed as input.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuMemcpyDtoHAsync_v2(IntPtr dstHost, CUdeviceptr srcDevice, SizeT ByteCount, CUstream hStream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">dstHost</span></td>
+        <td><p>Destination host pointer</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">srcDevice</span></td>
+        <td><p>Source device pointer</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">ByteCount</span></td>
+        <td><p>Size of memory copy in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">hStream</span></td>
+        <td><p>Stream identifier</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_cuMemcpyHtoAAsync_v2_" data-uid="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2.cuMemcpyHtoAAsync_v2*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_cuMemcpyHtoAAsync_v2_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_SizeT_System_IntPtr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2.cuMemcpyHtoAAsync_v2(ManagedCuda.BasicTypes.CUarray,ManagedCuda.BasicTypes.SizeT,System.IntPtr,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.CUstream)">cuMemcpyHtoAAsync_v2(CUarray, SizeT, IntPtr, SizeT, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Copies from host memory to a 1D CUDA array. <code>dstArray</code> and <code>dstOffset</code> specify the CUDA array handle and
+starting offset in bytes of the destination data. <code>srcHost</code> specifies the base address of the source. <code>ByteCount</code>
+specifies the number of bytes to copy.<p>
+<a class="xref" href="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2.html#ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_cuMemcpyHtoAAsync_v2_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_SizeT_System_IntPtr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_">cuMemcpyHtoAAsync_v2(CUarray, SizeT, IntPtr, SizeT, CUstream)</a> is asynchronous and can optionally be associated to a stream by passing a non-zero
+<code>hStream</code> argument. It only works on page-locked memory and returns an error if a pointer to pageable memory
+is passed as input.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuMemcpyHtoAAsync_v2(CUarray dstArray, SizeT dstOffset, IntPtr srcHost, SizeT ByteCount, CUstream hStream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUarray.html">CUarray</a></td>
+        <td><span class="parametername">dstArray</span></td>
+        <td><p>Destination array</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">dstOffset</span></td>
+        <td><p>Offset in bytes of destination array</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">srcHost</span></td>
+        <td><p>Source host pointer</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">ByteCount</span></td>
+        <td><p>Size of memory copy in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">hStream</span></td>
+        <td><p>Stream identifier</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_cuMemcpyHtoDAsync_v2_" data-uid="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2.cuMemcpyHtoDAsync_v2*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_cuMemcpyHtoDAsync_v2_ManagedCuda_BasicTypes_CUdeviceptr_System_IntPtr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2.cuMemcpyHtoDAsync_v2(ManagedCuda.BasicTypes.CUdeviceptr,System.IntPtr,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.CUstream)">cuMemcpyHtoDAsync_v2(CUdeviceptr, IntPtr, SizeT, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Copies from host memory to device memory. <code>dstDevice</code> and <code>srcHost</code> are the base addresses of the destination
+and source, respectively. <code>ByteCount</code> specifies the number of bytes to copy. <p>
+<a class="xref" href="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2.html#ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_cuMemcpyHtoDAsync_v2_ManagedCuda_BasicTypes_CUdeviceptr_System_IntPtr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_">cuMemcpyHtoDAsync_v2(CUdeviceptr, IntPtr, SizeT, CUstream)</a> is asynchronous and can optionally be associated to a stream by passing a non-zero <code>hStream</code>
+argument. It only works on page-locked memory and returns an error if a pointer to pageable memory is passed as
+input.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuMemcpyHtoDAsync_v2(CUdeviceptr dstDevice, IntPtr srcHost, SizeT ByteCount, CUstream hStream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">dstDevice</span></td>
+        <td><p>Destination device pointer</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">srcHost</span></td>
+        <td><p>Source host pointer</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">ByteCount</span></td>
+        <td><p>Size of memory copy in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">hStream</span></td>
+        <td><p>Stream identifier</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_cuMemcpyPeerAsync_" data-uid="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2.cuMemcpyPeerAsync*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2_cuMemcpyPeerAsync_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUcontext_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUcontext_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2.cuMemcpyPeerAsync(ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUcontext,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUcontext,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.CUstream)">cuMemcpyPeerAsync(CUdeviceptr, CUcontext, CUdeviceptr, CUcontext, SizeT, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Copies from device memory in one context to device memory in another
+context. <code>dstDevice</code> is the base device pointer of the destination memory
+and <code>dstContext</code> is the destination context. <code>srcDevice</code> is the base
+device pointer of the source memory and <code>srcContext</code> is the source pointer.<br>
+<code>ByteCount</code> specifies the number of bytes to copy.  Note that this function
+is asynchronous with respect to the host and all work in other streams in
+other devices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuMemcpyPeerAsync(CUdeviceptr dstDevice, CUcontext dstContext, CUdeviceptr srcDevice, CUcontext srcContext, SizeT ByteCount, CUstream hStream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">dstDevice</span></td>
+        <td><p>Destination device pointer</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUcontext.html">CUcontext</a></td>
+        <td><span class="parametername">dstContext</span></td>
+        <td><p>Destination context</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">srcDevice</span></td>
+        <td><p>Source device pointer</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUcontext.html">CUcontext</a></td>
+        <td><span class="parametername">srcContext</span></td>
+        <td><p>Source context</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">ByteCount</span></td>
+        <td><p>Size of memory copy in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">hStream</span></td>
+        <td><p>Stream identifier</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_DriverAPINativeMethods_AsynchronousMemcpy_v2.md&amp;value=---%0Auid%3A%20ManagedCuda.DriverAPINativeMethods.AsynchronousMemcpy_v2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/DriverAPI.cs/#L5757" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

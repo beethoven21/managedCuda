@@ -1,0 +1,1445 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CudaRegisteredHostMemory_char4
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CudaRegisteredHostMemory_char4
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4">
+  
+  
+  <h1 id="ManagedCuda_CudaRegisteredHostMemory_char4" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4" class="text-break">Class CudaRegisteredHostMemory_char4
+  </h1>
+  <div class="markdown level0 summary"><p>A variable located in page locked (pinned) host memory. Use this type of variabe for asynchronous memcpy.<p>
+cuMemHostRegister doesn't work with managed memory (e.g. normal C# arrays). But you can use cuMemHostRegister for
+natively allocated memory (Marshal.AllocHGlobal, or a native dll).<p>
+Type: char4</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CudaRegisteredHostMemory_char4</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.html">ManagedCuda</a></h6>
+  <h6><strong>Assembly</strong>: ManagedCuda.dll</h6>
+  <h5 id="ManagedCuda_CudaRegisteredHostMemory_char4_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CudaRegisteredHostMemory_char4 : IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4__ctor_System_IntPtr_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.%23ctor(System.IntPtr%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4114">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4__ctor_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4__ctor_System_IntPtr_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.#ctor(System.IntPtr,ManagedCuda.BasicTypes.SizeT)">CudaRegisteredHostMemory_char4(IntPtr, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Creates a new CudaRegisteredHostMemory_char4 from an existing IntPtr. IntPtr must be page size aligned (4KBytes)!</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaRegisteredHostMemory_char4(IntPtr hostPointer, SizeT size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">hostPointer</span></td>
+        <td><p>must be page size aligned (4KBytes)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>In elements</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_IsRegisterd.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.IsRegisterd%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4192">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_IsRegisterd_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.IsRegisterd*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_IsRegisterd" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.IsRegisterd">IsRegisterd</h4>
+  <div class="markdown level1 summary"><p>Returns register status</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRegisterd { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_Item_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.Item(ManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4202">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_Item_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.Item*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_Item_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.Item(ManagedCuda.BasicTypes.SizeT)">Item[SizeT]</h4>
+  <div class="markdown level1 summary"><p>Access array per element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char4 this[SizeT index] { get; set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>index in elements</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.VectorTypes.char4.html">char4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_PinnedHostPointer.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.PinnedHostPointer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4168">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_PinnedHostPointer_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.PinnedHostPointer*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_PinnedHostPointer" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.PinnedHostPointer">PinnedHostPointer</h4>
+  <div class="markdown level1 summary"><p>Pointer to pinned host memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntPtr PinnedHostPointer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_Size.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.Size%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4184">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_Size_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.Size*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_Size" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.Size">Size</h4>
+  <div class="markdown level1 summary"><p>Size in elements</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SizeT Size { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_SizeInBytes.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.SizeInBytes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4176">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_SizeInBytes_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.SizeInBytes*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_SizeInBytes" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.SizeInBytes">SizeInBytes</h4>
+  <div class="markdown level1 summary"><p>Size in bytes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SizeT SizeInBytes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyFromArray1D_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyFromArray1D(ManagedCuda.BasicTypes.CUarray%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4410">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyFromArray1D_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyFromArray1D*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyFromArray1D_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyFromArray1D(ManagedCuda.BasicTypes.CUarray,ManagedCuda.BasicTypes.CUstream)">AsyncCopyFromArray1D(CUarray, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Asynchron copy 1D Array to host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyFromArray1D(CUarray deviceArray, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUarray.html">CUarray</a></td>
+        <td><span class="parametername">deviceArray</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyFromArray1D_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_CUstream_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyFromArray1D(ManagedCuda.BasicTypes.CUarray%2CManagedCuda.BasicTypes.CUstream%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4397">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyFromArray1D_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyFromArray1D*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyFromArray1D_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_CUstream_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyFromArray1D(ManagedCuda.BasicTypes.CUarray,ManagedCuda.BasicTypes.CUstream,ManagedCuda.BasicTypes.SizeT)">AsyncCopyFromArray1D(CUarray, CUstream, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Asynchron copy 1D Array to host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyFromArray1D(CUarray deviceArray, CUstream stream, SizeT offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUarray.html">CUarray</a></td>
+        <td><span class="parametername">deviceArray</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyFromArray1D_ManagedCuda_CudaArray1D_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyFromArray1D(ManagedCuda.CudaArray1D%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4420">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyFromArray1D_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyFromArray1D*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyFromArray1D_ManagedCuda_CudaArray1D_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyFromArray1D(ManagedCuda.CudaArray1D,ManagedCuda.BasicTypes.CUstream)">AsyncCopyFromArray1D(CudaArray1D, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Asynchron copy 1D Array to host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyFromArray1D(CudaArray1D array, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaArray1D.html">CudaArray1D</a></td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyFromArray1D_ManagedCuda_CudaArray1D_ManagedCuda_BasicTypes_CUstream_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyFromArray1D(ManagedCuda.CudaArray1D%2CManagedCuda.BasicTypes.CUstream%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4431">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyFromArray1D_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyFromArray1D*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyFromArray1D_ManagedCuda_CudaArray1D_ManagedCuda_BasicTypes_CUstream_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyFromArray1D(ManagedCuda.CudaArray1D,ManagedCuda.BasicTypes.CUstream,ManagedCuda.BasicTypes.SizeT)">AsyncCopyFromArray1D(CudaArray1D, CUstream, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Asynchron copy 1D Array to host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyFromArray1D(CudaArray1D array, CUstream stream, SizeT offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaArray1D.html">CudaArray1D</a></td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyFromDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyFromDevice(ManagedCuda.BasicTypes.CUdeviceptr%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4465">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyFromDevice_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyFromDevice*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyFromDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyFromDevice(ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUstream)">AsyncCopyFromDevice(CUdeviceptr, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Asynchron copy device to host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyFromDevice(CUdeviceptr devicePtr, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">devicePtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyFromDevice_ManagedCuda_CudaDeviceVariable_ManagedCuda_VectorTypes_char4__ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyFromDevice(ManagedCuda.CudaDeviceVariable%7BManagedCuda.VectorTypes.char4%7D%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4478">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyFromDevice_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyFromDevice*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyFromDevice_ManagedCuda_CudaDeviceVariable_ManagedCuda_VectorTypes_char4__ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyFromDevice(ManagedCuda.CudaDeviceVariable{ManagedCuda.VectorTypes.char4},ManagedCuda.BasicTypes.CUstream)">AsyncCopyFromDevice(CudaDeviceVariable&lt;char4&gt;, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Asynchron copy device to host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyFromDevice(CudaDeviceVariable&lt;char4&gt; deviceVar, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<a class="xref" href="ManagedCuda.VectorTypes.char4.html">char4</a>&gt;</td>
+        <td><span class="parametername">deviceVar</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyToArray1D_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyToArray1D(ManagedCuda.BasicTypes.CUarray%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4365">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyToArray1D_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyToArray1D*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyToArray1D_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyToArray1D(ManagedCuda.BasicTypes.CUarray,ManagedCuda.BasicTypes.CUstream)">AsyncCopyToArray1D(CUarray, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Asynchron copy host to 1D Array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyToArray1D(CUarray deviceArray, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUarray.html">CUarray</a></td>
+        <td><span class="parametername">deviceArray</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyToArray1D_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_CUstream_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyToArray1D(ManagedCuda.BasicTypes.CUarray%2CManagedCuda.BasicTypes.CUstream%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4352">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyToArray1D_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyToArray1D*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyToArray1D_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_CUstream_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyToArray1D(ManagedCuda.BasicTypes.CUarray,ManagedCuda.BasicTypes.CUstream,ManagedCuda.BasicTypes.SizeT)">AsyncCopyToArray1D(CUarray, CUstream, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Asynchron copy host to 1D Array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyToArray1D(CUarray deviceArray, CUstream stream, SizeT offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUarray.html">CUarray</a></td>
+        <td><span class="parametername">deviceArray</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyToArray1D_ManagedCuda_CudaArray1D_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyToArray1D(ManagedCuda.CudaArray1D%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4375">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyToArray1D_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyToArray1D*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyToArray1D_ManagedCuda_CudaArray1D_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyToArray1D(ManagedCuda.CudaArray1D,ManagedCuda.BasicTypes.CUstream)">AsyncCopyToArray1D(CudaArray1D, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Asynchron copy host to 1D Array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyToArray1D(CudaArray1D array, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaArray1D.html">CudaArray1D</a></td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyToArray1D_ManagedCuda_CudaArray1D_ManagedCuda_BasicTypes_CUstream_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyToArray1D(ManagedCuda.CudaArray1D%2CManagedCuda.BasicTypes.CUstream%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4386">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyToArray1D_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyToArray1D*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyToArray1D_ManagedCuda_CudaArray1D_ManagedCuda_BasicTypes_CUstream_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyToArray1D(ManagedCuda.CudaArray1D,ManagedCuda.BasicTypes.CUstream,ManagedCuda.BasicTypes.SizeT)">AsyncCopyToArray1D(CudaArray1D, CUstream, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Asynchron copy host to 1D Array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyToArray1D(CudaArray1D array, CUstream stream, SizeT offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaArray1D.html">CudaArray1D</a></td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyToDevice(ManagedCuda.BasicTypes.CUdeviceptr%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4442">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyToDevice_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyToDevice(ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUstream)">AsyncCopyToDevice(CUdeviceptr, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Asynchron Copy host to device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyToDevice(CUdeviceptr devicePtr, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">devicePtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyToDevice_ManagedCuda_CudaDeviceVariable_ManagedCuda_VectorTypes_char4__ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyToDevice(ManagedCuda.CudaDeviceVariable%7BManagedCuda.VectorTypes.char4%7D%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4455">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyToDevice_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_AsyncCopyToDevice_ManagedCuda_CudaDeviceVariable_ManagedCuda_VectorTypes_char4__ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.AsyncCopyToDevice(ManagedCuda.CudaDeviceVariable{ManagedCuda.VectorTypes.char4},ManagedCuda.BasicTypes.CUstream)">AsyncCopyToDevice(CudaDeviceVariable&lt;char4&gt;, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Asynchron Copy host to device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyToDevice(CudaDeviceVariable&lt;char4&gt; deviceVar, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<a class="xref" href="ManagedCuda.VectorTypes.char4.html">char4</a>&gt;</td>
+        <td><span class="parametername">deviceVar</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_Dispose.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4135">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_Dispose_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.Dispose*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_Dispose" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Dispose</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4145">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_Dispose_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.Dispose*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_Dispose_System_Boolean_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>For IDisposable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool fDisposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">fDisposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_Finalize.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.Finalize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4125">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_Finalize_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.Finalize*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_Finalize" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"><p>For dispose</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_GetDevicePointer.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.GetDevicePointer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4493">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_GetDevicePointer_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.GetDevicePointer*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_GetDevicePointer" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.GetDevicePointer">GetDevicePointer()</h4>
+  <div class="markdown level1 summary"><p>Returns the CUdeviceptr for pinned host memory mapped to device memory space. Only valid if context is created with flag <a class="xref" href="ManagedCuda.BasicTypes.CUCtxFlags.html#ManagedCuda_BasicTypes_CUCtxFlags_MapHost">MapHost</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUdeviceptr GetDevicePointer()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Device Pointer</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_Register_ManagedCuda_BasicTypes_CUMemHostRegisterFlags_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.Register(ManagedCuda.BasicTypes.CUMemHostRegisterFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4518">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_Register_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.Register*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_Register_ManagedCuda_BasicTypes_CUMemHostRegisterFlags_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.Register(ManagedCuda.BasicTypes.CUMemHostRegisterFlags)">Register(CUMemHostRegisterFlags)</h4>
+  <div class="markdown level1 summary"><p>Page-locks the memory range specified by <code>p</code> and <code>bytesize</code> and maps it
+for the device(s) as specified by <code>Flags</code>. This memory range also is added
+to the same tracking mechanism as ::cuMemHostAlloc to automatically accelerate
+calls to functions such as <a class="xref" href="ManagedCuda.DriverAPINativeMethods.SynchronousMemcpy_v2.html#ManagedCuda_DriverAPINativeMethods_SynchronousMemcpy_v2_cuMemcpyHtoD_v2_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_dim3___ManagedCuda_BasicTypes_SizeT_">cuMemcpyHtoD_v2(CUdeviceptr, dim3[], SizeT)</a>. Since the memory can be accessed
+directly by the device, it can be read or written with much higher bandwidth
+than pageable memory that has not been registered.  Page-locking excessive
+amounts of memory may degrade system performance, since it reduces the amount
+of memory available to the system for paging. As a result, this function is
+best used sparingly to register staging areas for data exchange between
+host and device.<p>
+The pointer <code>p</code> and size <code>bytesize</code> must be aligned to the host page size (4 KB).<p>
+The memory page-locked by this function must be unregistered with <a class="xref" href="ManagedCuda.CudaRegisteredHostMemory_char4.html#ManagedCuda_CudaRegisteredHostMemory_char4_Unregister">Unregister()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Register(CUMemHostRegisterFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUMemHostRegisterFlags.html">CUMemHostRegisterFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyFromArray1D_ManagedCuda_BasicTypes_CUarray_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyFromArray1D(ManagedCuda.BasicTypes.CUarray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4275">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyFromArray1D_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyFromArray1D*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyFromArray1D_ManagedCuda_BasicTypes_CUarray_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyFromArray1D(ManagedCuda.BasicTypes.CUarray)">SynchronCopyFromArray1D(CUarray)</h4>
+  <div class="markdown level1 summary"><p>Synchron copy 1D Array to host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SynchronCopyFromArray1D(CUarray deviceArray)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUarray.html">CUarray</a></td>
+        <td><span class="parametername">deviceArray</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyFromArray1D_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyFromArray1D(ManagedCuda.BasicTypes.CUarray%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4263">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyFromArray1D_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyFromArray1D*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyFromArray1D_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyFromArray1D(ManagedCuda.BasicTypes.CUarray,ManagedCuda.BasicTypes.SizeT)">SynchronCopyFromArray1D(CUarray, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Synchron copy 1D Array to host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SynchronCopyFromArray1D(CUarray deviceArray, SizeT offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUarray.html">CUarray</a></td>
+        <td><span class="parametername">deviceArray</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyFromArray1D_ManagedCuda_CudaArray1D_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyFromArray1D(ManagedCuda.CudaArray1D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4284">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyFromArray1D_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyFromArray1D*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyFromArray1D_ManagedCuda_CudaArray1D_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyFromArray1D(ManagedCuda.CudaArray1D)">SynchronCopyFromArray1D(CudaArray1D)</h4>
+  <div class="markdown level1 summary"><p>Synchron copy 1D Array to host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SynchronCopyFromArray1D(CudaArray1D array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaArray1D.html">CudaArray1D</a></td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyFromArray1D_ManagedCuda_CudaArray1D_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyFromArray1D(ManagedCuda.CudaArray1D%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4294">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyFromArray1D_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyFromArray1D*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyFromArray1D_ManagedCuda_CudaArray1D_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyFromArray1D(ManagedCuda.CudaArray1D,ManagedCuda.BasicTypes.SizeT)">SynchronCopyFromArray1D(CudaArray1D, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Synchron copy 1D Array to host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SynchronCopyFromArray1D(CudaArray1D array, SizeT offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaArray1D.html">CudaArray1D</a></td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyToArray1D_ManagedCuda_BasicTypes_CUarray_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyToArray1D(ManagedCuda.BasicTypes.CUarray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4234">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyToArray1D_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyToArray1D*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyToArray1D_ManagedCuda_BasicTypes_CUarray_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyToArray1D(ManagedCuda.BasicTypes.CUarray)">SynchronCopyToArray1D(CUarray)</h4>
+  <div class="markdown level1 summary"><p>Synchron copy host to 1D Array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SynchronCopyToArray1D(CUarray deviceArray)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUarray.html">CUarray</a></td>
+        <td><span class="parametername">deviceArray</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyToArray1D_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyToArray1D(ManagedCuda.BasicTypes.CUarray%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4222">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyToArray1D_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyToArray1D*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyToArray1D_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyToArray1D(ManagedCuda.BasicTypes.CUarray,ManagedCuda.BasicTypes.SizeT)">SynchronCopyToArray1D(CUarray, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Synchron copy host to 1D Array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SynchronCopyToArray1D(CUarray deviceArray, SizeT offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUarray.html">CUarray</a></td>
+        <td><span class="parametername">deviceArray</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyToArray1D_ManagedCuda_CudaArray1D_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyToArray1D(ManagedCuda.CudaArray1D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4243">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyToArray1D_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyToArray1D*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyToArray1D_ManagedCuda_CudaArray1D_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyToArray1D(ManagedCuda.CudaArray1D)">SynchronCopyToArray1D(CudaArray1D)</h4>
+  <div class="markdown level1 summary"><p>Synchron copy host to 1D Array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SynchronCopyToArray1D(CudaArray1D array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaArray1D.html">CudaArray1D</a></td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyToArray1D_ManagedCuda_CudaArray1D_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyToArray1D(ManagedCuda.CudaArray1D%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4253">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyToArray1D_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyToArray1D*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyToArray1D_ManagedCuda_CudaArray1D_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyToArray1D(ManagedCuda.CudaArray1D,ManagedCuda.BasicTypes.SizeT)">SynchronCopyToArray1D(CudaArray1D, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Synchron copy host to 1D Array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SynchronCopyToArray1D(CudaArray1D array, SizeT offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaArray1D.html">CudaArray1D</a></td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyToDevice(ManagedCuda.BasicTypes.CUdeviceptr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4304">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyToDevice_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyToDevice(ManagedCuda.BasicTypes.CUdeviceptr)">SynchronCopyToDevice(CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>Synchron copy host to device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SynchronCopyToDevice(CUdeviceptr devicePtr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">devicePtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyToDevice_ManagedCuda_CudaDeviceVariable_ManagedCuda_VectorTypes_char4__.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyToDevice(ManagedCuda.CudaDeviceVariable%7BManagedCuda.VectorTypes.char4%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4316">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyToDevice_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyToDevice_ManagedCuda_CudaDeviceVariable_ManagedCuda_VectorTypes_char4__" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyToDevice(ManagedCuda.CudaDeviceVariable{ManagedCuda.VectorTypes.char4})">SynchronCopyToDevice(CudaDeviceVariable&lt;char4&gt;)</h4>
+  <div class="markdown level1 summary"><p>Synchron copy host to device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SynchronCopyToDevice(CudaDeviceVariable&lt;char4&gt; devicePtr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<a class="xref" href="ManagedCuda.VectorTypes.char4.html">char4</a>&gt;</td>
+        <td><span class="parametername">devicePtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyToHost_ManagedCuda_BasicTypes_CUdeviceptr_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyToHost(ManagedCuda.BasicTypes.CUdeviceptr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4325">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyToHost_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyToHost*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyToHost_ManagedCuda_BasicTypes_CUdeviceptr_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyToHost(ManagedCuda.BasicTypes.CUdeviceptr)">SynchronCopyToHost(CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>Synchron copy device to host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SynchronCopyToHost(CUdeviceptr devicePtr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">devicePtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyToHost_ManagedCuda_CudaDeviceVariable_ManagedCuda_VectorTypes_char4__.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyToHost(ManagedCuda.CudaDeviceVariable%7BManagedCuda.VectorTypes.char4%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4337">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyToHost_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyToHost*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_SynchronCopyToHost_ManagedCuda_CudaDeviceVariable_ManagedCuda_VectorTypes_char4__" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.SynchronCopyToHost(ManagedCuda.CudaDeviceVariable{ManagedCuda.VectorTypes.char4})">SynchronCopyToHost(CudaDeviceVariable&lt;char4&gt;)</h4>
+  <div class="markdown level1 summary"><p>Synchron copy device to host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SynchronCopyToHost(CudaDeviceVariable&lt;char4&gt; devicePtr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<a class="xref" href="ManagedCuda.VectorTypes.char4.html">char4</a>&gt;</td>
+        <td><span class="parametername">devicePtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4_Unregister.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4.Unregister%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4531">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaRegisteredHostMemory_char4_Unregister_" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.Unregister*"></a>
+  <h4 id="ManagedCuda_CudaRegisteredHostMemory_char4_Unregister" data-uid="ManagedCuda.CudaRegisteredHostMemory_char4.Unregister">Unregister()</h4>
+  <div class="markdown level1 summary"><p>Unmaps the memory range whose base address is specified by <code>p</code>, and makes it pageable again.<p>
+The base address must be the same one specified to <a class="xref" href="ManagedCuda.CudaRegisteredHostMemory_char4.html#ManagedCuda_CudaRegisteredHostMemory_char4_Register_ManagedCuda_BasicTypes_CUMemHostRegisterFlags_">Register(CUMemHostRegisterFlags)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Unregister()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRegisteredHostMemory_char4.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRegisteredHostMemory_char4%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaRegisteredHostMemoryFixedTypes.cs/#L4098" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,853 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class NPPNativeMethods.NPPs.MemAlloc
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class NPPNativeMethods.NPPs.MemAlloc
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc">
+  
+  
+  <h1 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc" class="text-break">Class NPPNativeMethods.NPPs.MemAlloc
+  </h1>
+  <div class="markdown level0 summary"><p>Signal-allocator methods for allocating 1D arrays of data in device memory.
+All allocators have size parameters to specify the size of the signal (1D array)
+being allocated.</p>
+<p>
+The allocator methods return a pointer to the newly allocated memory of appropriate
+type. If device-memory allocation is not possible due to resource constaints
+the allocators return 0 (i.e. NULL pointer). 
+<p>
+All signal allocators allocate memory aligned such that it is  beneficial to the 
+performance of the majority of the signal-processing primitives. 
+It is no mandatory however to use these allocators. Any valid
+CUDA device-memory pointers can be passed to NPP primitives. 
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">NPPNativeMethods.NPPs.MemAlloc</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.NPP.html">ManagedCuda.NPP</a></h6>
+  <h6><strong>Assembly</strong>: NPP.dll</h6>
+  <h5 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class MemAlloc</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_nppsFree_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc.nppsFree*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_nppsFree_ManagedCuda_BasicTypes_CUdeviceptr_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc.nppsFree(ManagedCuda.BasicTypes.CUdeviceptr)">nppsFree(CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>Free method for any 2D allocated memory.
+This method should be used to free memory allocated with any of the
+nppiMalloc_&lt;modifier&gt; methods.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void nppsFree(CUdeviceptr pValues)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pValues</span></td>
+        <td><p>A pointer to memory allocated using nppiMalloc_&lt;modifier&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_nppsMalloc_16s_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc.nppsMalloc_16s*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_nppsMalloc_16s_System_Int32_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc.nppsMalloc_16s(System.Int32)">nppsMalloc_16s(Int32)</h4>
+  <div class="markdown level1 summary"><p>16-bit signal allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppsMalloc_16s(int nSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSize</span></td>
+        <td><p>Number of shorts in the new signal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>A pointer to the new signal. 0 (NULL-pointer) indicates
+that an error occurred during allocation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_nppsMalloc_16sc_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc.nppsMalloc_16sc*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_nppsMalloc_16sc_System_Int32_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc.nppsMalloc_16sc(System.Int32)">nppsMalloc_16sc(Int32)</h4>
+  <div class="markdown level1 summary"><p>16-bit complex-value signal allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppsMalloc_16sc(int nSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSize</span></td>
+        <td><p>Number of 16-bit complex numbers in the new signal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>A pointer to the new signal. 0 (NULL-pointer) indicates
+that an error occurred during allocation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_nppsMalloc_16u_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc.nppsMalloc_16u*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_nppsMalloc_16u_System_Int32_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc.nppsMalloc_16u(System.Int32)">nppsMalloc_16u(Int32)</h4>
+  <div class="markdown level1 summary"><p>16-bit unsigned signal allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppsMalloc_16u(int nSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSize</span></td>
+        <td><p>Number of unsigned shorts in the new signal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>A pointer to the new signal. 0 (NULL-pointer) indicates
+that an error occurred during allocation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_nppsMalloc_32f_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc.nppsMalloc_32f*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_nppsMalloc_32f_System_Int32_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc.nppsMalloc_32f(System.Int32)">nppsMalloc_32f(Int32)</h4>
+  <div class="markdown level1 summary"><p>32-bit float signal allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppsMalloc_32f(int nSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSize</span></td>
+        <td><p>Number of floats in the new signal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>A pointer to the new signal. 0 (NULL-pointer) indicates
+that an error occurred during allocation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_nppsMalloc_32fc_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc.nppsMalloc_32fc*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_nppsMalloc_32fc_System_Int32_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc.nppsMalloc_32fc(System.Int32)">nppsMalloc_32fc(Int32)</h4>
+  <div class="markdown level1 summary"><p>32-bit complex float signal allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppsMalloc_32fc(int nSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSize</span></td>
+        <td><p>Number of complex float values in the new signal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>A pointer to the new signal. 0 (NULL-pointer) indicates
+that an error occurred during allocation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_nppsMalloc_32s_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc.nppsMalloc_32s*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_nppsMalloc_32s_System_Int32_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc.nppsMalloc_32s(System.Int32)">nppsMalloc_32s(Int32)</h4>
+  <div class="markdown level1 summary"><p>32-bit integer signal allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppsMalloc_32s(int nSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSize</span></td>
+        <td><p>Number of ints in the new signal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>A pointer to the new signal. 0 (NULL-pointer) indicates
+that an error occurred during allocation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_nppsMalloc_32sc_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc.nppsMalloc_32sc*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_nppsMalloc_32sc_System_Int32_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc.nppsMalloc_32sc(System.Int32)">nppsMalloc_32sc(Int32)</h4>
+  <div class="markdown level1 summary"><p>32-bit complex integer signal allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppsMalloc_32sc(int nSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSize</span></td>
+        <td><p>Number of complex integner values in the new signal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>A pointer to the new signal. 0 (NULL-pointer) indicates
+that an error occurred during allocation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_nppsMalloc_32u_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc.nppsMalloc_32u*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_nppsMalloc_32u_System_Int32_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc.nppsMalloc_32u(System.Int32)">nppsMalloc_32u(Int32)</h4>
+  <div class="markdown level1 summary"><p>32-bit unsigned signal allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppsMalloc_32u(int nSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSize</span></td>
+        <td><p>Number of unsigned ints in the new signal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>A pointer to the new signal. 0 (NULL-pointer) indicates
+that an error occurred during allocation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_nppsMalloc_64f_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc.nppsMalloc_64f*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_nppsMalloc_64f_System_Int32_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc.nppsMalloc_64f(System.Int32)">nppsMalloc_64f(Int32)</h4>
+  <div class="markdown level1 summary"><p>64-bit float (double) signal allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppsMalloc_64f(int nSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSize</span></td>
+        <td><p>Number of doubles in the new signal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>A pointer to the new signal. 0 (NULL-pointer) indicates
+that an error occurred during allocation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_nppsMalloc_64fc_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc.nppsMalloc_64fc*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_nppsMalloc_64fc_System_Int32_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc.nppsMalloc_64fc(System.Int32)">nppsMalloc_64fc(Int32)</h4>
+  <div class="markdown level1 summary"><p>64-bit complex complex signal allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppsMalloc_64fc(int nSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSize</span></td>
+        <td><p>Number of complex double valuess in the new signal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>A pointer to the new signal. 0 (NULL-pointer) indicates
+that an error occurred during allocation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_nppsMalloc_64s_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc.nppsMalloc_64s*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_nppsMalloc_64s_System_Int32_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc.nppsMalloc_64s(System.Int32)">nppsMalloc_64s(Int32)</h4>
+  <div class="markdown level1 summary"><p>64-bit long integer signal allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppsMalloc_64s(int nSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSize</span></td>
+        <td><p>Number of long ints in the new signal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>A pointer to the new signal. 0 (NULL-pointer) indicates
+that an error occurred during allocation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_nppsMalloc_64sc_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc.nppsMalloc_64sc*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_nppsMalloc_64sc_System_Int32_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc.nppsMalloc_64sc(System.Int32)">nppsMalloc_64sc(Int32)</h4>
+  <div class="markdown level1 summary"><p>64-bit complex long integer signal allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppsMalloc_64sc(int nSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSize</span></td>
+        <td><p>Number of complex long int values in the new signal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>A pointer to the new signal. 0 (NULL-pointer) indicates
+that an error occurred during allocation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_nppsMalloc_8s_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc.nppsMalloc_8s*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_nppsMalloc_8s_System_Int32_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc.nppsMalloc_8s(System.Int32)">nppsMalloc_8s(Int32)</h4>
+  <div class="markdown level1 summary"><p>8-bit signed signal allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppsMalloc_8s(int nSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSize</span></td>
+        <td><p>Number of (signed) chars in the new signal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>A pointer to the new signal. 0 (NULL-pointer) indicates
+that an error occurred during allocation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_nppsMalloc_8u_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc.nppsMalloc_8u*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc_nppsMalloc_8u_System_Int32_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc.nppsMalloc_8u(System.Int32)">nppsMalloc_8u(Int32)</h4>
+  <div class="markdown level1 summary"><p>8-bit unsigned signal allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppsMalloc_8u(int nSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSize</span></td>
+        <td><p>Number of unsigned chars in the new signal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>A pointer to the new signal. 0 (NULL-pointer) indicates
+that an error occurred during allocation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPNativeMethods_NPPs_MemAlloc.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPNativeMethods.NPPs.MemAlloc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPNativeMethods.cs/#L84982" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

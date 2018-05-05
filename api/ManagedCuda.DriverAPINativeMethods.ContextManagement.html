@@ -1,0 +1,1515 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DriverAPINativeMethods.ContextManagement
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DriverAPINativeMethods.ContextManagement
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement">
+  
+  
+  <h1 id="ManagedCuda_DriverAPINativeMethods_ContextManagement" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement" class="text-break">Class DriverAPINativeMethods.ContextManagement
+  </h1>
+  <div class="markdown level0 summary"><p>Combines all API calls for context management</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DriverAPINativeMethods.ContextManagement</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.html">ManagedCuda</a></h6>
+  <h6><strong>Assembly</strong>: ManagedCuda.dll</h6>
+  <h5 id="ManagedCuda_DriverAPINativeMethods_ContextManagement_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ContextManagement</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxAttach_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxAttach*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxAttach_ManagedCuda_BasicTypes_CUcontext__ManagedCuda_BasicTypes_CUCtxAttachFlags_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxAttach(ManagedCuda.BasicTypes.CUcontext@,ManagedCuda.BasicTypes.CUCtxAttachFlags)">cuCtxAttach(ref CUcontext, CUCtxAttachFlags)</h4>
+  <div class="markdown level1 summary"><p>Increments the usage count of the context and passes back a context handle in <code>pctx</code> that must be passed to <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxDetach_ManagedCuda_BasicTypes_CUcontext_">cuCtxDetach(CUcontext)</a>
+when the application is done with the context. <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxAttach_ManagedCuda_BasicTypes_CUcontext__ManagedCuda_BasicTypes_CUCtxAttachFlags_">cuCtxAttach(ref CUcontext, CUCtxAttachFlags)</a> fails if there is no context current to the
+thread. Currently, the <code>flags</code> parameter must be <a class="xref" href="ManagedCuda.BasicTypes.CUCtxAttachFlags.html#ManagedCuda_BasicTypes_CUCtxAttachFlags_None">None</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Don't use this CUDA API call with CUDA version &gt;= 4.0.&quot;)]
+public static CUResult cuCtxAttach(ref CUcontext pctx, CUCtxAttachFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUcontext.html">CUcontext</a></td>
+        <td><span class="parametername">pctx</span></td>
+        <td><p>Returned context handle of the current context</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUCtxAttachFlags.html">CUCtxAttachFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Context attach flags (must be <a class="xref" href="ManagedCuda.BasicTypes.CUCtxAttachFlags.html#ManagedCuda_BasicTypes_CUCtxAttachFlags_None">None</a>)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxCreate_v2_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxCreate_v2*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxCreate_v2_ManagedCuda_BasicTypes_CUcontext__ManagedCuda_BasicTypes_CUCtxFlags_ManagedCuda_BasicTypes_CUdevice_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxCreate_v2(ManagedCuda.BasicTypes.CUcontext@,ManagedCuda.BasicTypes.CUCtxFlags,ManagedCuda.BasicTypes.CUdevice)">cuCtxCreate_v2(ref CUcontext, CUCtxFlags, CUdevice)</h4>
+  <div class="markdown level1 summary"><p>Creates a new CUDA context and associates it with the calling thread. The <code>flags</code> parameter is described in <a class="xref" href="ManagedCuda.BasicTypes.CUCtxFlags.html">CUCtxFlags</a>. The
+context is created with a usage count of 1 and the caller of <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxCreate_v2_ManagedCuda_BasicTypes_CUcontext__ManagedCuda_BasicTypes_CUCtxFlags_ManagedCuda_BasicTypes_CUdevice_">cuCtxCreate_v2(ref CUcontext, CUCtxFlags, CUdevice)</a> must call <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxDestroy_ManagedCuda_BasicTypes_CUcontext_">cuCtxDestroy(CUcontext)</a> or <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxDetach_ManagedCuda_BasicTypes_CUcontext_">cuCtxDetach(CUcontext)</a>
+when done using the context. If a context is already current to the thread, it is supplanted by the newly created context
+and may be restored by a subsequent call to <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxPopCurrent_ManagedCuda_BasicTypes_CUcontext__">cuCtxPopCurrent(ref CUcontext)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuCtxCreate_v2(ref CUcontext pctx, CUCtxFlags flags, CUdevice dev)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUcontext.html">CUcontext</a></td>
+        <td><span class="parametername">pctx</span></td>
+        <td><p>Returned context handle of the new context</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUCtxFlags.html">CUCtxFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Context creation flags. See <a class="xref" href="ManagedCuda.BasicTypes.CUCtxFlags.html">CUCtxFlags</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdevice.html">CUdevice</a></td>
+        <td><span class="parametername">dev</span></td>
+        <td><p>Device to create context on</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidDevice">ErrorInvalidDevice</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorOutOfMemory">ErrorOutOfMemory</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorUnknown">ErrorUnknown</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxDestroy_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxDestroy*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxDestroy_ManagedCuda_BasicTypes_CUcontext_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxDestroy(ManagedCuda.BasicTypes.CUcontext)">cuCtxDestroy(CUcontext)</h4>
+  <div class="markdown level1 summary"><p>Destroys the CUDA context specified by <code>ctx</code>. If the context usage count is not equal to 1, or the context is current
+to any CPU thread other than the current one, this function fails. Floating contexts (detached from a CPU thread via
+<a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxPopCurrent_ManagedCuda_BasicTypes_CUcontext__">cuCtxPopCurrent(ref CUcontext)</a>) may be destroyed by this function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Don't use this CUDA API call with CUDA version &gt;= 4.0.&quot;)]
+public static CUResult cuCtxDestroy(CUcontext ctx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUcontext.html">CUcontext</a></td>
+        <td><span class="parametername">ctx</span></td>
+        <td><p>Context to destroy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxDestroy_v2_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxDestroy_v2*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxDestroy_v2_ManagedCuda_BasicTypes_CUcontext_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxDestroy_v2(ManagedCuda.BasicTypes.CUcontext)">cuCtxDestroy_v2(CUcontext)</h4>
+  <div class="markdown level1 summary"><p>Destroys the CUDA context specified by <code>ctx</code>. The context <code>ctx</code> will be destroyed regardless of how many threads it is current to.
+It is the responsibility of the calling function to ensure that no API call is issued to <code>ctx</code> while cuCtxDestroy_v2() is executing.
+If <code>ctx</code> is current to the calling thread then <code>ctx</code> will also be
+popped from the current thread's context stack (as though cuCtxPopCurrent()
+were called).  If <code>ctx</code> is current to other threads, then <code>ctx</code> will
+remain current to those threads, and attempting to access <code>ctx</code> from
+those threads will result in the error <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorContextIsDestroyed">ErrorContextIsDestroyed</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuCtxDestroy_v2(CUcontext ctx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUcontext.html">CUcontext</a></td>
+        <td><span class="parametername">ctx</span></td>
+        <td><p>Context to destroy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>,  <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorContextIsDestroyed">ErrorContextIsDestroyed</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxDetach_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxDetach*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxDetach_ManagedCuda_BasicTypes_CUcontext_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxDetach(ManagedCuda.BasicTypes.CUcontext)">cuCtxDetach(CUcontext)</h4>
+  <div class="markdown level1 summary"><p>Decrements the usage count of the context <code>ctx</code>, and destroys the context if the usage count goes to 0. The context
+must be a handle that was passed back by <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxCreate_v2_ManagedCuda_BasicTypes_CUcontext__ManagedCuda_BasicTypes_CUCtxFlags_ManagedCuda_BasicTypes_CUdevice_">cuCtxCreate_v2(ref CUcontext, CUCtxFlags, CUdevice)</a> or <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxAttach_ManagedCuda_BasicTypes_CUcontext__ManagedCuda_BasicTypes_CUCtxAttachFlags_">cuCtxAttach(ref CUcontext, CUCtxAttachFlags)</a>, and must be current to the calling thread.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Don't use this CUDA API call with CUDA version &gt;= 4.0.&quot;)]
+public static CUResult cuCtxDetach(CUcontext ctx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUcontext.html">CUcontext</a></td>
+        <td><span class="parametername">ctx</span></td>
+        <td><p>Context to destroy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxGetApiVersion_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxGetApiVersion*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxGetApiVersion_ManagedCuda_BasicTypes_CUcontext_System_UInt32__" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxGetApiVersion(ManagedCuda.BasicTypes.CUcontext,System.UInt32@)">cuCtxGetApiVersion(CUcontext, ref UInt32)</h4>
+  <div class="markdown level1 summary"><p>Returns the API version used to create <code>ctx</code> in <code>version</code>. If <code>ctx</code>
+is NULL, returns the API version used to create the currently bound
+context.<p>
+This wil return the API version used to create a context (for example,
+3010 or 3020), which library developers can use to direct callers to a
+specific API version. Note that this API version may not be the same as
+returned by <a class="xref" href="ManagedCuda.DriverAPINativeMethods.html#ManagedCuda_DriverAPINativeMethods_cuDriverGetVersion_System_Int32__">cuDriverGetVersion(ref Int32)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuCtxGetApiVersion(CUcontext ctx, ref uint version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUcontext.html">CUcontext</a></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">version</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorUnknown">ErrorUnknown</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxGetCacheConfig_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxGetCacheConfig*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxGetCacheConfig_ManagedCuda_BasicTypes_CUFuncCache__" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxGetCacheConfig(ManagedCuda.BasicTypes.CUFuncCache@)">cuCtxGetCacheConfig(ref CUFuncCache)</h4>
+  <div class="markdown level1 summary"><p>On devices where the L1 cache and shared memory use the same hardware
+resources, this function returns through <code>pconfig</code> the preferred cache configuration
+for the current context. This is only a preference. The driver will use
+the requested configuration if possible, but it is free to choose a different
+configuration if required to execute functions.<p>
+This will return a <code>pconfig</code> of <a class="xref" href="ManagedCuda.BasicTypes.CUFuncCache.html#ManagedCuda_BasicTypes_CUFuncCache_PreferNone">PreferNone</a> on devices
+where the size of the L1 cache and shared memory are fixed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuCtxGetCacheConfig(ref CUFuncCache pconfig)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUFuncCache.html">CUFuncCache</a></td>
+        <td><span class="parametername">pconfig</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxGetCurrent_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxGetCurrent*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxGetCurrent_ManagedCuda_BasicTypes_CUcontext__" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxGetCurrent(ManagedCuda.BasicTypes.CUcontext@)">cuCtxGetCurrent(ref CUcontext)</h4>
+  <div class="markdown level1 summary"><p>Returns in <code>ctx</code> the CUDA context bound to the calling CPU thread.
+If no context is bound to the calling CPU thread then <code>ctx</code> is
+set to NULL and <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a> is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuCtxGetCurrent(ref CUcontext pctx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUcontext.html">CUcontext</a></td>
+        <td><span class="parametername">pctx</span></td>
+        <td><p>Returned context handle</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxGetDevice_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxGetDevice*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxGetDevice_ManagedCuda_BasicTypes_CUdevice__" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxGetDevice(ManagedCuda.BasicTypes.CUdevice@)">cuCtxGetDevice(ref CUdevice)</h4>
+  <div class="markdown level1 summary"><p>Returns in <code>device</code> the ordinal of the current context’s device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuCtxGetDevice(ref CUdevice device)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdevice.html">CUdevice</a></td>
+        <td><span class="parametername">device</span></td>
+        <td><p>Returned device ID for the current context</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxGetFlags_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxGetFlags*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxGetFlags_ManagedCuda_BasicTypes_CUCtxFlags__" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxGetFlags(ManagedCuda.BasicTypes.CUCtxFlags@)">cuCtxGetFlags(ref CUCtxFlags)</h4>
+  <div class="markdown level1 summary"><p>Returns the flags for the current context<p>
+Returns in \p *flags the flags of the current context. See ::cuCtxCreate for flag values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuCtxGetFlags(ref CUCtxFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUCtxFlags.html">CUCtxFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Pointer to store flags of current context</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxGetSharedMemConfig_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxGetSharedMemConfig*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxGetSharedMemConfig_ManagedCuda_BasicTypes_CUsharedconfig__" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxGetSharedMemConfig(ManagedCuda.BasicTypes.CUsharedconfig@)">cuCtxGetSharedMemConfig(ref CUsharedconfig)</h4>
+  <div class="markdown level1 summary"><p>Returns the current shared memory configuration for the current context.</p>
+<p>
+This function will return in \p pConfig the current size of shared memory banks
+in the current context. On devices with configurable shared memory banks, 
+<a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxSetSharedMemConfig_ManagedCuda_BasicTypes_CUsharedconfig_">cuCtxSetSharedMemConfig(CUsharedconfig)</a> can be used to change this setting, so that all 
+subsequent kernel launches will by default use the new bank size. When 
+<a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxGetSharedMemConfig_ManagedCuda_BasicTypes_CUsharedconfig__">cuCtxGetSharedMemConfig(ref CUsharedconfig)</a> is called on devices without configurable shared 
+memory, it will return the fixed bank size of the hardware.
+<p>
+ The returned bank configurations can be either:
+ - <a class="xref" href="ManagedCuda.BasicTypes.CUsharedconfig.html#ManagedCuda_BasicTypes_CUsharedconfig_FourByteBankSize">FourByteBankSize</a>: set shared memory bank width to
+   be natively four bytes.
+ - <a class="xref" href="ManagedCuda.BasicTypes.CUsharedconfig.html#ManagedCuda_BasicTypes_CUsharedconfig_EightByteBankSize">EightByteBankSize</a>: set shared memory bank width to
+   be natively eight bytes.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuCtxGetSharedMemConfig(ref CUsharedconfig pConfig)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUsharedconfig.html">CUsharedconfig</a></td>
+        <td><span class="parametername">pConfig</span></td>
+        <td><p>returned shared memory configuration</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxGetStreamPriorityRange_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxGetStreamPriorityRange*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxGetStreamPriorityRange_System_Int32__System_Int32__" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxGetStreamPriorityRange(System.Int32@,System.Int32@)">cuCtxGetStreamPriorityRange(ref Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns numerical values that correspond to the least and greatest stream priorities.<p>
+Returns in <code>leastPriority</code> and <code>greatestPriority</code> the numerical values that correspond
+to the least and greatest stream priorities respectively. Stream priorities
+follow a convention where lower numbers imply greater priorities. The range of
+meaningful stream priorities is given by [<code>greatestPriority</code>, <code>leastPriority</code>].
+If the user attempts to create a stream with a priority value that is
+outside the meaningful range as specified by this API, the priority is
+automatically clamped down or up to either <code>leastPriority</code> or <code>greatestPriority</code>
+respectively. See ::cuStreamCreateWithPriority for details on creating a
+priority stream.
+A NULL may be passed in for <code>leastPriority</code> or <code>greatestPriority</code> if the value
+is not desired.
+This function will return '0' in both <code>leastPriority</code> and <code>greatestPriority</code> if
+the current context's device does not support stream priorities
+(see ::cuDeviceGetAttribute).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuCtxGetStreamPriorityRange(ref int leastPriority, ref int greatestPriority)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">leastPriority</span></td>
+        <td><p>Pointer to an int in which the numerical value for least
+stream priority is returned</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">greatestPriority</span></td>
+        <td><p>Pointer to an int in which the numerical value for greatest stream priority is returned</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxPopCurrent_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxPopCurrent*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxPopCurrent_ManagedCuda_BasicTypes_CUcontext__" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxPopCurrent(ManagedCuda.BasicTypes.CUcontext@)">cuCtxPopCurrent(ref CUcontext)</h4>
+  <div class="markdown level1 summary"><p>Pops the current CUDA context from the CPU thread. The CUDA context must have a usage count of 1. CUDA contexts
+have a usage count of 1 upon creation; the usage count may be incremented with <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxAttach_ManagedCuda_BasicTypes_CUcontext__ManagedCuda_BasicTypes_CUCtxAttachFlags_">cuCtxAttach(ref CUcontext, CUCtxAttachFlags)</a> and decremented
+with <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxDetach_ManagedCuda_BasicTypes_CUcontext_">cuCtxDetach(CUcontext)</a>.<p>
+If successful, <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxPopCurrent_ManagedCuda_BasicTypes_CUcontext__">cuCtxPopCurrent(ref CUcontext)</a> passes back the old context handle in <code>pctx</code>. That context may then be made current
+to a different CPU thread by calling <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxPushCurrent_ManagedCuda_BasicTypes_CUcontext_">cuCtxPushCurrent(CUcontext)</a>.<p>
+Floating contexts may be destroyed by calling <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxDestroy_ManagedCuda_BasicTypes_CUcontext_">cuCtxDestroy(CUcontext)</a>.<p>
+If a context was current to the CPU thread before <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxCreate_v2_ManagedCuda_BasicTypes_CUcontext__ManagedCuda_BasicTypes_CUCtxFlags_ManagedCuda_BasicTypes_CUdevice_">cuCtxCreate_v2(ref CUcontext, CUCtxFlags, CUdevice)</a> or <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxPushCurrent_ManagedCuda_BasicTypes_CUcontext_">cuCtxPushCurrent(CUcontext)</a> was called, this function makes
+that context current to the CPU thread again.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Don't use this CUDA API call with CUDA version &gt;= 4.0.&quot;)]
+public static CUResult cuCtxPopCurrent(ref CUcontext pctx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUcontext.html">CUcontext</a></td>
+        <td><span class="parametername">pctx</span></td>
+        <td><p>Returned new context handle</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxPopCurrent_v2_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxPopCurrent_v2*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxPopCurrent_v2_ManagedCuda_BasicTypes_CUcontext__" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxPopCurrent_v2(ManagedCuda.BasicTypes.CUcontext@)">cuCtxPopCurrent_v2(ref CUcontext)</h4>
+  <div class="markdown level1 summary"><p>Pops the current CUDA context from the CPU thread. The CUDA context must have a usage count of 1. CUDA contexts
+have a usage count of 1 upon creation; the usage count may be incremented with <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxAttach_ManagedCuda_BasicTypes_CUcontext__ManagedCuda_BasicTypes_CUCtxAttachFlags_">cuCtxAttach(ref CUcontext, CUCtxAttachFlags)</a> and decremented
+with <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxDetach_ManagedCuda_BasicTypes_CUcontext_">cuCtxDetach(CUcontext)</a>.<p>
+If successful, <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxPopCurrent_ManagedCuda_BasicTypes_CUcontext__">cuCtxPopCurrent(ref CUcontext)</a> passes back the old context handle in <code>pctx</code>. That context may then be made current
+to a different CPU thread by calling <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxPushCurrent_ManagedCuda_BasicTypes_CUcontext_">cuCtxPushCurrent(CUcontext)</a>.<p>
+Floating contexts may be destroyed by calling <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxDestroy_ManagedCuda_BasicTypes_CUcontext_">cuCtxDestroy(CUcontext)</a>.<p>
+If a context was current to the CPU thread before <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxCreate_v2_ManagedCuda_BasicTypes_CUcontext__ManagedCuda_BasicTypes_CUCtxFlags_ManagedCuda_BasicTypes_CUdevice_">cuCtxCreate_v2(ref CUcontext, CUCtxFlags, CUdevice)</a> or <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxPushCurrent_ManagedCuda_BasicTypes_CUcontext_">cuCtxPushCurrent(CUcontext)</a> was called, this function makes
+that context current to the CPU thread again.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuCtxPopCurrent_v2(ref CUcontext pctx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUcontext.html">CUcontext</a></td>
+        <td><span class="parametername">pctx</span></td>
+        <td><p>Returned new context handle</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxPushCurrent_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxPushCurrent*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxPushCurrent_ManagedCuda_BasicTypes_CUcontext_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxPushCurrent(ManagedCuda.BasicTypes.CUcontext)">cuCtxPushCurrent(CUcontext)</h4>
+  <div class="markdown level1 summary"><p>Pushes the given context <code>ctx</code> onto the CPU thread’s stack of current contexts. The specified context becomes the
+CPU thread’s current context, so all CUDA functions that operate on the current context are affected.<p>
+The previous current context may be made current again by calling <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxDestroy_ManagedCuda_BasicTypes_CUcontext_">cuCtxDestroy(CUcontext)</a> or <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxPopCurrent_ManagedCuda_BasicTypes_CUcontext__">cuCtxPopCurrent(ref CUcontext)</a>.<p>
+The context must be &quot;floating,&quot; i.e. not attached to any thread. Contexts are made to float by calling <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxPopCurrent_ManagedCuda_BasicTypes_CUcontext__">cuCtxPopCurrent(ref CUcontext)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Don't use this CUDA API call with CUDA version &gt;= 4.0.&quot;)]
+public static CUResult cuCtxPushCurrent(CUcontext ctx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUcontext.html">CUcontext</a></td>
+        <td><span class="parametername">ctx</span></td>
+        <td><p>Floating context to attach</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxPushCurrent_v2_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxPushCurrent_v2*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxPushCurrent_v2_ManagedCuda_BasicTypes_CUcontext_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxPushCurrent_v2(ManagedCuda.BasicTypes.CUcontext)">cuCtxPushCurrent_v2(CUcontext)</h4>
+  <div class="markdown level1 summary"><p>Pushes the given context <code>ctx</code> onto the CPU thread’s stack of current contexts. The specified context becomes the
+CPU thread’s current context, so all CUDA functions that operate on the current context are affected.<p>
+The previous current context may be made current again by calling <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxDestroy_ManagedCuda_BasicTypes_CUcontext_">cuCtxDestroy(CUcontext)</a> or <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxPopCurrent_ManagedCuda_BasicTypes_CUcontext__">cuCtxPopCurrent(ref CUcontext)</a>.<p>
+The context must be &quot;floating,&quot; i.e. not attached to any thread. Contexts are made to float by calling <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxPopCurrent_ManagedCuda_BasicTypes_CUcontext__">cuCtxPopCurrent(ref CUcontext)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuCtxPushCurrent_v2(CUcontext ctx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUcontext.html">CUcontext</a></td>
+        <td><span class="parametername">ctx</span></td>
+        <td><p>Floating context to attach</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxSetCacheConfig_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxSetCacheConfig*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxSetCacheConfig_ManagedCuda_BasicTypes_CUFuncCache_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxSetCacheConfig(ManagedCuda.BasicTypes.CUFuncCache)">cuCtxSetCacheConfig(CUFuncCache)</h4>
+  <div class="markdown level1 summary"><p>On devices where the L1 cache and shared memory use the same hardware
+resources, this sets through <code>config</code> the preferred cache configuration for
+the current context. This is only a preference. The driver will use
+the requested configuration if possible, but it is free to choose a different
+configuration if required to execute the function. Any function preference
+set via <a class="xref" href="ManagedCuda.DriverAPINativeMethods.FunctionManagement.html#ManagedCuda_DriverAPINativeMethods_FunctionManagement_cuFuncSetCacheConfig_ManagedCuda_BasicTypes_CUfunction_ManagedCuda_BasicTypes_CUFuncCache_">cuFuncSetCacheConfig(CUfunction, CUFuncCache)</a> will be preferred over this context-wide
+setting. Setting the context-wide cache configuration to
+<a class="xref" href="ManagedCuda.BasicTypes.CUFuncCache.html#ManagedCuda_BasicTypes_CUFuncCache_PreferNone">PreferNone</a> will cause subsequent kernel launches to prefer
+to not change the cache configuration unless required to launch the kernel.<p>
+This setting does nothing on devices where the size of the L1 cache and
+shared memory are fixed.<p>
+Launching a kernel with a different preference than the most recent
+preference setting may insert a device-side synchronization point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuCtxSetCacheConfig(CUFuncCache config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUFuncCache.html">CUFuncCache</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxSetCurrent_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxSetCurrent*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxSetCurrent_ManagedCuda_BasicTypes_CUcontext_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxSetCurrent(ManagedCuda.BasicTypes.CUcontext)">cuCtxSetCurrent(CUcontext)</h4>
+  <div class="markdown level1 summary"><p>Binds the specified CUDA context to the calling CPU thread.
+If <code>ctx</code> is NULL then the CUDA context previously bound to the
+calling CPU thread is unbound and <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a> is returned.</p>
+<p>
+If there exists a CUDA context stack on the calling CPU thread, this
+will replace the top of that stack with <code>ctx</code>.  
+If <code>ctx</code> is NULL then this will be equivalent to popping the top
+of the calling CPU thread&apos;s CUDA context stack (or a no-op if the
+calling CPU thread&apos;s CUDA context stack is empty).
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuCtxSetCurrent(CUcontext ctx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUcontext.html">CUcontext</a></td>
+        <td><span class="parametername">ctx</span></td>
+        <td><p>Context to bind to the calling CPU thread</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxSetSharedMemConfig_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxSetSharedMemConfig*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxSetSharedMemConfig_ManagedCuda_BasicTypes_CUsharedconfig_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxSetSharedMemConfig(ManagedCuda.BasicTypes.CUsharedconfig)">cuCtxSetSharedMemConfig(CUsharedconfig)</h4>
+  <div class="markdown level1 summary"><p>Sets the shared memory configuration for the current context.<p>
+On devices with configurable shared memory banks, this function will set
+the context's shared memory bank size which is used for subsequent kernel
+launches. <p>
+Changed the shared memory configuration between launches may insert a device
+side synchronization point between those launches.<p>
+Changing the shared memory bank size will not increase shared memory usage
+or affect occupancy of kernels, but may have major effects on performance.
+Larger bank sizes will allow for greater potential bandwidth to shared memory,
+but will change what kinds of accesses to shared memory will result in bank
+conflicts.<p>
+This function will do nothing on devices with fixed shared memory bank size.</p>
+<p>
+The supported bank configurations are:
+- <a class="xref" href="ManagedCuda.BasicTypes.CUsharedconfig.html#ManagedCuda_BasicTypes_CUsharedconfig_DefaultBankSize">DefaultBankSize</a>: set bank width to the default initial
+  setting (currently, four bytes).
+- <a class="xref" href="ManagedCuda.BasicTypes.CUsharedconfig.html#ManagedCuda_BasicTypes_CUsharedconfig_FourByteBankSize">FourByteBankSize</a>: set shared memory bank width to
+  be natively four bytes.
+- <a class="xref" href="ManagedCuda.BasicTypes.CUsharedconfig.html#ManagedCuda_BasicTypes_CUsharedconfig_EightByteBankSize">EightByteBankSize</a>: set shared memory bank width to
+  be natively eight bytes.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuCtxSetSharedMemConfig(CUsharedconfig config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUsharedconfig.html">CUsharedconfig</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>requested shared memory configuration</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxSynchronize_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxSynchronize*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxSynchronize" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuCtxSynchronize">cuCtxSynchronize()</h4>
+  <div class="markdown level1 summary"><p>Blocks until the device has completed all preceding requested tasks. <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxSynchronize">cuCtxSynchronize()</a> returns an error if one of the
+preceding tasks failed. If the context was created with the <a class="xref" href="ManagedCuda.BasicTypes.CUCtxFlags.html#ManagedCuda_BasicTypes_CUCtxFlags_BlockingSync">BlockingSync</a> flag, the CPU thread will
+block until the GPU context has finished its work.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuCtxSynchronize()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuDevicePrimaryCtxGetState_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuDevicePrimaryCtxGetState*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuDevicePrimaryCtxGetState_ManagedCuda_BasicTypes_CUdevice_ManagedCuda_BasicTypes_CUCtxFlags__System_Int32__" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuDevicePrimaryCtxGetState(ManagedCuda.BasicTypes.CUdevice,ManagedCuda.BasicTypes.CUCtxFlags@,System.Int32@)">cuDevicePrimaryCtxGetState(CUdevice, ref CUCtxFlags, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Get the state of the primary context<p>
+Returns in \p *flags the flags for the primary context of \p dev, and in
+\p *active whether it is active.  See ::cuDevicePrimaryCtxSetFlags for flag
+values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuDevicePrimaryCtxGetState(CUdevice dev, ref CUCtxFlags flags, ref int active)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdevice.html">CUdevice</a></td>
+        <td><span class="parametername">dev</span></td>
+        <td><p>Device to get primary context flags for</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUCtxFlags.html">CUCtxFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Pointer to store flags</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">active</span></td>
+        <td><p>Pointer to store context state; 0 = inactive, 1 = active</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuDevicePrimaryCtxRelease_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuDevicePrimaryCtxRelease*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuDevicePrimaryCtxRelease_ManagedCuda_BasicTypes_CUdevice_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuDevicePrimaryCtxRelease(ManagedCuda.BasicTypes.CUdevice)">cuDevicePrimaryCtxRelease(CUdevice)</h4>
+  <div class="markdown level1 summary"><p>Release the primary context on the GPU<p>
+Releases the primary context interop on the device by decreasing the usage
+count by 1. If the usage drops to 0 the primary context of device \p dev
+will be destroyed regardless of how many threads it is current to.</p>
+<p>
+Please note that unlike ::cuCtxDestroy() this method does not pop the context
+from stack in any circumstances.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuDevicePrimaryCtxRelease(CUdevice dev)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdevice.html">CUdevice</a></td>
+        <td><span class="parametername">dev</span></td>
+        <td><p>Device which primary context is released</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuDevicePrimaryCtxReset_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuDevicePrimaryCtxReset*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuDevicePrimaryCtxReset_ManagedCuda_BasicTypes_CUdevice_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuDevicePrimaryCtxReset(ManagedCuda.BasicTypes.CUdevice)">cuDevicePrimaryCtxReset(CUdevice)</h4>
+  <div class="markdown level1 summary"><p>Destroy all allocations and reset all state on the primary context</p>
+<p>Explicitly destroys and cleans up all resources associated with the current
+device in the current process.</p>
+<p>Note that it is responsibility of the calling function to ensure that no
+other module in the process is using the device any more. For that reason
+it is recommended to use ::cuDevicePrimaryCtxRelease() in most cases.
+However it is safe for other modules to call ::cuDevicePrimaryCtxRelease()
+even after resetting the device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuDevicePrimaryCtxReset(CUdevice dev)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdevice.html">CUdevice</a></td>
+        <td><span class="parametername">dev</span></td>
+        <td><p>Device for which primary context is destroyed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuDevicePrimaryCtxRetain_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuDevicePrimaryCtxRetain*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuDevicePrimaryCtxRetain_ManagedCuda_BasicTypes_CUcontext__ManagedCuda_BasicTypes_CUdevice_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuDevicePrimaryCtxRetain(ManagedCuda.BasicTypes.CUcontext@,ManagedCuda.BasicTypes.CUdevice)">cuDevicePrimaryCtxRetain(ref CUcontext, CUdevice)</h4>
+  <div class="markdown level1 summary"><p>Retain the primary context on the GPU.<p>
+Retains the primary context on the device, creating it if necessary,
+increasing its usage count. The caller must call
+::cuDevicePrimaryCtxRelease() when done using the context.
+Unlike ::cuCtxCreate() the newly created context is not pushed onto the stack.</p>
+<p>
+Context creation will fail with ::CUDA_ERROR_UNKNOWN if the compute mode of
+the device is ::CU_COMPUTEMODE_PROHIBITED. Similarly, context creation will
+also fail with ::CUDA_ERROR_UNKNOWN if the compute mode for the device is
+set to ::CU_COMPUTEMODE_EXCLUSIVE and there is already an active, non-primary,
+context on the device. The function ::cuDeviceGetAttribute() can be used with
+::CU_DEVICE_ATTRIBUTE_COMPUTE_MODE to determine the compute mode of the
+device. The <em>nvidia-smi</em> tool can be used to set the compute mode for
+devices. Documentation for <em>nvidia-smi</em> can be obtained by passing a
+-h option to it.
+<p> 
+Please note that the primary context always supports pinned allocations. Other
+flags can be specified by ::cuDevicePrimaryCtxSetFlags().
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuDevicePrimaryCtxRetain(ref CUcontext pctx, CUdevice dev)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUcontext.html">CUcontext</a></td>
+        <td><span class="parametername">pctx</span></td>
+        <td><p>Returned context handle of the new context</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdevice.html">CUdevice</a></td>
+        <td><span class="parametername">dev</span></td>
+        <td><p>Device for which primary context is requested</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuDevicePrimaryCtxSetFlags_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuDevicePrimaryCtxSetFlags*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_ContextManagement_cuDevicePrimaryCtxSetFlags_ManagedCuda_BasicTypes_CUdevice_ManagedCuda_BasicTypes_CUCtxFlags_" data-uid="ManagedCuda.DriverAPINativeMethods.ContextManagement.cuDevicePrimaryCtxSetFlags(ManagedCuda.BasicTypes.CUdevice,ManagedCuda.BasicTypes.CUCtxFlags)">cuDevicePrimaryCtxSetFlags(CUdevice, CUCtxFlags)</h4>
+  <div class="markdown level1 summary"><p>Set flags for the primary context<p>
+Sets the flags for the primary context on the device overwriting perviously
+set ones. If the primary context is already created
+::CUDA_ERROR_PRIMARY_CONTEXT_ACTIVE is returned.</p>
+<p>
+The three LSBs of the \p flags parameter can be used to control how the OS
+thread, which owns the CUDA context at the time of an API call, interacts
+with the OS scheduler when waiting for results from the GPU. Only one of
+the scheduling flags can be set when creating a context.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuDevicePrimaryCtxSetFlags(CUdevice dev, CUCtxFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdevice.html">CUdevice</a></td>
+        <td><span class="parametername">dev</span></td>
+        <td><p>Device for which the primary context flags are set</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUCtxFlags.html">CUCtxFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>New flags for the device</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_DriverAPINativeMethods_ContextManagement.md&amp;value=---%0Auid%3A%20ManagedCuda.DriverAPINativeMethods.ContextManagement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/DriverAPI.cs/#L318" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

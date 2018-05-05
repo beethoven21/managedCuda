@@ -1,0 +1,847 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class NPPNativeMethods.NPPi.FilterBilateralGaussBorder
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class NPPNativeMethods.NPPi.FilterBilateralGaussBorder
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterBilateralGaussBorder">
+  
+  
+  <h1 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterBilateralGaussBorder" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterBilateralGaussBorder" class="text-break">Class NPPNativeMethods.NPPi.FilterBilateralGaussBorder
+  </h1>
+  <div class="markdown level0 summary"><p>Filters the image using a bilateral Gaussian filter kernel with border control:<p>
+If any portion of the mask overlaps the source image boundary the requested border type operation is applied to all mask pixels
+which fall outside of the source image.<p>
+For this filter the anchor point is always the central element of the kernel. <p>
+Coefficients of the bilateral filter kernel depend on their position in the kernel and
+on the value of some source image pixels overlayed by the filter kernel. <p>
+Only source image pixels with both coordinates divisible by nDistanceBetweenSrcPixels are used in calculations.
+The value of an output pixel \f$d\f$ is <p>
+\f[d = \frac{\sum_{h=-nRadius}^{nRadius}\sum_{w=-nRadius}^{nRadius}W1(h,w)\cdot W2(h,w)\cdot S(h,w)}{\sum_{h=-nRadius}^{nRadius}\sum_{w=-nRadius}^{nRadius}W1(h,w)\cdot W2(h,w)}\f]
+where h and w are the corresponding kernel width and height indexes,
+S(h,w) is the value of the source image pixel overlayed by filter kernel position (h,w),
+W1(h,w) is func(nValSquareSigma, (S(h,w) - S(0,0))) where S(0,0) is the value of the source image pixel at the center of the kernel,
+W2(h,w) is func(nPosSquareSigma, sqrt(h<em>h+w</em>w)), and func is the following formula
+\f[func(S,I) = exp(-\frac{I^2}{2.0F\cdot S^2})\f]<p>
+Currently only the NPP_BORDER_REPLICATE border type operations are supported.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">NPPNativeMethods.NPPi.FilterBilateralGaussBorder</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.NPP.html">ManagedCuda.NPP</a></h6>
+  <h6><strong>Assembly</strong>: NPP.dll</h6>
+  <h5 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterBilateralGaussBorder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class FilterBilateralGaussBorder</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterBilateralGaussBorder_nppiFilterBilateralGaussBorder_16u_C1R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterBilateralGaussBorder.nppiFilterBilateralGaussBorder_16u_C1R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterBilateralGaussBorder_nppiFilterBilateralGaussBorder_16u_C1R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiPoint_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_System_Int32_System_Int32_System_Single_System_Single_ManagedCuda_NPP_NppiBorderType_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterBilateralGaussBorder.nppiFilterBilateralGaussBorder_16u_C1R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiPoint,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,System.Int32,System.Int32,System.Single,System.Single,ManagedCuda.NPP.NppiBorderType)">nppiFilterBilateralGaussBorder_16u_C1R(CUdeviceptr, Int32, NppiSize, NppiPoint, CUdeviceptr, Int32, NppiSize, Int32, Int32, Single, Single, NppiBorderType)</h4>
+  <div class="markdown level1 summary"><p>Single channel 16-bit unsigned bilateral Gauss filter with border control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiFilterBilateralGaussBorder_16u_C1R(CUdeviceptr pSrc, int nSrcStep, NppiSize oSrcSize, NppiPoint oSrcOffset, CUdeviceptr pDst, int nDstStep, NppiSize oSizeROI, int nRadius, int nStepBetweenSrcPixels, float nValSquareSigma, float nPosSquareSigma, NppiBorderType eBorderType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSrcSize</span></td>
+        <td><p>Source image width and height in pixels relative to pSrc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a></td>
+        <td><span class="parametername">oSrcOffset</span></td>
+        <td><p>The pixel offset that pSrc points to relative to the origin of the source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nDstStep</span></td>
+        <td><p>Destination-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nRadius</span></td>
+        <td><p>The radius of the round filter kernel to be used.  A radius of 1 indicates a filter kernel size of 3 by 3, 2 indicates 5 by 5, etc. Radius values from 1 to 32 are supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nStepBetweenSrcPixels</span></td>
+        <td><p>The step size between adjacent source image pixels processed by the filter kernel, most commonly 1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">nValSquareSigma</span></td>
+        <td><p>The square of the sigma for the relative intensity distance between a source image pixel in the filter kernel and the source image pixel at the center of the filter kernel.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">nPosSquareSigma</span></td>
+        <td><p>The square of the sigma for the relative geometric distance between a source image pixel in the filter kernel and the source image pixel at the center of the filter kernel.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiBorderType.html">NppiBorderType</a></td>
+        <td><span class="parametername">eBorderType</span></td>
+        <td><p>The border type operation to be applied at source image border boundaries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NotEvenStepError">NotEvenStepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterBilateralGaussBorder_nppiFilterBilateralGaussBorder_16u_C3R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterBilateralGaussBorder.nppiFilterBilateralGaussBorder_16u_C3R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterBilateralGaussBorder_nppiFilterBilateralGaussBorder_16u_C3R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiPoint_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_System_Int32_System_Int32_System_Single_System_Single_ManagedCuda_NPP_NppiBorderType_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterBilateralGaussBorder.nppiFilterBilateralGaussBorder_16u_C3R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiPoint,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,System.Int32,System.Int32,System.Single,System.Single,ManagedCuda.NPP.NppiBorderType)">nppiFilterBilateralGaussBorder_16u_C3R(CUdeviceptr, Int32, NppiSize, NppiPoint, CUdeviceptr, Int32, NppiSize, Int32, Int32, Single, Single, NppiBorderType)</h4>
+  <div class="markdown level1 summary"><p>Three channel 16-bit unsigned bilateral Gauss filter with border control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiFilterBilateralGaussBorder_16u_C3R(CUdeviceptr pSrc, int nSrcStep, NppiSize oSrcSize, NppiPoint oSrcOffset, CUdeviceptr pDst, int nDstStep, NppiSize oSizeROI, int nRadius, int nStepBetweenSrcPixels, float nValSquareSigma, float nPosSquareSigma, NppiBorderType eBorderType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSrcSize</span></td>
+        <td><p>Source image width and height in pixels relative to pSrc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a></td>
+        <td><span class="parametername">oSrcOffset</span></td>
+        <td><p>The pixel offset that pSrc points to relative to the origin of the source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nDstStep</span></td>
+        <td><p>Destination-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nRadius</span></td>
+        <td><p>The radius of the round filter kernel to be used.  A radius of 1 indicates a filter kernel size of 3 by 3, 2 indicates 5 by 5, etc. Radius values from 1 to 32 are supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nStepBetweenSrcPixels</span></td>
+        <td><p>The step size between adjacent source image pixels processed by the filter kernel, most commonly 1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">nValSquareSigma</span></td>
+        <td><p>The square of the sigma for the relative intensity distance between a source image pixel in the filter kernel and the source image pixel at the center of the filter kernel.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">nPosSquareSigma</span></td>
+        <td><p>The square of the sigma for the relative geometric distance between a source image pixel in the filter kernel and the source image pixel at the center of the filter kernel.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiBorderType.html">NppiBorderType</a></td>
+        <td><span class="parametername">eBorderType</span></td>
+        <td><p>The border type operation to be applied at source image border boundaries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NotEvenStepError">NotEvenStepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterBilateralGaussBorder_nppiFilterBilateralGaussBorder_32f_C1R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterBilateralGaussBorder.nppiFilterBilateralGaussBorder_32f_C1R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterBilateralGaussBorder_nppiFilterBilateralGaussBorder_32f_C1R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiPoint_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_System_Int32_System_Int32_System_Single_System_Single_ManagedCuda_NPP_NppiBorderType_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterBilateralGaussBorder.nppiFilterBilateralGaussBorder_32f_C1R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiPoint,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,System.Int32,System.Int32,System.Single,System.Single,ManagedCuda.NPP.NppiBorderType)">nppiFilterBilateralGaussBorder_32f_C1R(CUdeviceptr, Int32, NppiSize, NppiPoint, CUdeviceptr, Int32, NppiSize, Int32, Int32, Single, Single, NppiBorderType)</h4>
+  <div class="markdown level1 summary"><p>One channel 32-bit floating-point bilateral Gauss filter with border control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiFilterBilateralGaussBorder_32f_C1R(CUdeviceptr pSrc, int nSrcStep, NppiSize oSrcSize, NppiPoint oSrcOffset, CUdeviceptr pDst, int nDstStep, NppiSize oSizeROI, int nRadius, int nStepBetweenSrcPixels, float nValSquareSigma, float nPosSquareSigma, NppiBorderType eBorderType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSrcSize</span></td>
+        <td><p>Source image width and height in pixels relative to pSrc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a></td>
+        <td><span class="parametername">oSrcOffset</span></td>
+        <td><p>The pixel offset that pSrc points to relative to the origin of the source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nDstStep</span></td>
+        <td><p>Destination-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nRadius</span></td>
+        <td><p>The radius of the round filter kernel to be used.  A radius of 1 indicates a filter kernel size of 3 by 3, 2 indicates 5 by 5, etc. Radius values from 1 to 32 are supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nStepBetweenSrcPixels</span></td>
+        <td><p>The step size between adjacent source image pixels processed by the filter kernel, most commonly 1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">nValSquareSigma</span></td>
+        <td><p>The square of the sigma for the relative intensity distance between a source image pixel in the filter kernel and the source image pixel at the center of the filter kernel.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">nPosSquareSigma</span></td>
+        <td><p>The square of the sigma for the relative geometric distance between a source image pixel in the filter kernel and the source image pixel at the center of the filter kernel.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiBorderType.html">NppiBorderType</a></td>
+        <td><span class="parametername">eBorderType</span></td>
+        <td><p>The border type operation to be applied at source image border boundaries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NotEvenStepError">NotEvenStepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterBilateralGaussBorder_nppiFilterBilateralGaussBorder_32f_C3R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterBilateralGaussBorder.nppiFilterBilateralGaussBorder_32f_C3R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterBilateralGaussBorder_nppiFilterBilateralGaussBorder_32f_C3R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiPoint_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_System_Int32_System_Int32_System_Single_System_Single_ManagedCuda_NPP_NppiBorderType_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterBilateralGaussBorder.nppiFilterBilateralGaussBorder_32f_C3R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiPoint,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,System.Int32,System.Int32,System.Single,System.Single,ManagedCuda.NPP.NppiBorderType)">nppiFilterBilateralGaussBorder_32f_C3R(CUdeviceptr, Int32, NppiSize, NppiPoint, CUdeviceptr, Int32, NppiSize, Int32, Int32, Single, Single, NppiBorderType)</h4>
+  <div class="markdown level1 summary"><p>Three channel 32-bit floating-point bilateral Gauss filter with border control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiFilterBilateralGaussBorder_32f_C3R(CUdeviceptr pSrc, int nSrcStep, NppiSize oSrcSize, NppiPoint oSrcOffset, CUdeviceptr pDst, int nDstStep, NppiSize oSizeROI, int nRadius, int nStepBetweenSrcPixels, float nValSquareSigma, float nPosSquareSigma, NppiBorderType eBorderType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSrcSize</span></td>
+        <td><p>Source image width and height in pixels relative to pSrc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a></td>
+        <td><span class="parametername">oSrcOffset</span></td>
+        <td><p>The pixel offset that pSrc points to relative to the origin of the source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nDstStep</span></td>
+        <td><p>Destination-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nRadius</span></td>
+        <td><p>The radius of the round filter kernel to be used.  A radius of 1 indicates a filter kernel size of 3 by 3, 2 indicates 5 by 5, etc. Radius values from 1 to 32 are supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nStepBetweenSrcPixels</span></td>
+        <td><p>The step size between adjacent source image pixels processed by the filter kernel, most commonly 1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">nValSquareSigma</span></td>
+        <td><p>The square of the sigma for the relative intensity distance between a source image pixel in the filter kernel and the source image pixel at the center of the filter kernel.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">nPosSquareSigma</span></td>
+        <td><p>The square of the sigma for the relative geometric distance between a source image pixel in the filter kernel and the source image pixel at the center of the filter kernel.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiBorderType.html">NppiBorderType</a></td>
+        <td><span class="parametername">eBorderType</span></td>
+        <td><p>The border type operation to be applied at source image border boundaries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NotEvenStepError">NotEvenStepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterBilateralGaussBorder_nppiFilterBilateralGaussBorder_8u_C1R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterBilateralGaussBorder.nppiFilterBilateralGaussBorder_8u_C1R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterBilateralGaussBorder_nppiFilterBilateralGaussBorder_8u_C1R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiPoint_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_System_Int32_System_Int32_System_Single_System_Single_ManagedCuda_NPP_NppiBorderType_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterBilateralGaussBorder.nppiFilterBilateralGaussBorder_8u_C1R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiPoint,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,System.Int32,System.Int32,System.Single,System.Single,ManagedCuda.NPP.NppiBorderType)">nppiFilterBilateralGaussBorder_8u_C1R(CUdeviceptr, Int32, NppiSize, NppiPoint, CUdeviceptr, Int32, NppiSize, Int32, Int32, Single, Single, NppiBorderType)</h4>
+  <div class="markdown level1 summary"><p>Single channel 8-bit unsigned bilateral Gauss filter with border control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiFilterBilateralGaussBorder_8u_C1R(CUdeviceptr pSrc, int nSrcStep, NppiSize oSrcSize, NppiPoint oSrcOffset, CUdeviceptr pDst, int nDstStep, NppiSize oSizeROI, int nRadius, int nStepBetweenSrcPixels, float nValSquareSigma, float nPosSquareSigma, NppiBorderType eBorderType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSrcSize</span></td>
+        <td><p>Source image width and height in pixels relative to pSrc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a></td>
+        <td><span class="parametername">oSrcOffset</span></td>
+        <td><p>The pixel offset that pSrc points to relative to the origin of the source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nDstStep</span></td>
+        <td><p>Destination-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nRadius</span></td>
+        <td><p>The radius of the round filter kernel to be used.  A radius of 1 indicates a filter kernel size of 3 by 3, 2 indicates 5 by 5, etc. Radius values from 1 to 32 are supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nStepBetweenSrcPixels</span></td>
+        <td><p>The step size between adjacent source image pixels processed by the filter kernel, most commonly 1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">nValSquareSigma</span></td>
+        <td><p>The square of the sigma for the relative intensity distance between a source image pixel in the filter kernel and the source image pixel at the center of the filter kernel.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">nPosSquareSigma</span></td>
+        <td><p>The square of the sigma for the relative geometric distance between a source image pixel in the filter kernel and the source image pixel at the center of the filter kernel.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiBorderType.html">NppiBorderType</a></td>
+        <td><span class="parametername">eBorderType</span></td>
+        <td><p>The border type operation to be applied at source image border boundaries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NotEvenStepError">NotEvenStepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterBilateralGaussBorder_nppiFilterBilateralGaussBorder_8u_C3R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterBilateralGaussBorder.nppiFilterBilateralGaussBorder_8u_C3R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterBilateralGaussBorder_nppiFilterBilateralGaussBorder_8u_C3R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiPoint_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_System_Int32_System_Int32_System_Single_System_Single_ManagedCuda_NPP_NppiBorderType_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterBilateralGaussBorder.nppiFilterBilateralGaussBorder_8u_C3R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiPoint,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,System.Int32,System.Int32,System.Single,System.Single,ManagedCuda.NPP.NppiBorderType)">nppiFilterBilateralGaussBorder_8u_C3R(CUdeviceptr, Int32, NppiSize, NppiPoint, CUdeviceptr, Int32, NppiSize, Int32, Int32, Single, Single, NppiBorderType)</h4>
+  <div class="markdown level1 summary"><p>Three channel 8-bit unsigned bilateral Gauss filter with border control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiFilterBilateralGaussBorder_8u_C3R(CUdeviceptr pSrc, int nSrcStep, NppiSize oSrcSize, NppiPoint oSrcOffset, CUdeviceptr pDst, int nDstStep, NppiSize oSizeROI, int nRadius, int nStepBetweenSrcPixels, float nValSquareSigma, float nPosSquareSigma, NppiBorderType eBorderType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSrcSize</span></td>
+        <td><p>Source image width and height in pixels relative to pSrc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a></td>
+        <td><span class="parametername">oSrcOffset</span></td>
+        <td><p>The pixel offset that pSrc points to relative to the origin of the source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nDstStep</span></td>
+        <td><p>Destination-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nRadius</span></td>
+        <td><p>The radius of the round filter kernel to be used.  A radius of 1 indicates a filter kernel size of 3 by 3, 2 indicates 5 by 5, etc. Radius values from 1 to 32 are supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nStepBetweenSrcPixels</span></td>
+        <td><p>The step size between adjacent source image pixels processed by the filter kernel, most commonly 1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">nValSquareSigma</span></td>
+        <td><p>The square of the sigma for the relative intensity distance between a source image pixel in the filter kernel and the source image pixel at the center of the filter kernel.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">nPosSquareSigma</span></td>
+        <td><p>The square of the sigma for the relative geometric distance between a source image pixel in the filter kernel and the source image pixel at the center of the filter kernel.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiBorderType.html">NppiBorderType</a></td>
+        <td><span class="parametername">eBorderType</span></td>
+        <td><p>The border type operation to be applied at source image border boundaries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NotEvenStepError">NotEvenStepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterBilateralGaussBorder.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterBilateralGaussBorder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPNativeMethods.cs/#L75171" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

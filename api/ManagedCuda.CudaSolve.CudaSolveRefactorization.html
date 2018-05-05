@@ -1,0 +1,1655 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CudaSolveRefactorization
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CudaSolveRefactorization
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization">
+  
+  
+  <h1 id="ManagedCuda_CudaSolve_CudaSolveRefactorization" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization" class="text-break">Class CudaSolveRefactorization
+  </h1>
+  <div class="markdown level0 summary"><p>CudaSolveRefactorization: The cuSolverRF library was designed to accelerate solution of sets of linear systems by
+fast re-factorization when given new coefficients in the same sparsity pattern
+A_i x_i = f_i</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CudaSolveRefactorization</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.CudaSolve.html">ManagedCuda.CudaSolve</a></h6>
+  <h6><strong>Assembly</strong>: CudaSolve.dll</h6>
+  <h5 id="ManagedCuda_CudaSolve_CudaSolveRefactorization_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CudaSolveRefactorization : IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaSolve_CudaSolveRefactorization__ctor.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaSolve.CudaSolveRefactorization.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaSolve/Refactorization.cs/#L47">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaSolve_CudaSolveRefactorization__ctor_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveRefactorization__ctor" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.#ctor">CudaSolveRefactorization()</h4>
+  <div class="markdown level1 summary"><p>Create new refactorization solve instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaSolveRefactorization()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaSolve_CudaSolveRefactorization_AccessBundledFactorsDevice_System_Int32__ManagedCuda_CudaDeviceVariable_System_Int32___ManagedCuda_CudaDeviceVariable_System_Int32___ManagedCuda_CudaDeviceVariable_System_Double___.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaSolve.CudaSolveRefactorization.AccessBundledFactorsDevice(System.Int32%40%2CManagedCuda.CudaDeviceVariable%7BSystem.Int32%7D%40%2CManagedCuda.CudaDeviceVariable%7BSystem.Int32%7D%40%2CManagedCuda.CudaDeviceVariable%7BSystem.Double%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaSolve/Refactorization.cs/#L374">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaSolve_CudaSolveRefactorization_AccessBundledFactorsDevice_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.AccessBundledFactorsDevice*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveRefactorization_AccessBundledFactorsDevice_System_Int32__ManagedCuda_CudaDeviceVariable_System_Int32___ManagedCuda_CudaDeviceVariable_System_Int32___ManagedCuda_CudaDeviceVariable_System_Double___" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.AccessBundledFactorsDevice(System.Int32@,ManagedCuda.CudaDeviceVariable{System.Int32}@,ManagedCuda.CudaDeviceVariable{System.Int32}@,ManagedCuda.CudaDeviceVariable{System.Double}@)">AccessBundledFactorsDevice(out Int32, out CudaDeviceVariable&lt;Int32&gt;, out CudaDeviceVariable&lt;Int32&gt;, out CudaDeviceVariable&lt;Double&gt;)</h4>
+  <div class="markdown level1 summary"><p>This routine allows direct access to the lower L and upper U triangular factors stored in
+the cuSolverRF library handle. The factors are compressed into a single matrix M=(LI)+
+U, where the unitary diagonal of L is not stored. It is assumed that a prior call to the
+cusolverRfRefactor() was done in order to generate these triangular factors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AccessBundledFactorsDevice(out int nnzM, out CudaDeviceVariable&lt;int&gt; Mp, out CudaDeviceVariable&lt;int&gt; Mi, out CudaDeviceVariable&lt;double&gt; Mx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nnzM</span></td>
+        <td><p>the number of non-zero elements of matrix M.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">Mp</span></td>
+        <td><p>the array of offsets corresponding to the start of each row in the arrays Mi and Mx.
+This array has also an extra entry at the end that stores the number of non-zero elements in the matrix $M$. The array size is n+1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">Mi</span></td>
+        <td><p>the array of column indices corresponding to the non-zero elements in the matrix M. It is assumed that this array is sorted by row and by column within each row. The array size is nnzM.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><span class="parametername">Mx</span></td>
+        <td><p>the array of values corresponding to the non-zero elements in the matrix M. It is assumed that this array is sorted by row and by column within each row. The array size is nnzM.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaSolve_CudaSolveRefactorization_Analyze.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaSolve.CudaSolveRefactorization.Analyze%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaSolve/Refactorization.cs/#L345">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaSolve_CudaSolveRefactorization_Analyze_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.Analyze*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveRefactorization_Analyze" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.Analyze">Analyze()</h4>
+  <div class="markdown level1 summary"><p>This routine performs the appropriate analysis of parallelism available in the LU refactorization depending upon the algorithm chosen by the user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Analyze()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaSolve_CudaSolveRefactorization_BatchAnalyze.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaSolve.CudaSolveRefactorization.BatchAnalyze%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaSolve/Refactorization.cs/#L626">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaSolve_CudaSolveRefactorization_BatchAnalyze_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.BatchAnalyze*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveRefactorization_BatchAnalyze" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.BatchAnalyze">BatchAnalyze()</h4>
+  <div class="markdown level1 summary"><p>This routine performs the appropriate analysis of parallelism available in the batched LU re-factorization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BatchAnalyze()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaSolve_CudaSolveRefactorization_BatchRefactor.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaSolve.CudaSolveRefactorization.BatchRefactor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaSolve/Refactorization.cs/#L636">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaSolve_CudaSolveRefactorization_BatchRefactor_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.BatchRefactor*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveRefactorization_BatchRefactor" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.BatchRefactor">BatchRefactor()</h4>
+  <div class="markdown level1 summary"><p>This routine performs the LU re-factorization</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BatchRefactor()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaSolve_CudaSolveRefactorization_BatchResetValues_System_Int32_System_Int32_System_Int32_ManagedCuda_CudaDeviceVariable_System_Int32__ManagedCuda_CudaDeviceVariable_System_Int32__ManagedCuda_CudaDeviceVariable_System_Double____ManagedCuda_CudaDeviceVariable_System_Int32__ManagedCuda_CudaDeviceVariable_System_Int32__.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaSolve.CudaSolveRefactorization.BatchResetValues(System.Int32%2CSystem.Int32%2CSystem.Int32%2CManagedCuda.CudaDeviceVariable%7BSystem.Int32%7D%2CManagedCuda.CudaDeviceVariable%7BSystem.Int32%7D%2CManagedCuda.CudaDeviceVariable%7BSystem.Double%7D%5B%5D%2CManagedCuda.CudaDeviceVariable%7BSystem.Int32%7D%2CManagedCuda.CudaDeviceVariable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaSolve/Refactorization.cs/#L605">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaSolve_CudaSolveRefactorization_BatchResetValues_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.BatchResetValues*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveRefactorization_BatchResetValues_System_Int32_System_Int32_System_Int32_ManagedCuda_CudaDeviceVariable_System_Int32__ManagedCuda_CudaDeviceVariable_System_Int32__ManagedCuda_CudaDeviceVariable_System_Double____ManagedCuda_CudaDeviceVariable_System_Int32__ManagedCuda_CudaDeviceVariable_System_Int32__" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.BatchResetValues(System.Int32,System.Int32,System.Int32,ManagedCuda.CudaDeviceVariable{System.Int32},ManagedCuda.CudaDeviceVariable{System.Int32},ManagedCuda.CudaDeviceVariable{System.Double}[],ManagedCuda.CudaDeviceVariable{System.Int32},ManagedCuda.CudaDeviceVariable{System.Int32})">BatchResetValues(Int32, Int32, Int32, CudaDeviceVariable&lt;Int32&gt;, CudaDeviceVariable&lt;Int32&gt;, CudaDeviceVariable&lt;Double&gt;[], CudaDeviceVariable&lt;Int32&gt;, CudaDeviceVariable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>This routine updates internal data structures with the values of the new coefficient
+matrix. It is assumed that the arrays csrRowPtrA, csrColIndA, P and Q have not
+changed since the last call to the cusolverRfbatch_setup_host routine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BatchResetValues(int batchSize, int n, int nnzA, CudaDeviceVariable&lt;int&gt; csrRowPtrA, CudaDeviceVariable&lt;int&gt; csrColIndA, CudaDeviceVariable&lt;double&gt;[] csrValA_array, CudaDeviceVariable&lt;int&gt; P, CudaDeviceVariable&lt;int&gt; Q)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">batchSize</span></td>
+        <td><p>the number of matrices in batched mode.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>the number of rows (and columns) of matrix A.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nnzA</span></td>
+        <td><p>the number of non-zero elements of matrix A.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">csrRowPtrA</span></td>
+        <td><p>the array of offsets corresponding to the start of each row in the arrays csrColIndA and csrValA.
+This array has also an extra entry at the end that stores the number of non-zero elements in the matrix. The array size is n+1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">csrColIndA</span></td>
+        <td><p>the array of column indices corresponding to the non-zero elements in the matrix. It is assumed that this array is sorted by row
+and by column within each row. The array size is nnzA.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Double</span>&gt;[]</td>
+        <td><span class="parametername">csrValA_array</span></td>
+        <td><p>array of pointers of size batchSize, each pointer points to the array of values corresponding to the non-zero elements in the matrix.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">P</span></td>
+        <td><p>the left permutation (often associated with pivoting). The array size in n.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">Q</span></td>
+        <td><p>the right permutation (often associated with reordering). The array size in n.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaSolve_CudaSolveRefactorization_BatchSetupHost_System_Int32_System_Int32_System_Int32_System_Int32___System_Int32___System_Double_____System_Int32_System_Int32___System_Int32___System_Double___System_Int32_System_Int32___System_Int32___System_Double___System_Int32___System_Int32___ManagedCuda_CudaSolve_cusolverRfHandle_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaSolve.CudaSolveRefactorization.BatchSetupHost(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%5B%5D%2CSystem.Int32%5B%5D%2CSystem.Double%5B%5D%5B%5D%2CSystem.Int32%2CSystem.Int32%5B%5D%2CSystem.Int32%5B%5D%2CSystem.Double%5B%5D%2CSystem.Int32%2CSystem.Int32%5B%5D%2CSystem.Int32%5B%5D%2CSystem.Double%5B%5D%2CSystem.Int32%5B%5D%2CSystem.Int32%5B%5D%2CManagedCuda.CudaSolve.cusolverRfHandle)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaSolve/Refactorization.cs/#L552">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaSolve_CudaSolveRefactorization_BatchSetupHost_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.BatchSetupHost*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveRefactorization_BatchSetupHost_System_Int32_System_Int32_System_Int32_System_Int32___System_Int32___System_Double_____System_Int32_System_Int32___System_Int32___System_Double___System_Int32_System_Int32___System_Int32___System_Double___System_Int32___System_Int32___ManagedCuda_CudaSolve_cusolverRfHandle_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.BatchSetupHost(System.Int32,System.Int32,System.Int32,System.Int32[],System.Int32[],System.Double[][],System.Int32,System.Int32[],System.Int32[],System.Double[],System.Int32,System.Int32[],System.Int32[],System.Double[],System.Int32[],System.Int32[],ManagedCuda.CudaSolve.cusolverRfHandle)">BatchSetupHost(Int32, Int32, Int32, Int32[], Int32[], Double[][], Int32, Int32[], Int32[], Double[], Int32, Int32[], Int32[], Double[], Int32[], Int32[], cusolverRfHandle)</h4>
+  <div class="markdown level1 summary"><p>This routine assembles the internal data structures of the cuSolverRF library for batched
+operation. It is called after the call to the cusolverRfCreate() routine, and before any
+other batched routines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BatchSetupHost(int batchSize, int n, int nnzA, int[] h_csrRowPtrA, int[] h_csrColIndA, double[][] h_csrValA_array, int nnzL, int[] h_csrRowPtrL, int[] h_csrColIndL, double[] h_csrValL, int nnzU, int[] h_csrRowPtrU, int[] h_csrColIndU, double[] h_csrValU, int[] h_P, int[] h_Q, cusolverRfHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">batchSize</span></td>
+        <td><p>the number of matrices in the batched mode.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>the number of rows (and columns) of matrix A.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nnzA</span></td>
+        <td><p>the number of non-zero elements of matrix A.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_csrRowPtrA</span></td>
+        <td><p>the array of offsets corresponding to
+the start of each row in the arrays h_csrColIndA and h_csrValA. This array has also an extra entry at the
+end that stores the number of non-zero elements in the matrix. The array size is n+1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_csrColIndA</span></td>
+        <td><p>the array of column indices corresponding
+to the non-zero elements in the matrix. It is assumed that this array is sorted by row and by column within each row. The array size is nnzA.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[][]</td>
+        <td><span class="parametername">h_csrValA_array</span></td>
+        <td><p>array of pointers of size batchSize, each pointer points to the array of values corresponding to the non-zero elements in the matrix.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nnzL</span></td>
+        <td><p>the number of non-zero elements of matrix L.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_csrRowPtrL</span></td>
+        <td><p>the array of offsets corresponding to the start of each row in the arrays h_csrColIndL and h_csrValL. This
+array has also an extra entry at the end that stores the number of non-zero elements in the matrix L. The array size is n+1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_csrColIndL</span></td>
+        <td><p>the array of column indices corresponding to the non-zero elements in the matrix L. It is assumed that this array is sorted by
+row and by column within each row. The array size is nnzL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">h_csrValL</span></td>
+        <td><p>the array of values corresponding to the non-zero elements in the matrix L. It is assumed that this array is sorted by row
+and by column within each row. The array size is nnzL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nnzU</span></td>
+        <td><p>the number of non-zero elements of matrix U.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_csrRowPtrU</span></td>
+        <td><p>the array of offsets corresponding to the start of each row in the arrays h_csrColIndU and h_csrValU. This
+array has also an extra entry at the end that stores the number of non-zero elements in the matrix U. The array size is n+1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_csrColIndU</span></td>
+        <td><p>the array of column indices corresponding to the non-zero elements in the matrix U. It is assumed that this array is sorted by
+row and by column within each row. The array size is nnzU.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">h_csrValU</span></td>
+        <td><p>the array of values corresponding to the non-zero elements in the matrix U. It is assumed that this array is sorted by row
+and by column within each row. The array size is nnzU.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_P</span></td>
+        <td><p>the left permutation (often associated with pivoting). The array size in n.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_Q</span></td>
+        <td><p>the right permutation (often associated with reordering). The array size in n.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverRfHandle.html">cusolverRfHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>the pointer to the cuSolverRF library handle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaSolve_CudaSolveRefactorization_BatchZeroPivot_System_Int32___.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaSolve.CudaSolveRefactorization.BatchZeroPivot(System.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaSolve/Refactorization.cs/#L692">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaSolve_CudaSolveRefactorization_BatchZeroPivot_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.BatchZeroPivot*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveRefactorization_BatchZeroPivot_System_Int32___" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.BatchZeroPivot(System.Int32[])">BatchZeroPivot(Int32[])</h4>
+  <div class="markdown level1 summary"><p>The user can query which matrix failed LU refactorization by checking
+corresponding value in position array. The input parameter position is an integer array of size batchSize.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BatchZeroPivot(int[] position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">position</span></td>
+        <td><p>integer array of size batchSize. The value of position(j) reports singularity
+of matrix Aj, -1 if no structural / numerical zero, k &gt;= 0 if Aj(k,k) is either structural zero or numerical zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaSolve_CudaSolveRefactorization_cusolverRfBatchSolve_ManagedCuda_CudaDeviceVariable_System_Int32__ManagedCuda_CudaDeviceVariable_System_Int32__System_Int32_System_Double___System_Int32_System_Double_____System_Int32_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaSolve.CudaSolveRefactorization.cusolverRfBatchSolve(ManagedCuda.CudaDeviceVariable%7BSystem.Int32%7D%2CManagedCuda.CudaDeviceVariable%7BSystem.Int32%7D%2CSystem.Int32%2CSystem.Double%5B%5D%2CSystem.Int32%2CSystem.Double%5B%5D%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaSolve/Refactorization.cs/#L654">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaSolve_CudaSolveRefactorization_cusolverRfBatchSolve_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.cusolverRfBatchSolve*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveRefactorization_cusolverRfBatchSolve_ManagedCuda_CudaDeviceVariable_System_Int32__ManagedCuda_CudaDeviceVariable_System_Int32__System_Int32_System_Double___System_Int32_System_Double_____System_Int32_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.cusolverRfBatchSolve(ManagedCuda.CudaDeviceVariable{System.Int32},ManagedCuda.CudaDeviceVariable{System.Int32},System.Int32,System.Double[],System.Int32,System.Double[][],System.Int32)">cusolverRfBatchSolve(CudaDeviceVariable&lt;Int32&gt;, CudaDeviceVariable&lt;Int32&gt;, Int32, Double[], Int32, Double[][], Int32)</h4>
+  <div class="markdown level1 summary"><p>To solve A_j * x_j = b_j, first we reform the equation by M_j * Q * x_j = P * b_j. Then do refactorization by
+cusolverRfBatch_Refactor(). Further cusolverRfBatch_Solve() takes over the remaining steps.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void cusolverRfBatchSolve(CudaDeviceVariable&lt;int&gt; P, CudaDeviceVariable&lt;int&gt; Q, int nrhs, double[] Temp, int ldt, double[][] XF_array, int ldxf)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">P</span></td>
+        <td><p>the left permutation (often associated with pivoting). The array size in n.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">Q</span></td>
+        <td><p>the right permutation (often associated with reordering). The array size in n.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nrhs</span></td>
+        <td><p>the number right-hand-sides to be solved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">Temp</span></td>
+        <td><p>the dense matrix that contains temporary workspace (of size ldt*nrhs).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ldt</span></td>
+        <td><p>the leading dimension of dense matrix Temp (ldt &gt;= n).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[][]</td>
+        <td><span class="parametername">XF_array</span></td>
+        <td><p>array of pointers of size batchSize, each pointer points to the dense matrix that contains the right-hand-sides F and solutions X (of size ldxf*nrhs).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ldxf</span></td>
+        <td><p>the leading dimension of dense matrix XF (ldxf &gt;= n).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaSolve_CudaSolveRefactorization_cusolverRfSetupDevice_System_Int32_System_Int32_ManagedCuda_CudaDeviceVariable_System_Int32__ManagedCuda_CudaDeviceVariable_System_Int32__ManagedCuda_CudaDeviceVariable_System_Double__System_Int32_ManagedCuda_CudaDeviceVariable_System_Int32__ManagedCuda_CudaDeviceVariable_System_Int32__ManagedCuda_CudaDeviceVariable_System_Double__System_Int32_ManagedCuda_CudaDeviceVariable_System_Int32__ManagedCuda_CudaDeviceVariable_System_Int32__ManagedCuda_CudaDeviceVariable_System_Double__ManagedCuda_CudaDeviceVariable_System_Int32__ManagedCuda_CudaDeviceVariable_System_Int32__.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaSolve.CudaSolveRefactorization.cusolverRfSetupDevice(System.Int32%2CSystem.Int32%2CManagedCuda.CudaDeviceVariable%7BSystem.Int32%7D%2CManagedCuda.CudaDeviceVariable%7BSystem.Int32%7D%2CManagedCuda.CudaDeviceVariable%7BSystem.Double%7D%2CSystem.Int32%2CManagedCuda.CudaDeviceVariable%7BSystem.Int32%7D%2CManagedCuda.CudaDeviceVariable%7BSystem.Int32%7D%2CManagedCuda.CudaDeviceVariable%7BSystem.Double%7D%2CSystem.Int32%2CManagedCuda.CudaDeviceVariable%7BSystem.Int32%7D%2CManagedCuda.CudaDeviceVariable%7BSystem.Int32%7D%2CManagedCuda.CudaDeviceVariable%7BSystem.Double%7D%2CManagedCuda.CudaDeviceVariable%7BSystem.Int32%7D%2CManagedCuda.CudaDeviceVariable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaSolve/Refactorization.cs/#L301">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaSolve_CudaSolveRefactorization_cusolverRfSetupDevice_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.cusolverRfSetupDevice*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveRefactorization_cusolverRfSetupDevice_System_Int32_System_Int32_ManagedCuda_CudaDeviceVariable_System_Int32__ManagedCuda_CudaDeviceVariable_System_Int32__ManagedCuda_CudaDeviceVariable_System_Double__System_Int32_ManagedCuda_CudaDeviceVariable_System_Int32__ManagedCuda_CudaDeviceVariable_System_Int32__ManagedCuda_CudaDeviceVariable_System_Double__System_Int32_ManagedCuda_CudaDeviceVariable_System_Int32__ManagedCuda_CudaDeviceVariable_System_Int32__ManagedCuda_CudaDeviceVariable_System_Double__ManagedCuda_CudaDeviceVariable_System_Int32__ManagedCuda_CudaDeviceVariable_System_Int32__" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.cusolverRfSetupDevice(System.Int32,System.Int32,ManagedCuda.CudaDeviceVariable{System.Int32},ManagedCuda.CudaDeviceVariable{System.Int32},ManagedCuda.CudaDeviceVariable{System.Double},System.Int32,ManagedCuda.CudaDeviceVariable{System.Int32},ManagedCuda.CudaDeviceVariable{System.Int32},ManagedCuda.CudaDeviceVariable{System.Double},System.Int32,ManagedCuda.CudaDeviceVariable{System.Int32},ManagedCuda.CudaDeviceVariable{System.Int32},ManagedCuda.CudaDeviceVariable{System.Double},ManagedCuda.CudaDeviceVariable{System.Int32},ManagedCuda.CudaDeviceVariable{System.Int32})">cusolverRfSetupDevice(Int32, Int32, CudaDeviceVariable&lt;Int32&gt;, CudaDeviceVariable&lt;Int32&gt;, CudaDeviceVariable&lt;Double&gt;, Int32, CudaDeviceVariable&lt;Int32&gt;, CudaDeviceVariable&lt;Int32&gt;, CudaDeviceVariable&lt;Double&gt;, Int32, CudaDeviceVariable&lt;Int32&gt;, CudaDeviceVariable&lt;Int32&gt;, CudaDeviceVariable&lt;Double&gt;, CudaDeviceVariable&lt;Int32&gt;, CudaDeviceVariable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>This routine assembles the internal data structures of the cuSolverRF library. It is often
+the first routine to be called after the call to the cusolverRfCreate() routine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void cusolverRfSetupDevice(int n, int nnzA, CudaDeviceVariable&lt;int&gt; csrRowPtrA, CudaDeviceVariable&lt;int&gt; csrColIndA, CudaDeviceVariable&lt;double&gt; csrValA, int nnzL, CudaDeviceVariable&lt;int&gt; csrRowPtrL, CudaDeviceVariable&lt;int&gt; csrColIndL, CudaDeviceVariable&lt;double&gt; csrValL, int nnzU, CudaDeviceVariable&lt;int&gt; csrRowPtrU, CudaDeviceVariable&lt;int&gt; csrColIndU, CudaDeviceVariable&lt;double&gt; csrValU, CudaDeviceVariable&lt;int&gt; P, CudaDeviceVariable&lt;int&gt; Q)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>the number of rows (and columns) of matrix A.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nnzA</span></td>
+        <td><p>the number of non-zero elements of matrix A.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">csrRowPtrA</span></td>
+        <td><p>the array of offsets corresponding to
+the start of each row in the arrays h_csrColIndA and h_csrValA. This
+array has also an extra entry at the end that stores the number of non-zero
+elements in the matrix. The array size is n+1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">csrColIndA</span></td>
+        <td><p>the array of column indices corresponding
+to the non-zero elements in the matrix. It is assumed that this array is sorted by row
+and by column within each row. The array size is nnzA.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><span class="parametername">csrValA</span></td>
+        <td><p>the array of values corresponding to the
+non-zero elements in the matrix. It is assumed that this array is sorted by row
+and by column within each row. The array size is nnzA.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nnzL</span></td>
+        <td><p>the number of non-zero elements of matrix L.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">csrRowPtrL</span></td>
+        <td><p>the array of offsets corresponding to
+the start of each row in the arrays h_csrColIndL and h_csrValL. This
+array has also an extra entry at the end that stores the number of non-zero
+elements in the matrix L. The array size is n+1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">csrColIndL</span></td>
+        <td><p>the array of column indices corresponding
+to the non-zero elements in the matrix L. It is assumed that this array is sorted by
+row and by column within each row. The array size is nnzL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><span class="parametername">csrValL</span></td>
+        <td><p>the array of values corresponding to the
+non-zero elements in the matrix L. It is assumed that this array is sorted by row
+and by column within each row. The array size is nnzL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nnzU</span></td>
+        <td><p>the number of non-zero elements of matrix U.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">csrRowPtrU</span></td>
+        <td><p>the array of offsets corresponding to
+the start of each row in the arrays h_csrColIndU and h_csrValU. This
+array has also an extra entry at the end that stores the number of non-zero elements in the matrix U. The array size is n+1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">csrColIndU</span></td>
+        <td><p>the array of column indices corresponding
+to the non-zero elements in the matrix U. It is assumed that this array is sorted by row and by column within each row. The array size is nnzU.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><span class="parametername">csrValU</span></td>
+        <td><p>the array of values corresponding to the non-zero elements in the matrix U. It is
+assumed that this array is sorted by row and by column within each row. The array size is nnzU.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">P</span></td>
+        <td><p>the left permutation (often associated with pivoting). The array size in n.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">Q</span></td>
+        <td><p>the right permutation (often associated with reordering). The array size in n.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaSolve_CudaSolveRefactorization_Dispose.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaSolve.CudaSolveRefactorization.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaSolve/Refactorization.cs/#L68">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaSolve_CudaSolveRefactorization_Dispose_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.Dispose*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveRefactorization_Dispose" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Dispose</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaSolve_CudaSolveRefactorization_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaSolve.CudaSolveRefactorization.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaSolve/Refactorization.cs/#L78">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaSolve_CudaSolveRefactorization_Dispose_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.Dispose*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveRefactorization_Dispose_System_Boolean_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>For IDisposable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool fDisposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">fDisposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaSolve_CudaSolveRefactorization_ExtractBundledFactorsHost_System_Int32_System_Int32__System_Int32____System_Int32____System_Double____.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaSolve.CudaSolveRefactorization.ExtractBundledFactorsHost(System.Int32%2CSystem.Int32%40%2CSystem.Int32%5B%5D%40%2CSystem.Int32%5B%5D%40%2CSystem.Double%5B%5D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaSolve/Refactorization.cs/#L402">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaSolve_CudaSolveRefactorization_ExtractBundledFactorsHost_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.ExtractBundledFactorsHost*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveRefactorization_ExtractBundledFactorsHost_System_Int32_System_Int32__System_Int32____System_Int32____System_Double____" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.ExtractBundledFactorsHost(System.Int32,System.Int32@,System.Int32[]@,System.Int32[]@,System.Double[]@)">ExtractBundledFactorsHost(Int32, out Int32, out Int32[], out Int32[], out Double[])</h4>
+  <div class="markdown level1 summary"><p>This routine allows direct access to the lower L and upper U triangular factors stored in
+the cuSolverRF library handle. The factors are compressed into a single matrix M=(LI)+
+U, where the unitary diagonal of L is not stored. It is assumed that a prior call to the
+cusolverRfRefactor() was done in order to generate these triangular factors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExtractBundledFactorsHost(int n, out int h_nnzM, out int[] h_Mp, out int[] h_Mi, out double[] h_Mx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>Size of Matrix M (n x n)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">h_nnzM</span></td>
+        <td><p>the number of non-zero elements of matrix M.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_Mp</span></td>
+        <td><p>the array of offsets corresponding to the start of each row in the arrays Mi and Mx.
+This array has also an extra entry at the end that stores the number of non-zero elements in the matrix $M$. The array size is n+1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_Mi</span></td>
+        <td><p>the array of column indices corresponding to the non-zero elements in the matrix M. It is assumed that this array is sorted by row and by column within each row. The array size is nnzM.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">h_Mx</span></td>
+        <td><p>the array of values corresponding to the non-zero elements in the matrix M. It is assumed that this array is sorted by row and by column within each row. The array size is nnzM.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaSolve_CudaSolveRefactorization_ExtractSplitFactorsHost_System_Int32_System_Int32__System_Int32____System_Int32____System_Double____System_Int32__System_Int32____System_Int32____System_Double____.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaSolve.CudaSolveRefactorization.ExtractSplitFactorsHost(System.Int32%2CSystem.Int32%40%2CSystem.Int32%5B%5D%40%2CSystem.Int32%5B%5D%40%2CSystem.Double%5B%5D%40%2CSystem.Int32%40%2CSystem.Int32%5B%5D%40%2CSystem.Int32%5B%5D%40%2CSystem.Double%5B%5D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaSolve/Refactorization.cs/#L451">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaSolve_CudaSolveRefactorization_ExtractSplitFactorsHost_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.ExtractSplitFactorsHost*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveRefactorization_ExtractSplitFactorsHost_System_Int32_System_Int32__System_Int32____System_Int32____System_Double____System_Int32__System_Int32____System_Int32____System_Double____" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.ExtractSplitFactorsHost(System.Int32,System.Int32@,System.Int32[]@,System.Int32[]@,System.Double[]@,System.Int32@,System.Int32[]@,System.Int32[]@,System.Double[]@)">ExtractSplitFactorsHost(Int32, out Int32, out Int32[], out Int32[], out Double[], out Int32, out Int32[], out Int32[], out Double[])</h4>
+  <div class="markdown level1 summary"><p>This routine extracts lower (L) and upper (U) triangular factors from the
+cuSolverRF library handle into the host memory. It is assumed that a prior call to the
+cusolverRfRefactor() was done in order to generate these triangular factors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExtractSplitFactorsHost(int n, out int h_nnzL, out int[] h_csrRowPtrL, out int[] h_csrColIndL, out double[] h_csrValL, out int h_nnzU, out int[] h_csrRowPtrU, out int[] h_csrColIndU, out double[] h_csrValU)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>Size of Matrix M (n x n)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">h_nnzL</span></td>
+        <td><p>the number of non-zero elements of matrix L.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_csrRowPtrL</span></td>
+        <td><p>the array of offsets corresponding to the start of each row in the arrays h_Li and
+h_Lx. This array has also an extra entry at the end that stores the number of nonzero elements in the matrix L. The array size is n+1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_csrColIndL</span></td>
+        <td><p>the array of column indices corresponding to the non-zero elements in the matrix L. It is assumed that this array is sorted by
+row and by column within each row. The array size is h_nnzL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">h_csrValL</span></td>
+        <td><p>the array of values corresponding to the non-zero elements in the matrix L. It is assumed that this array is sorted by row
+and by column within each row. The array size is h_nnzL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">h_nnzU</span></td>
+        <td><p>the number of non-zero elements of matrix U.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_csrRowPtrU</span></td>
+        <td><p>the array of offsets corresponding to the start of each row in the arrays h_Ui and h_Ux. This array has also an extra entry
+at the end that stores the number of nonzero elements in the matrix U. The array size is n+1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_csrColIndU</span></td>
+        <td><p>the array of column indices corresponding to the non-zero elements in the matrix U. It is assumed that this array is sorted by
+row and by column within each row. The array size is h_nnzU.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">h_csrValU</span></td>
+        <td><p>the array of values corresponding to the non-zero elements in the matrix U. It is assumed that this array is sorted by row
+and by column within each row. The array size is h_nnzU.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaSolve_CudaSolveRefactorization_Finalize.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaSolve.CudaSolveRefactorization.Finalize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaSolve/Refactorization.cs/#L58">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaSolve_CudaSolveRefactorization_Finalize_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.Finalize*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveRefactorization_Finalize" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"><p>For dispose</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaSolve_CudaSolveRefactorization_GetAlgs_ManagedCuda_CudaSolve_Factorization__ManagedCuda_CudaSolve_TriangularSolve__.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaSolve.CudaSolveRefactorization.GetAlgs(ManagedCuda.CudaSolve.Factorization%40%2CManagedCuda.CudaSolve.TriangularSolve%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaSolve/Refactorization.cs/#L181">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaSolve_CudaSolveRefactorization_GetAlgs_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.GetAlgs*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveRefactorization_GetAlgs_ManagedCuda_CudaSolve_Factorization__ManagedCuda_CudaSolve_TriangularSolve__" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.GetAlgs(ManagedCuda.CudaSolve.Factorization@,ManagedCuda.CudaSolve.TriangularSolve@)">GetAlgs(ref Factorization, ref TriangularSolve)</h4>
+  <div class="markdown level1 summary"><p>This routine gets the algorithm used for the refactorization in cusolverRfRefactor()
+and the triangular solve in cusolverRfSolve(). It may be called once prior to
+cusolverRfAnalyze() routine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetAlgs(ref Factorization factAlg, ref TriangularSolve solveAlg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.Factorization.html">Factorization</a></td>
+        <td><span class="parametername">factAlg</span></td>
+        <td><p>the enumerated algorithm type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.TriangularSolve.html">TriangularSolve</a></td>
+        <td><span class="parametername">solveAlg</span></td>
+        <td><p>the enumerated algorithm type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaSolve_CudaSolveRefactorization_GetMatrixFormat_ManagedCuda_CudaSolve_MatrixFormat__ManagedCuda_CudaSolve_UnitDiagonal__.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaSolve.CudaSolveRefactorization.GetMatrixFormat(ManagedCuda.CudaSolve.MatrixFormat%40%2CManagedCuda.CudaSolve.UnitDiagonal%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaSolve/Refactorization.cs/#L99">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaSolve_CudaSolveRefactorization_GetMatrixFormat_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.GetMatrixFormat*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveRefactorization_GetMatrixFormat_ManagedCuda_CudaSolve_MatrixFormat__ManagedCuda_CudaSolve_UnitDiagonal__" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.GetMatrixFormat(ManagedCuda.CudaSolve.MatrixFormat@,ManagedCuda.CudaSolve.UnitDiagonal@)">GetMatrixFormat(ref MatrixFormat, ref UnitDiagonal)</h4>
+  <div class="markdown level1 summary"><p>This routine gets the matrix format used in the cusolverRfSetup(),
+cusolverRfSetupHost(), cusolverRfResetValues(), cusolverRfExtractBundledFactorsHost() and cusolverRfExtractSplitFactorsHost() routines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetMatrixFormat(ref MatrixFormat format, ref UnitDiagonal diag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.MatrixFormat.html">MatrixFormat</a></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>the enumerated matrix format type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.UnitDiagonal.html">UnitDiagonal</a></td>
+        <td><span class="parametername">diag</span></td>
+        <td><p>the enumerated unit diagonal type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaSolve_CudaSolveRefactorization_GetNumericBoostReport_ManagedCuda_CudaSolve_NumericBoostReport__.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaSolve.CudaSolveRefactorization.GetNumericBoostReport(ManagedCuda.CudaSolve.NumericBoostReport%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaSolve/Refactorization.cs/#L154">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaSolve_CudaSolveRefactorization_GetNumericBoostReport_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.GetNumericBoostReport*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveRefactorization_GetNumericBoostReport_ManagedCuda_CudaSolve_NumericBoostReport__" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.GetNumericBoostReport(ManagedCuda.CudaSolve.NumericBoostReport@)">GetNumericBoostReport(ref NumericBoostReport)</h4>
+  <div class="markdown level1 summary"><p>This routine gets the report whether numeric boosting was used in the
+cusolverRfRefactor() and cusolverRfSolve() routines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetNumericBoostReport(ref NumericBoostReport report)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.NumericBoostReport.html">NumericBoostReport</a></td>
+        <td><span class="parametername">report</span></td>
+        <td><p>the enumerated boosting report type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaSolve_CudaSolveRefactorization_GetNumericProperties_System_Double__System_Double__.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaSolve.CudaSolveRefactorization.GetNumericProperties(System.Double%40%2CSystem.Double%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaSolve/Refactorization.cs/#L141">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaSolve_CudaSolveRefactorization_GetNumericProperties_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.GetNumericProperties*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveRefactorization_GetNumericProperties_System_Double__System_Double__" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.GetNumericProperties(System.Double@,System.Double@)">GetNumericProperties(ref Double, ref Double)</h4>
+  <div class="markdown level1 summary"><p>This routine gets the numeric values used for checking for &quot;zero&quot; pivot and for boosting
+it in the cusolverRfRefactor() and cusolverRfSolve() routines. It may be called
+multiple times prior to cusolverRfRefactor() and cusolverRfSolve() routines.
+The numeric boosting will be used only if boost &gt; 0.0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetNumericProperties(ref double zero, ref double boost)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">zero</span></td>
+        <td><p>the value below which zero pivot is flagged.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">boost</span></td>
+        <td><p>the value which is substituted for zero pivot (if the later is flagged).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaSolve_CudaSolveRefactorization_GetResetValuesFastMode_ManagedCuda_CudaSolve_ResetValuesFastMode__.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaSolve.CudaSolveRefactorization.GetResetValuesFastMode(ManagedCuda.CudaSolve.ResetValuesFastMode%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaSolve/Refactorization.cs/#L194">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaSolve_CudaSolveRefactorization_GetResetValuesFastMode_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.GetResetValuesFastMode*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveRefactorization_GetResetValuesFastMode_ManagedCuda_CudaSolve_ResetValuesFastMode__" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.GetResetValuesFastMode(ManagedCuda.CudaSolve.ResetValuesFastMode@)">GetResetValuesFastMode(ref ResetValuesFastMode)</h4>
+  <div class="markdown level1 summary"><p>This routine gets the mode used in the cusolverRfResetValues routine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetResetValuesFastMode(ref ResetValuesFastMode fastMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.ResetValuesFastMode.html">ResetValuesFastMode</a></td>
+        <td><span class="parametername">fastMode</span></td>
+        <td><p>the enumerated mode type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaSolve_CudaSolveRefactorization_Refactor_ManagedCuda_CudaSolve_cusolverRfHandle_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaSolve.CudaSolveRefactorization.Refactor(ManagedCuda.CudaSolve.cusolverRfHandle)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaSolve/Refactorization.cs/#L355">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaSolve_CudaSolveRefactorization_Refactor_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.Refactor*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveRefactorization_Refactor_ManagedCuda_CudaSolve_cusolverRfHandle_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.Refactor(ManagedCuda.CudaSolve.cusolverRfHandle)">Refactor(cusolverRfHandle)</h4>
+  <div class="markdown level1 summary"><p>This routine performs the LU re-factorization</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Refactor(cusolverRfHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverRfHandle.html">cusolverRfHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaSolve_CudaSolveRefactorization_ResetValues_System_Int32_System_Int32_ManagedCuda_CudaDeviceVariable_System_Int32__ManagedCuda_CudaDeviceVariable_System_Int32__ManagedCuda_CudaDeviceVariable_System_Double__ManagedCuda_CudaDeviceVariable_System_Double__ManagedCuda_CudaDeviceVariable_System_Double__.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaSolve.CudaSolveRefactorization.ResetValues(System.Int32%2CSystem.Int32%2CManagedCuda.CudaDeviceVariable%7BSystem.Int32%7D%2CManagedCuda.CudaDeviceVariable%7BSystem.Int32%7D%2CManagedCuda.CudaDeviceVariable%7BSystem.Double%7D%2CManagedCuda.CudaDeviceVariable%7BSystem.Double%7D%2CManagedCuda.CudaDeviceVariable%7BSystem.Double%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaSolve/Refactorization.cs/#L332">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaSolve_CudaSolveRefactorization_ResetValues_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.ResetValues*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveRefactorization_ResetValues_System_Int32_System_Int32_ManagedCuda_CudaDeviceVariable_System_Int32__ManagedCuda_CudaDeviceVariable_System_Int32__ManagedCuda_CudaDeviceVariable_System_Double__ManagedCuda_CudaDeviceVariable_System_Double__ManagedCuda_CudaDeviceVariable_System_Double__" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.ResetValues(System.Int32,System.Int32,ManagedCuda.CudaDeviceVariable{System.Int32},ManagedCuda.CudaDeviceVariable{System.Int32},ManagedCuda.CudaDeviceVariable{System.Double},ManagedCuda.CudaDeviceVariable{System.Double},ManagedCuda.CudaDeviceVariable{System.Double})">ResetValues(Int32, Int32, CudaDeviceVariable&lt;Int32&gt;, CudaDeviceVariable&lt;Int32&gt;, CudaDeviceVariable&lt;Double&gt;, CudaDeviceVariable&lt;Double&gt;, CudaDeviceVariable&lt;Double&gt;)</h4>
+  <div class="markdown level1 summary"><p>This routine updates internal data structures with the values of the new coefficient
+matrix. It is assumed that the arrays csrRowPtrA, csrColIndA, P and Q have not
+changed since the last call to the cusolverRfSetup[Host] routine. This assumption
+reflects the fact that the sparsity pattern of coefficient matrices as well as reordering to
+minimize fill-in and pivoting remain the same in the set of linear systems</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetValues(int n, int nnzA, CudaDeviceVariable&lt;int&gt; csrRowPtrA, CudaDeviceVariable&lt;int&gt; csrColIndA, CudaDeviceVariable&lt;double&gt; csrValA, CudaDeviceVariable&lt;double&gt; P, CudaDeviceVariable&lt;double&gt; Q)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>the number of rows (and columns) of matrix A.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nnzA</span></td>
+        <td><p>the number of non-zero elements of matrix A.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">csrRowPtrA</span></td>
+        <td><p>the array of offsets corresponding to the start of each row in the arrays
+csrColIndA and csrValA. This array has also an extra entry at the end that stores the number of non-zero elements in the
+matrix. The array size is n+1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">csrColIndA</span></td>
+        <td><p>the array of column indices corresponding to the non-zero elements in the matrix. It
+is assumed that this array is sorted by row and by column within each row. The array size is nnzA.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><span class="parametername">csrValA</span></td>
+        <td><p>the array of values corresponding to the non-zero elements in the matrix. It is assumed that this array is sorted by row
+and by column within each row. The array size is nnzA.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><span class="parametername">P</span></td>
+        <td><p>the left permutation (often associated with pivoting). The array size in n.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><span class="parametername">Q</span></td>
+        <td><p>the right permutation (often associated with reordering). The array size in n.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaSolve_CudaSolveRefactorization_SetAlgs_ManagedCuda_CudaSolve_Factorization_ManagedCuda_CudaSolve_TriangularSolve_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaSolve.CudaSolveRefactorization.SetAlgs(ManagedCuda.CudaSolve.Factorization%2CManagedCuda.CudaSolve.TriangularSolve)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaSolve/Refactorization.cs/#L168">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaSolve_CudaSolveRefactorization_SetAlgs_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.SetAlgs*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveRefactorization_SetAlgs_ManagedCuda_CudaSolve_Factorization_ManagedCuda_CudaSolve_TriangularSolve_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.SetAlgs(ManagedCuda.CudaSolve.Factorization,ManagedCuda.CudaSolve.TriangularSolve)">SetAlgs(Factorization, TriangularSolve)</h4>
+  <div class="markdown level1 summary"><p>This routine sets the algorithm used for the refactorization in cusolverRfRefactor()
+and the triangular solve in cusolverRfSolve(). It may be called once prior to
+cusolverRfAnalyze() routine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAlgs(Factorization factAlg, TriangularSolve solveAlg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.Factorization.html">Factorization</a></td>
+        <td><span class="parametername">factAlg</span></td>
+        <td><p>the enumerated algorithm type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.TriangularSolve.html">TriangularSolve</a></td>
+        <td><span class="parametername">solveAlg</span></td>
+        <td><p>the enumerated algorithm type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaSolve_CudaSolveRefactorization_SetMatrixFormat_ManagedCuda_CudaSolve_MatrixFormat_ManagedCuda_CudaSolve_UnitDiagonal_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaSolve.CudaSolveRefactorization.SetMatrixFormat(ManagedCuda.CudaSolve.MatrixFormat%2CManagedCuda.CudaSolve.UnitDiagonal)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaSolve/Refactorization.cs/#L111">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaSolve_CudaSolveRefactorization_SetMatrixFormat_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.SetMatrixFormat*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveRefactorization_SetMatrixFormat_ManagedCuda_CudaSolve_MatrixFormat_ManagedCuda_CudaSolve_UnitDiagonal_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.SetMatrixFormat(ManagedCuda.CudaSolve.MatrixFormat,ManagedCuda.CudaSolve.UnitDiagonal)">SetMatrixFormat(MatrixFormat, UnitDiagonal)</h4>
+  <div class="markdown level1 summary"><p>This routine sets the matrix format used in the cusolverRfSetup(),
+cusolverRfSetupHost(), cusolverRfResetValues(), cusolverRfExtractBundledFactorsHost() and cusolverRfExtractSplitFactorsHost() routines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMatrixFormat(MatrixFormat format, UnitDiagonal diag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.MatrixFormat.html">MatrixFormat</a></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>the enumerated matrix format type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.UnitDiagonal.html">UnitDiagonal</a></td>
+        <td><span class="parametername">diag</span></td>
+        <td><p>the enumerated unit diagonal type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaSolve_CudaSolveRefactorization_SetNumericProperties_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaSolve.CudaSolveRefactorization.SetNumericProperties(System.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaSolve/Refactorization.cs/#L127">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaSolve_CudaSolveRefactorization_SetNumericProperties_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.SetNumericProperties*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveRefactorization_SetNumericProperties_System_Double_System_Double_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.SetNumericProperties(System.Double,System.Double)">SetNumericProperties(Double, Double)</h4>
+  <div class="markdown level1 summary"><p>This routine sets the numeric values used for checking for &quot;zero&quot; pivot and for boosting
+it in the cusolverRfRefactor() and cusolverRfSolve() routines. It may be called
+multiple times prior to cusolverRfRefactor() and cusolverRfSolve() routines.
+The numeric boosting will be used only if boost &gt; 0.0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNumericProperties(double zero, double boost)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">zero</span></td>
+        <td><p>the value below which zero pivot is flagged.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">boost</span></td>
+        <td><p>the value which is substituted for zero pivot (if the later is flagged).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaSolve_CudaSolveRefactorization_SetResetValuesFastMode_ManagedCuda_CudaSolve_ResetValuesFastMode_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaSolve.CudaSolveRefactorization.SetResetValuesFastMode(ManagedCuda.CudaSolve.ResetValuesFastMode)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaSolve/Refactorization.cs/#L204">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaSolve_CudaSolveRefactorization_SetResetValuesFastMode_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.SetResetValuesFastMode*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveRefactorization_SetResetValuesFastMode_ManagedCuda_CudaSolve_ResetValuesFastMode_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.SetResetValuesFastMode(ManagedCuda.CudaSolve.ResetValuesFastMode)">SetResetValuesFastMode(ResetValuesFastMode)</h4>
+  <div class="markdown level1 summary"><p>This routine sets the mode used in the cusolverRfResetValues routine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetResetValuesFastMode(ResetValuesFastMode fastMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.ResetValuesFastMode.html">ResetValuesFastMode</a></td>
+        <td><span class="parametername">fastMode</span></td>
+        <td><p>the enumerated mode type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaSolve_CudaSolveRefactorization_SetupHost_System_Int32_System_Int32_System_Int32___System_Int32___System_Double___System_Int32_System_Int32___System_Int32___System_Double___System_Int32_System_Int32___System_Int32___System_Double___System_Int32___System_Int32___.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaSolve.CudaSolveRefactorization.SetupHost(System.Int32%2CSystem.Int32%2CSystem.Int32%5B%5D%2CSystem.Int32%5B%5D%2CSystem.Double%5B%5D%2CSystem.Int32%2CSystem.Int32%5B%5D%2CSystem.Int32%5B%5D%2CSystem.Double%5B%5D%2CSystem.Int32%2CSystem.Int32%5B%5D%2CSystem.Int32%5B%5D%2CSystem.Double%5B%5D%2CSystem.Int32%5B%5D%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaSolve/Refactorization.cs/#L256">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaSolve_CudaSolveRefactorization_SetupHost_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.SetupHost*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveRefactorization_SetupHost_System_Int32_System_Int32_System_Int32___System_Int32___System_Double___System_Int32_System_Int32___System_Int32___System_Double___System_Int32_System_Int32___System_Int32___System_Double___System_Int32___System_Int32___" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.SetupHost(System.Int32,System.Int32,System.Int32[],System.Int32[],System.Double[],System.Int32,System.Int32[],System.Int32[],System.Double[],System.Int32,System.Int32[],System.Int32[],System.Double[],System.Int32[],System.Int32[])">SetupHost(Int32, Int32, Int32[], Int32[], Double[], Int32, Int32[], Int32[], Double[], Int32, Int32[], Int32[], Double[], Int32[], Int32[])</h4>
+  <div class="markdown level1 summary"><p>This routine assembles the internal data structures of the cuSolverRF library. It is often
+the first routine to be called after the call to the cusolverRfCreate() routine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetupHost(int n, int nnzA, int[] h_csrRowPtrA, int[] h_csrColIndA, double[] h_csrValA, int nnzL, int[] h_csrRowPtrL, int[] h_csrColIndL, double[] h_csrValL, int nnzU, int[] h_csrRowPtrU, int[] h_csrColIndU, double[] h_csrValU, int[] h_P, int[] h_Q)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>the number of rows (and columns) of matrix A.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nnzA</span></td>
+        <td><p>the number of non-zero elements of matrix A.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_csrRowPtrA</span></td>
+        <td><p>the array of offsets corresponding to
+the start of each row in the arrays h_csrColIndA and h_csrValA. This
+array has also an extra entry at the end that stores the number of non-zero
+elements in the matrix. The array size is n+1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_csrColIndA</span></td>
+        <td><p>the array of column indices corresponding
+to the non-zero elements in the matrix. It is assumed that this array is sorted by row
+and by column within each row. The array size is nnzA.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">h_csrValA</span></td>
+        <td><p>the array of values corresponding to the
+non-zero elements in the matrix. It is assumed that this array is sorted by row
+and by column within each row. The array size is nnzA.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nnzL</span></td>
+        <td><p>the number of non-zero elements of matrix L.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_csrRowPtrL</span></td>
+        <td><p>the array of offsets corresponding to
+the start of each row in the arrays h_csrColIndL and h_csrValL. This
+array has also an extra entry at the end that stores the number of non-zero
+elements in the matrix L. The array size is n+1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_csrColIndL</span></td>
+        <td><p>the array of column indices corresponding
+to the non-zero elements in the matrix L. It is assumed that this array is sorted by
+row and by column within each row. The array size is nnzL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">h_csrValL</span></td>
+        <td><p>the array of values corresponding to the
+non-zero elements in the matrix L. It is assumed that this array is sorted by row
+and by column within each row. The array size is nnzL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nnzU</span></td>
+        <td><p>the number of non-zero elements of matrix U.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_csrRowPtrU</span></td>
+        <td><p>the array of offsets corresponding to
+the start of each row in the arrays h_csrColIndU and h_csrValU. This
+array has also an extra entry at the end that stores the number of non-zero elements in the matrix U. The array size is n+1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_csrColIndU</span></td>
+        <td><p>the array of column indices corresponding
+to the non-zero elements in the matrix U. It is assumed that this array is sorted by row and by column within each row. The array size is nnzU.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">h_csrValU</span></td>
+        <td><p>the array of values corresponding to the non-zero elements in the matrix U. It is
+assumed that this array is sorted by row and by column within each row. The array size is nnzU.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_P</span></td>
+        <td><p>the left permutation (often associated with pivoting). The array size in n.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_Q</span></td>
+        <td><p>the right permutation (often associated with reordering). The array size in n.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaSolve_CudaSolveRefactorization_Solve_ManagedCuda_CudaDeviceVariable_System_Int32__ManagedCuda_CudaDeviceVariable_System_Int32__System_Int32_System_Double___System_Int32_System_Double___System_Int32_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaSolve.CudaSolveRefactorization.Solve(ManagedCuda.CudaDeviceVariable%7BSystem.Int32%7D%2CManagedCuda.CudaDeviceVariable%7BSystem.Int32%7D%2CSystem.Int32%2CSystem.Double%5B%5D%2CSystem.Int32%2CSystem.Double%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaSolve/Refactorization.cs/#L510">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaSolve_CudaSolveRefactorization_Solve_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.Solve*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveRefactorization_Solve_ManagedCuda_CudaDeviceVariable_System_Int32__ManagedCuda_CudaDeviceVariable_System_Int32__System_Int32_System_Double___System_Int32_System_Double___System_Int32_" data-uid="ManagedCuda.CudaSolve.CudaSolveRefactorization.Solve(ManagedCuda.CudaDeviceVariable{System.Int32},ManagedCuda.CudaDeviceVariable{System.Int32},System.Int32,System.Double[],System.Int32,System.Double[],System.Int32)">Solve(CudaDeviceVariable&lt;Int32&gt;, CudaDeviceVariable&lt;Int32&gt;, Int32, Double[], Int32, Double[], Int32)</h4>
+  <div class="markdown level1 summary"><p>This routine performs the forward and backward solve with the lower and upper
+triangular factors resulting from the LU re-factorization</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Solve(CudaDeviceVariable&lt;int&gt; P, CudaDeviceVariable&lt;int&gt; Q, int nrhs, double[] Temp, int ldt, double[] XF, int ldxf)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">P</span></td>
+        <td><p>the left permutation (often associated with pivoting). The array size in n.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">Q</span></td>
+        <td><p>the right permutation (often associated with reordering). The array size in n.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nrhs</span></td>
+        <td><p>the number right-hand-sides to be solved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">Temp</span></td>
+        <td><p>the dense matrix that contains temporary workspace (of size ldt*nrhs).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ldt</span></td>
+        <td><p>the leading dimension of dense matrix Temp (ldt &gt;= n).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">XF</span></td>
+        <td><p>the dense matrix that contains the righthand-sides F and solutions X (of size ldxf*nrhs).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ldxf</span></td>
+        <td><p>the leading dimension of dense matrix XF (ldxf &gt;= n).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaSolve_CudaSolveRefactorization.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaSolve.CudaSolveRefactorization%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/CudaSolve/Refactorization.cs/#L37" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

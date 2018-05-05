@@ -1,0 +1,1568 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class NPPNativeMethods.NPPi.FilterGaussPyramid
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class NPPNativeMethods.NPPi.FilterGaussPyramid
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid">
+  
+  
+  <h1 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid" class="text-break">Class NPPNativeMethods.NPPi.FilterGaussPyramid
+  </h1>
+  <div class="markdown level0 summary"><p>Filters the image using a separable Gaussian filter kernel with user supplied floating point coefficients with downsampling and border control.
+If the downsampling rate is equivalent to an integer value then unnecessary source pixels are just skipped.
+If any portion of the mask overlaps the source image boundary the requested border type operation is applied to all mask pixels
+which fall outside of the source image.
+Filters the image using a separable Gaussian filter kernel with user supplied floating point coefficients with upsampling and border control.
+If the upsampling rate is equivalent to an integer value then unnecessary source pixels are just skipped.
+If any portion of the mask overlaps the source image boundary the requested border type operation is applied to all mask pixels
+which fall outside of the source image.
+Currently only the <a class="xref" href="ManagedCuda.NPP.NppiBorderType.html#ManagedCuda_NPP_NppiBorderType_Replicate">Replicate</a> and <a class="xref" href="ManagedCuda.NPP.NppiBorderType.html#ManagedCuda_NPP_NppiBorderType_Mirror">Mirror</a> border type operation are supported.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">NPPNativeMethods.NPPi.FilterGaussPyramid</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.NPP.html">ManagedCuda.NPP</a></h6>
+  <h6><strong>Assembly</strong>: NPP.dll</h6>
+  <h5 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FilterGaussPyramid</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid_nppiFilterGaussPyramidLayerDownBorder_16u_C1R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid.nppiFilterGaussPyramidLayerDownBorder_16u_C1R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid_nppiFilterGaussPyramidLayerDownBorder_16u_C1R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiPoint_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_System_Single_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiBorderType_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid.nppiFilterGaussPyramidLayerDownBorder_16u_C1R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiPoint,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,System.Single,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiBorderType)">nppiFilterGaussPyramidLayerDownBorder_16u_C1R(CUdeviceptr, Int32, NppiSize, NppiPoint, CUdeviceptr, Int32, NppiSize, Single, Int32, CUdeviceptr, NppiBorderType)</h4>
+  <div class="markdown level1 summary"><p>Single channel 16-bit unsigned Gauss filter with downsampling and border control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiFilterGaussPyramidLayerDownBorder_16u_C1R(CUdeviceptr pSrc, int nSrcStep, NppiSize oSrcSize, NppiPoint oSrcOffset, CUdeviceptr pDst, int nDstStep, NppiSize oSizeROI, float nRate, int nFilterTaps, CUdeviceptr pKernel, NppiBorderType eBorderType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSrcSize</span></td>
+        <td><p>Source image width and height in pixels relative to pSrc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a></td>
+        <td><span class="parametername">oSrcOffset</span></td>
+        <td><p>The pixel offset that pSrc points to relative to the origin of the source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nDstStep</span></td>
+        <td><p>Destination-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">nRate</span></td>
+        <td><p>The downsampling rate to be used.  For integer equivalent rates unnecessary source pixels are just skipped. For non-integer rates the source image is bilinear interpolated. nRate must be &gt; 1.0F and &lt;=  10.0F.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nFilterTaps</span></td>
+        <td><p>The number of filter taps where nFilterTaps =  2 * ((int)((float)ceil(radius) + 0.5F) ) + 1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pKernel</span></td>
+        <td><p>Pointer to an array of nFilterTaps kernel coefficients which sum to 1.0F.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiBorderType.html">NppiBorderType</a></td>
+        <td><span class="parametername">eBorderType</span></td>
+        <td><p>The border type operation to be applied at source image border boundaries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NotEvenStepError">NotEvenStepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid_nppiFilterGaussPyramidLayerDownBorder_16u_C3R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid.nppiFilterGaussPyramidLayerDownBorder_16u_C3R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid_nppiFilterGaussPyramidLayerDownBorder_16u_C3R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiPoint_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_System_Single_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiBorderType_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid.nppiFilterGaussPyramidLayerDownBorder_16u_C3R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiPoint,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,System.Single,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiBorderType)">nppiFilterGaussPyramidLayerDownBorder_16u_C3R(CUdeviceptr, Int32, NppiSize, NppiPoint, CUdeviceptr, Int32, NppiSize, Single, Int32, CUdeviceptr, NppiBorderType)</h4>
+  <div class="markdown level1 summary"><p>Three channel 16-bit unsigned Gauss filter with downsampling and border control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiFilterGaussPyramidLayerDownBorder_16u_C3R(CUdeviceptr pSrc, int nSrcStep, NppiSize oSrcSize, NppiPoint oSrcOffset, CUdeviceptr pDst, int nDstStep, NppiSize oSizeROI, float nRate, int nFilterTaps, CUdeviceptr pKernel, NppiBorderType eBorderType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSrcSize</span></td>
+        <td><p>Source image width and height in pixels relative to pSrc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a></td>
+        <td><span class="parametername">oSrcOffset</span></td>
+        <td><p>The pixel offset that pSrc points to relative to the origin of the source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nDstStep</span></td>
+        <td><p>Destination-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">nRate</span></td>
+        <td><p>The downsampling rate to be used.  For integer equivalent rates unnecessary source pixels are just skipped. For non-integer rates the source image is bilinear interpolated. nRate must be &gt; 1.0F and &lt;=  10.0F.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nFilterTaps</span></td>
+        <td><p>The number of filter taps where nFilterTaps =  2 * ((int)((float)ceil(radius) + 0.5F) ) + 1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pKernel</span></td>
+        <td><p>Pointer to an array of nFilterTaps kernel coefficients which sum to 1.0F.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiBorderType.html">NppiBorderType</a></td>
+        <td><span class="parametername">eBorderType</span></td>
+        <td><p>The border type operation to be applied at source image border boundaries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NotEvenStepError">NotEvenStepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid_nppiFilterGaussPyramidLayerDownBorder_32f_C1R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid.nppiFilterGaussPyramidLayerDownBorder_32f_C1R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid_nppiFilterGaussPyramidLayerDownBorder_32f_C1R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiPoint_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_System_Single_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiBorderType_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid.nppiFilterGaussPyramidLayerDownBorder_32f_C1R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiPoint,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,System.Single,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiBorderType)">nppiFilterGaussPyramidLayerDownBorder_32f_C1R(CUdeviceptr, Int32, NppiSize, NppiPoint, CUdeviceptr, Int32, NppiSize, Single, Int32, CUdeviceptr, NppiBorderType)</h4>
+  <div class="markdown level1 summary"><p>Single channel 32-bit floating-point Gauss filter downsampling and with border control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiFilterGaussPyramidLayerDownBorder_32f_C1R(CUdeviceptr pSrc, int nSrcStep, NppiSize oSrcSize, NppiPoint oSrcOffset, CUdeviceptr pDst, int nDstStep, NppiSize oSizeROI, float nRate, int nFilterTaps, CUdeviceptr pKernel, NppiBorderType eBorderType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSrcSize</span></td>
+        <td><p>Source image width and height in pixels relative to pSrc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a></td>
+        <td><span class="parametername">oSrcOffset</span></td>
+        <td><p>The pixel offset that pSrc points to relative to the origin of the source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nDstStep</span></td>
+        <td><p>Destination-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">nRate</span></td>
+        <td><p>The downsampling rate to be used.  For integer equivalent rates unnecessary source pixels are just skipped. For non-integer rates the source image is bilinear interpolated. nRate must be &gt; 1.0F and &lt;=  10.0F.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nFilterTaps</span></td>
+        <td><p>The number of filter taps where nFilterTaps =  2 * ((int)((float)ceil(radius) + 0.5F) ) + 1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pKernel</span></td>
+        <td><p>Pointer to an array of nFilterTaps kernel coefficients which sum to 1.0F.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiBorderType.html">NppiBorderType</a></td>
+        <td><span class="parametername">eBorderType</span></td>
+        <td><p>The border type operation to be applied at source image border boundaries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NotEvenStepError">NotEvenStepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid_nppiFilterGaussPyramidLayerDownBorder_32f_C3R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid.nppiFilterGaussPyramidLayerDownBorder_32f_C3R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid_nppiFilterGaussPyramidLayerDownBorder_32f_C3R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiPoint_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_System_Single_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiBorderType_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid.nppiFilterGaussPyramidLayerDownBorder_32f_C3R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiPoint,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,System.Single,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiBorderType)">nppiFilterGaussPyramidLayerDownBorder_32f_C3R(CUdeviceptr, Int32, NppiSize, NppiPoint, CUdeviceptr, Int32, NppiSize, Single, Int32, CUdeviceptr, NppiBorderType)</h4>
+  <div class="markdown level1 summary"><p>Three channel 32-bit floating-point Gauss filter with downsampling and border control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiFilterGaussPyramidLayerDownBorder_32f_C3R(CUdeviceptr pSrc, int nSrcStep, NppiSize oSrcSize, NppiPoint oSrcOffset, CUdeviceptr pDst, int nDstStep, NppiSize oSizeROI, float nRate, int nFilterTaps, CUdeviceptr pKernel, NppiBorderType eBorderType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSrcSize</span></td>
+        <td><p>Source image width and height in pixels relative to pSrc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a></td>
+        <td><span class="parametername">oSrcOffset</span></td>
+        <td><p>The pixel offset that pSrc points to relative to the origin of the source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nDstStep</span></td>
+        <td><p>Destination-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">nRate</span></td>
+        <td><p>The downsampling rate to be used.  For integer equivalent rates unnecessary source pixels are just skipped. For non-integer rates the source image is bilinear interpolated. nRate must be &gt; 1.0F and &lt;=  10.0F.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nFilterTaps</span></td>
+        <td><p>The number of filter taps where nFilterTaps =  2 * ((int)((float)ceil(radius) + 0.5F) ) + 1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pKernel</span></td>
+        <td><p>Pointer to an array of nFilterTaps kernel coefficients which sum to 1.0F.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiBorderType.html">NppiBorderType</a></td>
+        <td><span class="parametername">eBorderType</span></td>
+        <td><p>The border type operation to be applied at source image border boundaries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NotEvenStepError">NotEvenStepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid_nppiFilterGaussPyramidLayerDownBorder_8u_C1R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid.nppiFilterGaussPyramidLayerDownBorder_8u_C1R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid_nppiFilterGaussPyramidLayerDownBorder_8u_C1R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiPoint_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_System_Single_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiBorderType_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid.nppiFilterGaussPyramidLayerDownBorder_8u_C1R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiPoint,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,System.Single,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiBorderType)">nppiFilterGaussPyramidLayerDownBorder_8u_C1R(CUdeviceptr, Int32, NppiSize, NppiPoint, CUdeviceptr, Int32, NppiSize, Single, Int32, CUdeviceptr, NppiBorderType)</h4>
+  <div class="markdown level1 summary"><p>Single channel 8-bit unsigned Gauss filter with downsampling and border control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiFilterGaussPyramidLayerDownBorder_8u_C1R(CUdeviceptr pSrc, int nSrcStep, NppiSize oSrcSize, NppiPoint oSrcOffset, CUdeviceptr pDst, int nDstStep, NppiSize oSizeROI, float nRate, int nFilterTaps, CUdeviceptr pKernel, NppiBorderType eBorderType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSrcSize</span></td>
+        <td><p>Source image width and height in pixels relative to pSrc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a></td>
+        <td><span class="parametername">oSrcOffset</span></td>
+        <td><p>The pixel offset that pSrc points to relative to the origin of the source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nDstStep</span></td>
+        <td><p>Destination-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">nRate</span></td>
+        <td><p>The downsampling rate to be used.  For integer equivalent rates unnecessary source pixels are just skipped. For non-integer rates the source image is bilinear interpolated. nRate must be &gt; 1.0F and &lt;=  10.0F.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nFilterTaps</span></td>
+        <td><p>The number of filter taps where nFilterTaps =  2 * ((int)((float)ceil(radius) + 0.5F) ) + 1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pKernel</span></td>
+        <td><p>Pointer to an array of nFilterTaps kernel coefficients which sum to 1.0F.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiBorderType.html">NppiBorderType</a></td>
+        <td><span class="parametername">eBorderType</span></td>
+        <td><p>The border type operation to be applied at source image border boundaries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NotEvenStepError">NotEvenStepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid_nppiFilterGaussPyramidLayerDownBorder_8u_C3R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid.nppiFilterGaussPyramidLayerDownBorder_8u_C3R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid_nppiFilterGaussPyramidLayerDownBorder_8u_C3R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiPoint_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_System_Single_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiBorderType_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid.nppiFilterGaussPyramidLayerDownBorder_8u_C3R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiPoint,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,System.Single,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiBorderType)">nppiFilterGaussPyramidLayerDownBorder_8u_C3R(CUdeviceptr, Int32, NppiSize, NppiPoint, CUdeviceptr, Int32, NppiSize, Single, Int32, CUdeviceptr, NppiBorderType)</h4>
+  <div class="markdown level1 summary"><p>Three channel 8-bit unsigned Gauss filter with downsampling and border control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiFilterGaussPyramidLayerDownBorder_8u_C3R(CUdeviceptr pSrc, int nSrcStep, NppiSize oSrcSize, NppiPoint oSrcOffset, CUdeviceptr pDst, int nDstStep, NppiSize oSizeROI, float nRate, int nFilterTaps, CUdeviceptr pKernel, NppiBorderType eBorderType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSrcSize</span></td>
+        <td><p>Source image width and height in pixels relative to pSrc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a></td>
+        <td><span class="parametername">oSrcOffset</span></td>
+        <td><p>The pixel offset that pSrc points to relative to the origin of the source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nDstStep</span></td>
+        <td><p>Destination-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">nRate</span></td>
+        <td><p>The downsampling rate to be used.  For integer equivalent rates unnecessary source pixels are just skipped. For non-integer rates the source image is bilinear interpolated. nRate must be &gt; 1.0F and &lt;=  10.0F.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nFilterTaps</span></td>
+        <td><p>The number of filter taps where nFilterTaps =  2 * ((int)((float)ceil(radius) + 0.5F) ) + 1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pKernel</span></td>
+        <td><p>Pointer to an array of nFilterTaps kernel coefficients which sum to 1.0F.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiBorderType.html">NppiBorderType</a></td>
+        <td><span class="parametername">eBorderType</span></td>
+        <td><p>The border type operation to be applied at source image border boundaries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NotEvenStepError">NotEvenStepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid_nppiFilterGaussPyramidLayerUpBorder_16u_C1R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid.nppiFilterGaussPyramidLayerUpBorder_16u_C1R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid_nppiFilterGaussPyramidLayerUpBorder_16u_C1R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiPoint_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_System_Single_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiBorderType_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid.nppiFilterGaussPyramidLayerUpBorder_16u_C1R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiPoint,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,System.Single,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiBorderType)">nppiFilterGaussPyramidLayerUpBorder_16u_C1R(CUdeviceptr, Int32, NppiSize, NppiPoint, CUdeviceptr, Int32, NppiSize, Single, Int32, CUdeviceptr, NppiBorderType)</h4>
+  <div class="markdown level1 summary"><p>Single channel 16-bit unsigned Gauss filter with upsampling and border control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiFilterGaussPyramidLayerUpBorder_16u_C1R(CUdeviceptr pSrc, int nSrcStep, NppiSize oSrcSize, NppiPoint oSrcOffset, CUdeviceptr pDst, int nDstStep, NppiSize oSizeROI, float nRate, int nFilterTaps, CUdeviceptr pKernel, NppiBorderType eBorderType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSrcSize</span></td>
+        <td><p>Source image width and height in pixels relative to pSrc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a></td>
+        <td><span class="parametername">oSrcOffset</span></td>
+        <td><p>The pixel offset that pSrc points to relative to the origin of the source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nDstStep</span></td>
+        <td><p>Destination-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">nRate</span></td>
+        <td><p>The upsampling rate to be used.  For integer equivalent rates unnecessary source pixels are just skipped. For non-integer rates the source image is bilinear interpolated. nRate must be &gt; 1.0F and &lt;=  10.0F.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nFilterTaps</span></td>
+        <td><p>The number of filter taps where nFilterTaps =  2 * ((int)((float)ceil(radius) + 0.5F) ) + 1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pKernel</span></td>
+        <td><p>Pointer to an array of nFilterTaps kernel coefficients which sum to 1.0F.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiBorderType.html">NppiBorderType</a></td>
+        <td><span class="parametername">eBorderType</span></td>
+        <td><p>The border type operation to be applied at source image border boundaries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NotEvenStepError">NotEvenStepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid_nppiFilterGaussPyramidLayerUpBorder_16u_C3R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid.nppiFilterGaussPyramidLayerUpBorder_16u_C3R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid_nppiFilterGaussPyramidLayerUpBorder_16u_C3R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiPoint_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_System_Single_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiBorderType_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid.nppiFilterGaussPyramidLayerUpBorder_16u_C3R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiPoint,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,System.Single,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiBorderType)">nppiFilterGaussPyramidLayerUpBorder_16u_C3R(CUdeviceptr, Int32, NppiSize, NppiPoint, CUdeviceptr, Int32, NppiSize, Single, Int32, CUdeviceptr, NppiBorderType)</h4>
+  <div class="markdown level1 summary"><p>Three channel 16-bit unsigned Gauss filter with upsampling and border control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiFilterGaussPyramidLayerUpBorder_16u_C3R(CUdeviceptr pSrc, int nSrcStep, NppiSize oSrcSize, NppiPoint oSrcOffset, CUdeviceptr pDst, int nDstStep, NppiSize oSizeROI, float nRate, int nFilterTaps, CUdeviceptr pKernel, NppiBorderType eBorderType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSrcSize</span></td>
+        <td><p>Source image width and height in pixels relative to pSrc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a></td>
+        <td><span class="parametername">oSrcOffset</span></td>
+        <td><p>The pixel offset that pSrc points to relative to the origin of the source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nDstStep</span></td>
+        <td><p>Destination-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">nRate</span></td>
+        <td><p>The upsampling rate to be used.  For integer equivalent rates unnecessary source pixels are just skipped. For non-integer rates the source image is bilinear interpolated. nRate must be &gt; 1.0F and &lt;=  10.0F.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nFilterTaps</span></td>
+        <td><p>The number of filter taps where nFilterTaps =  2 * ((int)((float)ceil(radius) + 0.5F) ) + 1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pKernel</span></td>
+        <td><p>Pointer to an array of nFilterTaps kernel coefficients which sum to 1.0F.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiBorderType.html">NppiBorderType</a></td>
+        <td><span class="parametername">eBorderType</span></td>
+        <td><p>The border type operation to be applied at source image border boundaries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NotEvenStepError">NotEvenStepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid_nppiFilterGaussPyramidLayerUpBorder_32f_C1R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid.nppiFilterGaussPyramidLayerUpBorder_32f_C1R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid_nppiFilterGaussPyramidLayerUpBorder_32f_C1R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiPoint_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_System_Single_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiBorderType_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid.nppiFilterGaussPyramidLayerUpBorder_32f_C1R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiPoint,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,System.Single,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiBorderType)">nppiFilterGaussPyramidLayerUpBorder_32f_C1R(CUdeviceptr, Int32, NppiSize, NppiPoint, CUdeviceptr, Int32, NppiSize, Single, Int32, CUdeviceptr, NppiBorderType)</h4>
+  <div class="markdown level1 summary"><p>Single channel 32-bit floating-point Gauss filter upsampling and with border control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiFilterGaussPyramidLayerUpBorder_32f_C1R(CUdeviceptr pSrc, int nSrcStep, NppiSize oSrcSize, NppiPoint oSrcOffset, CUdeviceptr pDst, int nDstStep, NppiSize oSizeROI, float nRate, int nFilterTaps, CUdeviceptr pKernel, NppiBorderType eBorderType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSrcSize</span></td>
+        <td><p>Source image width and height in pixels relative to pSrc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a></td>
+        <td><span class="parametername">oSrcOffset</span></td>
+        <td><p>The pixel offset that pSrc points to relative to the origin of the source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nDstStep</span></td>
+        <td><p>Destination-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">nRate</span></td>
+        <td><p>The upsampling rate to be used.  For integer equivalent rates unnecessary source pixels are just skipped. For non-integer rates the source image is bilinear interpolated. nRate must be &gt; 1.0F and &lt;=  10.0F.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nFilterTaps</span></td>
+        <td><p>The number of filter taps where nFilterTaps =  2 * ((int)((float)ceil(radius) + 0.5F) ) + 1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pKernel</span></td>
+        <td><p>Pointer to an array of nFilterTaps kernel coefficients which sum to 1.0F.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiBorderType.html">NppiBorderType</a></td>
+        <td><span class="parametername">eBorderType</span></td>
+        <td><p>The border type operation to be applied at source image border boundaries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NotEvenStepError">NotEvenStepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid_nppiFilterGaussPyramidLayerUpBorder_32f_C3R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid.nppiFilterGaussPyramidLayerUpBorder_32f_C3R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid_nppiFilterGaussPyramidLayerUpBorder_32f_C3R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiPoint_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_System_Single_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiBorderType_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid.nppiFilterGaussPyramidLayerUpBorder_32f_C3R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiPoint,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,System.Single,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiBorderType)">nppiFilterGaussPyramidLayerUpBorder_32f_C3R(CUdeviceptr, Int32, NppiSize, NppiPoint, CUdeviceptr, Int32, NppiSize, Single, Int32, CUdeviceptr, NppiBorderType)</h4>
+  <div class="markdown level1 summary"><p>Three channel 32-bit floating-point Gauss filter with upsampling and border control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiFilterGaussPyramidLayerUpBorder_32f_C3R(CUdeviceptr pSrc, int nSrcStep, NppiSize oSrcSize, NppiPoint oSrcOffset, CUdeviceptr pDst, int nDstStep, NppiSize oSizeROI, float nRate, int nFilterTaps, CUdeviceptr pKernel, NppiBorderType eBorderType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSrcSize</span></td>
+        <td><p>Source image width and height in pixels relative to pSrc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a></td>
+        <td><span class="parametername">oSrcOffset</span></td>
+        <td><p>The pixel offset that pSrc points to relative to the origin of the source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nDstStep</span></td>
+        <td><p>Destination-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">nRate</span></td>
+        <td><p>The upsampling rate to be used.  For integer equivalent rates unnecessary source pixels are just skipped. For non-integer rates the source image is bilinear interpolated. nRate must be &gt; 1.0F and &lt;=  10.0F.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nFilterTaps</span></td>
+        <td><p>The number of filter taps where nFilterTaps =  2 * ((int)((float)ceil(radius) + 0.5F) ) + 1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pKernel</span></td>
+        <td><p>Pointer to an array of nFilterTaps kernel coefficients which sum to 1.0F.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiBorderType.html">NppiBorderType</a></td>
+        <td><span class="parametername">eBorderType</span></td>
+        <td><p>The border type operation to be applied at source image border boundaries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NotEvenStepError">NotEvenStepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid_nppiFilterGaussPyramidLayerUpBorder_8u_C1R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid.nppiFilterGaussPyramidLayerUpBorder_8u_C1R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid_nppiFilterGaussPyramidLayerUpBorder_8u_C1R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiPoint_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_System_Single_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiBorderType_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid.nppiFilterGaussPyramidLayerUpBorder_8u_C1R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiPoint,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,System.Single,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiBorderType)">nppiFilterGaussPyramidLayerUpBorder_8u_C1R(CUdeviceptr, Int32, NppiSize, NppiPoint, CUdeviceptr, Int32, NppiSize, Single, Int32, CUdeviceptr, NppiBorderType)</h4>
+  <div class="markdown level1 summary"><p>Single channel 8-bit unsigned Gauss filter with upsampling and border control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiFilterGaussPyramidLayerUpBorder_8u_C1R(CUdeviceptr pSrc, int nSrcStep, NppiSize oSrcSize, NppiPoint oSrcOffset, CUdeviceptr pDst, int nDstStep, NppiSize oSizeROI, float nRate, int nFilterTaps, CUdeviceptr pKernel, NppiBorderType eBorderType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSrcSize</span></td>
+        <td><p>Source image width and height in pixels relative to pSrc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a></td>
+        <td><span class="parametername">oSrcOffset</span></td>
+        <td><p>The pixel offset that pSrc points to relative to the origin of the source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nDstStep</span></td>
+        <td><p>Destination-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">nRate</span></td>
+        <td><p>The upsampling rate to be used.  For integer equivalent rates unnecessary source pixels are just skipped. For non-integer rates the source image is bilinear interpolated. nRate must be &gt; 1.0F and &lt;=  10.0F.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nFilterTaps</span></td>
+        <td><p>The number of filter taps where nFilterTaps =  2 * ((int)((float)ceil(radius) + 0.5F) ) + 1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pKernel</span></td>
+        <td><p>Pointer to an array of nFilterTaps kernel coefficients which sum to 1.0F.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiBorderType.html">NppiBorderType</a></td>
+        <td><span class="parametername">eBorderType</span></td>
+        <td><p>The border type operation to be applied at source image border boundaries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NotEvenStepError">NotEvenStepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid_nppiFilterGaussPyramidLayerUpBorder_8u_C3R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid.nppiFilterGaussPyramidLayerUpBorder_8u_C3R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid_nppiFilterGaussPyramidLayerUpBorder_8u_C3R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiPoint_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_System_Single_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiBorderType_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid.nppiFilterGaussPyramidLayerUpBorder_8u_C3R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiPoint,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,System.Single,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiBorderType)">nppiFilterGaussPyramidLayerUpBorder_8u_C3R(CUdeviceptr, Int32, NppiSize, NppiPoint, CUdeviceptr, Int32, NppiSize, Single, Int32, CUdeviceptr, NppiBorderType)</h4>
+  <div class="markdown level1 summary"><p>Three channel 8-bit unsigned Gauss filter with upsampling and border control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiFilterGaussPyramidLayerUpBorder_8u_C3R(CUdeviceptr pSrc, int nSrcStep, NppiSize oSrcSize, NppiPoint oSrcOffset, CUdeviceptr pDst, int nDstStep, NppiSize oSizeROI, float nRate, int nFilterTaps, CUdeviceptr pKernel, NppiBorderType eBorderType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSrcSize</span></td>
+        <td><p>Source image width and height in pixels relative to pSrc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a></td>
+        <td><span class="parametername">oSrcOffset</span></td>
+        <td><p>The pixel offset that pSrc points to relative to the origin of the source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nDstStep</span></td>
+        <td><p>Destination-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">nRate</span></td>
+        <td><p>The upsampling rate to be used.  For integer equivalent rates unnecessary source pixels are just skipped. For non-integer rates the source image is bilinear interpolated. nRate must be &gt; 1.0F and &lt;=  10.0F.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nFilterTaps</span></td>
+        <td><p>The number of filter taps where nFilterTaps =  2 * ((int)((float)ceil(radius) + 0.5F) ) + 1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pKernel</span></td>
+        <td><p>Pointer to an array of nFilterTaps kernel coefficients which sum to 1.0F.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiBorderType.html">NppiBorderType</a></td>
+        <td><span class="parametername">eBorderType</span></td>
+        <td><p>The border type operation to be applied at source image border boundaries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NotEvenStepError">NotEvenStepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid_nppiGetFilterGaussPyramidLayerDownBorderDstROI_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid.nppiGetFilterGaussPyramidLayerDownBorderDstROI*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid_nppiGetFilterGaussPyramidLayerDownBorderDstROI_System_Int32_System_Int32_ManagedCuda_NPP_NppiSize__System_Single_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid.nppiGetFilterGaussPyramidLayerDownBorderDstROI(System.Int32,System.Int32,ManagedCuda.NPP.NppiSize@,System.Single)">nppiGetFilterGaussPyramidLayerDownBorderDstROI(Int32, Int32, ref NppiSize, Single)</h4>
+  <div class="markdown level1 summary"><p>Calculate destination image SizeROI width and height from source image ROI width and height and downsampling rate.
+It is highly recommended that this function be use to determine the destination image ROI for consistent results.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiGetFilterGaussPyramidLayerDownBorderDstROI(int nSrcROIWidth, int nSrcROIHeight, ref NppiSize pDstSizeROI, float nRate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcROIWidth</span></td>
+        <td><p>The desired source image ROI width, must be &lt;=  oSrcSize.width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcROIHeight</span></td>
+        <td><p>The desired source image ROI height, must be &lt;=  oSrcSize.height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">pDstSizeROI</span></td>
+        <td><p>Host memory pointer to the destination image roi_specification.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">nRate</span></td>
+        <td><p>The downsampling rate to be used.  For integer equivalent rates unnecessary source pixels are just skipped. For non-integer rates the source image is bilinear interpolated. nRate must be &gt; 1.0F and &lt;=  10.0F.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NotEvenStepError">NotEvenStepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid_nppiGetFilterGaussPyramidLayerUpBorderDstROI_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid.nppiGetFilterGaussPyramidLayerUpBorderDstROI*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid_nppiGetFilterGaussPyramidLayerUpBorderDstROI_System_Int32_System_Int32_ManagedCuda_NPP_NppiSize__ManagedCuda_NPP_NppiSize__System_Single_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid.nppiGetFilterGaussPyramidLayerUpBorderDstROI(System.Int32,System.Int32,ManagedCuda.NPP.NppiSize@,ManagedCuda.NPP.NppiSize@,System.Single)">nppiGetFilterGaussPyramidLayerUpBorderDstROI(Int32, Int32, ref NppiSize, ref NppiSize, Single)</h4>
+  <div class="markdown level1 summary"><p>Calculate destination image minimum and maximum SizeROI width and height from source image ROI width and height and upsampling rate. It is highly recommended that this function be use to determine the best destination image ROI for consistent results.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiGetFilterGaussPyramidLayerUpBorderDstROI(int nSrcROIWidth, int nSrcROIHeight, ref NppiSize pDstSizeROIMin, ref NppiSize pDstSizeROIMax, float nRate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcROIWidth</span></td>
+        <td><p>The desired source image ROI width, must be &lt;= oSrcSize.width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcROIHeight</span></td>
+        <td><p>The desired source image ROI height, must be &lt;= oSrcSize.height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">pDstSizeROIMin</span></td>
+        <td><p>Host memory pointer to the minimum recommended destination image roi_specification.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">pDstSizeROIMax</span></td>
+        <td><p>Host memory pointer to the maximum recommended destination image roi_specification.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">nRate</span></td>
+        <td><p>The upsampling rate to be used.  For integer equivalent rates unnecessary source pixels are just skipped. For non-integer rates the source image is bilinear interpolated. nRate must be &gt; 1.0F and &lt;=  10.0F.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NotEvenStepError">NotEvenStepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterGaussPyramid.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterGaussPyramid%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPNativeMethods.cs/#L74864" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

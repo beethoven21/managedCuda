@@ -1,0 +1,991 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DriverAPINativeMethods.DeviceManagement
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DriverAPINativeMethods.DeviceManagement
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.DriverAPINativeMethods.DeviceManagement">
+  
+  
+  <h1 id="ManagedCuda_DriverAPINativeMethods_DeviceManagement" data-uid="ManagedCuda.DriverAPINativeMethods.DeviceManagement" class="text-break">Class DriverAPINativeMethods.DeviceManagement
+  </h1>
+  <div class="markdown level0 summary"><p>Combines all API calls for device management</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DriverAPINativeMethods.DeviceManagement</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.html">ManagedCuda</a></h6>
+  <h6><strong>Assembly</strong>: ManagedCuda.dll</h6>
+  <h5 id="ManagedCuda_DriverAPINativeMethods_DeviceManagement_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class DeviceManagement</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_DeviceManagement_cuDeviceComputeCapability_" data-uid="ManagedCuda.DriverAPINativeMethods.DeviceManagement.cuDeviceComputeCapability*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_DeviceManagement_cuDeviceComputeCapability_System_Int32__System_Int32__ManagedCuda_BasicTypes_CUdevice_" data-uid="ManagedCuda.DriverAPINativeMethods.DeviceManagement.cuDeviceComputeCapability(System.Int32@,System.Int32@,ManagedCuda.BasicTypes.CUdevice)">cuDeviceComputeCapability(ref Int32, ref Int32, CUdevice)</h4>
+  <div class="markdown level1 summary"><p>Returns in <code>major</code> and <code>minor</code> the major and minor revision numbers that define the compute capability of the
+device <code>dev</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Don't use this CUDA API call with CUDA version &gt;= 5.0.&quot;)]
+public static CUResult cuDeviceComputeCapability(ref int major, ref int minor, CUdevice dev)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">major</span></td>
+        <td><p>Major revision number</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">minor</span></td>
+        <td><p>Minor revision number</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdevice.html">CUdevice</a></td>
+        <td><span class="parametername">dev</span></td>
+        <td><p>Device handle</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidDevice">ErrorInvalidDevice</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_DeviceManagement_cuDeviceGet_" data-uid="ManagedCuda.DriverAPINativeMethods.DeviceManagement.cuDeviceGet*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_DeviceManagement_cuDeviceGet_ManagedCuda_BasicTypes_CUdevice__System_Int32_" data-uid="ManagedCuda.DriverAPINativeMethods.DeviceManagement.cuDeviceGet(ManagedCuda.BasicTypes.CUdevice@,System.Int32)">cuDeviceGet(ref CUdevice, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns in <code>device</code> a device handle given an ordinal in the range [0, <a class="xref" href="ManagedCuda.DriverAPINativeMethods.DeviceManagement.html#ManagedCuda_DriverAPINativeMethods_DeviceManagement_cuDeviceGetCount_System_Int32__">cuDeviceGetCount(ref Int32)</a>-1].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuDeviceGet(ref CUdevice device, int ordinal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdevice.html">CUdevice</a></td>
+        <td><span class="parametername">device</span></td>
+        <td><p>Returned device handle</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ordinal</span></td>
+        <td><p>Device number to get handle for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidDevice">ErrorInvalidDevice</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_DeviceManagement_cuDeviceGetAttribute_" data-uid="ManagedCuda.DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_DeviceManagement_cuDeviceGetAttribute_System_Int32__ManagedCuda_BasicTypes_CUDeviceAttribute_ManagedCuda_BasicTypes_CUdevice_" data-uid="ManagedCuda.DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(System.Int32@,ManagedCuda.BasicTypes.CUDeviceAttribute,ManagedCuda.BasicTypes.CUdevice)">cuDeviceGetAttribute(ref Int32, CUDeviceAttribute, CUdevice)</h4>
+  <div class="markdown level1 summary"><p>Returns in <code>pi</code> the integer value of the attribute <code>attrib</code> on device <code>dev</code>. See <a class="xref" href="ManagedCuda.BasicTypes.CUDeviceAttribute.html">CUDeviceAttribute</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuDeviceGetAttribute(ref int pi, CUDeviceAttribute attrib, CUdevice dev)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pi</span></td>
+        <td><p>Returned device attribute value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUDeviceAttribute.html">CUDeviceAttribute</a></td>
+        <td><span class="parametername">attrib</span></td>
+        <td><p>Device attribute to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdevice.html">CUdevice</a></td>
+        <td><span class="parametername">dev</span></td>
+        <td><p>Device handle</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidDevice">ErrorInvalidDevice</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_DeviceManagement_cuDeviceGetByPCIBusId_" data-uid="ManagedCuda.DriverAPINativeMethods.DeviceManagement.cuDeviceGetByPCIBusId*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_DeviceManagement_cuDeviceGetByPCIBusId_ManagedCuda_BasicTypes_CUdevice__System_Byte___" data-uid="ManagedCuda.DriverAPINativeMethods.DeviceManagement.cuDeviceGetByPCIBusId(ManagedCuda.BasicTypes.CUdevice@,System.Byte[])">cuDeviceGetByPCIBusId(ref CUdevice, Byte[])</h4>
+  <div class="markdown level1 summary"><p>Returns in <code>device</code> a device handle given a PCI bus ID string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuDeviceGetByPCIBusId(ref CUdevice dev, byte[] pciBusId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdevice.html">CUdevice</a></td>
+        <td><span class="parametername">dev</span></td>
+        <td><p>Returned device handle</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">pciBusId</span></td>
+        <td><p>String in one of the following forms: <p>
+[domain]:[bus]:[device].[function]<p>
+[domain]:[bus]:[device]<p>
+[bus]:[device].[function]<p>
+where domain, bus, device, and function are all hexadecimal values</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidDevice">ErrorInvalidDevice</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_DeviceManagement_cuDeviceGetCount_" data-uid="ManagedCuda.DriverAPINativeMethods.DeviceManagement.cuDeviceGetCount*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_DeviceManagement_cuDeviceGetCount_System_Int32__" data-uid="ManagedCuda.DriverAPINativeMethods.DeviceManagement.cuDeviceGetCount(System.Int32@)">cuDeviceGetCount(ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns in <code>count</code> the number of devices with compute capability greater than or equal to 2.0 that are available for
+execution. If there is no such device, <a class="xref" href="ManagedCuda.DriverAPINativeMethods.DeviceManagement.html#ManagedCuda_DriverAPINativeMethods_DeviceManagement_cuDeviceGetCount_System_Int32__">cuDeviceGetCount(ref Int32)</a> returns 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuDeviceGetCount(ref int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Returned number of compute-capable devices</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_DeviceManagement_cuDeviceGetName_" data-uid="ManagedCuda.DriverAPINativeMethods.DeviceManagement.cuDeviceGetName*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_DeviceManagement_cuDeviceGetName_System_Byte___System_Int32_ManagedCuda_BasicTypes_CUdevice_" data-uid="ManagedCuda.DriverAPINativeMethods.DeviceManagement.cuDeviceGetName(System.Byte[],System.Int32,ManagedCuda.BasicTypes.CUdevice)">cuDeviceGetName(Byte[], Int32, CUdevice)</h4>
+  <div class="markdown level1 summary"><p>Returns an ASCII string identifying the device <code>dev</code> in the NULL-terminated string pointed to by name. <code>len</code> specifies
+the maximum length of the string that may be returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuDeviceGetName(byte[] name, int len, CUdevice dev)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Returned identifier string for the device</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">len</span></td>
+        <td><p>Maximum length of string to store in <code>name</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdevice.html">CUdevice</a></td>
+        <td><span class="parametername">dev</span></td>
+        <td><p>Device to get identifier string for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidDevice">ErrorInvalidDevice</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_DeviceManagement_cuDeviceGetPCIBusId_" data-uid="ManagedCuda.DriverAPINativeMethods.DeviceManagement.cuDeviceGetPCIBusId*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_DeviceManagement_cuDeviceGetPCIBusId_System_Byte___System_Int32_ManagedCuda_BasicTypes_CUdevice_" data-uid="ManagedCuda.DriverAPINativeMethods.DeviceManagement.cuDeviceGetPCIBusId(System.Byte[],System.Int32,ManagedCuda.BasicTypes.CUdevice)">cuDeviceGetPCIBusId(Byte[], Int32, CUdevice)</h4>
+  <div class="markdown level1 summary"><p>Returns an ASCII string identifying the device <code>dev</code> in the NULL-terminated
+string pointed to by <code>pciBusId</code>. <code>len</code> specifies the maximum length of the
+string that may be returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuDeviceGetPCIBusId(byte[] pciBusId, int len, CUdevice dev)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">pciBusId</span></td>
+        <td><p>Returned identifier string for the device in the following format
+[domain]:[bus]:[device].[function]<p>
+where domain, bus, device, and function are all hexadecimal values.<p>
+pciBusId should be large enough to store 13 characters including the NULL-terminator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">len</span></td>
+        <td><p>Maximum length of string to store in <code>name</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdevice.html">CUdevice</a></td>
+        <td><span class="parametername">dev</span></td>
+        <td><p>Device to get identifier string for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidDevice">ErrorInvalidDevice</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_DeviceManagement_cuDeviceGetProperties_" data-uid="ManagedCuda.DriverAPINativeMethods.DeviceManagement.cuDeviceGetProperties*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_DeviceManagement_cuDeviceGetProperties_ManagedCuda_BasicTypes_CUDeviceProperties__ManagedCuda_BasicTypes_CUdevice_" data-uid="ManagedCuda.DriverAPINativeMethods.DeviceManagement.cuDeviceGetProperties(ManagedCuda.BasicTypes.CUDeviceProperties@,ManagedCuda.BasicTypes.CUdevice)">cuDeviceGetProperties(ref CUDeviceProperties, CUdevice)</h4>
+  <div class="markdown level1 summary"><p>Returns in <code>prop</code> the (basic) properties of device <code>dev</code>. See <a class="xref" href="ManagedCuda.BasicTypes.CUDeviceProperties.html">CUDeviceProperties</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Don't use this CUDA API call with CUDA version &gt;= 5.0.&quot;)]
+public static CUResult cuDeviceGetProperties(ref CUDeviceProperties prop, CUdevice dev)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUDeviceProperties.html">CUDeviceProperties</a></td>
+        <td><span class="parametername">prop</span></td>
+        <td><p>Returned properties of device</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdevice.html">CUdevice</a></td>
+        <td><span class="parametername">dev</span></td>
+        <td><p>Device to get properties for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidDevice">ErrorInvalidDevice</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_DeviceManagement_cuDeviceTotalMem_v2_" data-uid="ManagedCuda.DriverAPINativeMethods.DeviceManagement.cuDeviceTotalMem_v2*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_DeviceManagement_cuDeviceTotalMem_v2_ManagedCuda_BasicTypes_SizeT__ManagedCuda_BasicTypes_CUdevice_" data-uid="ManagedCuda.DriverAPINativeMethods.DeviceManagement.cuDeviceTotalMem_v2(ManagedCuda.BasicTypes.SizeT@,ManagedCuda.BasicTypes.CUdevice)">cuDeviceTotalMem_v2(ref SizeT, CUdevice)</h4>
+  <div class="markdown level1 summary"><p>Returns in <code>bytes</code> the total amount of memory available on the device <code>dev</code> in bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuDeviceTotalMem_v2(ref SizeT bytes, CUdevice dev)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">bytes</span></td>
+        <td><p>Returned memory available on device in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdevice.html">CUdevice</a></td>
+        <td><span class="parametername">dev</span></td>
+        <td><p>Device handle</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidDevice">ErrorInvalidDevice</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_DeviceManagement_cuIpcCloseMemHandle_" data-uid="ManagedCuda.DriverAPINativeMethods.DeviceManagement.cuIpcCloseMemHandle*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_DeviceManagement_cuIpcCloseMemHandle_ManagedCuda_BasicTypes_CUdeviceptr_" data-uid="ManagedCuda.DriverAPINativeMethods.DeviceManagement.cuIpcCloseMemHandle(ManagedCuda.BasicTypes.CUdeviceptr)">cuIpcCloseMemHandle(CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>Unmaps memory returnd by ::cuIpcOpenMemHandle. The original allocation
+in the exporting process as well as imported mappings in other processes
+will be unaffected.</p>
+<p>
+Any resources used to enable peer access will be freed if this is the
+last mapping using them.
+<p>
+IPC functionality is restricted to devices with support for unified 
+ addressing on Linux operating systems.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuIpcCloseMemHandle(CUdeviceptr dptr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">dptr</span></td>
+        <td><p>Device pointer returned by ::cuIpcOpenMemHandle</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidHandle">ErrorInvalidHandle</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorMapFailed">ErrorMapFailed</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_DeviceManagement_cuIpcGetEventHandle_" data-uid="ManagedCuda.DriverAPINativeMethods.DeviceManagement.cuIpcGetEventHandle*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_DeviceManagement_cuIpcGetEventHandle_ManagedCuda_BasicTypes_CUipcEventHandle__ManagedCuda_BasicTypes_CUevent_" data-uid="ManagedCuda.DriverAPINativeMethods.DeviceManagement.cuIpcGetEventHandle(ManagedCuda.BasicTypes.CUipcEventHandle@,ManagedCuda.BasicTypes.CUevent)">cuIpcGetEventHandle(ref CUipcEventHandle, CUevent)</h4>
+  <div class="markdown level1 summary"><p>Takes as input a previously allocated event. This event must have been
+created with the ::CU_EVENT_INTERPROCESS and ::CU_EVENT_DISABLE_TIMING
+flags set. This opaque handle may be copied into other processes and
+opened with ::cuIpcOpenEventHandle to allow efficient hardware
+synchronization between GPU work in different processes.</p>
+<p>
+After the event has been been opened in the importing process, 
+::cuEventRecord, ::cuEventSynchronize, ::cuStreamWaitEvent and 
+::cuEventQuery may be used in either process. Performing operations 
+on the imported event after the exported event has been freed 
+with ::cuEventDestroy will result in undefined behavior.
+<p>
+IPC functionality is restricted to devices with support for unified 
+addressing on Linux operating systems.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuIpcGetEventHandle(ref CUipcEventHandle pHandle, CUevent cuevent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUipcEventHandle.html">CUipcEventHandle</a></td>
+        <td><span class="parametername">pHandle</span></td>
+        <td><p>Pointer to a user allocated CUipcEventHandle in which to return the opaque event handle</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUevent.html">CUevent</a></td>
+        <td><span class="parametername">cuevent</span></td>
+        <td><p>Event allocated with ::CU_EVENT_INTERPROCESS and  ::CU_EVENT_DISABLE_TIMING flags.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidHandle">ErrorInvalidHandle</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorOutOfMemory">ErrorOutOfMemory</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorMapFailed">ErrorMapFailed</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_DeviceManagement_cuIpcGetMemHandle_" data-uid="ManagedCuda.DriverAPINativeMethods.DeviceManagement.cuIpcGetMemHandle*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_DeviceManagement_cuIpcGetMemHandle_ManagedCuda_BasicTypes_CUipcMemHandle__ManagedCuda_BasicTypes_CUdeviceptr_" data-uid="ManagedCuda.DriverAPINativeMethods.DeviceManagement.cuIpcGetMemHandle(ManagedCuda.BasicTypes.CUipcMemHandle@,ManagedCuda.BasicTypes.CUdeviceptr)">cuIpcGetMemHandle(ref CUipcMemHandle, CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>Takes a pointer to the base of an existing device memory allocation created
+with ::cuMemAlloc and exports it for use in another process. This is a
+lightweight operation and may be called multiple times on an allocation
+without adverse effects.</p>
+<p>
+If a region of memory is freed with ::cuMemFree and a subsequent call
+to ::cuMemAlloc returns memory with the same device address,
+::cuIpcGetMemHandle will return a unique handle for the
+ new memory. 
+<p>
+IPC functionality is restricted to devices with support for unified 
+addressing on Linux operating systems.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuIpcGetMemHandle(ref CUipcMemHandle pHandle, CUdeviceptr dptr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUipcMemHandle.html">CUipcMemHandle</a></td>
+        <td><span class="parametername">pHandle</span></td>
+        <td><p>Pointer to user allocated ::CUipcMemHandle to return the handle in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">dptr</span></td>
+        <td><p>Base pointer to previously allocated device memory</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidHandle">ErrorInvalidHandle</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorOutOfMemory">ErrorOutOfMemory</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorMapFailed">ErrorMapFailed</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_DeviceManagement_cuIpcOpenEventHandle_" data-uid="ManagedCuda.DriverAPINativeMethods.DeviceManagement.cuIpcOpenEventHandle*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_DeviceManagement_cuIpcOpenEventHandle_ManagedCuda_BasicTypes_CUevent__ManagedCuda_BasicTypes_CUipcEventHandle_" data-uid="ManagedCuda.DriverAPINativeMethods.DeviceManagement.cuIpcOpenEventHandle(ManagedCuda.BasicTypes.CUevent@,ManagedCuda.BasicTypes.CUipcEventHandle)">cuIpcOpenEventHandle(ref CUevent, CUipcEventHandle)</h4>
+  <div class="markdown level1 summary"><p>Opens an interprocess event handle exported from another process with
+::cuIpcGetEventHandle. This function returns a ::CUevent that behaves like
+a locally created event with the ::CU_EVENT_DISABLE_TIMING flag specified.
+This event must be freed with ::cuEventDestroy.</p>
+<p>
+Performing operations on the imported event after the exported event has 
+been freed with ::cuEventDestroy will result in undefined behavior.
+<p>
+IPC functionality is restricted to devices with support for unified 
+addressing on Linux operating systems.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuIpcOpenEventHandle(ref CUevent phEvent, CUipcEventHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUevent.html">CUevent</a></td>
+        <td><span class="parametername">phEvent</span></td>
+        <td><p>Returns the imported event</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUipcEventHandle.html">CUipcEventHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Interprocess handle to open</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidHandle">ErrorInvalidHandle</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorMapFailed">ErrorMapFailed</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_DeviceManagement_cuIpcOpenMemHandle_" data-uid="ManagedCuda.DriverAPINativeMethods.DeviceManagement.cuIpcOpenMemHandle*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_DeviceManagement_cuIpcOpenMemHandle_ManagedCuda_BasicTypes_CUdeviceptr__ManagedCuda_BasicTypes_CUipcMemHandle_System_UInt32_" data-uid="ManagedCuda.DriverAPINativeMethods.DeviceManagement.cuIpcOpenMemHandle(ManagedCuda.BasicTypes.CUdeviceptr@,ManagedCuda.BasicTypes.CUipcMemHandle,System.UInt32)">cuIpcOpenMemHandle(ref CUdeviceptr, CUipcMemHandle, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Maps memory exported from another process with ::cuIpcGetMemHandle into
+the current device address space. For contexts on different devices
+::cuIpcOpenMemHandle can attempt to enable peer access between the
+devices as if the user called ::cuCtxEnablePeerAccess. This behavior is
+controlled by the ::CU_IPC_MEM_LAZY_ENABLE_PEER_ACCESS flag.
+::cuDeviceCanAccessPeer can determine if a mapping is possible.</p>
+<p>
+Contexts that may open ::CUipcMemHandles are restricted in the following way.
+::CUipcMemHandles from each ::CUdevice in a given process may only be opened 
+by one ::CUcontext per ::CUdevice per other process.
+<p>
+Memory returned from ::cuIpcOpenMemHandle must be freed with
+::cuIpcCloseMemHandle.
+<p>
+Calling ::cuMemFree on an exported memory region before calling
+::cuIpcCloseMemHandle in the importing context will result in undefined
+behavior.
+<p>
+IPC functionality is restricted to devices with support for unified 
+addressing on Linux operating systems.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuIpcOpenMemHandle(ref CUdeviceptr pdptr, CUipcMemHandle handle, uint Flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pdptr</span></td>
+        <td><p>Returned device pointer</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUipcMemHandle.html">CUipcMemHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>::CUipcMemHandle to open</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">Flags</span></td>
+        <td><p>Flags for this operation. Must be specified as ::CU_IPC_MEM_LAZY_ENABLE_PEER_ACCESS</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidHandle">ErrorInvalidHandle</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorMapFailed">ErrorMapFailed</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorTooManyPeers">ErrorTooManyPeers</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_DriverAPINativeMethods_DeviceManagement.md&amp;value=---%0Auid%3A%20ManagedCuda.DriverAPINativeMethods.DeviceManagement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/DriverAPI.cs/#L86" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

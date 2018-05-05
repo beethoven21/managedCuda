@@ -1,0 +1,2869 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CudaDeviceVariable&lt;T&gt;
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CudaDeviceVariable&lt;T&gt;
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.CudaDeviceVariable`1">
+  
+  
+  <h1 id="ManagedCuda_CudaDeviceVariable_1" data-uid="ManagedCuda.CudaDeviceVariable`1" class="text-break">Class CudaDeviceVariable&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>A variable located in CUDA device memory</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CudaDeviceVariable&lt;T&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.html">ManagedCuda</a></h6>
+  <h6><strong>Assembly</strong>: ManagedCuda.dll</h6>
+  <h5 id="ManagedCuda_CudaDeviceVariable_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CudaDeviceVariable&lt;T&gt; : IDisposable where T : struct</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>variable base type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1__ctor_ManagedCuda_BasicTypes_CUdeviceptr_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.%23ctor(ManagedCuda.BasicTypes.CUdeviceptr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L66">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1__ctor_" data-uid="ManagedCuda.CudaDeviceVariable`1.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1__ctor_ManagedCuda_BasicTypes_CUdeviceptr_" data-uid="ManagedCuda.CudaDeviceVariable`1.#ctor(ManagedCuda.BasicTypes.CUdeviceptr)">CudaDeviceVariable(CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>Creates a new CudaDeviceVariable from an existing CUdeviceptr. The allocated size is gethered via the CUDA API.
+devPtr won't be freed while disposing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaDeviceVariable(CUdeviceptr devPtr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">devPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1__ctor_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.%23ctor(ManagedCuda.BasicTypes.CUdeviceptr%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L98">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1__ctor_" data-uid="ManagedCuda.CudaDeviceVariable`1.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1__ctor_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaDeviceVariable`1.#ctor(ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.SizeT)">CudaDeviceVariable(CUdeviceptr, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Creates a new CudaDeviceVariable from an existing CUdeviceptr.
+devPtr won't be freed while disposing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaDeviceVariable(CUdeviceptr devPtr, SizeT size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">devPtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Size in Bytes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1__ctor_ManagedCuda_BasicTypes_CUdeviceptr_System_Boolean_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.%23ctor(ManagedCuda.BasicTypes.CUdeviceptr%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L77">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1__ctor_" data-uid="ManagedCuda.CudaDeviceVariable`1.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1__ctor_ManagedCuda_BasicTypes_CUdeviceptr_System_Boolean_" data-uid="ManagedCuda.CudaDeviceVariable`1.#ctor(ManagedCuda.BasicTypes.CUdeviceptr,System.Boolean)">CudaDeviceVariable(CUdeviceptr, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Creates a new CudaDeviceVariable from an existing CUdeviceptr. The allocated size is gethered via the CUDA API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaDeviceVariable(CUdeviceptr devPtr, bool isOwner)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">devPtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isOwner</span></td>
+        <td><p>The CUdeviceptr will be freed while disposing, if the CudaDeviceVariable is the owner</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1__ctor_ManagedCuda_BasicTypes_CUdeviceptr_System_Boolean_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.%23ctor(ManagedCuda.BasicTypes.CUdeviceptr%2CSystem.Boolean%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L110">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1__ctor_" data-uid="ManagedCuda.CudaDeviceVariable`1.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1__ctor_ManagedCuda_BasicTypes_CUdeviceptr_System_Boolean_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaDeviceVariable`1.#ctor(ManagedCuda.BasicTypes.CUdeviceptr,System.Boolean,ManagedCuda.BasicTypes.SizeT)">CudaDeviceVariable(CUdeviceptr, Boolean, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Creates a new CudaDeviceVariable from an existing CUdeviceptr.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaDeviceVariable(CUdeviceptr devPtr, bool isOwner, SizeT size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">devPtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isOwner</span></td>
+        <td><p>The CUdeviceptr will be freed while disposing, if the CudaDeviceVariable is the owner</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Size in Bytes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1__ctor_ManagedCuda_BasicTypes_CUmodule_System_String_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.%23ctor(ManagedCuda.BasicTypes.CUmodule%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L125">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1__ctor_" data-uid="ManagedCuda.CudaDeviceVariable`1.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1__ctor_ManagedCuda_BasicTypes_CUmodule_System_String_" data-uid="ManagedCuda.CudaDeviceVariable`1.#ctor(ManagedCuda.BasicTypes.CUmodule,System.String)">CudaDeviceVariable(CUmodule, String)</h4>
+  <div class="markdown level1 summary"><p>Creates a new CudaDeviceVariable from definition in cu-file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaDeviceVariable(CUmodule module, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUmodule.html">CUmodule</a></td>
+        <td><span class="parametername">module</span></td>
+        <td><p>The module where the variable is defined in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The variable name as defined in the cu-file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1__ctor_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.%23ctor(ManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L49">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1__ctor_" data-uid="ManagedCuda.CudaDeviceVariable`1.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1__ctor_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaDeviceVariable`1.#ctor(ManagedCuda.BasicTypes.SizeT)">CudaDeviceVariable(SizeT)</h4>
+  <div class="markdown level1 summary"><p>Creates a new CudaDeviceVariable and allocates the memory on the device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaDeviceVariable(SizeT size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>In elements</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1__ctor_ManagedCuda_CudaKernel_System_String_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.%23ctor(ManagedCuda.CudaKernel%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L146">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1__ctor_" data-uid="ManagedCuda.CudaDeviceVariable`1.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1__ctor_ManagedCuda_CudaKernel_System_String_" data-uid="ManagedCuda.CudaDeviceVariable`1.#ctor(ManagedCuda.CudaKernel,System.String)">CudaDeviceVariable(CudaKernel, String)</h4>
+  <div class="markdown level1 summary"><p>Creates a new CudaDeviceVariable from definition in cu-file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaDeviceVariable(CudaKernel kernel, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaKernel.html">CudaKernel</a></td>
+        <td><span class="parametername">kernel</span></td>
+        <td><p>The kernel which module defines the variable.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The variable name as defined in the cu-file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_DevicePointer.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.DevicePointer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L1136">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_DevicePointer_" data-uid="ManagedCuda.CudaDeviceVariable`1.DevicePointer*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_DevicePointer" data-uid="ManagedCuda.CudaDeviceVariable`1.DevicePointer">DevicePointer</h4>
+  <div class="markdown level1 summary"><p>Device pointer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUdeviceptr DevicePointer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_IsOwner.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.IsOwner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L1168">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_IsOwner_" data-uid="ManagedCuda.CudaDeviceVariable`1.IsOwner*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_IsOwner" data-uid="ManagedCuda.CudaDeviceVariable`1.IsOwner">IsOwner</h4>
+  <div class="markdown level1 summary"><p>If the wrapper class instance is the owner of a CUDA handle, it will be destroyed while disposing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOwner { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_Item_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.Item(ManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L1080">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_Item_" data-uid="ManagedCuda.CudaDeviceVariable`1.Item*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_Item_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaDeviceVariable`1.Item(ManagedCuda.BasicTypes.SizeT)">Item[SizeT]</h4>
+  <div class="markdown level1 summary"><p>Access array elements directly from host.<p>
+Each single access invokes a device to host or host to device copy. Access is therefor rather slow.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T this[SizeT index] { get; set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>index in elements</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_Null.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.Null%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L1228">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_Null_" data-uid="ManagedCuda.CudaDeviceVariable`1.Null*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_Null" data-uid="ManagedCuda.CudaDeviceVariable`1.Null">Null</h4>
+  <div class="markdown level1 summary"><p>Gets a null-pointer equivalent</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CudaDeviceVariable&lt;T&gt; Null { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_Size.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.Size%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L1160">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_Size_" data-uid="ManagedCuda.CudaDeviceVariable`1.Size*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_Size" data-uid="ManagedCuda.CudaDeviceVariable`1.Size">Size</h4>
+  <div class="markdown level1 summary"><p>Size in elements</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SizeT Size { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_SizeInBytes.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.SizeInBytes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L1144">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_SizeInBytes_" data-uid="ManagedCuda.CudaDeviceVariable`1.SizeInBytes*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_SizeInBytes" data-uid="ManagedCuda.CudaDeviceVariable`1.SizeInBytes">SizeInBytes</h4>
+  <div class="markdown level1 summary"><p>Size in bytes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SizeT SizeInBytes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_TypeSize.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.TypeSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L1152">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_TypeSize_" data-uid="ManagedCuda.CudaDeviceVariable`1.TypeSize*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_TypeSize" data-uid="ManagedCuda.CudaDeviceVariable`1.TypeSize">TypeSize</h4>
+  <div class="markdown level1 summary"><p>Type size in bytes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SizeT TypeSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.AsyncCopyToDevice(ManagedCuda.BasicTypes.CUdeviceptr%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L678">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_" data-uid="ManagedCuda.CudaDeviceVariable`1.AsyncCopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaDeviceVariable`1.AsyncCopyToDevice(ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUstream)">AsyncCopyToDevice(CUdeviceptr, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Async Copy data from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyToDevice(CUdeviceptr source, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source pointer to device memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.AsyncCopyToDevice(ManagedCuda.BasicTypes.CUdeviceptr%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L792">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_" data-uid="ManagedCuda.CudaDeviceVariable`1.AsyncCopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaDeviceVariable`1.AsyncCopyToDevice(ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.CUstream)">AsyncCopyToDevice(CUdeviceptr, SizeT, SizeT, SizeT, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Async Copy data from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyToDevice(CUdeviceptr source, SizeT offsetSrc, SizeT offsetDest, SizeT sizeInBytes, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source pointer to device memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetSrc</span></td>
+        <td><p>Offset to source pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetDest</span></td>
+        <td><p>Offset to destination pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">sizeInBytes</span></td>
+        <td><p>Size to copy in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_CudaStream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.AsyncCopyToDevice(ManagedCuda.BasicTypes.CUdeviceptr%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.CudaStream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L827">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_" data-uid="ManagedCuda.CudaDeviceVariable`1.AsyncCopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_CudaStream_" data-uid="ManagedCuda.CudaDeviceVariable`1.AsyncCopyToDevice(ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.CudaStream)">AsyncCopyToDevice(CUdeviceptr, SizeT, SizeT, SizeT, CudaStream)</h4>
+  <div class="markdown level1 summary"><p>Async Copy data from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyToDevice(CUdeviceptr source, SizeT offsetSrc, SizeT offsetDest, SizeT sizeInBytes, CudaStream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source pointer to device memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetSrc</span></td>
+        <td><p>Offset to source pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetDest</span></td>
+        <td><p>Offset to destination pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">sizeInBytes</span></td>
+        <td><p>Size to copy in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaStream.html">CudaStream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_CudaStream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.AsyncCopyToDevice(ManagedCuda.BasicTypes.CUdeviceptr%2CManagedCuda.CudaStream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L733">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_" data-uid="ManagedCuda.CudaDeviceVariable`1.AsyncCopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_CudaStream_" data-uid="ManagedCuda.CudaDeviceVariable`1.AsyncCopyToDevice(ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.CudaStream)">AsyncCopyToDevice(CUdeviceptr, CudaStream)</h4>
+  <div class="markdown level1 summary"><p>Async Copy data from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyToDevice(CUdeviceptr source, CudaStream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source pointer to device memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaStream.html">CudaStream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_ManagedCuda_CudaDeviceVariable__0__ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.AsyncCopyToDevice(ManagedCuda.CudaDeviceVariable%7B%600%7D%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L694">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_" data-uid="ManagedCuda.CudaDeviceVariable`1.AsyncCopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_ManagedCuda_CudaDeviceVariable__0__ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaDeviceVariable`1.AsyncCopyToDevice(ManagedCuda.CudaDeviceVariable{`0},ManagedCuda.BasicTypes.CUstream)">AsyncCopyToDevice(CudaDeviceVariable&lt;T&gt;, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Async Copy data from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyToDevice(CudaDeviceVariable&lt;T&gt; source, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;T&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_ManagedCuda_CudaDeviceVariable__0__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.AsyncCopyToDevice(ManagedCuda.CudaDeviceVariable%7B%600%7D%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L810">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_" data-uid="ManagedCuda.CudaDeviceVariable`1.AsyncCopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_ManagedCuda_CudaDeviceVariable__0__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaDeviceVariable`1.AsyncCopyToDevice(ManagedCuda.CudaDeviceVariable{`0},ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.CUstream)">AsyncCopyToDevice(CudaDeviceVariable&lt;T&gt;, SizeT, SizeT, SizeT, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Async Copy data from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyToDevice(CudaDeviceVariable&lt;T&gt; source, SizeT offsetSrc, SizeT offsetDest, SizeT sizeInBytes, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;T&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetSrc</span></td>
+        <td><p>Offset to source pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetDest</span></td>
+        <td><p>Offset to destination pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">sizeInBytes</span></td>
+        <td><p>Size to copy in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_ManagedCuda_CudaDeviceVariable__0__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_CudaStream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.AsyncCopyToDevice(ManagedCuda.CudaDeviceVariable%7B%600%7D%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.CudaStream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L845">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_" data-uid="ManagedCuda.CudaDeviceVariable`1.AsyncCopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_ManagedCuda_CudaDeviceVariable__0__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_CudaStream_" data-uid="ManagedCuda.CudaDeviceVariable`1.AsyncCopyToDevice(ManagedCuda.CudaDeviceVariable{`0},ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.CudaStream)">AsyncCopyToDevice(CudaDeviceVariable&lt;T&gt;, SizeT, SizeT, SizeT, CudaStream)</h4>
+  <div class="markdown level1 summary"><p>Async Copy data from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyToDevice(CudaDeviceVariable&lt;T&gt; source, SizeT offsetSrc, SizeT offsetDest, SizeT sizeInBytes, CudaStream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;T&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetSrc</span></td>
+        <td><p>Offset to source pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetDest</span></td>
+        <td><p>Offset to destination pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">sizeInBytes</span></td>
+        <td><p>Size to copy in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaStream.html">CudaStream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_ManagedCuda_CudaDeviceVariable__0__ManagedCuda_CudaStream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.AsyncCopyToDevice(ManagedCuda.CudaDeviceVariable%7B%600%7D%2CManagedCuda.CudaStream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L749">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_" data-uid="ManagedCuda.CudaDeviceVariable`1.AsyncCopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_ManagedCuda_CudaDeviceVariable__0__ManagedCuda_CudaStream_" data-uid="ManagedCuda.CudaDeviceVariable`1.AsyncCopyToDevice(ManagedCuda.CudaDeviceVariable{`0},ManagedCuda.CudaStream)">AsyncCopyToDevice(CudaDeviceVariable&lt;T&gt;, CudaStream)</h4>
+  <div class="markdown level1 summary"><p>Async Copy data from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyToDevice(CudaDeviceVariable&lt;T&gt; source, CudaStream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;T&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaStream.html">CudaStream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_ManagedCuda_CudaPitchedDeviceVariable__0__ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.AsyncCopyToDevice(ManagedCuda.CudaPitchedDeviceVariable%7B%600%7D%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L710">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_" data-uid="ManagedCuda.CudaDeviceVariable`1.AsyncCopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_ManagedCuda_CudaPitchedDeviceVariable__0__ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaDeviceVariable`1.AsyncCopyToDevice(ManagedCuda.CudaPitchedDeviceVariable{`0},ManagedCuda.BasicTypes.CUstream)">AsyncCopyToDevice(CudaPitchedDeviceVariable&lt;T&gt;, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Async Copy from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyToDevice(CudaPitchedDeviceVariable&lt;T&gt; deviceSrc, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaPitchedDeviceVariable-1.html">CudaPitchedDeviceVariable</a>&lt;T&gt;</td>
+        <td><span class="parametername">deviceSrc</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_ManagedCuda_CudaPitchedDeviceVariable__0__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.AsyncCopyToDevice(ManagedCuda.CudaPitchedDeviceVariable%7B%600%7D%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L891">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_" data-uid="ManagedCuda.CudaDeviceVariable`1.AsyncCopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_ManagedCuda_CudaPitchedDeviceVariable__0__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaDeviceVariable`1.AsyncCopyToDevice(ManagedCuda.CudaPitchedDeviceVariable{`0},ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.CUstream)">AsyncCopyToDevice(CudaPitchedDeviceVariable&lt;T&gt;, SizeT, SizeT, SizeT, SizeT, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Async Copy from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyToDevice(CudaPitchedDeviceVariable&lt;T&gt; deviceSrc, SizeT offsetSrc, SizeT offsetDest, SizeT width, SizeT height, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaPitchedDeviceVariable-1.html">CudaPitchedDeviceVariable</a>&lt;T&gt;</td>
+        <td><span class="parametername">deviceSrc</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetSrc</span></td>
+        <td><p>Offset to source pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetDest</span></td>
+        <td><p>Offset to destination pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>Width of 2D memory to copy in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>Height in elements</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_ManagedCuda_CudaPitchedDeviceVariable__0__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_CudaStream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.AsyncCopyToDevice(ManagedCuda.CudaPitchedDeviceVariable%7B%600%7D%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.CudaStream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L864">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_" data-uid="ManagedCuda.CudaDeviceVariable`1.AsyncCopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_ManagedCuda_CudaPitchedDeviceVariable__0__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_CudaStream_" data-uid="ManagedCuda.CudaDeviceVariable`1.AsyncCopyToDevice(ManagedCuda.CudaPitchedDeviceVariable{`0},ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.CudaStream)">AsyncCopyToDevice(CudaPitchedDeviceVariable&lt;T&gt;, SizeT, SizeT, SizeT, SizeT, CudaStream)</h4>
+  <div class="markdown level1 summary"><p>Async Copy from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyToDevice(CudaPitchedDeviceVariable&lt;T&gt; deviceSrc, SizeT offsetSrc, SizeT offsetDest, SizeT width, SizeT height, CudaStream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaPitchedDeviceVariable-1.html">CudaPitchedDeviceVariable</a>&lt;T&gt;</td>
+        <td><span class="parametername">deviceSrc</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetSrc</span></td>
+        <td><p>Offset to source pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetDest</span></td>
+        <td><p>Offset to destination pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>Width of 2D memory to copy in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>Height in elements</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaStream.html">CudaStream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_ManagedCuda_CudaPitchedDeviceVariable__0__ManagedCuda_CudaStream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.AsyncCopyToDevice(ManagedCuda.CudaPitchedDeviceVariable%7B%600%7D%2CManagedCuda.CudaStream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L765">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_" data-uid="ManagedCuda.CudaDeviceVariable`1.AsyncCopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_AsyncCopyToDevice_ManagedCuda_CudaPitchedDeviceVariable__0__ManagedCuda_CudaStream_" data-uid="ManagedCuda.CudaDeviceVariable`1.AsyncCopyToDevice(ManagedCuda.CudaPitchedDeviceVariable{`0},ManagedCuda.CudaStream)">AsyncCopyToDevice(CudaPitchedDeviceVariable&lt;T&gt;, CudaStream)</h4>
+  <div class="markdown level1 summary"><p>Async Copy from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyToDevice(CudaPitchedDeviceVariable&lt;T&gt; deviceSrc, CudaStream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaPitchedDeviceVariable-1.html">CudaPitchedDeviceVariable</a>&lt;T&gt;</td>
+        <td><span class="parametername">deviceSrc</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaStream.html">CudaStream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_CopyToDevice__0_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.CopyToDevice(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L368">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_CopyToDevice_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_CopyToDevice__0_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToDevice(`0)">CopyToDevice(T)</h4>
+  <div class="markdown level1 summary"><p>Copy data from host to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDevice(T source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source pointer to host memory</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_CopyToDevice__0_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.CopyToDevice(%600%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L393">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_CopyToDevice_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_CopyToDevice__0_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToDevice(`0,ManagedCuda.BasicTypes.SizeT)">CopyToDevice(T, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Copy data from host to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDevice(T source, SizeT offsetDest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source pointer to host memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetDest</span></td>
+        <td><p>Offset to destination pointer in bytes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_CopyToDevice__0___.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.CopyToDevice(%600%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L318">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_CopyToDevice_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_CopyToDevice__0___" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToDevice(`0[])">CopyToDevice(T[])</h4>
+  <div class="markdown level1 summary"><p>Copy data from host to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDevice(T[] source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source pointer to host memory</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_CopyToDevice__0___ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.CopyToDevice(%600%5B%5D%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L345">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_CopyToDevice_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_CopyToDevice__0___ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToDevice(`0[],ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT)">CopyToDevice(T[], SizeT, SizeT, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Copy data from host to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDevice(T[] source, SizeT offsetSrc, SizeT offsetDest, SizeT sizeInBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source pointer to host memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetSrc</span></td>
+        <td><p>Offset to source pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetDest</span></td>
+        <td><p>Offset to destination pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">sizeInBytes</span></td>
+        <td><p>Size to copy in bytes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.CopyToDevice(ManagedCuda.BasicTypes.CUdeviceptr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L206">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_CopyToDevice_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToDevice(ManagedCuda.BasicTypes.CUdeviceptr)">CopyToDevice(CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>Copy data from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDevice(CUdeviceptr source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source pointer to device memory</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.CopyToDevice(ManagedCuda.BasicTypes.CUdeviceptr%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L224">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_CopyToDevice_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToDevice(ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT)">CopyToDevice(CUdeviceptr, SizeT, SizeT, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Copy data from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDevice(CUdeviceptr source, SizeT offsetSrc, SizeT offsetDest, SizeT sizeInBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source pointer to device memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetSrc</span></td>
+        <td><p>Offset to source pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetDest</span></td>
+        <td><p>Offset to destination pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">sizeInBytes</span></td>
+        <td><p>Size to copy in bytes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_CopyToDevice_ManagedCuda_CudaDeviceVariable__0__.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.CopyToDevice(ManagedCuda.CudaDeviceVariable%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L238">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_CopyToDevice_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_CopyToDevice_ManagedCuda_CudaDeviceVariable__0__" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToDevice(ManagedCuda.CudaDeviceVariable{`0})">CopyToDevice(CudaDeviceVariable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Copy data from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDevice(CudaDeviceVariable&lt;T&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;T&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_CopyToDevice_ManagedCuda_CudaDeviceVariable__0__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.CopyToDevice(ManagedCuda.CudaDeviceVariable%7B%600%7D%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L256">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_CopyToDevice_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_CopyToDevice_ManagedCuda_CudaDeviceVariable__0__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToDevice(ManagedCuda.CudaDeviceVariable{`0},ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT)">CopyToDevice(CudaDeviceVariable&lt;T&gt;, SizeT, SizeT, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Copy data from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDevice(CudaDeviceVariable&lt;T&gt; source, SizeT offsetSrc, SizeT offsetDest, SizeT sizeInBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;T&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetSrc</span></td>
+        <td><p>Offset to source pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetDest</span></td>
+        <td><p>Offset to destination pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">sizeInBytes</span></td>
+        <td><p>Size to copy in bytes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_CopyToDevice_ManagedCuda_CudaPitchedDeviceVariable__0__.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.CopyToDevice(ManagedCuda.CudaPitchedDeviceVariable%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L270">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_CopyToDevice_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_CopyToDevice_ManagedCuda_CudaPitchedDeviceVariable__0__" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToDevice(ManagedCuda.CudaPitchedDeviceVariable{`0})">CopyToDevice(CudaPitchedDeviceVariable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Copy from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDevice(CudaPitchedDeviceVariable&lt;T&gt; deviceSrc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaPitchedDeviceVariable-1.html">CudaPitchedDeviceVariable</a>&lt;T&gt;</td>
+        <td><span class="parametername">deviceSrc</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_CopyToDevice_ManagedCuda_CudaPitchedDeviceVariable__0__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.CopyToDevice(ManagedCuda.CudaPitchedDeviceVariable%7B%600%7D%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L296">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_CopyToDevice_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_CopyToDevice_ManagedCuda_CudaPitchedDeviceVariable__0__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToDevice(ManagedCuda.CudaPitchedDeviceVariable{`0},ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT)">CopyToDevice(CudaPitchedDeviceVariable&lt;T&gt;, SizeT, SizeT, SizeT, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Copy from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDevice(CudaPitchedDeviceVariable&lt;T&gt; deviceSrc, SizeT offsetSrc, SizeT offsetDest, SizeT widthInBytes, SizeT height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaPitchedDeviceVariable-1.html">CudaPitchedDeviceVariable</a>&lt;T&gt;</td>
+        <td><span class="parametername">deviceSrc</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetSrc</span></td>
+        <td><p>Offset to source pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetDest</span></td>
+        <td><p>Offset to destination pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">widthInBytes</span></td>
+        <td><p>Width of 2D memory to copy in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>Height in elements</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_CopyToDevice_System_Array_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.CopyToDevice(System.Array)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L470">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_CopyToDevice_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_CopyToDevice_System_Array_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToDevice(System.Array)">CopyToDevice(Array)</h4>
+  <div class="markdown level1 summary"><p>Copy from Host to device memory. Array elements can be of any (value)type, but total size in bytes must match to allocated device memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDevice(Array hostSrc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Array</span></td>
+        <td><span class="parametername">hostSrc</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_CopyToDevice_System_IntPtr_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.CopyToDevice(System.IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L454">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_CopyToDevice_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_CopyToDevice_System_IntPtr_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToDevice(System.IntPtr)">CopyToDevice(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Copy data from host to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDevice(IntPtr source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source pointer to host memory</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_CopyToDevice_System_IntPtr_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.CopyToDevice(System.IntPtr%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L438">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_CopyToDevice_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_CopyToDevice_System_IntPtr_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToDevice(System.IntPtr,ManagedCuda.BasicTypes.SizeT)">CopyToDevice(IntPtr, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Copy data from host to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDevice(IntPtr source, SizeT offsetDest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source pointer to host memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetDest</span></td>
+        <td><p>Offset to destination pointer in bytes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_CopyToDevice_System_IntPtr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.CopyToDevice(System.IntPtr%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L420">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_CopyToDevice_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_CopyToDevice_System_IntPtr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToDevice(System.IntPtr,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT)">CopyToDevice(IntPtr, SizeT, SizeT, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Copy data from host to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDevice(IntPtr source, SizeT offsetSrc, SizeT offsetDest, SizeT sizeInBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source pointer to host memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetSrc</span></td>
+        <td><p>Offset to source pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetDest</span></td>
+        <td><p>Offset to destination pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">sizeInBytes</span></td>
+        <td><p>Size to copy in bytes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_CopyToHost__0__.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.CopyToHost(%600%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L545">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_CopyToHost_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToHost*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_CopyToHost__0__" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToHost(`0@)">CopyToHost(ref T)</h4>
+  <div class="markdown level1 summary"><p>Copy data from device to host memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToHost(ref T dest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">dest</span></td>
+        <td><p>Destination data in host memory</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_CopyToHost__0__ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.CopyToHost(%600%40%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L573">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_CopyToHost_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToHost*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_CopyToHost__0__ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToHost(`0@,ManagedCuda.BasicTypes.SizeT)">CopyToHost(ref T, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Copy data from device to host memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToHost(ref T dest, SizeT offsetSrc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">dest</span></td>
+        <td><p>Destination data in host memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetSrc</span></td>
+        <td><p>Offset to source pointer in bytes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_CopyToHost__0___.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.CopyToHost(%600%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L493">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_CopyToHost_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToHost*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_CopyToHost__0___" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToHost(`0[])">CopyToHost(T[])</h4>
+  <div class="markdown level1 summary"><p>Copy data from device to host memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToHost(T[] dest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">dest</span></td>
+        <td><p>Destination pointer to host memory</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_CopyToHost__0___ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.CopyToHost(%600%5B%5D%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L521">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_CopyToHost_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToHost*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_CopyToHost__0___ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToHost(`0[],ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT)">CopyToHost(T[], SizeT, SizeT, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Copy data from device to host memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToHost(T[] dest, SizeT offsetSrc, SizeT offsetDest, SizeT sizeInBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">dest</span></td>
+        <td><p>Destination pointer to host memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetSrc</span></td>
+        <td><p>Offset to source pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetDest</span></td>
+        <td><p>Offset to destination pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">sizeInBytes</span></td>
+        <td><p>Size to copy in bytes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_CopyToHost_System_Array_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.CopyToHost(System.Array)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L652">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_CopyToHost_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToHost*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_CopyToHost_System_Array_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToHost(System.Array)">CopyToHost(Array)</h4>
+  <div class="markdown level1 summary"><p>Copy data from this device to host memory. Array elements can be of any (value)type, but total size in bytes must match to allocated device memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToHost(Array hostDest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Array</span></td>
+        <td><span class="parametername">hostDest</span></td>
+        <td><p>Destination</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_CopyToHost_System_IntPtr_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.CopyToHost(System.IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L600">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_CopyToHost_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToHost*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_CopyToHost_System_IntPtr_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToHost(System.IntPtr)">CopyToHost(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Copy data from device to host memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToHost(IntPtr dest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">dest</span></td>
+        <td><p>Destination pointer to host memory</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_CopyToHost_System_IntPtr_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.CopyToHost(System.IntPtr%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L617">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_CopyToHost_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToHost*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_CopyToHost_System_IntPtr_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToHost(System.IntPtr,ManagedCuda.BasicTypes.SizeT)">CopyToHost(IntPtr, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Copy data from device to host memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToHost(IntPtr dest, SizeT offsetSrc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">dest</span></td>
+        <td><p>Destination data in host memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetSrc</span></td>
+        <td><p>Offset to source pointer in bytes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_CopyToHost_System_IntPtr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.CopyToHost(System.IntPtr%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L635">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_CopyToHost_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToHost*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_CopyToHost_System_IntPtr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaDeviceVariable`1.CopyToHost(System.IntPtr,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT)">CopyToHost(IntPtr, SizeT, SizeT, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Copy data from device to host memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToHost(IntPtr dest, SizeT offsetSrc, SizeT offsetDest, SizeT sizeInBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">dest</span></td>
+        <td><p>Destination pointer to host memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetSrc</span></td>
+        <td><p>Offset to source pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetDest</span></td>
+        <td><p>Offset to destination pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">sizeInBytes</span></td>
+        <td><p>Size to copy in bytes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_Dispose.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L165">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_Dispose_" data-uid="ManagedCuda.CudaDeviceVariable`1.Dispose*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_Dispose" data-uid="ManagedCuda.CudaDeviceVariable`1.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Dispose</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L175">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_Dispose_" data-uid="ManagedCuda.CudaDeviceVariable`1.Dispose*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_Dispose_System_Boolean_" data-uid="ManagedCuda.CudaDeviceVariable`1.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>For IDisposable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool fDisposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">fDisposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_Finalize.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.Finalize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L155">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_Finalize_" data-uid="ManagedCuda.CudaDeviceVariable`1.Finalize*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_Finalize" data-uid="ManagedCuda.CudaDeviceVariable`1.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"><p>For dispose</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_Memset_System_Byte_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.Memset(System.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L915">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_Memset_" data-uid="ManagedCuda.CudaDeviceVariable`1.Memset*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_Memset_System_Byte_" data-uid="ManagedCuda.CudaDeviceVariable`1.Memset(System.Byte)">Memset(Byte)</h4>
+  <div class="markdown level1 summary"><p>Memset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Memset(byte aValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">aValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_Memset_System_UInt16_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.Memset(System.UInt16)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L929">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_Memset_" data-uid="ManagedCuda.CudaDeviceVariable`1.Memset*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_Memset_System_UInt16_" data-uid="ManagedCuda.CudaDeviceVariable`1.Memset(System.UInt16)">Memset(UInt16)</h4>
+  <div class="markdown level1 summary"><p>Memset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Memset(ushort aValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td><span class="parametername">aValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_Memset_System_UInt32_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.Memset(System.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L943">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_Memset_" data-uid="ManagedCuda.CudaDeviceVariable`1.Memset*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_Memset_System_UInt32_" data-uid="ManagedCuda.CudaDeviceVariable`1.Memset(System.UInt32)">Memset(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Memset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Memset(uint aValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">aValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_MemsetAsync_System_Byte_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.MemsetAsync(System.Byte%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L960">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_MemsetAsync_" data-uid="ManagedCuda.CudaDeviceVariable`1.MemsetAsync*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_MemsetAsync_System_Byte_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaDeviceVariable`1.MemsetAsync(System.Byte,ManagedCuda.BasicTypes.CUstream)">MemsetAsync(Byte, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Memset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MemsetAsync(byte aValue, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">aValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_MemsetAsync_System_UInt16_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.MemsetAsync(System.UInt16%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L975">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_MemsetAsync_" data-uid="ManagedCuda.CudaDeviceVariable`1.MemsetAsync*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_MemsetAsync_System_UInt16_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaDeviceVariable`1.MemsetAsync(System.UInt16,ManagedCuda.BasicTypes.CUstream)">MemsetAsync(UInt16, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Memset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MemsetAsync(ushort aValue, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td><span class="parametername">aValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_MemsetAsync_System_UInt32_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.MemsetAsync(System.UInt32%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L990">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_MemsetAsync_" data-uid="ManagedCuda.CudaDeviceVariable`1.MemsetAsync*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_MemsetAsync_System_UInt32_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaDeviceVariable`1.MemsetAsync(System.UInt32,ManagedCuda.BasicTypes.CUstream)">MemsetAsync(UInt32, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Memset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MemsetAsync(uint aValue, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">aValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_PeerCopyToDevice_ManagedCuda_CudaContext_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_CudaContext_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.PeerCopyToDevice(ManagedCuda.CudaContext%2CManagedCuda.BasicTypes.CUdeviceptr%2CManagedCuda.CudaContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L1008">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_PeerCopyToDevice_" data-uid="ManagedCuda.CudaDeviceVariable`1.PeerCopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_PeerCopyToDevice_ManagedCuda_CudaContext_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_CudaContext_" data-uid="ManagedCuda.CudaDeviceVariable`1.PeerCopyToDevice(ManagedCuda.CudaContext,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.CudaContext)">PeerCopyToDevice(CudaContext, CUdeviceptr, CudaContext)</h4>
+  <div class="markdown level1 summary"><p>Copies from device memory in one context to device memory in another context</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PeerCopyToDevice(CudaContext destCtx, CUdeviceptr source, CudaContext sourceCtx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaContext.html">CudaContext</a></td>
+        <td><span class="parametername">destCtx</span></td>
+        <td><p>Destination context</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source pointer to device memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaContext.html">CudaContext</a></td>
+        <td><span class="parametername">sourceCtx</span></td>
+        <td><p>Source context</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_PeerCopyToDevice_ManagedCuda_CudaContext_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_CudaContext_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.PeerCopyToDevice(ManagedCuda.CudaContext%2CManagedCuda.BasicTypes.CUdeviceptr%2CManagedCuda.CudaContext%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L1043">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_PeerCopyToDevice_" data-uid="ManagedCuda.CudaDeviceVariable`1.PeerCopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_PeerCopyToDevice_ManagedCuda_CudaContext_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_CudaContext_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaDeviceVariable`1.PeerCopyToDevice(ManagedCuda.CudaContext,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.CudaContext,ManagedCuda.BasicTypes.CUstream)">PeerCopyToDevice(CudaContext, CUdeviceptr, CudaContext, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Async-Copies from device memory in one context to device memory in another context</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PeerCopyToDevice(CudaContext destCtx, CUdeviceptr source, CudaContext sourceCtx, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaContext.html">CudaContext</a></td>
+        <td><span class="parametername">destCtx</span></td>
+        <td><p>Destination context</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source pointer to device memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaContext.html">CudaContext</a></td>
+        <td><span class="parametername">sourceCtx</span></td>
+        <td><p>Source context</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_PeerCopyToDevice_ManagedCuda_CudaContext_ManagedCuda_CudaDeviceVariable__0__ManagedCuda_CudaContext_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.PeerCopyToDevice(ManagedCuda.CudaContext%2CManagedCuda.CudaDeviceVariable%7B%600%7D%2CManagedCuda.CudaContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L1025">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_PeerCopyToDevice_" data-uid="ManagedCuda.CudaDeviceVariable`1.PeerCopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_PeerCopyToDevice_ManagedCuda_CudaContext_ManagedCuda_CudaDeviceVariable__0__ManagedCuda_CudaContext_" data-uid="ManagedCuda.CudaDeviceVariable`1.PeerCopyToDevice(ManagedCuda.CudaContext,ManagedCuda.CudaDeviceVariable{`0},ManagedCuda.CudaContext)">PeerCopyToDevice(CudaContext, CudaDeviceVariable&lt;T&gt;, CudaContext)</h4>
+  <div class="markdown level1 summary"><p>Copies from device memory in one context to device memory in another context</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PeerCopyToDevice(CudaContext destCtx, CudaDeviceVariable&lt;T&gt; source, CudaContext sourceCtx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaContext.html">CudaContext</a></td>
+        <td><span class="parametername">destCtx</span></td>
+        <td><p>Destination context</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;T&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source pointer to device memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaContext.html">CudaContext</a></td>
+        <td><span class="parametername">sourceCtx</span></td>
+        <td><p>Source context</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_PeerCopyToDevice_ManagedCuda_CudaContext_ManagedCuda_CudaDeviceVariable__0__ManagedCuda_CudaContext_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.PeerCopyToDevice(ManagedCuda.CudaContext%2CManagedCuda.CudaDeviceVariable%7B%600%7D%2CManagedCuda.CudaContext%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L1061">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_PeerCopyToDevice_" data-uid="ManagedCuda.CudaDeviceVariable`1.PeerCopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_PeerCopyToDevice_ManagedCuda_CudaContext_ManagedCuda_CudaDeviceVariable__0__ManagedCuda_CudaContext_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaDeviceVariable`1.PeerCopyToDevice(ManagedCuda.CudaContext,ManagedCuda.CudaDeviceVariable{`0},ManagedCuda.CudaContext,ManagedCuda.BasicTypes.CUstream)">PeerCopyToDevice(CudaContext, CudaDeviceVariable&lt;T&gt;, CudaContext, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Async-Copies from device memory in one context to device memory in another context</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PeerCopyToDevice(CudaContext destCtx, CudaDeviceVariable&lt;T&gt; source, CudaContext sourceCtx, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaContext.html">CudaContext</a></td>
+        <td><span class="parametername">destCtx</span></td>
+        <td><p>Destination context</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;T&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source pointer to device memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaContext.html">CudaContext</a></td>
+        <td><span class="parametername">sourceCtx</span></td>
+        <td><p>Source context</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_op_Implicit__0__ManagedCuda_CudaDeviceVariable__0_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.op_Implicit(%600)~ManagedCuda.CudaDeviceVariable%7B%600%7D%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L1216">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_op_Implicit_" data-uid="ManagedCuda.CudaDeviceVariable`1.op_Implicit*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_op_Implicit__0__ManagedCuda_CudaDeviceVariable__0_" data-uid="ManagedCuda.CudaDeviceVariable`1.op_Implicit(`0)~ManagedCuda.CudaDeviceVariable{`0}">Implicit(T to CudaDeviceVariable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Converts a host array to a newly allocated device variable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator CudaDeviceVariable&lt;T&gt;(T d)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">d</span></td>
+        <td><p>host array</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;T&gt;</td>
+        <td><p>newly allocated device variable with values from host memory</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_op_Implicit__0____ManagedCuda_CudaDeviceVariable__0_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.op_Implicit(%600%5B%5D)~ManagedCuda.CudaDeviceVariable%7B%600%7D%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L1204">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_op_Implicit_" data-uid="ManagedCuda.CudaDeviceVariable`1.op_Implicit*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_op_Implicit__0____ManagedCuda_CudaDeviceVariable__0_" data-uid="ManagedCuda.CudaDeviceVariable`1.op_Implicit(`0[])~ManagedCuda.CudaDeviceVariable{`0}">Implicit(T[] to CudaDeviceVariable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Converts a host array to a newly allocated device variable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator CudaDeviceVariable&lt;T&gt;(T[] d)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">d</span></td>
+        <td><p>host array</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;T&gt;</td>
+        <td><p>newly allocated device variable with values from host memory</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_op_Implicit_ManagedCuda_CudaDeviceVariable__0____0.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.op_Implicit(ManagedCuda.CudaDeviceVariable%7B%600%7D)~%600%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L1192">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_op_Implicit_" data-uid="ManagedCuda.CudaDeviceVariable`1.op_Implicit*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_op_Implicit_ManagedCuda_CudaDeviceVariable__0____0" data-uid="ManagedCuda.CudaDeviceVariable`1.op_Implicit(ManagedCuda.CudaDeviceVariable{`0})~`0">Implicit(CudaDeviceVariable&lt;T&gt; to T)</h4>
+  <div class="markdown level1 summary"><p>Converts a device variable to a host value. In case of multiple device values, only the first value is copied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator T(CudaDeviceVariable&lt;T&gt; d)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;T&gt;</td>
+        <td><span class="parametername">d</span></td>
+        <td><p>device variable</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>newly allocated host variable with value from device memory</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1_op_Implicit_ManagedCuda_CudaDeviceVariable__0____0__.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601.op_Implicit(ManagedCuda.CudaDeviceVariable%7B%600%7D)~%600%5B%5D%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L1180">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDeviceVariable_1_op_Implicit_" data-uid="ManagedCuda.CudaDeviceVariable`1.op_Implicit*"></a>
+  <h4 id="ManagedCuda_CudaDeviceVariable_1_op_Implicit_ManagedCuda_CudaDeviceVariable__0____0__" data-uid="ManagedCuda.CudaDeviceVariable`1.op_Implicit(ManagedCuda.CudaDeviceVariable{`0})~`0[]">Implicit(CudaDeviceVariable&lt;T&gt; to T[])</h4>
+  <div class="markdown level1 summary"><p>Converts a device variable to a host array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator T[](CudaDeviceVariable&lt;T&gt; d)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;T&gt;</td>
+        <td><span class="parametername">d</span></td>
+        <td><p>device variable</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><p>newly allocated host array with values from device memory</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDeviceVariable_1.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDeviceVariable%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDeviceVariable.cs/#L35" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

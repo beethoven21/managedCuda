@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ManagedCuda.NETStandard | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="ManagedCuda.NETStandard | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="managedcudanetstandard">ManagedCuda.NETStandard</h1>
+
+<p><a href="https://travis-ci.org/surban/managedCuda"><img src="https://travis-ci.org/surban/managedCuda.svg?branch=master" alt="Build Status"></a></p>
+<p>Donate a beer to help the original author keep managedCuda up to date :)
+<a href="https://flattr.com/submit/auto?user_id=kunzmi&amp;url=https://github.com/kunzmi/managedCuda&amp;title=managedCuda&amp;language=&amp;tags=github&amp;category=software"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this git repo"></a>
+or
+<a href="https://www.paypal.me/kunzmi/"><img src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_SM.gif" alt="Support via PayPal"></a></p>
+<p>This is a port of <a href="https://kunzmi.github.io/managedCuda/">ManagedCuda</a> to .NET Standard 2.0.
+It has been tested on Linux and Microsoft Windows.</p>
+<p>ManagedCUDA aims an easy integration of NVidia's CUDA in .NET applications written in C#, F#, Visual Basic or any other .NET language.</p>
+<p>For this it includes:</p>
+<ul>
+<li>A complete wrapper for the  CUDA Driver API, version 9.1 (a 1:1 representation of cuda.h in C#)</li>
+<li>Based on this, wrapper classes for CUDA context, kernel, device variable, etc.</li>
+<li>Wrapper for graphics interop with DirectX and OpenGL, respectively SlimDX and OpenTK</li>
+<li>CUDA vector types like int2, float3 etc. with ToString() methods and operators (+, –, *, /)</li>
+<li>Define your own types: CudaDeviceVariable accepts any user defined type if it is a value type, i.e. a struct in C#</li>
+<li>Includes all CUDA libraries: CUFFT, CURAND, CUSPARSE, CUBLAS, CUSOLVE, NPP, NVGRAPH, Nvml and NVRTC (not all of them are up to date yet)</li>
+<li>Access device memory directly per element using [] operator:
+<pre><code class="lang-csharp">CudaDeviceVariable&lt;float&gt; devVar = new CudaDeviceVariable&lt;float&gt;(64);
+devVar[0] = 1.0f;
+devVar[1] = 2.0f;
+float hostVar1 = devVar[0];
+float hostVar2 = devVar[1];
+</code></pre>
+</li>
+<li>Implicit converter operators: Allocate and initialize device or host arrays in only one line of code:
+<pre><code class="lang-csharp">float3[] array_host = new float3[100];
+for (int i = 0; i &lt; 100; i++)
+{
+  array_host[i] = new float3(i, i+1, i+2);
+}
+//alloc device memory and copy data:
+CudaDeviceVariable&lt;float3&gt; array_device = array_host;
+//alloc host array and copy data: 
+float3[] array_host2 = array_device; 
+</code></pre>
+</li>
+<li>NPPs extension methods for CudaDeviceVariable. Add a reference to the NPP library and include the ManagedCuda.NPP.NPPsExtensions namespace:
+<pre><code class="lang-csharp">Random rand = new Random();
+int length = 256;
+
+//init some ramdom values
+double[] randoms = new double[length];
+for (int i = 0; i &lt; length; i++)
+{
+  randoms[i] = rand.NextDouble();
+}
+
+//Alloc device memory
+CudaDeviceVariable&lt;double&gt; a = randoms;
+CudaDeviceVariable&lt;double&gt; b = new CudaDeviceVariable&lt;double&gt;(length);
+b.Set(10.0); //NPPs method
+int size = a.MeanGetBufferSize(); //NPPs method
+//Alloc temporary memory for NPPs mean method
+CudaDeviceVariable&lt;byte&gt; buffer = new CudaDeviceVariable&lt;byte&gt;(size);
+CudaDeviceVariable&lt;double&gt; mean = new CudaDeviceVariable&lt;double&gt;(1);
+
+a.Mul(b); //NPPs method
+a.DivC(10.0); //NPPs method
+a.Mean(mean, buffer); //NPPs method
+
+//Copy data back to host
+double m = mean;
+double[] res = a;
+
+//Clean up
+mean.Dispose();
+buffer.Dispose();
+b.Dispose();
+a.Dispose();
+</code></pre>
+</li>
+<li>Compiles for .NET Standard 2.0, runs on Windows and Linux.</li>
+<li>The new feature 'per thread default stream' is available as a compiler directive of the managedCuda main library: Compile the library with the option &quot;_PerThreadDefaultStream&quot; to enable it.</li>
+</ul>
+<h2 id="nuget-packages">NuGet packages</h2>
+<p>Prebuilt NuGet packages are <a href="https://www.nuget.org/packages?q=ManagedCuda+NETStandard">available on nuget.org</a>.</p>
+<h2 id="documentation">Documentation</h2>
+<p>You can read the <a href="api/index.html">full API reference documentation</a>.</p>
+<h2 id="building-from-source">Building from source</h2>
+<p>Source code is available at <a href="https://github.com/surban/managedCuda">https://github.com/surban/managedCuda</a>.</p>
+<p>For building you need the following software:</p>
+<ul>
+<li>.NET Core SDK 2.0</li>
+<li>CUDA SDK</li>
+</ul>
+<p>Place the required native libraries from the CUDA SDK into the <code>Redist</code> folder.</p>
+<p>To obtain NuGet packages for a Release build, run from the root directory:</p>
+<p><code>dotnet pack -c Release</code></p>
+<p>The built packages are located in the <code>Packages/Release</code> directory.</p>
+<p>See <code>ManagedCUDA.targets</code> for common build settings.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/Docs/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

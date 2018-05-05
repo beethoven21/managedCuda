@@ -1,0 +1,1037 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CudaTextureLinearPitched2D&lt;T&gt;
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CudaTextureLinearPitched2D&lt;T&gt;
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1">
+  
+  
+  <h1 id="ManagedCuda_CudaTextureLinearPitched2D_1" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1" class="text-break">Class CudaTextureLinearPitched2D&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>CudaLinearTexture2D</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CudaTextureLinearPitched2D&lt;T&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.html">ManagedCuda</a></h6>
+  <h6><strong>Assembly</strong>: ManagedCuda.dll</h6>
+  <h5 id="ManagedCuda_CudaTextureLinearPitched2D_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CudaTextureLinearPitched2D&lt;T&gt; : IDisposable where T : struct</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureLinearPitched2D_1__ctor_ManagedCuda_CudaKernel_System_String_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUFilterMode_ManagedCuda_BasicTypes_CUTexRefSetFlags_ManagedCuda_BasicTypes_CUArrayFormat_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureLinearPitched2D%601.%23ctor(ManagedCuda.CudaKernel%2CSystem.String%2CManagedCuda.BasicTypes.CUAddressMode%2CManagedCuda.BasicTypes.CUAddressMode%2CManagedCuda.BasicTypes.CUFilterMode%2CManagedCuda.BasicTypes.CUTexRefSetFlags%2CManagedCuda.BasicTypes.CUArrayFormat%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureLinearPitched2D.cs/#L83">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureLinearPitched2D_1__ctor_" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaTextureLinearPitched2D_1__ctor_ManagedCuda_CudaKernel_System_String_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUFilterMode_ManagedCuda_BasicTypes_CUTexRefSetFlags_ManagedCuda_BasicTypes_CUArrayFormat_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.#ctor(ManagedCuda.CudaKernel,System.String,ManagedCuda.BasicTypes.CUAddressMode,ManagedCuda.BasicTypes.CUAddressMode,ManagedCuda.BasicTypes.CUFilterMode,ManagedCuda.BasicTypes.CUTexRefSetFlags,ManagedCuda.BasicTypes.CUArrayFormat,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT)">CudaTextureLinearPitched2D(CudaKernel, String, CUAddressMode, CUAddressMode, CUFilterMode, CUTexRefSetFlags, CUArrayFormat, SizeT, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Creates a new 2D texture from linear memory. Allocates a new device variable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaTextureLinearPitched2D(CudaKernel kernel, string texName, CUAddressMode addressMode0, CUAddressMode addressMode1, CUFilterMode filterMode, CUTexRefSetFlags flags, CUArrayFormat format, SizeT width, SizeT height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaKernel.html">CudaKernel</a></td>
+        <td><span class="parametername">kernel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">texName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUAddressMode.html">CUAddressMode</a></td>
+        <td><span class="parametername">addressMode0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUAddressMode.html">CUAddressMode</a></td>
+        <td><span class="parametername">addressMode1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUFilterMode.html">CUFilterMode</a></td>
+        <td><span class="parametername">filterMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUTexRefSetFlags.html">CUTexRefSetFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUArrayFormat.html">CUArrayFormat</a></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>In elements</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>In elements</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureLinearPitched2D_1__ctor_ManagedCuda_CudaKernel_System_String_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUFilterMode_ManagedCuda_BasicTypes_CUTexRefSetFlags_ManagedCuda_BasicTypes_CUArrayFormat_ManagedCuda_CudaPitchedDeviceVariable__0__.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureLinearPitched2D%601.%23ctor(ManagedCuda.CudaKernel%2CSystem.String%2CManagedCuda.BasicTypes.CUAddressMode%2CManagedCuda.BasicTypes.CUAddressMode%2CManagedCuda.BasicTypes.CUFilterMode%2CManagedCuda.BasicTypes.CUTexRefSetFlags%2CManagedCuda.BasicTypes.CUArrayFormat%2CManagedCuda.CudaPitchedDeviceVariable%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureLinearPitched2D.cs/#L162">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureLinearPitched2D_1__ctor_" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaTextureLinearPitched2D_1__ctor_ManagedCuda_CudaKernel_System_String_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUFilterMode_ManagedCuda_BasicTypes_CUTexRefSetFlags_ManagedCuda_BasicTypes_CUArrayFormat_ManagedCuda_CudaPitchedDeviceVariable__0__" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.#ctor(ManagedCuda.CudaKernel,System.String,ManagedCuda.BasicTypes.CUAddressMode,ManagedCuda.BasicTypes.CUAddressMode,ManagedCuda.BasicTypes.CUFilterMode,ManagedCuda.BasicTypes.CUTexRefSetFlags,ManagedCuda.BasicTypes.CUArrayFormat,ManagedCuda.CudaPitchedDeviceVariable{`0})">CudaTextureLinearPitched2D(CudaKernel, String, CUAddressMode, CUAddressMode, CUFilterMode, CUTexRefSetFlags, CUArrayFormat, CudaPitchedDeviceVariable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates a new 2D texture from linear memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaTextureLinearPitched2D(CudaKernel kernel, string texName, CUAddressMode addressMode0, CUAddressMode addressMode1, CUFilterMode filterMode, CUTexRefSetFlags flags, CUArrayFormat format, CudaPitchedDeviceVariable&lt;T&gt; deviceVar)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaKernel.html">CudaKernel</a></td>
+        <td><span class="parametername">kernel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">texName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUAddressMode.html">CUAddressMode</a></td>
+        <td><span class="parametername">addressMode0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUAddressMode.html">CUAddressMode</a></td>
+        <td><span class="parametername">addressMode1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUFilterMode.html">CUFilterMode</a></td>
+        <td><span class="parametername">filterMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUTexRefSetFlags.html">CUTexRefSetFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUArrayFormat.html">CUArrayFormat</a></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaPitchedDeviceVariable-1.html">CudaPitchedDeviceVariable</a>&lt;T&gt;</td>
+        <td><span class="parametername">deviceVar</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureLinearPitched2D_1__ctor_ManagedCuda_CudaKernel_System_String_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUFilterMode_ManagedCuda_BasicTypes_CUTexRefSetFlags_ManagedCuda_BasicTypes_CUArrayFormat_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureLinearPitched2D%601.%23ctor(ManagedCuda.CudaKernel%2CSystem.String%2CManagedCuda.BasicTypes.CUAddressMode%2CManagedCuda.BasicTypes.CUFilterMode%2CManagedCuda.BasicTypes.CUTexRefSetFlags%2CManagedCuda.BasicTypes.CUArrayFormat%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureLinearPitched2D.cs/#L65">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureLinearPitched2D_1__ctor_" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaTextureLinearPitched2D_1__ctor_ManagedCuda_CudaKernel_System_String_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUFilterMode_ManagedCuda_BasicTypes_CUTexRefSetFlags_ManagedCuda_BasicTypes_CUArrayFormat_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.#ctor(ManagedCuda.CudaKernel,System.String,ManagedCuda.BasicTypes.CUAddressMode,ManagedCuda.BasicTypes.CUFilterMode,ManagedCuda.BasicTypes.CUTexRefSetFlags,ManagedCuda.BasicTypes.CUArrayFormat,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT)">CudaTextureLinearPitched2D(CudaKernel, String, CUAddressMode, CUFilterMode, CUTexRefSetFlags, CUArrayFormat, SizeT, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Creates a new 2D texture from linear memory. Allocates a new device variable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaTextureLinearPitched2D(CudaKernel kernel, string texName, CUAddressMode addressMode, CUFilterMode filterMode, CUTexRefSetFlags flags, CUArrayFormat format, SizeT width, SizeT height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaKernel.html">CudaKernel</a></td>
+        <td><span class="parametername">kernel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">texName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUAddressMode.html">CUAddressMode</a></td>
+        <td><span class="parametername">addressMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUFilterMode.html">CUFilterMode</a></td>
+        <td><span class="parametername">filterMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUTexRefSetFlags.html">CUTexRefSetFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUArrayFormat.html">CUArrayFormat</a></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>In elements</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>In elements</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureLinearPitched2D_1__ctor_ManagedCuda_CudaKernel_System_String_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUFilterMode_ManagedCuda_BasicTypes_CUTexRefSetFlags_ManagedCuda_BasicTypes_CUArrayFormat_ManagedCuda_CudaPitchedDeviceVariable__0__.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureLinearPitched2D%601.%23ctor(ManagedCuda.CudaKernel%2CSystem.String%2CManagedCuda.BasicTypes.CUAddressMode%2CManagedCuda.BasicTypes.CUFilterMode%2CManagedCuda.BasicTypes.CUTexRefSetFlags%2CManagedCuda.BasicTypes.CUArrayFormat%2CManagedCuda.CudaPitchedDeviceVariable%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureLinearPitched2D.cs/#L145">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureLinearPitched2D_1__ctor_" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaTextureLinearPitched2D_1__ctor_ManagedCuda_CudaKernel_System_String_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUFilterMode_ManagedCuda_BasicTypes_CUTexRefSetFlags_ManagedCuda_BasicTypes_CUArrayFormat_ManagedCuda_CudaPitchedDeviceVariable__0__" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.#ctor(ManagedCuda.CudaKernel,System.String,ManagedCuda.BasicTypes.CUAddressMode,ManagedCuda.BasicTypes.CUFilterMode,ManagedCuda.BasicTypes.CUTexRefSetFlags,ManagedCuda.BasicTypes.CUArrayFormat,ManagedCuda.CudaPitchedDeviceVariable{`0})">CudaTextureLinearPitched2D(CudaKernel, String, CUAddressMode, CUFilterMode, CUTexRefSetFlags, CUArrayFormat, CudaPitchedDeviceVariable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates a new 2D texture from linear memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaTextureLinearPitched2D(CudaKernel kernel, string texName, CUAddressMode addressMode, CUFilterMode filterMode, CUTexRefSetFlags flags, CUArrayFormat format, CudaPitchedDeviceVariable&lt;T&gt; deviceVar)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaKernel.html">CudaKernel</a></td>
+        <td><span class="parametername">kernel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">texName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUAddressMode.html">CUAddressMode</a></td>
+        <td><span class="parametername">addressMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUFilterMode.html">CUFilterMode</a></td>
+        <td><span class="parametername">filterMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUTexRefSetFlags.html">CUTexRefSetFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUArrayFormat.html">CUArrayFormat</a></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaPitchedDeviceVariable-1.html">CudaPitchedDeviceVariable</a>&lt;T&gt;</td>
+        <td><span class="parametername">deviceVar</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureLinearPitched2D_1_AddressMode0.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureLinearPitched2D%601.AddressMode0%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureLinearPitched2D.cs/#L270">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureLinearPitched2D_1_AddressMode0_" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.AddressMode0*"></a>
+  <h4 id="ManagedCuda_CudaTextureLinearPitched2D_1_AddressMode0" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.AddressMode0">AddressMode0</h4>
+  <div class="markdown level1 summary"><p>AddressMode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUAddressMode AddressMode0 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUAddressMode.html">CUAddressMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureLinearPitched2D_1_AddressMode1.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureLinearPitched2D%601.AddressMode1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureLinearPitched2D.cs/#L278">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureLinearPitched2D_1_AddressMode1_" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.AddressMode1*"></a>
+  <h4 id="ManagedCuda_CudaTextureLinearPitched2D_1_AddressMode1" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.AddressMode1">AddressMode1</h4>
+  <div class="markdown level1 summary"><p>AddressMode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUAddressMode AddressMode1 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUAddressMode.html">CUAddressMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureLinearPitched2D_1_ChannelSize.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureLinearPitched2D%601.ChannelSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureLinearPitched2D.cs/#L318">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureLinearPitched2D_1_ChannelSize_" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.ChannelSize*"></a>
+  <h4 id="ManagedCuda_CudaTextureLinearPitched2D_1_ChannelSize" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.ChannelSize">ChannelSize</h4>
+  <div class="markdown level1 summary"><p>ChannelSize</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint ChannelSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureLinearPitched2D_1_CUFuntion.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureLinearPitched2D%601.CUFuntion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureLinearPitched2D.cs/#L358">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureLinearPitched2D_1_CUFuntion_" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.CUFuntion*"></a>
+  <h4 id="ManagedCuda_CudaTextureLinearPitched2D_1_CUFuntion" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.CUFuntion">CUFuntion</h4>
+  <div class="markdown level1 summary"><p>CUFunction</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUfunction CUFuntion { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUfunction.html">CUfunction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureLinearPitched2D_1_DeviceVar.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureLinearPitched2D%601.DeviceVar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureLinearPitched2D.cs/#L366">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureLinearPitched2D_1_DeviceVar_" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.DeviceVar*"></a>
+  <h4 id="ManagedCuda_CudaTextureLinearPitched2D_1_DeviceVar" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.DeviceVar">DeviceVar</h4>
+  <div class="markdown level1 summary"><p>Device variable in linear Memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaPitchedDeviceVariable&lt;T&gt; DeviceVar { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaPitchedDeviceVariable-1.html">CudaPitchedDeviceVariable</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureLinearPitched2D_1_Filtermode.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureLinearPitched2D%601.Filtermode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureLinearPitched2D.cs/#L294">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureLinearPitched2D_1_Filtermode_" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.Filtermode*"></a>
+  <h4 id="ManagedCuda_CudaTextureLinearPitched2D_1_Filtermode" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.Filtermode">Filtermode</h4>
+  <div class="markdown level1 summary"><p>Format</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUFilterMode Filtermode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUFilterMode.html">CUFilterMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureLinearPitched2D_1_Flags.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureLinearPitched2D%601.Flags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureLinearPitched2D.cs/#L262">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureLinearPitched2D_1_Flags_" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.Flags*"></a>
+  <h4 id="ManagedCuda_CudaTextureLinearPitched2D_1_Flags" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.Flags">Flags</h4>
+  <div class="markdown level1 summary"><p>Flags</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUTexRefSetFlags Flags { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUTexRefSetFlags.html">CUTexRefSetFlags</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureLinearPitched2D_1_Format.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureLinearPitched2D%601.Format%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureLinearPitched2D.cs/#L286">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureLinearPitched2D_1_Format_" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.Format*"></a>
+  <h4 id="ManagedCuda_CudaTextureLinearPitched2D_1_Format" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.Format">Format</h4>
+  <div class="markdown level1 summary"><p>Format</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUArrayFormat Format { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUArrayFormat.html">CUArrayFormat</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureLinearPitched2D_1_Height.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureLinearPitched2D%601.Height%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureLinearPitched2D.cs/#L302">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureLinearPitched2D_1_Height_" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.Height*"></a>
+  <h4 id="ManagedCuda_CudaTextureLinearPitched2D_1_Height" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.Height">Height</h4>
+  <div class="markdown level1 summary"><p>Height</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SizeT Height { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureLinearPitched2D_1_Module.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureLinearPitched2D%601.Module%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureLinearPitched2D.cs/#L350">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureLinearPitched2D_1_Module_" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.Module*"></a>
+  <h4 id="ManagedCuda_CudaTextureLinearPitched2D_1_Module" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.Module">Module</h4>
+  <div class="markdown level1 summary"><p>Module</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUmodule Module { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUmodule.html">CUmodule</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureLinearPitched2D_1_Name.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureLinearPitched2D%601.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureLinearPitched2D.cs/#L342">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureLinearPitched2D_1_Name_" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.Name*"></a>
+  <h4 id="ManagedCuda_CudaTextureLinearPitched2D_1_Name" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureLinearPitched2D_1_NumChannels.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureLinearPitched2D%601.NumChannels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureLinearPitched2D.cs/#L334">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureLinearPitched2D_1_NumChannels_" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.NumChannels*"></a>
+  <h4 id="ManagedCuda_CudaTextureLinearPitched2D_1_NumChannels" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.NumChannels">NumChannels</h4>
+  <div class="markdown level1 summary"><p>NumChannels</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NumChannels { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureLinearPitched2D_1_TextureReference.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureLinearPitched2D%601.TextureReference%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureLinearPitched2D.cs/#L254">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureLinearPitched2D_1_TextureReference_" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.TextureReference*"></a>
+  <h4 id="ManagedCuda_CudaTextureLinearPitched2D_1_TextureReference" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.TextureReference">TextureReference</h4>
+  <div class="markdown level1 summary"><p>TextureReference</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUtexref TextureReference { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUtexref.html">CUtexref</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureLinearPitched2D_1_TotalSizeInBytes.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureLinearPitched2D%601.TotalSizeInBytes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureLinearPitched2D.cs/#L326">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureLinearPitched2D_1_TotalSizeInBytes_" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.TotalSizeInBytes*"></a>
+  <h4 id="ManagedCuda_CudaTextureLinearPitched2D_1_TotalSizeInBytes" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.TotalSizeInBytes">TotalSizeInBytes</h4>
+  <div class="markdown level1 summary"><p>TotalSizeInBytes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SizeT TotalSizeInBytes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureLinearPitched2D_1_Width.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureLinearPitched2D%601.Width%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureLinearPitched2D.cs/#L310">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureLinearPitched2D_1_Width_" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.Width*"></a>
+  <h4 id="ManagedCuda_CudaTextureLinearPitched2D_1_Width" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.Width">Width</h4>
+  <div class="markdown level1 summary"><p>Width</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SizeT Width { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureLinearPitched2D_1_Dispose.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureLinearPitched2D%601.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureLinearPitched2D.cs/#L227">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureLinearPitched2D_1_Dispose_" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.Dispose*"></a>
+  <h4 id="ManagedCuda_CudaTextureLinearPitched2D_1_Dispose" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Dispose</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureLinearPitched2D_1_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureLinearPitched2D%601.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureLinearPitched2D.cs/#L237">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureLinearPitched2D_1_Dispose_" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.Dispose*"></a>
+  <h4 id="ManagedCuda_CudaTextureLinearPitched2D_1_Dispose_System_Boolean_" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>For IDisposable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool fDisposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">fDisposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureLinearPitched2D_1_Finalize.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureLinearPitched2D%601.Finalize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureLinearPitched2D.cs/#L217">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureLinearPitched2D_1_Finalize_" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.Finalize*"></a>
+  <h4 id="ManagedCuda_CudaTextureLinearPitched2D_1_Finalize" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"><p>For dispose</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureLinearPitched2D_1_Reset_ManagedCuda_CudaPitchedDeviceVariable__0__.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureLinearPitched2D%601.Reset(ManagedCuda.CudaPitchedDeviceVariable%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureLinearPitched2D.cs/#L380">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureLinearPitched2D_1_Reset_" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.Reset*"></a>
+  <h4 id="ManagedCuda_CudaTextureLinearPitched2D_1_Reset_ManagedCuda_CudaPitchedDeviceVariable__0__" data-uid="ManagedCuda.CudaTextureLinearPitched2D`1.Reset(ManagedCuda.CudaPitchedDeviceVariable{`0})">Reset(CudaPitchedDeviceVariable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Binds a linear address range to the texture reference. <p>
+Any previous address or CUDA array state associated with the texture reference is superseded by this function. <p>
+Any memory previously bound to the texture reference is unbound.<p>
+Size my differ to the previous bound variable, but type must be the same.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset(CudaPitchedDeviceVariable&lt;T&gt; deviceVar)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaPitchedDeviceVariable-1.html">CudaPitchedDeviceVariable</a>&lt;T&gt;</td>
+        <td><span class="parametername">deviceVar</span></td>
+        <td><p>New device variable to bind this texture reference to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureLinearPitched2D_1.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureLinearPitched2D%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureLinearPitched2D.cs/#L34" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

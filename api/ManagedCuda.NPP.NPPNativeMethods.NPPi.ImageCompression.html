@@ -1,0 +1,509 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class NPPNativeMethods.NPPi.ImageCompression
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class NPPNativeMethods.NPPi.ImageCompression
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.ImageCompression">
+  
+  
+  <h1 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_ImageCompression" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.ImageCompression" class="text-break">Class NPPNativeMethods.NPPi.ImageCompression
+  </h1>
+  <div class="markdown level0 summary"><p>Image compression primitives.<p>
+The JPEG standard defines a flow of level shift, DCT and quantization for
+forward JPEG transform and inverse level shift, IDCT and de-quantization
+for inverse JPEG transform. This group has the functions for both forward
+and inverse functions.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">NPPNativeMethods.NPPi.ImageCompression</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.NPP.html">ManagedCuda.NPP</a></h6>
+  <h6><strong>Assembly</strong>: NPP.dll</h6>
+  <h5 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_ImageCompression_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ImageCompression</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_ImageCompression_nppiDCTQuantFwd8x8LS_JPEG_8u16s_C1R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.ImageCompression.nppiDCTQuantFwd8x8LS_JPEG_8u16s_C1R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_ImageCompression_nppiDCTQuantFwd8x8LS_JPEG_8u16s_C1R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiSize_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.ImageCompression.nppiDCTQuantFwd8x8LS_JPEG_8u16s_C1R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiSize)">nppiDCTQuantFwd8x8LS_JPEG_8u16s_C1R(CUdeviceptr, Int32, CUdeviceptr, Int32, CUdeviceptr, NppiSize)</h4>
+  <div class="markdown level1 summary"><p>Forward DCT, quantization and level shift part of the JPEG encoding.
+Input is expected in 8x8 macro blocks and output is expected to be in 64x1
+macro blocks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiDCTQuantFwd8x8LS_JPEG_8u16s_C1R(CUdeviceptr pSrc, int nSrcStep, CUdeviceptr pDst, int nDstStep, CUdeviceptr pQuantFwdTable, NppiSize oSizeROI)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nDstStep</span></td>
+        <td><p>Destination-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pQuantFwdTable</span></td>
+        <td><p>Forward quantization tables for JPEG encoding created</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p>Error codes:
+- #NPP_SIZE_ERROR For negative input height/width or not a multiple of
+8 width/height.
+- #NPP_STEP_ERROR If input image width is not multiple of 8 or does not
+match ROI.
+- #NPP_NULL_POINTER_ERROR If the destination pointer is 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_ImageCompression_nppiDCTQuantInv8x8LS_JPEG_16s8u_C1R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.ImageCompression.nppiDCTQuantInv8x8LS_JPEG_16s8u_C1R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_ImageCompression_nppiDCTQuantInv8x8LS_JPEG_16s8u_C1R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiSize_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.ImageCompression.nppiDCTQuantInv8x8LS_JPEG_16s8u_C1R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiSize)">nppiDCTQuantInv8x8LS_JPEG_16s8u_C1R(CUdeviceptr, Int32, CUdeviceptr, Int32, CUdeviceptr, NppiSize)</h4>
+  <div class="markdown level1 summary"><p>Inverse DCT, de-quantization and level shift part of the JPEG decoding.
+Input is expected in 64x1 macro blocks and output is expected to be in 8x8
+macro blocks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiDCTQuantInv8x8LS_JPEG_16s8u_C1R(CUdeviceptr pSrc, int nSrcStep, CUdeviceptr pDst, int nDstStep, CUdeviceptr pQuantInvTable, NppiSize oSizeROI)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nDstStep</span></td>
+        <td><p>Destination-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pQuantInvTable</span></td>
+        <td><p>Inverse quantization tables for JPEG decoding created</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p>Error codes:
+- #NPP_SIZE_ERROR For negative input height/width or not a multiple of
+8 width/height.
+- #NPP_STEP_ERROR If input image width is not multiple of 8 or does not
+match ROI.
+- #NPP_NULL_POINTER_ERROR If the destination pointer is 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_ImageCompression_nppiQuantFwdRawTableInit_JPEG_8u_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.ImageCompression.nppiQuantFwdRawTableInit_JPEG_8u*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_ImageCompression_nppiQuantFwdRawTableInit_JPEG_8u_System_Byte___System_Int32_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.ImageCompression.nppiQuantFwdRawTableInit_JPEG_8u(System.Byte[],System.Int32)">nppiQuantFwdRawTableInit_JPEG_8u(Byte[], Int32)</h4>
+  <div class="markdown level1 summary"><p>Apply quality factor to raw 8-bit quantization table.
+This is effectively and in-place method that modifies a given raw
+quantization table based on a quality factor.
+Note that this method is a host method and that the pointer to the
+raw quantization table is a host pointer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiQuantFwdRawTableInit_JPEG_8u(byte[] hpQuantRawTable, int nQualityFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">hpQuantRawTable</span></td>
+        <td><p>Raw quantization table.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nQualityFactor</span></td>
+        <td><p>Quality factor for the table. Range is [1:100].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p>Error code:
+#NPP_NULL_POINTER_ERROR is returned if hpQuantRawTable is 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_ImageCompression_nppiQuantFwdTableInit_JPEG_8u16u_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.ImageCompression.nppiQuantFwdTableInit_JPEG_8u16u*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_ImageCompression_nppiQuantFwdTableInit_JPEG_8u16u_System_Byte___System_UInt16___" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.ImageCompression.nppiQuantFwdTableInit_JPEG_8u16u(System.Byte[],System.UInt16[])">nppiQuantFwdTableInit_JPEG_8u16u(Byte[], UInt16[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a quantization table for nppiDCTQuantFwd8x8LS_JPEG_8u16s_C1R().
+The method creates a 16-bit version of the raw table and converts the
+data order from zigzag layout to original row-order layout since raw
+quantization tables are typically stored in zigzag format.
+This method is a host method. It consumes and produces host data. I.e. the pointers
+passed to this function must be host pointers. The resulting table needs to be
+transferred to device memory in order to be used with nppiDCTQuantFwd8x8LS_JPEG_8u16s_C1R()
+function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiQuantFwdTableInit_JPEG_8u16u(byte[] hpQuantRawTable, ushort[] hpQuantFwdRawTable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">hpQuantRawTable</span></td>
+        <td><p>Host pointer to raw quantization table as returned by</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt16</span>[]</td>
+        <td><span class="parametername">hpQuantFwdRawTable</span></td>
+        <td><p>Forward quantization table for use with nppiDCTQuantFwd8x8LS_JPEG_8u16s_C1R().</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p>Error code:
+#NPP_NULL_POINTER_ERROR pQuantRawTable is 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_ImageCompression_nppiQuantInvTableInit_JPEG_8u16u_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.ImageCompression.nppiQuantInvTableInit_JPEG_8u16u*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_ImageCompression_nppiQuantInvTableInit_JPEG_8u16u_System_Byte___System_UInt16___" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.ImageCompression.nppiQuantInvTableInit_JPEG_8u16u(System.Byte[],System.UInt16[])">nppiQuantInvTableInit_JPEG_8u16u(Byte[], UInt16[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a quantization table for nppiDCTQuantInv8x8LS_JPEG_16s8u_C1R().
+The nppiDCTQuantFwd8x8LS_JPEG_8u16s_C1R() method uses a quantization table
+in a 16-bit format allowing for faster processing. In addition it converts the
+data order from zigzag layout to original row-order layout. Typically raw
+quantization tables are stored in zigzag format.
+This method is a host method and consumes and produces host data. I.e. the pointers
+passed to this function must be host pointers. The resulting table needs to be
+transferred to device memory in order to be used with nppiDCTQuantFwd8x8LS_JPEG_8u16s_C1R()
+function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiQuantInvTableInit_JPEG_8u16u(byte[] hpQuantRawTable, ushort[] hpQuantFwdRawTable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">hpQuantRawTable</span></td>
+        <td><p>Raw quantization table.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt16</span>[]</td>
+        <td><span class="parametername">hpQuantFwdRawTable</span></td>
+        <td><p>Inverse quantization table.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p>#NPP_NULL_POINTER_ERROR pQuantRawTable or pQuantFwdRawTable is0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPNativeMethods_NPPi_ImageCompression.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPNativeMethods.NPPi.ImageCompression%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPNativeMethods.cs/#L35758" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,415 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DriverAPINativeMethods.CudaPeerAccess
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DriverAPINativeMethods.CudaPeerAccess
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.DriverAPINativeMethods.CudaPeerAccess">
+  
+  
+  <h1 id="ManagedCuda_DriverAPINativeMethods_CudaPeerAccess" data-uid="ManagedCuda.DriverAPINativeMethods.CudaPeerAccess" class="text-break">Class DriverAPINativeMethods.CudaPeerAccess
+  </h1>
+  <div class="markdown level0 summary"><p>Peer Context Memory Access</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DriverAPINativeMethods.CudaPeerAccess</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.html">ManagedCuda</a></h6>
+  <h6><strong>Assembly</strong>: ManagedCuda.dll</h6>
+  <h5 id="ManagedCuda_DriverAPINativeMethods_CudaPeerAccess_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class CudaPeerAccess</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_CudaPeerAccess_cuCtxDisablePeerAccess_" data-uid="ManagedCuda.DriverAPINativeMethods.CudaPeerAccess.cuCtxDisablePeerAccess*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_CudaPeerAccess_cuCtxDisablePeerAccess_ManagedCuda_BasicTypes_CUcontext_" data-uid="ManagedCuda.DriverAPINativeMethods.CudaPeerAccess.cuCtxDisablePeerAccess(ManagedCuda.BasicTypes.CUcontext)">cuCtxDisablePeerAccess(CUcontext)</h4>
+  <div class="markdown level1 summary"><p>Disables direct access to memory allocations in a peer context and unregisters any registered allocations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuCtxDisablePeerAccess(CUcontext peerContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUcontext.html">CUcontext</a></td>
+        <td><span class="parametername">peerContext</span></td>
+        <td><p>Peer context to disable direct access to</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorPeerAccessNotEnabled">ErrorPeerAccessNotEnabled</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_CudaPeerAccess_cuCtxEnablePeerAccess_" data-uid="ManagedCuda.DriverAPINativeMethods.CudaPeerAccess.cuCtxEnablePeerAccess*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_CudaPeerAccess_cuCtxEnablePeerAccess_ManagedCuda_BasicTypes_CUcontext_ManagedCuda_BasicTypes_CtxEnablePeerAccessFlags_" data-uid="ManagedCuda.DriverAPINativeMethods.CudaPeerAccess.cuCtxEnablePeerAccess(ManagedCuda.BasicTypes.CUcontext,ManagedCuda.BasicTypes.CtxEnablePeerAccessFlags)">cuCtxEnablePeerAccess(CUcontext, CtxEnablePeerAccessFlags)</h4>
+  <div class="markdown level1 summary"><p>If both the current context and <code>peerContext</code> are on devices which support unified
+addressing (as may be queried using ::CU_DEVICE_ATTRIBUTE_UNIFIED_ADDRESSING), then
+on success all allocations from <code>peerContext</code> will immediately be accessible
+by the current context.  See \ref CUDA_UNIFIED for additional
+details. <p>
+Note that access granted by this call is unidirectional and that in order to access
+memory from the current context in <code>peerContext</code>, a separate symmetric call
+to ::cuCtxEnablePeerAccess() is required. <p>
+Returns <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidDevice">ErrorInvalidDevice</a> if <a class="xref" href="ManagedCuda.DriverAPINativeMethods.CudaPeerAccess.html#ManagedCuda_DriverAPINativeMethods_CudaPeerAccess_cuDeviceCanAccessPeer_System_Int32__ManagedCuda_BasicTypes_CUdevice_ManagedCuda_BasicTypes_CUdevice_">cuDeviceCanAccessPeer(ref Int32, CUdevice, CUdevice)</a> indicates
+that the CUdevice of the current context cannot directly access memory
+from the CUdevice of <code>peerContext</code>. <p>
+Returns <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorPeerAccessAlreadyEnabled">ErrorPeerAccessAlreadyEnabled</a> if direct access of
+<code>peerContext</code> from the current context has already been enabled. <p>
+Returns <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a> if there is no current context, <code>peerContext</code>
+is not a valid context, or if the current context is <code>peerContext</code>. <p>
+Returns <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a> if <code>Flags</code> is not 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuCtxEnablePeerAccess(CUcontext peerContext, CtxEnablePeerAccessFlags Flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUcontext.html">CUcontext</a></td>
+        <td><span class="parametername">peerContext</span></td>
+        <td><p>Peer context to enable direct access to from the current context</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CtxEnablePeerAccessFlags.html">CtxEnablePeerAccessFlags</a></td>
+        <td><span class="parametername">Flags</span></td>
+        <td><p>Reserved for future use and must be set to 0</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidDevice">ErrorInvalidDevice</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorPeerAccessAlreadyEnabled">ErrorPeerAccessAlreadyEnabled</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_CudaPeerAccess_cuDeviceCanAccessPeer_" data-uid="ManagedCuda.DriverAPINativeMethods.CudaPeerAccess.cuDeviceCanAccessPeer*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_CudaPeerAccess_cuDeviceCanAccessPeer_System_Int32__ManagedCuda_BasicTypes_CUdevice_ManagedCuda_BasicTypes_CUdevice_" data-uid="ManagedCuda.DriverAPINativeMethods.CudaPeerAccess.cuDeviceCanAccessPeer(System.Int32@,ManagedCuda.BasicTypes.CUdevice,ManagedCuda.BasicTypes.CUdevice)">cuDeviceCanAccessPeer(ref Int32, CUdevice, CUdevice)</h4>
+  <div class="markdown level1 summary"><p>Returns in <code>canAccessPeer</code> a value of 1 if contexts on <code>dev</code> are capable of
+directly accessing memory from contexts on <code>peerDev</code> and 0 otherwise.
+If direct access of <code>peerDev</code> from <code>dev</code> is possible, then access may be
+enabled on two specific contexts by calling <a class="xref" href="ManagedCuda.DriverAPINativeMethods.CudaPeerAccess.html#ManagedCuda_DriverAPINativeMethods_CudaPeerAccess_cuCtxEnablePeerAccess_ManagedCuda_BasicTypes_CUcontext_ManagedCuda_BasicTypes_CtxEnablePeerAccessFlags_">cuCtxEnablePeerAccess(CUcontext, CtxEnablePeerAccessFlags)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuDeviceCanAccessPeer(ref int canAccessPeer, CUdevice dev, CUdevice peerDev)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">canAccessPeer</span></td>
+        <td><p>Returned access capability</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdevice.html">CUdevice</a></td>
+        <td><span class="parametername">dev</span></td>
+        <td><p>Device from which allocations on peerDev are to be directly accessed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdevice.html">CUdevice</a></td>
+        <td><span class="parametername">peerDev</span></td>
+        <td><p>Device on which the allocations to be directly accessed by dev reside.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidDevice">ErrorInvalidDevice</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_CudaPeerAccess_cuDeviceGetP2PAttribute_" data-uid="ManagedCuda.DriverAPINativeMethods.CudaPeerAccess.cuDeviceGetP2PAttribute*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_CudaPeerAccess_cuDeviceGetP2PAttribute_System_Int32__ManagedCuda_BasicTypes_CUdevice_P2PAttribute_ManagedCuda_BasicTypes_CUdevice_ManagedCuda_BasicTypes_CUdevice_" data-uid="ManagedCuda.DriverAPINativeMethods.CudaPeerAccess.cuDeviceGetP2PAttribute(System.Int32@,ManagedCuda.BasicTypes.CUdevice_P2PAttribute,ManagedCuda.BasicTypes.CUdevice,ManagedCuda.BasicTypes.CUdevice)">cuDeviceGetP2PAttribute(ref Int32, CUdevice_P2PAttribute, CUdevice, CUdevice)</h4>
+  <div class="markdown level1 summary"><p>Queries attributes of the link between two devices.<p>
+Returns in \p *value the value of the requested attribute \p attrib of the
+link between \p srcDevice and \p dstDevice. The supported attributes are:<p>
+<ul>
+<li>::CU_DEVICE_P2P_ATTRIBUTE_PERFORMANCE_RANK: A relative value indicating the
+performance of the link between two devices.<p></li>
+<li>::CU_DEVICE_P2P_ATTRIBUTE_ACCESS_SUPPORTED P2P: 1 if P2P Access is enable.<p></li>
+<li>::CU_DEVICE_P2P_ATTRIBUTE_NATIVE_ATOMIC_SUPPORTED: 1 if Atomic operations over
+the link are supported.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuDeviceGetP2PAttribute(ref int value, CUdevice_P2PAttribute attrib, CUdevice srcDevice, CUdevice dstDevice)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Returned value of the requested attribute</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdevice_P2PAttribute.html">CUdevice_P2PAttribute</a></td>
+        <td><span class="parametername">attrib</span></td>
+        <td><p>The requested attribute of the link between \p srcDevice and \p dstDevice.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdevice.html">CUdevice</a></td>
+        <td><span class="parametername">srcDevice</span></td>
+        <td><p>The source device of the target link.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdevice.html">CUdevice</a></td>
+        <td><span class="parametername">dstDevice</span></td>
+        <td><p>The destination device of the target link.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_DriverAPINativeMethods_CudaPeerAccess.md&amp;value=---%0Auid%3A%20ManagedCuda.DriverAPINativeMethods.CudaPeerAccess%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/DriverAPI.cs/#L9384" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

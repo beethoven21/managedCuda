@@ -1,0 +1,512 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Enum CUResult
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Enum CUResult
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.BasicTypes.CUResult">
+  
+  
+  <h1 id="ManagedCuda_BasicTypes_CUResult" data-uid="ManagedCuda.BasicTypes.CUResult" class="text-break">Enum CUResult
+  </h1>
+  <div class="markdown level0 summary"><p>Error codes returned by CUDA driver API calls</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.BasicTypes.html">ManagedCuda.BasicTypes</a></h6>
+  <h6><strong>Assembly</strong>: ManagedCuda.dll</h6>
+  <h5 id="ManagedCuda_BasicTypes_CUResult_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum CUResult</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorAlreadyAcquired">ErrorAlreadyAcquired</td>
+        <td><p>Already acquired</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorAlreadyMapped">ErrorAlreadyMapped</td>
+        <td><p>Already mapped</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorArrayIsMapped">ErrorArrayIsMapped</td>
+        <td><p>Array is mapped</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorAssert">ErrorAssert</td>
+        <td><p>A device-side assert triggered during kernel execution. The context
+cannot be used anymore, and must be destroyed. All existing device
+memory allocations from this context are invalid and must be
+reconstructed if the program is to continue using CUDA.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorContextAlreadyCurrent">ErrorContextAlreadyCurrent</td>
+        <td><p>Context already current</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorContextAlreadyInUse">ErrorContextAlreadyInUse</td>
+        <td><p>This indicates that the <a class="xref" href="ManagedCuda.BasicTypes.CUcontext.html">CUcontext</a> passed to the API call can
+only be bound to a single CPU thread at a time but is already
+bound to a CPU thread.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorContextIsDestroyed">ErrorContextIsDestroyed</td>
+        <td><p>This error indicates that the context current to the calling thread
+has been destroyed using <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ContextManagement.html#ManagedCuda_DriverAPINativeMethods_ContextManagement_cuCtxDestroy_ManagedCuda_BasicTypes_CUcontext_">cuCtxDestroy(CUcontext)</a>, or is a primary context which
+has not yet been initialized.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorCooperativeLaunchTooLarge">ErrorCooperativeLaunchTooLarge</td>
+        <td><p>This error indicates that the number of blocks launched per grid for a kernel that was
+launched via either ::cuLaunchCooperativeKernel or ::cuLaunchCooperativeKernelMultiDevice
+exceeds the maximum number of blocks as allowed by ::cuOccupancyMaxActiveBlocksPerMultiprocessor
+or ::cuOccupancyMaxActiveBlocksPerMultiprocessorWithFlags times the number of multiprocessors
+as specified by the device attribute ::CU_DEVICE_ATTRIBUTE_MULTIPROCESSOR_COUNT.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</td>
+        <td><p>Driver deinitialized</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorECCUncorrectable">ErrorECCUncorrectable</td>
+        <td><p>Uncorrectable ECC error detected</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorFileNotFound">ErrorFileNotFound</td>
+        <td><p>File not found</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorHardwareStackError">ErrorHardwareStackError</td>
+        <td><p>While executing a kernel, the device encountered a stack error.
+This can be due to stack corruption or exceeding the stack size limit.
+This leaves the process in an inconsistent state and any further CUDA work
+will return the same error. To continue using CUDA, the process must be terminated
+and relaunched.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorHostMemoryAlreadyRegistered">ErrorHostMemoryAlreadyRegistered</td>
+        <td><p>This error indicates that the memory range passed to ::cuMemHostRegister()
+has already been registered.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorHostMemoryNotRegistered">ErrorHostMemoryNotRegistered</td>
+        <td><p>This error indicates that the pointer passed to ::cuMemHostUnregister()
+does not correspond to any currently registered memory region.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorIllegalAddress">ErrorIllegalAddress</td>
+        <td><p>While executing a kernel, the device encountered a
+load or store instruction on an invalid memory address.
+This leaves the process in an inconsistent state and any further CUDA work
+will return the same error. To continue using CUDA, the process must be terminated
+and relaunched.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorIllegalInstruction">ErrorIllegalInstruction</td>
+        <td><p>While executing a kernel, the device encountered an illegal instruction.
+This leaves the process in an inconsistent state and any further CUDA work
+will return the same error. To continue using CUDA, the process must be terminated
+and relaunched.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorInvalidAddressSpace">ErrorInvalidAddressSpace</td>
+        <td><p>While executing a kernel, the device encountered an instruction
+which can only operate on memory locations in certain address spaces
+(global, shared, or local), but was supplied a memory address not
+belonging to an allowed address space.
+This leaves the process in an inconsistent state and any further CUDA work
+will return the same error. To continue using CUDA, the process must be terminated
+and relaunched.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</td>
+        <td><p>Invalid context</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorInvalidDevice">ErrorInvalidDevice</td>
+        <td><p>Invalid device</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorInvalidGraphicsContext">ErrorInvalidGraphicsContext</td>
+        <td><p>This indicates an error with OpenGL or DirectX context.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorInvalidHandle">ErrorInvalidHandle</td>
+        <td><p>Invalid handle</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorInvalidImage">ErrorInvalidImage</td>
+        <td><p>Invalid kernel image</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorInvalidPC">ErrorInvalidPC</td>
+        <td><p>While executing a kernel, the device program counter wrapped its address space.
+This leaves the process in an inconsistent state and any further CUDA work
+will return the same error. To continue using CUDA, the process must be terminated
+and relaunched.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorInvalidPtx">ErrorInvalidPtx</td>
+        <td><p>This indicates that a PTX JIT compilation failed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorInvalidSource">ErrorInvalidSource</td>
+        <td><p>Invalid source</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</td>
+        <td><p>Invalid value</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorLaunchFailed">ErrorLaunchFailed</td>
+        <td><p>An exception occurred on the device while executing a kernel. Common
+causes include dereferencing an invalid device pointer and accessing
+out of bounds shared memory. This leaves the process in an inconsistent state and any further CUDA work
+will return the same error. To continue using CUDA, the process must be terminated
+and relaunched.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorLaunchIncompatibleTexturing">ErrorLaunchIncompatibleTexturing</td>
+        <td><p>Launch with incompatible texturing</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorLaunchOutOfResources">ErrorLaunchOutOfResources</td>
+        <td><p>Launch exceeded resources</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorLaunchTimeout">ErrorLaunchTimeout</td>
+        <td><p>This indicates that the device kernel took too long to execute. This can
+only occur if timeouts are enabled - see the device attribute
+::CU_DEVICE_ATTRIBUTE_KERNEL_EXEC_TIMEOUT for more information.
+This leaves the process in an inconsistent state and any further CUDA work
+will return the same error. To continue using CUDA, the process must be terminated
+and relaunched.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorMapFailed">ErrorMapFailed</td>
+        <td><p>Map failed</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorMisalignedAddress">ErrorMisalignedAddress</td>
+        <td><p>While executing a kernel, the device encountered a load or store instruction
+on a memory address which is not aligned.
+This leaves the process in an inconsistent state and any further CUDA work
+will return the same error. To continue using CUDA, the process must be terminated
+and relaunched.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorNoBinaryForGPU">ErrorNoBinaryForGPU</td>
+        <td><p>No binary for GPU</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorNoDevice">ErrorNoDevice</td>
+        <td><p>No CUDA-capable device available</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorNotFound">ErrorNotFound</td>
+        <td><p>Not found</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</td>
+        <td><p>Driver not initialized</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorNotMapped">ErrorNotMapped</td>
+        <td><p>Not mapped</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorNotMappedAsArray">ErrorNotMappedAsArray</td>
+        <td><p>Mapped resource not available for access as an array</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorNotMappedAsPointer">ErrorNotMappedAsPointer</td>
+        <td><p>Mapped resource not available for access as a pointer</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorNotPermitted">ErrorNotPermitted</td>
+        <td><p>This error indicates that the attempted operation is not permitted.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorNotReady">ErrorNotReady</td>
+        <td><p>CUDA not ready</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorNotSupported">ErrorNotSupported</td>
+        <td><p>This error indicates that the attempted operation is not supported
+on the current system or device.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorOperatingSystem">ErrorOperatingSystem</td>
+        <td><p>OS call failed</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorOutOfMemory">ErrorOutOfMemory</td>
+        <td><p>Out of memory</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorPeerAccessAlreadyEnabled">ErrorPeerAccessAlreadyEnabled</td>
+        <td><p>This error indicates that a call to <a class="xref" href="ManagedCuda.DriverAPINativeMethods.CudaPeerAccess.html#ManagedCuda_DriverAPINativeMethods_CudaPeerAccess_cuCtxEnablePeerAccess_ManagedCuda_BasicTypes_CUcontext_ManagedCuda_BasicTypes_CtxEnablePeerAccessFlags_">cuCtxEnablePeerAccess(CUcontext, CtxEnablePeerAccessFlags)</a> is
+trying to re-enable peer access to a context which has already
+had peer access to it enabled.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorPeerAccessNotEnabled">ErrorPeerAccessNotEnabled</td>
+        <td><p>This error indicates that <a class="xref" href="ManagedCuda.DriverAPINativeMethods.CudaPeerAccess.html#ManagedCuda_DriverAPINativeMethods_CudaPeerAccess_cuCtxDisablePeerAccess_ManagedCuda_BasicTypes_CUcontext_">cuCtxDisablePeerAccess(CUcontext)</a> is
+trying to disable peer access which has not been enabled yet
+via <a class="xref" href="ManagedCuda.DriverAPINativeMethods.CudaPeerAccess.html#ManagedCuda_DriverAPINativeMethods_CudaPeerAccess_cuCtxEnablePeerAccess_ManagedCuda_BasicTypes_CUcontext_ManagedCuda_BasicTypes_CtxEnablePeerAccessFlags_">cuCtxEnablePeerAccess(CUcontext, CtxEnablePeerAccessFlags)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorPeerAccessUnsupported">ErrorPeerAccessUnsupported</td>
+        <td><p>This indicates that peer access is not supported across the given devices.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorPrimaryContextActice">ErrorPrimaryContextActice</td>
+        <td><p>This error indicates that the primary context for the specified device
+has already been initialized.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorProfilerAlreadyStarted">ErrorProfilerAlreadyStarted</td>
+        <td><p>This error return is deprecated as of CUDA 5.0. It is no longer an error
+to call cuProfilerStart() when profiling is already enabled.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorProfilerAlreadyStopped">ErrorProfilerAlreadyStopped</td>
+        <td><p>This error return is deprecated as of CUDA 5.0. It is no longer an error
+to call cuProfilerStop() when profiling is already disabled.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorProfilerDisabled">ErrorProfilerDisabled</td>
+        <td><p>This indicates profiler is not initialized for this run. This can happen when the application is running with external profiling tools
+like visual profiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorProfilerNotInitialized">ErrorProfilerNotInitialized</td>
+        <td><p>This error return is deprecated as of CUDA 5.0. It is no longer an error
+to attempt to enable/disable the profiling via ::cuProfilerStart or
+::cuProfilerStop without initialization.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorSharedObjectInitFailed">ErrorSharedObjectInitFailed</td>
+        <td><p>Shared object initialization failed</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorSharedObjectSymbolNotFound">ErrorSharedObjectSymbolNotFound</td>
+        <td><p>Link to a shared object failed to resolve</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorTooManyPeers">ErrorTooManyPeers</td>
+        <td><p>This error indicates that the hardware resources required to enable
+peer access have been exhausted for one or more of the devices
+passed to ::cuCtxEnablePeerAccess().</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorUnknown">ErrorUnknown</td>
+        <td><p>Unknown error</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorUnmapFailed">ErrorUnmapFailed</td>
+        <td><p>Unmap failed</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_ErrorUnsupportedLimit">ErrorUnsupportedLimit</td>
+        <td><p>CULimit not supported by device</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_JITCompilerNotFound">JITCompilerNotFound</td>
+        <td><p>This indicates that the PTX JIT compiler library was not found.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_NVLinkUncorrectable">NVLinkUncorrectable</td>
+        <td><p>This indicates that an uncorrectable NVLink error was detected during the execution.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUResult_Success">Success</td>
+        <td><p>No errors</p>
+</td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_BasicTypes_CUResult.md&amp;value=---%0Auid%3A%20ManagedCuda.BasicTypes.CUResult%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/BasicTypes.cs/#L4316" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1708 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DriverAPINativeMethods.TextureReferenceManagement
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DriverAPINativeMethods.TextureReferenceManagement
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement">
+  
+  
+  <h1 id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement" class="text-break">Class DriverAPINativeMethods.TextureReferenceManagement
+  </h1>
+  <div class="markdown level0 summary"><p>Groups all texture reference management API calls</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DriverAPINativeMethods.TextureReferenceManagement</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.html">ManagedCuda</a></h6>
+  <h6><strong>Assembly</strong>: ManagedCuda.dll</h6>
+  <h5 id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class TextureReferenceManagement</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefCreate_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefCreate*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefCreate_ManagedCuda_BasicTypes_CUtexref__" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefCreate(ManagedCuda.BasicTypes.CUtexref@)">cuTexRefCreate(ref CUtexref)</h4>
+  <div class="markdown level1 summary"><p>Creates a texture reference and returns its handle in <code>pTexRef</code>. Once created, the application must call <a class="xref" href="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.html#ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetArray_ManagedCuda_BasicTypes_CUtexref_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_CUTexRefSetArrayFlags_">cuTexRefSetArray(CUtexref, CUarray, CUTexRefSetArrayFlags)</a>
+or <a class="xref" href="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.html#ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetAddress_v2_ManagedCuda_BasicTypes_SizeT__ManagedCuda_BasicTypes_CUtexref_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_">cuTexRefSetAddress_v2(ref SizeT, CUtexref, CUdeviceptr, SizeT)</a> to associate the reference with allocated memory. Other texture reference functions
+are used to specify the format and interpretation (addressing, filtering, etc.) to be used when the memory is read
+through this texture reference. To associate the texture reference with a texture ordinal for a given function, the
+application should call <a class="xref" href="ManagedCuda.DriverAPINativeMethods.ParameterManagement.html#ManagedCuda_DriverAPINativeMethods_ParameterManagement_cuParamSetTexRef_ManagedCuda_BasicTypes_CUfunction_ManagedCuda_BasicTypes_CUParameterTexRef_ManagedCuda_BasicTypes_CUtexref_">cuParamSetTexRef(CUfunction, CUParameterTexRef, CUtexref)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuTexRefCreate(ref CUtexref pTexRef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUtexref.html">CUtexref</a></td>
+        <td><span class="parametername">pTexRef</span></td>
+        <td><p>Returned texture reference</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefDestroy_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefDestroy*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefDestroy_ManagedCuda_BasicTypes_CUtexref_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefDestroy(ManagedCuda.BasicTypes.CUtexref)">cuTexRefDestroy(CUtexref)</h4>
+  <div class="markdown level1 summary"><p>Destroys the texture reference specified by <code>hTexRef</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuTexRefDestroy(CUtexref hTexRef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUtexref.html">CUtexref</a></td>
+        <td><span class="parametername">hTexRef</span></td>
+        <td><p>Texture reference to destroy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefGetAddress_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefGetAddress*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefGetAddress_ManagedCuda_BasicTypes_CUdeviceptr__ManagedCuda_BasicTypes_CUtexref_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefGetAddress(ManagedCuda.BasicTypes.CUdeviceptr@,ManagedCuda.BasicTypes.CUtexref)">cuTexRefGetAddress(ref CUdeviceptr, CUtexref)</h4>
+  <div class="markdown level1 summary"><p>Returns in <code>pdptr</code> the base address bound to the texture reference <code>hTexRef</code>, or returns <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>
+if the texture reference is not bound to any device memory range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuTexRefGetAddress(ref CUdeviceptr pdptr, CUtexref hTexRef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pdptr</span></td>
+        <td><p>Returned device address</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUtexref.html">CUtexref</a></td>
+        <td><span class="parametername">hTexRef</span></td>
+        <td><p>Texture reference</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefGetAddressMode_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefGetAddressMode*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefGetAddressMode_ManagedCuda_BasicTypes_CUAddressMode__ManagedCuda_BasicTypes_CUtexref_System_Int32_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefGetAddressMode(ManagedCuda.BasicTypes.CUAddressMode@,ManagedCuda.BasicTypes.CUtexref,System.Int32)">cuTexRefGetAddressMode(ref CUAddressMode, CUtexref, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns in <code>pam</code> the addressing mode corresponding to the dimension <code>dim</code> of the texture reference <code>hTexRef</code>. Currently,
+the only valid value for <code>dim</code> are 0 and 1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuTexRefGetAddressMode(ref CUAddressMode pam, CUtexref hTexRef, int dim)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUAddressMode.html">CUAddressMode</a></td>
+        <td><span class="parametername">pam</span></td>
+        <td><p>Returned addressing mode</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUtexref.html">CUtexref</a></td>
+        <td><span class="parametername">hTexRef</span></td>
+        <td><p>Texture reference</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">dim</span></td>
+        <td><p>Dimension</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefGetArray_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefGetArray*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefGetArray_ManagedCuda_BasicTypes_CUarray__ManagedCuda_BasicTypes_CUtexref_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefGetArray(ManagedCuda.BasicTypes.CUarray@,ManagedCuda.BasicTypes.CUtexref)">cuTexRefGetArray(ref CUarray, CUtexref)</h4>
+  <div class="markdown level1 summary"><p>Returns in <code>phArray</code> the CUDA array bound to the texture reference <code>hTexRef</code>, or returns <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>
+if the texture reference is not bound to any CUDA array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuTexRefGetArray(ref CUarray phArray, CUtexref hTexRef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUarray.html">CUarray</a></td>
+        <td><span class="parametername">phArray</span></td>
+        <td><p>Returned array</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUtexref.html">CUtexref</a></td>
+        <td><span class="parametername">hTexRef</span></td>
+        <td><p>Texture reference</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefGetBorderColor_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefGetBorderColor*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefGetBorderColor_System_Single___ManagedCuda_BasicTypes_CUtexref_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefGetBorderColor(System.Single[],ManagedCuda.BasicTypes.CUtexref)">cuTexRefGetBorderColor(Single[], CUtexref)</h4>
+  <div class="markdown level1 summary"><p>Gets the border color used by a texture reference<p>
+Returns in \p pBorderColor, values of the RGBA color used by
+the texture reference \p hTexRef.<p>
+The color value is of type float and holds color components in
+the following sequence:<p>
+pBorderColor[0] holds 'R' component
+pBorderColor[1] holds 'G' component
+pBorderColor[2] holds 'B' component
+pBorderColor[3] holds 'A' component</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuTexRefGetBorderColor(float[] pBorderColor, CUtexref hTexRef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span>[]</td>
+        <td><span class="parametername">pBorderColor</span></td>
+        <td><p>Returned Type and Value of RGBA color</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUtexref.html">CUtexref</a></td>
+        <td><span class="parametername">hTexRef</span></td>
+        <td><p>Texture reference</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefGetFilterMode_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefGetFilterMode*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefGetFilterMode_ManagedCuda_BasicTypes_CUFilterMode__ManagedCuda_BasicTypes_CUtexref_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefGetFilterMode(ManagedCuda.BasicTypes.CUFilterMode@,ManagedCuda.BasicTypes.CUtexref)">cuTexRefGetFilterMode(ref CUFilterMode, CUtexref)</h4>
+  <div class="markdown level1 summary"><p>Returns in <code>pfm</code> the filtering mode of the texture reference <code>hTexRef</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuTexRefGetFilterMode(ref CUFilterMode pfm, CUtexref hTexRef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUFilterMode.html">CUFilterMode</a></td>
+        <td><span class="parametername">pfm</span></td>
+        <td><p>Returned filtering mode</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUtexref.html">CUtexref</a></td>
+        <td><span class="parametername">hTexRef</span></td>
+        <td><p>Texture reference</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefGetFlags_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefGetFlags*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefGetFlags_ManagedCuda_BasicTypes_CUTexRefSetFlags__ManagedCuda_BasicTypes_CUtexref_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefGetFlags(ManagedCuda.BasicTypes.CUTexRefSetFlags@,ManagedCuda.BasicTypes.CUtexref)">cuTexRefGetFlags(ref CUTexRefSetFlags, CUtexref)</h4>
+  <div class="markdown level1 summary"><p>Returns in <code>pFlags</code> the flags of the texture reference <code>hTexRef</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuTexRefGetFlags(ref CUTexRefSetFlags pFlags, CUtexref hTexRef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUTexRefSetFlags.html">CUTexRefSetFlags</a></td>
+        <td><span class="parametername">pFlags</span></td>
+        <td><p>Returned flags</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUtexref.html">CUtexref</a></td>
+        <td><span class="parametername">hTexRef</span></td>
+        <td><p>Texture reference</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefGetFormat_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefGetFormat*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefGetFormat_ManagedCuda_BasicTypes_CUArrayFormat__System_Int32__ManagedCuda_BasicTypes_CUtexref_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefGetFormat(ManagedCuda.BasicTypes.CUArrayFormat@,System.Int32@,ManagedCuda.BasicTypes.CUtexref)">cuTexRefGetFormat(ref CUArrayFormat, ref Int32, CUtexref)</h4>
+  <div class="markdown level1 summary"><p>Returns in <code>pFormat</code> and <code>pNumChannels</code> the format and number of components of the CUDA array bound to
+the texture reference <code>hTexRef</code>. If <code>pFormat</code> or <code>pNumChannels</code> is <code>null</code>, it will be ignored.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuTexRefGetFormat(ref CUArrayFormat pFormat, ref int pNumChannels, CUtexref hTexRef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUArrayFormat.html">CUArrayFormat</a></td>
+        <td><span class="parametername">pFormat</span></td>
+        <td><p>Returned format</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pNumChannels</span></td>
+        <td><p>Returned number of components</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUtexref.html">CUtexref</a></td>
+        <td><span class="parametername">hTexRef</span></td>
+        <td><p>Texture reference</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefGetMaxAnisotropy_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefGetMaxAnisotropy*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefGetMaxAnisotropy_System_Int32__ManagedCuda_BasicTypes_CUtexref_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefGetMaxAnisotropy(System.Int32@,ManagedCuda.BasicTypes.CUtexref)">cuTexRefGetMaxAnisotropy(ref Int32, CUtexref)</h4>
+  <div class="markdown level1 summary"><p>Returns the maximum aniostropy in <code>pmaxAniso</code> that's used when reading memory through
+the texture reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuTexRefGetMaxAnisotropy(ref int pmaxAniso, CUtexref hTexRef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pmaxAniso</span></td>
+        <td><p>Returned maximum anisotropy</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUtexref.html">CUtexref</a></td>
+        <td><span class="parametername">hTexRef</span></td>
+        <td><p>Texture reference</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefGetMipmapFilterMode_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefGetMipmapFilterMode*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefGetMipmapFilterMode_ManagedCuda_BasicTypes_CUFilterMode__ManagedCuda_BasicTypes_CUtexref_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefGetMipmapFilterMode(ManagedCuda.BasicTypes.CUFilterMode@,ManagedCuda.BasicTypes.CUtexref)">cuTexRefGetMipmapFilterMode(ref CUFilterMode, CUtexref)</h4>
+  <div class="markdown level1 summary"><p>Returns the mipmap filtering mode in <code>pfm</code> that's used when reading memory through
+the texture reference <code>hTexRef</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuTexRefGetMipmapFilterMode(ref CUFilterMode pfm, CUtexref hTexRef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUFilterMode.html">CUFilterMode</a></td>
+        <td><span class="parametername">pfm</span></td>
+        <td><p>Returned mipmap filtering mode</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUtexref.html">CUtexref</a></td>
+        <td><span class="parametername">hTexRef</span></td>
+        <td><p>Texture reference</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefGetMipmapLevelBias_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefGetMipmapLevelBias*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefGetMipmapLevelBias_System_Single__ManagedCuda_BasicTypes_CUtexref_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefGetMipmapLevelBias(System.Single@,ManagedCuda.BasicTypes.CUtexref)">cuTexRefGetMipmapLevelBias(ref Single, CUtexref)</h4>
+  <div class="markdown level1 summary"><p>Returns the mipmap level bias in <code>pBias</code> that's added to the specified mipmap
+level when reading memory through the texture reference <code>hTexRef</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuTexRefGetMipmapLevelBias(ref float pbias, CUtexref hTexRef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">pbias</span></td>
+        <td><p>Returned mipmap level bias</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUtexref.html">CUtexref</a></td>
+        <td><span class="parametername">hTexRef</span></td>
+        <td><p>Texture reference</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefGetMipmapLevelClamp_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefGetMipmapLevelClamp*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefGetMipmapLevelClamp_System_Single__System_Single__ManagedCuda_BasicTypes_CUtexref_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefGetMipmapLevelClamp(System.Single@,System.Single@,ManagedCuda.BasicTypes.CUtexref)">cuTexRefGetMipmapLevelClamp(ref Single, ref Single, CUtexref)</h4>
+  <div class="markdown level1 summary"><p>Returns the min/max mipmap level clamps in <code>pminMipmapLevelClamp</code> and <code>pmaxMipmapLevelClamp</code>
+that's used when reading memory through the texture reference <code>hTexRef</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuTexRefGetMipmapLevelClamp(ref float pminMipmapLevelClamp, ref float pmaxMipmapLevelClamp, CUtexref hTexRef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">pminMipmapLevelClamp</span></td>
+        <td><p>Returned mipmap min level clamp</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">pmaxMipmapLevelClamp</span></td>
+        <td><p>Returned mipmap max level clamp</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUtexref.html">CUtexref</a></td>
+        <td><span class="parametername">hTexRef</span></td>
+        <td><p>Texture reference</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefGetMipmappedArray_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefGetMipmappedArray*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefGetMipmappedArray_ManagedCuda_BasicTypes_CUmipmappedArray__ManagedCuda_BasicTypes_CUtexref_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefGetMipmappedArray(ManagedCuda.BasicTypes.CUmipmappedArray@,ManagedCuda.BasicTypes.CUtexref)">cuTexRefGetMipmappedArray(ref CUmipmappedArray, CUtexref)</h4>
+  <div class="markdown level1 summary"><p>Returns in <code>phMipmappedArray</code> the CUDA mipmapped array bound to the texture
+reference <code>hTexRef</code>, or returns <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a> if the texture reference
+is not bound to any CUDA mipmapped array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuTexRefGetMipmappedArray(ref CUmipmappedArray phMipmappedArray, CUtexref hTexRef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUmipmappedArray.html">CUmipmappedArray</a></td>
+        <td><span class="parametername">phMipmappedArray</span></td>
+        <td><p>Returned mipmapped array</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUtexref.html">CUtexref</a></td>
+        <td><span class="parametername">hTexRef</span></td>
+        <td><p>Texture reference</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetAddress_v2_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefSetAddress_v2*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetAddress_v2_ManagedCuda_BasicTypes_SizeT__ManagedCuda_BasicTypes_CUtexref_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefSetAddress_v2(ManagedCuda.BasicTypes.SizeT@,ManagedCuda.BasicTypes.CUtexref,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.SizeT)">cuTexRefSetAddress_v2(ref SizeT, CUtexref, CUdeviceptr, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Binds a linear address range to the texture reference <code>hTexRef</code>. Any previous address or CUDA array state associated
+with the texture reference is superseded by this function. Any memory previously bound to <code>hTexRef</code> is unbound.<p>
+Since the hardware enforces an alignment requirement on texture base addresses, <a class="xref" href="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.html#ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetAddress_v2_ManagedCuda_BasicTypes_SizeT__ManagedCuda_BasicTypes_CUtexref_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_">cuTexRefSetAddress_v2(ref SizeT, CUtexref, CUdeviceptr, SizeT)</a> passes back
+a byte offset in <code>ByteOffset</code> that must be applied to texture fetches in order to read from the desired memory. This
+offset must be divided by the texel size and passed to kernels that read from the texture so they can be applied to the
+<code>tex1Dfetch()</code> function.<p>
+If the device memory pointer was returned from <a class="xref" href="ManagedCuda.DriverAPINativeMethods.MemoryManagement.html#ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemAlloc_v2_ManagedCuda_BasicTypes_CUdeviceptr__ManagedCuda_BasicTypes_SizeT_">cuMemAlloc_v2(ref CUdeviceptr, SizeT)</a>, the offset is guaranteed to be 0 and <code>null</code> may be
+passed as the <code>ByteOffset</code> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuTexRefSetAddress_v2(ref SizeT ByteOffset, CUtexref hTexRef, CUdeviceptr dptr, SizeT bytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">ByteOffset</span></td>
+        <td><p>Returned byte offset</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUtexref.html">CUtexref</a></td>
+        <td><span class="parametername">hTexRef</span></td>
+        <td><p>Texture reference to bind</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">dptr</span></td>
+        <td><p>Device pointer to bind</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">bytes</span></td>
+        <td><p>Size of memory to bind in bytes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetAddress2D_v2_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefSetAddress2D_v2*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetAddress2D_v2_ManagedCuda_BasicTypes_CUtexref_ManagedCuda_BasicTypes_CUDAArrayDescriptor__ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefSetAddress2D_v2(ManagedCuda.BasicTypes.CUtexref,ManagedCuda.BasicTypes.CUDAArrayDescriptor@,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.SizeT)">cuTexRefSetAddress2D_v2(CUtexref, ref CUDAArrayDescriptor, CUdeviceptr, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Binds a linear address range to the texture reference <code>hTexRef</code>. Any previous address or CUDA array state associated
+with the texture reference is superseded by this function. Any memory previously bound to <code>hTexRef</code> is unbound. <p>
+Using a <code>tex2D()</code> function inside a kernel requires a call to either <a class="xref" href="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.html#ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetArray_ManagedCuda_BasicTypes_CUtexref_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_CUTexRefSetArrayFlags_">cuTexRefSetArray(CUtexref, CUarray, CUTexRefSetArrayFlags)</a> to bind the corresponding texture
+reference to an array, or <a class="xref" href="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.html#ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetAddress2D_v2_ManagedCuda_BasicTypes_CUtexref_ManagedCuda_BasicTypes_CUDAArrayDescriptor__ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_">cuTexRefSetAddress2D_v2(CUtexref, ref CUDAArrayDescriptor, CUdeviceptr, SizeT)</a> to bind the texture reference to linear memory.<p>
+Function calls to <a class="xref" href="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.html#ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetFormat_ManagedCuda_BasicTypes_CUtexref_ManagedCuda_BasicTypes_CUArrayFormat_System_Int32_">cuTexRefSetFormat(CUtexref, CUArrayFormat, Int32)</a> cannot follow calls to <a class="xref" href="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.html#ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetAddress2D_v2_ManagedCuda_BasicTypes_CUtexref_ManagedCuda_BasicTypes_CUDAArrayDescriptor__ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_">cuTexRefSetAddress2D_v2(CUtexref, ref CUDAArrayDescriptor, CUdeviceptr, SizeT)</a> for the same texture reference.<p>
+It is required that <code>dptr</code> be aligned to the appropriate hardware-specific texture alignment. You can query this value
+using the device attribute <a class="xref" href="ManagedCuda.BasicTypes.CUDeviceAttribute.html#ManagedCuda_BasicTypes_CUDeviceAttribute_TextureAlignment">TextureAlignment</a>. If an unaligned <code>dptr</code> is supplied,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a> is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuTexRefSetAddress2D_v2(CUtexref hTexRef, ref CUDAArrayDescriptor desc, CUdeviceptr dptr, SizeT Pitch)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUtexref.html">CUtexref</a></td>
+        <td><span class="parametername">hTexRef</span></td>
+        <td><p>Texture reference to bind</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUDAArrayDescriptor.html">CUDAArrayDescriptor</a></td>
+        <td><span class="parametername">desc</span></td>
+        <td><p>Descriptor of CUDA array</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">dptr</span></td>
+        <td><p>Device pointer to bind</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">Pitch</span></td>
+        <td><p>Line pitch in bytes&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetAddressMode_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefSetAddressMode*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetAddressMode_ManagedCuda_BasicTypes_CUtexref_System_Int32_ManagedCuda_BasicTypes_CUAddressMode_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefSetAddressMode(ManagedCuda.BasicTypes.CUtexref,System.Int32,ManagedCuda.BasicTypes.CUAddressMode)">cuTexRefSetAddressMode(CUtexref, Int32, CUAddressMode)</h4>
+  <div class="markdown level1 summary"><p>Specifies the addressing mode <code>am</code> for the given dimension <code>dim</code> of the texture reference <code>hTexRef</code>. If <code>dim</code> is zero,
+the addressing mode is applied to the first parameter of the functions used to fetch from the texture; if <code>dim</code> is 1, the
+second, and so on. See <a class="xref" href="ManagedCuda.BasicTypes.CUAddressMode.html">CUAddressMode</a>.<p>
+Note that this call has no effect if <code>hTexRef</code> is bound to linear memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuTexRefSetAddressMode(CUtexref hTexRef, int dim, CUAddressMode am)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUtexref.html">CUtexref</a></td>
+        <td><span class="parametername">hTexRef</span></td>
+        <td><p>Texture reference</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">dim</span></td>
+        <td><p>Dimension</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUAddressMode.html">CUAddressMode</a></td>
+        <td><span class="parametername">am</span></td>
+        <td><p>Addressing mode to set</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetArray_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefSetArray*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetArray_ManagedCuda_BasicTypes_CUtexref_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_CUTexRefSetArrayFlags_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefSetArray(ManagedCuda.BasicTypes.CUtexref,ManagedCuda.BasicTypes.CUarray,ManagedCuda.BasicTypes.CUTexRefSetArrayFlags)">cuTexRefSetArray(CUtexref, CUarray, CUTexRefSetArrayFlags)</h4>
+  <div class="markdown level1 summary"><p>Binds the CUDA array <code>hArray</code> to the texture reference <code>hTexRef</code>. Any previous address or CUDA array state
+associated with the texture reference is superseded by this function. Flags must be set to
+<a class="xref" href="ManagedCuda.BasicTypes.CUTexRefSetArrayFlags.html#ManagedCuda_BasicTypes_CUTexRefSetArrayFlags_OverrideFormat">OverrideFormat</a>. Any CUDA array previously bound to hTexRef is unbound.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuTexRefSetArray(CUtexref hTexRef, CUarray hArray, CUTexRefSetArrayFlags Flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUtexref.html">CUtexref</a></td>
+        <td><span class="parametername">hTexRef</span></td>
+        <td><p>Texture reference to bind</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUarray.html">CUarray</a></td>
+        <td><span class="parametername">hArray</span></td>
+        <td><p>Array to bind</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUTexRefSetArrayFlags.html">CUTexRefSetArrayFlags</a></td>
+        <td><span class="parametername">Flags</span></td>
+        <td><p>Options (must be <a class="xref" href="ManagedCuda.BasicTypes.CUTexRefSetArrayFlags.html#ManagedCuda_BasicTypes_CUTexRefSetArrayFlags_OverrideFormat">OverrideFormat</a>)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetBorderColor_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefSetBorderColor*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetBorderColor_ManagedCuda_BasicTypes_CUtexref_System_Single___" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefSetBorderColor(ManagedCuda.BasicTypes.CUtexref,System.Single[])">cuTexRefSetBorderColor(CUtexref, Single[])</h4>
+  <div class="markdown level1 summary"><p>Sets the border color for a texture reference<p>
+Specifies the value of the RGBA color via the \p pBorderColor to the texture reference
+\p hTexRef. The color value supports only float type and holds color components in
+the following sequence:<p>
+pBorderColor[0] holds 'R' component<p>
+pBorderColor[1] holds 'G' component<p>
+pBorderColor[2] holds 'B' component<p>
+pBorderColor[3] holds 'A' component<p>
+<p>
+Note that the color values can be set only when the Address mode is set to
+CU_TR_ADDRESS_MODE_BORDER using ::cuTexRefSetAddressMode.<p>
+Applications using integer border color values have to &quot;reinterpret_cast&quot; their values to float.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuTexRefSetBorderColor(CUtexref hTexRef, float[] pBorderColor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUtexref.html">CUtexref</a></td>
+        <td><span class="parametername">hTexRef</span></td>
+        <td><p>Texture reference</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span>[]</td>
+        <td><span class="parametername">pBorderColor</span></td>
+        <td><p>RGBA color</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetFilterMode_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefSetFilterMode*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetFilterMode_ManagedCuda_BasicTypes_CUtexref_ManagedCuda_BasicTypes_CUFilterMode_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefSetFilterMode(ManagedCuda.BasicTypes.CUtexref,ManagedCuda.BasicTypes.CUFilterMode)">cuTexRefSetFilterMode(CUtexref, CUFilterMode)</h4>
+  <div class="markdown level1 summary"><p>Specifies the filtering mode <code>fm</code> to be used when reading memory through the texture reference <code>hTexRef</code>. See <a class="xref" href="ManagedCuda.BasicTypes.CUFilterMode.html">CUFilterMode</a>.<p>
+Note that this call has no effect if hTexRef is bound to linear memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuTexRefSetFilterMode(CUtexref hTexRef, CUFilterMode fm)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUtexref.html">CUtexref</a></td>
+        <td><span class="parametername">hTexRef</span></td>
+        <td><p>Texture reference</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUFilterMode.html">CUFilterMode</a></td>
+        <td><span class="parametername">fm</span></td>
+        <td><p>Filtering mode to set</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetFlags_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefSetFlags*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetFlags_ManagedCuda_BasicTypes_CUtexref_ManagedCuda_BasicTypes_CUTexRefSetFlags_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefSetFlags(ManagedCuda.BasicTypes.CUtexref,ManagedCuda.BasicTypes.CUTexRefSetFlags)">cuTexRefSetFlags(CUtexref, CUTexRefSetFlags)</h4>
+  <div class="markdown level1 summary"><p>Specifies optional flags via <code>Flags</code> to specify the behavior of data returned through the texture reference <code>hTexRef</code>. See <a class="xref" href="ManagedCuda.BasicTypes.CUTexRefSetFlags.html">CUTexRefSetFlags</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuTexRefSetFlags(CUtexref hTexRef, CUTexRefSetFlags Flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUtexref.html">CUtexref</a></td>
+        <td><span class="parametername">hTexRef</span></td>
+        <td><p>Texture reference</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUTexRefSetFlags.html">CUTexRefSetFlags</a></td>
+        <td><span class="parametername">Flags</span></td>
+        <td><p>Optional flags to set</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetFormat_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefSetFormat*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetFormat_ManagedCuda_BasicTypes_CUtexref_ManagedCuda_BasicTypes_CUArrayFormat_System_Int32_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefSetFormat(ManagedCuda.BasicTypes.CUtexref,ManagedCuda.BasicTypes.CUArrayFormat,System.Int32)">cuTexRefSetFormat(CUtexref, CUArrayFormat, Int32)</h4>
+  <div class="markdown level1 summary"><p>Specifies the format of the data to be read by the texture reference <code>hTexRef</code>. <code>fmt</code> and <code>NumPackedComponents</code>
+are exactly analogous to the Format and NumChannels members of the <a class="xref" href="ManagedCuda.BasicTypes.CUDAArrayDescriptor.html">CUDAArrayDescriptor</a> structure:
+They specify the format of each component and the number of components per array element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuTexRefSetFormat(CUtexref hTexRef, CUArrayFormat fmt, int NumPackedComponents)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUtexref.html">CUtexref</a></td>
+        <td><span class="parametername">hTexRef</span></td>
+        <td><p>Texture reference</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUArrayFormat.html">CUArrayFormat</a></td>
+        <td><span class="parametername">fmt</span></td>
+        <td><p>Format to set</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">NumPackedComponents</span></td>
+        <td><p>Number of components per array element</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetMaxAnisotropy_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefSetMaxAnisotropy*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetMaxAnisotropy_ManagedCuda_BasicTypes_CUtexref_System_UInt32_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefSetMaxAnisotropy(ManagedCuda.BasicTypes.CUtexref,System.UInt32)">cuTexRefSetMaxAnisotropy(CUtexref, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Specifies the maximum aniostropy <code>maxAniso</code> to be used when reading memory through
+the texture reference <code>hTexRef</code>. <p>
+Note that this call has no effect if <code>hTexRef</code> is not bound to a mipmapped array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuTexRefSetMaxAnisotropy(CUtexref hTexRef, uint maxAniso)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUtexref.html">CUtexref</a></td>
+        <td><span class="parametername">hTexRef</span></td>
+        <td><p>Texture reference</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">maxAniso</span></td>
+        <td><p>Maximum anisotropy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetMipmapFilterMode_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefSetMipmapFilterMode*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetMipmapFilterMode_ManagedCuda_BasicTypes_CUtexref_ManagedCuda_BasicTypes_CUFilterMode_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefSetMipmapFilterMode(ManagedCuda.BasicTypes.CUtexref,ManagedCuda.BasicTypes.CUFilterMode)">cuTexRefSetMipmapFilterMode(CUtexref, CUFilterMode)</h4>
+  <div class="markdown level1 summary"><p>Specifies the mipmap filtering mode <code>fm</code> to be used when reading memory through
+the texture reference <code>hTexRef</code>.<p>
+Note that this call has no effect if <code>hTexRef</code> is not bound to a mipmapped array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuTexRefSetMipmapFilterMode(CUtexref hTexRef, CUFilterMode fm)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUtexref.html">CUtexref</a></td>
+        <td><span class="parametername">hTexRef</span></td>
+        <td><p>Texture reference</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUFilterMode.html">CUFilterMode</a></td>
+        <td><span class="parametername">fm</span></td>
+        <td><p>Filtering mode to set</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetMipmapLevelBias_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefSetMipmapLevelBias*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetMipmapLevelBias_ManagedCuda_BasicTypes_CUtexref_System_Single_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefSetMipmapLevelBias(ManagedCuda.BasicTypes.CUtexref,System.Single)">cuTexRefSetMipmapLevelBias(CUtexref, Single)</h4>
+  <div class="markdown level1 summary"><p>Specifies the mipmap level bias <code>bias</code> to be added to the specified mipmap level when
+reading memory through the texture reference <code>hTexRef</code>.<p>
+Note that this call has no effect if <code>hTexRef</code> is not bound to a mipmapped array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuTexRefSetMipmapLevelBias(CUtexref hTexRef, float bias)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUtexref.html">CUtexref</a></td>
+        <td><span class="parametername">hTexRef</span></td>
+        <td><p>Texture reference</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">bias</span></td>
+        <td><p>Mipmap level bias</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetMipmapLevelClamp_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefSetMipmapLevelClamp*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetMipmapLevelClamp_ManagedCuda_BasicTypes_CUtexref_System_Single_System_Single_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefSetMipmapLevelClamp(ManagedCuda.BasicTypes.CUtexref,System.Single,System.Single)">cuTexRefSetMipmapLevelClamp(CUtexref, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Specifies the min/max mipmap level clamps, <code>minMipmapLevelClamp</code> and <code>maxMipmapLevelClamp</code>
+respectively, to be used when reading memory through the texture reference
+<code>hTexRef</code>.<p>
+Note that this call has no effect if <code>hTexRef</code> is not bound to a mipmapped array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuTexRefSetMipmapLevelClamp(CUtexref hTexRef, float minMipmapLevelClamp, float maxMipmapLevelClamp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUtexref.html">CUtexref</a></td>
+        <td><span class="parametername">hTexRef</span></td>
+        <td><p>Texture reference</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">minMipmapLevelClamp</span></td>
+        <td><p>Mipmap min level clamp</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">maxMipmapLevelClamp</span></td>
+        <td><p>Mipmap max level clamp</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetMipmappedArray_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefSetMipmappedArray*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetMipmappedArray_ManagedCuda_BasicTypes_CUtexref_ManagedCuda_BasicTypes_CUmipmappedArray_ManagedCuda_BasicTypes_CUTexRefSetArrayFlags_" data-uid="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.cuTexRefSetMipmappedArray(ManagedCuda.BasicTypes.CUtexref,ManagedCuda.BasicTypes.CUmipmappedArray,ManagedCuda.BasicTypes.CUTexRefSetArrayFlags)">cuTexRefSetMipmappedArray(CUtexref, CUmipmappedArray, CUTexRefSetArrayFlags)</h4>
+  <div class="markdown level1 summary"><p>Binds the CUDA mipmapped array <code>hMipmappedArray</code> to the texture reference <code>hTexRef</code>.
+Any previous address or CUDA array state associated with the texture reference
+is superseded by this function. <code>Flags</code> must be set to <a class="xref" href="ManagedCuda.BasicTypes.CUTexRefSetArrayFlags.html#ManagedCuda_BasicTypes_CUTexRefSetArrayFlags_OverrideFormat">OverrideFormat</a>.
+Any CUDA array previously bound to <code>hTexRef</code> is unbound.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuTexRefSetMipmappedArray(CUtexref hTexRef, CUmipmappedArray hMipmappedArray, CUTexRefSetArrayFlags Flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUtexref.html">CUtexref</a></td>
+        <td><span class="parametername">hTexRef</span></td>
+        <td><p>Texture reference to bind</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUmipmappedArray.html">CUmipmappedArray</a></td>
+        <td><span class="parametername">hMipmappedArray</span></td>
+        <td><p>Mipmapped array to bind</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUTexRefSetArrayFlags.html">CUTexRefSetArrayFlags</a></td>
+        <td><span class="parametername">Flags</span></td>
+        <td><p>Options (must be <a class="xref" href="ManagedCuda.BasicTypes.CUTexRefSetArrayFlags.html#ManagedCuda_BasicTypes_CUTexRefSetArrayFlags_OverrideFormat">OverrideFormat</a>)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement.md&amp;value=---%0Auid%3A%20ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/DriverAPI.cs/#L6383" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

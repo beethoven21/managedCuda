@@ -1,0 +1,914 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CudaMipmappedArray
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CudaMipmappedArray
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.CudaMipmappedArray">
+  
+  
+  <h1 id="ManagedCuda_CudaMipmappedArray" data-uid="ManagedCuda.CudaMipmappedArray" class="text-break">Class CudaMipmappedArray
+  </h1>
+  <div class="markdown level0 summary"><p>A mipmapped Cuda array</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CudaMipmappedArray</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.html">ManagedCuda</a></h6>
+  <h6><strong>Assembly</strong>: ManagedCuda.dll</h6>
+  <h5 id="ManagedCuda_CudaMipmappedArray_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CudaMipmappedArray : IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaMipmappedArray__ctor_ManagedCuda_BasicTypes_CUArrayFormat_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_CudaMipmappedArrayNumChannels_ManagedCuda_BasicTypes_CUDAArray3DFlags_System_UInt32_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaMipmappedArray.%23ctor(ManagedCuda.BasicTypes.CUArrayFormat%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.CudaMipmappedArrayNumChannels%2CManagedCuda.BasicTypes.CUDAArray3DFlags%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaMipmappedArray.cs/#L138">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaMipmappedArray__ctor_" data-uid="ManagedCuda.CudaMipmappedArray.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaMipmappedArray__ctor_ManagedCuda_BasicTypes_CUArrayFormat_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_CudaMipmappedArrayNumChannels_ManagedCuda_BasicTypes_CUDAArray3DFlags_System_UInt32_" data-uid="ManagedCuda.CudaMipmappedArray.#ctor(ManagedCuda.BasicTypes.CUArrayFormat,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.CudaMipmappedArrayNumChannels,ManagedCuda.BasicTypes.CUDAArray3DFlags,System.UInt32)">CudaMipmappedArray(CUArrayFormat, SizeT, SizeT, SizeT, CudaMipmappedArrayNumChannels, CUDAArray3DFlags, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Creates a CUDA mipmapped array according to <code>descriptor</code>. <p>
+Width, Height, and Depth are the width, height, and depth of the CUDA array (in elements); the following
+types of CUDA arrays can be allocated:<p>
+– A 1D mipmapped array is allocated if Height and Depth extents are both zero.<p>
+– A 2D mipmapped array is allocated if only Depth extent is zero.<p>
+– A 3D mipmapped array is allocated if all three extents are non-zero.<p>
+– A 1D layered CUDA mipmapped array is allocated if only Height is zero and the <a class="xref" href="ManagedCuda.BasicTypes.CUDAArray3DFlags.html#ManagedCuda_BasicTypes_CUDAArray3DFlags_Layered">Layered</a>
+flag is set. Each layer is a 1D array. The number of layers is determined by the depth extent.
+– A 2D layered CUDA mipmapped array is allocated if all three extents are non-zero and the <a class="xref" href="ManagedCuda.BasicTypes.CUDAArray3DFlags.html#ManagedCuda_BasicTypes_CUDAArray3DFlags_Layered">Layered</a>
+flag is set. Each layer is a 2D array. The number of layers is determined by the depth extent.
+– A cubemap CUDA mipmapped array is allocated if all three extents are non-zero and the <a class="xref" href="ManagedCuda.BasicTypes.CUDAArray3DFlags.html#ManagedCuda_BasicTypes_CUDAArray3DFlags_Cubemap">Cubemap</a>
+flag is set. Width must be equal to Height, and Depth must be six. A
+cubemap is a special type of 2D layered CUDA array, where the six layers represent the six faces of a
+cube. The order of the six layers in memory is the same as that listed in CUarray_cubemap_face.
+– A cubemap layered CUDA mipmapped array is allocated if all three extents are non-zero, and both,
+<a class="xref" href="ManagedCuda.BasicTypes.CUDAArray3DFlags.html#ManagedCuda_BasicTypes_CUDAArray3DFlags_Cubemap">Cubemap</a> and <a class="xref" href="ManagedCuda.BasicTypes.CUDAArray3DFlags.html#ManagedCuda_BasicTypes_CUDAArray3DFlags_Layered">Layered</a> flags are set. Width must be equal
+to Height, and Depth must be a multiple of six. A cubemap layered CUDA array is a special type of
+2D layered CUDA array that consists of a collection of cubemaps. The first six layers represent the first
+cubemap, the next six layers form the second cubemap, and so on.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaMipmappedArray(CUArrayFormat format, SizeT width, SizeT height, SizeT depth, CudaMipmappedArrayNumChannels numChannels, CUDAArray3DFlags flags, uint numMipmapLevels)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUArrayFormat.html">CUArrayFormat</a></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>Array format</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>Array width. See general description.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>Array height. See general description.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">depth</span></td>
+        <td><p>Array depth or layer count. See general description.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaMipmappedArrayNumChannels.html">CudaMipmappedArrayNumChannels</a></td>
+        <td><span class="parametername">numChannels</span></td>
+        <td><p>number of channels</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUDAArray3DFlags.html">CUDAArray3DFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Flags may be set to:<p>
+– <a class="xref" href="ManagedCuda.BasicTypes.CUDAArray3DFlags.html#ManagedCuda_BasicTypes_CUDAArray3DFlags_Layered">Layered</a> to enable creation of layered CUDA mipmapped arrays. If this flag is set,
+Depth specifies the number of layers, not the depth of a 3D array.<p>
+– <a class="xref" href="ManagedCuda.BasicTypes.CUDAArray3DFlags.html#ManagedCuda_BasicTypes_CUDAArray3DFlags_Cubemap">Cubemap</a> to enable creation of mipmapped cubemaps. If this flag is set, Width
+must be equal to Height, and Depth must be six. If the CUDA_ARRAY3D_LAYERED flag is also set,
+then Depth must be a multiple of six.<p>
+– <a class="xref" href="ManagedCuda.BasicTypes.CUDAArray3DFlags.html#ManagedCuda_BasicTypes_CUDAArray3DFlags_TextureGather">TextureGather</a> to indicate that the CUDA mipmapped array will be used for
+texture gather. Texture gather can only be performed on 2D CUDA mipmapped arrays.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numMipmapLevels</span></td>
+        <td><p>Number of mipmap levels. This value is clamped to the range [1, 1 + floor(log2(max(width, height, depth)))]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaMipmappedArray__ctor_ManagedCuda_BasicTypes_CUDAArray3DDescriptor_System_UInt32_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaMipmappedArray.%23ctor(ManagedCuda.BasicTypes.CUDAArray3DDescriptor%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaMipmappedArray.cs/#L92">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaMipmappedArray__ctor_" data-uid="ManagedCuda.CudaMipmappedArray.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaMipmappedArray__ctor_ManagedCuda_BasicTypes_CUDAArray3DDescriptor_System_UInt32_" data-uid="ManagedCuda.CudaMipmappedArray.#ctor(ManagedCuda.BasicTypes.CUDAArray3DDescriptor,System.UInt32)">CudaMipmappedArray(CUDAArray3DDescriptor, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Creates a CUDA mipmapped array according to <code>descriptor</code>. <p>
+Width, Height, and Depth are the width, height, and depth of the CUDA array (in elements); the following
+types of CUDA arrays can be allocated:<p>
+– A 1D mipmapped array is allocated if Height and Depth extents are both zero.<p>
+– A 2D mipmapped array is allocated if only Depth extent is zero.<p>
+– A 3D mipmapped array is allocated if all three extents are non-zero.<p>
+– A 1D layered CUDA mipmapped array is allocated if only Height is zero and the <a class="xref" href="ManagedCuda.BasicTypes.CUDAArray3DFlags.html#ManagedCuda_BasicTypes_CUDAArray3DFlags_Layered">Layered</a>
+flag is set. Each layer is a 1D array. The number of layers is determined by the depth extent.<p>
+– A 2D layered CUDA mipmapped array is allocated if all three extents are non-zero and the <a class="xref" href="ManagedCuda.BasicTypes.CUDAArray3DFlags.html#ManagedCuda_BasicTypes_CUDAArray3DFlags_Layered">Layered</a>
+flag is set. Each layer is a 2D array. The number of layers is determined by the depth extent.<p>
+– A cubemap CUDA mipmapped array is allocated if all three extents are non-zero and the <a class="xref" href="ManagedCuda.BasicTypes.CUDAArray3DFlags.html#ManagedCuda_BasicTypes_CUDAArray3DFlags_Cubemap">Cubemap</a>
+flag is set. Width must be equal to Height, and Depth must be six. A
+cubemap is a special type of 2D layered CUDA array, where the six layers represent the six faces of a
+cube. The order of the six layers in memory is the same as that listed in CUarray_cubemap_face.<p>
+– A cubemap layered CUDA mipmapped array is allocated if all three extents are non-zero, and both,
+<a class="xref" href="ManagedCuda.BasicTypes.CUDAArray3DFlags.html#ManagedCuda_BasicTypes_CUDAArray3DFlags_Cubemap">Cubemap</a> and <a class="xref" href="ManagedCuda.BasicTypes.CUDAArray3DFlags.html#ManagedCuda_BasicTypes_CUDAArray3DFlags_Layered">Layered</a> flags are set. Width must be equal
+to Height, and Depth must be a multiple of six. A cubemap layered CUDA array is a special type of
+2D layered CUDA array that consists of a collection of cubemaps. The first six layers represent the first
+cubemap, the next six layers form the second cubemap, and so on.<p>
+Flags may be set to:<p>
+– <a class="xref" href="ManagedCuda.BasicTypes.CUDAArray3DFlags.html#ManagedCuda_BasicTypes_CUDAArray3DFlags_Layered">Layered</a> to enable creation of layered CUDA mipmapped arrays. If this flag is set,
+Depth specifies the number of layers, not the depth of a 3D array.<p>
+– <a class="xref" href="ManagedCuda.BasicTypes.CUDAArray3DFlags.html#ManagedCuda_BasicTypes_CUDAArray3DFlags_Cubemap">Cubemap</a> to enable creation of mipmapped cubemaps. If this flag is set, Width
+must be equal to Height, and Depth must be six. If the CUDA_ARRAY3D_LAYERED flag is also set,
+then Depth must be a multiple of six.<p>
+– <a class="xref" href="ManagedCuda.BasicTypes.CUDAArray3DFlags.html#ManagedCuda_BasicTypes_CUDAArray3DFlags_TextureGather">TextureGather</a> to indicate that the CUDA mipmapped array will be used for
+texture gather. Texture gather can only be performed on 2D CUDA mipmapped arrays.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaMipmappedArray(CUDAArray3DDescriptor descriptor, uint numMipmapLevels)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUDAArray3DDescriptor.html">CUDAArray3DDescriptor</a></td>
+        <td><span class="parametername">descriptor</span></td>
+        <td><p>mipmapped array descriptor</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numMipmapLevels</span></td>
+        <td><p>Number of mipmap levels. This value is clamped to the range [1, 1 + floor(log2(max(width, height, depth)))]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaMipmappedArray__ctor_ManagedCuda_BasicTypes_CUmipmappedArray_ManagedCuda_BasicTypes_CUArrayFormat_ManagedCuda_CudaMipmappedArrayNumChannels_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaMipmappedArray.%23ctor(ManagedCuda.BasicTypes.CUmipmappedArray%2CManagedCuda.BasicTypes.CUArrayFormat%2CManagedCuda.CudaMipmappedArrayNumChannels)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaMipmappedArray.cs/#L162">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaMipmappedArray__ctor_" data-uid="ManagedCuda.CudaMipmappedArray.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaMipmappedArray__ctor_ManagedCuda_BasicTypes_CUmipmappedArray_ManagedCuda_BasicTypes_CUArrayFormat_ManagedCuda_CudaMipmappedArrayNumChannels_" data-uid="ManagedCuda.CudaMipmappedArray.#ctor(ManagedCuda.BasicTypes.CUmipmappedArray,ManagedCuda.BasicTypes.CUArrayFormat,ManagedCuda.CudaMipmappedArrayNumChannels)">CudaMipmappedArray(CUmipmappedArray, CUArrayFormat, CudaMipmappedArrayNumChannels)</h4>
+  <div class="markdown level1 summary"><p>Creates a CUDA mipmapped array from an existing mipmap array handle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaMipmappedArray(CUmipmappedArray handle, CUArrayFormat format, CudaMipmappedArrayNumChannels numChannels)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUmipmappedArray.html">CUmipmappedArray</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>handle to wrap</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUArrayFormat.html">CUArrayFormat</a></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>Array format of the wrapped array. Cannot be gathered through CUDA API.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaMipmappedArrayNumChannels.html">CudaMipmappedArrayNumChannels</a></td>
+        <td><span class="parametername">numChannels</span></td>
+        <td><p>Number of channels of wrapped array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaMipmappedArray_Array3DDescriptor.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaMipmappedArray.Array3DDescriptor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaMipmappedArray.cs/#L283">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaMipmappedArray_Array3DDescriptor_" data-uid="ManagedCuda.CudaMipmappedArray.Array3DDescriptor*"></a>
+  <h4 id="ManagedCuda_CudaMipmappedArray_Array3DDescriptor" data-uid="ManagedCuda.CudaMipmappedArray.Array3DDescriptor">Array3DDescriptor</h4>
+  <div class="markdown level1 summary"><p>Returns the wrapped CUDAArray3DDescriptor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUDAArray3DDescriptor Array3DDescriptor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUDAArray3DDescriptor.html">CUDAArray3DDescriptor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaMipmappedArray_CUMipmappedArray.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaMipmappedArray.CUMipmappedArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaMipmappedArray.cs/#L275">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaMipmappedArray_CUMipmappedArray_" data-uid="ManagedCuda.CudaMipmappedArray.CUMipmappedArray*"></a>
+  <h4 id="ManagedCuda_CudaMipmappedArray_CUMipmappedArray" data-uid="ManagedCuda.CudaMipmappedArray.CUMipmappedArray">CUMipmappedArray</h4>
+  <div class="markdown level1 summary"><p>Returns the wrapped CUmipmappedArray</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUmipmappedArray CUMipmappedArray { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUmipmappedArray.html">CUmipmappedArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaMipmappedArray_Depth.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaMipmappedArray.Depth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaMipmappedArray.cs/#L291">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaMipmappedArray_Depth_" data-uid="ManagedCuda.CudaMipmappedArray.Depth*"></a>
+  <h4 id="ManagedCuda_CudaMipmappedArray_Depth" data-uid="ManagedCuda.CudaMipmappedArray.Depth">Depth</h4>
+  <div class="markdown level1 summary"><p>Returns the Depth of the array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SizeT Depth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaMipmappedArray_Flags.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaMipmappedArray.Flags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaMipmappedArray.cs/#L315">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaMipmappedArray_Flags_" data-uid="ManagedCuda.CudaMipmappedArray.Flags*"></a>
+  <h4 id="ManagedCuda_CudaMipmappedArray_Flags" data-uid="ManagedCuda.CudaMipmappedArray.Flags">Flags</h4>
+  <div class="markdown level1 summary"><p>Returns the array creation flags</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUDAArray3DFlags Flags { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUDAArray3DFlags.html">CUDAArray3DFlags</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaMipmappedArray_Format.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaMipmappedArray.Format%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaMipmappedArray.cs/#L323">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaMipmappedArray_Format_" data-uid="ManagedCuda.CudaMipmappedArray.Format*"></a>
+  <h4 id="ManagedCuda_CudaMipmappedArray_Format" data-uid="ManagedCuda.CudaMipmappedArray.Format">Format</h4>
+  <div class="markdown level1 summary"><p>Returns the array format</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUArrayFormat Format { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUArrayFormat.html">CUArrayFormat</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaMipmappedArray_Height.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaMipmappedArray.Height%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaMipmappedArray.cs/#L299">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaMipmappedArray_Height_" data-uid="ManagedCuda.CudaMipmappedArray.Height*"></a>
+  <h4 id="ManagedCuda_CudaMipmappedArray_Height" data-uid="ManagedCuda.CudaMipmappedArray.Height">Height</h4>
+  <div class="markdown level1 summary"><p>Returns the Height of the array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SizeT Height { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaMipmappedArray_IsOwner.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaMipmappedArray.IsOwner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaMipmappedArray.cs/#L339">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaMipmappedArray_IsOwner_" data-uid="ManagedCuda.CudaMipmappedArray.IsOwner*"></a>
+  <h4 id="ManagedCuda_CudaMipmappedArray_IsOwner" data-uid="ManagedCuda.CudaMipmappedArray.IsOwner">IsOwner</h4>
+  <div class="markdown level1 summary"><p>If the wrapper class instance is the owner of a CUDA handle, it will be destroyed while disposing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOwner { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaMipmappedArray_NumChannels.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaMipmappedArray.NumChannels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaMipmappedArray.cs/#L331">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaMipmappedArray_NumChannels_" data-uid="ManagedCuda.CudaMipmappedArray.NumChannels*"></a>
+  <h4 id="ManagedCuda_CudaMipmappedArray_NumChannels" data-uid="ManagedCuda.CudaMipmappedArray.NumChannels">NumChannels</h4>
+  <div class="markdown level1 summary"><p>Returns number of channels</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint NumChannels { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaMipmappedArray_Width.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaMipmappedArray.Width%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaMipmappedArray.cs/#L307">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaMipmappedArray_Width_" data-uid="ManagedCuda.CudaMipmappedArray.Width*"></a>
+  <h4 id="ManagedCuda_CudaMipmappedArray_Width" data-uid="ManagedCuda.CudaMipmappedArray.Width">Width</h4>
+  <div class="markdown level1 summary"><p>Returns the array width in elements</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SizeT Width { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaMipmappedArray_Dispose.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaMipmappedArray.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaMipmappedArray.cs/#L175">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaMipmappedArray_Dispose_" data-uid="ManagedCuda.CudaMipmappedArray.Dispose*"></a>
+  <h4 id="ManagedCuda_CudaMipmappedArray_Dispose" data-uid="ManagedCuda.CudaMipmappedArray.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Dispose</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaMipmappedArray_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaMipmappedArray.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaMipmappedArray.cs/#L185">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaMipmappedArray_Dispose_" data-uid="ManagedCuda.CudaMipmappedArray.Dispose*"></a>
+  <h4 id="ManagedCuda_CudaMipmappedArray_Dispose_System_Boolean_" data-uid="ManagedCuda.CudaMipmappedArray.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>For IDisposable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool fDisposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">fDisposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaMipmappedArray_GetLevelAsArray1D_System_UInt32_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaMipmappedArray.GetLevelAsArray1D(System.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaMipmappedArray.cs/#L207">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaMipmappedArray_GetLevelAsArray1D_" data-uid="ManagedCuda.CudaMipmappedArray.GetLevelAsArray1D*"></a>
+  <h4 id="ManagedCuda_CudaMipmappedArray_GetLevelAsArray1D_System_UInt32_" data-uid="ManagedCuda.CudaMipmappedArray.GetLevelAsArray1D(System.UInt32)">GetLevelAsArray1D(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Returns a CUDA array that represents a single mipmap level
+of the CUDA mipmapped array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaArray1D GetLevelAsArray1D(uint level)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">level</span></td>
+        <td><p>Mipmap level</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaArray1D.html">CudaArray1D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaMipmappedArray_GetLevelAsArray2D_System_UInt32_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaMipmappedArray.GetLevelAsArray2D(System.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaMipmappedArray.cs/#L224">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaMipmappedArray_GetLevelAsArray2D_" data-uid="ManagedCuda.CudaMipmappedArray.GetLevelAsArray2D*"></a>
+  <h4 id="ManagedCuda_CudaMipmappedArray_GetLevelAsArray2D_System_UInt32_" data-uid="ManagedCuda.CudaMipmappedArray.GetLevelAsArray2D(System.UInt32)">GetLevelAsArray2D(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Returns a CUDA array that represents a single mipmap level
+of the CUDA mipmapped array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaArray2D GetLevelAsArray2D(uint level)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">level</span></td>
+        <td><p>Mipmap level</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaArray2D.html">CudaArray2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaMipmappedArray_GetLevelAsArray3D_System_UInt32_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaMipmappedArray.GetLevelAsArray3D(System.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaMipmappedArray.cs/#L241">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaMipmappedArray_GetLevelAsArray3D_" data-uid="ManagedCuda.CudaMipmappedArray.GetLevelAsArray3D*"></a>
+  <h4 id="ManagedCuda_CudaMipmappedArray_GetLevelAsArray3D_System_UInt32_" data-uid="ManagedCuda.CudaMipmappedArray.GetLevelAsArray3D(System.UInt32)">GetLevelAsArray3D(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Returns a CUDA array that represents a single mipmap level
+of the CUDA mipmapped array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaArray3D GetLevelAsArray3D(uint level)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">level</span></td>
+        <td><p>Mipmap level</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaArray3D.html">CudaArray3D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaMipmappedArray_GetLevelAsCUArray_System_UInt32_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaMipmappedArray.GetLevelAsCUArray(System.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaMipmappedArray.cs/#L258">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaMipmappedArray_GetLevelAsCUArray_" data-uid="ManagedCuda.CudaMipmappedArray.GetLevelAsCUArray*"></a>
+  <h4 id="ManagedCuda_CudaMipmappedArray_GetLevelAsCUArray_System_UInt32_" data-uid="ManagedCuda.CudaMipmappedArray.GetLevelAsCUArray(System.UInt32)">GetLevelAsCUArray(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Returns a CUDA array that represents a single mipmap level
+of the CUDA mipmapped array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUarray GetLevelAsCUArray(uint level)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">level</span></td>
+        <td><p>Mipmap level</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUarray.html">CUarray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaMipmappedArray.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaMipmappedArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaMipmappedArray.cs/#L53" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

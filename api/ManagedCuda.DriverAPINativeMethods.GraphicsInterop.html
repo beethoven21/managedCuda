@@ -1,0 +1,732 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DriverAPINativeMethods.GraphicsInterop
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DriverAPINativeMethods.GraphicsInterop
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.DriverAPINativeMethods.GraphicsInterop">
+  
+  
+  <h1 id="ManagedCuda_DriverAPINativeMethods_GraphicsInterop" data-uid="ManagedCuda.DriverAPINativeMethods.GraphicsInterop" class="text-break">Class DriverAPINativeMethods.GraphicsInterop
+  </h1>
+  <div class="markdown level0 summary"><p>Combines all graphics interop API calls</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DriverAPINativeMethods.GraphicsInterop</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.html">ManagedCuda</a></h6>
+  <h6><strong>Assembly</strong>: ManagedCuda.dll</h6>
+  <h5 id="ManagedCuda_DriverAPINativeMethods_GraphicsInterop_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class GraphicsInterop</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_GraphicsInterop_cuGraphicsMapResources_" data-uid="ManagedCuda.DriverAPINativeMethods.GraphicsInterop.cuGraphicsMapResources*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_GraphicsInterop_cuGraphicsMapResources_System_UInt32_ManagedCuda_BasicTypes_CUgraphicsResource__ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.DriverAPINativeMethods.GraphicsInterop.cuGraphicsMapResources(System.UInt32,ManagedCuda.BasicTypes.CUgraphicsResource@,ManagedCuda.BasicTypes.CUstream)">cuGraphicsMapResources(UInt32, ref CUgraphicsResource, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Maps the <code>count</code> graphics resources in <code>resources</code> for access by CUDA.<p>
+The resources in <code>resources</code> may be accessed by CUDA until they are unmapped. The graphics API from which
+<code>resources</code> were registered should not access any resources while they are mapped by CUDA. If an application does
+so, the results are undefined.<p>
+This function provides the synchronization guarantee that any graphics calls issued before <a class="xref" href="ManagedCuda.DriverAPINativeMethods.GraphicsInterop.html#ManagedCuda_DriverAPINativeMethods_GraphicsInterop_cuGraphicsMapResources_System_UInt32_ManagedCuda_BasicTypes_CUgraphicsResource__ManagedCuda_BasicTypes_CUstream_">cuGraphicsMapResources(UInt32, ref CUgraphicsResource, CUstream)</a>
+will complete before any subsequent CUDA work issued in <code>stream</code> begins.<p>
+If <code>resources</code> includes any duplicate entries then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidHandle">ErrorInvalidHandle</a> is returned. If any of
+<code>resources</code> are presently mapped for access by CUDA then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorAlreadyMapped">ErrorAlreadyMapped</a> is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuGraphicsMapResources(uint count, ref CUgraphicsResource resources, CUstream hStream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Number of resources to map. Here: must be 1</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUgraphicsResource.html">CUgraphicsResource</a></td>
+        <td><span class="parametername">resources</span></td>
+        <td><p>Resources to map for CUDA usage</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">hStream</span></td>
+        <td><p>Stream with which to synchronize</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidHandle">ErrorInvalidHandle</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorAlreadyMapped">ErrorAlreadyMapped</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorUnknown">ErrorUnknown</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_GraphicsInterop_cuGraphicsMapResources_" data-uid="ManagedCuda.DriverAPINativeMethods.GraphicsInterop.cuGraphicsMapResources*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_GraphicsInterop_cuGraphicsMapResources_System_UInt32_ManagedCuda_BasicTypes_CUgraphicsResource___ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.DriverAPINativeMethods.GraphicsInterop.cuGraphicsMapResources(System.UInt32,ManagedCuda.BasicTypes.CUgraphicsResource[],ManagedCuda.BasicTypes.CUstream)">cuGraphicsMapResources(UInt32, CUgraphicsResource[], CUstream)</h4>
+  <div class="markdown level1 summary"><p>Maps the <code>count</code> graphics resources in <code>resources</code> for access by CUDA.<p>
+The resources in <code>resources</code> may be accessed by CUDA until they are unmapped. The graphics API from which
+<code>resources</code> were registered should not access any resources while they are mapped by CUDA. If an application does
+so, the results are undefined.<p>
+This function provides the synchronization guarantee that any graphics calls issued before <a class="xref" href="ManagedCuda.DriverAPINativeMethods.GraphicsInterop.html#ManagedCuda_DriverAPINativeMethods_GraphicsInterop_cuGraphicsMapResources_System_UInt32_ManagedCuda_BasicTypes_CUgraphicsResource___ManagedCuda_BasicTypes_CUstream_">cuGraphicsMapResources(UInt32, CUgraphicsResource[], CUstream)</a>
+will complete before any subsequent CUDA work issued in <code>stream</code> begins.<p>
+If <code>resources</code> includes any duplicate entries then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidHandle">ErrorInvalidHandle</a> is returned. If any of
+<code>resources</code> are presently mapped for access by CUDA then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorAlreadyMapped">ErrorAlreadyMapped</a> is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuGraphicsMapResources(uint count, CUgraphicsResource[] resources, CUstream hStream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Number of resources to map</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUgraphicsResource.html">CUgraphicsResource</a>[]</td>
+        <td><span class="parametername">resources</span></td>
+        <td><p>Resources to map for CUDA usage</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">hStream</span></td>
+        <td><p>Stream with which to synchronize</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidHandle">ErrorInvalidHandle</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorAlreadyMapped">ErrorAlreadyMapped</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorUnknown">ErrorUnknown</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_GraphicsInterop_cuGraphicsResourceGetMappedMipmappedArray_" data-uid="ManagedCuda.DriverAPINativeMethods.GraphicsInterop.cuGraphicsResourceGetMappedMipmappedArray*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_GraphicsInterop_cuGraphicsResourceGetMappedMipmappedArray_ManagedCuda_BasicTypes_CUmipmappedArray__ManagedCuda_BasicTypes_CUgraphicsResource_" data-uid="ManagedCuda.DriverAPINativeMethods.GraphicsInterop.cuGraphicsResourceGetMappedMipmappedArray(ManagedCuda.BasicTypes.CUmipmappedArray@,ManagedCuda.BasicTypes.CUgraphicsResource)">cuGraphicsResourceGetMappedMipmappedArray(ref CUmipmappedArray, CUgraphicsResource)</h4>
+  <div class="markdown level1 summary"><p>Returns in <code>pMipmappedArray</code> a mipmapped array through which the mapped graphics
+resource <code>resource</code>. The value set in <code>pMipmappedArray</code> may change every time
+that <code>resource</code> is mapped.</p>
+<p>
+If <code>resource</code> is not a texture then it cannot be accessed via a mipmapped array and
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMappedAsArray">ErrorNotMappedAsArray</a> is returned.
+If <code>resource</code> is not mapped then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMapped">ErrorNotMapped</a> is returned.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuGraphicsResourceGetMappedMipmappedArray(ref CUmipmappedArray pMipmappedArray, CUgraphicsResource resource)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUmipmappedArray.html">CUmipmappedArray</a></td>
+        <td><span class="parametername">pMipmappedArray</span></td>
+        <td><p>Returned mipmapped array through which <code>resource</code> may be accessed</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUgraphicsResource.html">CUgraphicsResource</a></td>
+        <td><span class="parametername">resource</span></td>
+        <td><p>Mapped resource to access</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidHandle">ErrorInvalidHandle</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMapped">ErrorNotMapped</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMappedAsArray">ErrorNotMappedAsArray</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_GraphicsInterop_cuGraphicsResourceGetMappedPointer_v2_" data-uid="ManagedCuda.DriverAPINativeMethods.GraphicsInterop.cuGraphicsResourceGetMappedPointer_v2*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_GraphicsInterop_cuGraphicsResourceGetMappedPointer_v2_ManagedCuda_BasicTypes_CUdeviceptr__ManagedCuda_BasicTypes_SizeT__ManagedCuda_BasicTypes_CUgraphicsResource_" data-uid="ManagedCuda.DriverAPINativeMethods.GraphicsInterop.cuGraphicsResourceGetMappedPointer_v2(ManagedCuda.BasicTypes.CUdeviceptr@,ManagedCuda.BasicTypes.SizeT@,ManagedCuda.BasicTypes.CUgraphicsResource)">cuGraphicsResourceGetMappedPointer_v2(ref CUdeviceptr, ref SizeT, CUgraphicsResource)</h4>
+  <div class="markdown level1 summary"><p>Returns in <code>pDevPtr</code> a pointer through which the mapped graphics resource <code>resource</code> may be accessed. Returns
+in <code>pSize</code> the size of the memory in bytes which may be accessed from that pointer. The value set in <code>pPointer</code> may
+change every time that <code>resource</code> is mapped.<p>
+If <code>resource</code> is not a buffer then it cannot be accessed via a pointer and <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMappedAsPointer">ErrorNotMappedAsPointer</a>
+is returned. If resource is not mapped then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMapped">ErrorNotMapped</a> is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuGraphicsResourceGetMappedPointer_v2(ref CUdeviceptr pDevPtr, ref SizeT pSize, CUgraphicsResource resource)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDevPtr</span></td>
+        <td><p>Returned pointer through which <code>resource</code> may be accessed</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">pSize</span></td>
+        <td><p>Returned size of the buffer accessible starting at <code>pPointer</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUgraphicsResource.html">CUgraphicsResource</a></td>
+        <td><span class="parametername">resource</span></td>
+        <td><p>Mapped resource to access</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidHandle">ErrorInvalidHandle</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMapped">ErrorNotMapped</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMappedAsPointer">ErrorNotMappedAsPointer</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_GraphicsInterop_cuGraphicsResourceSetMapFlags_" data-uid="ManagedCuda.DriverAPINativeMethods.GraphicsInterop.cuGraphicsResourceSetMapFlags*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_GraphicsInterop_cuGraphicsResourceSetMapFlags_ManagedCuda_BasicTypes_CUgraphicsResource_ManagedCuda_BasicTypes_CUGraphicsMapResourceFlags_" data-uid="ManagedCuda.DriverAPINativeMethods.GraphicsInterop.cuGraphicsResourceSetMapFlags(ManagedCuda.BasicTypes.CUgraphicsResource,ManagedCuda.BasicTypes.CUGraphicsMapResourceFlags)">cuGraphicsResourceSetMapFlags(CUgraphicsResource, CUGraphicsMapResourceFlags)</h4>
+  <div class="markdown level1 summary"><p>Set <code>flags</code> for mapping the graphics resource <code>resource</code>.
+Changes to <code>flags</code> will take effect the next time <code>resource</code> is mapped. See <a class="xref" href="ManagedCuda.BasicTypes.CUGraphicsMapResourceFlags.html">CUGraphicsMapResourceFlags</a>. <p>
+If <code>resource</code> is presently mapped for access by CUDA then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorAlreadyMapped">ErrorAlreadyMapped</a> is returned. If
+<code>flags</code> is not one of the <a class="xref" href="ManagedCuda.BasicTypes.CUGraphicsMapResourceFlags.html">CUGraphicsMapResourceFlags</a> values then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a> is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuGraphicsResourceSetMapFlags(CUgraphicsResource resource, CUGraphicsMapResourceFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUgraphicsResource.html">CUgraphicsResource</a></td>
+        <td><span class="parametername">resource</span></td>
+        <td><p>Registered resource to set flags for</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUGraphicsMapResourceFlags.html">CUGraphicsMapResourceFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Parameters for resource mapping</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidHandle">ErrorInvalidHandle</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorAlreadyMapped">ErrorAlreadyMapped</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_GraphicsInterop_cuGraphicsSubResourceGetMappedArray_" data-uid="ManagedCuda.DriverAPINativeMethods.GraphicsInterop.cuGraphicsSubResourceGetMappedArray*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_GraphicsInterop_cuGraphicsSubResourceGetMappedArray_ManagedCuda_BasicTypes_CUarray__ManagedCuda_BasicTypes_CUgraphicsResource_System_UInt32_System_UInt32_" data-uid="ManagedCuda.DriverAPINativeMethods.GraphicsInterop.cuGraphicsSubResourceGetMappedArray(ManagedCuda.BasicTypes.CUarray@,ManagedCuda.BasicTypes.CUgraphicsResource,System.UInt32,System.UInt32)">cuGraphicsSubResourceGetMappedArray(ref CUarray, CUgraphicsResource, UInt32, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Returns in <code>pArray</code> an array through which the subresource of the mapped graphics resource resource which
+corresponds to array index <code>arrayIndex</code> and mipmap level <code>mipLevel</code> may be accessed. The value set in <code>pArray</code>
+may change every time that <code>resource</code> is mapped.<p>
+If <code>resource</code> is not a texture then it cannot be accessed via an array and <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMappedAsArray">ErrorNotMappedAsArray</a>
+is returned. If <code>arrayIndex</code> is not a valid array index for <code>resource</code> then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>
+is returned. If <code>mipLevel</code> is not a valid mipmap level for <code>resource</code> then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>
+is returned. If <code>resource</code> is not mapped then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMapped">ErrorNotMapped</a> is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuGraphicsSubResourceGetMappedArray(ref CUarray pArray, CUgraphicsResource resource, uint arrayIndex, uint mipLevel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUarray.html">CUarray</a></td>
+        <td><span class="parametername">pArray</span></td>
+        <td><p>Returned array through which a subresource of <code>resource</code> may be accessed</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUgraphicsResource.html">CUgraphicsResource</a></td>
+        <td><span class="parametername">resource</span></td>
+        <td><p>Mapped resource to access</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">arrayIndex</span></td>
+        <td><p>Array index for array textures or cubemap face index as defined by <a class="xref" href="ManagedCuda.BasicTypes.CUArrayCubemapFace.html">CUArrayCubemapFace</a> for
+cubemap textures for the subresource to access</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">mipLevel</span></td>
+        <td><p>Mipmap level for the subresource to access</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidHandle">ErrorInvalidHandle</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMapped">ErrorNotMapped</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMappedAsArray">ErrorNotMappedAsArray</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_GraphicsInterop_cuGraphicsUnmapResources_" data-uid="ManagedCuda.DriverAPINativeMethods.GraphicsInterop.cuGraphicsUnmapResources*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_GraphicsInterop_cuGraphicsUnmapResources_System_UInt32_ManagedCuda_BasicTypes_CUgraphicsResource__ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.DriverAPINativeMethods.GraphicsInterop.cuGraphicsUnmapResources(System.UInt32,ManagedCuda.BasicTypes.CUgraphicsResource@,ManagedCuda.BasicTypes.CUstream)">cuGraphicsUnmapResources(UInt32, ref CUgraphicsResource, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Unmaps the <code>count</code> graphics resources in resources.<p>
+Once unmapped, the resources in <code>resources</code> may not be accessed by CUDA until they are mapped again.<p>
+This function provides the synchronization guarantee that any CUDA work issued in <code>stream</code> before <a class="xref" href="ManagedCuda.DriverAPINativeMethods.GraphicsInterop.html#ManagedCuda_DriverAPINativeMethods_GraphicsInterop_cuGraphicsUnmapResources_System_UInt32_ManagedCuda_BasicTypes_CUgraphicsResource__ManagedCuda_BasicTypes_CUstream_">cuGraphicsUnmapResources(UInt32, ref CUgraphicsResource, CUstream)</a>
+will complete before any subsequently issued graphics work begins.<p>
+If <code>resources</code> includes any duplicate entries then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidHandle">ErrorInvalidHandle</a> is returned. If any of
+resources are not presently mapped for access by CUDA then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMapped">ErrorNotMapped</a> is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuGraphicsUnmapResources(uint count, ref CUgraphicsResource resources, CUstream hStream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Number of resources to unmap. Here: must be 1</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUgraphicsResource.html">CUgraphicsResource</a></td>
+        <td><span class="parametername">resources</span></td>
+        <td><p>Resources to unmap</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">hStream</span></td>
+        <td><p>Stream with which to synchronize</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidHandle">ErrorInvalidHandle</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMapped">ErrorNotMapped</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorUnknown">ErrorUnknown</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_GraphicsInterop_cuGraphicsUnmapResources_" data-uid="ManagedCuda.DriverAPINativeMethods.GraphicsInterop.cuGraphicsUnmapResources*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_GraphicsInterop_cuGraphicsUnmapResources_System_UInt32_ManagedCuda_BasicTypes_CUgraphicsResource___ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.DriverAPINativeMethods.GraphicsInterop.cuGraphicsUnmapResources(System.UInt32,ManagedCuda.BasicTypes.CUgraphicsResource[],ManagedCuda.BasicTypes.CUstream)">cuGraphicsUnmapResources(UInt32, CUgraphicsResource[], CUstream)</h4>
+  <div class="markdown level1 summary"><p>Unmaps the <code>count</code> graphics resources in resources.<p>
+Once unmapped, the resources in <code>resources</code> may not be accessed by CUDA until they are mapped again.<p>
+This function provides the synchronization guarantee that any CUDA work issued in <code>stream</code> before <a class="xref" href="ManagedCuda.DriverAPINativeMethods.GraphicsInterop.html#ManagedCuda_DriverAPINativeMethods_GraphicsInterop_cuGraphicsUnmapResources_System_UInt32_ManagedCuda_BasicTypes_CUgraphicsResource___ManagedCuda_BasicTypes_CUstream_">cuGraphicsUnmapResources(UInt32, CUgraphicsResource[], CUstream)</a>
+will complete before any subsequently issued graphics work begins.<p>
+If <code>resources</code> includes any duplicate entries then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidHandle">ErrorInvalidHandle</a> is returned. If any of
+resources are not presently mapped for access by CUDA then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMapped">ErrorNotMapped</a> is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuGraphicsUnmapResources(uint count, CUgraphicsResource[] resources, CUstream hStream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Number of resources to unmap</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUgraphicsResource.html">CUgraphicsResource</a>[]</td>
+        <td><span class="parametername">resources</span></td>
+        <td><p>Resources to unmap</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">hStream</span></td>
+        <td><p>Stream with which to synchronize</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidHandle">ErrorInvalidHandle</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMapped">ErrorNotMapped</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorUnknown">ErrorUnknown</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_GraphicsInterop_cuGraphicsUnregisterResource_" data-uid="ManagedCuda.DriverAPINativeMethods.GraphicsInterop.cuGraphicsUnregisterResource*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_GraphicsInterop_cuGraphicsUnregisterResource_ManagedCuda_BasicTypes_CUgraphicsResource_" data-uid="ManagedCuda.DriverAPINativeMethods.GraphicsInterop.cuGraphicsUnregisterResource(ManagedCuda.BasicTypes.CUgraphicsResource)">cuGraphicsUnregisterResource(CUgraphicsResource)</h4>
+  <div class="markdown level1 summary"><p>Unregisters the graphics resource <code>resource</code> so it is not accessible by CUDA unless registered again.
+If resource is invalid then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidHandle">ErrorInvalidHandle</a> is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuGraphicsUnregisterResource(CUgraphicsResource resource)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUgraphicsResource.html">CUgraphicsResource</a></td>
+        <td><span class="parametername">resource</span></td>
+        <td><p>Resource to unregister</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidHandle">ErrorInvalidHandle</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorUnknown">ErrorUnknown</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_DriverAPINativeMethods_GraphicsInterop.md&amp;value=---%0Auid%3A%20ManagedCuda.DriverAPINativeMethods.GraphicsInterop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/DriverAPI.cs/#L9109" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

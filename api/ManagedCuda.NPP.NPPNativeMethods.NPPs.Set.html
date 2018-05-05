@@ -1,0 +1,967 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class NPPNativeMethods.NPPs.Set
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class NPPNativeMethods.NPPs.Set
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.Set">
+  
+  
+  <h1 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_Set" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.Set" class="text-break">Class NPPNativeMethods.NPPs.Set
+  </h1>
+  <div class="markdown level0 summary"><p>Set methods for 1D vectors of various types. The copy methods operate on vector data given
+as a pointer to the underlying data-type (e.g. 8-bit vectors would
+be passed as pointers to Npp8u type) and length of the vectors, i.e. the number of items.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">NPPNativeMethods.NPPs.Set</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.NPP.html">ManagedCuda.NPP</a></h6>
+  <h6><strong>Assembly</strong>: NPP.dll</h6>
+  <h5 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_Set_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Set</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPs_Set_nppsSet_16s_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.Set.nppsSet_16s*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_Set_nppsSet_16s_System_Int16_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.Set.nppsSet_16s(System.Int16,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32)">nppsSet_16s(Int16, CUdeviceptr, Int32)</h4>
+  <div class="markdown level1 summary"><p>16-bit integer, vector set method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppsSet_16s(short nValue, CUdeviceptr pDst, int nLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int16</span></td>
+        <td><span class="parametername">nValue</span></td>
+        <td><p>Value used to initialize the vector pDst.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination signal pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nLength</span></td>
+        <td><p>Signal length. Tells the primitive how many of the signal’s samples starting from the given data pointer are to be processed..</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPs_Set_nppsSet_16sc_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.Set.nppsSet_16sc*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_Set_nppsSet_16sc_ManagedCuda_NPP_Npp16sc_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.Set.nppsSet_16sc(ManagedCuda.NPP.Npp16sc,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32)">nppsSet_16sc(Npp16sc, CUdeviceptr, Int32)</h4>
+  <div class="markdown level1 summary"><p>16-bit integer complex, vector set method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppsSet_16sc(Npp16sc nValue, CUdeviceptr pDst, int nLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.Npp16sc.html">Npp16sc</a></td>
+        <td><span class="parametername">nValue</span></td>
+        <td><p>Value used to initialize the vector pDst.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination signal pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nLength</span></td>
+        <td><p>Signal length. Tells the primitive how many of the signal’s samples starting from the given data pointer are to be processed..</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPs_Set_nppsSet_16u_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.Set.nppsSet_16u*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_Set_nppsSet_16u_System_UInt16_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.Set.nppsSet_16u(System.UInt16,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32)">nppsSet_16u(UInt16, CUdeviceptr, Int32)</h4>
+  <div class="markdown level1 summary"><p>16-bit unsigned integer, vector set method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppsSet_16u(ushort nValue, CUdeviceptr pDst, int nLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td><span class="parametername">nValue</span></td>
+        <td><p>Value used to initialize the vector pDst.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination signal pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nLength</span></td>
+        <td><p>Signal length. Tells the primitive how many of the signal’s samples starting from the given data pointer are to be processed..</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPs_Set_nppsSet_32f_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.Set.nppsSet_32f*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_Set_nppsSet_32f_System_Single_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.Set.nppsSet_32f(System.Single,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32)">nppsSet_32f(Single, CUdeviceptr, Int32)</h4>
+  <div class="markdown level1 summary"><p>32-bit float, vector set method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppsSet_32f(float nValue, CUdeviceptr pDst, int nLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">nValue</span></td>
+        <td><p>Value used to initialize the vector pDst.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination signal pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nLength</span></td>
+        <td><p>Signal length. Tells the primitive how many of the signal’s samples starting from the given data pointer are to be processed..</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPs_Set_nppsSet_32fc_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.Set.nppsSet_32fc*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_Set_nppsSet_32fc_ManagedCuda_NPP_Npp32fc_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.Set.nppsSet_32fc(ManagedCuda.NPP.Npp32fc,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32)">nppsSet_32fc(Npp32fc, CUdeviceptr, Int32)</h4>
+  <div class="markdown level1 summary"><p>32-bit float complex, vector set method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppsSet_32fc(Npp32fc nValue, CUdeviceptr pDst, int nLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.Npp32fc.html">Npp32fc</a></td>
+        <td><span class="parametername">nValue</span></td>
+        <td><p>Value used to initialize the vector pDst.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination signal pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nLength</span></td>
+        <td><p>Signal length. Tells the primitive how many of the signal’s samples starting from the given data pointer are to be processed..</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPs_Set_nppsSet_32s_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.Set.nppsSet_32s*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_Set_nppsSet_32s_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.Set.nppsSet_32s(System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32)">nppsSet_32s(Int32, CUdeviceptr, Int32)</h4>
+  <div class="markdown level1 summary"><p>32-bit integer, vector set method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppsSet_32s(int nValue, CUdeviceptr pDst, int nLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nValue</span></td>
+        <td><p>Value used to initialize the vector pDst.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination signal pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nLength</span></td>
+        <td><p>Signal length. Tells the primitive how many of the signal’s samples starting from the given data pointer are to be processed..</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPs_Set_nppsSet_32sc_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.Set.nppsSet_32sc*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_Set_nppsSet_32sc_ManagedCuda_NPP_Npp32sc_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.Set.nppsSet_32sc(ManagedCuda.NPP.Npp32sc,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32)">nppsSet_32sc(Npp32sc, CUdeviceptr, Int32)</h4>
+  <div class="markdown level1 summary"><p>32-bit integer complex, vector set method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppsSet_32sc(Npp32sc nValue, CUdeviceptr pDst, int nLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.Npp32sc.html">Npp32sc</a></td>
+        <td><span class="parametername">nValue</span></td>
+        <td><p>Value used to initialize the vector pDst.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination signal pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nLength</span></td>
+        <td><p>Signal length. Tells the primitive how many of the signal’s samples starting from the given data pointer are to be processed..</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPs_Set_nppsSet_32u_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.Set.nppsSet_32u*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_Set_nppsSet_32u_System_UInt32_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.Set.nppsSet_32u(System.UInt32,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32)">nppsSet_32u(UInt32, CUdeviceptr, Int32)</h4>
+  <div class="markdown level1 summary"><p>32-bit unsigned integer, vector set method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppsSet_32u(uint nValue, CUdeviceptr pDst, int nLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">nValue</span></td>
+        <td><p>Value used to initialize the vector pDst.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination signal pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nLength</span></td>
+        <td><p>Signal length. Tells the primitive how many of the signal’s samples starting from the given data pointer are to be processed..</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPs_Set_nppsSet_64f_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.Set.nppsSet_64f*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_Set_nppsSet_64f_System_Double_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.Set.nppsSet_64f(System.Double,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32)">nppsSet_64f(Double, CUdeviceptr, Int32)</h4>
+  <div class="markdown level1 summary"><p>64-bit double, vector set method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppsSet_64f(double nValue, CUdeviceptr pDst, int nLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">nValue</span></td>
+        <td><p>Value used to initialize the vector pDst.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination signal pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nLength</span></td>
+        <td><p>Signal length. Tells the primitive how many of the signal’s samples starting from the given data pointer are to be processed..</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPs_Set_nppsSet_64fc_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.Set.nppsSet_64fc*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_Set_nppsSet_64fc_ManagedCuda_NPP_Npp64fc_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.Set.nppsSet_64fc(ManagedCuda.NPP.Npp64fc,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32)">nppsSet_64fc(Npp64fc, CUdeviceptr, Int32)</h4>
+  <div class="markdown level1 summary"><p>64-bit double complex, vector set method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppsSet_64fc(Npp64fc nValue, CUdeviceptr pDst, int nLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.Npp64fc.html">Npp64fc</a></td>
+        <td><span class="parametername">nValue</span></td>
+        <td><p>Value used to initialize the vector pDst.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination signal pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nLength</span></td>
+        <td><p>Signal length. Tells the primitive how many of the signal’s samples starting from the given data pointer are to be processed..</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPs_Set_nppsSet_64s_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.Set.nppsSet_64s*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_Set_nppsSet_64s_System_Int64_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.Set.nppsSet_64s(System.Int64,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32)">nppsSet_64s(Int64, CUdeviceptr, Int32)</h4>
+  <div class="markdown level1 summary"><p>64-bit long long integer, vector set method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppsSet_64s(long nValue, CUdeviceptr pDst, int nLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">nValue</span></td>
+        <td><p>Value used to initialize the vector pDst.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination signal pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nLength</span></td>
+        <td><p>Signal length. Tells the primitive how many of the signal’s samples starting from the given data pointer are to be processed..</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPs_Set_nppsSet_64sc_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.Set.nppsSet_64sc*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_Set_nppsSet_64sc_ManagedCuda_NPP_Npp64sc_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.Set.nppsSet_64sc(ManagedCuda.NPP.Npp64sc,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32)">nppsSet_64sc(Npp64sc, CUdeviceptr, Int32)</h4>
+  <div class="markdown level1 summary"><p>64-bit long long integer complex, vector set method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppsSet_64sc(Npp64sc nValue, CUdeviceptr pDst, int nLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.Npp64sc.html">Npp64sc</a></td>
+        <td><span class="parametername">nValue</span></td>
+        <td><p>Value used to initialize the vector pDst.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination signal pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nLength</span></td>
+        <td><p>Signal length. Tells the primitive how many of the signal’s samples starting from the given data pointer are to be processed..</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPs_Set_nppsSet_8s_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.Set.nppsSet_8s*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_Set_nppsSet_8s_System_SByte_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.Set.nppsSet_8s(System.SByte,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32)">nppsSet_8s(SByte, CUdeviceptr, Int32)</h4>
+  <div class="markdown level1 summary"><p>8-bit signed char, vector set method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppsSet_8s(sbyte nValue, CUdeviceptr pDst, int nLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.SByte</span></td>
+        <td><span class="parametername">nValue</span></td>
+        <td><p>Value used to initialize the vector pDst.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination signal pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nLength</span></td>
+        <td><p>Signal length. Tells the primitive how many of the signal’s samples starting from the given data pointer are to be processed..</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPs_Set_nppsSet_8u_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.Set.nppsSet_8u*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPs_Set_nppsSet_8u_System_Byte_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPs.Set.nppsSet_8u(System.Byte,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32)">nppsSet_8u(Byte, CUdeviceptr, Int32)</h4>
+  <div class="markdown level1 summary"><p>8-bit unsigned char, vector set method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppsSet_8u(byte nValue, CUdeviceptr pDst, int nLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">nValue</span></td>
+        <td><p>Value used to initialize the vector pDst.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>Destination signal pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nLength</span></td>
+        <td><p>Signal length. Tells the primitive how many of the signal’s samples starting from the given data pointer are to be processed..</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPNativeMethods_NPPs_Set.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPNativeMethods.NPPs.Set%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPNativeMethods.cs/#L85170" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

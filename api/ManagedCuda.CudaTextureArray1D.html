@@ -1,0 +1,774 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CudaTextureArray1D
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CudaTextureArray1D
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.CudaTextureArray1D">
+  
+  
+  <h1 id="ManagedCuda_CudaTextureArray1D" data-uid="ManagedCuda.CudaTextureArray1D" class="text-break">Class CudaTextureArray1D
+  </h1>
+  <div class="markdown level0 summary"><p>CudaArrayTexture1D</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CudaTextureArray1D</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.html">ManagedCuda</a></h6>
+  <h6><strong>Assembly</strong>: ManagedCuda.dll</h6>
+  <h5 id="ManagedCuda_CudaTextureArray1D_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CudaTextureArray1D : IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureArray1D__ctor_ManagedCuda_CudaKernel_System_String_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUFilterMode_ManagedCuda_BasicTypes_CUTexRefSetFlags_ManagedCuda_BasicTypes_CUArrayFormat_ManagedCuda_BasicTypes_SizeT_ManagedCuda_CudaArray1DNumChannels_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureArray1D.%23ctor(ManagedCuda.CudaKernel%2CSystem.String%2CManagedCuda.BasicTypes.CUAddressMode%2CManagedCuda.BasicTypes.CUFilterMode%2CManagedCuda.BasicTypes.CUTexRefSetFlags%2CManagedCuda.BasicTypes.CUArrayFormat%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.CudaArray1DNumChannels)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureArray1D.cs/#L64">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureArray1D__ctor_" data-uid="ManagedCuda.CudaTextureArray1D.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaTextureArray1D__ctor_ManagedCuda_CudaKernel_System_String_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUFilterMode_ManagedCuda_BasicTypes_CUTexRefSetFlags_ManagedCuda_BasicTypes_CUArrayFormat_ManagedCuda_BasicTypes_SizeT_ManagedCuda_CudaArray1DNumChannels_" data-uid="ManagedCuda.CudaTextureArray1D.#ctor(ManagedCuda.CudaKernel,System.String,ManagedCuda.BasicTypes.CUAddressMode,ManagedCuda.BasicTypes.CUFilterMode,ManagedCuda.BasicTypes.CUTexRefSetFlags,ManagedCuda.BasicTypes.CUArrayFormat,ManagedCuda.BasicTypes.SizeT,ManagedCuda.CudaArray1DNumChannels)">CudaTextureArray1D(CudaKernel, String, CUAddressMode, CUFilterMode, CUTexRefSetFlags, CUArrayFormat, SizeT, CudaArray1DNumChannels)</h4>
+  <div class="markdown level1 summary"><p>Creates a new 1D texture from array memory. Allocates new array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaTextureArray1D(CudaKernel kernel, string texName, CUAddressMode addressMode, CUFilterMode filterMode, CUTexRefSetFlags flags, CUArrayFormat format, SizeT size, CudaArray1DNumChannels numChannels)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaKernel.html">CudaKernel</a></td>
+        <td><span class="parametername">kernel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">texName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUAddressMode.html">CUAddressMode</a></td>
+        <td><span class="parametername">addressMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUFilterMode.html">CUFilterMode</a></td>
+        <td><span class="parametername">filterMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUTexRefSetFlags.html">CUTexRefSetFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUArrayFormat.html">CUArrayFormat</a></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>In elements</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaArray1DNumChannels.html">CudaArray1DNumChannels</a></td>
+        <td><span class="parametername">numChannels</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureArray1D__ctor_ManagedCuda_CudaKernel_System_String_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUFilterMode_ManagedCuda_BasicTypes_CUTexRefSetFlags_ManagedCuda_CudaArray1D_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureArray1D.%23ctor(ManagedCuda.CudaKernel%2CSystem.String%2CManagedCuda.BasicTypes.CUAddressMode%2CManagedCuda.BasicTypes.CUFilterMode%2CManagedCuda.BasicTypes.CUTexRefSetFlags%2CManagedCuda.CudaArray1D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureArray1D.cs/#L115">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureArray1D__ctor_" data-uid="ManagedCuda.CudaTextureArray1D.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaTextureArray1D__ctor_ManagedCuda_CudaKernel_System_String_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUFilterMode_ManagedCuda_BasicTypes_CUTexRefSetFlags_ManagedCuda_CudaArray1D_" data-uid="ManagedCuda.CudaTextureArray1D.#ctor(ManagedCuda.CudaKernel,System.String,ManagedCuda.BasicTypes.CUAddressMode,ManagedCuda.BasicTypes.CUFilterMode,ManagedCuda.BasicTypes.CUTexRefSetFlags,ManagedCuda.CudaArray1D)">CudaTextureArray1D(CudaKernel, String, CUAddressMode, CUFilterMode, CUTexRefSetFlags, CudaArray1D)</h4>
+  <div class="markdown level1 summary"><p>Creates a new 1D texture from array memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaTextureArray1D(CudaKernel kernel, string texName, CUAddressMode addressMode, CUFilterMode filterMode, CUTexRefSetFlags flags, CudaArray1D array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaKernel.html">CudaKernel</a></td>
+        <td><span class="parametername">kernel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">texName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUAddressMode.html">CUAddressMode</a></td>
+        <td><span class="parametername">addressMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUFilterMode.html">CUFilterMode</a></td>
+        <td><span class="parametername">filterMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUTexRefSetFlags.html">CUTexRefSetFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaArray1D.html">CudaArray1D</a></td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureArray1D_AddressMode.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureArray1D.AddressMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureArray1D.cs/#L213">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureArray1D_AddressMode_" data-uid="ManagedCuda.CudaTextureArray1D.AddressMode*"></a>
+  <h4 id="ManagedCuda_CudaTextureArray1D_AddressMode" data-uid="ManagedCuda.CudaTextureArray1D.AddressMode">AddressMode</h4>
+  <div class="markdown level1 summary"><p>AddressMode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUAddressMode AddressMode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUAddressMode.html">CUAddressMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureArray1D_Array.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureArray1D.Array%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureArray1D.cs/#L293">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureArray1D_Array_" data-uid="ManagedCuda.CudaTextureArray1D.Array*"></a>
+  <h4 id="ManagedCuda_CudaTextureArray1D_Array" data-uid="ManagedCuda.CudaTextureArray1D.Array">Array</h4>
+  <div class="markdown level1 summary"><p>Array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaArray1D Array { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaArray1D.html">CudaArray1D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureArray1D_ChannelSize.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureArray1D.ChannelSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureArray1D.cs/#L245">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureArray1D_ChannelSize_" data-uid="ManagedCuda.CudaTextureArray1D.ChannelSize*"></a>
+  <h4 id="ManagedCuda_CudaTextureArray1D_ChannelSize" data-uid="ManagedCuda.CudaTextureArray1D.ChannelSize">ChannelSize</h4>
+  <div class="markdown level1 summary"><p>ChannelSize</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint ChannelSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureArray1D_CUFuntion.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureArray1D.CUFuntion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureArray1D.cs/#L285">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureArray1D_CUFuntion_" data-uid="ManagedCuda.CudaTextureArray1D.CUFuntion*"></a>
+  <h4 id="ManagedCuda_CudaTextureArray1D_CUFuntion" data-uid="ManagedCuda.CudaTextureArray1D.CUFuntion">CUFuntion</h4>
+  <div class="markdown level1 summary"><p>CUFuntion</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUfunction CUFuntion { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUfunction.html">CUfunction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureArray1D_Filtermode.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureArray1D.Filtermode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureArray1D.cs/#L229">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureArray1D_Filtermode_" data-uid="ManagedCuda.CudaTextureArray1D.Filtermode*"></a>
+  <h4 id="ManagedCuda_CudaTextureArray1D_Filtermode" data-uid="ManagedCuda.CudaTextureArray1D.Filtermode">Filtermode</h4>
+  <div class="markdown level1 summary"><p>Format</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUFilterMode Filtermode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUFilterMode.html">CUFilterMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureArray1D_Flags.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureArray1D.Flags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureArray1D.cs/#L205">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureArray1D_Flags_" data-uid="ManagedCuda.CudaTextureArray1D.Flags*"></a>
+  <h4 id="ManagedCuda_CudaTextureArray1D_Flags" data-uid="ManagedCuda.CudaTextureArray1D.Flags">Flags</h4>
+  <div class="markdown level1 summary"><p>Flags</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUTexRefSetFlags Flags { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUTexRefSetFlags.html">CUTexRefSetFlags</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureArray1D_Format.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureArray1D.Format%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureArray1D.cs/#L221">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureArray1D_Format_" data-uid="ManagedCuda.CudaTextureArray1D.Format*"></a>
+  <h4 id="ManagedCuda_CudaTextureArray1D_Format" data-uid="ManagedCuda.CudaTextureArray1D.Format">Format</h4>
+  <div class="markdown level1 summary"><p>Format</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUArrayFormat Format { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUArrayFormat.html">CUArrayFormat</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureArray1D_Module.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureArray1D.Module%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureArray1D.cs/#L277">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureArray1D_Module_" data-uid="ManagedCuda.CudaTextureArray1D.Module*"></a>
+  <h4 id="ManagedCuda_CudaTextureArray1D_Module" data-uid="ManagedCuda.CudaTextureArray1D.Module">Module</h4>
+  <div class="markdown level1 summary"><p>Module</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUmodule Module { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUmodule.html">CUmodule</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureArray1D_Name.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureArray1D.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureArray1D.cs/#L269">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureArray1D_Name_" data-uid="ManagedCuda.CudaTextureArray1D.Name*"></a>
+  <h4 id="ManagedCuda_CudaTextureArray1D_Name" data-uid="ManagedCuda.CudaTextureArray1D.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureArray1D_NumChannels.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureArray1D.NumChannels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureArray1D.cs/#L261">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureArray1D_NumChannels_" data-uid="ManagedCuda.CudaTextureArray1D.NumChannels*"></a>
+  <h4 id="ManagedCuda_CudaTextureArray1D_NumChannels" data-uid="ManagedCuda.CudaTextureArray1D.NumChannels">NumChannels</h4>
+  <div class="markdown level1 summary"><p>NumChannels</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NumChannels { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureArray1D_Size.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureArray1D.Size%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureArray1D.cs/#L237">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureArray1D_Size_" data-uid="ManagedCuda.CudaTextureArray1D.Size*"></a>
+  <h4 id="ManagedCuda_CudaTextureArray1D_Size" data-uid="ManagedCuda.CudaTextureArray1D.Size">Size</h4>
+  <div class="markdown level1 summary"><p>Size</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SizeT Size { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureArray1D_TextureReference.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureArray1D.TextureReference%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureArray1D.cs/#L197">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureArray1D_TextureReference_" data-uid="ManagedCuda.CudaTextureArray1D.TextureReference*"></a>
+  <h4 id="ManagedCuda_CudaTextureArray1D_TextureReference" data-uid="ManagedCuda.CudaTextureArray1D.TextureReference">TextureReference</h4>
+  <div class="markdown level1 summary"><p>TextureReference</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUtexref TextureReference { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUtexref.html">CUtexref</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureArray1D_TotalSizeInBytes.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureArray1D.TotalSizeInBytes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureArray1D.cs/#L253">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureArray1D_TotalSizeInBytes_" data-uid="ManagedCuda.CudaTextureArray1D.TotalSizeInBytes*"></a>
+  <h4 id="ManagedCuda_CudaTextureArray1D_TotalSizeInBytes" data-uid="ManagedCuda.CudaTextureArray1D.TotalSizeInBytes">TotalSizeInBytes</h4>
+  <div class="markdown level1 summary"><p>TotalSizeInBytes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SizeT TotalSizeInBytes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureArray1D_Dispose.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureArray1D.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureArray1D.cs/#L170">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureArray1D_Dispose_" data-uid="ManagedCuda.CudaTextureArray1D.Dispose*"></a>
+  <h4 id="ManagedCuda_CudaTextureArray1D_Dispose" data-uid="ManagedCuda.CudaTextureArray1D.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Dispose</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureArray1D_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureArray1D.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureArray1D.cs/#L180">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureArray1D_Dispose_" data-uid="ManagedCuda.CudaTextureArray1D.Dispose*"></a>
+  <h4 id="ManagedCuda_CudaTextureArray1D_Dispose_System_Boolean_" data-uid="ManagedCuda.CudaTextureArray1D.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>For IDisposable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool fDisposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">fDisposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureArray1D_Finalize.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureArray1D.Finalize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureArray1D.cs/#L160">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureArray1D_Finalize_" data-uid="ManagedCuda.CudaTextureArray1D.Finalize*"></a>
+  <h4 id="ManagedCuda_CudaTextureArray1D_Finalize" data-uid="ManagedCuda.CudaTextureArray1D.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"><p>For dispose</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureArray1D.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureArray1D%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureArray1D.cs/#L34" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

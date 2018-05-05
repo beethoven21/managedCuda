@@ -1,0 +1,1180 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class NPPNativeMethods.NPPi.HistogramOfOrientedGradientsBorder
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class NPPNativeMethods.NPPi.HistogramOfOrientedGradientsBorder
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.HistogramOfOrientedGradientsBorder">
+  
+  
+  <h1 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_HistogramOfOrientedGradientsBorder" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.HistogramOfOrientedGradientsBorder" class="text-break">Class NPPNativeMethods.NPPi.HistogramOfOrientedGradientsBorder
+  </h1>
+  <div class="markdown level0 summary"><p>Performs Histogram Of Oriented Gradients operation on source image generating separate windows of Histogram Descriptors for each requested location.</p>
+<p>
+This function implements the simplest form of functionality described by N.Dalal and B.Triggs.Histograms of Oriented Gradients for Human Detection.INRIA, 2005. <p>
+It supports overlapped contrast normalized block histogram output with L2 normalization only, no threshold clipping, and no pre or post gaussian smoothing of input images or
+histogram output values. It supports both single channel grayscale source images and three channel color images.For color images, the color channel with the
+highest magnitude value is used as that pixel&apos;s magnitude. Output is row order only. 
+ Descriptors are output consecutively with no separation padding if multiple descriptor output is requested (one desriptor per source image location).
+ For example, common HOG parameters are 9 histogram bins per 8 by 8 pixel cell, 2 by 2 cells per block, 
+ with a descriptor window size of 64 horizontal by 128 vertical pixels yielding 7 by 15 overlapping blocks 
+ (1 cell overlap in both horizontal and vertical directions).  This results in 9 bins* 4 cells* 7 horizontal overlapping blocks* 15 vertical overlapping blocks or 3780 
+ 32-bit floating point output values(bins) per descriptor window.
+<p>
+The number of horizontal overlapping block histogram bins per descriptor window width is determined by
+(((oHOGConfig.detectionWindowSize.width / oHOGConfig.histogramBlockSize) * 2) - 1) * oHOGConfig.nHistogramBins.
+The number of vertical overlapping block histograms per descriptor window height is determined by 
+(((oHOGConfig.detectionWindowSize.height / oHOGConfig.histogramBlockSize) * 2) - 1)
+The offset of each descriptor window in the descriptors output buffer is therefore
+horizontal histogram bins per descriptor window width * vertical histograms per descriptor window height 32-bit floating point values 
+relative to the previous descriptor window output.<p>
+The algorithm uses a 1D centered derivative mask of[-1, 0, +1] when generating input magnitude and angle gradients.
+Magnitudes are added to the two nearest histogram bins of oriented gradients between 0 and 180 degrees using a weighted linear interpolation of each
+magnitude value across the 2 nearest angular bin orientations. 2D overlapping blocks of histogram bins consisting of the bins from 2D arrangements of cells are
+then contrast normalized using L2 normalization and output to the corresponding histogram descriptor window for that particular window
+location in the window locations list.
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">NPPNativeMethods.NPPi.HistogramOfOrientedGradientsBorder</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.NPP.html">ManagedCuda.NPP</a></h6>
+  <h6><strong>Assembly</strong>: NPP.dll</h6>
+  <h5 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_HistogramOfOrientedGradientsBorder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class HistogramOfOrientedGradientsBorder</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_HistogramOfOrientedGradientsBorder_nppiHistogramOfGradientsBorder_16s32f_C1R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.HistogramOfOrientedGradientsBorder.nppiHistogramOfGradientsBorder_16s32f_C1R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_HistogramOfOrientedGradientsBorder_nppiHistogramOfGradientsBorder_16s32f_C1R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiPoint_ManagedCuda_NPP_NppiPoint___System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiHOGConfig_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiBorderType_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.HistogramOfOrientedGradientsBorder.nppiHistogramOfGradientsBorder_16s32f_C1R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiPoint,ManagedCuda.NPP.NppiPoint[],System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiHOGConfig,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiBorderType)">nppiHistogramOfGradientsBorder_16s32f_C1R(CUdeviceptr, Int32, NppiSize, NppiPoint, NppiPoint[], Int32, CUdeviceptr, NppiSize, NppiHOGConfig, CUdeviceptr, NppiBorderType)</h4>
+  <div class="markdown level1 summary"><p>1 channel 16-bit signed grayscale per source image descriptor window location with source image border control
+to per descriptor window destination floating point histogram of gradients. Requires first calling nppiHistogramOfGradientsBorderGetBufferSize function
+call to get required scratch (host) working buffer size and nppiHistogramOfGradientsBorderGetDescriptorsSize() function call to get
+total size for nLocations of output histogram block descriptor windows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiHistogramOfGradientsBorder_16s32f_C1R(CUdeviceptr pSrc, int nSrcStep, NppiSize oSrcSize, NppiPoint oSrcOffset, NppiPoint[] hpLocations, int nLocations, CUdeviceptr pDstWindowDescriptorBuffer, NppiSize oSizeROI, NppiHOGConfig oHOGConfig, CUdeviceptr pScratchBuffer, NppiBorderType eBorderType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSrcSize</span></td>
+        <td><p>Source image width and height in pixels relative to pSrc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a></td>
+        <td><span class="parametername">oSrcOffset</span></td>
+        <td><p>The pixel offset that pSrc points to relative to the origin of the source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a>[]</td>
+        <td><span class="parametername">hpLocations</span></td>
+        <td><p>Host pointer to array of NppiPoint source pixel starting locations of requested descriptor windows. Important: hpLocations is a</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nLocations</span></td>
+        <td><p>Number of NppiPoint in pLocations array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDstWindowDescriptorBuffer</span></td>
+        <td><p>Output device memory buffer pointer of size hpDescriptorsSize bytes to first of nLoc descriptor windows (see nppiHistogramOfGradientsBorderGetDescriptorsSize() above).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI) of source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiHOGConfig.html">NppiHOGConfig</a></td>
+        <td><span class="parametername">oHOGConfig</span></td>
+        <td><p>Requested HOG configuration parameters structure.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pScratchBuffer</span></td>
+        <td><p>Device memory buffer pointer of size hpBufferSize bytes to scratch memory buffer (see nppiHistogramOfGradientsBorderGetBufferSize() above).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiBorderType.html">NppiBorderType</a></td>
+        <td><span class="parametername">eBorderType</span></td>
+        <td><p>The border type operation to be applied at source image border boundaries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_HistogramOfOrientedGradientsBorder_nppiHistogramOfGradientsBorder_16s32f_C3R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.HistogramOfOrientedGradientsBorder.nppiHistogramOfGradientsBorder_16s32f_C3R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_HistogramOfOrientedGradientsBorder_nppiHistogramOfGradientsBorder_16s32f_C3R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiPoint_ManagedCuda_NPP_NppiPoint___System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiHOGConfig_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiBorderType_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.HistogramOfOrientedGradientsBorder.nppiHistogramOfGradientsBorder_16s32f_C3R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiPoint,ManagedCuda.NPP.NppiPoint[],System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiHOGConfig,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiBorderType)">nppiHistogramOfGradientsBorder_16s32f_C3R(CUdeviceptr, Int32, NppiSize, NppiPoint, NppiPoint[], Int32, CUdeviceptr, NppiSize, NppiHOGConfig, CUdeviceptr, NppiBorderType)</h4>
+  <div class="markdown level1 summary"><p>3 channel 16-bit signed color per source image descriptor window location with source image border control
+to per descriptor window destination floating point histogram of gradients. Requires first calling nppiHistogramOfGradientsBorderGetBufferSize function
+call to get required scratch (host) working buffer size and nppiHistogramOfGradientsBorderGetDescriptorsSize() function call to get
+total size for nLocations of output histogram block descriptor windows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiHistogramOfGradientsBorder_16s32f_C3R(CUdeviceptr pSrc, int nSrcStep, NppiSize oSrcSize, NppiPoint oSrcOffset, NppiPoint[] hpLocations, int nLocations, CUdeviceptr pDstWindowDescriptorBuffer, NppiSize oSizeROI, NppiHOGConfig oHOGConfig, CUdeviceptr pScratchBuffer, NppiBorderType eBorderType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSrcSize</span></td>
+        <td><p>Source image width and height in pixels relative to pSrc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a></td>
+        <td><span class="parametername">oSrcOffset</span></td>
+        <td><p>The pixel offset that pSrc points to relative to the origin of the source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a>[]</td>
+        <td><span class="parametername">hpLocations</span></td>
+        <td><p>Host pointer to array of NppiPoint source pixel starting locations of requested descriptor windows. Important: hpLocations is a</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nLocations</span></td>
+        <td><p>Number of NppiPoint in pLocations array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDstWindowDescriptorBuffer</span></td>
+        <td><p>Output device memory buffer pointer of size hpDescriptorsSize bytes to first of nLoc descriptor windows (see nppiHistogramOfGradientsBorderGetDescriptorsSize() above).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI) of source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiHOGConfig.html">NppiHOGConfig</a></td>
+        <td><span class="parametername">oHOGConfig</span></td>
+        <td><p>Requested HOG configuration parameters structure.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pScratchBuffer</span></td>
+        <td><p>Device memory buffer pointer of size hpBufferSize bytes to scratch memory buffer (see nppiHistogramOfGradientsBorderGetBufferSize() above).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiBorderType.html">NppiBorderType</a></td>
+        <td><span class="parametername">eBorderType</span></td>
+        <td><p>The border type operation to be applied at source image border boundaries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_HistogramOfOrientedGradientsBorder_nppiHistogramOfGradientsBorder_16u32f_C1R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.HistogramOfOrientedGradientsBorder.nppiHistogramOfGradientsBorder_16u32f_C1R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_HistogramOfOrientedGradientsBorder_nppiHistogramOfGradientsBorder_16u32f_C1R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiPoint_ManagedCuda_NPP_NppiPoint___System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiHOGConfig_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiBorderType_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.HistogramOfOrientedGradientsBorder.nppiHistogramOfGradientsBorder_16u32f_C1R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiPoint,ManagedCuda.NPP.NppiPoint[],System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiHOGConfig,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiBorderType)">nppiHistogramOfGradientsBorder_16u32f_C1R(CUdeviceptr, Int32, NppiSize, NppiPoint, NppiPoint[], Int32, CUdeviceptr, NppiSize, NppiHOGConfig, CUdeviceptr, NppiBorderType)</h4>
+  <div class="markdown level1 summary"><p>1 channel 16-bit unsigned grayscale per source image descriptor window location with source image border control
+to per descriptor window destination floating point histogram of gradients. Requires first calling nppiHistogramOfGradientsBorderGetBufferSize function
+call to get required scratch (host) working buffer size and nppiHistogramOfGradientsBorderGetDescriptorsSize() function call to get
+total size for nLocations of output histogram block descriptor windows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiHistogramOfGradientsBorder_16u32f_C1R(CUdeviceptr pSrc, int nSrcStep, NppiSize oSrcSize, NppiPoint oSrcOffset, NppiPoint[] hpLocations, int nLocations, CUdeviceptr pDstWindowDescriptorBuffer, NppiSize oSizeROI, NppiHOGConfig oHOGConfig, CUdeviceptr pScratchBuffer, NppiBorderType eBorderType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSrcSize</span></td>
+        <td><p>Source image width and height in pixels relative to pSrc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a></td>
+        <td><span class="parametername">oSrcOffset</span></td>
+        <td><p>The pixel offset that pSrc points to relative to the origin of the source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a>[]</td>
+        <td><span class="parametername">hpLocations</span></td>
+        <td><p>Host pointer to array of NppiPoint source pixel starting locations of requested descriptor windows. Important: hpLocations is a</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nLocations</span></td>
+        <td><p>Number of NppiPoint in pLocations array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDstWindowDescriptorBuffer</span></td>
+        <td><p>Output device memory buffer pointer of size hpDescriptorsSize bytes to first of nLoc descriptor windows (see nppiHistogramOfGradientsBorderGetDescriptorsSize() above).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI) of source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiHOGConfig.html">NppiHOGConfig</a></td>
+        <td><span class="parametername">oHOGConfig</span></td>
+        <td><p>Requested HOG configuration parameters structure.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pScratchBuffer</span></td>
+        <td><p>Device memory buffer pointer of size hpBufferSize bytes to scratch memory buffer (see nppiHistogramOfGradientsBorderGetBufferSize() above).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiBorderType.html">NppiBorderType</a></td>
+        <td><span class="parametername">eBorderType</span></td>
+        <td><p>The border type operation to be applied at source image border boundaries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_HistogramOfOrientedGradientsBorder_nppiHistogramOfGradientsBorder_16u32f_C3R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.HistogramOfOrientedGradientsBorder.nppiHistogramOfGradientsBorder_16u32f_C3R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_HistogramOfOrientedGradientsBorder_nppiHistogramOfGradientsBorder_16u32f_C3R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiPoint_ManagedCuda_NPP_NppiPoint___System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiHOGConfig_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiBorderType_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.HistogramOfOrientedGradientsBorder.nppiHistogramOfGradientsBorder_16u32f_C3R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiPoint,ManagedCuda.NPP.NppiPoint[],System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiHOGConfig,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiBorderType)">nppiHistogramOfGradientsBorder_16u32f_C3R(CUdeviceptr, Int32, NppiSize, NppiPoint, NppiPoint[], Int32, CUdeviceptr, NppiSize, NppiHOGConfig, CUdeviceptr, NppiBorderType)</h4>
+  <div class="markdown level1 summary"><p>3 channel 16-bit unsigned color per source image descriptor window location with source image border control
+to per descriptor window destination floating point histogram of gradients. Requires first calling nppiHistogramOfGradientsBorderGetBufferSize function
+call to get required scratch (host) working buffer size and nppiHistogramOfGradientsBorderGetDescriptorsSize() function call to get
+total size for nLocations of output histogram block descriptor windows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiHistogramOfGradientsBorder_16u32f_C3R(CUdeviceptr pSrc, int nSrcStep, NppiSize oSrcSize, NppiPoint oSrcOffset, NppiPoint[] hpLocations, int nLocations, CUdeviceptr pDstWindowDescriptorBuffer, NppiSize oSizeROI, NppiHOGConfig oHOGConfig, CUdeviceptr pScratchBuffer, NppiBorderType eBorderType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSrcSize</span></td>
+        <td><p>Source image width and height in pixels relative to pSrc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a></td>
+        <td><span class="parametername">oSrcOffset</span></td>
+        <td><p>The pixel offset that pSrc points to relative to the origin of the source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a>[]</td>
+        <td><span class="parametername">hpLocations</span></td>
+        <td><p>Host pointer to array of NppiPoint source pixel starting locations of requested descriptor windows. Important: hpLocations is a</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nLocations</span></td>
+        <td><p>Number of NppiPoint in pLocations array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDstWindowDescriptorBuffer</span></td>
+        <td><p>Output device memory buffer pointer of size hpDescriptorsSize bytes to first of nLoc descriptor windows (see nppiHistogramOfGradientsBorderGetDescriptorsSize() above).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI) of source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiHOGConfig.html">NppiHOGConfig</a></td>
+        <td><span class="parametername">oHOGConfig</span></td>
+        <td><p>Requested HOG configuration parameters structure.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pScratchBuffer</span></td>
+        <td><p>Device memory buffer pointer of size hpBufferSize bytes to scratch memory buffer (see nppiHistogramOfGradientsBorderGetBufferSize() above).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiBorderType.html">NppiBorderType</a></td>
+        <td><span class="parametername">eBorderType</span></td>
+        <td><p>The border type operation to be applied at source image border boundaries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_HistogramOfOrientedGradientsBorder_nppiHistogramOfGradientsBorder_32f_C1R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.HistogramOfOrientedGradientsBorder.nppiHistogramOfGradientsBorder_32f_C1R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_HistogramOfOrientedGradientsBorder_nppiHistogramOfGradientsBorder_32f_C1R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiPoint_ManagedCuda_NPP_NppiPoint___System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiHOGConfig_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiBorderType_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.HistogramOfOrientedGradientsBorder.nppiHistogramOfGradientsBorder_32f_C1R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiPoint,ManagedCuda.NPP.NppiPoint[],System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiHOGConfig,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiBorderType)">nppiHistogramOfGradientsBorder_32f_C1R(CUdeviceptr, Int32, NppiSize, NppiPoint, NppiPoint[], Int32, CUdeviceptr, NppiSize, NppiHOGConfig, CUdeviceptr, NppiBorderType)</h4>
+  <div class="markdown level1 summary"><p>1 channel 32-bit floating point grayscale per source image descriptor window location with source image border control
+to per descriptor window destination floating point histogram of gradients. Requires first calling nppiHistogramOfGradientsBorderGetBufferSize function
+call to get required scratch (host) working buffer size and nppiHistogramOfGradientsBorderGetDescriptorsSize() function call to get
+total size for nLocations of output histogram block descriptor windows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiHistogramOfGradientsBorder_32f_C1R(CUdeviceptr pSrc, int nSrcStep, NppiSize oSrcSize, NppiPoint oSrcOffset, NppiPoint[] hpLocations, int nLocations, CUdeviceptr pDstWindowDescriptorBuffer, NppiSize oSizeROI, NppiHOGConfig oHOGConfig, CUdeviceptr pScratchBuffer, NppiBorderType eBorderType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSrcSize</span></td>
+        <td><p>Source image width and height in pixels relative to pSrc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a></td>
+        <td><span class="parametername">oSrcOffset</span></td>
+        <td><p>The pixel offset that pSrc points to relative to the origin of the source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a>[]</td>
+        <td><span class="parametername">hpLocations</span></td>
+        <td><p>Host pointer to array of NppiPoint source pixel starting locations of requested descriptor windows. Important: hpLocations is a</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nLocations</span></td>
+        <td><p>Number of NppiPoint in pLocations array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDstWindowDescriptorBuffer</span></td>
+        <td><p>Output device memory buffer pointer of size hpDescriptorsSize bytes to first of nLoc descriptor windows (see nppiHistogramOfGradientsBorderGetDescriptorsSize() above).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI) of source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiHOGConfig.html">NppiHOGConfig</a></td>
+        <td><span class="parametername">oHOGConfig</span></td>
+        <td><p>Requested HOG configuration parameters structure.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pScratchBuffer</span></td>
+        <td><p>Device memory buffer pointer of size hpBufferSize bytes to scratch memory buffer (see nppiHistogramOfGradientsBorderGetBufferSize() above).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiBorderType.html">NppiBorderType</a></td>
+        <td><span class="parametername">eBorderType</span></td>
+        <td><p>The border type operation to be applied at source image border boundaries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_HistogramOfOrientedGradientsBorder_nppiHistogramOfGradientsBorder_32f_C3R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.HistogramOfOrientedGradientsBorder.nppiHistogramOfGradientsBorder_32f_C3R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_HistogramOfOrientedGradientsBorder_nppiHistogramOfGradientsBorder_32f_C3R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiPoint_ManagedCuda_NPP_NppiPoint___System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiHOGConfig_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiBorderType_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.HistogramOfOrientedGradientsBorder.nppiHistogramOfGradientsBorder_32f_C3R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiPoint,ManagedCuda.NPP.NppiPoint[],System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiHOGConfig,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiBorderType)">nppiHistogramOfGradientsBorder_32f_C3R(CUdeviceptr, Int32, NppiSize, NppiPoint, NppiPoint[], Int32, CUdeviceptr, NppiSize, NppiHOGConfig, CUdeviceptr, NppiBorderType)</h4>
+  <div class="markdown level1 summary"><p>3 channel 32-bit floating point color per source image descriptor window location with source image border control
+to per descriptor window destination floating point histogram of gradients. Requires first calling nppiHistogramOfGradientsBorderGetBufferSize function
+call to get required scratch (host) working buffer size and nppiHistogramOfGradientsBorderGetDescriptorsSize() function call to get
+total size for nLocations of output histogram block descriptor windows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiHistogramOfGradientsBorder_32f_C3R(CUdeviceptr pSrc, int nSrcStep, NppiSize oSrcSize, NppiPoint oSrcOffset, NppiPoint[] hpLocations, int nLocations, CUdeviceptr pDstWindowDescriptorBuffer, NppiSize oSizeROI, NppiHOGConfig oHOGConfig, CUdeviceptr pScratchBuffer, NppiBorderType eBorderType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSrcSize</span></td>
+        <td><p>Source image width and height in pixels relative to pSrc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a></td>
+        <td><span class="parametername">oSrcOffset</span></td>
+        <td><p>The pixel offset that pSrc points to relative to the origin of the source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a>[]</td>
+        <td><span class="parametername">hpLocations</span></td>
+        <td><p>Host pointer to array of NppiPoint source pixel starting locations of requested descriptor windows. Important: hpLocations is a</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nLocations</span></td>
+        <td><p>Number of NppiPoint in pLocations array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDstWindowDescriptorBuffer</span></td>
+        <td><p>Output device memory buffer pointer of size hpDescriptorsSize bytes to first of nLoc descriptor windows (see nppiHistogramOfGradientsBorderGetDescriptorsSize() above).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI) of source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiHOGConfig.html">NppiHOGConfig</a></td>
+        <td><span class="parametername">oHOGConfig</span></td>
+        <td><p>Requested HOG configuration parameters structure.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pScratchBuffer</span></td>
+        <td><p>Device memory buffer pointer of size hpBufferSize bytes to scratch memory buffer (see nppiHistogramOfGradientsBorderGetBufferSize() above).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiBorderType.html">NppiBorderType</a></td>
+        <td><span class="parametername">eBorderType</span></td>
+        <td><p>The border type operation to be applied at source image border boundaries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_HistogramOfOrientedGradientsBorder_nppiHistogramOfGradientsBorder_8u32f_C1R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.HistogramOfOrientedGradientsBorder.nppiHistogramOfGradientsBorder_8u32f_C1R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_HistogramOfOrientedGradientsBorder_nppiHistogramOfGradientsBorder_8u32f_C1R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiPoint_ManagedCuda_NPP_NppiPoint___System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiHOGConfig_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiBorderType_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.HistogramOfOrientedGradientsBorder.nppiHistogramOfGradientsBorder_8u32f_C1R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiPoint,ManagedCuda.NPP.NppiPoint[],System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiHOGConfig,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiBorderType)">nppiHistogramOfGradientsBorder_8u32f_C1R(CUdeviceptr, Int32, NppiSize, NppiPoint, NppiPoint[], Int32, CUdeviceptr, NppiSize, NppiHOGConfig, CUdeviceptr, NppiBorderType)</h4>
+  <div class="markdown level1 summary"><p>1 channel 8-bit unsigned grayscale per source image descriptor window location with source image border control
+to per descriptor window destination floating point histogram of gradients. Requires first calling nppiHistogramOfGradientsBorderGetBufferSize function
+call to get required scratch (host) working buffer size and nppiHistogramOfGradientsBorderGetDescriptorsSize() function call to get
+total size for nLocations of output histogram block descriptor windows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiHistogramOfGradientsBorder_8u32f_C1R(CUdeviceptr pSrc, int nSrcStep, NppiSize oSrcSize, NppiPoint oSrcOffset, NppiPoint[] hpLocations, int nLocations, CUdeviceptr pDstWindowDescriptorBuffer, NppiSize oSizeROI, NppiHOGConfig oHOGConfig, CUdeviceptr pScratchBuffer, NppiBorderType eBorderType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSrcSize</span></td>
+        <td><p>Source image width and height in pixels relative to pSrc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a></td>
+        <td><span class="parametername">oSrcOffset</span></td>
+        <td><p>The pixel offset that pSrc points to relative to the origin of the source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a>[]</td>
+        <td><span class="parametername">hpLocations</span></td>
+        <td><p>Host pointer to array of NppiPoint source pixel starting locations of requested descriptor windows. Important: hpLocations is a</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nLocations</span></td>
+        <td><p>Number of NppiPoint in pLocations array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDstWindowDescriptorBuffer</span></td>
+        <td><p>Output device memory buffer pointer of size hpDescriptorsSize bytes to first of nLoc descriptor windows (see nppiHistogramOfGradientsBorderGetDescriptorsSize() above).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI) of source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiHOGConfig.html">NppiHOGConfig</a></td>
+        <td><span class="parametername">oHOGConfig</span></td>
+        <td><p>Requested HOG configuration parameters structure.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pScratchBuffer</span></td>
+        <td><p>Device memory buffer pointer of size hpBufferSize bytes to scratch memory buffer (see nppiHistogramOfGradientsBorderGetBufferSize() above).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiBorderType.html">NppiBorderType</a></td>
+        <td><span class="parametername">eBorderType</span></td>
+        <td><p>The border type operation to be applied at source image border boundaries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_HistogramOfOrientedGradientsBorder_nppiHistogramOfGradientsBorder_8u32f_C3R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.HistogramOfOrientedGradientsBorder.nppiHistogramOfGradientsBorder_8u32f_C3R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_HistogramOfOrientedGradientsBorder_nppiHistogramOfGradientsBorder_8u32f_C3R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiPoint_ManagedCuda_NPP_NppiPoint___System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiHOGConfig_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiBorderType_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.HistogramOfOrientedGradientsBorder.nppiHistogramOfGradientsBorder_8u32f_C3R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiPoint,ManagedCuda.NPP.NppiPoint[],System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiHOGConfig,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiBorderType)">nppiHistogramOfGradientsBorder_8u32f_C3R(CUdeviceptr, Int32, NppiSize, NppiPoint, NppiPoint[], Int32, CUdeviceptr, NppiSize, NppiHOGConfig, CUdeviceptr, NppiBorderType)</h4>
+  <div class="markdown level1 summary"><p>3 channel 8-bit unsigned color per source image descriptor window location with source image border control
+to per descriptor window destination floating point histogram of gradients. Requires first calling nppiHistogramOfGradientsBorderGetBufferSize function
+call to get required scratch (host) working buffer size and nppiHistogramOfGradientsBorderGetDescriptorsSize() function call to get
+total size for nLocations of output histogram block descriptor windows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiHistogramOfGradientsBorder_8u32f_C3R(CUdeviceptr pSrc, int nSrcStep, NppiSize oSrcSize, NppiPoint oSrcOffset, NppiPoint[] hpLocations, int nLocations, CUdeviceptr pDstWindowDescriptorBuffer, NppiSize oSizeROI, NppiHOGConfig oHOGConfig, CUdeviceptr pScratchBuffer, NppiBorderType eBorderType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSrcSize</span></td>
+        <td><p>Source image width and height in pixels relative to pSrc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a></td>
+        <td><span class="parametername">oSrcOffset</span></td>
+        <td><p>The pixel offset that pSrc points to relative to the origin of the source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a>[]</td>
+        <td><span class="parametername">hpLocations</span></td>
+        <td><p>Host pointer to array of NppiPoint source pixel starting locations of requested descriptor windows. Important: hpLocations is a</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nLocations</span></td>
+        <td><p>Number of NppiPoint in pLocations array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDstWindowDescriptorBuffer</span></td>
+        <td><p>Output device memory buffer pointer of size hpDescriptorsSize bytes to first of nLoc descriptor windows (see nppiHistogramOfGradientsBorderGetDescriptorsSize() above).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI) of source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiHOGConfig.html">NppiHOGConfig</a></td>
+        <td><span class="parametername">oHOGConfig</span></td>
+        <td><p>Requested HOG configuration parameters structure.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pScratchBuffer</span></td>
+        <td><p>Device memory buffer pointer of size hpBufferSize bytes to scratch memory buffer (see nppiHistogramOfGradientsBorderGetBufferSize() above).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiBorderType.html">NppiBorderType</a></td>
+        <td><span class="parametername">eBorderType</span></td>
+        <td><p>The border type operation to be applied at source image border boundaries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_HistogramOfOrientedGradientsBorder_nppiHistogramOfGradientsBorderGetBufferSize_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.HistogramOfOrientedGradientsBorder.nppiHistogramOfGradientsBorderGetBufferSize*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_HistogramOfOrientedGradientsBorder_nppiHistogramOfGradientsBorderGetBufferSize_ManagedCuda_NPP_NppiHOGConfig_ManagedCuda_NPP_NppiPoint___System_Int32_ManagedCuda_NPP_NppiSize_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.HistogramOfOrientedGradientsBorder.nppiHistogramOfGradientsBorderGetBufferSize(ManagedCuda.NPP.NppiHOGConfig,ManagedCuda.NPP.NppiPoint[],System.Int32,ManagedCuda.NPP.NppiSize,System.Int32@)">nppiHistogramOfGradientsBorderGetBufferSize(NppiHOGConfig, NppiPoint[], Int32, NppiSize, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Validates requested HOG configuration and calculates scratch buffer size needed for the HistogramOfGradientsBorder function
+based on requested HOG configuration, source image ROI, and number and locations of descriptor window locations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiHistogramOfGradientsBorderGetBufferSize(NppiHOGConfig oHOGConfig, NppiPoint[] hpLocations, int nLocations, NppiSize oSizeROI, ref int hpBufferSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiHOGConfig.html">NppiHOGConfig</a></td>
+        <td><span class="parametername">oHOGConfig</span></td>
+        <td><p>Requested HOG configuration parameters structure.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a>[]</td>
+        <td><span class="parametername">hpLocations</span></td>
+        <td><p>Host pointer to array of NppiPoint source pixel starting locations of requested descriptor windows. Important: hpLocations is a</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nLocations</span></td>
+        <td><p>Number of NppiPoint in pLocations array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI) of source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">hpBufferSize</span></td>
+        <td><p>Required buffer size in bytes. Important: hpBufferSize is a</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_HistogramOfOrientedGradientsBorder_nppiHistogramOfGradientsBorderGetDescriptorsSize_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.HistogramOfOrientedGradientsBorder.nppiHistogramOfGradientsBorderGetDescriptorsSize*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_HistogramOfOrientedGradientsBorder_nppiHistogramOfGradientsBorderGetDescriptorsSize_ManagedCuda_NPP_NppiHOGConfig_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.HistogramOfOrientedGradientsBorder.nppiHistogramOfGradientsBorderGetDescriptorsSize(ManagedCuda.NPP.NppiHOGConfig,System.Int32,System.Int32@)">nppiHistogramOfGradientsBorderGetDescriptorsSize(NppiHOGConfig, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Validates requested HOG configuration and calculates output window descriptors buffer size needed for the HistogramOfGradientsBorder function
+based on requested HOG configuration, and number of descriptor window locations, one descriptor window is output for each location.
+Descriptor windows are located sequentially and contiguously in the descriptors buffer.
+The number of horizontal overlapping block histogram bins per descriptor window width is determined by
+(((oHOGConfig.detectionWindowSize.width / oHOGConfig.histogramBlockSize)		/// 2) - 1)		/// oHOGConfig.nHistogramBins.
+The number of vertical overlapping block histograms per descriptor window height is determined by
+(((oHOGConfig.detectionWindowSize.height / oHOGConfig.histogramBlockSize)		/// 2) - 1)
+The offset of each descriptor window in the descriptors output buffer is therefore
+horizontal histogram bins per descriptor window width		/// vertical histograms per descriptor window height floating point values
+relative to the previous descriptor window output.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiHistogramOfGradientsBorderGetDescriptorsSize(NppiHOGConfig oHOGConfig, int nLocations, ref int hpDescriptorsSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiHOGConfig.html">NppiHOGConfig</a></td>
+        <td><span class="parametername">oHOGConfig</span></td>
+        <td><p>Requested HOG configuration parameters structure.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nLocations</span></td>
+        <td><p>Number of NppiPoint in pLocations array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">hpDescriptorsSize</span></td>
+        <td><p>Required buffer size in bytes of output windows descriptors for nLocations descriptor windows. Important: hpDescriptorsSize is a</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPNativeMethods_NPPi_HistogramOfOrientedGradientsBorder.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPNativeMethods.NPPi.HistogramOfOrientedGradientsBorder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPNativeMethods.cs/#L84462" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1881 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DriverAPINativeMethods.MemoryManagement
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DriverAPINativeMethods.MemoryManagement
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement">
+  
+  
+  <h1 id="ManagedCuda_DriverAPINativeMethods_MemoryManagement" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement" class="text-break">Class DriverAPINativeMethods.MemoryManagement
+  </h1>
+  <div class="markdown level0 summary"><p>Combines all API calls for memory management</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DriverAPINativeMethods.MemoryManagement</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.html">ManagedCuda</a></h6>
+  <h6><strong>Assembly</strong>: ManagedCuda.dll</h6>
+  <h5 id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class MemoryManagement</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemAdvise_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemAdvise*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemAdvise_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUmemAdvise_ManagedCuda_BasicTypes_CUdevice_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemAdvise(ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.CUmemAdvise,ManagedCuda.BasicTypes.CUdevice)">cuMemAdvise(CUdeviceptr, SizeT, CUmemAdvise, CUdevice)</h4>
+  <div class="markdown level1 summary"><p>Advise about the usage of a given memory range<p>
+Advise the Unified Memory subsystem about the usage pattern for the memory range starting at devPtr with a size of count bytes.<p>
+<p>
+The \p advice parameter can take the following values:<p>
+- ::CU_MEM_ADVISE_SET_READ_MOSTLY: This implies that the data is mostly going to be read
+from and only occasionally written to. This allows the driver to create read-only
+copies of the data in a processor&apos;s memory when that processor accesses it. Similarly,
+if cuMemPrefetchAsync is called on this region, it will create a read-only copy of
+the data on the destination processor. When a processor writes to this data, all copies
+of the corresponding page are invalidated except for the one where the write occurred.
+The \p device argument is ignored for this advice.<p>
+- ::CU_MEM_ADVISE_UNSET_READ_MOSTLY: Undoes the effect of ::CU_MEM_ADVISE_SET_READ_MOSTLY. Any read
+duplicated copies of the data will be freed no later than the next write access to that data.<p>
+- ::CU_MEM_ADVISE_SET_PREFERRED_LOCATION: This advice sets the preferred location for the
+data to be the memory belonging to \p device. Passing in CU_DEVICE_CPU for \p device sets the
+preferred location as CPU memory. Setting the preferred location does not cause data to
+migrate to that location immediately. Instead, it guides the migration policy when a fault
+occurs on that memory region. If the data is already in its preferred location and the
+faulting processor can establish a mapping without requiring the data to be migrated, then
+the migration will be avoided. On the other hand, if the data is not in its preferred location
+or if a direct mapping cannot be established, then it will be migrated to the processor accessing
+it. It is important to note that setting the preferred location does not prevent data prefetching
+done using ::cuMemPrefetchAsync.<p>
+Having a preferred location can override the thrash detection and resolution logic in the Unified
+Memory driver. Normally, if a page is detected to be constantly thrashing between CPU and GPU
+memory say, the page will eventually be pinned to CPU memory by the Unified Memory driver. But
+if the preferred location is set as GPU memory, then the page will continue to thrash indefinitely.
+When the Unified Memory driver has to evict pages from a certain location on account of that
+memory being oversubscribed, the preferred location will be used to decide the destination to which
+a page should be evicted to.<p>
+If ::CU_MEM_ADVISE_SET_READ_MOSTLY is also set on this memory region or any subset of it, the preferred
+location will be ignored for that subset.<p>
+- ::CU_MEM_ADVISE_UNSET_PREFERRED_LOCATION: Undoes the effect of ::CU_MEM_ADVISE_SET_PREFERRED_LOCATION
+and changes the preferred location to none.<p>
+- ::CU_MEM_ADVISE_SET_ACCESSED_BY: This advice implies that the data will be accessed by \p device.
+This does not cause data migration and has no impact on the location of the data per se. Instead,
+it causes the data to always be mapped in the specified processor&apos;s page tables, as long as the
+location of the data permits a mapping to be established. If the data gets migrated for any reason,
+the mappings are updated accordingly.<p>
+This advice is useful in scenarios where data locality is not important, but avoiding faults is.
+Consider for example a system containing multiple GPUs with peer-to-peer access enabled, where the
+data located on one GPU is occasionally accessed by other GPUs. In such scenarios, migrating data
+over to the other GPUs is not as important because the accesses are infrequent and the overhead of
+migration may be too high. But preventing faults can still help improve performance, and so having
+a mapping set up in advance is useful. Note that on CPU access of this data, the data may be migrated
+to CPU memory because the CPU typically cannot access GPU memory directly. Any GPU that had the
+::CU_MEM_ADVISE_SET_ACCESSED_BY flag set for this data will now have its mapping updated to point to the
+page in CPU memory.<p>
+- ::CU_MEM_ADVISE_UNSET_ACCESSED_BY: Undoes the effect of CU_MEM_ADVISE_SET_ACCESSED_BY. The current set of
+mappings may be removed at any time causing accesses to result in page faults.
+<p>
+Passing in ::CU_DEVICE_CPU for \p device will set the advice for the CPU.
+<p>
+Note that this function is asynchronous with respect to the host and all work
+on other devices.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuMemAdvise(CUdeviceptr devPtr, SizeT count, CUmemAdvise advice, CUdevice device)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">devPtr</span></td>
+        <td><p>Pointer to memory to set the advice for</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Size in bytes of the memory range</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUmemAdvise.html">CUmemAdvise</a></td>
+        <td><span class="parametername">advice</span></td>
+        <td><p>Advice to be applied for the specified memory range</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdevice.html">CUdevice</a></td>
+        <td><span class="parametername">device</span></td>
+        <td><p>Device to apply the advice for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemAlloc_v2_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemAlloc_v2*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemAlloc_v2_ManagedCuda_BasicTypes_CUdeviceptr__ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemAlloc_v2(ManagedCuda.BasicTypes.CUdeviceptr@,ManagedCuda.BasicTypes.SizeT)">cuMemAlloc_v2(ref CUdeviceptr, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Allocates <code>bytesize</code> bytes of linear memory on the device and returns in <code>dptr</code> a pointer to the allocated memory.
+The allocated memory is suitably aligned for any kind of variable. The memory is not cleared. If <code>bytesize</code> is 0,
+<a class="xref" href="ManagedCuda.DriverAPINativeMethods.MemoryManagement.html#ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemAlloc_v2_ManagedCuda_BasicTypes_CUdeviceptr__ManagedCuda_BasicTypes_SizeT_">cuMemAlloc_v2(ref CUdeviceptr, SizeT)</a> returns <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuMemAlloc_v2(ref CUdeviceptr dptr, SizeT bytesize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">dptr</span></td>
+        <td><p>Returned device pointer</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">bytesize</span></td>
+        <td><p>Requested allocation size in bytes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorOutOfMemory">ErrorOutOfMemory</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemAllocHost_v2_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemAllocHost_v2*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemAllocHost_v2_System_IntPtr__ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemAllocHost_v2(System.IntPtr@,ManagedCuda.BasicTypes.SizeT)">cuMemAllocHost_v2(ref IntPtr, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Allocates <code>bytesize</code> bytes of host memory that is page-locked and accessible to the device. The driver tracks the virtual
+memory ranges allocated with this function and automatically accelerates calls to functions such as <a class="xref" href="ManagedCuda.DriverAPINativeMethods.SynchronousMemcpy_v2.html#ManagedCuda_DriverAPINativeMethods_SynchronousMemcpy_v2_cuMemcpyHtoD_v2_ManagedCuda_BasicTypes_CUdeviceptr_System_IntPtr_ManagedCuda_BasicTypes_SizeT_">cuMemcpyHtoD_v2(CUdeviceptr, IntPtr, SizeT)</a>.
+Since the memory can be accessed directly by the device, it can be read or written with much higher bandwidth than
+pageable memory obtained with functions such as <code>malloc()</code>. Allocating excessive amounts of memory with <a class="xref" href="ManagedCuda.DriverAPINativeMethods.MemoryManagement.html#ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemAllocHost_v2_System_IntPtr__ManagedCuda_BasicTypes_SizeT_">cuMemAllocHost_v2(ref IntPtr, SizeT)</a>
+may degrade system performance, since it reduces the amount of memory available to the system for paging.
+As a result, this function is best used sparingly to allocate staging areas for data exchange between host and device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuMemAllocHost_v2(ref IntPtr pp, SizeT bytesize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">pp</span></td>
+        <td><p>Returned host pointer to page-locked memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">bytesize</span></td>
+        <td><p>Requested allocation size in bytes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorOutOfMemory">ErrorOutOfMemory</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemAllocManaged_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemAllocManaged*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemAllocManaged_ManagedCuda_BasicTypes_CUdeviceptr__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUmemAttach_flags_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemAllocManaged(ManagedCuda.BasicTypes.CUdeviceptr@,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.CUmemAttach_flags)">cuMemAllocManaged(ref CUdeviceptr, SizeT, CUmemAttach_flags)</h4>
+  <div class="markdown level1 summary"><p>Allocates memory that will be automatically managed by the Unified Memory system</p>
+<p>
+Allocates <code>bytesize</code> bytes of managed memory on the device and returns in
+<code>dptr</code> a pointer to the allocated memory. If the device doesn&apos;t support
+allocating managed memory, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotSupported">ErrorNotSupported</a> is returned. Support
+for managed memory can be queried using the device attribute
+<a class="xref" href="ManagedCuda.BasicTypes.CUDeviceAttribute.html#ManagedCuda_BasicTypes_CUDeviceAttribute_ManagedMemory">ManagedMemory</a>. The allocated memory is suitably
+aligned for any kind of variable. The memory is not cleared. If <code>bytesize</code>
+is 0, ::cuMemAllocManaged returns ::CUDA_ERROR_INVALID_VALUE. The pointer
+is valid on the CPU and on all GPUs in the system that support managed memory.
+All accesses to this pointer must obey the Unified Memory programming model.
+<p>
+<code>flags</code> specifies the default stream association for this allocation.
+<code>flags</code> must be one of ::CU_MEM_ATTACH_GLOBAL or ::CU_MEM_ATTACH_HOST. If
+::CU_MEM_ATTACH_GLOBAL is specified, then this memory is accessible from
+any stream on any device. If ::CU_MEM_ATTACH_HOST is specified, then the
+allocation is created with initial visibility restricted to host access only;
+an explicit call to ::cuStreamAttachMemAsync will be required to enable access
+on the device.
+<p>
+If the association is later changed via ::cuStreamAttachMemAsync to
+a single stream, the default association as specifed during ::cuMemAllocManaged
+is restored when that stream is destroyed. For __managed__ variables, the
+default association is always ::CU_MEM_ATTACH_GLOBAL. Note that destroying a
+stream is an asynchronous operation, and as a result, the change to default
+association won&apos;t happen until all work in the stream has completed.
+<p>
+Memory allocated with ::cuMemAllocManaged should be released with ::cuMemFree.
+<p>
+On a multi-GPU system with peer-to-peer support, where multiple GPUs support
+managed memory, the physical storage is created on the GPU which is active
+at the time ::cuMemAllocManaged is called. All other GPUs will reference the
+data at reduced bandwidth via peer mappings over the PCIe bus. The Unified
+Memory management system does not migrate memory between GPUs.
+<p>
+On a multi-GPU system where multiple GPUs support managed memory, but not
+all pairs of such GPUs have peer-to-peer support between them, the physical
+storage is created in &apos;zero-copy&apos; or system memory. All GPUs will reference
+the data at reduced bandwidth over the PCIe bus. In these circumstances,
+use of the environment variable, CUDA_VISIBLE_DEVICES, is recommended to
+restrict CUDA to only use those GPUs that have peer-to-peer support. This
+environment variable is described in the CUDA programming guide under the
+&quot;CUDA environment variables&quot; section.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuMemAllocManaged(ref CUdeviceptr dptr, SizeT bytesize, CUmemAttach_flags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">dptr</span></td>
+        <td><p>Returned device pointer</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">bytesize</span></td>
+        <td><p>Requested allocation size in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUmemAttach_flags.html">CUmemAttach_flags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Must be one of <a class="xref" href="ManagedCuda.BasicTypes.CUmemAttach_flags.html#ManagedCuda_BasicTypes_CUmemAttach_flags_Global">Global</a> or <a class="xref" href="ManagedCuda.BasicTypes.CUmemAttach_flags.html#ManagedCuda_BasicTypes_CUmemAttach_flags_Host">Host</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotSupported">ErrorNotSupported</a>, , <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorOutOfMemory">ErrorOutOfMemory</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemAllocPitch_v2_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemAllocPitch_v2*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemAllocPitch_v2_ManagedCuda_BasicTypes_CUdeviceptr__ManagedCuda_BasicTypes_SizeT__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_System_UInt32_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemAllocPitch_v2(ManagedCuda.BasicTypes.CUdeviceptr@,ManagedCuda.BasicTypes.SizeT@,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,System.UInt32)">cuMemAllocPitch_v2(ref CUdeviceptr, ref SizeT, SizeT, SizeT, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Allocates at least <code>WidthInBytes * Height</code> bytes of linear memory on the device and returns in <code>dptr</code> a pointer
+to the allocated memory. The function may pad the allocation to ensure that corresponding pointers in any given
+row will continue to meet the alignment requirements for coalescing as the address is updated from row to row. <p>
+<code>ElementSizeBytes</code> specifies the size of the largest reads and writes that will be performed on the memory range.<p>
+<code>ElementSizeBytes</code> may be 4, 8 or 16 (since coalesced memory transactions are not possible on other data sizes). If
+<code>ElementSizeBytes</code> is smaller than the actual read/write size of a kernel, the kernel will run correctly, but possibly
+at reduced speed. The pitch returned in <code>pPitch</code> by <a class="xref" href="ManagedCuda.DriverAPINativeMethods.MemoryManagement.html#ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemAllocPitch_v2_ManagedCuda_BasicTypes_CUdeviceptr__ManagedCuda_BasicTypes_SizeT__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_System_UInt32_">cuMemAllocPitch_v2(ref CUdeviceptr, ref SizeT, SizeT, SizeT, UInt32)</a> is the width in bytes of the allocation. The
+intended usage of pitch is as a separate parameter of the allocation, used to compute addresses within the 2D array.<p>
+Given the row and column of an array element of type T, the address is computed as:<p>
+<pre><code>T * pElement = (T*)((char*)BaseAddress + Row * Pitch) + Column;</code></pre><p>
+<p>The pitch returned by <a class="xref" href="ManagedCuda.DriverAPINativeMethods.MemoryManagement.html#ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemAllocPitch_v2_ManagedCuda_BasicTypes_CUdeviceptr__ManagedCuda_BasicTypes_SizeT__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_System_UInt32_">cuMemAllocPitch_v2(ref CUdeviceptr, ref SizeT, SizeT, SizeT, UInt32)</a> is guaranteed to work with <a class="xref" href="ManagedCuda.DriverAPINativeMethods.SynchronousMemcpy_v2.html#ManagedCuda_DriverAPINativeMethods_SynchronousMemcpy_v2_cuMemcpy2D_v2_ManagedCuda_BasicTypes_CUDAMemCpy2D__">cuMemcpy2D_v2(ref CUDAMemCpy2D)</a> under all circumstances. For
+allocations of 2D arrays, it is recommended that programmers consider performing pitch allocations using <a class="xref" href="ManagedCuda.DriverAPINativeMethods.MemoryManagement.html#ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemAllocPitch_v2_ManagedCuda_BasicTypes_CUdeviceptr__ManagedCuda_BasicTypes_SizeT__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_System_UInt32_">cuMemAllocPitch_v2(ref CUdeviceptr, ref SizeT, SizeT, SizeT, UInt32)</a>.
+Due to alignment restrictions in the hardware, this is especially true if the application will be performing
+2D memory copies between different regions of device memory (whether linear memory or CUDA arrays). <p>
+The byte alignment of the pitch returned by <a class="xref" href="ManagedCuda.DriverAPINativeMethods.MemoryManagement.html#ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemAllocPitch_v2_ManagedCuda_BasicTypes_CUdeviceptr__ManagedCuda_BasicTypes_SizeT__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_System_UInt32_">cuMemAllocPitch_v2(ref CUdeviceptr, ref SizeT, SizeT, SizeT, UInt32)</a> is guaranteed to match or exceed the alignment
+requirement for texture binding with <a class="xref" href="ManagedCuda.DriverAPINativeMethods.TextureReferenceManagement.html#ManagedCuda_DriverAPINativeMethods_TextureReferenceManagement_cuTexRefSetAddress2D_v2_ManagedCuda_BasicTypes_CUtexref_ManagedCuda_BasicTypes_CUDAArrayDescriptor__ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_">cuTexRefSetAddress2D_v2(CUtexref, ref CUDAArrayDescriptor, CUdeviceptr, SizeT)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuMemAllocPitch_v2(ref CUdeviceptr dptr, ref SizeT pPitch, SizeT WidthInBytes, SizeT Height, uint ElementSizeBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">dptr</span></td>
+        <td><p>Returned device pointer</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">pPitch</span></td>
+        <td><p>Returned pitch of allocation in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">WidthInBytes</span></td>
+        <td><p>Requested allocation width in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">Height</span></td>
+        <td><p>Requested allocation height in rows</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">ElementSizeBytes</span></td>
+        <td><p>Size of largest reads/writes for range</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorOutOfMemory">ErrorOutOfMemory</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemFree_v2_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemFree_v2*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemFree_v2_ManagedCuda_BasicTypes_CUdeviceptr_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemFree_v2(ManagedCuda.BasicTypes.CUdeviceptr)">cuMemFree_v2(CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>Frees the memory space pointed to by <code>dptr</code>, which must have been returned by a previous call to <a class="xref" href="ManagedCuda.DriverAPINativeMethods.MemoryManagement.html#ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemAlloc_v2_ManagedCuda_BasicTypes_CUdeviceptr__ManagedCuda_BasicTypes_SizeT_">cuMemAlloc_v2(ref CUdeviceptr, SizeT)</a> or
+<a class="xref" href="ManagedCuda.DriverAPINativeMethods.MemoryManagement.html#ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemAllocPitch_v2_ManagedCuda_BasicTypes_CUdeviceptr__ManagedCuda_BasicTypes_SizeT__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_System_UInt32_">cuMemAllocPitch_v2(ref CUdeviceptr, ref SizeT, SizeT, SizeT, UInt32)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuMemFree_v2(CUdeviceptr dptr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">dptr</span></td>
+        <td><p>Pointer to memory to free</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemFreeHost_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemFreeHost*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemFreeHost_System_IntPtr_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemFreeHost(System.IntPtr)">cuMemFreeHost(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Frees the memory space pointed to by <code>p</code>, which must have been returned by a previous call to <a class="xref" href="ManagedCuda.DriverAPINativeMethods.MemoryManagement.html#ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemAllocHost_v2_System_IntPtr__ManagedCuda_BasicTypes_SizeT_">cuMemAllocHost_v2(ref IntPtr, SizeT)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuMemFreeHost(IntPtr p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">p</span></td>
+        <td><p>Pointer to memory to free</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemGetAddressRange_v2_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemGetAddressRange_v2*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemGetAddressRange_v2_ManagedCuda_BasicTypes_CUdeviceptr__ManagedCuda_BasicTypes_SizeT__ManagedCuda_BasicTypes_CUdeviceptr_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemGetAddressRange_v2(ManagedCuda.BasicTypes.CUdeviceptr@,ManagedCuda.BasicTypes.SizeT@,ManagedCuda.BasicTypes.CUdeviceptr)">cuMemGetAddressRange_v2(ref CUdeviceptr, ref SizeT, CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>Returns the base address in <code>pbase</code> and size in <code>psize</code> of the allocation by <a class="xref" href="ManagedCuda.DriverAPINativeMethods.MemoryManagement.html#ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemAlloc_v2_ManagedCuda_BasicTypes_CUdeviceptr__ManagedCuda_BasicTypes_SizeT_">cuMemAlloc_v2(ref CUdeviceptr, SizeT)</a> or <a class="xref" href="ManagedCuda.DriverAPINativeMethods.MemoryManagement.html#ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemAllocPitch_v2_ManagedCuda_BasicTypes_CUdeviceptr__ManagedCuda_BasicTypes_SizeT__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_System_UInt32_">cuMemAllocPitch_v2(ref CUdeviceptr, ref SizeT, SizeT, SizeT, UInt32)</a>
+that contains the input pointer <code>dptr</code>. Both parameters <code>pbase</code> and <code>psize</code> are optional. If one of them is <code>null</code>, it is
+ignored.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuMemGetAddressRange_v2(ref CUdeviceptr pbase, ref SizeT psize, CUdeviceptr dptr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pbase</span></td>
+        <td><p>Returned base address</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">psize</span></td>
+        <td><p>Returned size of device memory allocation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">dptr</span></td>
+        <td><p>Device pointer to query</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemGetInfo_v2_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemGetInfo_v2*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemGetInfo_v2_ManagedCuda_BasicTypes_SizeT__ManagedCuda_BasicTypes_SizeT__" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemGetInfo_v2(ManagedCuda.BasicTypes.SizeT@,ManagedCuda.BasicTypes.SizeT@)">cuMemGetInfo_v2(ref SizeT, ref SizeT)</h4>
+  <div class="markdown level1 summary"><p>Returns in <code>free</code> and <code>total</code> respectively, the free and total amount of memory available for allocation by the
+CUDA context, in bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuMemGetInfo_v2(ref SizeT free, ref SizeT total)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">free</span></td>
+        <td><p>Returned free memory in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">total</span></td>
+        <td><p>Returned total memory in bytes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemHostAlloc_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemHostAlloc*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemHostAlloc_System_IntPtr__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUMemHostAllocFlags_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemHostAlloc(System.IntPtr@,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.CUMemHostAllocFlags)">cuMemHostAlloc(ref IntPtr, SizeT, CUMemHostAllocFlags)</h4>
+  <div class="markdown level1 summary"><p>Allocates <code>bytesize</code> bytes of host memory that is page-locked and accessible to the device. The driver tracks the virtual
+memory ranges allocated with this function and automatically accelerates calls to functions such as <a class="xref" href="ManagedCuda.DriverAPINativeMethods.SynchronousMemcpy_v2.html#ManagedCuda_DriverAPINativeMethods_SynchronousMemcpy_v2_cuMemcpyHtoD_v2_ManagedCuda_BasicTypes_CUdeviceptr_System_IntPtr_ManagedCuda_BasicTypes_SizeT_">cuMemcpyHtoD_v2(CUdeviceptr, IntPtr, SizeT)</a>.
+Since the memory can be accessed directly by the device, it can be read or written with much higher bandwidth than
+pageable memory obtained with functions such as <code>malloc()</code>. Allocating excessive amounts of pinned
+memory may degrade system performance, since it reduces the amount of memory available to the system for paging.
+As a result, this function is best used sparingly to allocate staging areas for data exchange between host and device.<p>
+For the <code>Flags</code> parameter see <a class="xref" href="ManagedCuda.BasicTypes.CUMemHostAllocFlags.html">CUMemHostAllocFlags</a>.<p>
+The CUDA context must have been created with the <a class="xref" href="ManagedCuda.BasicTypes.CUCtxFlags.html#ManagedCuda_BasicTypes_CUCtxFlags_MapHost">MapHost</a> flag in order for the <a class="xref" href="ManagedCuda.BasicTypes.CUMemHostAllocFlags.html#ManagedCuda_BasicTypes_CUMemHostAllocFlags_DeviceMap">DeviceMap</a>
+flag to have any effect.<p>
+The <a class="xref" href="ManagedCuda.BasicTypes.CUCtxFlags.html#ManagedCuda_BasicTypes_CUCtxFlags_MapHost">MapHost</a> flag may be specified on CUDA contexts for devices that do not support
+mapped pinned memory. The failure is deferred to <a class="xref" href="ManagedCuda.DriverAPINativeMethods.MemoryManagement.html#ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemHostGetDevicePointer_v2_ManagedCuda_BasicTypes_CUdeviceptr__System_IntPtr_System_Int32_">cuMemHostGetDevicePointer_v2(ref CUdeviceptr, IntPtr, Int32)</a> because the memory may be
+mapped into other CUDA contexts via the <a class="xref" href="ManagedCuda.BasicTypes.CUMemHostAllocFlags.html#ManagedCuda_BasicTypes_CUMemHostAllocFlags_Portable">Portable</a> flag. <p>
+The memory allocated by this function must be freed with <a class="xref" href="ManagedCuda.DriverAPINativeMethods.MemoryManagement.html#ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemFreeHost_System_IntPtr_">cuMemFreeHost(IntPtr)</a>.<p>
+Note all host memory allocated using <a class="xref" href="ManagedCuda.DriverAPINativeMethods.MemoryManagement.html#ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemHostAlloc_System_IntPtr__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUMemHostAllocFlags_">cuMemHostAlloc(ref IntPtr, SizeT, CUMemHostAllocFlags)</a> will automatically
+be immediately accessible to all contexts on all devices which support unified
+addressing (as may be queried using ::CU_DEVICE_ATTRIBUTE_UNIFIED_ADDRESSING).
+Unless the flag ::CU_MEMHOSTALLOC_WRITECOMBINED is specified, the device pointer
+that may be used to access this host memory from those contexts is always equal
+to the returned host pointer <code>pp</code>.  If the flag ::CU_MEMHOSTALLOC_WRITECOMBINED
+is specified, then the function <a class="xref" href="ManagedCuda.DriverAPINativeMethods.MemoryManagement.html#ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemHostGetDevicePointer_v2_ManagedCuda_BasicTypes_CUdeviceptr__System_IntPtr_System_Int32_">cuMemHostGetDevicePointer_v2(ref CUdeviceptr, IntPtr, Int32)</a> must be used
+to query the device pointer, even if the context supports unified addressing.
+See \ref CUDA_UNIFIED for additional details.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuMemHostAlloc(ref IntPtr pp, SizeT bytesize, CUMemHostAllocFlags Flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">pp</span></td>
+        <td><p>Returned host pointer to page-locked memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">bytesize</span></td>
+        <td><p>Requested allocation size in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUMemHostAllocFlags.html">CUMemHostAllocFlags</a></td>
+        <td><span class="parametername">Flags</span></td>
+        <td><p>Flags for allocation request</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorOutOfMemory">ErrorOutOfMemory</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemHostGetDevicePointer_v2_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemHostGetDevicePointer_v2*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemHostGetDevicePointer_v2_ManagedCuda_BasicTypes_CUdeviceptr__System_IntPtr_System_Int32_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemHostGetDevicePointer_v2(ManagedCuda.BasicTypes.CUdeviceptr@,System.IntPtr,System.Int32)">cuMemHostGetDevicePointer_v2(ref CUdeviceptr, IntPtr, Int32)</h4>
+  <div class="markdown level1 summary"><p>Passes back the device pointer <code>pdptr</code> corresponding to the mapped, pinned host buffer <code>p</code> allocated by <a class="xref" href="ManagedCuda.DriverAPINativeMethods.MemoryManagement.html#ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemHostAlloc_System_IntPtr__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUMemHostAllocFlags_">cuMemHostAlloc(ref IntPtr, SizeT, CUMemHostAllocFlags)</a>.
+<a class="xref" href="ManagedCuda.DriverAPINativeMethods.MemoryManagement.html#ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemHostGetDevicePointer_v2_ManagedCuda_BasicTypes_CUdeviceptr__System_IntPtr_System_Int32_">cuMemHostGetDevicePointer_v2(ref CUdeviceptr, IntPtr, Int32)</a> will fail if the <a class="xref" href="ManagedCuda.BasicTypes.CUMemHostAllocFlags.html#ManagedCuda_BasicTypes_CUMemHostAllocFlags_DeviceMap">DeviceMap</a> flag was not specified at the
+time the memory was allocated, or if the function is called on a GPU that does not support mapped pinned memory.
+Flags provides for future releases. For now, it must be set to 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuMemHostGetDevicePointer_v2(ref CUdeviceptr pdptr, IntPtr p, int Flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pdptr</span></td>
+        <td><p>Returned device pointer</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">p</span></td>
+        <td><p>Host pointer</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Flags</span></td>
+        <td><p>Options (must be 0)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemHostGetFlags_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemHostGetFlags*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemHostGetFlags_ManagedCuda_BasicTypes_CUMemHostAllocFlags__System_IntPtr_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemHostGetFlags(ManagedCuda.BasicTypes.CUMemHostAllocFlags@,System.IntPtr)">cuMemHostGetFlags(ref CUMemHostAllocFlags, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Passes back the flags <code>pFlags</code> that were specified when allocating the pinned host buffer <code>p</code> allocated by
+<a class="xref" href="ManagedCuda.DriverAPINativeMethods.MemoryManagement.html#ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemHostAlloc_System_IntPtr__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUMemHostAllocFlags_">cuMemHostAlloc(ref IntPtr, SizeT, CUMemHostAllocFlags)</a>.<p>
+<a class="xref" href="ManagedCuda.DriverAPINativeMethods.MemoryManagement.html#ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemHostGetFlags_ManagedCuda_BasicTypes_CUMemHostAllocFlags__System_IntPtr_">cuMemHostGetFlags(ref CUMemHostAllocFlags, IntPtr)</a> will fail if the pointer does not reside in an allocation performed by <a class="xref" href="ManagedCuda.DriverAPINativeMethods.MemoryManagement.html#ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemAllocHost_v2_System_IntPtr__ManagedCuda_BasicTypes_SizeT_">cuMemAllocHost_v2(ref IntPtr, SizeT)</a> or
+<a class="xref" href="ManagedCuda.DriverAPINativeMethods.MemoryManagement.html#ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemHostAlloc_System_IntPtr__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUMemHostAllocFlags_">cuMemHostAlloc(ref IntPtr, SizeT, CUMemHostAllocFlags)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuMemHostGetFlags(ref CUMemHostAllocFlags pFlags, IntPtr p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUMemHostAllocFlags.html">CUMemHostAllocFlags</a></td>
+        <td><span class="parametername">pFlags</span></td>
+        <td><p>Returned flags</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">p</span></td>
+        <td><p>Host pointer</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemHostRegister_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemHostRegister*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemHostRegister_System_IntPtr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUMemHostRegisterFlags_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemHostRegister(System.IntPtr,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.CUMemHostRegisterFlags)">cuMemHostRegister(IntPtr, SizeT, CUMemHostRegisterFlags)</h4>
+  <div class="markdown level1 summary"><p>Page-locks the memory range specified by <code>p</code> and <code>bytesize</code> and maps it
+for the device(s) as specified by <code>Flags</code>. This memory range also is added
+to the same tracking mechanism as ::cuMemHostAlloc to automatically accelerate
+calls to functions such as <a class="xref" href="ManagedCuda.DriverAPINativeMethods.SynchronousMemcpy_v2.html#ManagedCuda_DriverAPINativeMethods_SynchronousMemcpy_v2_cuMemcpyHtoD_v2_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_dim3___ManagedCuda_BasicTypes_SizeT_">cuMemcpyHtoD_v2(CUdeviceptr, dim3[], SizeT)</a>. Since the memory can be accessed
+directly by the device, it can be read or written with much higher bandwidth
+than pageable memory that has not been registered.  Page-locking excessive
+amounts of memory may degrade system performance, since it reduces the amount
+of memory available to the system for paging. As a result, this function is
+best used sparingly to register staging areas for data exchange between
+host and device.<p>
+The pointer <code>p</code> and size <code>bytesize</code> must be aligned to the host page size (4 KB).<p>
+The memory page-locked by this function must be unregistered with <a class="xref" href="ManagedCuda.DriverAPINativeMethods.MemoryManagement.html#ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemHostUnregister_System_IntPtr_">cuMemHostUnregister(IntPtr)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuMemHostRegister(IntPtr p, SizeT byteSize, CUMemHostRegisterFlags Flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">p</span></td>
+        <td><p>Host pointer to memory to page-lock</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">byteSize</span></td>
+        <td><p>Size in bytes of the address range to page-lock</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUMemHostRegisterFlags.html">CUMemHostRegisterFlags</a></td>
+        <td><span class="parametername">Flags</span></td>
+        <td><p>Flags for allocation request</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorOutOfMemory">ErrorOutOfMemory</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemHostUnregister_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemHostUnregister*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemHostUnregister_System_IntPtr_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemHostUnregister(System.IntPtr)">cuMemHostUnregister(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Unmaps the memory range whose base address is specified by <code>p</code>, and makes it pageable again.<p>
+The base address must be the same one specified to <a class="xref" href="ManagedCuda.DriverAPINativeMethods.MemoryManagement.html#ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemHostRegister_System_IntPtr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUMemHostRegisterFlags_">cuMemHostRegister(IntPtr, SizeT, CUMemHostRegisterFlags)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuMemHostUnregister(IntPtr p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">p</span></td>
+        <td><p>Host pointer to memory to page-lock</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorOutOfMemory">ErrorOutOfMemory</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemPrefetchAsync_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemPrefetchAsync*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemPrefetchAsync_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUdevice_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemPrefetchAsync(ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.CUdevice,ManagedCuda.BasicTypes.CUstream)">cuMemPrefetchAsync(CUdeviceptr, SizeT, CUdevice, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Prefetches memory to the specified destination device<p>
+Prefetches memory to the specified destination device. devPtr is the
+base device pointer of the memory to be prefetched and dstDevice is the
+destination device. count specifies the number of bytes to copy. hStream
+is the stream in which the operation is enqueued.<p>
+<p>Passing in CU_DEVICE_CPU for dstDevice will prefetch the data to CPU memory.<p>
+<p>If no physical memory has been allocated for this region, then this memory region
+will be populated and mapped on the destination device. If there's insufficient
+memory to prefetch the desired region, the Unified Memory driver may evict pages
+belonging to other memory regions to make room. If there's no memory that can be
+evicted, then the Unified Memory driver will prefetch less than what was requested.<p>
+<p>In the normal case, any mappings to the previous location of the migrated pages are
+removed and mappings for the new location are only setup on the dstDevice.
+The application can exercise finer control on these mappings using ::cudaMemAdvise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuMemPrefetchAsync(CUdeviceptr devPtr, SizeT count, CUdevice dstDevice, CUstream hStream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">devPtr</span></td>
+        <td><p>Pointer to be prefetched</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Size in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdevice.html">CUdevice</a></td>
+        <td><span class="parametername">dstDevice</span></td>
+        <td><p>Destination device to prefetch to</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">hStream</span></td>
+        <td><p>Stream to enqueue prefetch operation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemPrefetchAsync_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUdevice_ManagedCuda_BasicTypes_CUstream__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note that this function is asynchronous with respect to the host and all work on other devices.</p>
+</div>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemRangeGetAttribute_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemRangeGetAttribute*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemRangeGetAttribute_System_IntPtr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUmem_range_attribute_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemRangeGetAttribute(System.IntPtr,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.CUmem_range_attribute,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.SizeT)">cuMemRangeGetAttribute(IntPtr, SizeT, CUmem_range_attribute, CUdeviceptr, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Query an attribute of a given memory range</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuMemRangeGetAttribute(IntPtr data, SizeT dataSize, CUmem_range_attribute attribute, CUdeviceptr devPtr, SizeT count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>A pointers to a memory location where the result of each attribute query will be written to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">dataSize</span></td>
+        <td><p>Array containing the size of data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUmem_range_attribute.html">CUmem_range_attribute</a></td>
+        <td><span class="parametername">attribute</span></td>
+        <td><p>The attribute to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">devPtr</span></td>
+        <td><p>Start of the range to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Size of the range to query</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemRangeGetAttributes_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemRangeGetAttributes*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemRangeGetAttributes_System_IntPtr___ManagedCuda_BasicTypes_SizeT___ManagedCuda_BasicTypes_CUmem_range_attribute___ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuMemRangeGetAttributes(System.IntPtr[],ManagedCuda.BasicTypes.SizeT[],ManagedCuda.BasicTypes.CUmem_range_attribute[],ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.SizeT)">cuMemRangeGetAttributes(IntPtr[], SizeT[], CUmem_range_attribute[], SizeT, CUdeviceptr, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Query attributes of a given memory range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuMemRangeGetAttributes(IntPtr[] data, SizeT[] dataSizes, CUmem_range_attribute[] attributes, SizeT numAttributes, CUdeviceptr devPtr, SizeT count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>A two-dimensional array containing pointers to memory locations where the result of each attribute query will be written to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a>[]</td>
+        <td><span class="parametername">dataSizes</span></td>
+        <td><p>Array containing the sizes of each result</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUmem_range_attribute.html">CUmem_range_attribute</a>[]</td>
+        <td><span class="parametername">attributes</span></td>
+        <td><p>An array of attributes to query (numAttributes and the number of attributes in this array should match)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">numAttributes</span></td>
+        <td><p>Number of attributes to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">devPtr</span></td>
+        <td><p>Start of the range to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Size of the range to query</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuPointerGetAttribute_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuPointerGetAttribute*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuPointerGetAttribute_ManagedCuda_BasicTypes_CUcontext__ManagedCuda_BasicTypes_CUPointerAttribute_ManagedCuda_BasicTypes_CUdeviceptr_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuPointerGetAttribute(ManagedCuda.BasicTypes.CUcontext@,ManagedCuda.BasicTypes.CUPointerAttribute,ManagedCuda.BasicTypes.CUdeviceptr)">cuPointerGetAttribute(ref CUcontext, CUPointerAttribute, CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>Returns information about a pointer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuPointerGetAttribute(ref CUcontext data, CUPointerAttribute attribute, CUdeviceptr ptr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUcontext.html">CUcontext</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Returned pointer attribute value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUPointerAttribute.html">CUPointerAttribute</a></td>
+        <td><span class="parametername">attribute</span></td>
+        <td><p>Pointer attribute to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">ptr</span></td>
+        <td><p>Pointer</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidDevice">ErrorInvalidDevice</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuPointerGetAttribute_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuPointerGetAttribute*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuPointerGetAttribute_ManagedCuda_BasicTypes_CudaPointerAttributeP2PTokens__ManagedCuda_BasicTypes_CUPointerAttribute_ManagedCuda_BasicTypes_CUdeviceptr_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuPointerGetAttribute(ManagedCuda.BasicTypes.CudaPointerAttributeP2PTokens@,ManagedCuda.BasicTypes.CUPointerAttribute,ManagedCuda.BasicTypes.CUdeviceptr)">cuPointerGetAttribute(ref CudaPointerAttributeP2PTokens, CUPointerAttribute, CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>Returns information about a pointer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuPointerGetAttribute(ref CudaPointerAttributeP2PTokens data, CUPointerAttribute attribute, CUdeviceptr ptr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CudaPointerAttributeP2PTokens.html">CudaPointerAttributeP2PTokens</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Returned pointer attribute value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUPointerAttribute.html">CUPointerAttribute</a></td>
+        <td><span class="parametername">attribute</span></td>
+        <td><p>Pointer attribute to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">ptr</span></td>
+        <td><p>Pointer</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidDevice">ErrorInvalidDevice</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuPointerGetAttribute_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuPointerGetAttribute*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuPointerGetAttribute_ManagedCuda_BasicTypes_CUdeviceptr__ManagedCuda_BasicTypes_CUPointerAttribute_ManagedCuda_BasicTypes_CUdeviceptr_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuPointerGetAttribute(ManagedCuda.BasicTypes.CUdeviceptr@,ManagedCuda.BasicTypes.CUPointerAttribute,ManagedCuda.BasicTypes.CUdeviceptr)">cuPointerGetAttribute(ref CUdeviceptr, CUPointerAttribute, CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>Returns information about a pointer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuPointerGetAttribute(ref CUdeviceptr data, CUPointerAttribute attribute, CUdeviceptr ptr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Returned pointer attribute value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUPointerAttribute.html">CUPointerAttribute</a></td>
+        <td><span class="parametername">attribute</span></td>
+        <td><p>Pointer attribute to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">ptr</span></td>
+        <td><p>Pointer</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidDevice">ErrorInvalidDevice</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuPointerGetAttribute_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuPointerGetAttribute*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuPointerGetAttribute_ManagedCuda_BasicTypes_CUMemoryType__ManagedCuda_BasicTypes_CUPointerAttribute_ManagedCuda_BasicTypes_CUdeviceptr_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuPointerGetAttribute(ManagedCuda.BasicTypes.CUMemoryType@,ManagedCuda.BasicTypes.CUPointerAttribute,ManagedCuda.BasicTypes.CUdeviceptr)">cuPointerGetAttribute(ref CUMemoryType, CUPointerAttribute, CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>Returns information about a pointer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuPointerGetAttribute(ref CUMemoryType data, CUPointerAttribute attribute, CUdeviceptr ptr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUMemoryType.html">CUMemoryType</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Returned pointer attribute value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUPointerAttribute.html">CUPointerAttribute</a></td>
+        <td><span class="parametername">attribute</span></td>
+        <td><p>Pointer attribute to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">ptr</span></td>
+        <td><p>Pointer</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidDevice">ErrorInvalidDevice</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuPointerGetAttribute_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuPointerGetAttribute*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuPointerGetAttribute_System_Int32__ManagedCuda_BasicTypes_CUPointerAttribute_ManagedCuda_BasicTypes_CUdeviceptr_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuPointerGetAttribute(System.Int32@,ManagedCuda.BasicTypes.CUPointerAttribute,ManagedCuda.BasicTypes.CUdeviceptr)">cuPointerGetAttribute(ref Int32, CUPointerAttribute, CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>Returns information about a pointer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuPointerGetAttribute(ref int data, CUPointerAttribute attribute, CUdeviceptr ptr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Returned pointer attribute value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUPointerAttribute.html">CUPointerAttribute</a></td>
+        <td><span class="parametername">attribute</span></td>
+        <td><p>Pointer attribute to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">ptr</span></td>
+        <td><p>Pointer</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidDevice">ErrorInvalidDevice</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuPointerGetAttribute_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuPointerGetAttribute*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuPointerGetAttribute_System_IntPtr__ManagedCuda_BasicTypes_CUPointerAttribute_ManagedCuda_BasicTypes_CUdeviceptr_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuPointerGetAttribute(System.IntPtr@,ManagedCuda.BasicTypes.CUPointerAttribute,ManagedCuda.BasicTypes.CUdeviceptr)">cuPointerGetAttribute(ref IntPtr, CUPointerAttribute, CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>Returns information about a pointer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuPointerGetAttribute(ref IntPtr data, CUPointerAttribute attribute, CUdeviceptr ptr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Returned pointer attribute value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUPointerAttribute.html">CUPointerAttribute</a></td>
+        <td><span class="parametername">attribute</span></td>
+        <td><p>Pointer attribute to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">ptr</span></td>
+        <td><p>Pointer</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidDevice">ErrorInvalidDevice</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuPointerGetAttribute_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuPointerGetAttribute*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuPointerGetAttribute_System_UInt64__ManagedCuda_BasicTypes_CUPointerAttribute_ManagedCuda_BasicTypes_CUdeviceptr_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuPointerGetAttribute(System.UInt64@,ManagedCuda.BasicTypes.CUPointerAttribute,ManagedCuda.BasicTypes.CUdeviceptr)">cuPointerGetAttribute(ref UInt64, CUPointerAttribute, CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>Returns information about a pointer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuPointerGetAttribute(ref ulong data, CUPointerAttribute attribute, CUdeviceptr ptr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Returned pointer attribute value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUPointerAttribute.html">CUPointerAttribute</a></td>
+        <td><span class="parametername">attribute</span></td>
+        <td><p>Pointer attribute to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">ptr</span></td>
+        <td><p>Pointer</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidDevice">ErrorInvalidDevice</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuPointerGetAttributes_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuPointerGetAttributes*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuPointerGetAttributes_System_UInt32_ManagedCuda_BasicTypes_CUPointerAttribute___System_IntPtr_ManagedCuda_BasicTypes_CUdeviceptr_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuPointerGetAttributes(System.UInt32,ManagedCuda.BasicTypes.CUPointerAttribute[],System.IntPtr,ManagedCuda.BasicTypes.CUdeviceptr)">cuPointerGetAttributes(UInt32, CUPointerAttribute[], IntPtr, CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>Returns information about a pointer.<p>
+The supported attributes are (refer to ::cuPointerGetAttribute for attribute descriptions and restrictions):</p>
+<p>
+- ::CU_POINTER_ATTRIBUTE_CONTEXT<p>
+- ::CU_POINTER_ATTRIBUTE_MEMORY_TYPE<p>
+- ::CU_POINTER_ATTRIBUTE_DEVICE_POINTER<p>
+- ::CU_POINTER_ATTRIBUTE_HOST_POINTER<p>
+- ::CU_POINTER_ATTRIBUTE_SYNC_MEMOPS<p>
+- ::CU_POINTER_ATTRIBUTE_BUFFER_ID<p>
+- ::CU_POINTER_ATTRIBUTE_IS_MANAGED<p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuPointerGetAttributes(uint numAttributes, CUPointerAttribute[] attributes, IntPtr data, CUdeviceptr ptr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numAttributes</span></td>
+        <td><p>Number of attributes to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUPointerAttribute.html">CUPointerAttribute</a>[]</td>
+        <td><span class="parametername">attributes</span></td>
+        <td><p>An array of attributes to query (numAttributes and the number of attributes in this array should match)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>A two-dimensional array containing pointers to memory
+locations where the result of each attribute query will be written to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">ptr</span></td>
+        <td><p>Pointer to query</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuPointerSetAttribute_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuPointerSetAttribute*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuPointerSetAttribute_System_Int32__ManagedCuda_BasicTypes_CUPointerAttribute_ManagedCuda_BasicTypes_CUdeviceptr_" data-uid="ManagedCuda.DriverAPINativeMethods.MemoryManagement.cuPointerSetAttribute(System.Int32@,ManagedCuda.BasicTypes.CUPointerAttribute,ManagedCuda.BasicTypes.CUdeviceptr)">cuPointerSetAttribute(ref Int32, CUPointerAttribute, CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>Set attributes on a previously allocated memory region<p>
+The supported attributes are:<p>
+<a class="xref" href="ManagedCuda.BasicTypes.CUPointerAttribute.html#ManagedCuda_BasicTypes_CUPointerAttribute_SyncMemops">SyncMemops</a>: A boolean attribute that can either be set (1) or unset (0). When set,
+memory operations that are synchronous. If there are some previously initiated
+synchronous memory operations that are pending when this attribute is set, the
+function does not return until those memory operations are complete.
+See further documentation in the section titled &quot;API synchronization behavior&quot;
+to learn more about cases when synchronous memory operations can
+exhibit asynchronous behavior.
+<code>value</code> will be considered as a pointer to an unsigned integer to which this attribute is to be set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuPointerSetAttribute(ref int value, CUPointerAttribute attribute, CUdeviceptr ptr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Pointer to memory containing the value to be set</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUPointerAttribute.html">CUPointerAttribute</a></td>
+        <td><span class="parametername">attribute</span></td>
+        <td><p>Pointer attribute to set</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">ptr</span></td>
+        <td><p>Pointer to a memory region allocated using CUDA memory allocation APIs</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidDevice">ErrorInvalidDevice</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_DriverAPINativeMethods_MemoryManagement.md&amp;value=---%0Auid%3A%20ManagedCuda.DriverAPINativeMethods.MemoryManagement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/DriverAPI.cs/#L958" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

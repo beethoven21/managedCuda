@@ -1,0 +1,1071 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CudaTextureMipmappedArray
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CudaTextureMipmappedArray
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.CudaTextureMipmappedArray">
+  
+  
+  <h1 id="ManagedCuda_CudaTextureMipmappedArray" data-uid="ManagedCuda.CudaTextureMipmappedArray" class="text-break">Class CudaTextureMipmappedArray
+  </h1>
+  <div class="markdown level0 summary"><p>CudaArrayTexture3D</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CudaTextureMipmappedArray</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.html">ManagedCuda</a></h6>
+  <h6><strong>Assembly</strong>: ManagedCuda.dll</h6>
+  <h5 id="ManagedCuda_CudaTextureMipmappedArray_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CudaTextureMipmappedArray : IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureMipmappedArray__ctor_ManagedCuda_CudaKernel_System_String_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUFilterMode_ManagedCuda_BasicTypes_CUTexRefSetFlags_ManagedCuda_BasicTypes_CUDAArray3DDescriptor_System_UInt32_System_UInt32_ManagedCuda_BasicTypes_CUFilterMode_System_Single_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureMipmappedArray.%23ctor(ManagedCuda.CudaKernel%2CSystem.String%2CManagedCuda.BasicTypes.CUAddressMode%2CManagedCuda.BasicTypes.CUAddressMode%2CManagedCuda.BasicTypes.CUAddressMode%2CManagedCuda.BasicTypes.CUFilterMode%2CManagedCuda.BasicTypes.CUTexRefSetFlags%2CManagedCuda.BasicTypes.CUDAArray3DDescriptor%2CSystem.UInt32%2CSystem.UInt32%2CManagedCuda.BasicTypes.CUFilterMode%2CSystem.Single%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureMipmappedArray.cs/#L97">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureMipmappedArray__ctor_" data-uid="ManagedCuda.CudaTextureMipmappedArray.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaTextureMipmappedArray__ctor_ManagedCuda_CudaKernel_System_String_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUFilterMode_ManagedCuda_BasicTypes_CUTexRefSetFlags_ManagedCuda_BasicTypes_CUDAArray3DDescriptor_System_UInt32_System_UInt32_ManagedCuda_BasicTypes_CUFilterMode_System_Single_System_Single_System_Single_" data-uid="ManagedCuda.CudaTextureMipmappedArray.#ctor(ManagedCuda.CudaKernel,System.String,ManagedCuda.BasicTypes.CUAddressMode,ManagedCuda.BasicTypes.CUAddressMode,ManagedCuda.BasicTypes.CUAddressMode,ManagedCuda.BasicTypes.CUFilterMode,ManagedCuda.BasicTypes.CUTexRefSetFlags,ManagedCuda.BasicTypes.CUDAArray3DDescriptor,System.UInt32,System.UInt32,ManagedCuda.BasicTypes.CUFilterMode,System.Single,System.Single,System.Single)">CudaTextureMipmappedArray(CudaKernel, String, CUAddressMode, CUAddressMode, CUAddressMode, CUFilterMode, CUTexRefSetFlags, CUDAArray3DDescriptor, UInt32, UInt32, CUFilterMode, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Creates a new mipmapped texture from array memory. Allocates a new mipmapped array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaTextureMipmappedArray(CudaKernel kernel, string texName, CUAddressMode addressMode0, CUAddressMode addressMode1, CUAddressMode addressMode2, CUFilterMode filterMode, CUTexRefSetFlags flags, CUDAArray3DDescriptor descriptor, uint numMipmapLevels, uint maxAniso, CUFilterMode mipmapFilterMode, float mipmapLevelBias, float minMipmapLevelClamp, float maxMipmapLevelClamp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaKernel.html">CudaKernel</a></td>
+        <td><span class="parametername">kernel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">texName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUAddressMode.html">CUAddressMode</a></td>
+        <td><span class="parametername">addressMode0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUAddressMode.html">CUAddressMode</a></td>
+        <td><span class="parametername">addressMode1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUAddressMode.html">CUAddressMode</a></td>
+        <td><span class="parametername">addressMode2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUFilterMode.html">CUFilterMode</a></td>
+        <td><span class="parametername">filterMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUTexRefSetFlags.html">CUTexRefSetFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUDAArray3DDescriptor.html">CUDAArray3DDescriptor</a></td>
+        <td><span class="parametername">descriptor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numMipmapLevels</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">maxAniso</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUFilterMode.html">CUFilterMode</a></td>
+        <td><span class="parametername">mipmapFilterMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">mipmapLevelBias</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">minMipmapLevelClamp</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">maxMipmapLevelClamp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureMipmappedArray__ctor_ManagedCuda_CudaKernel_System_String_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUFilterMode_ManagedCuda_BasicTypes_CUTexRefSetFlags_ManagedCuda_CudaMipmappedArray_System_UInt32_ManagedCuda_BasicTypes_CUFilterMode_System_Single_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureMipmappedArray.%23ctor(ManagedCuda.CudaKernel%2CSystem.String%2CManagedCuda.BasicTypes.CUAddressMode%2CManagedCuda.BasicTypes.CUAddressMode%2CManagedCuda.BasicTypes.CUAddressMode%2CManagedCuda.BasicTypes.CUFilterMode%2CManagedCuda.BasicTypes.CUTexRefSetFlags%2CManagedCuda.CudaMipmappedArray%2CSystem.UInt32%2CManagedCuda.BasicTypes.CUFilterMode%2CSystem.Single%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureMipmappedArray.cs/#L198">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureMipmappedArray__ctor_" data-uid="ManagedCuda.CudaTextureMipmappedArray.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaTextureMipmappedArray__ctor_ManagedCuda_CudaKernel_System_String_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUFilterMode_ManagedCuda_BasicTypes_CUTexRefSetFlags_ManagedCuda_CudaMipmappedArray_System_UInt32_ManagedCuda_BasicTypes_CUFilterMode_System_Single_System_Single_System_Single_" data-uid="ManagedCuda.CudaTextureMipmappedArray.#ctor(ManagedCuda.CudaKernel,System.String,ManagedCuda.BasicTypes.CUAddressMode,ManagedCuda.BasicTypes.CUAddressMode,ManagedCuda.BasicTypes.CUAddressMode,ManagedCuda.BasicTypes.CUFilterMode,ManagedCuda.BasicTypes.CUTexRefSetFlags,ManagedCuda.CudaMipmappedArray,System.UInt32,ManagedCuda.BasicTypes.CUFilterMode,System.Single,System.Single,System.Single)">CudaTextureMipmappedArray(CudaKernel, String, CUAddressMode, CUAddressMode, CUAddressMode, CUFilterMode, CUTexRefSetFlags, CudaMipmappedArray, UInt32, CUFilterMode, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Creates a new mipmapped texture from array memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaTextureMipmappedArray(CudaKernel kernel, string texName, CUAddressMode addressMode0, CUAddressMode addressMode1, CUAddressMode addressMode2, CUFilterMode filterMode, CUTexRefSetFlags flags, CudaMipmappedArray array, uint maxAniso, CUFilterMode mipmapFilterMode, float mipmapLevelBias, float minMipmapLevelClamp, float maxMipmapLevelClamp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaKernel.html">CudaKernel</a></td>
+        <td><span class="parametername">kernel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">texName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUAddressMode.html">CUAddressMode</a></td>
+        <td><span class="parametername">addressMode0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUAddressMode.html">CUAddressMode</a></td>
+        <td><span class="parametername">addressMode1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUAddressMode.html">CUAddressMode</a></td>
+        <td><span class="parametername">addressMode2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUFilterMode.html">CUFilterMode</a></td>
+        <td><span class="parametername">filterMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUTexRefSetFlags.html">CUTexRefSetFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaMipmappedArray.html">CudaMipmappedArray</a></td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">maxAniso</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUFilterMode.html">CUFilterMode</a></td>
+        <td><span class="parametername">mipmapFilterMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">mipmapLevelBias</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">minMipmapLevelClamp</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">maxMipmapLevelClamp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureMipmappedArray__ctor_ManagedCuda_CudaKernel_System_String_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUFilterMode_ManagedCuda_BasicTypes_CUTexRefSetFlags_ManagedCuda_BasicTypes_CUDAArray3DDescriptor_System_UInt32_System_UInt32_ManagedCuda_BasicTypes_CUFilterMode_System_Single_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureMipmappedArray.%23ctor(ManagedCuda.CudaKernel%2CSystem.String%2CManagedCuda.BasicTypes.CUAddressMode%2CManagedCuda.BasicTypes.CUFilterMode%2CManagedCuda.BasicTypes.CUTexRefSetFlags%2CManagedCuda.BasicTypes.CUDAArray3DDescriptor%2CSystem.UInt32%2CSystem.UInt32%2CManagedCuda.BasicTypes.CUFilterMode%2CSystem.Single%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureMipmappedArray.cs/#L71">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureMipmappedArray__ctor_" data-uid="ManagedCuda.CudaTextureMipmappedArray.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaTextureMipmappedArray__ctor_ManagedCuda_CudaKernel_System_String_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUFilterMode_ManagedCuda_BasicTypes_CUTexRefSetFlags_ManagedCuda_BasicTypes_CUDAArray3DDescriptor_System_UInt32_System_UInt32_ManagedCuda_BasicTypes_CUFilterMode_System_Single_System_Single_System_Single_" data-uid="ManagedCuda.CudaTextureMipmappedArray.#ctor(ManagedCuda.CudaKernel,System.String,ManagedCuda.BasicTypes.CUAddressMode,ManagedCuda.BasicTypes.CUFilterMode,ManagedCuda.BasicTypes.CUTexRefSetFlags,ManagedCuda.BasicTypes.CUDAArray3DDescriptor,System.UInt32,System.UInt32,ManagedCuda.BasicTypes.CUFilterMode,System.Single,System.Single,System.Single)">CudaTextureMipmappedArray(CudaKernel, String, CUAddressMode, CUFilterMode, CUTexRefSetFlags, CUDAArray3DDescriptor, UInt32, UInt32, CUFilterMode, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Creates a new mipmapped texture from array memory. Allocates a new mipmapped array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaTextureMipmappedArray(CudaKernel kernel, string texName, CUAddressMode addressModeForAllDimensions, CUFilterMode filterMode, CUTexRefSetFlags flags, CUDAArray3DDescriptor descriptor, uint numMipmapLevels, uint maxAniso, CUFilterMode mipmapFilterMode, float mipmapLevelBias, float minMipmapLevelClamp, float maxMipmapLevelClamp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaKernel.html">CudaKernel</a></td>
+        <td><span class="parametername">kernel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">texName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUAddressMode.html">CUAddressMode</a></td>
+        <td><span class="parametername">addressModeForAllDimensions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUFilterMode.html">CUFilterMode</a></td>
+        <td><span class="parametername">filterMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUTexRefSetFlags.html">CUTexRefSetFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUDAArray3DDescriptor.html">CUDAArray3DDescriptor</a></td>
+        <td><span class="parametername">descriptor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numMipmapLevels</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">maxAniso</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUFilterMode.html">CUFilterMode</a></td>
+        <td><span class="parametername">mipmapFilterMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">mipmapLevelBias</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">minMipmapLevelClamp</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">maxMipmapLevelClamp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureMipmappedArray__ctor_ManagedCuda_CudaKernel_System_String_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUFilterMode_ManagedCuda_BasicTypes_CUTexRefSetFlags_ManagedCuda_CudaMipmappedArray_System_UInt32_ManagedCuda_BasicTypes_CUFilterMode_System_Single_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureMipmappedArray.%23ctor(ManagedCuda.CudaKernel%2CSystem.String%2CManagedCuda.BasicTypes.CUAddressMode%2CManagedCuda.BasicTypes.CUFilterMode%2CManagedCuda.BasicTypes.CUTexRefSetFlags%2CManagedCuda.CudaMipmappedArray%2CSystem.UInt32%2CManagedCuda.BasicTypes.CUFilterMode%2CSystem.Single%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureMipmappedArray.cs/#L174">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureMipmappedArray__ctor_" data-uid="ManagedCuda.CudaTextureMipmappedArray.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaTextureMipmappedArray__ctor_ManagedCuda_CudaKernel_System_String_ManagedCuda_BasicTypes_CUAddressMode_ManagedCuda_BasicTypes_CUFilterMode_ManagedCuda_BasicTypes_CUTexRefSetFlags_ManagedCuda_CudaMipmappedArray_System_UInt32_ManagedCuda_BasicTypes_CUFilterMode_System_Single_System_Single_System_Single_" data-uid="ManagedCuda.CudaTextureMipmappedArray.#ctor(ManagedCuda.CudaKernel,System.String,ManagedCuda.BasicTypes.CUAddressMode,ManagedCuda.BasicTypes.CUFilterMode,ManagedCuda.BasicTypes.CUTexRefSetFlags,ManagedCuda.CudaMipmappedArray,System.UInt32,ManagedCuda.BasicTypes.CUFilterMode,System.Single,System.Single,System.Single)">CudaTextureMipmappedArray(CudaKernel, String, CUAddressMode, CUFilterMode, CUTexRefSetFlags, CudaMipmappedArray, UInt32, CUFilterMode, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Creates a new mipmapped texture from array memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaTextureMipmappedArray(CudaKernel kernel, string texName, CUAddressMode addressModeForAllDimensions, CUFilterMode filterMode, CUTexRefSetFlags flags, CudaMipmappedArray array, uint maxAniso, CUFilterMode mipmapFilterMode, float mipmapLevelBias, float minMipmapLevelClamp, float maxMipmapLevelClamp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaKernel.html">CudaKernel</a></td>
+        <td><span class="parametername">kernel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">texName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUAddressMode.html">CUAddressMode</a></td>
+        <td><span class="parametername">addressModeForAllDimensions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUFilterMode.html">CUFilterMode</a></td>
+        <td><span class="parametername">filterMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUTexRefSetFlags.html">CUTexRefSetFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaMipmappedArray.html">CudaMipmappedArray</a></td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">maxAniso</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUFilterMode.html">CUFilterMode</a></td>
+        <td><span class="parametername">mipmapFilterMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">mipmapLevelBias</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">minMipmapLevelClamp</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">maxMipmapLevelClamp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureMipmappedArray_AddressMode0.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureMipmappedArray.AddressMode0%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureMipmappedArray.cs/#L316">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureMipmappedArray_AddressMode0_" data-uid="ManagedCuda.CudaTextureMipmappedArray.AddressMode0*"></a>
+  <h4 id="ManagedCuda_CudaTextureMipmappedArray_AddressMode0" data-uid="ManagedCuda.CudaTextureMipmappedArray.AddressMode0">AddressMode0</h4>
+  <div class="markdown level1 summary"><p>AddressMode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUAddressMode AddressMode0 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUAddressMode.html">CUAddressMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureMipmappedArray_AddressMode1.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureMipmappedArray.AddressMode1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureMipmappedArray.cs/#L324">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureMipmappedArray_AddressMode1_" data-uid="ManagedCuda.CudaTextureMipmappedArray.AddressMode1*"></a>
+  <h4 id="ManagedCuda_CudaTextureMipmappedArray_AddressMode1" data-uid="ManagedCuda.CudaTextureMipmappedArray.AddressMode1">AddressMode1</h4>
+  <div class="markdown level1 summary"><p>AddressMode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUAddressMode AddressMode1 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUAddressMode.html">CUAddressMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureMipmappedArray_AddressMode2.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureMipmappedArray.AddressMode2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureMipmappedArray.cs/#L332">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureMipmappedArray_AddressMode2_" data-uid="ManagedCuda.CudaTextureMipmappedArray.AddressMode2*"></a>
+  <h4 id="ManagedCuda_CudaTextureMipmappedArray_AddressMode2" data-uid="ManagedCuda.CudaTextureMipmappedArray.AddressMode2">AddressMode2</h4>
+  <div class="markdown level1 summary"><p>AddressMode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUAddressMode AddressMode2 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUAddressMode.html">CUAddressMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureMipmappedArray_Array.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureMipmappedArray.Array%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureMipmappedArray.cs/#L373">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureMipmappedArray_Array_" data-uid="ManagedCuda.CudaTextureMipmappedArray.Array*"></a>
+  <h4 id="ManagedCuda_CudaTextureMipmappedArray_Array" data-uid="ManagedCuda.CudaTextureMipmappedArray.Array">Array</h4>
+  <div class="markdown level1 summary"><p>Array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaMipmappedArray Array { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaMipmappedArray.html">CudaMipmappedArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureMipmappedArray_CUFuntion.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureMipmappedArray.CUFuntion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureMipmappedArray.cs/#L365">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureMipmappedArray_CUFuntion_" data-uid="ManagedCuda.CudaTextureMipmappedArray.CUFuntion*"></a>
+  <h4 id="ManagedCuda_CudaTextureMipmappedArray_CUFuntion" data-uid="ManagedCuda.CudaTextureMipmappedArray.CUFuntion">CUFuntion</h4>
+  <div class="markdown level1 summary"><p>CUFuntion</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUfunction CUFuntion { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUfunction.html">CUfunction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureMipmappedArray_Filtermode.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureMipmappedArray.Filtermode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureMipmappedArray.cs/#L341">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureMipmappedArray_Filtermode_" data-uid="ManagedCuda.CudaTextureMipmappedArray.Filtermode*"></a>
+  <h4 id="ManagedCuda_CudaTextureMipmappedArray_Filtermode" data-uid="ManagedCuda.CudaTextureMipmappedArray.Filtermode">Filtermode</h4>
+  <div class="markdown level1 summary"><p>Filtermode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUFilterMode Filtermode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUFilterMode.html">CUFilterMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureMipmappedArray_Flags.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureMipmappedArray.Flags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureMipmappedArray.cs/#L308">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureMipmappedArray_Flags_" data-uid="ManagedCuda.CudaTextureMipmappedArray.Flags*"></a>
+  <h4 id="ManagedCuda_CudaTextureMipmappedArray_Flags" data-uid="ManagedCuda.CudaTextureMipmappedArray.Flags">Flags</h4>
+  <div class="markdown level1 summary"><p>Flags</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUTexRefSetFlags Flags { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUTexRefSetFlags.html">CUTexRefSetFlags</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureMipmappedArray_MaxAniso.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureMipmappedArray.MaxAniso%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureMipmappedArray.cs/#L381">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureMipmappedArray_MaxAniso_" data-uid="ManagedCuda.CudaTextureMipmappedArray.MaxAniso*"></a>
+  <h4 id="ManagedCuda_CudaTextureMipmappedArray_MaxAniso" data-uid="ManagedCuda.CudaTextureMipmappedArray.MaxAniso">MaxAniso</h4>
+  <div class="markdown level1 summary"><p>MaxAniso</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint MaxAniso { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureMipmappedArray_MaxMipmapLevelClamp.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureMipmappedArray.MaxMipmapLevelClamp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureMipmappedArray.cs/#L413">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureMipmappedArray_MaxMipmapLevelClamp_" data-uid="ManagedCuda.CudaTextureMipmappedArray.MaxMipmapLevelClamp*"></a>
+  <h4 id="ManagedCuda_CudaTextureMipmappedArray_MaxMipmapLevelClamp" data-uid="ManagedCuda.CudaTextureMipmappedArray.MaxMipmapLevelClamp">MaxMipmapLevelClamp</h4>
+  <div class="markdown level1 summary"><p>MaxMipmapLevelClamp</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MaxMipmapLevelClamp { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureMipmappedArray_MinMipmapLevelClamp.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureMipmappedArray.MinMipmapLevelClamp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureMipmappedArray.cs/#L405">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureMipmappedArray_MinMipmapLevelClamp_" data-uid="ManagedCuda.CudaTextureMipmappedArray.MinMipmapLevelClamp*"></a>
+  <h4 id="ManagedCuda_CudaTextureMipmappedArray_MinMipmapLevelClamp" data-uid="ManagedCuda.CudaTextureMipmappedArray.MinMipmapLevelClamp">MinMipmapLevelClamp</h4>
+  <div class="markdown level1 summary"><p>MinMipmapLevelClamp</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MinMipmapLevelClamp { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureMipmappedArray_MipmapFiltermode.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureMipmappedArray.MipmapFiltermode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureMipmappedArray.cs/#L389">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureMipmappedArray_MipmapFiltermode_" data-uid="ManagedCuda.CudaTextureMipmappedArray.MipmapFiltermode*"></a>
+  <h4 id="ManagedCuda_CudaTextureMipmappedArray_MipmapFiltermode" data-uid="ManagedCuda.CudaTextureMipmappedArray.MipmapFiltermode">MipmapFiltermode</h4>
+  <div class="markdown level1 summary"><p>Mipmap Filtermode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUFilterMode MipmapFiltermode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUFilterMode.html">CUFilterMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureMipmappedArray_MipmapLevelBias.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureMipmappedArray.MipmapLevelBias%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureMipmappedArray.cs/#L397">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureMipmappedArray_MipmapLevelBias_" data-uid="ManagedCuda.CudaTextureMipmappedArray.MipmapLevelBias*"></a>
+  <h4 id="ManagedCuda_CudaTextureMipmappedArray_MipmapLevelBias" data-uid="ManagedCuda.CudaTextureMipmappedArray.MipmapLevelBias">MipmapLevelBias</h4>
+  <div class="markdown level1 summary"><p>MipmapLevelBias</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MipmapLevelBias { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureMipmappedArray_Module.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureMipmappedArray.Module%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureMipmappedArray.cs/#L357">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureMipmappedArray_Module_" data-uid="ManagedCuda.CudaTextureMipmappedArray.Module*"></a>
+  <h4 id="ManagedCuda_CudaTextureMipmappedArray_Module" data-uid="ManagedCuda.CudaTextureMipmappedArray.Module">Module</h4>
+  <div class="markdown level1 summary"><p>Module</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUmodule Module { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUmodule.html">CUmodule</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureMipmappedArray_Name.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureMipmappedArray.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureMipmappedArray.cs/#L349">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureMipmappedArray_Name_" data-uid="ManagedCuda.CudaTextureMipmappedArray.Name*"></a>
+  <h4 id="ManagedCuda_CudaTextureMipmappedArray_Name" data-uid="ManagedCuda.CudaTextureMipmappedArray.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureMipmappedArray_TextureReference.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureMipmappedArray.TextureReference%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureMipmappedArray.cs/#L300">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureMipmappedArray_TextureReference_" data-uid="ManagedCuda.CudaTextureMipmappedArray.TextureReference*"></a>
+  <h4 id="ManagedCuda_CudaTextureMipmappedArray_TextureReference" data-uid="ManagedCuda.CudaTextureMipmappedArray.TextureReference">TextureReference</h4>
+  <div class="markdown level1 summary"><p>TextureReference</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUtexref TextureReference { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUtexref.html">CUtexref</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureMipmappedArray_Dispose.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureMipmappedArray.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureMipmappedArray.cs/#L273">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureMipmappedArray_Dispose_" data-uid="ManagedCuda.CudaTextureMipmappedArray.Dispose*"></a>
+  <h4 id="ManagedCuda_CudaTextureMipmappedArray_Dispose" data-uid="ManagedCuda.CudaTextureMipmappedArray.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Dispose</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureMipmappedArray_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureMipmappedArray.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureMipmappedArray.cs/#L283">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureMipmappedArray_Dispose_" data-uid="ManagedCuda.CudaTextureMipmappedArray.Dispose*"></a>
+  <h4 id="ManagedCuda_CudaTextureMipmappedArray_Dispose_System_Boolean_" data-uid="ManagedCuda.CudaTextureMipmappedArray.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>For IDisposable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool fDisposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">fDisposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureMipmappedArray_Finalize.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureMipmappedArray.Finalize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureMipmappedArray.cs/#L263">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaTextureMipmappedArray_Finalize_" data-uid="ManagedCuda.CudaTextureMipmappedArray.Finalize*"></a>
+  <h4 id="ManagedCuda_CudaTextureMipmappedArray_Finalize" data-uid="ManagedCuda.CudaTextureMipmappedArray.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"><p>For dispose</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaTextureMipmappedArray.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaTextureMipmappedArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaTextureMipmappedArray.cs/#L34" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

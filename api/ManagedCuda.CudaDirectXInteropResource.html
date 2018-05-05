@@ -1,0 +1,1125 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CudaDirectXInteropResource
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CudaDirectXInteropResource
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.CudaDirectXInteropResource">
+  
+  
+  <h1 id="ManagedCuda_CudaDirectXInteropResource" data-uid="ManagedCuda.CudaDirectXInteropResource" class="text-break">Class CudaDirectXInteropResource
+  </h1>
+  <div class="markdown level0 summary"><p>Wrapper for a CUgraphicsResource (directX)</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CudaDirectXInteropResource</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="ManagedCuda.ICudaGraphicsInteropResource.html">ICudaGraphicsInteropResource</a></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.html">ManagedCuda</a></h6>
+  <h6><strong>Assembly</strong>: ManagedCuda.dll</h6>
+  <h5 id="ManagedCuda_CudaDirectXInteropResource_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CudaDirectXInteropResource : ICudaGraphicsInteropResource, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDirectXInteropResource__ctor_System_IntPtr_ManagedCuda_BasicTypes_CUGraphicsRegisterFlags_ManagedCuda_CudaContext_DirectXVersion_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDirectXInteropResource.%23ctor(System.IntPtr%2CManagedCuda.BasicTypes.CUGraphicsRegisterFlags%2CManagedCuda.CudaContext.DirectXVersion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDirectXInteropResource.cs/#L52">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDirectXInteropResource__ctor_" data-uid="ManagedCuda.CudaDirectXInteropResource.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaDirectXInteropResource__ctor_System_IntPtr_ManagedCuda_BasicTypes_CUGraphicsRegisterFlags_ManagedCuda_CudaContext_DirectXVersion_" data-uid="ManagedCuda.CudaDirectXInteropResource.#ctor(System.IntPtr,ManagedCuda.BasicTypes.CUGraphicsRegisterFlags,ManagedCuda.CudaContext.DirectXVersion)">CudaDirectXInteropResource(IntPtr, CUGraphicsRegisterFlags, CudaContext.DirectXVersion)</h4>
+  <div class="markdown level1 summary"><p>Registers a new graphics interop resource for interop with DirectX</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaDirectXInteropResource(IntPtr d3dResource, CUGraphicsRegisterFlags flags, CudaContext.DirectXVersion version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">d3dResource</span></td>
+        <td><p>DirectX resource to register</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUGraphicsRegisterFlags.html">CUGraphicsRegisterFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>register Flags</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaContext.DirectXVersion.html">CudaContext.DirectXVersion</a></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>DirectX version</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDirectXInteropResource__ctor_System_IntPtr_ManagedCuda_BasicTypes_CUGraphicsRegisterFlags_ManagedCuda_CudaContext_DirectXVersion_ManagedCuda_BasicTypes_CUGraphicsMapResourceFlags_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDirectXInteropResource.%23ctor(System.IntPtr%2CManagedCuda.BasicTypes.CUGraphicsRegisterFlags%2CManagedCuda.CudaContext.DirectXVersion%2CManagedCuda.BasicTypes.CUGraphicsMapResourceFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDirectXInteropResource.cs/#L89">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDirectXInteropResource__ctor_" data-uid="ManagedCuda.CudaDirectXInteropResource.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaDirectXInteropResource__ctor_System_IntPtr_ManagedCuda_BasicTypes_CUGraphicsRegisterFlags_ManagedCuda_CudaContext_DirectXVersion_ManagedCuda_BasicTypes_CUGraphicsMapResourceFlags_" data-uid="ManagedCuda.CudaDirectXInteropResource.#ctor(System.IntPtr,ManagedCuda.BasicTypes.CUGraphicsRegisterFlags,ManagedCuda.CudaContext.DirectXVersion,ManagedCuda.BasicTypes.CUGraphicsMapResourceFlags)">CudaDirectXInteropResource(IntPtr, CUGraphicsRegisterFlags, CudaContext.DirectXVersion, CUGraphicsMapResourceFlags)</h4>
+  <div class="markdown level1 summary"><p>Registers a new graphics interop resource for interop with DirectX</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaDirectXInteropResource(IntPtr d3dResource, CUGraphicsRegisterFlags flags, CudaContext.DirectXVersion version, CUGraphicsMapResourceFlags mapFlags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">d3dResource</span></td>
+        <td><p>DirectX resource to register</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUGraphicsRegisterFlags.html">CUGraphicsRegisterFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>register Flags</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaContext.DirectXVersion.html">CudaContext.DirectXVersion</a></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>DirectX version</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUGraphicsMapResourceFlags.html">CUGraphicsMapResourceFlags</a></td>
+        <td><span class="parametername">mapFlags</span></td>
+        <td><p>resource mapping flags</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDirectXInteropResource_CUgraphicsResource.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDirectXInteropResource.CUgraphicsResource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDirectXInteropResource.cs/#L520">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDirectXInteropResource_CUgraphicsResource_" data-uid="ManagedCuda.CudaDirectXInteropResource.CUgraphicsResource*"></a>
+  <h4 id="ManagedCuda_CudaDirectXInteropResource_CUgraphicsResource" data-uid="ManagedCuda.CudaDirectXInteropResource.CUgraphicsResource">CUgraphicsResource</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUgraphicsResource CUgraphicsResource { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUgraphicsResource.html">CUgraphicsResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDirectXInteropResource_IsMapped.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDirectXInteropResource.IsMapped%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDirectXInteropResource.cs/#L503">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDirectXInteropResource_IsMapped_" data-uid="ManagedCuda.CudaDirectXInteropResource.IsMapped*"></a>
+  <h4 id="ManagedCuda_CudaDirectXInteropResource_IsMapped" data-uid="ManagedCuda.CudaDirectXInteropResource.IsMapped">IsMapped</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMapped { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDirectXInteropResource_IsRegistered.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDirectXInteropResource.IsRegistered%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDirectXInteropResource.cs/#L512">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDirectXInteropResource_IsRegistered_" data-uid="ManagedCuda.CudaDirectXInteropResource.IsRegistered*"></a>
+  <h4 id="ManagedCuda_CudaDirectXInteropResource_IsRegistered" data-uid="ManagedCuda.CudaDirectXInteropResource.IsRegistered">IsRegistered</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRegistered { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDirectXInteropResource_Dispose.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDirectXInteropResource.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDirectXInteropResource.cs/#L109">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDirectXInteropResource_Dispose_" data-uid="ManagedCuda.CudaDirectXInteropResource.Dispose*"></a>
+  <h4 id="ManagedCuda_CudaDirectXInteropResource_Dispose" data-uid="ManagedCuda.CudaDirectXInteropResource.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Dispose</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDirectXInteropResource_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDirectXInteropResource.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDirectXInteropResource.cs/#L119">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDirectXInteropResource_Dispose_" data-uid="ManagedCuda.CudaDirectXInteropResource.Dispose*"></a>
+  <h4 id="ManagedCuda_CudaDirectXInteropResource_Dispose_System_Boolean_" data-uid="ManagedCuda.CudaDirectXInteropResource.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>For IDisposable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool fDisposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">fDisposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDirectXInteropResource_Finalize.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDirectXInteropResource.Finalize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDirectXInteropResource.cs/#L99">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDirectXInteropResource_Finalize_" data-uid="ManagedCuda.CudaDirectXInteropResource.Finalize*"></a>
+  <h4 id="ManagedCuda_CudaDirectXInteropResource_Finalize" data-uid="ManagedCuda.CudaDirectXInteropResource.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"><p>For dispose</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDirectXInteropResource_GetCUgraphicsResource.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDirectXInteropResource.GetCUgraphicsResource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDirectXInteropResource.cs/#L477">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDirectXInteropResource_GetCUgraphicsResource_" data-uid="ManagedCuda.CudaDirectXInteropResource.GetCUgraphicsResource*"></a>
+  <h4 id="ManagedCuda_CudaDirectXInteropResource_GetCUgraphicsResource" data-uid="ManagedCuda.CudaDirectXInteropResource.GetCUgraphicsResource">GetCUgraphicsResource()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUgraphicsResource GetCUgraphicsResource()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUgraphicsResource.html">CUgraphicsResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDirectXInteropResource_GetMappedArray1D_System_UInt32_System_UInt32_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDirectXInteropResource.GetMappedArray1D(System.UInt32%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDirectXInteropResource.cs/#L322">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDirectXInteropResource_GetMappedArray1D_" data-uid="ManagedCuda.CudaDirectXInteropResource.GetMappedArray1D*"></a>
+  <h4 id="ManagedCuda_CudaDirectXInteropResource_GetMappedArray1D_System_UInt32_System_UInt32_" data-uid="ManagedCuda.CudaDirectXInteropResource.GetMappedArray1D(System.UInt32,System.UInt32)">GetMappedArray1D(UInt32, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Returns a CudaArray1D through which the subresource of the mapped graphics resource resource which
+corresponds to array index <code>arrayIndex</code> and mipmap level <code>mipLevel</code> may be accessed. The pointer value in <code>CudaArray1D</code>
+may change every time that <code>resource</code> is mapped.<p>
+If the resource is not a texture then it cannot be accessed via an array and <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMappedAsArray">ErrorNotMappedAsArray</a>
+exception is thrwon. If <code>arrayIndex</code> is not a valid array index for the resource then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>
+exception is thrwon. If <code>mipLevel</code> is not a valid mipmap level for the resource then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>
+exception is thrwon. If the resource is not mapped then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMapped">ErrorNotMapped</a> exception is thrwon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaArray1D GetMappedArray1D(uint arrayIndex, uint mipLevel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">arrayIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">mipLevel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaArray1D.html">CudaArray1D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDirectXInteropResource_GetMappedArray2D_System_UInt32_System_UInt32_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDirectXInteropResource.GetMappedArray2D(System.UInt32%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDirectXInteropResource.cs/#L351">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDirectXInteropResource_GetMappedArray2D_" data-uid="ManagedCuda.CudaDirectXInteropResource.GetMappedArray2D*"></a>
+  <h4 id="ManagedCuda_CudaDirectXInteropResource_GetMappedArray2D_System_UInt32_System_UInt32_" data-uid="ManagedCuda.CudaDirectXInteropResource.GetMappedArray2D(System.UInt32,System.UInt32)">GetMappedArray2D(UInt32, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Returns a CudaArray2D through which the subresource of the mapped graphics resource resource which
+corresponds to array index <code>arrayIndex</code> and mipmap level <code>mipLevel</code> may be accessed. The pointer value in <code>CudaArray2D</code>
+may change every time that <code>resource</code> is mapped.<p>
+If the resource is not a texture then it cannot be accessed via an array and <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMappedAsArray">ErrorNotMappedAsArray</a>
+exception is thrwon. If <code>arrayIndex</code> is not a valid array index for the resource then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>
+exception is thrwon. If <code>mipLevel</code> is not a valid mipmap level for the resource then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>
+exception is thrwon. If the resource is not mapped then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMapped">ErrorNotMapped</a> exception is thrwon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaArray2D GetMappedArray2D(uint arrayIndex, uint mipLevel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">arrayIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">mipLevel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaArray2D.html">CudaArray2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDirectXInteropResource_GetMappedArray3D_System_UInt32_System_UInt32_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDirectXInteropResource.GetMappedArray3D(System.UInt32%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDirectXInteropResource.cs/#L380">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDirectXInteropResource_GetMappedArray3D_" data-uid="ManagedCuda.CudaDirectXInteropResource.GetMappedArray3D*"></a>
+  <h4 id="ManagedCuda_CudaDirectXInteropResource_GetMappedArray3D_System_UInt32_System_UInt32_" data-uid="ManagedCuda.CudaDirectXInteropResource.GetMappedArray3D(System.UInt32,System.UInt32)">GetMappedArray3D(UInt32, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Returns a CudaArray3D through which the subresource of the mapped graphics resource resource which
+corresponds to array index <code>arrayIndex</code> and mipmap level <code>mipLevel</code> may be accessed. The pointer value in <code>CudaArray3D</code>
+may change every time that <code>resource</code> is mapped.<p>
+If the resource is not a texture then it cannot be accessed via an array and <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMappedAsArray">ErrorNotMappedAsArray</a>
+exception is thrwon. If <code>arrayIndex</code> is not a valid array index for the resource then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>
+exception is thrwon. If <code>mipLevel</code> is not a valid mipmap level for the resource then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>
+exception is thrwon. If the resource is not mapped then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMapped">ErrorNotMapped</a> exception is thrwon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaArray3D GetMappedArray3D(uint arrayIndex, uint mipLevel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">arrayIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">mipLevel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaArray3D.html">CudaArray3D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDirectXInteropResource_GetMappedCUArray_System_UInt32_System_UInt32_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDirectXInteropResource.GetMappedCUArray(System.UInt32%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDirectXInteropResource.cs/#L435">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDirectXInteropResource_GetMappedCUArray_" data-uid="ManagedCuda.CudaDirectXInteropResource.GetMappedCUArray*"></a>
+  <h4 id="ManagedCuda_CudaDirectXInteropResource_GetMappedCUArray_System_UInt32_System_UInt32_" data-uid="ManagedCuda.CudaDirectXInteropResource.GetMappedCUArray(System.UInt32,System.UInt32)">GetMappedCUArray(UInt32, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Returns a CUarray handle through which the subresource of the mapped graphics resource resource which
+corresponds to array index <code>arrayIndex</code> and mipmap level <code>mipLevel</code> may be accessed. The pointer value in <code>CUarray</code>
+may change every time that <code>resource</code> is mapped.<p>
+If the resource is not a texture then it cannot be accessed via an array and <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMappedAsArray">ErrorNotMappedAsArray</a>
+exception is thrwon. If <code>arrayIndex</code> is not a valid array index for the resource then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>
+exception is thrwon. If <code>mipLevel</code> is not a valid mipmap level for the resource then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>
+exception is thrwon. If the resource is not mapped then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMapped">ErrorNotMapped</a> exception is thrwon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUarray GetMappedCUArray(uint arrayIndex, uint mipLevel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">arrayIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">mipLevel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUarray.html">CUarray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDirectXInteropResource_GetMappedCUMipmappedArray.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDirectXInteropResource.GetMappedCUMipmappedArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDirectXInteropResource.cs/#L459">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDirectXInteropResource_GetMappedCUMipmappedArray_" data-uid="ManagedCuda.CudaDirectXInteropResource.GetMappedCUMipmappedArray*"></a>
+  <h4 id="ManagedCuda_CudaDirectXInteropResource_GetMappedCUMipmappedArray" data-uid="ManagedCuda.CudaDirectXInteropResource.GetMappedCUMipmappedArray">GetMappedCUMipmappedArray()</h4>
+  <div class="markdown level1 summary"><p>Returns a CUmipmappedArray handle through which the subresource of the mapped graphics resource resource which
+corresponds to array index <code>arrayIndex</code> and mipmap level <code>mipLevel</code> may be accessed. The pointer value in <code>CUmipmappedArray</code>
+may change every time that <code>resource</code> is mapped.<p>
+If the resource is not a texture then it cannot be accessed via an array and <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMappedAsArray">ErrorNotMappedAsArray</a>
+exception is thrwon. If <code>arrayIndex</code> is not a valid array index for the resource then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>
+exception is thrwon. If <code>mipLevel</code> is not a valid mipmap level for the resource then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>
+exception is thrwon. If the resource is not mapped then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMapped">ErrorNotMapped</a> exception is thrwon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUmipmappedArray GetMappedCUMipmappedArray()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUmipmappedArray.html">CUmipmappedArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDirectXInteropResource_GetMappedMipmappedArray_ManagedCuda_BasicTypes_CUArrayFormat_ManagedCuda_CudaMipmappedArrayNumChannels_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDirectXInteropResource.GetMappedMipmappedArray(ManagedCuda.BasicTypes.CUArrayFormat%2CManagedCuda.CudaMipmappedArrayNumChannels)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDirectXInteropResource.cs/#L407">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDirectXInteropResource_GetMappedMipmappedArray_" data-uid="ManagedCuda.CudaDirectXInteropResource.GetMappedMipmappedArray*"></a>
+  <h4 id="ManagedCuda_CudaDirectXInteropResource_GetMappedMipmappedArray_ManagedCuda_BasicTypes_CUArrayFormat_ManagedCuda_CudaMipmappedArrayNumChannels_" data-uid="ManagedCuda.CudaDirectXInteropResource.GetMappedMipmappedArray(ManagedCuda.BasicTypes.CUArrayFormat,ManagedCuda.CudaMipmappedArrayNumChannels)">GetMappedMipmappedArray(CUArrayFormat, CudaMipmappedArrayNumChannels)</h4>
+  <div class="markdown level1 summary"><p>Returns a CudaMipmappedArray through which the subresource of the mapped graphics resource resource which
+corresponds to array index <code>arrayIndex</code> and mipmap level <code>mipLevel</code> may be accessed. The pointer value in <code>CudaMipmappedArray</code>
+may change every time that <code>resource</code> is mapped.<p>
+If the resource is not a texture then it cannot be accessed via an array and <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMappedAsArray">ErrorNotMappedAsArray</a>
+exception is thrwon. If <code>arrayIndex</code> is not a valid array index for the resource then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>
+exception is thrwon. If <code>mipLevel</code> is not a valid mipmap level for the resource then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>
+exception is thrwon. If the resource is not mapped then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMapped">ErrorNotMapped</a> exception is thrwon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaMipmappedArray GetMappedMipmappedArray(CUArrayFormat format, CudaMipmappedArrayNumChannels numChannels)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUArrayFormat.html">CUArrayFormat</a></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaMipmappedArrayNumChannels.html">CudaMipmappedArrayNumChannels</a></td>
+        <td><span class="parametername">numChannels</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaMipmappedArray.html">CudaMipmappedArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDirectXInteropResource_GetMappedPointer.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDirectXInteropResource.GetMappedPointer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDirectXInteropResource.cs/#L295">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDirectXInteropResource_GetMappedPointer_" data-uid="ManagedCuda.CudaDirectXInteropResource.GetMappedPointer*"></a>
+  <h4 id="ManagedCuda_CudaDirectXInteropResource_GetMappedPointer" data-uid="ManagedCuda.CudaDirectXInteropResource.GetMappedPointer">GetMappedPointer()</h4>
+  <div class="markdown level1 summary"><p>Returns a <code>CUdeviceptr</code>, a device pointer through which the mapped graphics resource may be accessed.
+The value set in <code>devicePtr</code> may
+change every time that the resource is mapped.<p>
+If the resource is not a buffer then it cannot be accessed via a pointer and <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMappedAsPointer">ErrorNotMappedAsPointer</a>
+exception is thrown. If the resource is not mapped then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMapped">ErrorNotMapped</a> exception is thrown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUdeviceptr GetMappedPointer()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDirectXInteropResource_GetMappedPointer_ManagedCuda_BasicTypes_CUdeviceptr__ManagedCuda_BasicTypes_SizeT__.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDirectXInteropResource.GetMappedPointer(ManagedCuda.BasicTypes.CUdeviceptr%40%2CManagedCuda.BasicTypes.SizeT%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDirectXInteropResource.cs/#L274">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDirectXInteropResource_GetMappedPointer_" data-uid="ManagedCuda.CudaDirectXInteropResource.GetMappedPointer*"></a>
+  <h4 id="ManagedCuda_CudaDirectXInteropResource_GetMappedPointer_ManagedCuda_BasicTypes_CUdeviceptr__ManagedCuda_BasicTypes_SizeT__" data-uid="ManagedCuda.CudaDirectXInteropResource.GetMappedPointer(ManagedCuda.BasicTypes.CUdeviceptr@,ManagedCuda.BasicTypes.SizeT@)">GetMappedPointer(out CUdeviceptr, out SizeT)</h4>
+  <div class="markdown level1 summary"><p>Returns in <code>devicePtr</code> a pointer through which the mapped graphics resource may be accessed. Returns
+in <code>size</code> the size of the memory in bytes which may be accessed from that pointer. The value set in <code>devicePtr</code> may
+change every time that the resource is mapped.<p>
+If the resource is not a buffer then it cannot be accessed via a pointer and <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMappedAsPointer">ErrorNotMappedAsPointer</a>
+exception is thrown. If the resource is not mapped then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMapped">ErrorNotMapped</a> exception is thrown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetMappedPointer(out CUdeviceptr devicePtr, out SizeT size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">devicePtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDirectXInteropResource_GetMappedPointer__1.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDirectXInteropResource.GetMappedPointer%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDirectXInteropResource.cs/#L249">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDirectXInteropResource_GetMappedPointer_" data-uid="ManagedCuda.CudaDirectXInteropResource.GetMappedPointer*"></a>
+  <h4 id="ManagedCuda_CudaDirectXInteropResource_GetMappedPointer__1" data-uid="ManagedCuda.CudaDirectXInteropResource.GetMappedPointer``1">GetMappedPointer&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Returns device variable through which the mapped graphics resource may be accessed. <p>
+The pointer value in the device variable may change every time that the resource is mapped.<p>
+If the resource is not a buffer then it cannot be accessed via a pointer and <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMappedAsPointer">ErrorNotMappedAsPointer</a>
+exception is thrown. If the resource is not mapped then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMapped">ErrorNotMapped</a> exception is thrown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaDeviceVariable&lt;T&gt; GetMappedPointer&lt;T&gt;()
+
+    where T : struct</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDirectXInteropResource_Map.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDirectXInteropResource.Map%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDirectXInteropResource.cs/#L172">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDirectXInteropResource_Map_" data-uid="ManagedCuda.CudaDirectXInteropResource.Map*"></a>
+  <h4 id="ManagedCuda_CudaDirectXInteropResource_Map" data-uid="ManagedCuda.CudaDirectXInteropResource.Map">Map()</h4>
+  <div class="markdown level1 summary"><p>Maps the graphics resource for access by CUDA.<p>
+The resource may be accessed by CUDA until it is unmapped. The graphics API from which the resource
+was registered should not access any resources while they are mapped by CUDA. If an application does
+so, the results are undefined.<p>
+This function provides the synchronization guarantee that any graphics calls issued before <a class="xref" href="ManagedCuda.CudaDirectXInteropResource.html#ManagedCuda_CudaDirectXInteropResource_Map">Map()</a>
+will complete before any subsequent CUDA work issued in <code>stream</code> begins.<p>
+If the resource is presently mapped for access by CUDA then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorAlreadyMapped">ErrorAlreadyMapped</a> exception is thrown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Map()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDirectXInteropResource_Map_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDirectXInteropResource.Map(ManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDirectXInteropResource.cs/#L152">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDirectXInteropResource_Map_" data-uid="ManagedCuda.CudaDirectXInteropResource.Map*"></a>
+  <h4 id="ManagedCuda_CudaDirectXInteropResource_Map_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaDirectXInteropResource.Map(ManagedCuda.BasicTypes.CUstream)">Map(CUstream)</h4>
+  <div class="markdown level1 summary"><p>Maps the graphics resource for access by CUDA.<p>
+The resource may be accessed by CUDA until it is unmapped. The graphics API from which the resource
+was registered should not access any resources while they are mapped by CUDA. If an application does
+so, the results are undefined.<p>
+This function provides the synchronization guarantee that any graphics calls issued before <a class="xref" href="ManagedCuda.CudaDirectXInteropResource.html#ManagedCuda_CudaDirectXInteropResource_Map">Map()</a>
+will complete before any subsequent CUDA work issued in <code>stream</code> begins.<p>
+If the resource is presently mapped for access by CUDA then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorAlreadyMapped">ErrorAlreadyMapped</a> exception is thrown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Map(CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDirectXInteropResource_SetIsMapped.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDirectXInteropResource.SetIsMapped%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDirectXInteropResource.cs/#L485">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDirectXInteropResource_SetIsMapped_" data-uid="ManagedCuda.CudaDirectXInteropResource.SetIsMapped*"></a>
+  <h4 id="ManagedCuda_CudaDirectXInteropResource_SetIsMapped" data-uid="ManagedCuda.CudaDirectXInteropResource.SetIsMapped">SetIsMapped()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIsMapped()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDirectXInteropResource_SetIsUnmapped.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDirectXInteropResource.SetIsUnmapped%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDirectXInteropResource.cs/#L493">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDirectXInteropResource_SetIsUnmapped_" data-uid="ManagedCuda.CudaDirectXInteropResource.SetIsUnmapped*"></a>
+  <h4 id="ManagedCuda_CudaDirectXInteropResource_SetIsUnmapped" data-uid="ManagedCuda.CudaDirectXInteropResource.SetIsUnmapped">SetIsUnmapped()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIsUnmapped()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDirectXInteropResource_SetMapFlags_ManagedCuda_BasicTypes_CUGraphicsMapResourceFlags_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDirectXInteropResource.SetMapFlags(ManagedCuda.BasicTypes.CUGraphicsMapResourceFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDirectXInteropResource.cs/#L214">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDirectXInteropResource_SetMapFlags_" data-uid="ManagedCuda.CudaDirectXInteropResource.SetMapFlags*"></a>
+  <h4 id="ManagedCuda_CudaDirectXInteropResource_SetMapFlags_ManagedCuda_BasicTypes_CUGraphicsMapResourceFlags_" data-uid="ManagedCuda.CudaDirectXInteropResource.SetMapFlags(ManagedCuda.BasicTypes.CUGraphicsMapResourceFlags)">SetMapFlags(CUGraphicsMapResourceFlags)</h4>
+  <div class="markdown level1 summary"><p>Set <code>flags</code> for mapping the graphics resource. <p>
+Changes to <code>flags</code> will take effect the next time <code>resource</code> is mapped. See <a class="xref" href="ManagedCuda.BasicTypes.CUGraphicsMapResourceFlags.html">CUGraphicsMapResourceFlags</a>. <p>
+If <code>resource</code> is presently mapped for access by CUDA then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorAlreadyMapped">ErrorAlreadyMapped</a> exception is thrown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMapFlags(CUGraphicsMapResourceFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUGraphicsMapResourceFlags.html">CUGraphicsMapResourceFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDirectXInteropResource_UnMap.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDirectXInteropResource.UnMap%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDirectXInteropResource.cs/#L203">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDirectXInteropResource_UnMap_" data-uid="ManagedCuda.CudaDirectXInteropResource.UnMap*"></a>
+  <h4 id="ManagedCuda_CudaDirectXInteropResource_UnMap" data-uid="ManagedCuda.CudaDirectXInteropResource.UnMap">UnMap()</h4>
+  <div class="markdown level1 summary"><p>Unmaps the graphics resource.<p>
+Once unmapped, the resources in <code>resources</code> may not be accessed by CUDA until they are mapped again.<p>
+This function provides the synchronization guarantee that any CUDA work issued in <code>stream</code> before <a class="xref" href="ManagedCuda.CudaDirectXInteropResource.html#ManagedCuda_CudaDirectXInteropResource_UnMap">UnMap()</a>
+will complete before any subsequently issued graphics work begins.<p>
+If the resource is not presently mapped for access by CUDA then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMapped">ErrorNotMapped</a> exception is thrown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnMap()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDirectXInteropResource_UnMap_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDirectXInteropResource.UnMap(ManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDirectXInteropResource.cs/#L185">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDirectXInteropResource_UnMap_" data-uid="ManagedCuda.CudaDirectXInteropResource.UnMap*"></a>
+  <h4 id="ManagedCuda_CudaDirectXInteropResource_UnMap_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaDirectXInteropResource.UnMap(ManagedCuda.BasicTypes.CUstream)">UnMap(CUstream)</h4>
+  <div class="markdown level1 summary"><p>Unmaps the graphics resource.<p>
+Once unmapped, the resource may not be accessed by CUDA until they are mapped again.<p>
+This function provides the synchronization guarantee that any CUDA work issued in <code>stream</code> before <a class="xref" href="ManagedCuda.CudaDirectXInteropResource.html#ManagedCuda_CudaDirectXInteropResource_UnMap">UnMap()</a>
+will complete before any subsequently issued graphics work begins.<p>
+If the resource is not presently mapped for access by CUDA then <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotMapped">ErrorNotMapped</a> exception is thrown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnMap(CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDirectXInteropResource_Unregister.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDirectXInteropResource.Unregister%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDirectXInteropResource.cs/#L227">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaDirectXInteropResource_Unregister_" data-uid="ManagedCuda.CudaDirectXInteropResource.Unregister*"></a>
+  <h4 id="ManagedCuda_CudaDirectXInteropResource_Unregister" data-uid="ManagedCuda.CudaDirectXInteropResource.Unregister">Unregister()</h4>
+  <div class="markdown level1 summary"><p>Unregisters the wrapped resource. Better use Dispose(), as the wrapper of the unregistered resource is of no use after unregistering.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Unregister()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="ManagedCuda.ICudaGraphicsInteropResource.html">ICudaGraphicsInteropResource</a>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaDirectXInteropResource.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaDirectXInteropResource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaDirectXInteropResource.cs/#L34" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

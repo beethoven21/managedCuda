@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Enum CUJITOption
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Enum CUJITOption
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.BasicTypes.CUJITOption">
+  
+  
+  <h1 id="ManagedCuda_BasicTypes_CUJITOption" data-uid="ManagedCuda.BasicTypes.CUJITOption" class="text-break">Enum CUJITOption
+  </h1>
+  <div class="markdown level0 summary"><p>Online compiler options</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.BasicTypes.html">ManagedCuda.BasicTypes</a></h6>
+  <h6><strong>Assembly</strong>: ManagedCuda.dll</h6>
+  <h5 id="ManagedCuda_BasicTypes_CUJITOption_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum CUJITOption</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUJITOption_ErrorLogBuffer">ErrorLogBuffer</td>
+        <td><p>Pointer to a buffer in which to print any log messages from PTXAS that
+reflect errors (the buffer size is specified via option
+::CU_JIT_ERROR_LOG_BUFFER_SIZE_BYTES)</p>
+<p>Option type: char*</p>
+<p>Applies to: compiler and linker</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUJITOption_ErrorLogBufferSizeBytes">ErrorLogBufferSizeBytes</td>
+        <td><p>IN: Log buffer size in bytes.  Log messages will be capped at this size
+(including null terminator)</p>
+<p>OUT: Amount of log buffer filled with messages</p>
+<p>Option type: unsigned int</p>
+<p>Applies to: compiler and linker</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUJITOption_FallbackStrategy">FallbackStrategy</td>
+        <td><p>Specifies choice of fallback strategy if matching cubin is not found.
+Choice is based on supplied ::CUjit_fallback_enum.</p>
+<p>Option type: unsigned int for enumerated type ::CUjit_fallback_enum</p>
+<p>Applies to: compiler only</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUJITOption_FastCompile">FastCompile</td>
+        <td><p>The below jit options are used for internal purposes only, in this version of CUDA</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUJITOption_GenerateDebugInfo">GenerateDebugInfo</td>
+        <td><p>Specifies whether to create debug information in output (-g) <p> (0: false, default)</p>
+<p>Option type: int</p>
+<p>Applies to: compiler and linker</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUJITOption_GenerateLineInfo">GenerateLineInfo</td>
+        <td><p>Generate line number information (-lineinfo) <p> (0: false, default)</p>
+<p>Option type: int</p>
+<p>Applies to: compiler only</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUJITOption_InfoLogBuffer">InfoLogBuffer</td>
+        <td><p>Pointer to a buffer in which to print any log messsages from PTXAS
+that are informational in nature (the buffer size is specified via
+option ::CU_JIT_INFO_LOG_BUFFER_SIZE_BYTES)</p>
+<p>Option type: char*</p>
+<p>Applies to: compiler and linker</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUJITOption_InfoLogBufferSizeBytes">InfoLogBufferSizeBytes</td>
+        <td><p>IN: Log buffer size in bytes.  Log messages will be capped at this size
+(including null terminator)</p>
+<p>OUT: Amount of log buffer filled with messages</p>
+<p>Option type: unsigned int</p>
+<p>Applies to: compiler and linker</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUJITOption_JITCacheMode">JITCacheMode</td>
+        <td><p>Specifies whether to enable caching explicitly (-dlcm)<p>
+Choice is based on supplied ::CUjit_cacheMode_enum.</p>
+<p>Option type: unsigned int for enumerated type ::CUjit_cacheMode_enum</p>
+<p>Applies to: compiler only</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUJITOption_LogVerbose">LogVerbose</td>
+        <td><p>Generate verbose log messages <p> (0: false, default)</p>
+<p>Option type: int</p>
+<p>Applies to: compiler and linker</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUJITOption_MaxRegisters">MaxRegisters</td>
+        <td><p>Max number of registers that a thread may use.</p>
+<p>Option type: unsigned int</p>
+<p>Applies to: compiler only</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUJITOption_NewSM3XOpt">NewSM3XOpt</td>
+        <td><p>The below jit options are used for internal purposes only, in this version of CUDA</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUJITOption_OptimizationLevel">OptimizationLevel</td>
+        <td><p>Level of optimizations to apply to generated code (0 - 4), with 4
+being the default and highest level of optimizations.</p>
+<p>Option type: unsigned int</p>
+<p>Applies to: compiler only</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUJITOption_Target">Target</td>
+        <td><p>Target is chosen based on supplied ::CUjit_target_enum. This option cannot be
+used with cuLink* APIs as the linker requires exact matches.</p>
+<p>Option type: unsigned int for enumerated type ::CUjit_target_enum</p>
+<p>Applies to: compiler and linker</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUJITOption_TargetFromContext">TargetFromContext</td>
+        <td><p>No option value required. Determines the target based on the current
+attached context (default)</p>
+<p>Option type: No option value needed</p>
+<p>Applies to: compiler and linker</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUJITOption_ThreadsPerBlock">ThreadsPerBlock</td>
+        <td><p>IN: Specifies minimum number of threads per block to target compilation
+for</p>
+<p>OUT: Returns the number of threads the compiler actually targeted.
+This restricts the resource utilization fo the compiler (e.g. max
+registers) such that a block with the given number of threads should be
+able to launch based on register limitations. Note, this option does not
+currently take into account any other resource limitations, such as
+shared memory utilization.</p>
+<p>Option type: unsigned int</p>
+<p>Applies to: compiler only</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUJITOption_WallTime">WallTime</td>
+        <td><p>Returns a float value in the option of the wall clock time, in
+milliseconds, spent creating the cubin<p>
+Option type: float</p>
+<p>Applies to: compiler and linker</p>
+</td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_BasicTypes_CUJITOption.md&amp;value=---%0Auid%3A%20ManagedCuda.BasicTypes.CUJITOption%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/BasicTypes.cs/#L3888" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

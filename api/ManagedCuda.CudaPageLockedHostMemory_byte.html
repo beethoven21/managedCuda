@@ -1,0 +1,1994 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CudaPageLockedHostMemory_byte
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CudaPageLockedHostMemory_byte
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte">
+  
+  
+  <h1 id="ManagedCuda_CudaPageLockedHostMemory_byte" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte" class="text-break">Class CudaPageLockedHostMemory_byte
+  </h1>
+  <div class="markdown level0 summary"><p>A variable located in page locked (pinned) host memory. Use this type of variabe for asynchronous memcpy.<p>
+Type: byte</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CudaPageLockedHostMemory_byte</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Byte</span>&gt;</div>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.html">ManagedCuda</a></h6>
+  <h6><strong>Assembly</strong>: ManagedCuda.dll</h6>
+  <h5 id="ManagedCuda_CudaPageLockedHostMemory_byte_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CudaPageLockedHostMemory_byte : IDisposable, IEnumerable&lt;byte&gt;, IEnumerable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte__ctor_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.%23ctor(ManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L70">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte__ctor_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte__ctor_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.#ctor(ManagedCuda.BasicTypes.SizeT)">CudaPageLockedHostMemory_byte(SizeT)</h4>
+  <div class="markdown level1 summary"><p>Creates a new CudaPageLockedHostMemory and allocates the memory on host. Using cuMemAllocHost</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaPageLockedHostMemory_byte(SizeT size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>In elements</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte__ctor_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUMemHostAllocFlags_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.%23ctor(ManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.CUMemHostAllocFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L53">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte__ctor_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte__ctor_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUMemHostAllocFlags_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.#ctor(ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.CUMemHostAllocFlags)">CudaPageLockedHostMemory_byte(SizeT, CUMemHostAllocFlags)</h4>
+  <div class="markdown level1 summary"><p>Creates a new CudaPageLockedHostMemory and allocates the memory on host. Using cuMemHostAlloc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaPageLockedHostMemory_byte(SizeT size, CUMemHostAllocFlags allocFlags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>In elements</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUMemHostAllocFlags.html">CUMemHostAllocFlags</a></td>
+        <td><span class="parametername">allocFlags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte__ctor_System_IntPtr_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.%23ctor(System.IntPtr%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L89">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte__ctor_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte__ctor_System_IntPtr_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.#ctor(System.IntPtr,ManagedCuda.BasicTypes.SizeT)">CudaPageLockedHostMemory_byte(IntPtr, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Creates a new CudaPageLockedHostMemory from an existing IntPtr. IntPtr must point to page locked memory!
+hostPointer won't be freed while disposing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaPageLockedHostMemory_byte(IntPtr hostPointer, SizeT size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">hostPointer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>In elements</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_IsOwner.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.IsOwner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L182">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_IsOwner_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.IsOwner*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_IsOwner" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.IsOwner">IsOwner</h4>
+  <div class="markdown level1 summary"><p>If the wrapper class instance is the owner of a CUDA handle, it will be destroyed while disposing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOwner { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_Item_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.Item(ManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L167">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_Item_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.Item*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_Item_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.Item(ManagedCuda.BasicTypes.SizeT)">Item[SizeT]</h4>
+  <div class="markdown level1 summary"><p>Access array per element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte this[SizeT index] { get; set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>index in elements</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_PinnedHostPointer.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.PinnedHostPointer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L141">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_PinnedHostPointer_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.PinnedHostPointer*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_PinnedHostPointer" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.PinnedHostPointer">PinnedHostPointer</h4>
+  <div class="markdown level1 summary"><p>Pointer to pinned host memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntPtr PinnedHostPointer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_Size.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.Size%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L157">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_Size_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.Size*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_Size" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.Size">Size</h4>
+  <div class="markdown level1 summary"><p>Size in elements</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SizeT Size { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_SizeInBytes.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.SizeInBytes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L149">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_SizeInBytes_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SizeInBytes*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_SizeInBytes" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SizeInBytes">SizeInBytes</h4>
+  <div class="markdown level1 summary"><p>Size in bytes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SizeT SizeInBytes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyFromArray1D_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyFromArray1D(ManagedCuda.BasicTypes.CUarray%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L436">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyFromArray1D_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyFromArray1D*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyFromArray1D_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyFromArray1D(ManagedCuda.BasicTypes.CUarray,ManagedCuda.BasicTypes.CUstream)">AsyncCopyFromArray1D(CUarray, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Asynchron copy 1D Array to host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyFromArray1D(CUarray deviceArray, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUarray.html">CUarray</a></td>
+        <td><span class="parametername">deviceArray</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyFromArray1D_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_CUstream_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyFromArray1D(ManagedCuda.BasicTypes.CUarray%2CManagedCuda.BasicTypes.CUstream%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L423">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyFromArray1D_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyFromArray1D*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyFromArray1D_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_CUstream_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyFromArray1D(ManagedCuda.BasicTypes.CUarray,ManagedCuda.BasicTypes.CUstream,ManagedCuda.BasicTypes.SizeT)">AsyncCopyFromArray1D(CUarray, CUstream, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Asynchron copy 1D Array to host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyFromArray1D(CUarray deviceArray, CUstream stream, SizeT offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUarray.html">CUarray</a></td>
+        <td><span class="parametername">deviceArray</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>bytes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyFromArray1D_ManagedCuda_CudaArray1D_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyFromArray1D(ManagedCuda.CudaArray1D%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L446">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyFromArray1D_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyFromArray1D*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyFromArray1D_ManagedCuda_CudaArray1D_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyFromArray1D(ManagedCuda.CudaArray1D,ManagedCuda.BasicTypes.CUstream)">AsyncCopyFromArray1D(CudaArray1D, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Asynchron copy 1D Array to host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyFromArray1D(CudaArray1D array, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaArray1D.html">CudaArray1D</a></td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyFromArray1D_ManagedCuda_CudaArray1D_ManagedCuda_BasicTypes_CUstream_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyFromArray1D(ManagedCuda.CudaArray1D%2CManagedCuda.BasicTypes.CUstream%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L457">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyFromArray1D_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyFromArray1D*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyFromArray1D_ManagedCuda_CudaArray1D_ManagedCuda_BasicTypes_CUstream_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyFromArray1D(ManagedCuda.CudaArray1D,ManagedCuda.BasicTypes.CUstream,ManagedCuda.BasicTypes.SizeT)">AsyncCopyFromArray1D(CudaArray1D, CUstream, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Asynchron copy 1D Array to host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyFromArray1D(CudaArray1D array, CUstream stream, SizeT offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaArray1D.html">CudaArray1D</a></td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>bytes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyFromDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyFromDevice(ManagedCuda.BasicTypes.CUdeviceptr%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L491">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyFromDevice_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyFromDevice*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyFromDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyFromDevice(ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUstream)">AsyncCopyFromDevice(CUdeviceptr, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Asynchron copy device to host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyFromDevice(CUdeviceptr devicePtr, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">devicePtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyFromDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyFromDevice(ManagedCuda.BasicTypes.CUdeviceptr%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L545">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyFromDevice_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyFromDevice*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyFromDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyFromDevice(ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.CUstream)">AsyncCopyFromDevice(CUdeviceptr, SizeT, SizeT, SizeT, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Asynchron copy device to host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyFromDevice(CUdeviceptr devicePtr, SizeT offsetSrc, SizeT offsetDest, SizeT aSizeInBytes, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">devicePtr</span></td>
+        <td><p>Pointer to device memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetSrc</span></td>
+        <td><p>Offset to source pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetDest</span></td>
+        <td><p>Offset to destination pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">aSizeInBytes</span></td>
+        <td><p>Bytes to copy</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyFromDevice_ManagedCuda_CudaDeviceVariable_System_Byte__ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyFromDevice(ManagedCuda.CudaDeviceVariable%7BSystem.Byte%7D%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L504">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyFromDevice_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyFromDevice*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyFromDevice_ManagedCuda_CudaDeviceVariable_System_Byte__ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyFromDevice(ManagedCuda.CudaDeviceVariable{System.Byte},ManagedCuda.BasicTypes.CUstream)">AsyncCopyFromDevice(CudaDeviceVariable&lt;Byte&gt;, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Asynchron copy device to host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyFromDevice(CudaDeviceVariable&lt;byte&gt; deviceVar, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Byte</span>&gt;</td>
+        <td><span class="parametername">deviceVar</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyFromDevice_ManagedCuda_CudaDeviceVariable_System_Byte__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyFromDevice(ManagedCuda.CudaDeviceVariable%7BSystem.Byte%7D%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L561">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyFromDevice_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyFromDevice*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyFromDevice_ManagedCuda_CudaDeviceVariable_System_Byte__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyFromDevice(ManagedCuda.CudaDeviceVariable{System.Byte},ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.CUstream)">AsyncCopyFromDevice(CudaDeviceVariable&lt;Byte&gt;, SizeT, SizeT, SizeT, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Asynchron copy device to host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyFromDevice(CudaDeviceVariable&lt;byte&gt; deviceVar, SizeT offsetSrc, SizeT offsetDest, SizeT aSizeInBytes, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Byte</span>&gt;</td>
+        <td><span class="parametername">deviceVar</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetSrc</span></td>
+        <td><p>Offset to source pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetDest</span></td>
+        <td><p>Offset to destination pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">aSizeInBytes</span></td>
+        <td><p>Bytes to copy</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyToArray1D_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyToArray1D(ManagedCuda.BasicTypes.CUarray%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L391">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyToArray1D_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyToArray1D*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyToArray1D_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyToArray1D(ManagedCuda.BasicTypes.CUarray,ManagedCuda.BasicTypes.CUstream)">AsyncCopyToArray1D(CUarray, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Asynchron copy host to 1D Array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyToArray1D(CUarray deviceArray, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUarray.html">CUarray</a></td>
+        <td><span class="parametername">deviceArray</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyToArray1D_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_CUstream_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyToArray1D(ManagedCuda.BasicTypes.CUarray%2CManagedCuda.BasicTypes.CUstream%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L378">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyToArray1D_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyToArray1D*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyToArray1D_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_CUstream_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyToArray1D(ManagedCuda.BasicTypes.CUarray,ManagedCuda.BasicTypes.CUstream,ManagedCuda.BasicTypes.SizeT)">AsyncCopyToArray1D(CUarray, CUstream, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Asynchron copy host to 1D Array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyToArray1D(CUarray deviceArray, CUstream stream, SizeT offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUarray.html">CUarray</a></td>
+        <td><span class="parametername">deviceArray</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>in bytes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyToArray1D_ManagedCuda_CudaArray1D_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyToArray1D(ManagedCuda.CudaArray1D%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L401">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyToArray1D_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyToArray1D*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyToArray1D_ManagedCuda_CudaArray1D_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyToArray1D(ManagedCuda.CudaArray1D,ManagedCuda.BasicTypes.CUstream)">AsyncCopyToArray1D(CudaArray1D, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Asynchron copy host to 1D Array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyToArray1D(CudaArray1D array, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaArray1D.html">CudaArray1D</a></td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyToArray1D_ManagedCuda_CudaArray1D_ManagedCuda_BasicTypes_CUstream_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyToArray1D(ManagedCuda.CudaArray1D%2CManagedCuda.BasicTypes.CUstream%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L412">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyToArray1D_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyToArray1D*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyToArray1D_ManagedCuda_CudaArray1D_ManagedCuda_BasicTypes_CUstream_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyToArray1D(ManagedCuda.CudaArray1D,ManagedCuda.BasicTypes.CUstream,ManagedCuda.BasicTypes.SizeT)">AsyncCopyToArray1D(CudaArray1D, CUstream, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Asynchron copy host to 1D Array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyToArray1D(CudaArray1D array, CUstream stream, SizeT offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaArray1D.html">CudaArray1D</a></td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>in bytes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyToDevice(ManagedCuda.BasicTypes.CUdeviceptr%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L468">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyToDevice_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyToDevice(ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUstream)">AsyncCopyToDevice(CUdeviceptr, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Asynchron Copy host to device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyToDevice(CUdeviceptr devicePtr, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">devicePtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyToDevice(ManagedCuda.BasicTypes.CUdeviceptr%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L516">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyToDevice_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyToDevice(ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.CUstream)">AsyncCopyToDevice(CUdeviceptr, SizeT, SizeT, SizeT, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Asynchron Copy host to device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyToDevice(CUdeviceptr devicePtr, SizeT offsetSrc, SizeT offsetDest, SizeT aSizeInBytes, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">devicePtr</span></td>
+        <td><p>Pointer to device memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetSrc</span></td>
+        <td><p>Offset to source pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetDest</span></td>
+        <td><p>Offset to destination pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">aSizeInBytes</span></td>
+        <td><p>Bytes to copy</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyToDevice_ManagedCuda_CudaDeviceVariable_System_Byte__ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyToDevice(ManagedCuda.CudaDeviceVariable%7BSystem.Byte%7D%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L481">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyToDevice_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyToDevice_ManagedCuda_CudaDeviceVariable_System_Byte__ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyToDevice(ManagedCuda.CudaDeviceVariable{System.Byte},ManagedCuda.BasicTypes.CUstream)">AsyncCopyToDevice(CudaDeviceVariable&lt;Byte&gt;, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Asynchron Copy host to device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyToDevice(CudaDeviceVariable&lt;byte&gt; deviceVar, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Byte</span>&gt;</td>
+        <td><span class="parametername">deviceVar</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyToDevice_ManagedCuda_CudaDeviceVariable_System_Byte__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyToDevice(ManagedCuda.CudaDeviceVariable%7BSystem.Byte%7D%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L532">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyToDevice_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_AsyncCopyToDevice_ManagedCuda_CudaDeviceVariable_System_Byte__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.AsyncCopyToDevice(ManagedCuda.CudaDeviceVariable{System.Byte},ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.CUstream)">AsyncCopyToDevice(CudaDeviceVariable&lt;Byte&gt;, SizeT, SizeT, SizeT, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Asynchron Copy host to device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyToDevice(CudaDeviceVariable&lt;byte&gt; deviceVar, SizeT offsetSrc, SizeT offsetDest, SizeT aSizeInBytes, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Byte</span>&gt;</td>
+        <td><span class="parametername">deviceVar</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetSrc</span></td>
+        <td><p>Offset to source pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetDest</span></td>
+        <td><p>Offset to destination pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">aSizeInBytes</span></td>
+        <td><p>Bytes to copy</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_Dispose.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L111">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_Dispose_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.Dispose*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_Dispose" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Dispose</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L121">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_Dispose_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.Dispose*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_Dispose_System_Boolean_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>For IDisposable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool fDisposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">fDisposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_Finalize.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.Finalize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L101">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_Finalize_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.Finalize*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_Finalize" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"><p>For dispose</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_GetAllocFlags.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.GetAllocFlags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L590">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_GetAllocFlags_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.GetAllocFlags*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_GetAllocFlags" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.GetAllocFlags">GetAllocFlags()</h4>
+  <div class="markdown level1 summary"><p>Passes back the flags that were specified when allocating the pinned host buffer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUMemHostAllocFlags GetAllocFlags()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUMemHostAllocFlags.html">CUMemHostAllocFlags</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_GetDevicePointer.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.GetDevicePointer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L576">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_GetDevicePointer_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.GetDevicePointer*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_GetDevicePointer" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.GetDevicePointer">GetDevicePointer()</h4>
+  <div class="markdown level1 summary"><p>Returns the CUdeviceptr for pinned host memory mapped to device memory space. Only valid if context is created with flag <a class="xref" href="ManagedCuda.BasicTypes.CUCtxFlags.html#ManagedCuda_BasicTypes_CUCtxFlags_MapHost">MapHost</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUdeviceptr GetDevicePointer()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Device Pointer</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyFromArray1D_ManagedCuda_BasicTypes_CUarray_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyFromArray1D(ManagedCuda.BasicTypes.CUarray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L248">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyFromArray1D_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyFromArray1D*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyFromArray1D_ManagedCuda_BasicTypes_CUarray_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyFromArray1D(ManagedCuda.BasicTypes.CUarray)">SynchronCopyFromArray1D(CUarray)</h4>
+  <div class="markdown level1 summary"><p>Synchron copy 1D Array to host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SynchronCopyFromArray1D(CUarray deviceArray)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUarray.html">CUarray</a></td>
+        <td><span class="parametername">deviceArray</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyFromArray1D_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyFromArray1D(ManagedCuda.BasicTypes.CUarray%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L236">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyFromArray1D_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyFromArray1D*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyFromArray1D_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyFromArray1D(ManagedCuda.BasicTypes.CUarray,ManagedCuda.BasicTypes.SizeT)">SynchronCopyFromArray1D(CUarray, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Synchron copy 1D Array to host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SynchronCopyFromArray1D(CUarray deviceArray, SizeT offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUarray.html">CUarray</a></td>
+        <td><span class="parametername">deviceArray</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyFromArray1D_ManagedCuda_CudaArray1D_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyFromArray1D(ManagedCuda.CudaArray1D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L257">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyFromArray1D_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyFromArray1D*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyFromArray1D_ManagedCuda_CudaArray1D_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyFromArray1D(ManagedCuda.CudaArray1D)">SynchronCopyFromArray1D(CudaArray1D)</h4>
+  <div class="markdown level1 summary"><p>Synchron copy 1D Array to host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SynchronCopyFromArray1D(CudaArray1D array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaArray1D.html">CudaArray1D</a></td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyFromArray1D_ManagedCuda_CudaArray1D_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyFromArray1D(ManagedCuda.CudaArray1D%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L267">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyFromArray1D_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyFromArray1D*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyFromArray1D_ManagedCuda_CudaArray1D_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyFromArray1D(ManagedCuda.CudaArray1D,ManagedCuda.BasicTypes.SizeT)">SynchronCopyFromArray1D(CudaArray1D, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Synchron copy 1D Array to host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SynchronCopyFromArray1D(CudaArray1D array, SizeT offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaArray1D.html">CudaArray1D</a></td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToArray1D_ManagedCuda_BasicTypes_CUarray_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToArray1D(ManagedCuda.BasicTypes.CUarray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L207">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToArray1D_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToArray1D*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToArray1D_ManagedCuda_BasicTypes_CUarray_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToArray1D(ManagedCuda.BasicTypes.CUarray)">SynchronCopyToArray1D(CUarray)</h4>
+  <div class="markdown level1 summary"><p>Synchron copy host to 1D Array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SynchronCopyToArray1D(CUarray deviceArray)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUarray.html">CUarray</a></td>
+        <td><span class="parametername">deviceArray</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToArray1D_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToArray1D(ManagedCuda.BasicTypes.CUarray%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L195">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToArray1D_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToArray1D*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToArray1D_ManagedCuda_BasicTypes_CUarray_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToArray1D(ManagedCuda.BasicTypes.CUarray,ManagedCuda.BasicTypes.SizeT)">SynchronCopyToArray1D(CUarray, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Synchron copy host to 1D Array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SynchronCopyToArray1D(CUarray deviceArray, SizeT offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUarray.html">CUarray</a></td>
+        <td><span class="parametername">deviceArray</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToArray1D_ManagedCuda_CudaArray1D_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToArray1D(ManagedCuda.CudaArray1D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L216">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToArray1D_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToArray1D*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToArray1D_ManagedCuda_CudaArray1D_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToArray1D(ManagedCuda.CudaArray1D)">SynchronCopyToArray1D(CudaArray1D)</h4>
+  <div class="markdown level1 summary"><p>Synchron copy host to 1D Array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SynchronCopyToArray1D(CudaArray1D array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaArray1D.html">CudaArray1D</a></td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToArray1D_ManagedCuda_CudaArray1D_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToArray1D(ManagedCuda.CudaArray1D%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L226">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToArray1D_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToArray1D*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToArray1D_ManagedCuda_CudaArray1D_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToArray1D(ManagedCuda.CudaArray1D,ManagedCuda.BasicTypes.SizeT)">SynchronCopyToArray1D(CudaArray1D, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Synchron copy host to 1D Array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SynchronCopyToArray1D(CudaArray1D array, SizeT offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaArray1D.html">CudaArray1D</a></td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToDevice(ManagedCuda.BasicTypes.CUdeviceptr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L277">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToDevice_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToDevice(ManagedCuda.BasicTypes.CUdeviceptr)">SynchronCopyToDevice(CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>Synchron copy host to device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SynchronCopyToDevice(CUdeviceptr devicePtr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">devicePtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToDevice(ManagedCuda.BasicTypes.CUdeviceptr%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L321">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToDevice_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToDevice(ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT)">SynchronCopyToDevice(CUdeviceptr, SizeT, SizeT, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Synchron copy host to device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SynchronCopyToDevice(CUdeviceptr devicePtr, SizeT offsetSrc, SizeT offsetDest, SizeT aSizeInBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">devicePtr</span></td>
+        <td><p>Pointer to device memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetSrc</span></td>
+        <td><p>Offset to source pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetDest</span></td>
+        <td><p>Offset to destination pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">aSizeInBytes</span></td>
+        <td><p>Bytes to copy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToDevice_ManagedCuda_CudaDeviceVariable_System_Byte__.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToDevice(ManagedCuda.CudaDeviceVariable%7BSystem.Byte%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L289">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToDevice_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToDevice_ManagedCuda_CudaDeviceVariable_System_Byte__" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToDevice(ManagedCuda.CudaDeviceVariable{System.Byte})">SynchronCopyToDevice(CudaDeviceVariable&lt;Byte&gt;)</h4>
+  <div class="markdown level1 summary"><p>Synchron copy host to device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SynchronCopyToDevice(CudaDeviceVariable&lt;byte&gt; devicePtr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Byte</span>&gt;</td>
+        <td><span class="parametername">devicePtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToDevice_ManagedCuda_CudaDeviceVariable_System_Byte__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToDevice(ManagedCuda.CudaDeviceVariable%7BSystem.Byte%7D%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L336">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToDevice_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToDevice*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToDevice_ManagedCuda_CudaDeviceVariable_System_Byte__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToDevice(ManagedCuda.CudaDeviceVariable{System.Byte},ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT)">SynchronCopyToDevice(CudaDeviceVariable&lt;Byte&gt;, SizeT, SizeT, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Synchron copy host to device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SynchronCopyToDevice(CudaDeviceVariable&lt;byte&gt; devicePtr, SizeT offsetSrc, SizeT offsetDest, SizeT aSizeInBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Byte</span>&gt;</td>
+        <td><span class="parametername">devicePtr</span></td>
+        <td><p>Pointer to device memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetSrc</span></td>
+        <td><p>Offset to source pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetDest</span></td>
+        <td><p>Offset to destination pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">aSizeInBytes</span></td>
+        <td><p>Bytes to copy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToHost_ManagedCuda_BasicTypes_CUdeviceptr_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToHost(ManagedCuda.BasicTypes.CUdeviceptr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L298">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToHost_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToHost*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToHost_ManagedCuda_BasicTypes_CUdeviceptr_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToHost(ManagedCuda.BasicTypes.CUdeviceptr)">SynchronCopyToHost(CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>Synchron copy device to host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SynchronCopyToHost(CUdeviceptr devicePtr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">devicePtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToHost_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToHost(ManagedCuda.BasicTypes.CUdeviceptr%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L348">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToHost_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToHost*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToHost_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToHost(ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT)">SynchronCopyToHost(CUdeviceptr, SizeT, SizeT, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Synchron copy device to host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SynchronCopyToHost(CUdeviceptr devicePtr, SizeT offsetSrc, SizeT offsetDest, SizeT aSizeInBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">devicePtr</span></td>
+        <td><p>Pointer to device memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetSrc</span></td>
+        <td><p>Offset to source pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetDest</span></td>
+        <td><p>Offset to destination pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">aSizeInBytes</span></td>
+        <td><p>Bytes to copy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToHost_ManagedCuda_CudaDeviceVariable_System_Byte__.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToHost(ManagedCuda.CudaDeviceVariable%7BSystem.Byte%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L310">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToHost_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToHost*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToHost_ManagedCuda_CudaDeviceVariable_System_Byte__" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToHost(ManagedCuda.CudaDeviceVariable{System.Byte})">SynchronCopyToHost(CudaDeviceVariable&lt;Byte&gt;)</h4>
+  <div class="markdown level1 summary"><p>Synchron copy device to host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SynchronCopyToHost(CudaDeviceVariable&lt;byte&gt; devicePtr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Byte</span>&gt;</td>
+        <td><span class="parametername">devicePtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToHost_ManagedCuda_CudaDeviceVariable_System_Byte__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToHost(ManagedCuda.CudaDeviceVariable%7BSystem.Byte%7D%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L363">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToHost_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToHost*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_SynchronCopyToHost_ManagedCuda_CudaDeviceVariable_System_Byte__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.SynchronCopyToHost(ManagedCuda.CudaDeviceVariable{System.Byte},ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT,ManagedCuda.BasicTypes.SizeT)">SynchronCopyToHost(CudaDeviceVariable&lt;Byte&gt;, SizeT, SizeT, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Synchron copy device to host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SynchronCopyToHost(CudaDeviceVariable&lt;byte&gt; devicePtr, SizeT offsetSrc, SizeT offsetDest, SizeT aSizeInBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;<span class="xref">System.Byte</span>&gt;</td>
+        <td><span class="parametername">devicePtr</span></td>
+        <td><p>Pointer to device memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetSrc</span></td>
+        <td><p>Offset to source pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">offsetDest</span></td>
+        <td><p>Offset to destination pointer in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">aSizeInBytes</span></td>
+        <td><p>Bytes to copy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_System_Collections_Generic_IEnumerable_System_Byte__GetEnumerator.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.System%23Collections%23Generic%23IEnumerable%7BSystem%23Byte%7D%23GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L602">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_System_Collections_Generic_IEnumerable_System_Byte__GetEnumerator_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.System#Collections#Generic#IEnumerable{System#Byte}#GetEnumerator*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_System_Collections_Generic_IEnumerable_System_Byte__GetEnumerator" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.System#Collections#Generic#IEnumerable{System#Byte}#GetEnumerator">IEnumerable&lt;Byte&gt;.GetEnumerator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator&lt;byte&gt; IEnumerable&lt;byte&gt;.GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;<span class="xref">System.Byte</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte_System_Collections_IEnumerable_GetEnumerator.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte.System%23Collections%23IEnumerable%23GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L609">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaPageLockedHostMemory_byte_System_Collections_IEnumerable_GetEnumerator_" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.System#Collections#IEnumerable#GetEnumerator*"></a>
+  <h4 id="ManagedCuda_CudaPageLockedHostMemory_byte_System_Collections_IEnumerable_GetEnumerator" data-uid="ManagedCuda.CudaPageLockedHostMemory_byte.System#Collections#IEnumerable#GetEnumerator">IEnumerable.GetEnumerator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator IEnumerable.GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaPageLockedHostMemory_byte.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaPageLockedHostMemory_byte%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaPageLockedHostMemoryFixedTypes.cs/#L37" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

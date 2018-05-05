@@ -1,0 +1,913 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DriverAPINativeMethods.Events
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DriverAPINativeMethods.Events
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.DriverAPINativeMethods.Events">
+  
+  
+  <h1 id="ManagedCuda_DriverAPINativeMethods_Events" data-uid="ManagedCuda.DriverAPINativeMethods.Events" class="text-break">Class DriverAPINativeMethods.Events
+  </h1>
+  <div class="markdown level0 summary"><p>Groups all event API calls</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DriverAPINativeMethods.Events</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.html">ManagedCuda</a></h6>
+  <h6><strong>Assembly</strong>: ManagedCuda.dll</h6>
+  <h5 id="ManagedCuda_DriverAPINativeMethods_Events_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Events</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_Events_cuEventCreate_" data-uid="ManagedCuda.DriverAPINativeMethods.Events.cuEventCreate*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_Events_cuEventCreate_ManagedCuda_BasicTypes_CUevent__ManagedCuda_BasicTypes_CUEventFlags_" data-uid="ManagedCuda.DriverAPINativeMethods.Events.cuEventCreate(ManagedCuda.BasicTypes.CUevent@,ManagedCuda.BasicTypes.CUEventFlags)">cuEventCreate(ref CUevent, CUEventFlags)</h4>
+  <div class="markdown level1 summary"><p>Creates an event <code>phEvent</code> with the flags specified via <code>Flags</code>. See <a class="xref" href="ManagedCuda.BasicTypes.CUEventFlags.html">CUEventFlags</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuEventCreate(ref CUevent phEvent, CUEventFlags Flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUevent.html">CUevent</a></td>
+        <td><span class="parametername">phEvent</span></td>
+        <td><p>Returns newly created event</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUEventFlags.html">CUEventFlags</a></td>
+        <td><span class="parametername">Flags</span></td>
+        <td><p>Event creation flags</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorOutOfMemory">ErrorOutOfMemory</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_Events_cuEventDestroy_" data-uid="ManagedCuda.DriverAPINativeMethods.Events.cuEventDestroy*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_Events_cuEventDestroy_ManagedCuda_BasicTypes_CUevent_" data-uid="ManagedCuda.DriverAPINativeMethods.Events.cuEventDestroy(ManagedCuda.BasicTypes.CUevent)">cuEventDestroy(CUevent)</h4>
+  <div class="markdown level1 summary"><p>Destroys the event specified by <code>event</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Don't use this CUDA API call with CUDA version &gt;= 4.0.&quot;)]
+public static CUResult cuEventDestroy(CUevent hEvent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUevent.html">CUevent</a></td>
+        <td><span class="parametername">hEvent</span></td>
+        <td><p>Event to destroy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidHandle">ErrorInvalidHandle</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_Events_cuEventDestroy_v2_" data-uid="ManagedCuda.DriverAPINativeMethods.Events.cuEventDestroy_v2*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_Events_cuEventDestroy_v2_ManagedCuda_BasicTypes_CUevent_" data-uid="ManagedCuda.DriverAPINativeMethods.Events.cuEventDestroy_v2(ManagedCuda.BasicTypes.CUevent)">cuEventDestroy_v2(CUevent)</h4>
+  <div class="markdown level1 summary"><p>Destroys the event specified by <code>event</code>.<p>
+In the case that <code>hEvent</code> has been recorded but has not yet been completed
+when <a class="xref" href="ManagedCuda.DriverAPINativeMethods.Events.html#ManagedCuda_DriverAPINativeMethods_Events_cuEventDestroy_ManagedCuda_BasicTypes_CUevent_">cuEventDestroy(CUevent)</a> is called, the function will return immediately and
+the resources associated with <code>hEvent</code> will be released automatically once
+the device has completed <code>hEvent</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuEventDestroy_v2(CUevent hEvent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUevent.html">CUevent</a></td>
+        <td><span class="parametername">hEvent</span></td>
+        <td><p>Event to destroy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidHandle">ErrorInvalidHandle</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_Events_cuEventElapsedTime_" data-uid="ManagedCuda.DriverAPINativeMethods.Events.cuEventElapsedTime*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_Events_cuEventElapsedTime_System_Single__ManagedCuda_BasicTypes_CUevent_ManagedCuda_BasicTypes_CUevent_" data-uid="ManagedCuda.DriverAPINativeMethods.Events.cuEventElapsedTime(System.Single@,ManagedCuda.BasicTypes.CUevent,ManagedCuda.BasicTypes.CUevent)">cuEventElapsedTime(ref Single, CUevent, CUevent)</h4>
+  <div class="markdown level1 summary"><p>Computes the elapsed time between two events (in milliseconds with a resolution of around 0.5 microseconds). If
+either event has not been recorded yet, this function returns <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotReady">ErrorNotReady</a>. If either event has been
+recorded with a non-zero stream, the result is undefined.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuEventElapsedTime(ref float pMilliseconds, CUevent hStart, CUevent hEnd)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">pMilliseconds</span></td>
+        <td><p>Returned elapsed time in milliseconds</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUevent.html">CUevent</a></td>
+        <td><span class="parametername">hStart</span></td>
+        <td><p>Starting event</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUevent.html">CUevent</a></td>
+        <td><span class="parametername">hEnd</span></td>
+        <td><p>Ending event</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidHandle">ErrorInvalidHandle</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotReady">ErrorNotReady</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_Events_cuEventQuery_" data-uid="ManagedCuda.DriverAPINativeMethods.Events.cuEventQuery*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_Events_cuEventQuery_ManagedCuda_BasicTypes_CUevent_" data-uid="ManagedCuda.DriverAPINativeMethods.Events.cuEventQuery(ManagedCuda.BasicTypes.CUevent)">cuEventQuery(CUevent)</h4>
+  <div class="markdown level1 summary"><p>Returns <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a> if the event has actually been recorded, or <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotReady">ErrorNotReady</a> if not. If
+<a class="xref" href="ManagedCuda.DriverAPINativeMethods.Events.html#ManagedCuda_DriverAPINativeMethods_Events_cuEventRecord_ManagedCuda_BasicTypes_CUevent_ManagedCuda_BasicTypes_CUstream_">cuEventRecord(CUevent, CUstream)</a> has not been called on this event, the function returns <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuEventQuery(CUevent hEvent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUevent.html">CUevent</a></td>
+        <td><span class="parametername">hEvent</span></td>
+        <td><p>Event to query</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidHandle">ErrorInvalidHandle</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotReady">ErrorNotReady</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_Events_cuEventRecord_" data-uid="ManagedCuda.DriverAPINativeMethods.Events.cuEventRecord*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_Events_cuEventRecord_ManagedCuda_BasicTypes_CUevent_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.DriverAPINativeMethods.Events.cuEventRecord(ManagedCuda.BasicTypes.CUevent,ManagedCuda.BasicTypes.CUstream)">cuEventRecord(CUevent, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Records an event. If <code>stream</code> is non-zero, the event is recorded after all preceding operations in the stream have been
+completed; otherwise, it is recorded after all preceding operations in the CUDA context have been completed. Since
+operation is asynchronous, <a class="xref" href="ManagedCuda.DriverAPINativeMethods.Events.html#ManagedCuda_DriverAPINativeMethods_Events_cuEventQuery_ManagedCuda_BasicTypes_CUevent_">cuEventQuery(CUevent)</a> and/or <a class="xref" href="ManagedCuda.DriverAPINativeMethods.Events.html#ManagedCuda_DriverAPINativeMethods_Events_cuEventSynchronize_ManagedCuda_BasicTypes_CUevent_">cuEventSynchronize(CUevent)</a> must be used to determine when the event
+has actually been recorded. <p>
+If <a class="xref" href="ManagedCuda.DriverAPINativeMethods.Events.html#ManagedCuda_DriverAPINativeMethods_Events_cuEventRecord_ManagedCuda_BasicTypes_CUevent_ManagedCuda_BasicTypes_CUstream_">cuEventRecord(CUevent, CUstream)</a> has previously been called and the event has not been recorded yet, this function returns
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuEventRecord(CUevent hEvent, CUstream hStream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUevent.html">CUevent</a></td>
+        <td><span class="parametername">hEvent</span></td>
+        <td><p>Event to record</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">hStream</span></td>
+        <td><p>Stream to record event for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidHandle">ErrorInvalidHandle</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_Events_cuEventSynchronize_" data-uid="ManagedCuda.DriverAPINativeMethods.Events.cuEventSynchronize*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_Events_cuEventSynchronize_ManagedCuda_BasicTypes_CUevent_" data-uid="ManagedCuda.DriverAPINativeMethods.Events.cuEventSynchronize(ManagedCuda.BasicTypes.CUevent)">cuEventSynchronize(CUevent)</h4>
+  <div class="markdown level1 summary"><p>Waits until the event has actually been recorded. If <a class="xref" href="ManagedCuda.DriverAPINativeMethods.Events.html#ManagedCuda_DriverAPINativeMethods_Events_cuEventRecord_ManagedCuda_BasicTypes_CUevent_ManagedCuda_BasicTypes_CUstream_">cuEventRecord(CUevent, CUstream)</a> has been called on this event, the function returns
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>. Waiting for an event that was created with the <a class="xref" href="ManagedCuda.BasicTypes.CUEventFlags.html#ManagedCuda_BasicTypes_CUEventFlags_BlockingSync">BlockingSync</a>
+flag will cause the calling CPU thread to block until the event has actually been recorded. <p>
+If <a class="xref" href="ManagedCuda.DriverAPINativeMethods.Events.html#ManagedCuda_DriverAPINativeMethods_Events_cuEventRecord_ManagedCuda_BasicTypes_CUevent_ManagedCuda_BasicTypes_CUstream_">cuEventRecord(CUevent, CUstream)</a> has previously been called and the event has not been recorded yet, this function returns <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuEventSynchronize(CUevent hEvent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUevent.html">CUevent</a></td>
+        <td><span class="parametername">hEvent</span></td>
+        <td><p>Event to wait for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidHandle">ErrorInvalidHandle</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_Events_cuStreamBatchMemOp_" data-uid="ManagedCuda.DriverAPINativeMethods.Events.cuStreamBatchMemOp*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_Events_cuStreamBatchMemOp_ManagedCuda_BasicTypes_CUstream_System_UInt32_ManagedCuda_BasicTypes_CUstreamBatchMemOpParams___System_UInt32_" data-uid="ManagedCuda.DriverAPINativeMethods.Events.cuStreamBatchMemOp(ManagedCuda.BasicTypes.CUstream,System.UInt32,ManagedCuda.BasicTypes.CUstreamBatchMemOpParams[],System.UInt32)">cuStreamBatchMemOp(CUstream, UInt32, CUstreamBatchMemOpParams[], UInt32)</h4>
+  <div class="markdown level1 summary"><p>Batch operations to synchronize the stream via memory operations</p>
+<p>
+This is a batch version of ::cuStreamWaitValue32() and::cuStreamWriteValue32().
+<p>
+Batching operations may avoid some performance overhead in both the API call
+and the device execution versus adding them to the stream in separate API
+calls.The operations are enqueued in the order they appear in the array.
+<p>
+See::CUstreamBatchMemOpType for the full set of supported operations, and
+::cuStreamWaitValue32() and::cuStreamWriteValue32() for details of specific
+operations.
+<p>
+On Windows, the device must be using TCC, or this call is not supported. See ::cuDeviceGetAttribute().
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuStreamBatchMemOp(CUstream stream, uint count, CUstreamBatchMemOpParams[] paramArray, uint flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream to enqueue the operations in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of operations in the array. Must be less than 256.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstreamBatchMemOpParams.html">CUstreamBatchMemOpParams</a>[]</td>
+        <td><span class="parametername">paramArray</span></td>
+        <td><p>The types and parameters of the individual operations.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Reserved for future expansion; must be 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_Events_cuStreamWaitValue32_" data-uid="ManagedCuda.DriverAPINativeMethods.Events.cuStreamWaitValue32*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_Events_cuStreamWaitValue32_ManagedCuda_BasicTypes_CUstream_ManagedCuda_BasicTypes_CUdeviceptr_System_UInt32_ManagedCuda_BasicTypes_CUstreamWaitValue_flags_" data-uid="ManagedCuda.DriverAPINativeMethods.Events.cuStreamWaitValue32(ManagedCuda.BasicTypes.CUstream,ManagedCuda.BasicTypes.CUdeviceptr,System.UInt32,ManagedCuda.BasicTypes.CUstreamWaitValue_flags)">cuStreamWaitValue32(CUstream, CUdeviceptr, UInt32, CUstreamWaitValue_flags)</h4>
+  <div class="markdown level1 summary"><p>Wait on a memory location<p>
+Enqueues a synchronization of the stream on the given memory location. Work
+ordered after the operation will block until the given condition on the
+memory is satisfied. By default, the condition is to wait for (int32_t)(*addr - value) &gt;= 0, a cyclic greater-or-equal.</p>
+<p>
+Other condition types can be specified via \p flags.
+<p>
+If the memory was registered via ::cuMemHostRegister(), the device pointer
+should be obtained with::cuMemHostGetDevicePointer(). This function cannot
+be used with managed memory(::cuMemAllocManaged).
+<p>
+Support for this can be queried with ::cuDeviceGetAttribute() and
+::CU_DEVICE_ATTRIBUTE_CAN_USE_STREAM_MEM_OPS. The only requirement for basic
+support is that on Windows, a device must be in TCC mode.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuStreamWaitValue32(CUstream stream, CUdeviceptr addr, uint value, CUstreamWaitValue_flags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream to synchronize on the memory location.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">addr</span></td>
+        <td><p>The memory location to wait on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to compare with the memory location.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstreamWaitValue_flags.html">CUstreamWaitValue_flags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>See::CUstreamWaitValue_flags.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_Events_cuStreamWaitValue64_" data-uid="ManagedCuda.DriverAPINativeMethods.Events.cuStreamWaitValue64*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_Events_cuStreamWaitValue64_ManagedCuda_BasicTypes_CUstream_ManagedCuda_BasicTypes_CUdeviceptr_System_UInt64_ManagedCuda_BasicTypes_CUstreamWaitValue_flags_" data-uid="ManagedCuda.DriverAPINativeMethods.Events.cuStreamWaitValue64(ManagedCuda.BasicTypes.CUstream,ManagedCuda.BasicTypes.CUdeviceptr,System.UInt64,ManagedCuda.BasicTypes.CUstreamWaitValue_flags)">cuStreamWaitValue64(CUstream, CUdeviceptr, UInt64, CUstreamWaitValue_flags)</h4>
+  <div class="markdown level1 summary"><p>Wait on a memory location</p>
+<p>
+Enqueues a synchronization of the stream on the given memory location.Work
+ordered after the operation will block until the given condition on the
+memory is satisfied.By default, the condition is to wait for
+(int64_t)(*addr - value) >= 0, a cyclic greater-or-equal.
+<p>
+Other condition types can be specified via \p flags.
+<p>
+If the memory was registered via ::cuMemHostRegister(), the device pointer
+should be obtained with::cuMemHostGetDevicePointer().
+<p>
+Support for this can be queried with ::cuDeviceGetAttribute() and
+::CU_DEVICE_ATTRIBUTE_CAN_USE_64_BIT_STREAM_MEM_OPS.The requirements are
+compute capability 7.0 or greater, and on Windows, that the device be in
+TCC mode.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuStreamWaitValue64(CUstream stream, CUdeviceptr addr, ulong value, CUstreamWaitValue_flags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream to synchronize on the memory location.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">addr</span></td>
+        <td><p>The memory location to wait on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to compare with the memory location.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstreamWaitValue_flags.html">CUstreamWaitValue_flags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>See::CUstreamWaitValue_flags.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_Events_cuStreamWriteValue32_" data-uid="ManagedCuda.DriverAPINativeMethods.Events.cuStreamWriteValue32*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_Events_cuStreamWriteValue32_ManagedCuda_BasicTypes_CUstream_ManagedCuda_BasicTypes_CUdeviceptr_System_UInt32_ManagedCuda_BasicTypes_CUstreamWriteValue_flags_" data-uid="ManagedCuda.DriverAPINativeMethods.Events.cuStreamWriteValue32(ManagedCuda.BasicTypes.CUstream,ManagedCuda.BasicTypes.CUdeviceptr,System.UInt32,ManagedCuda.BasicTypes.CUstreamWriteValue_flags)">cuStreamWriteValue32(CUstream, CUdeviceptr, UInt32, CUstreamWriteValue_flags)</h4>
+  <div class="markdown level1 summary"><p>Write a value to memory</p>
+<p>
+Write a value to memory.Unless the ::CU_STREAM_WRITE_VALUE_NO_MEMORY_BARRIER
+flag is passed, the write is preceded by a system-wide memory fence,
+equivalent to a __threadfence_system() but scoped to the stream
+rather than a CUDA thread.
+<p>
+If the memory was registered via ::cuMemHostRegister(), the device pointer
+should be obtained with::cuMemHostGetDevicePointer(). This function cannot
+be used with managed memory(::cuMemAllocManaged).
+<p>
+Support for this can be queried with ::cuDeviceGetAttribute() and
+::CU_DEVICE_ATTRIBUTE_CAN_USE_STREAM_MEM_OPS. The only requirement for basic
+support is that on Windows, a device must be in TCC mode.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuStreamWriteValue32(CUstream stream, CUdeviceptr addr, uint value, CUstreamWriteValue_flags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream to do the write in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">addr</span></td>
+        <td><p>The device address to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to write.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstreamWriteValue_flags.html">CUstreamWriteValue_flags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>See::CUstreamWriteValue_flags.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_Events_cuStreamWriteValue64_" data-uid="ManagedCuda.DriverAPINativeMethods.Events.cuStreamWriteValue64*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_Events_cuStreamWriteValue64_ManagedCuda_BasicTypes_CUstream_ManagedCuda_BasicTypes_CUdeviceptr_System_UInt64_ManagedCuda_BasicTypes_CUstreamWriteValue_flags_" data-uid="ManagedCuda.DriverAPINativeMethods.Events.cuStreamWriteValue64(ManagedCuda.BasicTypes.CUstream,ManagedCuda.BasicTypes.CUdeviceptr,System.UInt64,ManagedCuda.BasicTypes.CUstreamWriteValue_flags)">cuStreamWriteValue64(CUstream, CUdeviceptr, UInt64, CUstreamWriteValue_flags)</h4>
+  <div class="markdown level1 summary"><p>Write a value to memory</p>
+<p>
+Write a value to memory.Unless the ::CU_STREAM_WRITE_VALUE_NO_MEMORY_BARRIER
+flag is passed, the write is preceded by a system-wide memory fence,
+equivalent to a __threadfence_system() but scoped to the stream
+rather than a CUDA thread.
+<p>
+If the memory was registered via ::cuMemHostRegister(), the device pointer
+should be obtained with::cuMemHostGetDevicePointer(). This function cannot
+be used with managed memory(::cuMemAllocManaged).
+<p>
+Support for this can be queried with ::cuDeviceGetAttribute() and
+::CU_DEVICE_ATTRIBUTE_CAN_USE_64_BIT_STREAM_MEM_OPS.The requirements are
+compute capability 7.0 or greater, and on Windows, that the device be in
+TCC mode.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuStreamWriteValue64(CUstream stream, CUdeviceptr addr, ulong value, CUstreamWriteValue_flags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream to do the write in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">addr</span></td>
+        <td><p>The device address to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to write.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstreamWriteValue_flags.html">CUstreamWriteValue_flags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>See::CUstreamWriteValue_flags.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_DriverAPINativeMethods_Events.md&amp;value=---%0Auid%3A%20ManagedCuda.DriverAPINativeMethods.Events%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/DriverAPI.cs/#L8646" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

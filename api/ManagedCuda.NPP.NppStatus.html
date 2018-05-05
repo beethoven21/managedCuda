@@ -1,0 +1,447 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Enum NppStatus
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Enum NppStatus
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.NPP.NppStatus">
+  
+  
+  <h1 id="ManagedCuda_NPP_NppStatus" data-uid="ManagedCuda.NPP.NppStatus" class="text-break">Enum NppStatus
+  </h1>
+  <div class="markdown level0 summary"><p>Error Status Codes <p>
+Almost all NPP function return error-status information using
+these return codes.
+Negative return codes indicate errors, positive return codes indicate
+warnings, a return code of 0 indicates success.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.NPP.html">ManagedCuda.NPP</a></h6>
+  <h6><strong>Assembly</strong>: NPP.dll</h6>
+  <h5 id="ManagedCuda_NPP_NppStatus_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum NppStatus</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_AffineQuadIncorrectWarning">AffineQuadIncorrectWarning</td>
+        <td><p>Indicates that the quadrangle passed to one of affine warping functions doesn't have necessary properties. First 3 vertices are used, the fourth vertex discarded.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_AnchorError">AnchorError</td>
+        <td><p>Anchor point is outside mask</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_BadArgumentError">BadArgumentError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_ChannelError">ChannelError</td>
+        <td><p>Illegal channel index</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_ChannelOfInterestError">ChannelOfInterestError</td>
+        <td><p>Channel of interest is not 1, 2, or 3</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_ChannelOrderError">ChannelOrderError</td>
+        <td><p>Wrong order of the destination channels</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_CoefficientError">CoefficientError</td>
+        <td><p>Unallowable values of the transformation coefficients</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_ContextMatchError">ContextMatchError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_CorruptedDataError">CorruptedDataError</td>
+        <td><p>Processed data is corrupted</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_CudaKernelExecutionError">CudaKernelExecutionError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_DataTypeError">DataTypeError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_DivideByZeroError">DivideByZeroError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_DivideByZeroWarning">DivideByZeroWarning</td>
+        <td><p>Divisor is zero however does not terminate the execution</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_DivisorError">DivisorError</td>
+        <td><p>Divisor is equal to zero</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_DoubleSizeWarning">DoubleSizeWarning</td>
+        <td><p>Image size isn't multiple of two. Indicates that in case of 422/411/420 sampling the ROI width/height was modified for proper processing.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_Error">Error</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_ErrorReserved">ErrorReserved</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_FFTFlagError">FFTFlagError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_FFTOrderError">FFTOrderError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_HaarClassifierPixelMatchError">HaarClassifierPixelMatchError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_HistogramNumberOfLevelsError">HistogramNumberOfLevelsError</td>
+        <td><p>Number of levels for histogram is less than 2</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_InterpolationError">InterpolationError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_InvalidDevicePointerError">InvalidDevicePointerError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_InvalidHostPointerError">InvalidHostPointerError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_LutMumberOfLevelsError">LutMumberOfLevelsError</td>
+        <td><p>Number of levels for LUT is less than 2</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_LUTPaletteBitsizeError">LUTPaletteBitsizeError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_MaskSizeError">MaskSizeError</td>
+        <td><p>Lower bound is larger than upper bound</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_MemcpyError">MemcpyError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_MemfreeError">MemfreeError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_MemoryAllocationError">MemoryAllocationError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_MemsetError">MemsetError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_MirrorFlipError">MirrorFlipError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_MisalignedDstRoiWarning">MisalignedDstRoiWarning</td>
+        <td><p>Speed reduction due to uncoalesced memory accesses warning.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_Moment00ZeroErro">Moment00ZeroErro</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_NoError">NoError</td>
+        <td><p>Error free operation</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_NoMemoryError">NoMemoryError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_NoOperationWarning">NoOperationWarning</td>
+        <td><p>Indicates that no operation was performed</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_NotEvenStepError">NotEvenStepError</td>
+        <td><p>Step value is not pixel multiple</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_NotImplementedError">NotImplementedError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_NotSufficientComputeCapability">NotSufficientComputeCapability</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_NotSupportedModeError">NotSupportedModeError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_NumberOfChannelsError">NumberOfChannelsError</td>
+        <td><p>Bad or unsupported number of channels</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_OutOfRangeError">OutOfRangeError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_OverflowError">OverflowError</td>
+        <td><p>Number overflows the upper or lower limit of the data type</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_QuadrangleError">QuadrangleError</td>
+        <td><p>The quadrangle is nonconvex or degenerates into triangle, line or point</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_QualityIndexError">QualityIndexError</td>
+        <td><p>Image pixels are constant for quality index</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_RangeError">RangeError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_RectangleError">RectangleError</td>
+        <td><p>Size of the rectangle region is less than or equal to 1</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_ResizeFactorError">ResizeFactorError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_ResizeNoOperationError">ResizeNoOperationError</td>
+        <td><p>One of the output image dimensions is less than 1 pixel</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_RoundModeNotSupportedError">RoundModeNotSupportedError</td>
+        <td><p>Unsupported round mode</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_ScaleRangeError">ScaleRangeError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_SizeError">SizeError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_StepError">StepError</td>
+        <td><p>Step is less or equal zero</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_StrideError">StrideError</td>
+        <td><p>Stride is less than the row length</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_Success">Success</td>
+        <td><p>Successful operation (same as NoError)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_TextureBindError">TextureBindError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_ThresholdError">ThresholdError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_ThresholdNegativeLevelError">ThresholdNegativeLevelError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_WrongIntersectionQuadWarning">WrongIntersectionQuadWarning</td>
+        <td><p>The given quadrangle has no intersection with either the source or destination ROI. Thus no operation was performed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_WrongIntersectionRoiError">WrongIntersectionRoiError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_WrongIntersectionRoiWarning">WrongIntersectionRoiWarning</td>
+        <td><p>The given ROI has no interestion with either the source or destination ROI. Thus no operation was performed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_ZCModeNotSupportedError">ZCModeNotSupportedError</td>
+        <td><p>ZeroCrossing mode not supported</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_NPP_NppStatus_ZeroMaskValueError">ZeroMaskValueError</td>
+        <td><p>All values of the mask are zero</p>
+</td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NppStatus.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NppStatus%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPTypes.cs/#L120" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

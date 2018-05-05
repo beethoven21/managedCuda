@@ -1,0 +1,1917 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class NPPNativeMethods.NPPi.MemAlloc
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class NPPNativeMethods.NPPi.MemAlloc
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc">
+  
+  
+  <h1 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc" class="text-break">Class NPPNativeMethods.NPPi.MemAlloc
+  </h1>
+  <div class="markdown level0 summary"><p>Image-Memory Allocation <p>
+ImageAllocator methods for 2D arrays of data. The allocators have width and height parameters
+to specify the size of the image data being allocated. They return a pointer to the
+newly created memory and return the numbers of bytes between successive lines.</p>
+<p>
+If the memory allocation failed due to lack of free device memory or device memory fragmentation
+the routine returns 0.
+<p>
+All allocators return memory with line strides that are 
+beneficial for performance. It is not mandatory to use these allocators. Any valid CUDA device-memory
+pointers can be used by the NPP primitives and there are no restrictions on line strides.
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">NPPNativeMethods.NPPi.MemAlloc</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.NPP.html">ManagedCuda.NPP</a></h6>
+  <h6><strong>Assembly</strong>: NPP.dll</h6>
+  <h5 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class MemAlloc</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiFree_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiFree*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiFree_ManagedCuda_BasicTypes_CUdeviceptr_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiFree(ManagedCuda.BasicTypes.CUdeviceptr)">nppiFree(CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>Free method for any 2D allocated memory.<p>
+This method should be used to free memory allocated with any of the nppiMalloc_&lt;modifier&gt; methods.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void nppiFree(CUdeviceptr pData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pData</span></td>
+        <td><p>A pointer to memory allocated using nppiMalloc_&lt;modifier&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_16s_C1_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_16s_C1*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_16s_C1_System_Int32_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_16s_C1(System.Int32,System.Int32,System.Int32@)">nppiMalloc_16s_C1(Int32, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>16-bit signed image memory allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppiMalloc_16s_C1(int nWidthPixels, int nHeightPixels, ref int pStepBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidthPixels</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeightPixels</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pStepBytes</span></td>
+        <td><p>Line Step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Pointer to new image data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_16s_C2_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_16s_C2*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_16s_C2_System_Int32_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_16s_C2(System.Int32,System.Int32,System.Int32@)">nppiMalloc_16s_C2(Int32, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>2 channel 16-bit signed image memory allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppiMalloc_16s_C2(int nWidthPixels, int nHeightPixels, ref int pStepBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidthPixels</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeightPixels</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pStepBytes</span></td>
+        <td><p>Line Step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Pointer to new image data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_16s_C4_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_16s_C4*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_16s_C4_System_Int32_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_16s_C4(System.Int32,System.Int32,System.Int32@)">nppiMalloc_16s_C4(Int32, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>4 channel 16-bit signed image memory allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppiMalloc_16s_C4(int nWidthPixels, int nHeightPixels, ref int pStepBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidthPixels</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeightPixels</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pStepBytes</span></td>
+        <td><p>Line Step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Pointer to new image data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_16sc_C1_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_16sc_C1*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_16sc_C1_System_Int32_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_16sc_C1(System.Int32,System.Int32,System.Int32@)">nppiMalloc_16sc_C1(Int32, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>1 channel 16-bit signed complex image memory allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppiMalloc_16sc_C1(int nWidthPixels, int nHeightPixels, ref int pStepBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidthPixels</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeightPixels</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pStepBytes</span></td>
+        <td><p>Line Step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Pointer to new image data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_16sc_C2_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_16sc_C2*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_16sc_C2_System_Int32_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_16sc_C2(System.Int32,System.Int32,System.Int32@)">nppiMalloc_16sc_C2(Int32, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>2 channel 16-bit signed complex image memory allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppiMalloc_16sc_C2(int nWidthPixels, int nHeightPixels, ref int pStepBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidthPixels</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeightPixels</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pStepBytes</span></td>
+        <td><p>Line Step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Pointer to new image data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_16sc_C3_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_16sc_C3*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_16sc_C3_System_Int32_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_16sc_C3(System.Int32,System.Int32,System.Int32@)">nppiMalloc_16sc_C3(Int32, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>3 channel 16-bit signed complex image memory allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppiMalloc_16sc_C3(int nWidthPixels, int nHeightPixels, ref int pStepBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidthPixels</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeightPixels</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pStepBytes</span></td>
+        <td><p>Line Step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Pointer to new image data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_16sc_C4_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_16sc_C4*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_16sc_C4_System_Int32_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_16sc_C4(System.Int32,System.Int32,System.Int32@)">nppiMalloc_16sc_C4(Int32, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>4 channel 16-bit signed complex image memory allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppiMalloc_16sc_C4(int nWidthPixels, int nHeightPixels, ref int pStepBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidthPixels</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeightPixels</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pStepBytes</span></td>
+        <td><p>Line Step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Pointer to new image data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_16u_C1_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_16u_C1*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_16u_C1_System_Int32_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_16u_C1(System.Int32,System.Int32,System.Int32@)">nppiMalloc_16u_C1(Int32, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>16-bit unsigned image memory allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppiMalloc_16u_C1(int nWidthPixels, int nHeightPixels, ref int pStepBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidthPixels</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeightPixels</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pStepBytes</span></td>
+        <td><p>Line Step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Pointer to new image data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_16u_C2_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_16u_C2*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_16u_C2_System_Int32_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_16u_C2(System.Int32,System.Int32,System.Int32@)">nppiMalloc_16u_C2(Int32, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>2 channel 16-bit unsigned image memory allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppiMalloc_16u_C2(int nWidthPixels, int nHeightPixels, ref int pStepBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidthPixels</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeightPixels</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pStepBytes</span></td>
+        <td><p>Line Step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Pointer to new image data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_16u_C3_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_16u_C3*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_16u_C3_System_Int32_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_16u_C3(System.Int32,System.Int32,System.Int32@)">nppiMalloc_16u_C3(Int32, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>3 channel 16-bit unsigned image memory allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppiMalloc_16u_C3(int nWidthPixels, int nHeightPixels, ref int pStepBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidthPixels</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeightPixels</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pStepBytes</span></td>
+        <td><p>Line Step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Pointer to new image data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_16u_C4_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_16u_C4*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_16u_C4_System_Int32_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_16u_C4(System.Int32,System.Int32,System.Int32@)">nppiMalloc_16u_C4(Int32, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>4 channel 16-bit unsigned image memory allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppiMalloc_16u_C4(int nWidthPixels, int nHeightPixels, ref int pStepBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidthPixels</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeightPixels</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pStepBytes</span></td>
+        <td><p>Line Step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Pointer to new image data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_32f_C1_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_32f_C1*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_32f_C1_System_Int32_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_32f_C1(System.Int32,System.Int32,System.Int32@)">nppiMalloc_32f_C1(Int32, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>32-bit floating point image memory allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppiMalloc_32f_C1(int nWidthPixels, int nHeightPixels, ref int pStepBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidthPixels</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeightPixels</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pStepBytes</span></td>
+        <td><p>Line Step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Pointer to new image data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_32f_C2_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_32f_C2*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_32f_C2_System_Int32_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_32f_C2(System.Int32,System.Int32,System.Int32@)">nppiMalloc_32f_C2(Int32, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>2 channel 32-bit floating point image memory allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppiMalloc_32f_C2(int nWidthPixels, int nHeightPixels, ref int pStepBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidthPixels</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeightPixels</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pStepBytes</span></td>
+        <td><p>Line Step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Pointer to new image data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_32f_C3_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_32f_C3*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_32f_C3_System_Int32_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_32f_C3(System.Int32,System.Int32,System.Int32@)">nppiMalloc_32f_C3(Int32, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>3 channel 32-bit floating point image memory allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppiMalloc_32f_C3(int nWidthPixels, int nHeightPixels, ref int pStepBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidthPixels</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeightPixels</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pStepBytes</span></td>
+        <td><p>Line Step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Pointer to new image data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_32f_C4_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_32f_C4*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_32f_C4_System_Int32_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_32f_C4(System.Int32,System.Int32,System.Int32@)">nppiMalloc_32f_C4(Int32, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>4 channel 32-bit floating point image memory allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppiMalloc_32f_C4(int nWidthPixels, int nHeightPixels, ref int pStepBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidthPixels</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeightPixels</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pStepBytes</span></td>
+        <td><p>Line Step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Pointer to new image data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_32fc_C1_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_32fc_C1*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_32fc_C1_System_Int32_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_32fc_C1(System.Int32,System.Int32,System.Int32@)">nppiMalloc_32fc_C1(Int32, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>32-bit float complex image memory allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppiMalloc_32fc_C1(int nWidthPixels, int nHeightPixels, ref int pStepBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidthPixels</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeightPixels</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pStepBytes</span></td>
+        <td><p>Line Step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Pointer to new image data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_32fc_C2_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_32fc_C2*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_32fc_C2_System_Int32_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_32fc_C2(System.Int32,System.Int32,System.Int32@)">nppiMalloc_32fc_C2(Int32, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>2 channel 32-bit float complex image memory allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppiMalloc_32fc_C2(int nWidthPixels, int nHeightPixels, ref int pStepBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidthPixels</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeightPixels</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pStepBytes</span></td>
+        <td><p>Line Step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Pointer to new image data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_32fc_C3_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_32fc_C3*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_32fc_C3_System_Int32_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_32fc_C3(System.Int32,System.Int32,System.Int32@)">nppiMalloc_32fc_C3(Int32, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>3 channel 32-bit float complex image memory allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppiMalloc_32fc_C3(int nWidthPixels, int nHeightPixels, ref int pStepBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidthPixels</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeightPixels</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pStepBytes</span></td>
+        <td><p>Line Step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Pointer to new image data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_32fc_C4_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_32fc_C4*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_32fc_C4_System_Int32_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_32fc_C4(System.Int32,System.Int32,System.Int32@)">nppiMalloc_32fc_C4(Int32, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>4 channel 32-bit float complex image memory allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppiMalloc_32fc_C4(int nWidthPixels, int nHeightPixels, ref int pStepBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidthPixels</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeightPixels</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pStepBytes</span></td>
+        <td><p>Line Step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Pointer to new image data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_32s_C1_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_32s_C1*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_32s_C1_System_Int32_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_32s_C1(System.Int32,System.Int32,System.Int32@)">nppiMalloc_32s_C1(Int32, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>32-bit signed image memory allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppiMalloc_32s_C1(int nWidthPixels, int nHeightPixels, ref int pStepBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidthPixels</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeightPixels</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pStepBytes</span></td>
+        <td><p>Line Step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Pointer to new image data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_32s_C3_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_32s_C3*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_32s_C3_System_Int32_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_32s_C3(System.Int32,System.Int32,System.Int32@)">nppiMalloc_32s_C3(Int32, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>3 channel 32-bit signed image memory allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppiMalloc_32s_C3(int nWidthPixels, int nHeightPixels, ref int pStepBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidthPixels</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeightPixels</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pStepBytes</span></td>
+        <td><p>Line Step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Pointer to new image data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_32s_C4_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_32s_C4*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_32s_C4_System_Int32_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_32s_C4(System.Int32,System.Int32,System.Int32@)">nppiMalloc_32s_C4(Int32, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>4 channel 32-bit signed image memory allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppiMalloc_32s_C4(int nWidthPixels, int nHeightPixels, ref int pStepBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidthPixels</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeightPixels</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pStepBytes</span></td>
+        <td><p>Line Step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Pointer to new image data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_32sc_C1_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_32sc_C1*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_32sc_C1_System_Int32_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_32sc_C1(System.Int32,System.Int32,System.Int32@)">nppiMalloc_32sc_C1(Int32, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>32-bit integer complex image memory allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppiMalloc_32sc_C1(int nWidthPixels, int nHeightPixels, ref int pStepBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidthPixels</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeightPixels</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pStepBytes</span></td>
+        <td><p>Line Step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Pointer to new image data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_32sc_C2_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_32sc_C2*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_32sc_C2_System_Int32_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_32sc_C2(System.Int32,System.Int32,System.Int32@)">nppiMalloc_32sc_C2(Int32, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>2 channel 32-bit integer complex image memory allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppiMalloc_32sc_C2(int nWidthPixels, int nHeightPixels, ref int pStepBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidthPixels</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeightPixels</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pStepBytes</span></td>
+        <td><p>Line Step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Pointer to new image data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_32sc_C3_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_32sc_C3*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_32sc_C3_System_Int32_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_32sc_C3(System.Int32,System.Int32,System.Int32@)">nppiMalloc_32sc_C3(Int32, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>3 channel 32-bit integer complex image memory allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppiMalloc_32sc_C3(int nWidthPixels, int nHeightPixels, ref int pStepBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidthPixels</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeightPixels</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pStepBytes</span></td>
+        <td><p>Line Step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Pointer to new image data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_32sc_C4_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_32sc_C4*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_32sc_C4_System_Int32_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_32sc_C4(System.Int32,System.Int32,System.Int32@)">nppiMalloc_32sc_C4(Int32, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>4 channel 32-bit integer complex image memory allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppiMalloc_32sc_C4(int nWidthPixels, int nHeightPixels, ref int pStepBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidthPixels</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeightPixels</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pStepBytes</span></td>
+        <td><p>Line Step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Pointer to new image data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_8u_C1_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_8u_C1*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_8u_C1_System_Int32_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_8u_C1(System.Int32,System.Int32,System.Int32@)">nppiMalloc_8u_C1(Int32, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>8-bit unsigned image memory allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppiMalloc_8u_C1(int nWidthPixels, int nHeightPixels, ref int pStepBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidthPixels</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeightPixels</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pStepBytes</span></td>
+        <td><p>Line Step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Pointer to new image data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_8u_C2_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_8u_C2*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_8u_C2_System_Int32_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_8u_C2(System.Int32,System.Int32,System.Int32@)">nppiMalloc_8u_C2(Int32, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>2 channel 8-bit unsigned image memory allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppiMalloc_8u_C2(int nWidthPixels, int nHeightPixels, ref int pStepBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidthPixels</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeightPixels</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pStepBytes</span></td>
+        <td><p>Line Step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Pointer to new image data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_8u_C3_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_8u_C3*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_8u_C3_System_Int32_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_8u_C3(System.Int32,System.Int32,System.Int32@)">nppiMalloc_8u_C3(Int32, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>3 channel 8-bit unsigned image memory allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppiMalloc_8u_C3(int nWidthPixels, int nHeightPixels, ref int pStepBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidthPixels</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeightPixels</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pStepBytes</span></td>
+        <td><p>Line Step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Pointer to new image data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_8u_C4_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_8u_C4*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc_nppiMalloc_8u_C4_System_Int32_System_Int32_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc.nppiMalloc_8u_C4(System.Int32,System.Int32,System.Int32@)">nppiMalloc_8u_C4(Int32, Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>4 channel 8-bit unsigned image memory allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUdeviceptr nppiMalloc_8u_C4(int nWidthPixels, int nHeightPixels, ref int pStepBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nWidthPixels</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nHeightPixels</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pStepBytes</span></td>
+        <td><p>Line Step.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><p>Pointer to new image data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPNativeMethods_NPPi_MemAlloc.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPNativeMethods.NPPi.MemAlloc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPNativeMethods.cs/#L187" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

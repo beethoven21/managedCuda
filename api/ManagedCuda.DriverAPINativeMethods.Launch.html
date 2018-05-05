@@ -1,0 +1,774 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DriverAPINativeMethods.Launch
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DriverAPINativeMethods.Launch
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.DriverAPINativeMethods.Launch">
+  
+  
+  <h1 id="ManagedCuda_DriverAPINativeMethods_Launch" data-uid="ManagedCuda.DriverAPINativeMethods.Launch" class="text-break">Class DriverAPINativeMethods.Launch
+  </h1>
+  <div class="markdown level0 summary"><p>Groups all kernel launch API calls</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DriverAPINativeMethods.Launch</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.html">ManagedCuda</a></h6>
+  <h6><strong>Assembly</strong>: ManagedCuda.dll</h6>
+  <h5 id="ManagedCuda_DriverAPINativeMethods_Launch_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Launch</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_Launch_cuLaunch_" data-uid="ManagedCuda.DriverAPINativeMethods.Launch.cuLaunch*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_Launch_cuLaunch_ManagedCuda_BasicTypes_CUfunction_" data-uid="ManagedCuda.DriverAPINativeMethods.Launch.cuLaunch(ManagedCuda.BasicTypes.CUfunction)">cuLaunch(CUfunction)</h4>
+  <div class="markdown level1 summary"><p>Invokes the kernel <code>f</code> on a 1 x 1 x 1 grid of blocks. The block contains the number of threads specified by a previous
+call to <a class="xref" href="ManagedCuda.DriverAPINativeMethods.FunctionManagement.html#ManagedCuda_DriverAPINativeMethods_FunctionManagement_cuFuncSetBlockShape_ManagedCuda_BasicTypes_CUfunction_System_Int32_System_Int32_System_Int32_">cuFuncSetBlockShape(CUfunction, Int32, Int32, Int32)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Don't use this CUDA API call with CUDA version &gt;= 4.0.&quot;)]
+public static CUResult cuLaunch(CUfunction f)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUfunction.html">CUfunction</a></td>
+        <td><span class="parametername">f</span></td>
+        <td><p>Kernel to launch</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorLaunchFailed">ErrorLaunchFailed</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorLaunchOutOfResources">ErrorLaunchOutOfResources</a>
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorLaunchTimeout">ErrorLaunchTimeout</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorLaunchIncompatibleTexturing">ErrorLaunchIncompatibleTexturing</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_Launch_cuLaunchCooperativeKernel_" data-uid="ManagedCuda.DriverAPINativeMethods.Launch.cuLaunchCooperativeKernel*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_Launch_cuLaunchCooperativeKernel_ManagedCuda_BasicTypes_CUfunction_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_ManagedCuda_BasicTypes_CUstream_System_IntPtr___" data-uid="ManagedCuda.DriverAPINativeMethods.Launch.cuLaunchCooperativeKernel(ManagedCuda.BasicTypes.CUfunction,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,ManagedCuda.BasicTypes.CUstream,System.IntPtr[])">cuLaunchCooperativeKernel(CUfunction, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, CUstream, IntPtr[])</h4>
+  <div class="markdown level1 summary"><p>Launches a CUDA function where thread blocks can cooperate and synchronize as they execute</p>
+<p>
+Invokes the kernel \p f on a \p gridDimX x \p gridDimY x \p gridDimZ
+grid of blocks.Each block contains \p blockDimX x \p blockDimY x
+\p blockDimZ threads.
+<p>
+\p sharedMemBytes sets the amount of dynamic shared memory that will be
+available to each thread block.
+<p>
+The device on which this kernel is invoked must have a non-zero value for
+the device attribute::CU_DEVICE_ATTRIBUTE_COOPERATIVE_LAUNCH.
+<p>
+The total number of blocks launched cannot exceed the maximum number of blocks per
+multiprocessor as returned by ::cuOccupancyMaxActiveBlocksPerMultiprocessor (or
+::cuOccupancyMaxActiveBlocksPerMultiprocessorWithFlags) times the number of multiprocessors
+as specified by the device attribute ::CU_DEVICE_ATTRIBUTE_MULTIPROCESSOR_COUNT.
+<p>
+The kernel cannot make use of CUDA dynamic parallelism.
+<p>
+Kernel parameters must be specified via \p kernelParams.  If \p f
+has N parameters, then \p kernelParams needs to be an array of N
+pointers.  Each of \p kernelParams [0]
+through \p kernelParams [N-1]
+must point to a region of memory from which the actual kernel
+parameter will be copied.  The number of kernel parameters and their
+offsets and sizes do not need to be specified as that information is
+retrieved directly from the kernel&apos;s image.
+<p>
+Calling ::cuLaunchCooperativeKernel() sets persistent function state that is
+the same as function state set through ::cuLaunchKernel API
+<p>
+When the kernel \p f is launched via ::cuLaunchCooperativeKernel(), the previous
+block shape, shared size and parameter info associated with \p f
+is overwritten.
+<p>
+Note that to use ::cuLaunchCooperativeKernel(), the kernel \p f must either have
+been compiled with toolchain version 3.2 or later so that it will
+contain kernel parameter information, or have no kernel parameters.
+If either of these conditions is not met, then ::cuLaunchCooperativeKernel() will
+return ::CUDA_ERROR_INVALID_IMAGE.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuLaunchCooperativeKernel(CUfunction f, uint gridDimX, uint gridDimY, uint gridDimZ, uint blockDimX, uint blockDimY, uint blockDimZ, uint sharedMemBytes, CUstream hStream, IntPtr[] kernelParams)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUfunction.html">CUfunction</a></td>
+        <td><span class="parametername">f</span></td>
+        <td><p>Kernel to launch</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">gridDimX</span></td>
+        <td><p>Width of grid in blocks</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">gridDimY</span></td>
+        <td><p>Height of grid in blocks</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">gridDimZ</span></td>
+        <td><p>Depth of grid in blocks</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">blockDimX</span></td>
+        <td><p>X dimension of each thread block</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">blockDimY</span></td>
+        <td><p>Y dimension of each thread block</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">blockDimZ</span></td>
+        <td><p>Z dimension of each thread block</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">sharedMemBytes</span></td>
+        <td><p>Dynamic shared-memory size per thread block in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">hStream</span></td>
+        <td><p>Stream identifier</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span>[]</td>
+        <td><span class="parametername">kernelParams</span></td>
+        <td><p>Array of pointers to kernel parameters</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_Launch_cuLaunchCooperativeKernelMultiDevice_" data-uid="ManagedCuda.DriverAPINativeMethods.Launch.cuLaunchCooperativeKernelMultiDevice*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_Launch_cuLaunchCooperativeKernelMultiDevice_ManagedCuda_BasicTypes_CudaLaunchParams___System_UInt32_ManagedCuda_BasicTypes_CudaCooperativeLaunchMultiDeviceFlags_" data-uid="ManagedCuda.DriverAPINativeMethods.Launch.cuLaunchCooperativeKernelMultiDevice(ManagedCuda.BasicTypes.CudaLaunchParams[],System.UInt32,ManagedCuda.BasicTypes.CudaCooperativeLaunchMultiDeviceFlags)">cuLaunchCooperativeKernelMultiDevice(CudaLaunchParams[], UInt32, CudaCooperativeLaunchMultiDeviceFlags)</h4>
+  <div class="markdown level1 summary"><p>Launches CUDA functions on multiple devices where thread blocks can cooperate and synchronize as they execute</p>
+<p>
+Invokes kernels as specified in the \p launchParamsList array where each element
+of the array specifies all the parameters required to perform a single kernel launch.
+These kernels can cooperate and synchronize as they execute. The size of the array is
+specified by \p numDevices.
+<p>
+No two kernels can be launched on the same device. All the devices targeted by this
+multi-device launch must be identical. All devices must have a non-zero value for the
+device attribute ::CU_DEVICE_ATTRIBUTE_COOPERATIVE_MULTI_DEVICE_LAUNCH.
+<p>
+All kernels launched must be identical with respect to the compiled code. Note that
+any __device__, __constant__ or __managed__ variables present in the module that owns
+the kernel launched on each device, are independently instantiated on every device.
+It is the application&apos;s responsiblity to ensure these variables are initialized and
+used appropriately.
+<p>
+The size of the grids as specified in blocks, the size of the blocks themselves
+and the amount of shared memory used by each thread block must also match across
+all launched kernels.
+<p>
+The streams used to launch these kernels must have been created via either ::cuStreamCreate
+or ::cuStreamCreateWithPriority. The NULL stream or ::CU_STREAM_LEGACY or ::CU_STREAM_PER_THREAD
+cannot be used.
+<p>
+The total number of blocks launched per kernel cannot exceed the maximum number of blocks
+per multiprocessor as returned by ::cuOccupancyMaxActiveBlocksPerMultiprocessor (or
+::cuOccupancyMaxActiveBlocksPerMultiprocessorWithFlags) times the number of multiprocessors
+as specified by the device attribute ::CU_DEVICE_ATTRIBUTE_MULTIPROCESSOR_COUNT. Since the
+total number of blocks launched per device has to match across all devices, the maximum
+number of blocks that can be launched per device will be limited by the device with the
+least number of multiprocessors.
+<p>
+The kernels cannot make use of CUDA dynamic parallelism.
+<p>
+By default, the kernel won&apos;t begin execution on any GPU until all prior work in all the specified
+streams has completed. This behavior can be overridden by specifying the flag
+::CUDA_COOPERATIVE_LAUNCH_MULTI_DEVICE_NO_PRE_LAUNCH_SYNC. When this flag is specified, each kernel
+will only wait for prior work in the stream corresponding to that GPU to complete before it begins
+execution.
+<p>
+Similarly, by default, any subsequent work pushed in any of the specified streams will not begin
+execution until the kernels on all GPUs have completed. This behavior can be overridden by specifying
+the flag ::CUDA_COOPERATIVE_LAUNCH_MULTI_DEVICE_NO_POST_LAUNCH_SYNC. When this flag is specified,
+any subsequent work pushed in any of the specified streams will only wait for the kernel launched
+on the GPU corresponding to that stream to complete before it begins execution.
+<p>
+Calling ::cuLaunchCooperativeKernelMultiDevice() sets persistent function state that is
+the same as function state set through ::cuLaunchKernel API when called individually for each
+element in \p launchParamsList.
+<p>
+When kernels are launched via ::cuLaunchCooperativeKernelMultiDevice(), the previous
+block shape, shared size and parameter info associated with each ::CUDA_LAUNCH_PARAMS::function
+in \p launchParamsList is overwritten.
+<p>
+Note that to use ::cuLaunchCooperativeKernelMultiDevice(), the kernels must either have
+been compiled with toolchain version 3.2 or later so that it will
+contain kernel parameter information, or have no kernel parameters.
+If either of these conditions is not met, then ::cuLaunchCooperativeKernelMultiDevice() will
+return ::CUDA_ERROR_INVALID_IMAGE.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuLaunchCooperativeKernelMultiDevice(CudaLaunchParams[] launchParamsList, uint numDevices, CudaCooperativeLaunchMultiDeviceFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CudaLaunchParams.html">CudaLaunchParams</a>[]</td>
+        <td><span class="parametername">launchParamsList</span></td>
+        <td><p>List of launch parameters, one per device</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numDevices</span></td>
+        <td><p>Size of the \p launchParamsList array</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CudaCooperativeLaunchMultiDeviceFlags.html">CudaCooperativeLaunchMultiDeviceFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Flags to control launch behavior</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_Launch_cuLaunchGrid_" data-uid="ManagedCuda.DriverAPINativeMethods.Launch.cuLaunchGrid*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_Launch_cuLaunchGrid_ManagedCuda_BasicTypes_CUfunction_System_Int32_System_Int32_" data-uid="ManagedCuda.DriverAPINativeMethods.Launch.cuLaunchGrid(ManagedCuda.BasicTypes.CUfunction,System.Int32,System.Int32)">cuLaunchGrid(CUfunction, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Invokes the kernel <code>f</code> on a <code>grid_width</code> x <code>grid_height</code> grid of blocks. Each block contains the number of threads
+specified by a previous call to <a class="xref" href="ManagedCuda.DriverAPINativeMethods.FunctionManagement.html#ManagedCuda_DriverAPINativeMethods_FunctionManagement_cuFuncSetBlockShape_ManagedCuda_BasicTypes_CUfunction_System_Int32_System_Int32_System_Int32_">cuFuncSetBlockShape(CUfunction, Int32, Int32, Int32)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Don't use this CUDA API call with CUDA version &gt;= 4.0.&quot;)]
+public static CUResult cuLaunchGrid(CUfunction f, int grid_width, int grid_height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUfunction.html">CUfunction</a></td>
+        <td><span class="parametername">f</span></td>
+        <td><p>Kernel to launch</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">grid_width</span></td>
+        <td><p>Width of grid in blocks</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">grid_height</span></td>
+        <td><p>Height of grid in blocks</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorLaunchFailed">ErrorLaunchFailed</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorLaunchOutOfResources">ErrorLaunchOutOfResources</a>
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorLaunchTimeout">ErrorLaunchTimeout</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorLaunchIncompatibleTexturing">ErrorLaunchIncompatibleTexturing</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_Launch_cuLaunchGridAsync_" data-uid="ManagedCuda.DriverAPINativeMethods.Launch.cuLaunchGridAsync*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_Launch_cuLaunchGridAsync_ManagedCuda_BasicTypes_CUfunction_System_Int32_System_Int32_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.DriverAPINativeMethods.Launch.cuLaunchGridAsync(ManagedCuda.BasicTypes.CUfunction,System.Int32,System.Int32,ManagedCuda.BasicTypes.CUstream)">cuLaunchGridAsync(CUfunction, Int32, Int32, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Invokes the kernel <code>f</code> on a <code>grid_width</code> x <code>grid_height</code> grid of blocks. Each block contains the number of threads
+specified by a previous call to <a class="xref" href="ManagedCuda.DriverAPINativeMethods.FunctionManagement.html#ManagedCuda_DriverAPINativeMethods_FunctionManagement_cuFuncSetBlockShape_ManagedCuda_BasicTypes_CUfunction_System_Int32_System_Int32_System_Int32_">cuFuncSetBlockShape(CUfunction, Int32, Int32, Int32)</a>.<p>
+<a class="xref" href="ManagedCuda.DriverAPINativeMethods.Launch.html#ManagedCuda_DriverAPINativeMethods_Launch_cuLaunchGridAsync_ManagedCuda_BasicTypes_CUfunction_System_Int32_System_Int32_ManagedCuda_BasicTypes_CUstream_">cuLaunchGridAsync(CUfunction, Int32, Int32, CUstream)</a> can optionally be associated to a stream by passing a non-zero <code>hStream</code> argument.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Don't use this CUDA API call with CUDA version &gt;= 4.0.&quot;)]
+public static CUResult cuLaunchGridAsync(CUfunction f, int grid_width, int grid_height, CUstream hStream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUfunction.html">CUfunction</a></td>
+        <td><span class="parametername">f</span></td>
+        <td><p>Kernel to launch</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">grid_width</span></td>
+        <td><p>Width of grid in blocks</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">grid_height</span></td>
+        <td><p>Height of grid in blocks</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">hStream</span></td>
+        <td><p>Stream identifier</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorLaunchFailed">ErrorLaunchFailed</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorLaunchOutOfResources">ErrorLaunchOutOfResources</a>
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorLaunchTimeout">ErrorLaunchTimeout</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorLaunchIncompatibleTexturing">ErrorLaunchIncompatibleTexturing</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_DriverAPINativeMethods_Launch_cuLaunchKernel_" data-uid="ManagedCuda.DriverAPINativeMethods.Launch.cuLaunchKernel*"></a>
+  <h4 id="ManagedCuda_DriverAPINativeMethods_Launch_cuLaunchKernel_ManagedCuda_BasicTypes_CUfunction_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_ManagedCuda_BasicTypes_CUstream_System_IntPtr___System_IntPtr___" data-uid="ManagedCuda.DriverAPINativeMethods.Launch.cuLaunchKernel(ManagedCuda.BasicTypes.CUfunction,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,ManagedCuda.BasicTypes.CUstream,System.IntPtr[],System.IntPtr[])">cuLaunchKernel(CUfunction, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, CUstream, IntPtr[], IntPtr[])</h4>
+  <div class="markdown level1 summary"><p>Invokes the kernel <code>f</code> on a <code>gridDimX</code> x <code>gridDimY</code> x <code>gridDimZ</code>
+grid of blocks. Each block contains <code>blockDimX</code> x <code>blockDimY</code> x
+blockDimZ threads.</p>
+<p>
+<code>sharedMemBytes</code> sets the amount of dynamic shared memory that will be
+available to each thread block.
+<p>
+<a class="xref" href="ManagedCuda.DriverAPINativeMethods.Launch.html#ManagedCuda_DriverAPINativeMethods_Launch_cuLaunchKernel_ManagedCuda_BasicTypes_CUfunction_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_ManagedCuda_BasicTypes_CUstream_System_IntPtr___System_IntPtr___">cuLaunchKernel(CUfunction, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, CUstream, IntPtr[], IntPtr[])</a> can optionally be associated to a stream by passing a
+non-zero <code>hStream</code> argument.
+<p>
+Kernel parameters to <code>f</code> can be specified in one of two ways:
+<p>
+1) Kernel parameters can be specified via <code>kernelParams</code>. If <code>f</code>
+has N parameters, then <code>kernelParams</code> needs to be an array of N
+pointers. Each of <code>kernelParams[0]</code> through <code>kernelParams[N-1]</code>
+must point to a region of memory from which the actual kernel
+parameter will be copied.  The number of kernel parameters and their
+offsets and sizes do not need to be specified as that information is
+retrieved directly from the kernel&apos;s image.
+<p>
+2) Kernel parameters can also be packaged by the application into
+a single buffer that is passed in via the <code>extra</code> parameter.
+This places the burden on the application of knowing each kernel
+parameter&apos;s size and alignment/padding within the buffer.  
+<p>
+The <code>extra</code> parameter exists to allow <a class="xref" href="ManagedCuda.DriverAPINativeMethods.Launch.html#ManagedCuda_DriverAPINativeMethods_Launch_cuLaunchKernel_ManagedCuda_BasicTypes_CUfunction_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_ManagedCuda_BasicTypes_CUstream_System_IntPtr___System_IntPtr___">cuLaunchKernel(CUfunction, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, CUstream, IntPtr[], IntPtr[])</a> to take
+additional less commonly used arguments. <code>extra</code> specifies a list of
+names of extra settings and their corresponding values.  Each extra
+setting name is immediately followed by the corresponding value.  The
+list must be terminated with either NULL or ::CU_LAUNCH_PARAM_END.
+<p>
+- ::CU_LAUNCH_PARAM_END, which indicates the end of the <code>extra</code>
+  array;
+- ::CU_LAUNCH_PARAM_BUFFER_POINTER, which specifies that the next
+  value in <code>extra</code> will be a pointer to a buffer containing all
+  the kernel parameters for launching kernel <code>f</code>;
+- ::CU_LAUNCH_PARAM_BUFFER_SIZE, which specifies that the next
+  value in <code>extra</code> will be a pointer to a size_t containing the
+  size of the buffer specified with ::CU_LAUNCH_PARAM_BUFFER_POINTER;
+<p>
+The error ::CUDA_ERROR_INVALID_VALUE will be returned if kernel
+parameters are specified with both <code>kernelParams</code> and <code>extra</code>
+(i.e. both <code>kernelParams</code> and <code>extra</code> are non-NULL).
+<p>
+Calling <a class="xref" href="ManagedCuda.DriverAPINativeMethods.Launch.html#ManagedCuda_DriverAPINativeMethods_Launch_cuLaunchKernel_ManagedCuda_BasicTypes_CUfunction_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_ManagedCuda_BasicTypes_CUstream_System_IntPtr___System_IntPtr___">cuLaunchKernel(CUfunction, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, CUstream, IntPtr[], IntPtr[])</a> sets persistent function state that is
+the same as function state set through the following deprecated APIs:
+<p>::cuFuncSetBlockShape()
+::cuFuncSetSharedSize()
+::cuParamSetSize()
+::cuParamSeti()
+::cuParamSetf()
+::cuParamSetv()</p>
+<p>
+When the kernel <code>f</code> is launched via <a class="xref" href="ManagedCuda.DriverAPINativeMethods.Launch.html#ManagedCuda_DriverAPINativeMethods_Launch_cuLaunchKernel_ManagedCuda_BasicTypes_CUfunction_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_ManagedCuda_BasicTypes_CUstream_System_IntPtr___System_IntPtr___">cuLaunchKernel(CUfunction, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, CUstream, IntPtr[], IntPtr[])</a>, the previous
+block shape, shared size and parameter info associated with <code>f</code>
+is overwritten.
+<p>
+Note that to use <a class="xref" href="ManagedCuda.DriverAPINativeMethods.Launch.html#ManagedCuda_DriverAPINativeMethods_Launch_cuLaunchKernel_ManagedCuda_BasicTypes_CUfunction_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_ManagedCuda_BasicTypes_CUstream_System_IntPtr___System_IntPtr___">cuLaunchKernel(CUfunction, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, CUstream, IntPtr[], IntPtr[])</a>, the kernel <code>f</code> must either have
+been compiled with toolchain version 3.2 or later so that it will
+contain kernel parameter information, or have no kernel parameters.
+If either of these conditions is not met, then <a class="xref" href="ManagedCuda.DriverAPINativeMethods.Launch.html#ManagedCuda_DriverAPINativeMethods_Launch_cuLaunchKernel_ManagedCuda_BasicTypes_CUfunction_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_ManagedCuda_BasicTypes_CUstream_System_IntPtr___System_IntPtr___">cuLaunchKernel(CUfunction, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, CUstream, IntPtr[], IntPtr[])</a> will
+return <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidImage">ErrorInvalidImage</a>.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CUResult cuLaunchKernel(CUfunction f, uint gridDimX, uint gridDimY, uint gridDimZ, uint blockDimX, uint blockDimY, uint blockDimZ, uint sharedMemBytes, CUstream hStream, IntPtr[] kernelParams, IntPtr[] extra)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUfunction.html">CUfunction</a></td>
+        <td><span class="parametername">f</span></td>
+        <td><p>Kernel to launch</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">gridDimX</span></td>
+        <td><p>Width of grid in blocks</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">gridDimY</span></td>
+        <td><p>Height of grid in blocks</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">gridDimZ</span></td>
+        <td><p>Depth of grid in blocks</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">blockDimX</span></td>
+        <td><p>X dimension of each thread block</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">blockDimY</span></td>
+        <td><p>Y dimension of each thread block</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">blockDimZ</span></td>
+        <td><p>Z dimension of each thread block</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">sharedMemBytes</span></td>
+        <td><p>Dynamic shared-memory size per thread block in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">hStream</span></td>
+        <td><p>Stream identifier</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span>[]</td>
+        <td><span class="parametername">kernelParams</span></td>
+        <td><p>Array of pointers to kernel parameters</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span>[]</td>
+        <td><span class="parametername">extra</span></td>
+        <td><p>Extra options</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td><p>CUDA Error Codes: <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorDeinitialized">ErrorDeinitialized</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotInitialized">ErrorNotInitialized</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidContext">ErrorInvalidContext</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidHandle">ErrorInvalidHandle</a>,
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidImage">ErrorInvalidImage</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorInvalidValue">ErrorInvalidValue</a>
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorLaunchFailed">ErrorLaunchFailed</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorLaunchOutOfResources">ErrorLaunchOutOfResources</a>
+<a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorLaunchTimeout">ErrorLaunchTimeout</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorLaunchIncompatibleTexturing">ErrorLaunchIncompatibleTexturing</a>, <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorSharedObjectInitFailed">ErrorSharedObjectInitFailed</a>.
+<remarks>Note that this function may also return error codes from previous, asynchronous launches.</remarks></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_DriverAPINativeMethods_Launch.md&amp;value=---%0Auid%3A%20ManagedCuda.DriverAPINativeMethods.Launch%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/DriverAPI.cs/#L8359" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,356 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class NPPNativeMethods.NPPi.FilterCannyBorder
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class NPPNativeMethods.NPPi.FilterCannyBorder
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterCannyBorder">
+  
+  
+  <h1 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterCannyBorder" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterCannyBorder" class="text-break">Class NPPNativeMethods.NPPi.FilterCannyBorder
+  </h1>
+  <div class="markdown level0 summary"><p>Performs Canny edge detection on a single channel 8-bit grayscale image and outputs a single channel 8-bit image consisting of 0x00 and 0xFF
+values with 0xFF representing edge pixels.  The algorithm consists of three phases.  The first phase generates two output images consisting
+of a single channel 16-bit signed image containing magnitude values and a single channel 32-bit floating point image containing the angular
+direction of those magnitude values.   This phase is accomplished by calling the appropriate GradientVectorBorder filter function based on
+the filter type, filter mask size, and norm type requested.  The next phase uses those magnitude and direction images to suppress non-maximum
+magnitude values which are lower than the values of either of its two nearest neighbors in the same direction as the test magnitude pixel in
+the 3x3 surrounding magnitude pixel neighborhood.  This phase outputs a new magnitude image with non-maximum pixel values suppressed.  Finally, in the
+third phase, the new magnitude image is passed through a hysteresis threshold filter that filters out any magnitude values that are not connected
+to another edge magnitude value.   In this phase, any magnitude value above the high threshold value is automatically accepted, any magnitude
+value below the low threshold value is automatically rejected.  For magnitude values that lie between the low and high threshold, values are
+only accepted if one of their two neighbors in the same direction in the 3x3 neighborhood around them lies above the low threshold value.  In other words,
+if they are connected to an active edge.   J. Canny recommends that the ratio of high to low threshold limit be in the range two or three to one,
+based on predicted signal-to-noise ratios. The final output of the third phase consists of a single channel 8-bit unsigned image of 0x00 and 0xFF
+values based on whether they are accepted or rejected during threshold testing.</p>
+<p>Currently only the NPP_BORDER_REPLICATE border type operation is supported.  Borderless output can be accomplished by using a
+larger source image than the destination and adjusting oSrcSize and oSrcOffset parameters accordingly.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">NPPNativeMethods.NPPi.FilterCannyBorder</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.NPP.html">ManagedCuda.NPP</a></h6>
+  <h6><strong>Assembly</strong>: NPP.dll</h6>
+  <h5 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterCannyBorder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class FilterCannyBorder</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterCannyBorder_nppiFilterCannyBorder_8u_C1R_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterCannyBorder.nppiFilterCannyBorder_8u_C1R*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterCannyBorder_nppiFilterCannyBorder_8u_C1R_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_NppiPoint_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_NPP_NppiSize_ManagedCuda_NPP_DifferentialKernel_ManagedCuda_NPP_MaskSize_System_Int16_System_Int16_ManagedCuda_NPP_NppiNorm_ManagedCuda_NPP_NppiBorderType_ManagedCuda_BasicTypes_CUdeviceptr_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterCannyBorder.nppiFilterCannyBorder_8u_C1R(ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.NppiPoint,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.NPP.NppiSize,ManagedCuda.NPP.DifferentialKernel,ManagedCuda.NPP.MaskSize,System.Int16,System.Int16,ManagedCuda.NPP.NppiNorm,ManagedCuda.NPP.NppiBorderType,ManagedCuda.BasicTypes.CUdeviceptr)">nppiFilterCannyBorder_8u_C1R(CUdeviceptr, Int32, NppiSize, NppiPoint, CUdeviceptr, Int32, NppiSize, DifferentialKernel, MaskSize, Int16, Int16, NppiNorm, NppiBorderType, CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>1 channel 8-bit unsigned grayscale to 1 channel 8-bit unsigned black (0x00) and white (0xFF) image with border control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiFilterCannyBorder_8u_C1R(CUdeviceptr pSrc, int nSrcStep, NppiSize oSrcSize, NppiPoint oSrcOffset, CUdeviceptr pDst, int nDstStep, NppiSize oSizeROI, DifferentialKernel eFilterType, MaskSize eMaskSize, short nLowThreshold, short nHighThreshold, NppiNorm eNorm, NppiBorderType eBorderType, CUdeviceptr pDeviceBuffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source-Image Pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nSrcStep</span></td>
+        <td><p>Source-Image Line Step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSrcSize</span></td>
+        <td><p>Source image width and height in pixels relative to pSrc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a></td>
+        <td><span class="parametername">oSrcOffset</span></td>
+        <td><p>The pixel offset that pSrc points to relative to the origin of the source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDst</span></td>
+        <td><p>output edge destination_image_pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nDstStep</span></td>
+        <td><p>output edge destination_image_line_step.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.DifferentialKernel.html">DifferentialKernel</a></td>
+        <td><span class="parametername">eFilterType</span></td>
+        <td><p>selects between Sobel or Scharr filter type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.MaskSize.html">MaskSize</a></td>
+        <td><span class="parametername">eMaskSize</span></td>
+        <td><p>fixed filter mask size to use.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int16</span></td>
+        <td><span class="parametername">nLowThreshold</span></td>
+        <td><p>low hysteresis threshold value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int16</span></td>
+        <td><span class="parametername">nHighThreshold</span></td>
+        <td><p>high hysteresis threshold value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiNorm.html">NppiNorm</a></td>
+        <td><span class="parametername">eNorm</span></td>
+        <td><p>gradient distance method to use.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiBorderType.html">NppiBorderType</a></td>
+        <td><span class="parametername">eBorderType</span></td>
+        <td><p>The border type operation to be applied at source image border boundaries.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">pDeviceBuffer</span></td>
+        <td><p>pointer to scratch DEVICE memory buffer of size hpBufferSize (see nppiFilterCannyBorderGetBufferSize() above)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NotEvenStepError">NotEvenStepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterCannyBorder_nppiFilterCannyBorderGetBufferSize_" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterCannyBorder.nppiFilterCannyBorderGetBufferSize*"></a>
+  <h4 id="ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterCannyBorder_nppiFilterCannyBorderGetBufferSize_ManagedCuda_NPP_NppiSize_System_Int32__" data-uid="ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterCannyBorder.nppiFilterCannyBorderGetBufferSize(ManagedCuda.NPP.NppiSize,System.Int32@)">nppiFilterCannyBorderGetBufferSize(NppiSize, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Calculate scratch buffer size needed for the FilterCannyBorder function based on destination image SizeROI width and height.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NppStatus nppiFilterCannyBorderGetBufferSize(NppiSize oSizeROI, ref int hpBufferSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td><span class="parametername">oSizeROI</span></td>
+        <td><p>Region-of-Interest (ROI).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">hpBufferSize</span></td>
+        <td><p>Required buffer size. Important: hpBufferSize is a <em>host pointer.</em> \ref general_scratch_buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td><p><a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NotEvenStepError">NotEvenStepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_NullPointerError">NullPointerError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_AlignmentError">AlignmentError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_StepError">StepError</a>, <a class="xref" href="ManagedCuda.NPP.NppStatus.html#ManagedCuda_NPP_NppStatus_SizeError">SizeError</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPNativeMethods_NPPi_FilterCannyBorder.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPNativeMethods.NPPi.FilterCannyBorder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPNativeMethods.cs/#L76114" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

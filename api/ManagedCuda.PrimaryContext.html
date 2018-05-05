@@ -1,0 +1,1479 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PrimaryContext
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PrimaryContext
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.PrimaryContext">
+  
+  
+  <h1 id="ManagedCuda_PrimaryContext" data-uid="ManagedCuda.PrimaryContext" class="text-break">Class PrimaryContext
+  </h1>
+  <div class="markdown level0 summary"><p>The primary context unique per device and it's shared with CUDA runtime API.
+Those functions allows seemless integration with other libraries using CUDA.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="ManagedCuda.CudaContext.html">CudaContext</a></div>
+    <div class="level2"><span class="xref">PrimaryContext</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext__context">CudaContext._context</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext__device">CudaContext._device</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext__deviceID">CudaContext._deviceID</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_disposed">CudaContext.disposed</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_Dispose">CudaContext.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_AddZeroToArray_System_Byte___">CudaContext.AddZeroToArray(Byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_GetAPIVersionOfCurrentContext">CudaContext.GetAPIVersionOfCurrentContext()</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_Synchronize">CudaContext.Synchronize()</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_PushContext">CudaContext.PushContext()</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_PopContext">CudaContext.PopContext()</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_SetCurrent">CudaContext.SetCurrent()</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_SetSharedMemConfig_ManagedCuda_BasicTypes_CUsharedconfig_">CudaContext.SetSharedMemConfig(CUsharedconfig)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_GetSharedMemConfig">CudaContext.GetSharedMemConfig()</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_LoadModule_System_String_">CudaContext.LoadModule(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_LoadModulePTX_System_String_ManagedCuda_BasicTypes_CUJITOption___System_Object___">CudaContext.LoadModulePTX(String, CUJITOption[], Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_LoadModulePTX_System_String_ManagedCuda_CudaJitOptionCollection_">CudaContext.LoadModulePTX(String, CudaJitOptionCollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_LoadModulePTX_System_String_">CudaContext.LoadModulePTX(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_LoadModulePTX_System_Byte___ManagedCuda_CudaJitOptionCollection_">CudaContext.LoadModulePTX(Byte[], CudaJitOptionCollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_LoadModulePTX_System_Byte___ManagedCuda_BasicTypes_CUJITOption___System_Object___">CudaContext.LoadModulePTX(Byte[], CUJITOption[], Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_LoadModulePTX_System_IO_Stream_ManagedCuda_BasicTypes_CUJITOption___System_Object___">CudaContext.LoadModulePTX(Stream, CUJITOption[], Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_LoadModulePTX_System_IO_Stream_ManagedCuda_CudaJitOptionCollection_">CudaContext.LoadModulePTX(Stream, CudaJitOptionCollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_LoadModulePTX_System_Byte___">CudaContext.LoadModulePTX(Byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_LoadModulePTX_System_IO_Stream_">CudaContext.LoadModulePTX(Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_LoadKernel_System_String_System_String_">CudaContext.LoadKernel(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_LoadKernelPTX_System_String_System_String_ManagedCuda_BasicTypes_CUJITOption___System_Object___">CudaContext.LoadKernelPTX(String, String, CUJITOption[], Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_LoadKernelPTX_System_String_System_String_ManagedCuda_CudaJitOptionCollection_">CudaContext.LoadKernelPTX(String, String, CudaJitOptionCollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_LoadKernelPTX_System_String_System_String_">CudaContext.LoadKernelPTX(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_LoadKernelPTX_System_Byte___System_String_ManagedCuda_BasicTypes_CUJITOption___System_Object___">CudaContext.LoadKernelPTX(Byte[], String, CUJITOption[], Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_LoadKernelPTX_System_Byte___System_String_ManagedCuda_CudaJitOptionCollection_">CudaContext.LoadKernelPTX(Byte[], String, CudaJitOptionCollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_LoadKernelPTX_System_IO_Stream_System_String_ManagedCuda_BasicTypes_CUJITOption___System_Object___">CudaContext.LoadKernelPTX(Stream, String, CUJITOption[], Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_LoadKernelPTX_System_IO_Stream_System_String_ManagedCuda_CudaJitOptionCollection_">CudaContext.LoadKernelPTX(Stream, String, CudaJitOptionCollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_LoadKernelPTX_System_Byte___System_String_">CudaContext.LoadKernelPTX(Byte[], String)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_LoadKernelPTX_System_IO_Stream_System_String_">CudaContext.LoadKernelPTX(Stream, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_LoadModuleFatBin_System_Byte___">CudaContext.LoadModuleFatBin(Byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_LoadModuleFatBin_System_IO_Stream_">CudaContext.LoadModuleFatBin(Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_LoadKernelFatBin_System_Byte___System_String_">CudaContext.LoadKernelFatBin(Byte[], String)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_LoadKernelFatBin_System_IO_Stream_System_String_">CudaContext.LoadKernelFatBin(Stream, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_UnloadModule_ManagedCuda_BasicTypes_CUmodule_">CudaContext.UnloadModule(CUmodule)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_UnloadKernel_ManagedCuda_CudaKernel_">CudaContext.UnloadKernel(CudaKernel)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_AllocateMemory_ManagedCuda_BasicTypes_SizeT_">CudaContext.AllocateMemory(SizeT)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_ClearMemory_ManagedCuda_BasicTypes_CUdeviceptr_System_Byte_ManagedCuda_BasicTypes_SizeT_">CudaContext.ClearMemory(CUdeviceptr, Byte, SizeT)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_ClearMemory_ManagedCuda_BasicTypes_CUdeviceptr_System_UInt16_ManagedCuda_BasicTypes_SizeT_">CudaContext.ClearMemory(CUdeviceptr, UInt16, SizeT)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_ClearMemory_ManagedCuda_BasicTypes_CUdeviceptr_System_UInt32_ManagedCuda_BasicTypes_SizeT_">CudaContext.ClearMemory(CUdeviceptr, UInt32, SizeT)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_ClearMemory_ManagedCuda_BasicTypes_CUdeviceptr_System_Byte_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_">CudaContext.ClearMemory(CUdeviceptr, Byte, SizeT, SizeT, SizeT)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_ClearMemory_ManagedCuda_BasicTypes_CUdeviceptr_System_UInt16_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_">CudaContext.ClearMemory(CUdeviceptr, UInt16, SizeT, SizeT, SizeT)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_ClearMemory_ManagedCuda_BasicTypes_CUdeviceptr_System_UInt32_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_">CudaContext.ClearMemory(CUdeviceptr, UInt32, SizeT, SizeT, SizeT)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_ClearMemoryAsync_ManagedCuda_BasicTypes_CUdeviceptr_System_Byte_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_">CudaContext.ClearMemoryAsync(CUdeviceptr, Byte, SizeT, CUstream)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_ClearMemoryAsync_ManagedCuda_BasicTypes_CUdeviceptr_System_UInt16_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_">CudaContext.ClearMemoryAsync(CUdeviceptr, UInt16, SizeT, CUstream)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_ClearMemoryAsync_ManagedCuda_BasicTypes_CUdeviceptr_System_UInt32_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_">CudaContext.ClearMemoryAsync(CUdeviceptr, UInt32, SizeT, CUstream)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_ClearMemoryAsync_ManagedCuda_BasicTypes_CUdeviceptr_System_Byte_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_">CudaContext.ClearMemoryAsync(CUdeviceptr, Byte, SizeT, SizeT, SizeT, CUstream)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_ClearMemoryAsync_ManagedCuda_BasicTypes_CUdeviceptr_System_UInt16_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_">CudaContext.ClearMemoryAsync(CUdeviceptr, UInt16, SizeT, SizeT, SizeT, CUstream)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_ClearMemoryAsync_ManagedCuda_BasicTypes_CUdeviceptr_System_UInt32_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_CUstream_">CudaContext.ClearMemoryAsync(CUdeviceptr, UInt32, SizeT, SizeT, SizeT, CUstream)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_FreeMemory_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.FreeMemory(CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_GetTotalDeviceMemorySize">CudaContext.GetTotalDeviceMemorySize()</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_GetFreeDeviceMemorySize">CudaContext.GetFreeDeviceMemorySize()</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_DeviceCanAccessPeer_ManagedCuda_CudaContext_">CudaContext.DeviceCanAccessPeer(CudaContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_GetCacheConfig">CudaContext.GetCacheConfig()</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_SetCacheConfig_ManagedCuda_BasicTypes_CUFuncCache_">CudaContext.SetCacheConfig(CUFuncCache)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_System_IntPtr_ManagedCuda_BasicTypes_SizeT_">CudaContext.CopyToDevice(CUdeviceptr, IntPtr, SizeT)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice__1_ManagedCuda_BasicTypes_CUdeviceptr___0___">CudaContext.CopyToDevice&lt;T&gt;(CUdeviceptr, T[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice__1_ManagedCuda_BasicTypes_CUdeviceptr___0_">CudaContext.CopyToDevice&lt;T&gt;(CUdeviceptr, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_System_Byte___">CudaContext.CopyToDevice(CUdeviceptr, Byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_System_Double___">CudaContext.CopyToDevice(CUdeviceptr, Double[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_System_Single___">CudaContext.CopyToDevice(CUdeviceptr, Single[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32___">CudaContext.CopyToDevice(CUdeviceptr, Int32[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_System_Int64___">CudaContext.CopyToDevice(CUdeviceptr, Int64[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_System_SByte___">CudaContext.CopyToDevice(CUdeviceptr, SByte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_System_Int16___">CudaContext.CopyToDevice(CUdeviceptr, Int16[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_System_UInt32___">CudaContext.CopyToDevice(CUdeviceptr, UInt32[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_System_UInt64___">CudaContext.CopyToDevice(CUdeviceptr, UInt64[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_System_UInt16___">CudaContext.CopyToDevice(CUdeviceptr, UInt16[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_dim3___">CudaContext.CopyToDevice(CUdeviceptr, dim3[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_char1___">CudaContext.CopyToDevice(CUdeviceptr, char1[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_char2___">CudaContext.CopyToDevice(CUdeviceptr, char2[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_char3___">CudaContext.CopyToDevice(CUdeviceptr, char3[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_char4___">CudaContext.CopyToDevice(CUdeviceptr, char4[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_uchar1___">CudaContext.CopyToDevice(CUdeviceptr, uchar1[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_uchar2___">CudaContext.CopyToDevice(CUdeviceptr, uchar2[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_uchar3___">CudaContext.CopyToDevice(CUdeviceptr, uchar3[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_uchar4___">CudaContext.CopyToDevice(CUdeviceptr, uchar4[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_short1___">CudaContext.CopyToDevice(CUdeviceptr, short1[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_short2___">CudaContext.CopyToDevice(CUdeviceptr, short2[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_short3___">CudaContext.CopyToDevice(CUdeviceptr, short3[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_short4___">CudaContext.CopyToDevice(CUdeviceptr, short4[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_ushort1___">CudaContext.CopyToDevice(CUdeviceptr, ushort1[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_ushort2___">CudaContext.CopyToDevice(CUdeviceptr, ushort2[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_ushort3___">CudaContext.CopyToDevice(CUdeviceptr, ushort3[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_ushort4___">CudaContext.CopyToDevice(CUdeviceptr, ushort4[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_int1___">CudaContext.CopyToDevice(CUdeviceptr, int1[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_int2___">CudaContext.CopyToDevice(CUdeviceptr, int2[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_int3___">CudaContext.CopyToDevice(CUdeviceptr, int3[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_int4___">CudaContext.CopyToDevice(CUdeviceptr, int4[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_uint1___">CudaContext.CopyToDevice(CUdeviceptr, uint1[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_uint2___">CudaContext.CopyToDevice(CUdeviceptr, uint2[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_uint3___">CudaContext.CopyToDevice(CUdeviceptr, uint3[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_uint4___">CudaContext.CopyToDevice(CUdeviceptr, uint4[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_long1___">CudaContext.CopyToDevice(CUdeviceptr, long1[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_long2___">CudaContext.CopyToDevice(CUdeviceptr, long2[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_long3___">CudaContext.CopyToDevice(CUdeviceptr, long3[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_long4___">CudaContext.CopyToDevice(CUdeviceptr, long4[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_ulong1___">CudaContext.CopyToDevice(CUdeviceptr, ulong1[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_ulong2___">CudaContext.CopyToDevice(CUdeviceptr, ulong2[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_ulong3___">CudaContext.CopyToDevice(CUdeviceptr, ulong3[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_ulong4___">CudaContext.CopyToDevice(CUdeviceptr, ulong4[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_float1___">CudaContext.CopyToDevice(CUdeviceptr, float1[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_float2___">CudaContext.CopyToDevice(CUdeviceptr, float2[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_float3___">CudaContext.CopyToDevice(CUdeviceptr, float3[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_float4___">CudaContext.CopyToDevice(CUdeviceptr, float4[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_double1___">CudaContext.CopyToDevice(CUdeviceptr, double1[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_double2___">CudaContext.CopyToDevice(CUdeviceptr, double2[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_cuDoubleComplex___">CudaContext.CopyToDevice(CUdeviceptr, cuDoubleComplex[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_cuDoubleReal___">CudaContext.CopyToDevice(CUdeviceptr, cuDoubleReal[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_cuFloatComplex___">CudaContext.CopyToDevice(CUdeviceptr, cuFloatComplex[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_cuFloatReal___">CudaContext.CopyToDevice(CUdeviceptr, cuFloatReal[])</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_System_Byte_">CudaContext.CopyToDevice(CUdeviceptr, Byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_System_Double_">CudaContext.CopyToDevice(CUdeviceptr, Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_System_Single_">CudaContext.CopyToDevice(CUdeviceptr, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_">CudaContext.CopyToDevice(CUdeviceptr, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_System_Int64_">CudaContext.CopyToDevice(CUdeviceptr, Int64)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_System_SByte_">CudaContext.CopyToDevice(CUdeviceptr, SByte)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_System_Int16_">CudaContext.CopyToDevice(CUdeviceptr, Int16)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_System_UInt32_">CudaContext.CopyToDevice(CUdeviceptr, UInt32)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_System_UInt64_">CudaContext.CopyToDevice(CUdeviceptr, UInt64)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_System_UInt16_">CudaContext.CopyToDevice(CUdeviceptr, UInt16)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_dim3_">CudaContext.CopyToDevice(CUdeviceptr, dim3)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_char1_">CudaContext.CopyToDevice(CUdeviceptr, char1)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_char2_">CudaContext.CopyToDevice(CUdeviceptr, char2)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_char3_">CudaContext.CopyToDevice(CUdeviceptr, char3)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_char4_">CudaContext.CopyToDevice(CUdeviceptr, char4)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_uchar1_">CudaContext.CopyToDevice(CUdeviceptr, uchar1)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_uchar2_">CudaContext.CopyToDevice(CUdeviceptr, uchar2)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_uchar3_">CudaContext.CopyToDevice(CUdeviceptr, uchar3)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_uchar4_">CudaContext.CopyToDevice(CUdeviceptr, uchar4)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_short1_">CudaContext.CopyToDevice(CUdeviceptr, short1)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_short2_">CudaContext.CopyToDevice(CUdeviceptr, short2)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_short3_">CudaContext.CopyToDevice(CUdeviceptr, short3)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_short4_">CudaContext.CopyToDevice(CUdeviceptr, short4)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_ushort1_">CudaContext.CopyToDevice(CUdeviceptr, ushort1)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_ushort2_">CudaContext.CopyToDevice(CUdeviceptr, ushort2)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_ushort3_">CudaContext.CopyToDevice(CUdeviceptr, ushort3)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_ushort4_">CudaContext.CopyToDevice(CUdeviceptr, ushort4)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_int1_">CudaContext.CopyToDevice(CUdeviceptr, int1)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_int2_">CudaContext.CopyToDevice(CUdeviceptr, int2)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_int3_">CudaContext.CopyToDevice(CUdeviceptr, int3)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_int4_">CudaContext.CopyToDevice(CUdeviceptr, int4)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_uint1_">CudaContext.CopyToDevice(CUdeviceptr, uint1)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_uint2_">CudaContext.CopyToDevice(CUdeviceptr, uint2)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_uint3_">CudaContext.CopyToDevice(CUdeviceptr, uint3)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_uint4_">CudaContext.CopyToDevice(CUdeviceptr, uint4)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_long1_">CudaContext.CopyToDevice(CUdeviceptr, long1)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_long2_">CudaContext.CopyToDevice(CUdeviceptr, long2)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_long3_">CudaContext.CopyToDevice(CUdeviceptr, long3)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_long4_">CudaContext.CopyToDevice(CUdeviceptr, long4)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_ulong1_">CudaContext.CopyToDevice(CUdeviceptr, ulong1)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_ulong2_">CudaContext.CopyToDevice(CUdeviceptr, ulong2)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_ulong3_">CudaContext.CopyToDevice(CUdeviceptr, ulong3)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_ulong4_">CudaContext.CopyToDevice(CUdeviceptr, ulong4)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_float1_">CudaContext.CopyToDevice(CUdeviceptr, float1)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_float2_">CudaContext.CopyToDevice(CUdeviceptr, float2)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_float3_">CudaContext.CopyToDevice(CUdeviceptr, float3)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_float4_">CudaContext.CopyToDevice(CUdeviceptr, float4)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_double1_">CudaContext.CopyToDevice(CUdeviceptr, double1)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_double2_">CudaContext.CopyToDevice(CUdeviceptr, double2)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_cuDoubleComplex_">CudaContext.CopyToDevice(CUdeviceptr, cuDoubleComplex)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_cuDoubleReal_">CudaContext.CopyToDevice(CUdeviceptr, cuDoubleReal)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_cuFloatComplex_">CudaContext.CopyToDevice(CUdeviceptr, cuFloatComplex)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_VectorTypes_cuFloatReal_">CudaContext.CopyToDevice(CUdeviceptr, cuFloatReal)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost__1___0___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost&lt;T&gt;(T[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost__1___0_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost&lt;T&gt;(T, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_System_Byte___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(Byte[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_System_Double___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(Double[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_System_Single___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(Single[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_System_Int32___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(Int32[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_System_IntPtr_ManagedCuda_BasicTypes_CUdeviceptr_System_UInt32_">CudaContext.CopyToHost(IntPtr, CUdeviceptr, UInt32)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_System_Int64___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(Int64[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_System_SByte___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(SByte[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_System_Int16___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(Int16[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_System_UInt32___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(UInt32[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_System_UInt64___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(UInt64[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_System_UInt16___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(UInt16[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_dim3___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(dim3[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_char1___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(char1[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_char2___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(char2[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_char3___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(char3[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_char4___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(char4[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_uchar1___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(uchar1[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_uchar2___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(uchar2[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_uchar3___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(uchar3[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_uchar4___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(uchar4[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_short1___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(short1[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_short2___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(short2[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_short3___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(short3[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_short4___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(short4[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_ushort1___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(ushort1[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_ushort2___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(ushort2[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_ushort3___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(ushort3[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_ushort4___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(ushort4[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_int1___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(int1[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_int2___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(int2[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_int3___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(int3[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_int4___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(int4[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_uint1___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(uint1[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_uint2___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(uint2[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_uint3___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(uint3[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_uint4___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(uint4[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_long1___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(long1[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_long2___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(long2[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_long3___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(long3[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_long4___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(long4[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_ulong1___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(ulong1[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_ulong2___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(ulong2[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_ulong3___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(ulong3[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_ulong4___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(ulong4[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_float1___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(float1[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_float2___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(float2[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_float3___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(float3[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_float4___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(float4[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_double1___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(double1[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_double2___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(double2[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_cuDoubleComplex___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(cuDoubleComplex[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_cuDoubleReal___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(cuDoubleReal[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_cuFloatComplex___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(cuFloatComplex[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_cuFloatReal___ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(cuFloatReal[], CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_System_Byte_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(Byte, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_System_Double_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(Double, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_System_Single_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(Single, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(Int32, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_System_Int64_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(Int64, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_System_SByte_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(SByte, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_System_Int16_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(Int16, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_System_UInt32_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(UInt32, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_System_UInt64_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(UInt64, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_System_UInt16_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(UInt16, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_dim3_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(dim3, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_char1_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(char1, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_char2_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(char2, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_char3_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(char3, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_char4_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(char4, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_uchar1_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(uchar1, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_uchar2_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(uchar2, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_uchar3_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(uchar3, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_uchar4_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(uchar4, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_short1_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(short1, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_short2_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(short2, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_short3_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(short3, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_short4_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(short4, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_ushort1_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(ushort1, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_ushort2_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(ushort2, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_ushort3_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(ushort3, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_ushort4_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(ushort4, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_int1_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(int1, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_int2_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(int2, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_int3_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(int3, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_int4_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(int4, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_uint1_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(uint1, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_uint2_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(uint2, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_uint3_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(uint3, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_uint4_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(uint4, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_long1_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(long1, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_long2_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(long2, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_long3_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(long3, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_long4_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(long4, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_ulong1_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(ulong1, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_ulong2_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(ulong2, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_ulong3_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(ulong3, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_ulong4_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(ulong4, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_float1_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(float1, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_float2_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(float2, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_float3_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(float3, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_float4_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(float4, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_double1_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(double1, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_double2_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(double2, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_cuDoubleComplex_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(cuDoubleComplex, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_cuDoubleReal_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(cuDoubleReal, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_cuFloatComplex_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(cuFloatComplex, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CopyToHost_ManagedCuda_VectorTypes_cuFloatReal_ManagedCuda_BasicTypes_CUdeviceptr_">CudaContext.CopyToHost(cuFloatReal, CUdeviceptr)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_GetDeviceName">CudaContext.GetDeviceName()</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_GetDeviceComputeCapability">CudaContext.GetDeviceComputeCapability()</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_GetDeviceInfo">CudaContext.GetDeviceInfo()</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_GetStreamPriorityRange_System_Int32__System_Int32__">CudaContext.GetStreamPriorityRange(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_GetLimit_ManagedCuda_BasicTypes_CULimit_">CudaContext.GetLimit(CULimit)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_SetLimit_ManagedCuda_BasicTypes_CULimit_ManagedCuda_BasicTypes_SizeT_">CudaContext.SetLimit(CULimit, SizeT)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_CreateOpenGLContext_System_Int32_ManagedCuda_BasicTypes_CUCtxFlags_">CudaContext.CreateOpenGLContext(Int32, CUCtxFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_GetOpenGLDevices_ManagedCuda_BasicTypes_CUGLDeviceList_">CudaContext.GetOpenGLDevices(CUGLDeviceList)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_GetDirectXDevices_System_IntPtr_ManagedCuda_BasicTypes_CUd3dXDeviceList_ManagedCuda_CudaContext_DirectXVersion_">CudaContext.GetDirectXDevices(IntPtr, CUd3dXDeviceList, CudaContext.DirectXVersion)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_GetDirect3DDevice_ManagedCuda_CudaContext_DirectXVersion_">CudaContext.GetDirect3DDevice(CudaContext.DirectXVersion)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_GetDeviceName_System_Int32_">CudaContext.GetDeviceName(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext__ConvertSMVer2Cores_System_Int32_System_Int32_">CudaContext._ConvertSMVer2Cores(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_GetMaxGflopsDevice">CudaContext.GetMaxGflopsDevice()</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_GetMaxGflopsDeviceId">CudaContext.GetMaxGflopsDeviceId()</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_GetDeviceComputeCapability_System_Int32_">CudaContext.GetDeviceComputeCapability(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_GetDriverVersion">CudaContext.GetDriverVersion()</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_GetDeviceInfo_System_Int32_">CudaContext.GetDeviceInfo(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_GetDeviceCount">CudaContext.GetDeviceCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_EnablePeerAccess_ManagedCuda_CudaContext_">CudaContext.EnablePeerAccess(CudaContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_DisablePeerAccess_ManagedCuda_CudaContext_">CudaContext.DisablePeerAccess(CudaContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_GetDeviceInfo_ManagedCuda_BasicTypes_CUdevice_">CudaContext.GetDeviceInfo(CUdevice)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_GetCUdevice_System_Int32_">CudaContext.GetCUdevice(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_ProfilerInitialize_System_String_System_String_ManagedCuda_BasicTypes_CUoutputMode_">CudaContext.ProfilerInitialize(String, String, CUoutputMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_ProfilerStart">CudaContext.ProfilerStart()</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_ProfilerStop">CudaContext.ProfilerStop()</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_Context">CudaContext.Context</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_Device">CudaContext.Device</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_DeviceId">CudaContext.DeviceId</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_IsContextOwner">CudaContext.IsContextOwner</a>
+    </div>
+    <div>
+      <a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_Flags">CudaContext.Flags</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.html">ManagedCuda</a></h6>
+  <h6><strong>Assembly</strong>: ManagedCuda.dll</h6>
+  <h5 id="ManagedCuda_PrimaryContext_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PrimaryContext : CudaContext, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_PrimaryContext__ctor.md&amp;value=---%0Auid%3A%20ManagedCuda.PrimaryContext.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/PrimaryContext.cs/#L42">View Source</a>
+  </span>
+  <a id="ManagedCuda_PrimaryContext__ctor_" data-uid="ManagedCuda.PrimaryContext.#ctor*"></a>
+  <h4 id="ManagedCuda_PrimaryContext__ctor" data-uid="ManagedCuda.PrimaryContext.#ctor">PrimaryContext()</h4>
+  <div class="markdown level1 summary"><p>Create a new instace of managed Cuda. Retains the primary cuda context of device with ID 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PrimaryContext()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_PrimaryContext__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20ManagedCuda.PrimaryContext.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/PrimaryContext.cs/#L53">View Source</a>
+  </span>
+  <a id="ManagedCuda_PrimaryContext__ctor_" data-uid="ManagedCuda.PrimaryContext.#ctor*"></a>
+  <h4 id="ManagedCuda_PrimaryContext__ctor_System_Int32_" data-uid="ManagedCuda.PrimaryContext.#ctor(System.Int32)">PrimaryContext(Int32)</h4>
+  <div class="markdown level1 summary"><p>Create a new instace of managed Cuda. Retains the primary cuda context of device with ID deviceId.
+Using <a class="xref" href="ManagedCuda.BasicTypes.CUCtxFlags.html#ManagedCuda_BasicTypes_CUCtxFlags_SchedAuto">SchedAuto</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PrimaryContext(int deviceId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">deviceId</span></td>
+        <td><p>DeviceID</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_PrimaryContext_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20ManagedCuda.PrimaryContext.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/PrimaryContext.cs/#L111">View Source</a>
+  </span>
+  <a id="ManagedCuda_PrimaryContext_Dispose_" data-uid="ManagedCuda.PrimaryContext.Dispose*"></a>
+  <h4 id="ManagedCuda_PrimaryContext_Dispose_System_Boolean_" data-uid="ManagedCuda.PrimaryContext.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>For IDisposable. Releases the wrapped primary context</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool fDisposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">fDisposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ManagedCuda.CudaContext.html#ManagedCuda_CudaContext_Dispose_System_Boolean_">CudaContext.Dispose(Boolean)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_PrimaryContext_Finalize.md&amp;value=---%0Auid%3A%20ManagedCuda.PrimaryContext.Finalize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/PrimaryContext.cs/#L99">View Source</a>
+  </span>
+  <a id="ManagedCuda_PrimaryContext_Finalize_" data-uid="ManagedCuda.PrimaryContext.Finalize*"></a>
+  <h4 id="ManagedCuda_PrimaryContext_Finalize" data-uid="ManagedCuda.PrimaryContext.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"><p>For dispose</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_PrimaryContext_GetState_ManagedCuda_BasicTypes_CUdevice_ManagedCuda_BasicTypes_CUCtxFlags__System_Boolean__.md&amp;value=---%0Auid%3A%20ManagedCuda.PrimaryContext.GetState(ManagedCuda.BasicTypes.CUdevice%2CManagedCuda.BasicTypes.CUCtxFlags%40%2CSystem.Boolean%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/PrimaryContext.cs/#L194">View Source</a>
+  </span>
+  <a id="ManagedCuda_PrimaryContext_GetState_" data-uid="ManagedCuda.PrimaryContext.GetState*"></a>
+  <h4 id="ManagedCuda_PrimaryContext_GetState_ManagedCuda_BasicTypes_CUdevice_ManagedCuda_BasicTypes_CUCtxFlags__System_Boolean__" data-uid="ManagedCuda.PrimaryContext.GetState(ManagedCuda.BasicTypes.CUdevice,ManagedCuda.BasicTypes.CUCtxFlags@,System.Boolean@)">GetState(CUdevice, out CUCtxFlags, out Boolean)</h4>
+  <div class="markdown level1 summary"><p>Get the state of the primary context<p>
+Returns in flags the flags for the primary context of device, and in
+active whether it is active.  See ::cuDevicePrimaryCtxSetFlags for flag
+values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GetState(CUdevice device, out CUCtxFlags flags, out bool active)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdevice.html">CUdevice</a></td>
+        <td><span class="parametername">device</span></td>
+        <td><p>Device to get primary context flags for</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUCtxFlags.html">CUCtxFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Pointer to store flags</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">active</span></td>
+        <td><p>Pointer to store context state</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_PrimaryContext_GetState_System_Int32_ManagedCuda_BasicTypes_CUCtxFlags__System_Boolean__.md&amp;value=---%0Auid%3A%20ManagedCuda.PrimaryContext.GetState(System.Int32%2CManagedCuda.BasicTypes.CUCtxFlags%40%2CSystem.Boolean%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/PrimaryContext.cs/#L179">View Source</a>
+  </span>
+  <a id="ManagedCuda_PrimaryContext_GetState_" data-uid="ManagedCuda.PrimaryContext.GetState*"></a>
+  <h4 id="ManagedCuda_PrimaryContext_GetState_System_Int32_ManagedCuda_BasicTypes_CUCtxFlags__System_Boolean__" data-uid="ManagedCuda.PrimaryContext.GetState(System.Int32,ManagedCuda.BasicTypes.CUCtxFlags@,System.Boolean@)">GetState(Int32, out CUCtxFlags, out Boolean)</h4>
+  <div class="markdown level1 summary"><p>Get the state of the primary context<p>
+Returns in flags the flags for the primary context of device, and in
+active whether it is active.  See ::cuDevicePrimaryCtxSetFlags for flag
+values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GetState(int deviceID, out CUCtxFlags flags, out bool active)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">deviceID</span></td>
+        <td><p>Device to get primary context flags for</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUCtxFlags.html">CUCtxFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Pointer to store flags</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">active</span></td>
+        <td><p>Pointer to store context state</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_PrimaryContext_Reset_ManagedCuda_BasicTypes_CUdevice_.md&amp;value=---%0Auid%3A%20ManagedCuda.PrimaryContext.Reset(ManagedCuda.BasicTypes.CUdevice)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/PrimaryContext.cs/#L238">View Source</a>
+  </span>
+  <a id="ManagedCuda_PrimaryContext_Reset_" data-uid="ManagedCuda.PrimaryContext.Reset*"></a>
+  <h4 id="ManagedCuda_PrimaryContext_Reset_ManagedCuda_BasicTypes_CUdevice_" data-uid="ManagedCuda.PrimaryContext.Reset(ManagedCuda.BasicTypes.CUdevice)">Reset(CUdevice)</h4>
+  <div class="markdown level1 summary"><p>Destroy all allocations and reset all state on the primary context</p>
+<p>
+Explicitly destroys and cleans up all resources associated with the current
+device in the current process.
+<p>
+Note that it is responsibility of the calling function to ensure that no
+other module in the process is using the device any more. For that reason
+it is recommended to use ::cuDevicePrimaryCtxRelease() in most cases.
+However it is safe for other modules to call ::cuDevicePrimaryCtxRelease()
+even after resetting the device.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Reset(CUdevice device)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdevice.html">CUdevice</a></td>
+        <td><span class="parametername">device</span></td>
+        <td><p>Device for which primary context is destroyed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_PrimaryContext_Reset_System_Int32_.md&amp;value=---%0Auid%3A%20ManagedCuda.PrimaryContext.Reset(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/PrimaryContext.cs/#L219">View Source</a>
+  </span>
+  <a id="ManagedCuda_PrimaryContext_Reset_" data-uid="ManagedCuda.PrimaryContext.Reset*"></a>
+  <h4 id="ManagedCuda_PrimaryContext_Reset_System_Int32_" data-uid="ManagedCuda.PrimaryContext.Reset(System.Int32)">Reset(Int32)</h4>
+  <div class="markdown level1 summary"><p>Destroy all allocations and reset all state on the primary context</p>
+<p>
+Explicitly destroys and cleans up all resources associated with the current
+device in the current process.
+<p>
+Note that it is responsibility of the calling function to ensure that no
+other module in the process is using the device any more. For that reason
+it is recommended to use ::cuDevicePrimaryCtxRelease() in most cases.
+However it is safe for other modules to call ::cuDevicePrimaryCtxRelease()
+even after resetting the device.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Reset(int deviceID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">deviceID</span></td>
+        <td><p>Device for which primary context is destroyed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_PrimaryContext_SetFlags_ManagedCuda_BasicTypes_CUdevice_ManagedCuda_BasicTypes_CUCtxFlags_.md&amp;value=---%0Auid%3A%20ManagedCuda.PrimaryContext.SetFlags(ManagedCuda.BasicTypes.CUdevice%2CManagedCuda.BasicTypes.CUCtxFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/PrimaryContext.cs/#L161">View Source</a>
+  </span>
+  <a id="ManagedCuda_PrimaryContext_SetFlags_" data-uid="ManagedCuda.PrimaryContext.SetFlags*"></a>
+  <h4 id="ManagedCuda_PrimaryContext_SetFlags_ManagedCuda_BasicTypes_CUdevice_ManagedCuda_BasicTypes_CUCtxFlags_" data-uid="ManagedCuda.PrimaryContext.SetFlags(ManagedCuda.BasicTypes.CUdevice,ManagedCuda.BasicTypes.CUCtxFlags)">SetFlags(CUdevice, CUCtxFlags)</h4>
+  <div class="markdown level1 summary"><p>Set flags for the primary context<p>
+Sets the flags for the primary context on the device overwriting perviously
+set ones. If the primary context is already created
+::CUDA_ERROR_PRIMARY_CONTEXT_ACTIVE is returned.</p>
+<p>
+The three LSBs of the \p flags parameter can be used to control how the OS
+thread, which owns the CUDA context at the time of an API call, interacts
+with the OS scheduler when waiting for results from the GPU. Only one of
+the scheduling flags can be set when creating a context.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetFlags(CUdevice device, CUCtxFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdevice.html">CUdevice</a></td>
+        <td><span class="parametername">device</span></td>
+        <td><p>Device for which the primary context flags are set</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUCtxFlags.html">CUCtxFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>New flags for the device</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_PrimaryContext_SetFlags_System_Int32_ManagedCuda_BasicTypes_CUCtxFlags_.md&amp;value=---%0Auid%3A%20ManagedCuda.PrimaryContext.SetFlags(System.Int32%2CManagedCuda.BasicTypes.CUCtxFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/PrimaryContext.cs/#L142">View Source</a>
+  </span>
+  <a id="ManagedCuda_PrimaryContext_SetFlags_" data-uid="ManagedCuda.PrimaryContext.SetFlags*"></a>
+  <h4 id="ManagedCuda_PrimaryContext_SetFlags_System_Int32_ManagedCuda_BasicTypes_CUCtxFlags_" data-uid="ManagedCuda.PrimaryContext.SetFlags(System.Int32,ManagedCuda.BasicTypes.CUCtxFlags)">SetFlags(Int32, CUCtxFlags)</h4>
+  <div class="markdown level1 summary"><p>Set flags for the primary context<p>
+Sets the flags for the primary context on the device overwriting perviously
+set ones. If the primary context is already created
+::CUDA_ERROR_PRIMARY_CONTEXT_ACTIVE is returned.</p>
+<p>
+The three LSBs of the \p flags parameter can be used to control how the OS
+thread, which owns the CUDA context at the time of an API call, interacts
+with the OS scheduler when waiting for results from the GPU. Only one of
+the scheduling flags can be set when creating a context.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetFlags(int deviceID, CUCtxFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">deviceID</span></td>
+        <td><p>Device for which the primary context flags are set</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUCtxFlags.html">CUCtxFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>New flags for the device</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_PrimaryContext.md&amp;value=---%0Auid%3A%20ManagedCuda.PrimaryContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/PrimaryContext.cs/#L35" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

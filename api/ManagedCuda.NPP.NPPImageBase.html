@@ -1,0 +1,2681 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class NPPImageBase
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class NPPImageBase
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.NPP.NPPImageBase">
+  
+  
+  <h1 id="ManagedCuda_NPP_NPPImageBase" data-uid="ManagedCuda.NPP.NPPImageBase" class="text-break">Class NPPImageBase
+  </h1>
+  <div class="markdown level0 summary"><p>Abstract base class for derived NPP typed images.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">NPPImageBase</span></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_16sC1.html">NPPImage_16sC1</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_16sC2.html">NPPImage_16sC2</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_16sC3.html">NPPImage_16sC3</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_16sC4.html">NPPImage_16sC4</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_16scC1.html">NPPImage_16scC1</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_16scC2.html">NPPImage_16scC2</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_16scC3.html">NPPImage_16scC3</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_16scC4.html">NPPImage_16scC4</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_16uC1.html">NPPImage_16uC1</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_16uC2.html">NPPImage_16uC2</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_16uC3.html">NPPImage_16uC3</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_16uC4.html">NPPImage_16uC4</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_32fC1.html">NPPImage_32fC1</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_32fC3.html">NPPImage_32fC3</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_32fC4.html">NPPImage_32fC4</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_32fcC1.html">NPPImage_32fcC1</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_32fcC2.html">NPPImage_32fcC2</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_32fcC3.html">NPPImage_32fcC3</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_32fcC4.html">NPPImage_32fcC4</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_32sC1.html">NPPImage_32sC1</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_32sC3.html">NPPImage_32sC3</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_32sC4.html">NPPImage_32sC4</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_32scC1.html">NPPImage_32scC1</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_32scC2.html">NPPImage_32scC2</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_32scC3.html">NPPImage_32scC3</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_32scC4.html">NPPImage_32scC4</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_32uC1.html">NPPImage_32uC1</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_32uC4.html">NPPImage_32uC4</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_8sC1.html">NPPImage_8sC1</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_8sC2.html">NPPImage_8sC2</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_8sC3.html">NPPImage_8sC3</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_8sC4.html">NPPImage_8sC4</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_8uC1.html">NPPImage_8uC1</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_8uC2.html">NPPImage_8uC2</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_8uC3.html">NPPImage_8uC3</a></div>
+      <div class="level2"><a class="xref" href="ManagedCuda.NPP.NPPImage_8uC4.html">NPPImage_8uC4</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.NPP.html">ManagedCuda.NPP</a></h6>
+  <h6><strong>Assembly</strong>: NPP.dll</h6>
+  <h5 id="ManagedCuda_NPP_NPPImageBase_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class NPPImageBase : IDisposable</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase__channels.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase._channels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L65">View Source</a>
+  </span>
+  <h4 id="ManagedCuda_NPP_NPPImageBase__channels" data-uid="ManagedCuda.NPP.NPPImageBase._channels">_channels</h4>
+  <div class="markdown level1 summary"><p>Number of color channels in image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int _channels</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase__devPtr.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase._devPtr%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L41">View Source</a>
+  </span>
+  <h4 id="ManagedCuda_NPP_NPPImageBase__devPtr" data-uid="ManagedCuda.NPP.NPPImageBase._devPtr">_devPtr</h4>
+  <div class="markdown level1 summary"><p>Base pointer to image data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CUdeviceptr _devPtr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase__devPtrRoi.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase._devPtrRoi%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L45">View Source</a>
+  </span>
+  <h4 id="ManagedCuda_NPP_NPPImageBase__devPtrRoi" data-uid="ManagedCuda.NPP.NPPImageBase._devPtrRoi">_devPtrRoi</h4>
+  <div class="markdown level1 summary"><p>Base pointer moved to actual ROI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CUdeviceptr _devPtrRoi</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase__isOwner.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase._isOwner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L85">View Source</a>
+  </span>
+  <h4 id="ManagedCuda_NPP_NPPImageBase__isOwner" data-uid="ManagedCuda.NPP.NPPImageBase._isOwner">_isOwner</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _isOwner</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase__pitch.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase._pitch%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L61">View Source</a>
+  </span>
+  <h4 id="ManagedCuda_NPP_NPPImageBase__pitch" data-uid="ManagedCuda.NPP.NPPImageBase._pitch">_pitch</h4>
+  <div class="markdown level1 summary"><p>Width of one image line + alignment bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int _pitch</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase__pointRoi.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase._pointRoi%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L57">View Source</a>
+  </span>
+  <h4 id="ManagedCuda_NPP_NPPImageBase__pointRoi" data-uid="ManagedCuda.NPP.NPPImageBase._pointRoi">_pointRoi</h4>
+  <div class="markdown level1 summary"><p>First pixel in the ROI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected NppiPoint _pointRoi</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase__sizeOriginal.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase._sizeOriginal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L49">View Source</a>
+  </span>
+  <h4 id="ManagedCuda_NPP_NPPImageBase__sizeOriginal" data-uid="ManagedCuda.NPP.NPPImageBase._sizeOriginal">_sizeOriginal</h4>
+  <div class="markdown level1 summary"><p>Size of the entire image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected NppiSize _sizeOriginal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase__sizeRoi.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase._sizeRoi%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L53">View Source</a>
+  </span>
+  <h4 id="ManagedCuda_NPP_NPPImageBase__sizeRoi" data-uid="ManagedCuda.NPP.NPPImageBase._sizeRoi">_sizeRoi</h4>
+  <div class="markdown level1 summary"><p>Size of the actual ROI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected NppiSize _sizeRoi</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase__typeSize.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase._typeSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L69">View Source</a>
+  </span>
+  <h4 id="ManagedCuda_NPP_NPPImageBase__typeSize" data-uid="ManagedCuda.NPP.NPPImageBase._typeSize">_typeSize</h4>
+  <div class="markdown level1 summary"><p>Type size in bytes of one pixel in one channel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int _typeSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_disposed.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.disposed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L81">View Source</a>
+  </span>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_disposed" data-uid="ManagedCuda.NPP.NPPImageBase.disposed">disposed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool disposed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_res.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.res%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L73">View Source</a>
+  </span>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_res" data-uid="ManagedCuda.NPP.NPPImageBase.res">res</h4>
+  <div class="markdown level1 summary"><p>Last CUResult.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CUResult res</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_status.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.status%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L77">View Source</a>
+  </span>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_status" data-uid="ManagedCuda.NPP.NPPImageBase.status">status</h4>
+  <div class="markdown level1 summary"><p>Last NPPStatus result.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected NppStatus status</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppStatus.html">NppStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_Channels.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.Channels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L1130">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_Channels_" data-uid="ManagedCuda.NPP.NPPImageBase.Channels*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_Channels" data-uid="ManagedCuda.NPP.NPPImageBase.Channels">Channels</h4>
+  <div class="markdown level1 summary"><p>Color channels</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Channels { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_DevicePointer.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.DevicePointer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L1050">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_DevicePointer_" data-uid="ManagedCuda.NPP.NPPImageBase.DevicePointer*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_DevicePointer" data-uid="ManagedCuda.NPP.NPPImageBase.DevicePointer">DevicePointer</h4>
+  <div class="markdown level1 summary"><p>Device pointer to image data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUdeviceptr DevicePointer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_DevicePointerRoi.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.DevicePointerRoi%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L1058">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_DevicePointerRoi_" data-uid="ManagedCuda.NPP.NPPImageBase.DevicePointerRoi*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_DevicePointerRoi" data-uid="ManagedCuda.NPP.NPPImageBase.DevicePointerRoi">DevicePointerRoi</h4>
+  <div class="markdown level1 summary"><p>Device pointer to first pixel in ROI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUdeviceptr DevicePointerRoi { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_Height.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.Height%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L1082">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_Height_" data-uid="ManagedCuda.NPP.NPPImageBase.Height*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_Height" data-uid="ManagedCuda.NPP.NPPImageBase.Height">Height</h4>
+  <div class="markdown level1 summary"><p>Height in pixels</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Height { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_HeightRoi.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.HeightRoi%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L1106">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_HeightRoi_" data-uid="ManagedCuda.NPP.NPPImageBase.HeightRoi*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_HeightRoi" data-uid="ManagedCuda.NPP.NPPImageBase.HeightRoi">HeightRoi</h4>
+  <div class="markdown level1 summary"><p>Height in pixels</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int HeightRoi { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_Pitch.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.Pitch%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L1114">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_Pitch_" data-uid="ManagedCuda.NPP.NPPImageBase.Pitch*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_Pitch" data-uid="ManagedCuda.NPP.NPPImageBase.Pitch">Pitch</h4>
+  <div class="markdown level1 summary"><p>Pitch in bytes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Pitch { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_PointRoi.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.PointRoi%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L1042">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_PointRoi_" data-uid="ManagedCuda.NPP.NPPImageBase.PointRoi*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_PointRoi" data-uid="ManagedCuda.NPP.NPPImageBase.PointRoi">PointRoi</h4>
+  <div class="markdown level1 summary"><p>First pixel in the ROI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NppiPoint PointRoi { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiPoint.html">NppiPoint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_Size.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.Size%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L1028">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_Size_" data-uid="ManagedCuda.NPP.NPPImageBase.Size*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_Size" data-uid="ManagedCuda.NPP.NPPImageBase.Size">Size</h4>
+  <div class="markdown level1 summary"><p>Size of the entire image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NppiSize Size { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_SizeRoi.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.SizeRoi%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L1035">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_SizeRoi_" data-uid="ManagedCuda.NPP.NPPImageBase.SizeRoi*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_SizeRoi" data-uid="ManagedCuda.NPP.NPPImageBase.SizeRoi">SizeRoi</h4>
+  <div class="markdown level1 summary"><p>Size of the actual ROI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NppiSize SizeRoi { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiSize.html">NppiSize</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_TotalSizeInBytes.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.TotalSizeInBytes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L1122">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_TotalSizeInBytes_" data-uid="ManagedCuda.NPP.NPPImageBase.TotalSizeInBytes*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_TotalSizeInBytes" data-uid="ManagedCuda.NPP.NPPImageBase.TotalSizeInBytes">TotalSizeInBytes</h4>
+  <div class="markdown level1 summary"><p>Total size in bytes (Pitch * Height)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TotalSizeInBytes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_Width.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.Width%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L1066">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_Width_" data-uid="ManagedCuda.NPP.NPPImageBase.Width*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_Width" data-uid="ManagedCuda.NPP.NPPImageBase.Width">Width</h4>
+  <div class="markdown level1 summary"><p>Width in pixels</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Width { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_WidthInBytes.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.WidthInBytes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L1074">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_WidthInBytes_" data-uid="ManagedCuda.NPP.NPPImageBase.WidthInBytes*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_WidthInBytes" data-uid="ManagedCuda.NPP.NPPImageBase.WidthInBytes">WidthInBytes</h4>
+  <div class="markdown level1 summary"><p>Width in bytes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WidthInBytes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_WidthRoi.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.WidthRoi%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L1090">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_WidthRoi_" data-uid="ManagedCuda.NPP.NPPImageBase.WidthRoi*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_WidthRoi" data-uid="ManagedCuda.NPP.NPPImageBase.WidthRoi">WidthRoi</h4>
+  <div class="markdown level1 summary"><p>Width in pixels</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WidthRoi { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_WidthRoiInBytes.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.WidthRoiInBytes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L1098">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_WidthRoiInBytes_" data-uid="ManagedCuda.NPP.NPPImageBase.WidthRoiInBytes*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_WidthRoiInBytes" data-uid="ManagedCuda.NPP.NPPImageBase.WidthRoiInBytes">WidthRoiInBytes</h4>
+  <div class="markdown level1 summary"><p>Width in bytes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WidthRoiInBytes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_AsyncCopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.AsyncCopyToDevice(ManagedCuda.BasicTypes.CUdeviceptr%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L950">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_AsyncCopyToDevice_" data-uid="ManagedCuda.NPP.NPPImageBase.AsyncCopyToDevice*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_AsyncCopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.NPP.NPPImageBase.AsyncCopyToDevice(ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUstream)">AsyncCopyToDevice(CUdeviceptr, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Async Copy data from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyToDevice(CUdeviceptr source, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source pointer to device memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_AsyncCopyToDevice_ManagedCuda_NPP_NPPImageBase_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.AsyncCopyToDevice(ManagedCuda.NPP.NPPImageBase%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L1005">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_AsyncCopyToDevice_" data-uid="ManagedCuda.NPP.NPPImageBase.AsyncCopyToDevice*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_AsyncCopyToDevice_ManagedCuda_NPP_NPPImageBase_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.NPP.NPPImageBase.AsyncCopyToDevice(ManagedCuda.NPP.NPPImageBase,ManagedCuda.BasicTypes.CUstream)">AsyncCopyToDevice(NPPImageBase, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Async Copy from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyToDevice(NPPImageBase deviceSrc, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NPPImageBase.html">NPPImageBase</a></td>
+        <td><span class="parametername">deviceSrc</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_AsyncCopyToDevice__1_ManagedCuda_CudaDeviceVariable___0__ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.AsyncCopyToDevice%60%601(ManagedCuda.CudaDeviceVariable%7B%60%600%7D%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L966">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_AsyncCopyToDevice_" data-uid="ManagedCuda.NPP.NPPImageBase.AsyncCopyToDevice*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_AsyncCopyToDevice__1_ManagedCuda_CudaDeviceVariable___0__ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.NPP.NPPImageBase.AsyncCopyToDevice``1(ManagedCuda.CudaDeviceVariable{``0},ManagedCuda.BasicTypes.CUstream)">AsyncCopyToDevice&lt;T&gt;(CudaDeviceVariable&lt;T&gt;, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Async Copy data from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyToDevice&lt;T&gt;(CudaDeviceVariable&lt;T&gt; source, CUstream stream)
+
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;T&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_AsyncCopyToDevice__1_ManagedCuda_CudaPitchedDeviceVariable___0__ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.AsyncCopyToDevice%60%601(ManagedCuda.CudaPitchedDeviceVariable%7B%60%600%7D%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L982">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_AsyncCopyToDevice_" data-uid="ManagedCuda.NPP.NPPImageBase.AsyncCopyToDevice*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_AsyncCopyToDevice__1_ManagedCuda_CudaPitchedDeviceVariable___0__ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.NPP.NPPImageBase.AsyncCopyToDevice``1(ManagedCuda.CudaPitchedDeviceVariable{``0},ManagedCuda.BasicTypes.CUstream)">AsyncCopyToDevice&lt;T&gt;(CudaPitchedDeviceVariable&lt;T&gt;, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Async Copy from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncCopyToDevice&lt;T&gt;(CudaPitchedDeviceVariable&lt;T&gt; deviceSrc, CUstream stream)
+
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaPitchedDeviceVariable-1.html">CudaPitchedDeviceVariable</a>&lt;T&gt;</td>
+        <td><span class="parametername">deviceSrc</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.CopyToDevice(ManagedCuda.BasicTypes.CUdeviceptr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L216">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_CopyToDevice_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDevice*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDevice(ManagedCuda.BasicTypes.CUdeviceptr)">CopyToDevice(CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>Copy from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDevice(CUdeviceptr deviceSrc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">deviceSrc</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.CopyToDevice(ManagedCuda.BasicTypes.CUdeviceptr%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L239">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_CopyToDevice_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDevice*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_CopyToDevice_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDevice(ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.SizeT)">CopyToDevice(CUdeviceptr, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Copy from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDevice(CUdeviceptr deviceSrc, SizeT pitch)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">deviceSrc</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">pitch</span></td>
+        <td><p>Pitch of deviceSrc</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_CopyToDevice_ManagedCuda_NPP_NPPImageBase_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.CopyToDevice(ManagedCuda.NPP.NPPImageBase)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L171">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_CopyToDevice_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDevice*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_CopyToDevice_ManagedCuda_NPP_NPPImageBase_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDevice(ManagedCuda.NPP.NPPImageBase)">CopyToDevice(NPPImageBase)</h4>
+  <div class="markdown level1 summary"><p>Copy from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDevice(NPPImageBase deviceSrc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NPPImageBase.html">NPPImageBase</a></td>
+        <td><span class="parametername">deviceSrc</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_CopyToDevice_System_Array_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.CopyToDevice(System.Array)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L397">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_CopyToDevice_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDevice*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_CopyToDevice_System_Array_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDevice(System.Array)">CopyToDevice(Array)</h4>
+  <div class="markdown level1 summary"><p>Copy from Host to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDevice(Array hostSrc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Array</span></td>
+        <td><span class="parametername">hostSrc</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_CopyToDevice_System_Array_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.CopyToDevice(System.Array%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L290">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_CopyToDevice_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDevice*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_CopyToDevice_System_Array_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDevice(System.Array,ManagedCuda.BasicTypes.SizeT)">CopyToDevice(Array, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Copy from Host to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDevice(Array hostSrc, SizeT stride)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Array</span></td>
+        <td><span class="parametername">hostSrc</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">stride</span></td>
+        <td><p>Size of one image line in bytes with padding</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_CopyToDevice_System_Drawing_Bitmap_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.CopyToDevice(System.Drawing.Bitmap)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L458">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_CopyToDevice_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDevice*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_CopyToDevice_System_Drawing_Bitmap_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDevice(System.Drawing.Bitmap)">CopyToDevice(Bitmap)</h4>
+  <div class="markdown level1 summary"><p>Copy data from a System.Drawing.Bitmap. There is no check if the bitmap pixel type corresponds to the current NPPImage!</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDevice(Bitmap bitmap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Drawing.Bitmap</span></td>
+        <td><span class="parametername">bitmap</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_CopyToDevice_System_IntPtr_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.CopyToDevice(System.IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L353">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_CopyToDevice_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDevice*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_CopyToDevice_System_IntPtr_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDevice(System.IntPtr)">CopyToDevice(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Copy from Host to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDevice(IntPtr hostSrc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">hostSrc</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_CopyToDevice_System_IntPtr_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.CopyToDevice(System.IntPtr%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L125">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_CopyToDevice_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDevice*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_CopyToDevice_System_IntPtr_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDevice(System.IntPtr,ManagedCuda.BasicTypes.SizeT)">CopyToDevice(IntPtr, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Copy from Host to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDevice(IntPtr hostSrc, SizeT stride)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">hostSrc</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">stride</span></td>
+        <td><p>Size of one image line in bytes with padding</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_CopyToDevice__1_ManagedCuda_CudaDeviceVariable___0__.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.CopyToDevice%60%601(ManagedCuda.CudaDeviceVariable%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L194">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_CopyToDevice_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDevice*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_CopyToDevice__1_ManagedCuda_CudaDeviceVariable___0__" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDevice``1(ManagedCuda.CudaDeviceVariable{``0})">CopyToDevice&lt;T&gt;(CudaDeviceVariable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Copy from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDevice&lt;T&gt;(CudaDeviceVariable&lt;T&gt; deviceSrc)
+
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;T&gt;</td>
+        <td><span class="parametername">deviceSrc</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_CopyToDevice__1_ManagedCuda_CudaPitchedDeviceVariable___0__.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.CopyToDevice%60%601(ManagedCuda.CudaPitchedDeviceVariable%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L148">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_CopyToDevice_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDevice*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_CopyToDevice__1_ManagedCuda_CudaPitchedDeviceVariable___0__" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDevice``1(ManagedCuda.CudaPitchedDeviceVariable{``0})">CopyToDevice&lt;T&gt;(CudaPitchedDeviceVariable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Copy from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDevice&lt;T&gt;(CudaPitchedDeviceVariable&lt;T&gt; deviceSrc)
+
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaPitchedDeviceVariable-1.html">CudaPitchedDeviceVariable</a>&lt;T&gt;</td>
+        <td><span class="parametername">deviceSrc</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_CopyToDeviceRoi_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_NPP_NppiRect_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.CopyToDeviceRoi(ManagedCuda.BasicTypes.CUdeviceptr%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.NPP.NppiRect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L644">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_CopyToDeviceRoi_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDeviceRoi*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_CopyToDeviceRoi_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_NPP_NppiRect_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDeviceRoi(ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.SizeT,ManagedCuda.NPP.NppiRect)">CopyToDeviceRoi(CUdeviceptr, SizeT, NppiRect)</h4>
+  <div class="markdown level1 summary"><p>Copy from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDeviceRoi(CUdeviceptr deviceSrc, SizeT pitch, NppiRect roi)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">deviceSrc</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">pitch</span></td>
+        <td><p>Pitch of deviceSrc</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiRect.html">NppiRect</a></td>
+        <td><span class="parametername">roi</span></td>
+        <td><p>ROI of source image</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_CopyToDeviceRoi_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiRect_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.CopyToDeviceRoi(ManagedCuda.BasicTypes.CUdeviceptr%2CManagedCuda.NPP.NppiRect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L616">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_CopyToDeviceRoi_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDeviceRoi*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_CopyToDeviceRoi_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_NPP_NppiRect_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDeviceRoi(ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.NPP.NppiRect)">CopyToDeviceRoi(CUdeviceptr, NppiRect)</h4>
+  <div class="markdown level1 summary"><p>Copy from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDeviceRoi(CUdeviceptr deviceSrc, NppiRect roi)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">deviceSrc</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiRect.html">NppiRect</a></td>
+        <td><span class="parametername">roi</span></td>
+        <td><p>ROI of source image</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_CopyToDeviceRoi_ManagedCuda_NPP_NPPImageBase_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.CopyToDeviceRoi(ManagedCuda.NPP.NPPImageBase)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L561">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_CopyToDeviceRoi_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDeviceRoi*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_CopyToDeviceRoi_ManagedCuda_NPP_NPPImageBase_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDeviceRoi(ManagedCuda.NPP.NPPImageBase)">CopyToDeviceRoi(NPPImageBase)</h4>
+  <div class="markdown level1 summary"><p>Copy from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDeviceRoi(NPPImageBase deviceSrc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NPPImageBase.html">NPPImageBase</a></td>
+        <td><span class="parametername">deviceSrc</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_CopyToDeviceRoi_System_Array_ManagedCuda_BasicTypes_SizeT_ManagedCuda_NPP_NppiRect_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.CopyToDeviceRoi(System.Array%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.NPP.NppiRect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L705">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_CopyToDeviceRoi_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDeviceRoi*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_CopyToDeviceRoi_System_Array_ManagedCuda_BasicTypes_SizeT_ManagedCuda_NPP_NppiRect_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDeviceRoi(System.Array,ManagedCuda.BasicTypes.SizeT,ManagedCuda.NPP.NppiRect)">CopyToDeviceRoi(Array, SizeT, NppiRect)</h4>
+  <div class="markdown level1 summary"><p>Copy from Host to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDeviceRoi(Array hostSrc, SizeT stride, NppiRect roi)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Array</span></td>
+        <td><span class="parametername">hostSrc</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">stride</span></td>
+        <td><p>Size of one image line in bytes with padding</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiRect.html">NppiRect</a></td>
+        <td><span class="parametername">roi</span></td>
+        <td><p>ROI of source image</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_CopyToDeviceRoi_System_Array_ManagedCuda_NPP_NppiRect_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.CopyToDeviceRoi(System.Array%2CManagedCuda.NPP.NppiRect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L832">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_CopyToDeviceRoi_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDeviceRoi*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_CopyToDeviceRoi_System_Array_ManagedCuda_NPP_NppiRect_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDeviceRoi(System.Array,ManagedCuda.NPP.NppiRect)">CopyToDeviceRoi(Array, NppiRect)</h4>
+  <div class="markdown level1 summary"><p>Copy from Host to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDeviceRoi(Array hostSrc, NppiRect roi)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Array</span></td>
+        <td><span class="parametername">hostSrc</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiRect.html">NppiRect</a></td>
+        <td><span class="parametername">roi</span></td>
+        <td><p>ROI of source image</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_CopyToDeviceRoi_System_Drawing_Bitmap_ManagedCuda_NPP_NppiRect_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.CopyToDeviceRoi(System.Drawing.Bitmap%2CManagedCuda.NPP.NppiRect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L903">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_CopyToDeviceRoi_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDeviceRoi*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_CopyToDeviceRoi_System_Drawing_Bitmap_ManagedCuda_NPP_NppiRect_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDeviceRoi(System.Drawing.Bitmap,ManagedCuda.NPP.NppiRect)">CopyToDeviceRoi(Bitmap, NppiRect)</h4>
+  <div class="markdown level1 summary"><p>Copy data from a System.Drawing.Bitmap. There is no check if the bitmap pixel type corresponds to the current NPPImage!</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDeviceRoi(Bitmap bitmap, NppiRect roi)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Drawing.Bitmap</span></td>
+        <td><span class="parametername">bitmap</span></td>
+        <td><p>Source Bitmap</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiRect.html">NppiRect</a></td>
+        <td><span class="parametername">roi</span></td>
+        <td><p>ROI of source image</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_CopyToDeviceRoi_System_IntPtr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_NPP_NppiRect_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.CopyToDeviceRoi(System.IntPtr%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.NPP.NppiRect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L506">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_CopyToDeviceRoi_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDeviceRoi*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_CopyToDeviceRoi_System_IntPtr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_NPP_NppiRect_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDeviceRoi(System.IntPtr,ManagedCuda.BasicTypes.SizeT,ManagedCuda.NPP.NppiRect)">CopyToDeviceRoi(IntPtr, SizeT, NppiRect)</h4>
+  <div class="markdown level1 summary"><p>Copy from Host to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDeviceRoi(IntPtr hostSrc, SizeT stride, NppiRect roi)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">hostSrc</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">stride</span></td>
+        <td><p>Size of one image line in bytes with padding</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiRect.html">NppiRect</a></td>
+        <td><span class="parametername">roi</span></td>
+        <td><p>ROI of source image</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_CopyToDeviceRoi_System_IntPtr_ManagedCuda_NPP_NppiRect_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.CopyToDeviceRoi(System.IntPtr%2CManagedCuda.NPP.NppiRect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L778">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_CopyToDeviceRoi_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDeviceRoi*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_CopyToDeviceRoi_System_IntPtr_ManagedCuda_NPP_NppiRect_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDeviceRoi(System.IntPtr,ManagedCuda.NPP.NppiRect)">CopyToDeviceRoi(IntPtr, NppiRect)</h4>
+  <div class="markdown level1 summary"><p>Copy from Host to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDeviceRoi(IntPtr hostSrc, NppiRect roi)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">hostSrc</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiRect.html">NppiRect</a></td>
+        <td><span class="parametername">roi</span></td>
+        <td><p>ROI of source image</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_CopyToDeviceRoi__1_ManagedCuda_CudaDeviceVariable___0__ManagedCuda_NPP_NppiRect_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.CopyToDeviceRoi%60%601(ManagedCuda.CudaDeviceVariable%7B%60%600%7D%2CManagedCuda.NPP.NppiRect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L589">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_CopyToDeviceRoi_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDeviceRoi*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_CopyToDeviceRoi__1_ManagedCuda_CudaDeviceVariable___0__ManagedCuda_NPP_NppiRect_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDeviceRoi``1(ManagedCuda.CudaDeviceVariable{``0},ManagedCuda.NPP.NppiRect)">CopyToDeviceRoi&lt;T&gt;(CudaDeviceVariable&lt;T&gt;, NppiRect)</h4>
+  <div class="markdown level1 summary"><p>Copy from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDeviceRoi&lt;T&gt;(CudaDeviceVariable&lt;T&gt; deviceSrc, NppiRect roi)
+
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaDeviceVariable-1.html">CudaDeviceVariable</a>&lt;T&gt;</td>
+        <td><span class="parametername">deviceSrc</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiRect.html">NppiRect</a></td>
+        <td><span class="parametername">roi</span></td>
+        <td><p>ROI of source image</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_CopyToDeviceRoi__1_ManagedCuda_CudaPitchedDeviceVariable___0__ManagedCuda_NPP_NppiRect_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.CopyToDeviceRoi%60%601(ManagedCuda.CudaPitchedDeviceVariable%7B%60%600%7D%2CManagedCuda.NPP.NppiRect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L534">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_CopyToDeviceRoi_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDeviceRoi*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_CopyToDeviceRoi__1_ManagedCuda_CudaPitchedDeviceVariable___0__ManagedCuda_NPP_NppiRect_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToDeviceRoi``1(ManagedCuda.CudaPitchedDeviceVariable{``0},ManagedCuda.NPP.NppiRect)">CopyToDeviceRoi&lt;T&gt;(CudaPitchedDeviceVariable&lt;T&gt;, NppiRect)</h4>
+  <div class="markdown level1 summary"><p>Copy from device to device memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToDeviceRoi&lt;T&gt;(CudaPitchedDeviceVariable&lt;T&gt; deviceSrc, NppiRect roi)
+
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaPitchedDeviceVariable-1.html">CudaPitchedDeviceVariable</a>&lt;T&gt;</td>
+        <td><span class="parametername">deviceSrc</span></td>
+        <td><p>Source</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiRect.html">NppiRect</a></td>
+        <td><span class="parametername">roi</span></td>
+        <td><p>ROI of source image</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_CopyToHost_System_Array_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.CopyToHost(System.Array%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L322">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_CopyToHost_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToHost*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_CopyToHost_System_Array_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToHost(System.Array,ManagedCuda.BasicTypes.SizeT)">CopyToHost(Array, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Copy data from this device to host memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToHost(Array hostDest, SizeT stride)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Array</span></td>
+        <td><span class="parametername">hostDest</span></td>
+        <td><p>Destination</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">stride</span></td>
+        <td><p>Size of one image line in bytes with padding</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_CopyToHost_System_Drawing_Bitmap_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.CopyToHost(System.Drawing.Bitmap)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L480">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_CopyToHost_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToHost*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_CopyToHost_System_Drawing_Bitmap_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToHost(System.Drawing.Bitmap)">CopyToHost(Bitmap)</h4>
+  <div class="markdown level1 summary"><p>Copy data to a System.Drawing.Bitmap. There is no check if the bitmap pixel type corresponds to the current NPPImage!</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToHost(Bitmap bitmap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Drawing.Bitmap</span></td>
+        <td><span class="parametername">bitmap</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_CopyToHost_System_IntPtr_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.CopyToHost(System.IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L375">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_CopyToHost_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToHost*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_CopyToHost_System_IntPtr_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToHost(System.IntPtr)">CopyToHost(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Copy data from device to host memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToHost(IntPtr hostDest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">hostDest</span></td>
+        <td><p>IntPtr to destination in host memory</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_CopyToHost_System_IntPtr_ManagedCuda_BasicTypes_SizeT_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.CopyToHost(System.IntPtr%2CManagedCuda.BasicTypes.SizeT)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L265">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_CopyToHost_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToHost*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_CopyToHost_System_IntPtr_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToHost(System.IntPtr,ManagedCuda.BasicTypes.SizeT)">CopyToHost(IntPtr, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Copy data from device to host memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToHost(IntPtr hostDest, SizeT stride)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">hostDest</span></td>
+        <td><p>IntPtr to destination in host memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">stride</span></td>
+        <td><p>Size of one image line in bytes with padding</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_CopyToHost__1___0___.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.CopyToHost%60%601(%60%600%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L427">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_CopyToHost_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToHost*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_CopyToHost__1___0___" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToHost``1(``0[])">CopyToHost&lt;T&gt;(T[])</h4>
+  <div class="markdown level1 summary"><p>Copy data from device to host memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToHost&lt;T&gt;(T[] aHostDest)
+
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">aHostDest</span></td>
+        <td><p>Destination</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_CopyToHostRoi_System_Array_ManagedCuda_BasicTypes_SizeT_ManagedCuda_NPP_NppiRect_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.CopyToHostRoi(System.Array%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.NPP.NppiRect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L742">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_CopyToHostRoi_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToHostRoi*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_CopyToHostRoi_System_Array_ManagedCuda_BasicTypes_SizeT_ManagedCuda_NPP_NppiRect_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToHostRoi(System.Array,ManagedCuda.BasicTypes.SizeT,ManagedCuda.NPP.NppiRect)">CopyToHostRoi(Array, SizeT, NppiRect)</h4>
+  <div class="markdown level1 summary"><p>Copy data from this device to host memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToHostRoi(Array hostDest, SizeT stride, NppiRect roi)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Array</span></td>
+        <td><span class="parametername">hostDest</span></td>
+        <td><p>Destination</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">stride</span></td>
+        <td><p>Size of one image line in bytes with padding</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiRect.html">NppiRect</a></td>
+        <td><span class="parametername">roi</span></td>
+        <td><p>ROI of destination image</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_CopyToHostRoi_System_Drawing_Bitmap_ManagedCuda_NPP_NppiRect_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.CopyToHostRoi(System.Drawing.Bitmap%2CManagedCuda.NPP.NppiRect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L926">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_CopyToHostRoi_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToHostRoi*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_CopyToHostRoi_System_Drawing_Bitmap_ManagedCuda_NPP_NppiRect_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToHostRoi(System.Drawing.Bitmap,ManagedCuda.NPP.NppiRect)">CopyToHostRoi(Bitmap, NppiRect)</h4>
+  <div class="markdown level1 summary"><p>Copy data to a System.Drawing.Bitmap. There is no check if the bitmap pixel type corresponds to the current NPPImage!</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToHostRoi(Bitmap bitmap, NppiRect roi)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Drawing.Bitmap</span></td>
+        <td><span class="parametername">bitmap</span></td>
+        <td><p>Destination Bitmap</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiRect.html">NppiRect</a></td>
+        <td><span class="parametername">roi</span></td>
+        <td><p>ROI of destination image</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_CopyToHostRoi_System_IntPtr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_NPP_NppiRect_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.CopyToHostRoi(System.IntPtr%2CManagedCuda.BasicTypes.SizeT%2CManagedCuda.NPP.NppiRect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L675">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_CopyToHostRoi_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToHostRoi*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_CopyToHostRoi_System_IntPtr_ManagedCuda_BasicTypes_SizeT_ManagedCuda_NPP_NppiRect_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToHostRoi(System.IntPtr,ManagedCuda.BasicTypes.SizeT,ManagedCuda.NPP.NppiRect)">CopyToHostRoi(IntPtr, SizeT, NppiRect)</h4>
+  <div class="markdown level1 summary"><p>Copy data from device to host memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToHostRoi(IntPtr hostDest, SizeT stride, NppiRect roi)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">hostDest</span></td>
+        <td><p>IntPtr to destination in host memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">stride</span></td>
+        <td><p>Size of one image line in bytes with padding</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiRect.html">NppiRect</a></td>
+        <td><span class="parametername">roi</span></td>
+        <td><p>ROI of destination image</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_CopyToHostRoi_System_IntPtr_ManagedCuda_NPP_NppiRect_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.CopyToHostRoi(System.IntPtr%2CManagedCuda.NPP.NppiRect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L805">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_CopyToHostRoi_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToHostRoi*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_CopyToHostRoi_System_IntPtr_ManagedCuda_NPP_NppiRect_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToHostRoi(System.IntPtr,ManagedCuda.NPP.NppiRect)">CopyToHostRoi(IntPtr, NppiRect)</h4>
+  <div class="markdown level1 summary"><p>Copy data from device to host memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToHostRoi(IntPtr hostDest, NppiRect roi)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">hostDest</span></td>
+        <td><p>IntPtr to destination in host memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiRect.html">NppiRect</a></td>
+        <td><span class="parametername">roi</span></td>
+        <td><p>ROI of destination image</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_CopyToHostRoi__1___0___ManagedCuda_NPP_NppiRect_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.CopyToHostRoi%60%601(%60%600%5B%5D%2CManagedCuda.NPP.NppiRect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L867">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_CopyToHostRoi_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToHostRoi*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_CopyToHostRoi__1___0___ManagedCuda_NPP_NppiRect_" data-uid="ManagedCuda.NPP.NPPImageBase.CopyToHostRoi``1(``0[],ManagedCuda.NPP.NppiRect)">CopyToHostRoi&lt;T&gt;(T[], NppiRect)</h4>
+  <div class="markdown level1 summary"><p>Copy data from device to host memory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToHostRoi&lt;T&gt;(T[] aHostDest, NppiRect roi)
+
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">aHostDest</span></td>
+        <td><p>Destination</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiRect.html">NppiRect</a></td>
+        <td><span class="parametername">roi</span></td>
+        <td><p>ROI of destination image</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_Dispose.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L91">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_Dispose_" data-uid="ManagedCuda.NPP.NPPImageBase.Dispose*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_Dispose" data-uid="ManagedCuda.NPP.NPPImageBase.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Dispose</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L101">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_Dispose_" data-uid="ManagedCuda.NPP.NPPImageBase.Dispose*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_Dispose_System_Boolean_" data-uid="ManagedCuda.NPP.NPPImageBase.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>For IDisposable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool fDisposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">fDisposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_GetResizeRect_System_Double_System_Double_System_Double_System_Double_ManagedCuda_NPP_InterpolationMode_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.GetResizeRect(System.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double%2CManagedCuda.NPP.InterpolationMode)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L1180">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_GetResizeRect_" data-uid="ManagedCuda.NPP.NPPImageBase.GetResizeRect*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_GetResizeRect_System_Double_System_Double_System_Double_System_Double_ManagedCuda_NPP_InterpolationMode_" data-uid="ManagedCuda.NPP.NPPImageBase.GetResizeRect(System.Double,System.Double,System.Double,System.Double,ManagedCuda.NPP.InterpolationMode)">GetResizeRect(Double, Double, Double, Double, InterpolationMode)</h4>
+  <div class="markdown level1 summary"><p>Returns NppiRect which represents the offset and size of the destination rectangle that would be generated by
+resizing the source NppiRect by the requested scale factors and shifts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NppiRect GetResizeRect(double nXFactor, double nYFactor, double nXShift, double nYShift, InterpolationMode eInterpolation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">nXFactor</span></td>
+        <td><p>Factor by which x dimension is changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">nYFactor</span></td>
+        <td><p>Factor by which y dimension is changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">nXShift</span></td>
+        <td><p>Source pixel shift in x-direction.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">nYShift</span></td>
+        <td><p>Source pixel shift in y-direction.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.InterpolationMode.html">InterpolationMode</a></td>
+        <td><span class="parametername">eInterpolation</span></td>
+        <td><p>The type of eInterpolation to perform resampling.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiRect.html">NppiRect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_ResetRoi.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.ResetRoi%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L1163">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_ResetRoi_" data-uid="ManagedCuda.NPP.NPPImageBase.ResetRoi*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_ResetRoi" data-uid="ManagedCuda.NPP.NPPImageBase.ResetRoi">ResetRoi()</h4>
+  <div class="markdown level1 summary"><p>Resets the ROI to the full image</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetRoi()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_SetRoi_ManagedCuda_NPP_NppiRect_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.SetRoi(ManagedCuda.NPP.NppiRect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L1141">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_SetRoi_" data-uid="ManagedCuda.NPP.NPPImageBase.SetRoi*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_SetRoi_ManagedCuda_NPP_NppiRect_" data-uid="ManagedCuda.NPP.NPPImageBase.SetRoi(ManagedCuda.NPP.NppiRect)">SetRoi(NppiRect)</h4>
+  <div class="markdown level1 summary"><p>Defines the ROI on which all following operations take place</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRoi(NppiRect roi)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.NPP.NppiRect.html">NppiRect</a></td>
+        <td><span class="parametername">roi</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase_SetRoi_System_Int32_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase.SetRoi(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L1155">View Source</a>
+  </span>
+  <a id="ManagedCuda_NPP_NPPImageBase_SetRoi_" data-uid="ManagedCuda.NPP.NPPImageBase.SetRoi*"></a>
+  <h4 id="ManagedCuda_NPP_NPPImageBase_SetRoi_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="ManagedCuda.NPP.NPPImageBase.SetRoi(System.Int32,System.Int32,System.Int32,System.Int32)">SetRoi(Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Defines the ROI on which all following operations take place</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRoi(int x, int y, int width, int height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_NPP_NPPImageBase.md&amp;value=---%0Auid%3A%20ManagedCuda.NPP.NPPImageBase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/NPP/NPPImageBase.cs/#L36" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

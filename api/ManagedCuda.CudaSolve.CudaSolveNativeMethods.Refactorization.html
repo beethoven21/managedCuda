@@ -1,0 +1,2049 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CudaSolveNativeMethods.Refactorization
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CudaSolveNativeMethods.Refactorization
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization">
+  
+  
+  <h1 id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization" class="text-break">Class CudaSolveNativeMethods.Refactorization
+  </h1>
+  <div class="markdown level0 summary"><p>The cuSolverRF library was designed to accelerate solution of sets of linear systems by
+fast re-factorization when given new coefficients in the same sparsity pattern
+A_i x_i = f_i</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CudaSolveNativeMethods.Refactorization</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.CudaSolve.html">ManagedCuda.CudaSolve</a></h6>
+  <h6><strong>Assembly</strong>: CudaSolve.dll</h6>
+  <h5 id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Refactorization</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfAccessBundledFactorsDevice_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfAccessBundledFactorsDevice*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfAccessBundledFactorsDevice_ManagedCuda_CudaSolve_cusolverRfHandle_System_Int32__ManagedCuda_BasicTypes_CUdeviceptr__ManagedCuda_BasicTypes_CUdeviceptr__ManagedCuda_BasicTypes_CUdeviceptr__" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfAccessBundledFactorsDevice(ManagedCuda.CudaSolve.cusolverRfHandle,System.Int32@,ManagedCuda.BasicTypes.CUdeviceptr@,ManagedCuda.BasicTypes.CUdeviceptr@,ManagedCuda.BasicTypes.CUdeviceptr@)">cusolverRfAccessBundledFactorsDevice(cusolverRfHandle, ref Int32, ref CUdeviceptr, ref CUdeviceptr, ref CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>This routine allows direct access to the lower L and upper U triangular factors stored in
+the cuSolverRF library handle. The factors are compressed into a single matrix M=(LI)+
+U, where the unitary diagonal of L is not stored. It is assumed that a prior call to the
+cusolverRfRefactor() was done in order to generate these triangular factors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static cusolverStatus cusolverRfAccessBundledFactorsDevice(cusolverRfHandle handle, ref int nnzM, ref CUdeviceptr Mp, ref CUdeviceptr Mi, ref CUdeviceptr Mx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverRfHandle.html">cusolverRfHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>the pointer to the cuSolverRF library handle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nnzM</span></td>
+        <td><p>the number of non-zero elements of matrix M.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">Mp</span></td>
+        <td><p>the array of offsets corresponding to the start of each row in the arrays Mi and Mx.
+This array has also an extra entry at the end that stores the number of non-zero elements in the matrix $M$. The array size is n+1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">Mi</span></td>
+        <td><p>the array of column indices corresponding to the non-zero elements in the matrix M. It is assumed that this array is sorted by row and by column within each row. The array size is nnzM.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">Mx</span></td>
+        <td><p>the array of values corresponding to the non-zero elements in the matrix M. It is assumed that this array is sorted by row and by column within each row. The array size is nnzM.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverStatus.html">cusolverStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfAnalyze_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfAnalyze*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfAnalyze_ManagedCuda_CudaSolve_cusolverRfHandle_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfAnalyze(ManagedCuda.CudaSolve.cusolverRfHandle)">cusolverRfAnalyze(cusolverRfHandle)</h4>
+  <div class="markdown level1 summary"><p>This routine performs the appropriate analysis of parallelism available in the LU refactorization depending upon the algorithm chosen by the user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static cusolverStatus cusolverRfAnalyze(cusolverRfHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverRfHandle.html">cusolverRfHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>the pointer to the cuSolverRF library handle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverStatus.html">cusolverStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfBatchAnalyze_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfBatchAnalyze*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfBatchAnalyze_ManagedCuda_CudaSolve_cusolverRfHandle_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfBatchAnalyze(ManagedCuda.CudaSolve.cusolverRfHandle)">cusolverRfBatchAnalyze(cusolverRfHandle)</h4>
+  <div class="markdown level1 summary"><p>This routine performs the appropriate analysis of parallelism available in the batched LU re-factorization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static cusolverStatus cusolverRfBatchAnalyze(cusolverRfHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverRfHandle.html">cusolverRfHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>the pointer to the cuSolverRF library handle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverStatus.html">cusolverStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfBatchRefactor_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfBatchRefactor*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfBatchRefactor_ManagedCuda_CudaSolve_cusolverRfHandle_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfBatchRefactor(ManagedCuda.CudaSolve.cusolverRfHandle)">cusolverRfBatchRefactor(cusolverRfHandle)</h4>
+  <div class="markdown level1 summary"><p>This routine performs the LU re-factorization</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static cusolverStatus cusolverRfBatchRefactor(cusolverRfHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverRfHandle.html">cusolverRfHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>the pointer to the cuSolverRF library handle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverStatus.html">cusolverStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfBatchResetValues_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfBatchResetValues*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfBatchResetValues_System_Int32_System_Int32_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUdeviceptr___ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_CudaSolve_cusolverRfHandle_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfBatchResetValues(System.Int32,System.Int32,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUdeviceptr[],ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.CudaSolve.cusolverRfHandle)">cusolverRfBatchResetValues(Int32, Int32, Int32, CUdeviceptr, CUdeviceptr, CUdeviceptr[], CUdeviceptr, CUdeviceptr, cusolverRfHandle)</h4>
+  <div class="markdown level1 summary"><p>This routine updates internal data structures with the values of the new coefficient
+matrix. It is assumed that the arrays csrRowPtrA, csrColIndA, P and Q have not
+changed since the last call to the cusolverRfbatch_setup_host routine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static cusolverStatus cusolverRfBatchResetValues(int batchSize, int n, int nnzA, CUdeviceptr csrRowPtrA, CUdeviceptr csrColIndA, CUdeviceptr[] csrValA_array, CUdeviceptr P, CUdeviceptr Q, cusolverRfHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">batchSize</span></td>
+        <td><p>the number of matrices in batched mode.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>the number of rows (and columns) of matrix A.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nnzA</span></td>
+        <td><p>the number of non-zero elements of matrix A.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">csrRowPtrA</span></td>
+        <td><p>the array of offsets corresponding to the start of each row in the arrays csrColIndA and csrValA.
+This array has also an extra entry at the end that stores the number of non-zero elements in the matrix. The array size is n+1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">csrColIndA</span></td>
+        <td><p>the array of column indices corresponding to the non-zero elements in the matrix. It is assumed that this array is sorted by row
+and by column within each row. The array size is nnzA.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a>[]</td>
+        <td><span class="parametername">csrValA_array</span></td>
+        <td><p>array of pointers of size batchSize, each pointer points to the array of values corresponding to the non-zero elements in the matrix.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">P</span></td>
+        <td><p>the left permutation (often associated with pivoting). The array size in n.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">Q</span></td>
+        <td><p>the right permutation (often associated with reordering). The array size in n.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverRfHandle.html">cusolverRfHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>the pointer to the cuSolverRF library handle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverStatus.html">cusolverStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfBatchSetupHost_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfBatchSetupHost*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfBatchSetupHost_System_Int32_System_Int32_System_Int32_System_Int32___System_Int32___System_IntPtr___System_Int32_System_Int32___System_Int32___System_Double___System_Int32_System_Int32___System_Int32___System_Double___System_Int32___System_Int32___ManagedCuda_CudaSolve_cusolverRfHandle_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfBatchSetupHost(System.Int32,System.Int32,System.Int32,System.Int32[],System.Int32[],System.IntPtr[],System.Int32,System.Int32[],System.Int32[],System.Double[],System.Int32,System.Int32[],System.Int32[],System.Double[],System.Int32[],System.Int32[],ManagedCuda.CudaSolve.cusolverRfHandle)">cusolverRfBatchSetupHost(Int32, Int32, Int32, Int32[], Int32[], IntPtr[], Int32, Int32[], Int32[], Double[], Int32, Int32[], Int32[], Double[], Int32[], Int32[], cusolverRfHandle)</h4>
+  <div class="markdown level1 summary"><p>This routine assembles the internal data structures of the cuSolverRF library for batched
+operation. It is called after the call to the cusolverRfCreate() routine, and before any
+other batched routines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static cusolverStatus cusolverRfBatchSetupHost(int batchSize, int n, int nnzA, int[] h_csrRowPtrA, int[] h_csrColIndA, IntPtr[] h_csrValA_array, int nnzL, int[] h_csrRowPtrL, int[] h_csrColIndL, double[] h_csrValL, int nnzU, int[] h_csrRowPtrU, int[] h_csrColIndU, double[] h_csrValU, int[] h_P, int[] h_Q, cusolverRfHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">batchSize</span></td>
+        <td><p>the number of matrices in the batched mode.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>the number of rows (and columns) of matrix A.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nnzA</span></td>
+        <td><p>the number of non-zero elements of matrix A.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_csrRowPtrA</span></td>
+        <td><p>the array of offsets corresponding to
+the start of each row in the arrays h_csrColIndA and h_csrValA. This array has also an extra entry at the
+end that stores the number of non-zero elements in the matrix. The array size is n+1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_csrColIndA</span></td>
+        <td><p>the array of column indices corresponding
+to the non-zero elements in the matrix. It is assumed that this array is sorted by row and by column within each row. The array size is nnzA.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span>[]</td>
+        <td><span class="parametername">h_csrValA_array</span></td>
+        <td><p>array of pointers of size batchSize, each pointer points to the array of values corresponding to the non-zero elements in the matrix.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nnzL</span></td>
+        <td><p>the number of non-zero elements of matrix L.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_csrRowPtrL</span></td>
+        <td><p>the array of offsets corresponding to the start of each row in the arrays h_csrColIndL and h_csrValL. This
+array has also an extra entry at the end that stores the number of non-zero elements in the matrix L. The array size is n+1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_csrColIndL</span></td>
+        <td><p>the array of column indices corresponding to the non-zero elements in the matrix L. It is assumed that this array is sorted by
+row and by column within each row. The array size is nnzL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">h_csrValL</span></td>
+        <td><p>the array of values corresponding to the non-zero elements in the matrix L. It is assumed that this array is sorted by row
+and by column within each row. The array size is nnzL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nnzU</span></td>
+        <td><p>the number of non-zero elements of matrix U.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_csrRowPtrU</span></td>
+        <td><p>the array of offsets corresponding to the start of each row in the arrays h_csrColIndU and h_csrValU. This
+array has also an extra entry at the end that stores the number of non-zero elements in the matrix U. The array size is n+1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_csrColIndU</span></td>
+        <td><p>the array of column indices corresponding to the non-zero elements in the matrix U. It is assumed that this array is sorted by
+row and by column within each row. The array size is nnzU.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">h_csrValU</span></td>
+        <td><p>the array of values corresponding to the non-zero elements in the matrix U. It is assumed that this array is sorted by row
+and by column within each row. The array size is nnzU.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_P</span></td>
+        <td><p>the left permutation (often associated with pivoting). The array size in n.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_Q</span></td>
+        <td><p>the right permutation (often associated with reordering). The array size in n.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverRfHandle.html">cusolverRfHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>the pointer to the cuSolverRF library handle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverStatus.html">cusolverStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfBatchSolve_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfBatchSolve*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfBatchSolve_ManagedCuda_CudaSolve_cusolverRfHandle_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_System_Double___System_Int32_System_IntPtr___System_Int32_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfBatchSolve(ManagedCuda.CudaSolve.cusolverRfHandle,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,System.Double[],System.Int32,System.IntPtr[],System.Int32)">cusolverRfBatchSolve(cusolverRfHandle, CUdeviceptr, CUdeviceptr, Int32, Double[], Int32, IntPtr[], Int32)</h4>
+  <div class="markdown level1 summary"><p>To solve A_j * x_j = b_j, first we reform the equation by M_j * Q * x_j = P * b_j. Then do refactorization by
+cusolverRfBatch_Refactor(). Further cusolverRfBatch_Solve() takes over the remaining steps.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static cusolverStatus cusolverRfBatchSolve(cusolverRfHandle handle, CUdeviceptr P, CUdeviceptr Q, int nrhs, double[] Temp, int ldt, IntPtr[] XF_array, int ldxf)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverRfHandle.html">cusolverRfHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>the pointer to the cuSolverRF library handle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">P</span></td>
+        <td><p>the left permutation (often associated with pivoting). The array size in n.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">Q</span></td>
+        <td><p>the right permutation (often associated with reordering). The array size in n.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nrhs</span></td>
+        <td><p>the number right-hand-sides to be solved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">Temp</span></td>
+        <td><p>the dense matrix that contains temporary workspace (of size ldt*nrhs).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ldt</span></td>
+        <td><p>the leading dimension of dense matrix Temp (ldt &gt;= n).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span>[]</td>
+        <td><span class="parametername">XF_array</span></td>
+        <td><p>array of pointers of size batchSize, each pointer points to the dense matrix that contains the right-hand-sides F and solutions X (of size ldxf*nrhs).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ldxf</span></td>
+        <td><p>the leading dimension of dense matrix XF (ldxf &gt;= n).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverStatus.html">cusolverStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfBatchZeroPivot_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfBatchZeroPivot*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfBatchZeroPivot_ManagedCuda_CudaSolve_cusolverRfHandle_System_Int32___" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfBatchZeroPivot(ManagedCuda.CudaSolve.cusolverRfHandle,System.Int32[])">cusolverRfBatchZeroPivot(cusolverRfHandle, Int32[])</h4>
+  <div class="markdown level1 summary"><p>The user can query which matrix failed LU refactorization by checking
+corresponding value in position array. The input parameter position is an integer array of size batchSize.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static cusolverStatus cusolverRfBatchZeroPivot(cusolverRfHandle handle, int[] position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverRfHandle.html">cusolverRfHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>the pointer to the cuSolverRF library handle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">position</span></td>
+        <td><p>integer array of size batchSize. The value of position(j) reports singularity
+of matrix Aj, -1 if no structural / numerical zero, k &gt;= 0 if Aj(k,k) is either structural zero or numerical zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverStatus.html">cusolverStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfCreate_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfCreate*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfCreate_ManagedCuda_CudaSolve_cusolverRfHandle__" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfCreate(ManagedCuda.CudaSolve.cusolverRfHandle@)">cusolverRfCreate(ref cusolverRfHandle)</h4>
+  <div class="markdown level1 summary"><p>This routine initializes the cuSolverRF library. It allocates required resources and must be called prior to any other cuSolverRF library routine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static cusolverStatus cusolverRfCreate(ref cusolverRfHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverRfHandle.html">cusolverRfHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>the pointer to the cuSolverRF library handle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverStatus.html">cusolverStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfDestroy_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfDestroy*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfDestroy_ManagedCuda_CudaSolve_cusolverRfHandle_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfDestroy(ManagedCuda.CudaSolve.cusolverRfHandle)">cusolverRfDestroy(cusolverRfHandle)</h4>
+  <div class="markdown level1 summary"><p>This routine shuts down the cuSolverRF library. It releases acquired resources and must be called after all the cuSolverRF library routines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static cusolverStatus cusolverRfDestroy(cusolverRfHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverRfHandle.html">cusolverRfHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>the pointer to the cuSolverRF library handle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverStatus.html">cusolverStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfExtractBundledFactorsHost_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfExtractBundledFactorsHost*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfExtractBundledFactorsHost_ManagedCuda_CudaSolve_cusolverRfHandle_System_Int32__System_IntPtr__System_IntPtr__System_IntPtr__" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfExtractBundledFactorsHost(ManagedCuda.CudaSolve.cusolverRfHandle,System.Int32@,System.IntPtr@,System.IntPtr@,System.IntPtr@)">cusolverRfExtractBundledFactorsHost(cusolverRfHandle, ref Int32, ref IntPtr, ref IntPtr, ref IntPtr)</h4>
+  <div class="markdown level1 summary"><p>This routine allows direct access to the lower L and upper U triangular factors stored in
+the cuSolverRF library handle. The factors are compressed into a single matrix M=(LI)+
+U, where the unitary diagonal of L is not stored. It is assumed that a prior call to the
+cusolverRfRefactor() was done in order to generate these triangular factors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static cusolverStatus cusolverRfExtractBundledFactorsHost(cusolverRfHandle handle, ref int h_nnzM, ref IntPtr h_Mp, ref IntPtr h_Mi, ref IntPtr h_Mx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverRfHandle.html">cusolverRfHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>the pointer to the cuSolverRF library handle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">h_nnzM</span></td>
+        <td><p>the number of non-zero elements of matrix M.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">h_Mp</span></td>
+        <td><p>the array of offsets corresponding to the start of each row in the arrays Mi and Mx.
+This array has also an extra entry at the end that stores the number of non-zero elements in the matrix $M$. The array size is n+1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">h_Mi</span></td>
+        <td><p>the array of column indices corresponding to the non-zero elements in the matrix M. It is assumed that this array is sorted by row and by column within each row. The array size is nnzM.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">h_Mx</span></td>
+        <td><p>the array of values corresponding to the non-zero elements in the matrix M. It is assumed that this array is sorted by row and by column within each row. The array size is nnzM.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverStatus.html">cusolverStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfExtractSplitFactorsHost_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfExtractSplitFactorsHost*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfExtractSplitFactorsHost_ManagedCuda_CudaSolve_cusolverRfHandle_System_Int32__System_IntPtr__System_IntPtr__System_IntPtr__System_Int32__System_IntPtr__System_IntPtr__System_IntPtr__" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfExtractSplitFactorsHost(ManagedCuda.CudaSolve.cusolverRfHandle,System.Int32@,System.IntPtr@,System.IntPtr@,System.IntPtr@,System.Int32@,System.IntPtr@,System.IntPtr@,System.IntPtr@)">cusolverRfExtractSplitFactorsHost(cusolverRfHandle, ref Int32, ref IntPtr, ref IntPtr, ref IntPtr, ref Int32, ref IntPtr, ref IntPtr, ref IntPtr)</h4>
+  <div class="markdown level1 summary"><p>This routine extracts lower (L) and upper (U) triangular factors from the
+cuSolverRF library handle into the host memory. It is assumed that a prior call to the
+cusolverRfRefactor() was done in order to generate these triangular factors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static cusolverStatus cusolverRfExtractSplitFactorsHost(cusolverRfHandle handle, ref int h_nnzL, ref IntPtr h_csrRowPtrL, ref IntPtr h_csrColIndL, ref IntPtr h_csrValL, ref int h_nnzU, ref IntPtr h_csrRowPtrU, ref IntPtr h_csrColIndU, ref IntPtr h_csrValU)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverRfHandle.html">cusolverRfHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>the pointer to the cuSolverRF library handle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">h_nnzL</span></td>
+        <td><p>the number of non-zero elements of matrix L.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">h_csrRowPtrL</span></td>
+        <td><p>the array of offsets corresponding to the start of each row in the arrays h_Li and
+h_Lx. This array has also an extra entry at the end that stores the number of nonzero elements in the matrix L. The array size is n+1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">h_csrColIndL</span></td>
+        <td><p>the array of column indices corresponding to the non-zero elements in the matrix L. It is assumed that this array is sorted by
+row and by column within each row. The array size is h_nnzL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">h_csrValL</span></td>
+        <td><p>the array of values corresponding to the non-zero elements in the matrix L. It is assumed that this array is sorted by row
+and by column within each row. The array size is h_nnzL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">h_nnzU</span></td>
+        <td><p>the number of non-zero elements of matrix U.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">h_csrRowPtrU</span></td>
+        <td><p>the array of offsets corresponding to the start of each row in the arrays h_Ui and h_Ux. This array has also an extra entry
+at the end that stores the number of nonzero elements in the matrix U. The array size is n+1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">h_csrColIndU</span></td>
+        <td><p>the array of column indices corresponding to the non-zero elements in the matrix U. It is assumed that this array is sorted by
+row and by column within each row. The array size is h_nnzU.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">h_csrValU</span></td>
+        <td><p>the array of values corresponding to the non-zero elements in the matrix U. It is assumed that this array is sorted by row
+and by column within each row. The array size is h_nnzU.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverStatus.html">cusolverStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfGetAlgs_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfGetAlgs*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfGetAlgs_ManagedCuda_CudaSolve_cusolverRfHandle_ManagedCuda_CudaSolve_Factorization__ManagedCuda_CudaSolve_TriangularSolve__" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfGetAlgs(ManagedCuda.CudaSolve.cusolverRfHandle,ManagedCuda.CudaSolve.Factorization@,ManagedCuda.CudaSolve.TriangularSolve@)">cusolverRfGetAlgs(cusolverRfHandle, ref Factorization, ref TriangularSolve)</h4>
+  <div class="markdown level1 summary"><p>This routine gets the algorithm used for the refactorization in cusolverRfRefactor()
+and the triangular solve in cusolverRfSolve(). It may be called once prior to
+cusolverRfAnalyze() routine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static cusolverStatus cusolverRfGetAlgs(cusolverRfHandle handle, ref Factorization factAlg, ref TriangularSolve solveAlg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverRfHandle.html">cusolverRfHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>the pointer to the cuSolverRF library handle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.Factorization.html">Factorization</a></td>
+        <td><span class="parametername">factAlg</span></td>
+        <td><p>the enumerated algorithm type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.TriangularSolve.html">TriangularSolve</a></td>
+        <td><span class="parametername">solveAlg</span></td>
+        <td><p>the enumerated algorithm type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverStatus.html">cusolverStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfGetMatrixFormat_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfGetMatrixFormat*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfGetMatrixFormat_ManagedCuda_CudaSolve_cusolverRfHandle_ManagedCuda_CudaSolve_MatrixFormat__ManagedCuda_CudaSolve_UnitDiagonal__" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfGetMatrixFormat(ManagedCuda.CudaSolve.cusolverRfHandle,ManagedCuda.CudaSolve.MatrixFormat@,ManagedCuda.CudaSolve.UnitDiagonal@)">cusolverRfGetMatrixFormat(cusolverRfHandle, ref MatrixFormat, ref UnitDiagonal)</h4>
+  <div class="markdown level1 summary"><p>This routine gets the matrix format used in the cusolverRfSetup(),
+cusolverRfSetupHost(), cusolverRfResetValues(), cusolverRfExtractBundledFactorsHost() and cusolverRfExtractSplitFactorsHost() routines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static cusolverStatus cusolverRfGetMatrixFormat(cusolverRfHandle handle, ref MatrixFormat format, ref UnitDiagonal diag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverRfHandle.html">cusolverRfHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>the pointer to the cuSolverRF library handle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.MatrixFormat.html">MatrixFormat</a></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>the enumerated matrix format type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.UnitDiagonal.html">UnitDiagonal</a></td>
+        <td><span class="parametername">diag</span></td>
+        <td><p>the enumerated unit diagonal type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverStatus.html">cusolverStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfGetNumericBoostReport_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfGetNumericBoostReport*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfGetNumericBoostReport_ManagedCuda_CudaSolve_cusolverRfHandle_ManagedCuda_CudaSolve_NumericBoostReport__" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfGetNumericBoostReport(ManagedCuda.CudaSolve.cusolverRfHandle,ManagedCuda.CudaSolve.NumericBoostReport@)">cusolverRfGetNumericBoostReport(cusolverRfHandle, ref NumericBoostReport)</h4>
+  <div class="markdown level1 summary"><p>This routine gets the report whether numeric boosting was used in the
+cusolverRfRefactor() and cusolverRfSolve() routines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static cusolverStatus cusolverRfGetNumericBoostReport(cusolverRfHandle handle, ref NumericBoostReport report)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverRfHandle.html">cusolverRfHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>the pointer to the cuSolverRF library handle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.NumericBoostReport.html">NumericBoostReport</a></td>
+        <td><span class="parametername">report</span></td>
+        <td><p>the enumerated boosting report type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverStatus.html">cusolverStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfGetNumericProperties_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfGetNumericProperties*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfGetNumericProperties_ManagedCuda_CudaSolve_cusolverRfHandle_System_Double__System_Double__" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfGetNumericProperties(ManagedCuda.CudaSolve.cusolverRfHandle,System.Double@,System.Double@)">cusolverRfGetNumericProperties(cusolverRfHandle, ref Double, ref Double)</h4>
+  <div class="markdown level1 summary"><p>This routine gets the numeric values used for checking for &quot;zero&quot; pivot and for boosting
+it in the cusolverRfRefactor() and cusolverRfSolve() routines. It may be called
+multiple times prior to cusolverRfRefactor() and cusolverRfSolve() routines.
+The numeric boosting will be used only if boost &gt; 0.0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static cusolverStatus cusolverRfGetNumericProperties(cusolverRfHandle handle, ref double zero, ref double boost)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverRfHandle.html">cusolverRfHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>the pointer to the cuSolverRF library handle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">zero</span></td>
+        <td><p>the value below which zero pivot is flagged.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">boost</span></td>
+        <td><p>the value which is substituted for zero pivot (if the later is flagged).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverStatus.html">cusolverStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfGetResetValuesFastMode_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfGetResetValuesFastMode*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfGetResetValuesFastMode_ManagedCuda_CudaSolve_cusolverRfHandle_ManagedCuda_CudaSolve_ResetValuesFastMode__" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfGetResetValuesFastMode(ManagedCuda.CudaSolve.cusolverRfHandle,ManagedCuda.CudaSolve.ResetValuesFastMode@)">cusolverRfGetResetValuesFastMode(cusolverRfHandle, ref ResetValuesFastMode)</h4>
+  <div class="markdown level1 summary"><p>This routine gets the mode used in the cusolverRfResetValues routine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static cusolverStatus cusolverRfGetResetValuesFastMode(cusolverRfHandle handle, ref ResetValuesFastMode fastMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverRfHandle.html">cusolverRfHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>the pointer to the cuSolverRF library handle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.ResetValuesFastMode.html">ResetValuesFastMode</a></td>
+        <td><span class="parametername">fastMode</span></td>
+        <td><p>the enumerated mode type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverStatus.html">cusolverStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfRefactor_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfRefactor*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfRefactor_ManagedCuda_CudaSolve_cusolverRfHandle_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfRefactor(ManagedCuda.CudaSolve.cusolverRfHandle)">cusolverRfRefactor(cusolverRfHandle)</h4>
+  <div class="markdown level1 summary"><p>This routine performs the LU re-factorization</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static cusolverStatus cusolverRfRefactor(cusolverRfHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverRfHandle.html">cusolverRfHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>the pointer to the cuSolverRF library handle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverStatus.html">cusolverStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfResetValues_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfResetValues*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfResetValues_System_Int32_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_CudaSolve_cusolverRfHandle_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfResetValues(System.Int32,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.CudaSolve.cusolverRfHandle)">cusolverRfResetValues(Int32, Int32, CUdeviceptr, CUdeviceptr, CUdeviceptr, CUdeviceptr, CUdeviceptr, cusolverRfHandle)</h4>
+  <div class="markdown level1 summary"><p>This routine updates internal data structures with the values of the new coefficient
+matrix. It is assumed that the arrays csrRowPtrA, csrColIndA, P and Q have not
+changed since the last call to the cusolverRfSetup[Host] routine. This assumption
+reflects the fact that the sparsity pattern of coefficient matrices as well as reordering to
+minimize fill-in and pivoting remain the same in the set of linear systems</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static cusolverStatus cusolverRfResetValues(int n, int nnzA, CUdeviceptr csrRowPtrA, CUdeviceptr csrColIndA, CUdeviceptr csrValA, CUdeviceptr P, CUdeviceptr Q, cusolverRfHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>the number of rows (and columns) of matrix A.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nnzA</span></td>
+        <td><p>the number of non-zero elements of matrix A.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">csrRowPtrA</span></td>
+        <td><p>the array of offsets corresponding to the start of each row in the arrays
+csrColIndA and csrValA. This array has also an extra entry at the end that stores the number of non-zero elements in the
+matrix. The array size is n+1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">csrColIndA</span></td>
+        <td><p>the array of column indices corresponding to the non-zero elements in the matrix. It
+is assumed that this array is sorted by row and by column within each row. The array size is nnzA.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">csrValA</span></td>
+        <td><p>the array of values corresponding to the non-zero elements in the matrix. It is assumed that this array is sorted by row
+and by column within each row. The array size is nnzA.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">P</span></td>
+        <td><p>the left permutation (often associated with pivoting). The array size in n.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">Q</span></td>
+        <td><p>the right permutation (often associated with reordering). The array size in n.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverRfHandle.html">cusolverRfHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>the pointer to the cuSolverRF library handle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverStatus.html">cusolverStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfSetAlgs_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfSetAlgs*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfSetAlgs_ManagedCuda_CudaSolve_cusolverRfHandle_ManagedCuda_CudaSolve_Factorization_ManagedCuda_CudaSolve_TriangularSolve_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfSetAlgs(ManagedCuda.CudaSolve.cusolverRfHandle,ManagedCuda.CudaSolve.Factorization,ManagedCuda.CudaSolve.TriangularSolve)">cusolverRfSetAlgs(cusolverRfHandle, Factorization, TriangularSolve)</h4>
+  <div class="markdown level1 summary"><p>This routine sets the algorithm used for the refactorization in cusolverRfRefactor()
+and the triangular solve in cusolverRfSolve(). It may be called once prior to
+cusolverRfAnalyze() routine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static cusolverStatus cusolverRfSetAlgs(cusolverRfHandle handle, Factorization factAlg, TriangularSolve solveAlg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverRfHandle.html">cusolverRfHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>the pointer to the cuSolverRF library handle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.Factorization.html">Factorization</a></td>
+        <td><span class="parametername">factAlg</span></td>
+        <td><p>the enumerated algorithm type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.TriangularSolve.html">TriangularSolve</a></td>
+        <td><span class="parametername">solveAlg</span></td>
+        <td><p>the enumerated algorithm type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverStatus.html">cusolverStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfSetMatrixFormat_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfSetMatrixFormat*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfSetMatrixFormat_ManagedCuda_CudaSolve_cusolverRfHandle_ManagedCuda_CudaSolve_MatrixFormat_ManagedCuda_CudaSolve_UnitDiagonal_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfSetMatrixFormat(ManagedCuda.CudaSolve.cusolverRfHandle,ManagedCuda.CudaSolve.MatrixFormat,ManagedCuda.CudaSolve.UnitDiagonal)">cusolverRfSetMatrixFormat(cusolverRfHandle, MatrixFormat, UnitDiagonal)</h4>
+  <div class="markdown level1 summary"><p>This routine sets the matrix format used in the cusolverRfSetup(),
+cusolverRfSetupHost(), cusolverRfResetValues(), cusolverRfExtractBundledFactorsHost() and cusolverRfExtractSplitFactorsHost() routines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static cusolverStatus cusolverRfSetMatrixFormat(cusolverRfHandle handle, MatrixFormat format, UnitDiagonal diag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverRfHandle.html">cusolverRfHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>the pointer to the cuSolverRF library handle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.MatrixFormat.html">MatrixFormat</a></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>the enumerated matrix format type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.UnitDiagonal.html">UnitDiagonal</a></td>
+        <td><span class="parametername">diag</span></td>
+        <td><p>the enumerated unit diagonal type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverStatus.html">cusolverStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfSetNumericProperties_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfSetNumericProperties*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfSetNumericProperties_ManagedCuda_CudaSolve_cusolverRfHandle_System_Double_System_Double_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfSetNumericProperties(ManagedCuda.CudaSolve.cusolverRfHandle,System.Double,System.Double)">cusolverRfSetNumericProperties(cusolverRfHandle, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>This routine sets the numeric values used for checking for &quot;zero&quot; pivot and for boosting
+it in the cusolverRfRefactor() and cusolverRfSolve() routines. It may be called
+multiple times prior to cusolverRfRefactor() and cusolverRfSolve() routines.
+The numeric boosting will be used only if boost &gt; 0.0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static cusolverStatus cusolverRfSetNumericProperties(cusolverRfHandle handle, double zero, double boost)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverRfHandle.html">cusolverRfHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>the pointer to the cuSolverRF library handle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">zero</span></td>
+        <td><p>the value below which zero pivot is flagged.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">boost</span></td>
+        <td><p>the value which is substituted for zero pivot (if the later is flagged).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverStatus.html">cusolverStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfSetResetValuesFastMode_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfSetResetValuesFastMode*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfSetResetValuesFastMode_ManagedCuda_CudaSolve_cusolverRfHandle_ManagedCuda_CudaSolve_ResetValuesFastMode_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfSetResetValuesFastMode(ManagedCuda.CudaSolve.cusolverRfHandle,ManagedCuda.CudaSolve.ResetValuesFastMode)">cusolverRfSetResetValuesFastMode(cusolverRfHandle, ResetValuesFastMode)</h4>
+  <div class="markdown level1 summary"><p>This routine sets the mode used in the cusolverRfResetValues routine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static cusolverStatus cusolverRfSetResetValuesFastMode(cusolverRfHandle handle, ResetValuesFastMode fastMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverRfHandle.html">cusolverRfHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>the pointer to the cuSolverRF library handle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.ResetValuesFastMode.html">ResetValuesFastMode</a></td>
+        <td><span class="parametername">fastMode</span></td>
+        <td><p>the enumerated mode type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverStatus.html">cusolverStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfSetupDevice_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfSetupDevice*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfSetupDevice_System_Int32_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_CudaSolve_cusolverRfHandle_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfSetupDevice(System.Int32,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.CudaSolve.cusolverRfHandle)">cusolverRfSetupDevice(Int32, Int32, CUdeviceptr, CUdeviceptr, CUdeviceptr, Int32, CUdeviceptr, CUdeviceptr, CUdeviceptr, Int32, CUdeviceptr, CUdeviceptr, CUdeviceptr, CUdeviceptr, CUdeviceptr, cusolverRfHandle)</h4>
+  <div class="markdown level1 summary"><p>This routine assembles the internal data structures of the cuSolverRF library. It is often
+the first routine to be called after the call to the cusolverRfCreate() routine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static cusolverStatus cusolverRfSetupDevice(int n, int nnzA, CUdeviceptr csrRowPtrA, CUdeviceptr csrColIndA, CUdeviceptr csrValA, int nnzL, CUdeviceptr csrRowPtrL, CUdeviceptr csrColIndL, CUdeviceptr csrValL, int nnzU, CUdeviceptr csrRowPtrU, CUdeviceptr csrColIndU, CUdeviceptr csrValU, CUdeviceptr P, CUdeviceptr Q, cusolverRfHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>the number of rows (and columns) of matrix A.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nnzA</span></td>
+        <td><p>the number of non-zero elements of matrix A.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">csrRowPtrA</span></td>
+        <td><p>the array of offsets corresponding to
+the start of each row in the arrays h_csrColIndA and h_csrValA. This
+array has also an extra entry at the end that stores the number of non-zero
+elements in the matrix. The array size is n+1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">csrColIndA</span></td>
+        <td><p>the array of column indices corresponding
+to the non-zero elements in the matrix. It is assumed that this array is sorted by row
+and by column within each row. The array size is nnzA.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">csrValA</span></td>
+        <td><p>the array of values corresponding to the
+non-zero elements in the matrix. It is assumed that this array is sorted by row
+and by column within each row. The array size is nnzA.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nnzL</span></td>
+        <td><p>the number of non-zero elements of matrix L.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">csrRowPtrL</span></td>
+        <td><p>the array of offsets corresponding to
+the start of each row in the arrays h_csrColIndL and h_csrValL. This
+array has also an extra entry at the end that stores the number of non-zero
+elements in the matrix L. The array size is n+1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">csrColIndL</span></td>
+        <td><p>the array of column indices corresponding
+to the non-zero elements in the matrix L. It is assumed that this array is sorted by
+row and by column within each row. The array size is nnzL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">csrValL</span></td>
+        <td><p>the array of values corresponding to the
+non-zero elements in the matrix L. It is assumed that this array is sorted by row
+and by column within each row. The array size is nnzL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nnzU</span></td>
+        <td><p>the number of non-zero elements of matrix U.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">csrRowPtrU</span></td>
+        <td><p>the array of offsets corresponding to
+the start of each row in the arrays h_csrColIndU and h_csrValU. This
+array has also an extra entry at the end that stores the number of non-zero elements in the matrix U. The array size is n+1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">csrColIndU</span></td>
+        <td><p>the array of column indices corresponding
+to the non-zero elements in the matrix U. It is assumed that this array is sorted by row and by column within each row. The array size is nnzU.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">csrValU</span></td>
+        <td><p>the array of values corresponding to the non-zero elements in the matrix U. It is
+assumed that this array is sorted by row and by column within each row. The array size is nnzU.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">P</span></td>
+        <td><p>the left permutation (often associated with pivoting). The array size in n.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">Q</span></td>
+        <td><p>the right permutation (often associated with reordering). The array size in n.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverRfHandle.html">cusolverRfHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>the pointer to the cuSolverRF library handle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverStatus.html">cusolverStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfSetupHost_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfSetupHost*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfSetupHost_System_Int32_System_Int32_System_Int32___System_Int32___System_Double___System_Int32_System_Int32___System_Int32___System_Double___System_Int32_System_Int32___System_Int32___System_Double___System_Int32___System_Int32___ManagedCuda_CudaSolve_cusolverRfHandle_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfSetupHost(System.Int32,System.Int32,System.Int32[],System.Int32[],System.Double[],System.Int32,System.Int32[],System.Int32[],System.Double[],System.Int32,System.Int32[],System.Int32[],System.Double[],System.Int32[],System.Int32[],ManagedCuda.CudaSolve.cusolverRfHandle)">cusolverRfSetupHost(Int32, Int32, Int32[], Int32[], Double[], Int32, Int32[], Int32[], Double[], Int32, Int32[], Int32[], Double[], Int32[], Int32[], cusolverRfHandle)</h4>
+  <div class="markdown level1 summary"><p>This routine assembles the internal data structures of the cuSolverRF library. It is often
+the first routine to be called after the call to the cusolverRfCreate() routine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static cusolverStatus cusolverRfSetupHost(int n, int nnzA, int[] h_csrRowPtrA, int[] h_csrColIndA, double[] h_csrValA, int nnzL, int[] h_csrRowPtrL, int[] h_csrColIndL, double[] h_csrValL, int nnzU, int[] h_csrRowPtrU, int[] h_csrColIndU, double[] h_csrValU, int[] h_P, int[] h_Q, cusolverRfHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>the number of rows (and columns) of matrix A.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nnzA</span></td>
+        <td><p>the number of non-zero elements of matrix A.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_csrRowPtrA</span></td>
+        <td><p>the array of offsets corresponding to
+the start of each row in the arrays h_csrColIndA and h_csrValA. This
+array has also an extra entry at the end that stores the number of non-zero
+elements in the matrix. The array size is n+1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_csrColIndA</span></td>
+        <td><p>the array of column indices corresponding
+to the non-zero elements in the matrix. It is assumed that this array is sorted by row
+and by column within each row. The array size is nnzA.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">h_csrValA</span></td>
+        <td><p>the array of values corresponding to the
+non-zero elements in the matrix. It is assumed that this array is sorted by row
+and by column within each row. The array size is nnzA.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nnzL</span></td>
+        <td><p>the number of non-zero elements of matrix L.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_csrRowPtrL</span></td>
+        <td><p>the array of offsets corresponding to
+the start of each row in the arrays h_csrColIndL and h_csrValL. This
+array has also an extra entry at the end that stores the number of non-zero
+elements in the matrix L. The array size is n+1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_csrColIndL</span></td>
+        <td><p>the array of column indices corresponding
+to the non-zero elements in the matrix L. It is assumed that this array is sorted by
+row and by column within each row. The array size is nnzL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">h_csrValL</span></td>
+        <td><p>the array of values corresponding to the
+non-zero elements in the matrix L. It is assumed that this array is sorted by row
+and by column within each row. The array size is nnzL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nnzU</span></td>
+        <td><p>the number of non-zero elements of matrix U.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_csrRowPtrU</span></td>
+        <td><p>the array of offsets corresponding to
+the start of each row in the arrays h_csrColIndU and h_csrValU. This
+array has also an extra entry at the end that stores the number of non-zero elements in the matrix U. The array size is n+1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_csrColIndU</span></td>
+        <td><p>the array of column indices corresponding
+to the non-zero elements in the matrix U. It is assumed that this array is sorted by row and by column within each row. The array size is nnzU.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">h_csrValU</span></td>
+        <td><p>the array of values corresponding to the non-zero elements in the matrix U. It is
+assumed that this array is sorted by row and by column within each row. The array size is nnzU.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_P</span></td>
+        <td><p>the left permutation (often associated with pivoting). The array size in n.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">h_Q</span></td>
+        <td><p>the right permutation (often associated with reordering). The array size in n.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverRfHandle.html">cusolverRfHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>the pointer to the cuSolverRF library handle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverStatus.html">cusolverStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfSolve_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfSolve*"></a>
+  <h4 id="ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization_cusolverRfSolve_ManagedCuda_CudaSolve_cusolverRfHandle_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUdeviceptr_System_Int32_System_Double___System_Int32_System_Double___System_Int32_" data-uid="ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization.cusolverRfSolve(ManagedCuda.CudaSolve.cusolverRfHandle,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUdeviceptr,System.Int32,System.Double[],System.Int32,System.Double[],System.Int32)">cusolverRfSolve(cusolverRfHandle, CUdeviceptr, CUdeviceptr, Int32, Double[], Int32, Double[], Int32)</h4>
+  <div class="markdown level1 summary"><p>This routine performs the forward and backward solve with the lower and upper
+triangular factors resulting from the LU re-factorization</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static cusolverStatus cusolverRfSolve(cusolverRfHandle handle, CUdeviceptr P, CUdeviceptr Q, int nrhs, double[] Temp, int ldt, double[] XF, int ldxf)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverRfHandle.html">cusolverRfHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>the pointer to the cuSolverRF library handle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">P</span></td>
+        <td><p>the left permutation (often associated with pivoting). The array size in n.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">Q</span></td>
+        <td><p>the right permutation (often associated with reordering). The array size in n.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nrhs</span></td>
+        <td><p>the number right-hand-sides to be solved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">Temp</span></td>
+        <td><p>the dense matrix that contains temporary workspace (of size ldt*nrhs).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ldt</span></td>
+        <td><p>the leading dimension of dense matrix Temp (ldt &gt;= n).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">XF</span></td>
+        <td><p>the dense matrix that contains the righthand-sides F and solutions X (of size ldxf*nrhs).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ldxf</span></td>
+        <td><p>the leading dimension of dense matrix XF (ldxf &gt;= n).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaSolve.cusolverStatus.html">cusolverStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaSolve_CudaSolveNativeMethods_Refactorization.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaSolve.CudaSolveNativeMethods.Refactorization%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/CudaSolve/CudaSolveNativeMethods.cs/#L3749" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

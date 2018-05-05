@@ -1,0 +1,630 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Enum CUDeviceAttribute
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Enum CUDeviceAttribute
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.BasicTypes.CUDeviceAttribute">
+  
+  
+  <h1 id="ManagedCuda_BasicTypes_CUDeviceAttribute" data-uid="ManagedCuda.BasicTypes.CUDeviceAttribute" class="text-break">Enum CUDeviceAttribute
+  </h1>
+  <div class="markdown level0 summary"><p>Device properties</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.BasicTypes.html">ManagedCuda.BasicTypes</a></h6>
+  <h6><strong>Assembly</strong>: ManagedCuda.dll</h6>
+  <h5 id="ManagedCuda_BasicTypes_CUDeviceAttribute_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum CUDeviceAttribute</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_AsyncEngineCount">AsyncEngineCount</td>
+        <td><p>Number of asynchronous engines</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_CanMapHostMemory">CanMapHostMemory</td>
+        <td><p>Device can map host memory into CUDA address space. 1 if the device can map host memory into the
+CUDA address space, or 0 if not</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_CanUse64BitStreamMemOps">CanUse64BitStreamMemOps</td>
+        <td><p>64-bit operations are supported in ::cuStreamBatchMemOp and related APIs.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_CanUseHostPointerForRegisteredMem">CanUseHostPointerForRegisteredMem</td>
+        <td><p>Device can access host registered memory at the same virtual address as the CPU.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_CanUseStreamMemOps">CanUseStreamMemOps</td>
+        <td><p>::cuStreamBatchMemOp and related APIs are supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_CanUseStreamWaitValueNOr">CanUseStreamWaitValueNOr</td>
+        <td><p>::CU_STREAM_WAIT_VALUE_NOR is supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_ClockRate">ClockRate</td>
+        <td><p>Typical clock frequency in kilohertz</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_ComputeCapabilityMajor">ComputeCapabilityMajor</td>
+        <td><p>Major compute capability version number</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_ComputeCapabilityMinor">ComputeCapabilityMinor</td>
+        <td><p>Minor compute capability version number</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_ComputeMode">ComputeMode</td>
+        <td><p>Compute mode (See <a class="xref" href="ManagedCuda.BasicTypes.CUComputeMode.html">CUComputeMode</a> for details)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_ComputePreemptionSupported">ComputePreemptionSupported</td>
+        <td><p>Device supports compute preemption.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_ConcurrentKernels">ConcurrentKernels</td>
+        <td><p>Device can possibly execute multiple kernels concurrently. <p>
+1 if the device supports executing multiple kernels
+within the same context simultaneously, or 0 if not. It is not guaranteed that multiple kernels will be resident on
+the device concurrently so this feature should not be relied upon for correctness.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_ConcurrentManagedAccess">ConcurrentManagedAccess</td>
+        <td><p>Device can coherently access managed memory concurrently with the CPU</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_CooperativeLaunch">CooperativeLaunch</td>
+        <td><p>Device supports launching cooperative kernels via ::cuLaunchCooperativeKernel</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_CooperativeMultiDeviceLaunch">CooperativeMultiDeviceLaunch</td>
+        <td><p>Device can participate in cooperative kernels launched via ::cuLaunchCooperativeKernelMultiDevice</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_ECCEnabled">ECCEnabled</td>
+        <td><p>Device has ECC support enabled. 1 if error correction is enabled on the device, 0 if error correction
+is disabled or not supported by the device.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_GlobalL1CacheSupported">GlobalL1CacheSupported</td>
+        <td><p>Device supports caching globals in L1</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_GlobalMemoryBusWidth">GlobalMemoryBusWidth</td>
+        <td><p>Global memory bus width in bits</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_GPUOverlap">GPUOverlap</td>
+        <td><p>1 if the device can concurrently copy memory between host
+and device while executing a kernel, or 0 if not</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_HostNativeAtomicSupported">HostNativeAtomicSupported</td>
+        <td><p>Link between the device and the host supports native atomic operations (this is a placeholder attribute, and is not supported on any current hardware)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_Integrated">Integrated</td>
+        <td><p>Device is integrated with host memory. 1 if the device is integrated with the memory subsystem, or 0 if not</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_KernelExecTimeout">KernelExecTimeout</td>
+        <td><p>Specifies whether there is a run time limit on kernels. <p>
+1 if there is a run time limit for kernels executed on the device, or 0 if not</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_L2CacheSize">L2CacheSize</td>
+        <td><p>Size of L2 cache in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_LocalL1CacheSupported">LocalL1CacheSupported</td>
+        <td><p>Device supports caching locals in L1</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_ManagedMemory">ManagedMemory</td>
+        <td><p>Device can allocate managed memory on this system</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MAX">MAX</td>
+        <td><p>Max elems...</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaxBlockDimX">MaxBlockDimX</td>
+        <td><p>Maximum block dimension X</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaxBlockDimY">MaxBlockDimY</td>
+        <td><p>Maximum block dimension Y</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaxBlockDimZ">MaxBlockDimZ</td>
+        <td><p>Maximum block dimension Z</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaxGridDimX">MaxGridDimX</td>
+        <td><p>Maximum grid dimension X</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaxGridDimY">MaxGridDimY</td>
+        <td><p>Maximum grid dimension Y</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaxGridDimZ">MaxGridDimZ</td>
+        <td><p>Maximum grid dimension Z</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumSurface1DLayeredLayers">MaximumSurface1DLayeredLayers</td>
+        <td><p>Maximum layers in a 1D layered surface</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumSurface1DLayeredWidth">MaximumSurface1DLayeredWidth</td>
+        <td><p>Maximum 1D layered surface width</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumSurface1DWidth">MaximumSurface1DWidth</td>
+        <td><p>Maximum 1D surface width</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumSurface2DHeight">MaximumSurface2DHeight</td>
+        <td><p>Maximum 2D surface height</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumSurface2DLayeredHeight">MaximumSurface2DLayeredHeight</td>
+        <td><p>Maximum 2D layered surface height</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumSurface2DLayeredLayers">MaximumSurface2DLayeredLayers</td>
+        <td><p>Maximum layers in a 2D layered surface</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumSurface2DLayeredWidth">MaximumSurface2DLayeredWidth</td>
+        <td><p>Maximum 2D layered surface width</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumSurface2DWidth">MaximumSurface2DWidth</td>
+        <td><p>Maximum 2D surface width</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumSurface3DDepth">MaximumSurface3DDepth</td>
+        <td><p>Maximum 3D surface depth</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumSurface3DHeight">MaximumSurface3DHeight</td>
+        <td><p>Maximum 3D surface height</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumSurface3DWidth">MaximumSurface3DWidth</td>
+        <td><p>Maximum 3D surface width</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumSurfaceCubemapLayeredLayers">MaximumSurfaceCubemapLayeredLayers</td>
+        <td><p>Maximum layers in a cubemap layered surface</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumSurfaceCubemapLayeredWidth">MaximumSurfaceCubemapLayeredWidth</td>
+        <td><p>Maximum cubemap layered surface width</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumSurfaceCubemapWidth">MaximumSurfaceCubemapWidth</td>
+        <td><p>Maximum cubemap surface width</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumTexture1DLayeredLayers">MaximumTexture1DLayeredLayers</td>
+        <td><p>Maximum layers in a 1D layered texture</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumTexture1DLayeredWidth">MaximumTexture1DLayeredWidth</td>
+        <td><p>Maximum 1D layered texture width</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumTexture1DLinearWidth">MaximumTexture1DLinearWidth</td>
+        <td><p>Maximum 1D linear texture width</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumTexture1DMipmappedWidth">MaximumTexture1DMipmappedWidth</td>
+        <td><p>Maximum mipmapped 1D texture width</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumTexture1DWidth">MaximumTexture1DWidth</td>
+        <td><p>Maximum 1D texture width</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumTexture2DArray_Height">MaximumTexture2DArray_Height</td>
+        <td><p>Maximum texture array height</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumTexture2DArray_NumSlices">MaximumTexture2DArray_NumSlices</td>
+        <td><p>Maximum slices in a texture array</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumTexture2DArray_Width">MaximumTexture2DArray_Width</td>
+        <td><p>Maximum texture array width</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumTexture2DHeight">MaximumTexture2DHeight</td>
+        <td><p>Maximum 2D texture height</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumTexture2DLinearHeight">MaximumTexture2DLinearHeight</td>
+        <td><p>Maximum 2D linear texture height</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumTexture2DLinearPitch">MaximumTexture2DLinearPitch</td>
+        <td><p>Maximum 2D linear texture pitch in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumTexture2DLinearWidth">MaximumTexture2DLinearWidth</td>
+        <td><p>Maximum 2D linear texture width</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumTexture2DMipmappedHeight">MaximumTexture2DMipmappedHeight</td>
+        <td><p>Maximum mipmapped 2D texture height</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumTexture2DMipmappedWidth">MaximumTexture2DMipmappedWidth</td>
+        <td><p>Maximum mipmapped 2D texture width</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumTexture2DWidth">MaximumTexture2DWidth</td>
+        <td><p>Maximum 2D texture width</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumTexture3DDepth">MaximumTexture3DDepth</td>
+        <td><p>Maximum 3D texture depth</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumTexture3DHeight">MaximumTexture3DHeight</td>
+        <td><p>Maximum 3D texture height</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumTexture3DWidth">MaximumTexture3DWidth</td>
+        <td><p>Maximum 3D texture width</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumTextureCubeMapLayeredLayers">MaximumTextureCubeMapLayeredLayers</td>
+        <td><p>Maximum layers in a cubemap layered texture</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumTextureCubeMapLayeredWidth">MaximumTextureCubeMapLayeredWidth</td>
+        <td><p>Maximum cubemap layered texture width/height</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaximumTextureCubeMapWidth">MaximumTextureCubeMapWidth</td>
+        <td><p>Maximum cubemap texture width/height</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaxPitch">MaxPitch</td>
+        <td><p>Maximum pitch in bytes allowed by the memory copy functions
+that involve memory regions allocated through <a class="xref" href="ManagedCuda.DriverAPINativeMethods.MemoryManagement.html#ManagedCuda_DriverAPINativeMethods_MemoryManagement_cuMemAllocPitch_v2_ManagedCuda_BasicTypes_CUdeviceptr__ManagedCuda_BasicTypes_SizeT__ManagedCuda_BasicTypes_SizeT_ManagedCuda_BasicTypes_SizeT_System_UInt32_">cuMemAllocPitch_v2(ref CUdeviceptr, ref SizeT, SizeT, SizeT, UInt32)</a></p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaxRegistersPerBlock">MaxRegistersPerBlock</td>
+        <td><p>Maximum number of 32-bit registers available
+to a thread block; this number is shared by all thread blocks simultaneously resident on a multiprocessor</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaxRegistersPerMultiprocessor">MaxRegistersPerMultiprocessor</td>
+        <td><p>Maximum number of 32-bit registers available per multiprocessor</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaxSharedMemoryPerBlock">MaxSharedMemoryPerBlock</td>
+        <td><p>Maximum amount of shared memory
+available to a thread block in bytes; this amount is shared by all thread blocks simultaneously resident on a
+multiprocessor</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaxSharedMemoryPerBlockOptin">MaxSharedMemoryPerBlockOptin</td>
+        <td><p>Maximum optin shared memory per block</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaxSharedMemoryPerMultiprocessor">MaxSharedMemoryPerMultiprocessor</td>
+        <td><p>Maximum shared memory available per multiprocessor in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaxThreadsPerBlock">MaxThreadsPerBlock</td>
+        <td><p>Maximum number of threads per block</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MaxThreadsPerMultiProcessor">MaxThreadsPerMultiProcessor</td>
+        <td><p>Maximum resident threads per multiprocessor</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MemoryClockRate">MemoryClockRate</td>
+        <td><p>Peak memory clock frequency in kilohertz</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MultiGpuBoard">MultiGpuBoard</td>
+        <td><p>Device is on a multi-GPU board</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MultiGpuBoardGroupID">MultiGpuBoardGroupID</td>
+        <td><p>Unique id for a group of devices on the same multi-GPU board</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_MultiProcessorCount">MultiProcessorCount</td>
+        <td><p>Number of multiprocessors on device</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_PageableMemoryAccess">PageableMemoryAccess</td>
+        <td><p>Device supports coherently accessing pageable memory without calling cudaHostRegister on it</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_PCIBusID">PCIBusID</td>
+        <td><p>PCI bus ID of the device</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_PCIDeviceID">PCIDeviceID</td>
+        <td><p>PCI device ID of the device</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_PCIDomainID">PCIDomainID</td>
+        <td><p>PCI domain ID of the device</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_RegistersPerBlock">RegistersPerBlock</td>
+        <td><p>Deprecated, use MaxRegistersPerBlock</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_SharedMemoryPerBlock">SharedMemoryPerBlock</td>
+        <td><p>Deprecated, use MaxSharedMemoryPerBlock</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_SingleToDoublePrecisionPerfRatio">SingleToDoublePrecisionPerfRatio</td>
+        <td><p>Ratio of single precision performance (in floating-point operations per second) to double precision performance</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_StreamPrioritiesSupported">StreamPrioritiesSupported</td>
+        <td><p>Device supports stream priorities</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_SurfaceAllignment">SurfaceAllignment</td>
+        <td><p>Alignment requirement for surfaces</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_TCCDriver">TCCDriver</td>
+        <td><p>Device is using TCC driver model</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_TextureAlignment">TextureAlignment</td>
+        <td><p>Alignment requirement; texture base addresses
+aligned to textureAlign bytes do not need an offset applied to texture fetches</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_TexturePitchAlignment">TexturePitchAlignment</td>
+        <td><p>Pitch alignment requirement for textures</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_TotalConstantMemory">TotalConstantMemory</td>
+        <td><p>Memory available on device for <strong>constant</strong> variables in a CUDA C kernel in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_UnifiedAddressing">UnifiedAddressing</td>
+        <td><p>Device shares a unified address space with the host</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ManagedCuda_BasicTypes_CUDeviceAttribute_WarpSize">WarpSize</td>
+        <td><p>Warp size in threads</p>
+</td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_BasicTypes_CUDeviceAttribute.md&amp;value=---%0Auid%3A%20ManagedCuda.BasicTypes.CUDeviceAttribute%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/BasicTypes.cs/#L3311" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

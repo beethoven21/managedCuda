@@ -1,0 +1,2048 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CudaFFTPlan2D
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CudaFFTPlan2D
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D">
+  
+  
+  <h1 id="ManagedCuda_CudaFFT_CudaFFTPlan2D" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D" class="text-break">Class CudaFFTPlan2D
+  </h1>
+  <div class="markdown level0 summary"><p>Creates a 2D FFT plan configuration according to specified signal sizes
+and data type. This class is the same as <a class="xref" href="ManagedCuda.CudaFFT.CudaFFTPlan1D.html">CudaFFTPlan1D</a> except that
+it takes a second size parameter, <code>ny</code>, and does not support batching.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CudaFFTPlan2D</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.CudaFFT.html">ManagedCuda.CudaFFT</a></h6>
+  <h6><strong>Assembly</strong>: CudaFFT.dll</h6>
+  <h5 id="ManagedCuda_CudaFFT_CudaFFTPlan2D_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CudaFFTPlan2D : IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.%23ctor(ManagedCuda.CudaFFT.cufftHandle%2CSystem.Int32%2CSystem.Int32%2CManagedCuda.CudaFFT.cufftType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L131">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor(ManagedCuda.CudaFFT.cufftHandle,System.Int32,System.Int32,ManagedCuda.CudaFFT.cufftType)">CudaFFTPlan2D(cufftHandle, Int32, Int32, cufftType)</h4>
+  <div class="markdown level1 summary"><p>Creates a new 2D FFT plan (new API)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaFFTPlan2D(cufftHandle handle, int nx, int ny, cufftType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftHandle.html">cufftHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>cufftHandle object</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nx</span></td>
+        <td><p>The transform size in the X dimension (number of rows)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ny</span></td>
+        <td><p>The transform size in the Y dimension (number of columns)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftType.html">cufftType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The transform data type (e.g., C2R for complex to real)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.%23ctor(ManagedCuda.CudaFFT.cufftHandle%2CSystem.Int32%2CSystem.Int32%2CManagedCuda.CudaFFT.cufftType%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L151">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor(ManagedCuda.CudaFFT.cufftHandle,System.Int32,System.Int32,ManagedCuda.CudaFFT.cufftType,ManagedCuda.BasicTypes.CUstream)">CudaFFTPlan2D(cufftHandle, Int32, Int32, cufftType, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Creates a new 2D FFT plan (new API)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaFFTPlan2D(cufftHandle handle, int nx, int ny, cufftType type, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftHandle.html">cufftHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>cufftHandle object</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nx</span></td>
+        <td><p>The transform size in the X dimension (number of rows)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ny</span></td>
+        <td><p>The transform size in the Y dimension (number of columns)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftType.html">cufftType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The transform data type (e.g., C2R for complex to real)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>A valid CUDA stream created with cudaStreamCreate() (or 0 for the default stream)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_BasicTypes_CUstream_ManagedCuda_BasicTypes_SizeT__.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.%23ctor(ManagedCuda.CudaFFT.cufftHandle%2CSystem.Int32%2CSystem.Int32%2CManagedCuda.CudaFFT.cufftType%2CManagedCuda.BasicTypes.CUstream%2CManagedCuda.BasicTypes.SizeT%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L197">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_BasicTypes_CUstream_ManagedCuda_BasicTypes_SizeT__" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor(ManagedCuda.CudaFFT.cufftHandle,System.Int32,System.Int32,ManagedCuda.CudaFFT.cufftType,ManagedCuda.BasicTypes.CUstream,ManagedCuda.BasicTypes.SizeT@)">CudaFFTPlan2D(cufftHandle, Int32, Int32, cufftType, CUstream, ref SizeT)</h4>
+  <div class="markdown level1 summary"><p>Creates a new 2D FFT plan (new API)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaFFTPlan2D(cufftHandle handle, int nx, int ny, cufftType type, CUstream stream, ref SizeT size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftHandle.html">cufftHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>cufftHandle object</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nx</span></td>
+        <td><p>The transform size in the X dimension (number of rows)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ny</span></td>
+        <td><p>The transform size in the Y dimension (number of columns)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftType.html">cufftType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The transform data type (e.g., C2R for complex to real)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>A valid CUDA stream created with cudaStreamCreate() (or 0 for the default stream)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_BasicTypes_CUstream_ManagedCuda_BasicTypes_SizeT__System_Boolean_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.%23ctor(ManagedCuda.CudaFFT.cufftHandle%2CSystem.Int32%2CSystem.Int32%2CManagedCuda.CudaFFT.cufftType%2CManagedCuda.BasicTypes.CUstream%2CManagedCuda.BasicTypes.SizeT%40%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L331">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_BasicTypes_CUstream_ManagedCuda_BasicTypes_SizeT__System_Boolean_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor(ManagedCuda.CudaFFT.cufftHandle,System.Int32,System.Int32,ManagedCuda.CudaFFT.cufftType,ManagedCuda.BasicTypes.CUstream,ManagedCuda.BasicTypes.SizeT@,System.Boolean)">CudaFFTPlan2D(cufftHandle, Int32, Int32, cufftType, CUstream, ref SizeT, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Creates a new 2D FFT plan (new API)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaFFTPlan2D(cufftHandle handle, int nx, int ny, cufftType type, CUstream stream, ref SizeT size, bool autoAllocate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftHandle.html">cufftHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>cufftHandle object</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nx</span></td>
+        <td><p>The transform size in the X dimension (number of rows)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ny</span></td>
+        <td><p>The transform size in the Y dimension (number of columns)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftType.html">cufftType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The transform data type (e.g., C2R for complex to real)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>A valid CUDA stream created with cudaStreamCreate() (or 0 for the default stream)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">autoAllocate</span></td>
+        <td><p>indicates that the caller intends to allocate and manage
+work areas for plans that have been generated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_BasicTypes_CUstream_ManagedCuda_CudaFFT_Compatibility_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.%23ctor(ManagedCuda.CudaFFT.cufftHandle%2CSystem.Int32%2CSystem.Int32%2CManagedCuda.CudaFFT.cufftType%2CManagedCuda.BasicTypes.CUstream%2CManagedCuda.CudaFFT.Compatibility)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L180">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_BasicTypes_CUstream_ManagedCuda_CudaFFT_Compatibility_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor(ManagedCuda.CudaFFT.cufftHandle,System.Int32,System.Int32,ManagedCuda.CudaFFT.cufftType,ManagedCuda.BasicTypes.CUstream,ManagedCuda.CudaFFT.Compatibility)">CudaFFTPlan2D(cufftHandle, Int32, Int32, cufftType, CUstream, Compatibility)</h4>
+  <div class="markdown level1 summary"><p>Creates a new 2D FFT plan (new API)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaFFTPlan2D(cufftHandle handle, int nx, int ny, cufftType type, CUstream stream, Compatibility mode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftHandle.html">cufftHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>cufftHandle object</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nx</span></td>
+        <td><p>The transform size in the X dimension (number of rows)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ny</span></td>
+        <td><p>The transform size in the Y dimension (number of columns)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftType.html">cufftType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The transform data type (e.g., C2R for complex to real)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>A valid CUDA stream created with cudaStreamCreate() (or 0 for the default stream)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.Compatibility.html">Compatibility</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>The <a class="xref" href="ManagedCuda.CudaFFT.Compatibility.html">Compatibility</a> option to be used</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_BasicTypes_CUstream_ManagedCuda_CudaFFT_Compatibility_ManagedCuda_BasicTypes_SizeT__.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.%23ctor(ManagedCuda.CudaFFT.cufftHandle%2CSystem.Int32%2CSystem.Int32%2CManagedCuda.CudaFFT.cufftType%2CManagedCuda.BasicTypes.CUstream%2CManagedCuda.CudaFFT.Compatibility%2CManagedCuda.BasicTypes.SizeT%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L228">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_BasicTypes_CUstream_ManagedCuda_CudaFFT_Compatibility_ManagedCuda_BasicTypes_SizeT__" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor(ManagedCuda.CudaFFT.cufftHandle,System.Int32,System.Int32,ManagedCuda.CudaFFT.cufftType,ManagedCuda.BasicTypes.CUstream,ManagedCuda.CudaFFT.Compatibility,ManagedCuda.BasicTypes.SizeT@)">CudaFFTPlan2D(cufftHandle, Int32, Int32, cufftType, CUstream, Compatibility, ref SizeT)</h4>
+  <div class="markdown level1 summary"><p>Creates a new 2D FFT plan (new API)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaFFTPlan2D(cufftHandle handle, int nx, int ny, cufftType type, CUstream stream, Compatibility mode, ref SizeT size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftHandle.html">cufftHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>cufftHandle object</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nx</span></td>
+        <td><p>The transform size in the X dimension (number of rows)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ny</span></td>
+        <td><p>The transform size in the Y dimension (number of columns)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftType.html">cufftType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The transform data type (e.g., C2R for complex to real)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>A valid CUDA stream created with cudaStreamCreate() (or 0 for the default stream)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.Compatibility.html">Compatibility</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>The <a class="xref" href="ManagedCuda.CudaFFT.Compatibility.html">Compatibility</a> option to be used</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_BasicTypes_CUstream_ManagedCuda_CudaFFT_Compatibility_ManagedCuda_BasicTypes_SizeT__System_Boolean_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.%23ctor(ManagedCuda.CudaFFT.cufftHandle%2CSystem.Int32%2CSystem.Int32%2CManagedCuda.CudaFFT.cufftType%2CManagedCuda.BasicTypes.CUstream%2CManagedCuda.CudaFFT.Compatibility%2CManagedCuda.BasicTypes.SizeT%40%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L368">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_BasicTypes_CUstream_ManagedCuda_CudaFFT_Compatibility_ManagedCuda_BasicTypes_SizeT__System_Boolean_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor(ManagedCuda.CudaFFT.cufftHandle,System.Int32,System.Int32,ManagedCuda.CudaFFT.cufftType,ManagedCuda.BasicTypes.CUstream,ManagedCuda.CudaFFT.Compatibility,ManagedCuda.BasicTypes.SizeT@,System.Boolean)">CudaFFTPlan2D(cufftHandle, Int32, Int32, cufftType, CUstream, Compatibility, ref SizeT, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Creates a new 2D FFT plan (new API)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaFFTPlan2D(cufftHandle handle, int nx, int ny, cufftType type, CUstream stream, Compatibility mode, ref SizeT size, bool autoAllocate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftHandle.html">cufftHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>cufftHandle object</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nx</span></td>
+        <td><p>The transform size in the X dimension (number of rows)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ny</span></td>
+        <td><p>The transform size in the Y dimension (number of columns)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftType.html">cufftType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The transform data type (e.g., C2R for complex to real)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>A valid CUDA stream created with cudaStreamCreate() (or 0 for the default stream)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.Compatibility.html">Compatibility</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>The <a class="xref" href="ManagedCuda.CudaFFT.Compatibility.html">Compatibility</a> option to be used</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">autoAllocate</span></td>
+        <td><p>indicates that the caller intends to allocate and manage
+work areas for plans that have been generated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_BasicTypes_CUstream_ManagedCuda_CudaFFT_Compatibility_System_Boolean_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.%23ctor(ManagedCuda.CudaFFT.cufftHandle%2CSystem.Int32%2CSystem.Int32%2CManagedCuda.CudaFFT.cufftType%2CManagedCuda.BasicTypes.CUstream%2CManagedCuda.CudaFFT.Compatibility%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L311">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_BasicTypes_CUstream_ManagedCuda_CudaFFT_Compatibility_System_Boolean_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor(ManagedCuda.CudaFFT.cufftHandle,System.Int32,System.Int32,ManagedCuda.CudaFFT.cufftType,ManagedCuda.BasicTypes.CUstream,ManagedCuda.CudaFFT.Compatibility,System.Boolean)">CudaFFTPlan2D(cufftHandle, Int32, Int32, cufftType, CUstream, Compatibility, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Creates a new 2D FFT plan (new API)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaFFTPlan2D(cufftHandle handle, int nx, int ny, cufftType type, CUstream stream, Compatibility mode, bool autoAllocate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftHandle.html">cufftHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>cufftHandle object</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nx</span></td>
+        <td><p>The transform size in the X dimension (number of rows)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ny</span></td>
+        <td><p>The transform size in the Y dimension (number of columns)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftType.html">cufftType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The transform data type (e.g., C2R for complex to real)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>A valid CUDA stream created with cudaStreamCreate() (or 0 for the default stream)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.Compatibility.html">Compatibility</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>The <a class="xref" href="ManagedCuda.CudaFFT.Compatibility.html">Compatibility</a> option to be used</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">autoAllocate</span></td>
+        <td><p>indicates that the caller intends to allocate and manage
+work areas for plans that have been generated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_BasicTypes_CUstream_System_Boolean_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.%23ctor(ManagedCuda.CudaFFT.cufftHandle%2CSystem.Int32%2CSystem.Int32%2CManagedCuda.CudaFFT.cufftType%2CManagedCuda.BasicTypes.CUstream%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L276">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_BasicTypes_CUstream_System_Boolean_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor(ManagedCuda.CudaFFT.cufftHandle,System.Int32,System.Int32,ManagedCuda.CudaFFT.cufftType,ManagedCuda.BasicTypes.CUstream,System.Boolean)">CudaFFTPlan2D(cufftHandle, Int32, Int32, cufftType, CUstream, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Creates a new 2D FFT plan (new API)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaFFTPlan2D(cufftHandle handle, int nx, int ny, cufftType type, CUstream stream, bool autoAllocate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftHandle.html">cufftHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>cufftHandle object</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nx</span></td>
+        <td><p>The transform size in the X dimension (number of rows)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ny</span></td>
+        <td><p>The transform size in the Y dimension (number of columns)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftType.html">cufftType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The transform data type (e.g., C2R for complex to real)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>A valid CUDA stream created with cudaStreamCreate() (or 0 for the default stream)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">autoAllocate</span></td>
+        <td><p>indicates that the caller intends to allocate and manage
+work areas for plans that have been generated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_BasicTypes_SizeT__.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.%23ctor(ManagedCuda.CudaFFT.cufftHandle%2CSystem.Int32%2CSystem.Int32%2CManagedCuda.CudaFFT.cufftType%2CManagedCuda.BasicTypes.SizeT%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L113">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_BasicTypes_SizeT__" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor(ManagedCuda.CudaFFT.cufftHandle,System.Int32,System.Int32,ManagedCuda.CudaFFT.cufftType,ManagedCuda.BasicTypes.SizeT@)">CudaFFTPlan2D(cufftHandle, Int32, Int32, cufftType, ref SizeT)</h4>
+  <div class="markdown level1 summary"><p>Creates a new 2D FFT plan (new API)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaFFTPlan2D(cufftHandle handle, int nx, int ny, cufftType type, ref SizeT size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftHandle.html">cufftHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>cufftHandle object</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nx</span></td>
+        <td><p>The transform size in the X dimension (number of rows)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ny</span></td>
+        <td><p>The transform size in the Y dimension (number of columns)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftType.html">cufftType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The transform data type (e.g., C2R for complex to real)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_BasicTypes_SizeT__System_Boolean_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.%23ctor(ManagedCuda.CudaFFT.cufftHandle%2CSystem.Int32%2CSystem.Int32%2CManagedCuda.CudaFFT.cufftType%2CManagedCuda.BasicTypes.SizeT%40%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L260">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_BasicTypes_SizeT__System_Boolean_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor(ManagedCuda.CudaFFT.cufftHandle,System.Int32,System.Int32,ManagedCuda.CudaFFT.cufftType,ManagedCuda.BasicTypes.SizeT@,System.Boolean)">CudaFFTPlan2D(cufftHandle, Int32, Int32, cufftType, ref SizeT, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Creates a new 2D FFT plan (new API)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaFFTPlan2D(cufftHandle handle, int nx, int ny, cufftType type, ref SizeT size, bool autoAllocate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftHandle.html">cufftHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>cufftHandle object</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nx</span></td>
+        <td><p>The transform size in the X dimension (number of rows)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ny</span></td>
+        <td><p>The transform size in the Y dimension (number of columns)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftType.html">cufftType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The transform data type (e.g., C2R for complex to real)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">autoAllocate</span></td>
+        <td><p>indicates that the caller intends to allocate and manage
+work areas for plans that have been generated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_CudaFFT_Compatibility_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.%23ctor(ManagedCuda.CudaFFT.cufftHandle%2CSystem.Int32%2CSystem.Int32%2CManagedCuda.CudaFFT.cufftType%2CManagedCuda.CudaFFT.Compatibility)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L165">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_CudaFFT_Compatibility_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor(ManagedCuda.CudaFFT.cufftHandle,System.Int32,System.Int32,ManagedCuda.CudaFFT.cufftType,ManagedCuda.CudaFFT.Compatibility)">CudaFFTPlan2D(cufftHandle, Int32, Int32, cufftType, Compatibility)</h4>
+  <div class="markdown level1 summary"><p>Creates a new 2D FFT plan (new API)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaFFTPlan2D(cufftHandle handle, int nx, int ny, cufftType type, Compatibility mode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftHandle.html">cufftHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>cufftHandle object</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nx</span></td>
+        <td><p>The transform size in the X dimension (number of rows)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ny</span></td>
+        <td><p>The transform size in the Y dimension (number of columns)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftType.html">cufftType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The transform data type (e.g., C2R for complex to real)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.Compatibility.html">Compatibility</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>The <a class="xref" href="ManagedCuda.CudaFFT.Compatibility.html">Compatibility</a> option to be used</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_CudaFFT_Compatibility_ManagedCuda_BasicTypes_SizeT__.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.%23ctor(ManagedCuda.CudaFFT.cufftHandle%2CSystem.Int32%2CSystem.Int32%2CManagedCuda.CudaFFT.cufftType%2CManagedCuda.CudaFFT.Compatibility%2CManagedCuda.BasicTypes.SizeT%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L212">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_CudaFFT_Compatibility_ManagedCuda_BasicTypes_SizeT__" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor(ManagedCuda.CudaFFT.cufftHandle,System.Int32,System.Int32,ManagedCuda.CudaFFT.cufftType,ManagedCuda.CudaFFT.Compatibility,ManagedCuda.BasicTypes.SizeT@)">CudaFFTPlan2D(cufftHandle, Int32, Int32, cufftType, Compatibility, ref SizeT)</h4>
+  <div class="markdown level1 summary"><p>Creates a new 2D FFT plan (new API)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaFFTPlan2D(cufftHandle handle, int nx, int ny, cufftType type, Compatibility mode, ref SizeT size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftHandle.html">cufftHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>cufftHandle object</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nx</span></td>
+        <td><p>The transform size in the X dimension (number of rows)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ny</span></td>
+        <td><p>The transform size in the Y dimension (number of columns)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftType.html">cufftType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The transform data type (e.g., C2R for complex to real)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.Compatibility.html">Compatibility</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>The <a class="xref" href="ManagedCuda.CudaFFT.Compatibility.html">Compatibility</a> option to be used</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_CudaFFT_Compatibility_ManagedCuda_BasicTypes_SizeT__System_Boolean_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.%23ctor(ManagedCuda.CudaFFT.cufftHandle%2CSystem.Int32%2CSystem.Int32%2CManagedCuda.CudaFFT.cufftType%2CManagedCuda.CudaFFT.Compatibility%2CManagedCuda.BasicTypes.SizeT%40%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L349">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_CudaFFT_Compatibility_ManagedCuda_BasicTypes_SizeT__System_Boolean_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor(ManagedCuda.CudaFFT.cufftHandle,System.Int32,System.Int32,ManagedCuda.CudaFFT.cufftType,ManagedCuda.CudaFFT.Compatibility,ManagedCuda.BasicTypes.SizeT@,System.Boolean)">CudaFFTPlan2D(cufftHandle, Int32, Int32, cufftType, Compatibility, ref SizeT, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Creates a new 2D FFT plan (new API)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaFFTPlan2D(cufftHandle handle, int nx, int ny, cufftType type, Compatibility mode, ref SizeT size, bool autoAllocate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftHandle.html">cufftHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>cufftHandle object</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nx</span></td>
+        <td><p>The transform size in the X dimension (number of rows)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ny</span></td>
+        <td><p>The transform size in the Y dimension (number of columns)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftType.html">cufftType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The transform data type (e.g., C2R for complex to real)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.Compatibility.html">Compatibility</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>The <a class="xref" href="ManagedCuda.CudaFFT.Compatibility.html">Compatibility</a> option to be used</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">autoAllocate</span></td>
+        <td><p>indicates that the caller intends to allocate and manage
+work areas for plans that have been generated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_CudaFFT_Compatibility_System_Boolean_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.%23ctor(ManagedCuda.CudaFFT.cufftHandle%2CSystem.Int32%2CSystem.Int32%2CManagedCuda.CudaFFT.cufftType%2CManagedCuda.CudaFFT.Compatibility%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L293">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_CudaFFT_Compatibility_System_Boolean_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor(ManagedCuda.CudaFFT.cufftHandle,System.Int32,System.Int32,ManagedCuda.CudaFFT.cufftType,ManagedCuda.CudaFFT.Compatibility,System.Boolean)">CudaFFTPlan2D(cufftHandle, Int32, Int32, cufftType, Compatibility, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Creates a new 2D FFT plan (new API)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaFFTPlan2D(cufftHandle handle, int nx, int ny, cufftType type, Compatibility mode, bool autoAllocate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftHandle.html">cufftHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>cufftHandle object</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nx</span></td>
+        <td><p>The transform size in the X dimension (number of rows)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ny</span></td>
+        <td><p>The transform size in the Y dimension (number of columns)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftType.html">cufftType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The transform data type (e.g., C2R for complex to real)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.Compatibility.html">Compatibility</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>The <a class="xref" href="ManagedCuda.CudaFFT.Compatibility.html">Compatibility</a> option to be used</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">autoAllocate</span></td>
+        <td><p>indicates that the caller intends to allocate and manage
+work areas for plans that have been generated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_System_Boolean_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.%23ctor(ManagedCuda.CudaFFT.cufftHandle%2CSystem.Int32%2CSystem.Int32%2CManagedCuda.CudaFFT.cufftType%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L244">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_ManagedCuda_CudaFFT_cufftHandle_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_System_Boolean_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor(ManagedCuda.CudaFFT.cufftHandle,System.Int32,System.Int32,ManagedCuda.CudaFFT.cufftType,System.Boolean)">CudaFFTPlan2D(cufftHandle, Int32, Int32, cufftType, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Creates a new 2D FFT plan (new API)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaFFTPlan2D(cufftHandle handle, int nx, int ny, cufftType type, bool autoAllocate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftHandle.html">cufftHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>cufftHandle object</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nx</span></td>
+        <td><p>The transform size in the X dimension (number of rows)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ny</span></td>
+        <td><p>The transform size in the Y dimension (number of columns)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftType.html">cufftType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The transform data type (e.g., C2R for complex to real)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">autoAllocate</span></td>
+        <td><p>indicates that the caller intends to allocate and manage
+work areas for plans that have been generated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.%23ctor(System.Int32%2CSystem.Int32%2CManagedCuda.CudaFFT.cufftType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L51">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor(System.Int32,System.Int32,ManagedCuda.CudaFFT.cufftType)">CudaFFTPlan2D(Int32, Int32, cufftType)</h4>
+  <div class="markdown level1 summary"><p>Creates a new 2D FFT plan (old API)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaFFTPlan2D(int nx, int ny, cufftType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nx</span></td>
+        <td><p>The transform size in the X dimension (number of rows)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ny</span></td>
+        <td><p>The transform size in the Y dimension (number of columns)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftType.html">cufftType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The transform data type (e.g., C2R for complex to real)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.%23ctor(System.Int32%2CSystem.Int32%2CManagedCuda.CudaFFT.cufftType%2CManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L70">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor(System.Int32,System.Int32,ManagedCuda.CudaFFT.cufftType,ManagedCuda.BasicTypes.CUstream)">CudaFFTPlan2D(Int32, Int32, cufftType, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Creates a new 2D FFT plan (old API)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaFFTPlan2D(int nx, int ny, cufftType type, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nx</span></td>
+        <td><p>The transform size in the X dimension (number of rows)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ny</span></td>
+        <td><p>The transform size in the Y dimension (number of columns)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftType.html">cufftType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The transform data type (e.g., C2R for complex to real)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>A valid CUDA stream created with cudaStreamCreate() (or 0 for the default stream)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_BasicTypes_CUstream_ManagedCuda_CudaFFT_Compatibility_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.%23ctor(System.Int32%2CSystem.Int32%2CManagedCuda.CudaFFT.cufftType%2CManagedCuda.BasicTypes.CUstream%2CManagedCuda.CudaFFT.Compatibility)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L97">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_BasicTypes_CUstream_ManagedCuda_CudaFFT_Compatibility_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor(System.Int32,System.Int32,ManagedCuda.CudaFFT.cufftType,ManagedCuda.BasicTypes.CUstream,ManagedCuda.CudaFFT.Compatibility)">CudaFFTPlan2D(Int32, Int32, cufftType, CUstream, Compatibility)</h4>
+  <div class="markdown level1 summary"><p>Creates a new 2D FFT plan (old API)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaFFTPlan2D(int nx, int ny, cufftType type, CUstream stream, Compatibility mode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nx</span></td>
+        <td><p>The transform size in the X dimension (number of rows)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ny</span></td>
+        <td><p>The transform size in the Y dimension (number of columns)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftType.html">cufftType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The transform data type (e.g., C2R for complex to real)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>A valid CUDA stream created with cudaStreamCreate() (or 0 for the default stream)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.Compatibility.html">Compatibility</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>The <a class="xref" href="ManagedCuda.CudaFFT.Compatibility.html">Compatibility</a> option to be used</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_CudaFFT_Compatibility_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.%23ctor(System.Int32%2CSystem.Int32%2CManagedCuda.CudaFFT.cufftType%2CManagedCuda.CudaFFT.Compatibility)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L83">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D__ctor_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_ManagedCuda_CudaFFT_Compatibility_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.#ctor(System.Int32,System.Int32,ManagedCuda.CudaFFT.cufftType,ManagedCuda.CudaFFT.Compatibility)">CudaFFTPlan2D(Int32, Int32, cufftType, Compatibility)</h4>
+  <div class="markdown level1 summary"><p>Creates a new 2D FFT plan (old API)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaFFTPlan2D(int nx, int ny, cufftType type, Compatibility mode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nx</span></td>
+        <td><p>The transform size in the X dimension (number of rows)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ny</span></td>
+        <td><p>The transform size in the Y dimension (number of columns)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftType.html">cufftType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The transform data type (e.g., C2R for complex to real)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.Compatibility.html">Compatibility</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>The <a class="xref" href="ManagedCuda.CudaFFT.Compatibility.html">Compatibility</a> option to be used</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D_Handle.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.Handle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L719">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D_Handle_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.Handle*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D_Handle" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.Handle">Handle</h4>
+  <div class="markdown level1 summary"><p>Handle</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public cufftHandle Handle { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftHandle.html">cufftHandle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D_NX.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.NX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L695">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D_NX_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.NX*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D_NX" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.NX">NX</h4>
+  <div class="markdown level1 summary"><p>The transform size in the X dimension (number of rows)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NX { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D_NY.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.NY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L703">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D_NY_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.NY*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D_NY" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.NY">NY</h4>
+  <div class="markdown level1 summary"><p>The transform size in the Y dimension (number of columns)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NY { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D_Type.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L711">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D_Type_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.Type*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D_Type" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.Type">Type</h4>
+  <div class="markdown level1 summary"><p>The transform data type (e.g., C2R for complex to real)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public cufftType Type { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftType.html">cufftType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D_Dispose.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L389">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D_Dispose_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.Dispose*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D_Dispose" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Dispose</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L399">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D_Dispose_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.Dispose*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D_Dispose_System_Boolean_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>For IDisposable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool fDisposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">fDisposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D_EstimateSize_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.EstimateSize(System.Int32%2CSystem.Int32%2CManagedCuda.CudaFFT.cufftType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L442">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D_EstimateSize_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.EstimateSize*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D_EstimateSize_System_Int32_System_Int32_ManagedCuda_CudaFFT_cufftType_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.EstimateSize(System.Int32,System.Int32,ManagedCuda.CudaFFT.cufftType)">EstimateSize(Int32, Int32, cufftType)</h4>
+  <div class="markdown level1 summary"><p>During plan execution, CUFFT requires a work area for temporary storage of
+intermediate results. This call returns an estimate for the size of the work area required,
+given the specified parameters, and assuming default plan settings. Note that changing
+some plan settings, such as compatibility mode, may alter the size required for the work
+area.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SizeT EstimateSize(int nx, int ny, cufftType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nx</span></td>
+        <td><p>The transform size in the x dimension (number of rows)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ny</span></td>
+        <td><p>The transform size in the y dimension (number of columns)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.cufftType.html">cufftType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The transform data type (e.g., CUFFT_C2C for single
+precision complex to complex)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D_Exec_ManagedCuda_BasicTypes_CUdeviceptr_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.Exec(ManagedCuda.BasicTypes.CUdeviceptr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L633">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D_Exec_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.Exec*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D_Exec_ManagedCuda_BasicTypes_CUdeviceptr_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.Exec(ManagedCuda.BasicTypes.CUdeviceptr)">Exec(CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>Executes a CUFTT transorm as defined by the cufftType.
+This method does an in‐place transform.<p>
+This method is only valid for transform types where transorm direction is implicitly
+given by the type (i.e. not C2C and not Z2Z)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Exec(CUdeviceptr iodata)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">iodata</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D_Exec_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUdeviceptr_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.Exec(ManagedCuda.BasicTypes.CUdeviceptr%2CManagedCuda.BasicTypes.CUdeviceptr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L599">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D_Exec_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.Exec*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D_Exec_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUdeviceptr_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.Exec(ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUdeviceptr)">Exec(CUdeviceptr, CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>Executes a CUFTT transorm as defined by the cufftType.
+If idata and odata are the
+same, this method does an in‐place transform.<p>
+This method is only valid for transform types where transorm direction is implicitly
+given by the type (i.e. not C2C and not Z2Z)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Exec(CUdeviceptr idata, CUdeviceptr odata)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">idata</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">odata</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D_Exec_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_CudaFFT_TransformDirection_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.Exec(ManagedCuda.BasicTypes.CUdeviceptr%2CManagedCuda.BasicTypes.CUdeviceptr%2CManagedCuda.CudaFFT.TransformDirection)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L514">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D_Exec_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.Exec*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D_Exec_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_CudaFFT_TransformDirection_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.Exec(ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.CudaFFT.TransformDirection)">Exec(CUdeviceptr, CUdeviceptr, TransformDirection)</h4>
+  <div class="markdown level1 summary"><p>Executes a CUFTT transorm as defined by the cufftType.
+If idata and odata are the
+same, this method does an in‐place transform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Exec(CUdeviceptr idata, CUdeviceptr odata, TransformDirection direction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">idata</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">odata</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.TransformDirection.html">TransformDirection</a></td>
+        <td><span class="parametername">direction</span></td>
+        <td><p>Only unsed for transformations where direction is not implicitly given by type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D_Exec_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_CudaFFT_TransformDirection_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.Exec(ManagedCuda.BasicTypes.CUdeviceptr%2CManagedCuda.CudaFFT.TransformDirection)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L555">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D_Exec_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.Exec*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D_Exec_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_CudaFFT_TransformDirection_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.Exec(ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.CudaFFT.TransformDirection)">Exec(CUdeviceptr, TransformDirection)</h4>
+  <div class="markdown level1 summary"><p>Executes a CUFTT transorm as defined by the cufftType.
+This method does an in‐place transform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Exec(CUdeviceptr iodata, TransformDirection direction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">iodata</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.TransformDirection.html">TransformDirection</a></td>
+        <td><span class="parametername">direction</span></td>
+        <td><p>Only unsed for transformations where direction is not implicitly given by type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D_Finalize.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.Finalize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L379">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D_Finalize_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.Finalize*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D_Finalize" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"><p>For dispose</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D_GetActualSize.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.GetActualSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L460">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D_GetActualSize_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.GetActualSize*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D_GetActualSize" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.GetActualSize">GetActualSize()</h4>
+  <div class="markdown level1 summary"><p>Once plan generation has been done, either with the original API or the extensible API,
+this call returns the actual size of the work area required to support the plan. Callers
+who choose to manage work area allocation within their application must use this call
+after plan generation, and after any cufftSet*() calls subsequent to plan generation, if
+those calls might alter the required work space size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SizeT GetActualSize()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D_GetSize.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.GetSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L420">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D_GetSize_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.GetSize*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D_GetSize" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.GetSize">GetSize()</h4>
+  <div class="markdown level1 summary"><p>This call gives a more accurate estimate of the work area size required for a plan than
+cufftEstimate1d(), given the specified parameters, and taking into account any plan
+settings that may have been made.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SizeT GetSize()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D_SetAutoAllocation_System_Boolean_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.SetAutoAllocation(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L495">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D_SetAutoAllocation_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.SetAutoAllocation*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D_SetAutoAllocation_System_Boolean_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.SetAutoAllocation(System.Boolean)">SetAutoAllocation(Boolean)</h4>
+  <div class="markdown level1 summary"><p>SetAutoAllocation() indicates that the caller intends to allocate and manage
+work areas for plans that have been generated. CUFFT default behavior is to allocate
+the work area at plan generation time. If cufftSetAutoAllocation() has been called
+with autoAllocate set to &quot;false&quot; prior to one of the cufftMakePlan*() calls, CUFFT
+does not allocate the work area. This is the preferred sequence for callers wishing to
+manage work area allocation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAutoAllocation(bool autoAllocate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">autoAllocate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D_SetCompatibilityMode_ManagedCuda_CudaFFT_Compatibility_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.SetCompatibilityMode(ManagedCuda.CudaFFT.Compatibility)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L682">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D_SetCompatibilityMode_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.SetCompatibilityMode*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D_SetCompatibilityMode_ManagedCuda_CudaFFT_Compatibility_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.SetCompatibilityMode(ManagedCuda.CudaFFT.Compatibility)">SetCompatibilityMode(Compatibility)</h4>
+  <div class="markdown level1 summary"><p>configures the layout of CUFFT output in FFTW‐compatible modes.
+When FFTW compatibility is desired, it can be configured for padding
+only, for asymmetric complex inputs only, or to be fully compatible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCompatibilityMode(Compatibility mode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaFFT.Compatibility.html">Compatibility</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D_SetStream_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.SetStream(ManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L668">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D_SetStream_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.SetStream*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D_SetStream_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.SetStream(ManagedCuda.BasicTypes.CUstream)">SetStream(CUstream)</h4>
+  <div class="markdown level1 summary"><p>Associates a CUDA stream with a CUFFT plan. All kernel launches
+made during plan execution are now done through the associated
+stream, enabling overlap with activity in other streams (for example,
+data copying). The association remains until the plan is destroyed or
+the stream is changed with another call to SetStream().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetStream(CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>A valid CUDA stream created with cudaStreamCreate() (or 0 for the default stream)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D_SetWorkArea_ManagedCuda_BasicTypes_CUdeviceptr_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D.SetWorkArea(ManagedCuda.BasicTypes.CUdeviceptr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L478">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaFFT_CudaFFTPlan2D_SetWorkArea_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.SetWorkArea*"></a>
+  <h4 id="ManagedCuda_CudaFFT_CudaFFTPlan2D_SetWorkArea_ManagedCuda_BasicTypes_CUdeviceptr_" data-uid="ManagedCuda.CudaFFT.CudaFFTPlan2D.SetWorkArea(ManagedCuda.BasicTypes.CUdeviceptr)">SetWorkArea(CUdeviceptr)</h4>
+  <div class="markdown level1 summary"><p>SetWorkArea() overrides the work area pointer associated with a plan.
+If the work area was auto-allocated, CUFFT frees the auto-allocated space. The
+cufftExecute*() calls assume that the work area pointer is valid and that it points to
+a contiguous region in device memory that does not overlap with any other work area. If
+this is not the case, results are indeterminate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetWorkArea(CUdeviceptr workArea)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">workArea</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaFFT_CudaFFTPlan2D.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaFFT.CudaFFTPlan2D%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/CudaFFT/CudaFFTPlan2D.cs/#L35" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

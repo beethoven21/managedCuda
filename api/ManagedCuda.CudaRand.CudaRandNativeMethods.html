@@ -1,0 +1,2269 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CudaRandNativeMethods
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CudaRandNativeMethods
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods">
+  
+  
+  <h1 id="ManagedCuda_CudaRand_CudaRandNativeMethods" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods" class="text-break">Class CudaRandNativeMethods
+  </h1>
+  <div class="markdown level0 summary"><p>C# Wrapper-Methods for CuRand functions defined in curand.h</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CudaRandNativeMethods</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.CudaRand.html">ManagedCuda.CudaRand</a></h6>
+  <h6><strong>Assembly</strong>: CudaRand.dll</h6>
+  <h5 id="ManagedCuda_CudaRand_CudaRandNativeMethods_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class CudaRandNativeMethods</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandCreateGenerator_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandCreateGenerator*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandCreateGenerator_ManagedCuda_CudaRand_CurandGenerator__ManagedCuda_CudaRand_GeneratorType_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandCreateGenerator(ManagedCuda.CudaRand.CurandGenerator@,ManagedCuda.CudaRand.GeneratorType)">curandCreateGenerator(ref CurandGenerator, GeneratorType)</h4>
+  <div class="markdown level1 summary"><p>Creates a new random number generator of type rng_type and returns it in ref generator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandCreateGenerator(ref CurandGenerator generator, GeneratorType rng_type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandGenerator.html">CurandGenerator</a></td>
+        <td><span class="parametername">generator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.GeneratorType.html">GeneratorType</a></td>
+        <td><span class="parametername">rng_type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandCreateGeneratorHost_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandCreateGeneratorHost*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandCreateGeneratorHost_ManagedCuda_CudaRand_CurandGenerator__ManagedCuda_CudaRand_GeneratorType_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandCreateGeneratorHost(ManagedCuda.CudaRand.CurandGenerator@,ManagedCuda.CudaRand.GeneratorType)">curandCreateGeneratorHost(ref CurandGenerator, GeneratorType)</h4>
+  <div class="markdown level1 summary"><p>Creates a new host CPU random number generator of type rng_type and returns it in ref generator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandCreateGeneratorHost(ref CurandGenerator generator, GeneratorType rng_type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandGenerator.html">CurandGenerator</a></td>
+        <td><span class="parametername">generator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.GeneratorType.html">GeneratorType</a></td>
+        <td><span class="parametername">rng_type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandCreatePoissonDistribution_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandCreatePoissonDistribution*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandCreatePoissonDistribution_System_Double_ManagedCuda_CudaRand_DiscreteDistribution__" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandCreatePoissonDistribution(System.Double,ManagedCuda.CudaRand.DiscreteDistribution@)">curandCreatePoissonDistribution(Double, ref DiscreteDistribution)</h4>
+  <div class="markdown level1 summary"><p>Construct histogram array for poisson distribution.<p>
+Construct histogram array for poisson distribution with lambda <code>lambda</code>.
+For lambda greater than 2000 optimization with normal distribution is used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandCreatePoissonDistribution(double lambda, ref DiscreteDistribution discrete_distribution)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">lambda</span></td>
+        <td><p>lambda for poisson distribution</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.DiscreteDistribution.html">DiscreteDistribution</a></td>
+        <td><span class="parametername">discrete_distribution</span></td>
+        <td><p>pointer to mapped memory to store histogram</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandDestroyDistribution_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandDestroyDistribution*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandDestroyDistribution_ManagedCuda_CudaRand_DiscreteDistribution_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandDestroyDistribution(ManagedCuda.CudaRand.DiscreteDistribution)">curandDestroyDistribution(DiscreteDistribution)</h4>
+  <div class="markdown level1 summary"><p>Destroy histogram array for discrete distribution.<p>
+Destroy histogram array for discrete distribution created by curandCreatePoissonDistribution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandDestroyDistribution(DiscreteDistribution discrete_distribution)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.DiscreteDistribution.html">DiscreteDistribution</a></td>
+        <td><span class="parametername">discrete_distribution</span></td>
+        <td><p>pointer to mapped memory where histogram is stored</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandDestroyGenerator_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandDestroyGenerator*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandDestroyGenerator_ManagedCuda_CudaRand_CurandGenerator_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandDestroyGenerator(ManagedCuda.CudaRand.CurandGenerator)">curandDestroyGenerator(CurandGenerator)</h4>
+  <div class="markdown level1 summary"><p>Destroy an existing generator and free all memory associated with its state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandDestroyGenerator(CurandGenerator generator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandGenerator.html">CurandGenerator</a></td>
+        <td><span class="parametername">generator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerate_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerate*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerate_ManagedCuda_CudaRand_CurandGenerator_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerate(ManagedCuda.CudaRand.CurandGenerator,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.SizeT)">curandGenerate(CurandGenerator, CUdeviceptr, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Use generator to generate num 32-bit results into the device memory at
+outputPtr. The device memory must have been previously allocated and be
+large enough to hold all the results.  Launches are done with the stream
+set using <a class="xref" href="ManagedCuda.CudaRand.CudaRandNativeMethods.html#ManagedCuda_CudaRand_CudaRandNativeMethods_curandSetStream_ManagedCuda_CudaRand_CurandGenerator_ManagedCuda_BasicTypes_CUstream_">curandSetStream(CurandGenerator, CUstream)</a>, or the null stream if no stream has been set.</p>
+<p>
+Results are 32-bit values with every bit random.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandGenerate(CurandGenerator generator, CUdeviceptr outputPtr, SizeT num)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandGenerator.html">CurandGenerator</a></td>
+        <td><span class="parametername">generator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">outputPtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">num</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerate_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerate*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerate_ManagedCuda_CudaRand_CurandGenerator_System_UInt32___ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerate(ManagedCuda.CudaRand.CurandGenerator,System.UInt32[],ManagedCuda.BasicTypes.SizeT)">curandGenerate(CurandGenerator, UInt32[], SizeT)</h4>
+  <div class="markdown level1 summary"><p>Use generator to generate num 32-bit results into the device memory at
+outputPtr. The device memory must have been previously allocated and be
+large enough to hold all the results.  Launches are done with the stream
+set using <a class="xref" href="ManagedCuda.CudaRand.CudaRandNativeMethods.html#ManagedCuda_CudaRand_CudaRandNativeMethods_curandSetStream_ManagedCuda_CudaRand_CurandGenerator_ManagedCuda_BasicTypes_CUstream_">curandSetStream(CurandGenerator, CUstream)</a>, or the null stream if no stream has been set.</p>
+<p>
+Results are 32-bit values with every bit random.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandGenerate(CurandGenerator generator, uint[] outputPtr, SizeT num)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandGenerator.html">CurandGenerator</a></td>
+        <td><span class="parametername">generator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span>[]</td>
+        <td><span class="parametername">outputPtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">num</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerateLogNormal_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerateLogNormal*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerateLogNormal_ManagedCuda_CudaRand_CurandGenerator_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_System_Single_System_Single_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerateLogNormal(ManagedCuda.CudaRand.CurandGenerator,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.SizeT,System.Single,System.Single)">curandGenerateLogNormal(CurandGenerator, CUdeviceptr, SizeT, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Use generator to generate num float results into the device memory at
+outputPtr.  The device memory must have been previously allocated and be
+large enough to hold all the results.  Launches are done with the stream
+set using ::curandSetStream(), or the null stream if no stream has been set.</p>
+<p>
+Results are 32-bit floating point values with log-normal distribution based on
+an associated normal distribution with mean mean and standard deviation stddev.
+<p>
+Normally distributed results are generated from pseudorandom generators
+with a Box-Muller transform, and so require num to be even.
+Quasirandom generators use an inverse cumulative distribution 
+function to preserve dimensionality. <p>
+The normally distributed results are transformed into log-normal distribution.
+<p>
+There may be slight numerical differences between results generated
+on the GPU with generators created with ::curandCreateGenerator()
+and results calculated on the CPU with generators created with
+::curandCreateGeneratorHost(). These differences arise because of
+differences in results for transcendental functions.  In addition,
+future versions of CURAND may use newer versions of the CUDA math
+library, so different versions of CURAND may give slightly different
+numerical values.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandGenerateLogNormal(CurandGenerator generator, CUdeviceptr outputPtr, SizeT n, float mean, float stddev)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandGenerator.html">CurandGenerator</a></td>
+        <td><span class="parametername">generator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">outputPtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">n</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">mean</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">stddev</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerateLogNormal_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerateLogNormal*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerateLogNormal_ManagedCuda_CudaRand_CurandGenerator_System_Single___ManagedCuda_BasicTypes_SizeT_System_Single_System_Single_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerateLogNormal(ManagedCuda.CudaRand.CurandGenerator,System.Single[],ManagedCuda.BasicTypes.SizeT,System.Single,System.Single)">curandGenerateLogNormal(CurandGenerator, Single[], SizeT, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Use generator to generate num float results into the device memory at
+outputPtr.  The device memory must have been previously allocated and be
+large enough to hold all the results.  Launches are done with the stream
+set using ::curandSetStream(), or the null stream if no stream has been set.</p>
+<p>
+Results are 32-bit floating point values with log-normal distribution based on
+an associated normal distribution with mean mean and standard deviation stddev.
+<p>
+Normally distributed results are generated from pseudorandom generators
+with a Box-Muller transform, and so require num to be even.
+Quasirandom generators use an inverse cumulative distribution 
+function to preserve dimensionality. <p>
+The normally distributed results are transformed into log-normal distribution.
+<p>
+There may be slight numerical differences between results generated
+on the GPU with generators created with ::curandCreateGenerator()
+and results calculated on the CPU with generators created with
+::curandCreateGeneratorHost(). These differences arise because of
+differences in results for transcendental functions.  In addition,
+future versions of CURAND may use newer versions of the CUDA math
+library, so different versions of CURAND may give slightly different
+numerical values.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandGenerateLogNormal(CurandGenerator generator, float[] outputPtr, SizeT n, float mean, float stddev)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandGenerator.html">CurandGenerator</a></td>
+        <td><span class="parametername">generator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span>[]</td>
+        <td><span class="parametername">outputPtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">n</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">mean</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">stddev</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerateLogNormalDouble_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerateLogNormalDouble*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerateLogNormalDouble_ManagedCuda_CudaRand_CurandGenerator_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_System_Double_System_Double_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerateLogNormalDouble(ManagedCuda.CudaRand.CurandGenerator,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.SizeT,System.Double,System.Double)">curandGenerateLogNormalDouble(CurandGenerator, CUdeviceptr, SizeT, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Use generator to generate num double results into the device memory at
+outputPtr.  The device memory must have been previously allocated and be
+large enough to hold all the results.  Launches are done with the stream
+set using curandSetStream(), or the null stream if no stream has been set.</p>
+<p>
+Results are 64-bit floating point values with log-normal distribution based on
+an associated normal distribution with mean mean and standard deviation stddev.
+<p>
+Normally distributed results are generated from pseudorandom generators
+with a Box-Muller transform, and so require num to be even.
+Quasirandom generators use an inverse cumulative distribution 
+function to preserve dimensionality.
+The normally distributed results are transformed into log-normal distribution.
+<p>
+There may be slight numerical differences between results generated
+on the GPU with generators created with ::curandCreateGenerator()
+and results calculated on the CPU with generators created with
+::curandCreateGeneratorHost().  These differences arise because of
+differences in results for transcendental functions.  In addition,
+future versions of CURAND may use newer versions of the CUDA math
+library, so different versions of CURAND may give slightly different
+numerical values.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandGenerateLogNormalDouble(CurandGenerator generator, CUdeviceptr outputPtr, SizeT n, double mean, double stddev)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandGenerator.html">CurandGenerator</a></td>
+        <td><span class="parametername">generator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">outputPtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">n</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">mean</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">stddev</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerateLogNormalDouble_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerateLogNormalDouble*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerateLogNormalDouble_ManagedCuda_CudaRand_CurandGenerator_System_Double___ManagedCuda_BasicTypes_SizeT_System_Double_System_Double_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerateLogNormalDouble(ManagedCuda.CudaRand.CurandGenerator,System.Double[],ManagedCuda.BasicTypes.SizeT,System.Double,System.Double)">curandGenerateLogNormalDouble(CurandGenerator, Double[], SizeT, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Use generator to generate num double results into the device memory at
+outputPtr.  The device memory must have been previously allocated and be
+large enough to hold all the results.  Launches are done with the stream
+set using curandSetStream(), or the null stream if no stream has been set.</p>
+<p>
+Results are 64-bit floating point values with log-normal distribution based on
+an associated normal distribution with mean mean and standard deviation stddev.
+<p>
+Normally distributed results are generated from pseudorandom generators
+with a Box-Muller transform, and so require num to be even.
+Quasirandom generators use an inverse cumulative distribution 
+function to preserve dimensionality.
+The normally distributed results are transformed into log-normal distribution.
+<p>
+There may be slight numerical differences between results generated
+on the GPU with generators created with ::curandCreateGenerator()
+and results calculated on the CPU with generators created with
+::curandCreateGeneratorHost().  These differences arise because of
+differences in results for transcendental functions.  In addition,
+future versions of CURAND may use newer versions of the CUDA math
+library, so different versions of CURAND may give slightly different
+numerical values.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandGenerateLogNormalDouble(CurandGenerator generator, double[] outputPtr, SizeT n, double mean, double stddev)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandGenerator.html">CurandGenerator</a></td>
+        <td><span class="parametername">generator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">outputPtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">n</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">mean</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">stddev</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerateLongLong_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerateLongLong*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerateLongLong_ManagedCuda_CudaRand_CurandGenerator_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerateLongLong(ManagedCuda.CudaRand.CurandGenerator,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.SizeT)">curandGenerateLongLong(CurandGenerator, CUdeviceptr, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Use generator to generate num 64-bit results into the device memory at
+outputPtr. The device memory must have been previously allocated and be
+large enough to hold all the results.  Launches are done with the stream
+set using <a class="xref" href="ManagedCuda.CudaRand.CudaRandNativeMethods.html#ManagedCuda_CudaRand_CudaRandNativeMethods_curandSetStream_ManagedCuda_CudaRand_CurandGenerator_ManagedCuda_BasicTypes_CUstream_">curandSetStream(CurandGenerator, CUstream)</a>, or the null stream if no stream has been set.</p>
+<p>
+Results are 64-bit values with every bit random.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandGenerateLongLong(CurandGenerator generator, CUdeviceptr outputPtr, SizeT num)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandGenerator.html">CurandGenerator</a></td>
+        <td><span class="parametername">generator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">outputPtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">num</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerateLongLong_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerateLongLong*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerateLongLong_ManagedCuda_CudaRand_CurandGenerator_System_UInt64___ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerateLongLong(ManagedCuda.CudaRand.CurandGenerator,System.UInt64[],ManagedCuda.BasicTypes.SizeT)">curandGenerateLongLong(CurandGenerator, UInt64[], SizeT)</h4>
+  <div class="markdown level1 summary"><p>Use generator to generate num 64-bit results into the device memory at
+outputPtr. The device memory must have been previously allocated and be
+large enough to hold all the results.  Launches are done with the stream
+set using <a class="xref" href="ManagedCuda.CudaRand.CudaRandNativeMethods.html#ManagedCuda_CudaRand_CudaRandNativeMethods_curandSetStream_ManagedCuda_CudaRand_CurandGenerator_ManagedCuda_BasicTypes_CUstream_">curandSetStream(CurandGenerator, CUstream)</a>, or the null stream if no stream has been set.</p>
+<p>
+Results are 64-bit values with every bit random.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandGenerateLongLong(CurandGenerator generator, ulong[] outputPtr, SizeT num)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandGenerator.html">CurandGenerator</a></td>
+        <td><span class="parametername">generator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span>[]</td>
+        <td><span class="parametername">outputPtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">num</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerateNormal_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerateNormal*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerateNormal_ManagedCuda_CudaRand_CurandGenerator_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_System_Single_System_Single_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerateNormal(ManagedCuda.CudaRand.CurandGenerator,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.SizeT,System.Single,System.Single)">curandGenerateNormal(CurandGenerator, CUdeviceptr, SizeT, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Use generator to generate num float results into the device memory at
+outputPtr. The device memory must have been previously allocated and be
+large enough to hold all the results. Launches are done with the stream
+set using curandSetStream(), or the null stream if no stream has been set.</p>
+<p>
+Results are 32-bit floating point values with mean  mean and standard
+deviation stddev.
+<p>
+Normally distributed results are generated from pseudorandom generators
+with a Box-Muller transform, and so require num to be even.
+Quasirandom generators use an inverse cumulative distribution 
+function to preserve dimensionality.
+<p>
+There may be slight numerical differences between results generated
+on the GPU with generators created with curandCreateGenerator()
+and results calculated on the CPU with generators created with
+curandCreateGeneratorHost(). These differences arise because of
+differences in results for transcendental functions.  In addition,
+future versions of CURAND may use newer versions of the CUDA math
+library, so different versions of CURAND may give slightly different
+numerical values.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandGenerateNormal(CurandGenerator generator, CUdeviceptr outputPtr, SizeT n, float mean, float stddev)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandGenerator.html">CurandGenerator</a></td>
+        <td><span class="parametername">generator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">outputPtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">n</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">mean</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">stddev</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerateNormal_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerateNormal*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerateNormal_ManagedCuda_CudaRand_CurandGenerator_System_Single___ManagedCuda_BasicTypes_SizeT_System_Single_System_Single_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerateNormal(ManagedCuda.CudaRand.CurandGenerator,System.Single[],ManagedCuda.BasicTypes.SizeT,System.Single,System.Single)">curandGenerateNormal(CurandGenerator, Single[], SizeT, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Use generator to generate num float results into the device memory at
+outputPtr. The device memory must have been previously allocated and be
+large enough to hold all the results. Launches are done with the stream
+set using curandSetStream(), or the null stream if no stream has been set.</p>
+<p>
+Results are 32-bit floating point values with mean  mean and standard
+deviation stddev.
+<p>
+Normally distributed results are generated from pseudorandom generators
+with a Box-Muller transform, and so require num to be even.
+Quasirandom generators use an inverse cumulative distribution 
+function to preserve dimensionality.
+<p>
+There may be slight numerical differences between results generated
+on the GPU with generators created with curandCreateGenerator()
+and results calculated on the CPU with generators created with
+curandCreateGeneratorHost(). These differences arise because of
+differences in results for transcendental functions.  In addition,
+future versions of CURAND may use newer versions of the CUDA math
+library, so different versions of CURAND may give slightly different
+numerical values.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandGenerateNormal(CurandGenerator generator, float[] outputPtr, SizeT n, float mean, float stddev)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandGenerator.html">CurandGenerator</a></td>
+        <td><span class="parametername">generator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span>[]</td>
+        <td><span class="parametername">outputPtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">n</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">mean</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">stddev</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerateNormalDouble_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerateNormalDouble*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerateNormalDouble_ManagedCuda_CudaRand_CurandGenerator_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_System_Double_System_Double_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerateNormalDouble(ManagedCuda.CudaRand.CurandGenerator,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.SizeT,System.Double,System.Double)">curandGenerateNormalDouble(CurandGenerator, CUdeviceptr, SizeT, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Use generator to generate num double results into the device memory at
+outputPtr. The device memory must have been previously allocated and be
+large enough to hold all the results.  Launches are done with the stream
+set using curandSetStream(), or the null stream if no stream has been set.</p>
+<p>
+Results are 64-bit floating point values with mean mean and standard
+deviation stddev.
+<p>
+Normally distributed results are generated from pseudorandom generators
+with a Box-Muller transform, and so require num to be even.
+Quasirandom generators use an inverse cumulative distribution 
+function to preserve dimensionality.
+<p>
+There may be slight numerical differences between results generated
+on the GPU with generators created with curandCreateGenerator()
+and results calculated on the CPU with generators created with
+curandCreateGeneratorHost().  These differences arise because of
+differences in results for transcendental functions.  In addition,
+future versions of CURAND may use newer versions of the CUDA math
+library, so different versions of CURAND may give slightly different
+numerical values.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandGenerateNormalDouble(CurandGenerator generator, CUdeviceptr outputPtr, SizeT n, double mean, double stddev)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandGenerator.html">CurandGenerator</a></td>
+        <td><span class="parametername">generator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">outputPtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">n</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">mean</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">stddev</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerateNormalDouble_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerateNormalDouble*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerateNormalDouble_ManagedCuda_CudaRand_CurandGenerator_System_Double___ManagedCuda_BasicTypes_SizeT_System_Double_System_Double_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerateNormalDouble(ManagedCuda.CudaRand.CurandGenerator,System.Double[],ManagedCuda.BasicTypes.SizeT,System.Double,System.Double)">curandGenerateNormalDouble(CurandGenerator, Double[], SizeT, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Use generator to generate num double results into the device memory at
+outputPtr. The device memory must have been previously allocated and be
+large enough to hold all the results.  Launches are done with the stream
+set using curandSetStream(), or the null stream if no stream has been set.</p>
+<p>
+Results are 64-bit floating point values with mean mean and standard
+deviation stddev.
+<p>
+Normally distributed results are generated from pseudorandom generators
+with a Box-Muller transform, and so require num to be even.
+Quasirandom generators use an inverse cumulative distribution 
+function to preserve dimensionality.
+<p>
+There may be slight numerical differences between results generated
+on the GPU with generators created with curandCreateGenerator()
+and results calculated on the CPU with generators created with
+curandCreateGeneratorHost().  These differences arise because of
+differences in results for transcendental functions.  In addition,
+future versions of CURAND may use newer versions of the CUDA math
+library, so different versions of CURAND may give slightly different
+numerical values.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandGenerateNormalDouble(CurandGenerator generator, double[] outputPtr, SizeT n, double mean, double stddev)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandGenerator.html">CurandGenerator</a></td>
+        <td><span class="parametername">generator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">outputPtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">n</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">mean</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">stddev</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGeneratePoisson_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGeneratePoisson*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGeneratePoisson_ManagedCuda_CudaRand_CurandGenerator_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_System_Double_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGeneratePoisson(ManagedCuda.CudaRand.CurandGenerator,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.SizeT,System.Double)">curandGeneratePoisson(CurandGenerator, CUdeviceptr, SizeT, Double)</h4>
+  <div class="markdown level1 summary"><p>Generate Poisson-distributed unsigned ints.<p>
+Use <code>generator</code> to generate <code>num</code> unsigned int results into the device memory at
+<code>outputPtr</code>.  The device memory must have been previously allocated and be
+large enough to hold all the results.  Launches are done with the stream
+set using <code>curandSetStream()</code>, or the null stream if no stream has been set.
+Results are 32-bit unsigned int point values with poisson distribution based on
+an associated poisson distribution with lambda <code>lambda</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandGeneratePoisson(CurandGenerator generator, CUdeviceptr outputPtr, SizeT n, double lambda)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandGenerator.html">CurandGenerator</a></td>
+        <td><span class="parametername">generator</span></td>
+        <td><p>Generator to use</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">outputPtr</span></td>
+        <td><p>Pointer to device memory to store CUDA-generated results, or Pointer to host memory to store CPU-generated results</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>Number of unsigned ints to generate</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">lambda</span></td>
+        <td><p>lambda for poisson distribution</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGeneratePoisson_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGeneratePoisson*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGeneratePoisson_ManagedCuda_CudaRand_CurandGenerator_System_UInt32___ManagedCuda_BasicTypes_SizeT_System_Double_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGeneratePoisson(ManagedCuda.CudaRand.CurandGenerator,System.UInt32[],ManagedCuda.BasicTypes.SizeT,System.Double)">curandGeneratePoisson(CurandGenerator, UInt32[], SizeT, Double)</h4>
+  <div class="markdown level1 summary"><p>Generate Poisson-distributed unsigned ints.<p>
+Use <code>generator</code> to generate <code>num</code> unsigned int results into the device memory at
+<code>outputPtr</code>.  The device memory must have been previously allocated and be
+large enough to hold all the results.  Launches are done with the stream
+set using <code>curandSetStream()</code>, or the null stream if no stream has been set.
+Results are 32-bit unsigned int point values with poisson distribution based on
+an associated poisson distribution with lambda <code>lambda</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandGeneratePoisson(CurandGenerator generator, uint[] outputPtr, SizeT n, double lambda)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandGenerator.html">CurandGenerator</a></td>
+        <td><span class="parametername">generator</span></td>
+        <td><p>Generator to use</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span>[]</td>
+        <td><span class="parametername">outputPtr</span></td>
+        <td><p>Pointer to device memory to store CUDA-generated results, or Pointer to host memory to store CPU-generated results</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>Number of unsigned ints to generate</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">lambda</span></td>
+        <td><p>lambda for poisson distribution</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerateSeeds_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerateSeeds*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerateSeeds_ManagedCuda_CudaRand_CurandGenerator_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerateSeeds(ManagedCuda.CudaRand.CurandGenerator)">curandGenerateSeeds(CurandGenerator)</h4>
+  <div class="markdown level1 summary"><p>Generate the starting state of the generator.  This function is
+automatically called by generation functions such as
+::curandGenerate() and ::curandGenerateUniform().
+It can be called manually for performance testing reasons to separate
+timings for starting state generation and random number generation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandGenerateSeeds(CurandGenerator generator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandGenerator.html">CurandGenerator</a></td>
+        <td><span class="parametername">generator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerateUniform_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerateUniform*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerateUniform_ManagedCuda_CudaRand_CurandGenerator_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerateUniform(ManagedCuda.CudaRand.CurandGenerator,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.SizeT)">curandGenerateUniform(CurandGenerator, CUdeviceptr, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Use generator to generate num float results into the device memory at
+outputPtr. The device memory must have been previously allocated and be
+large enough to hold all the results. Launches are done with the stream
+set using curandSetStream(), or the null stream if no stream has been set.</p>
+<p>
+Results are 32-bit floating point values between 0.0f and 1.0f,
+excluding 0.0f and including 1.0f.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandGenerateUniform(CurandGenerator generator, CUdeviceptr outputPtr, SizeT num)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandGenerator.html">CurandGenerator</a></td>
+        <td><span class="parametername">generator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">outputPtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">num</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerateUniform_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerateUniform*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerateUniform_ManagedCuda_CudaRand_CurandGenerator_System_Single___ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerateUniform(ManagedCuda.CudaRand.CurandGenerator,System.Single[],ManagedCuda.BasicTypes.SizeT)">curandGenerateUniform(CurandGenerator, Single[], SizeT)</h4>
+  <div class="markdown level1 summary"><p>Use generator to generate num float results into the device memory at
+outputPtr. The device memory must have been previously allocated and be
+large enough to hold all the results. Launches are done with the stream
+set using curandSetStream(), or the null stream if no stream has been set.</p>
+<p>
+Results are 32-bit floating point values between 0.0f and 1.0f,
+excluding 0.0f and including 1.0f.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandGenerateUniform(CurandGenerator generator, float[] outputPtr, SizeT num)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandGenerator.html">CurandGenerator</a></td>
+        <td><span class="parametername">generator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span>[]</td>
+        <td><span class="parametername">outputPtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">num</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerateUniformDouble_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerateUniformDouble*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerateUniformDouble_ManagedCuda_CudaRand_CurandGenerator_ManagedCuda_BasicTypes_CUdeviceptr_ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerateUniformDouble(ManagedCuda.CudaRand.CurandGenerator,ManagedCuda.BasicTypes.CUdeviceptr,ManagedCuda.BasicTypes.SizeT)">curandGenerateUniformDouble(CurandGenerator, CUdeviceptr, SizeT)</h4>
+  <div class="markdown level1 summary"><p>Use generator to generate num double results into the device memory at
+outputPtr. The device memory must have been previously allocated and be
+large enough to hold all the results. Launches are done with the stream
+set using curandSetStream(), or the null stream if no stream has been set.</p>
+<p>
+Results are 64-bit double precision floating point values between 
+0.0 and 1.0, excluding 0.0 and including 1.0.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandGenerateUniformDouble(CurandGenerator generator, CUdeviceptr outputPtr, SizeT num)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandGenerator.html">CurandGenerator</a></td>
+        <td><span class="parametername">generator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">outputPtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">num</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerateUniformDouble_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerateUniformDouble*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGenerateUniformDouble_ManagedCuda_CudaRand_CurandGenerator_System_Double___ManagedCuda_BasicTypes_SizeT_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGenerateUniformDouble(ManagedCuda.CudaRand.CurandGenerator,System.Double[],ManagedCuda.BasicTypes.SizeT)">curandGenerateUniformDouble(CurandGenerator, Double[], SizeT)</h4>
+  <div class="markdown level1 summary"><p>Use generator to generate num double results into the device memory at
+outputPtr. The device memory must have been previously allocated and be
+large enough to hold all the results. Launches are done with the stream
+set using curandSetStream(), or the null stream if no stream has been set.</p>
+<p>
+Results are 64-bit double precision floating point values between 
+0.0 and 1.0, excluding 0.0 and including 1.0.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandGenerateUniformDouble(CurandGenerator generator, double[] outputPtr, SizeT num)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandGenerator.html">CurandGenerator</a></td>
+        <td><span class="parametername">generator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">outputPtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.SizeT.html">SizeT</a></td>
+        <td><span class="parametername">num</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGetDirectionVectors32_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGetDirectionVectors32*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGetDirectionVectors32_System_IntPtr__ManagedCuda_CudaRand_DirectionVectorSet_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGetDirectionVectors32(System.IntPtr@,ManagedCuda.CudaRand.DirectionVectorSet)">curandGetDirectionVectors32(out IntPtr, DirectionVectorSet)</h4>
+  <div class="markdown level1 summary"><p>Get a pointer to an array of direction vectors that can be used
+for quasirandom number generation.  The resulting pointer will
+reference an array of direction vectors in host memory.</p>
+<p>
+The array contains vectors for many dimensions.  Each dimension
+has 32 vectors.  Each individual vector is an unsigned int.
+<p>
+Legal values for set are:
+- <a class="xref" href="ManagedCuda.CudaRand.DirectionVectorSet.html#ManagedCuda_CudaRand_DirectionVectorSet_JoeKuo6_32">JoeKuo6_32</a> (20,000 dimensions)
+- <a class="xref" href="ManagedCuda.CudaRand.DirectionVectorSet.html#ManagedCuda_CudaRand_DirectionVectorSet_ScrambledJoeKuo6_32">ScrambledJoeKuo6_32</a> (20,000 dimensions)
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandGetDirectionVectors32(out IntPtr vectors, DirectionVectorSet set)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">vectors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.DirectionVectorSet.html">DirectionVectorSet</a></td>
+        <td><span class="parametername">set</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGetDirectionVectors64_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGetDirectionVectors64*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGetDirectionVectors64_System_IntPtr__ManagedCuda_CudaRand_DirectionVectorSet_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGetDirectionVectors64(System.IntPtr@,ManagedCuda.CudaRand.DirectionVectorSet)">curandGetDirectionVectors64(out IntPtr, DirectionVectorSet)</h4>
+  <div class="markdown level1 summary"><p>Get a pointer to an array of direction vectors that can be used
+for quasirandom number generation. The resulting pointer will
+reference an array of direction vectors in host memory.</p>
+<p>
+The array contains vectors for many dimensions. Each dimension
+has 64 vectors. Each individual vector is an unsigned long long.
+<p>
+Legal values for set are:
+- <a class="xref" href="ManagedCuda.CudaRand.DirectionVectorSet.html#ManagedCuda_CudaRand_DirectionVectorSet_JoeKuo6_64">JoeKuo6_64</a> (20,000 dimensions)
+- <a class="xref" href="ManagedCuda.CudaRand.DirectionVectorSet.html#ManagedCuda_CudaRand_DirectionVectorSet_ScrambledJoeKuo6_64">ScrambledJoeKuo6_64</a> (20,000 dimensions)
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandGetDirectionVectors64(out IntPtr vectors, DirectionVectorSet set)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">vectors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.DirectionVectorSet.html">DirectionVectorSet</a></td>
+        <td><span class="parametername">set</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGetScrambleConstants32_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGetScrambleConstants32*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGetScrambleConstants32_System_IntPtr__" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGetScrambleConstants32(System.IntPtr@)">curandGetScrambleConstants32(out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Get a pointer to an array of scramble constants that can be used
+for quasirandom number generation.  The resulting pointer will
+reference an array of unsinged ints in host memory.</p>
+<p>
+The array contains constants for many dimensions.  Each dimension
+has a single unsigned int constant.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandGetScrambleConstants32(out IntPtr constants)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">constants</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGetScrambleConstants64_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGetScrambleConstants64*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGetScrambleConstants64_System_IntPtr__" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGetScrambleConstants64(System.IntPtr@)">curandGetScrambleConstants64(out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Get a pointer to an array of scramble constants that can be used
+for quasirandom number generation. The resulting pointer will
+reference an array of unsinged long longs in host memory.</p>
+<p>
+The array contains constants for many dimensions. Each dimension
+has a single unsigned long long constant. 
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandGetScrambleConstants64(out IntPtr constants)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">constants</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGetVersion_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGetVersion*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandGetVersion_System_Int32__" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandGetVersion(System.Int32@)">curandGetVersion(ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Return in version the version number of the dynamically linked CURAND
+library.  The format is the same as CUDART_VERSION from the CUDA Runtime.
+The only supported configuration is CURAND version equal to CUDA Runtime
+version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandGetVersion(ref int version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">version</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandSetGeneratorOffset_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandSetGeneratorOffset*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandSetGeneratorOffset_ManagedCuda_CudaRand_CurandGenerator_System_UInt64_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandSetGeneratorOffset(ManagedCuda.CudaRand.CurandGenerator,System.UInt64)">curandSetGeneratorOffset(CurandGenerator, UInt64)</h4>
+  <div class="markdown level1 summary"><p>Set the absolute offset of the pseudo or quasirandom number generator.</p>
+<p>
+All values of offset are valid.  The offset position is absolute, not 
+relative to the current position in the sequence.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandSetGeneratorOffset(CurandGenerator generator, ulong offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandGenerator.html">CurandGenerator</a></td>
+        <td><span class="parametername">generator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandSetGeneratorOrdering_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandSetGeneratorOrdering*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandSetGeneratorOrdering_ManagedCuda_CudaRand_CurandGenerator_ManagedCuda_CudaRand_Ordering_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandSetGeneratorOrdering(ManagedCuda.CudaRand.CurandGenerator,ManagedCuda.CudaRand.Ordering)">curandSetGeneratorOrdering(CurandGenerator, Ordering)</h4>
+  <div class="markdown level1 summary"><p>Set the ordering of results of the pseudo or quasirandom number generator.</p>
+<p>
+Legal values of order for pseudorandom generators are:<p>
+- <a class="xref" href="ManagedCuda.CudaRand.Ordering.html#ManagedCuda_CudaRand_Ordering_PseudoDefault">PseudoDefault</a><p>
+- <a class="xref" href="ManagedCuda.CudaRand.Ordering.html#ManagedCuda_CudaRand_Ordering_PseudoBest">PseudoBest</a><p>
+- <a class="xref" href="ManagedCuda.CudaRand.Ordering.html#ManagedCuda_CudaRand_Ordering_PseudoSeeded">PseudoSeeded</a><p>
+<p>
+Legal values of order for quasirandom generators are:<p>
+- <a class="xref" href="ManagedCuda.CudaRand.Ordering.html#ManagedCuda_CudaRand_Ordering_QuasiDefault">QuasiDefault</a>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandSetGeneratorOrdering(CurandGenerator generator, Ordering order)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandGenerator.html">CurandGenerator</a></td>
+        <td><span class="parametername">generator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.Ordering.html">Ordering</a></td>
+        <td><span class="parametername">order</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandSetPseudoRandomGeneratorSeed_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandSetPseudoRandomGeneratorSeed*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandSetPseudoRandomGeneratorSeed_ManagedCuda_CudaRand_CurandGenerator_System_UInt64_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandSetPseudoRandomGeneratorSeed(ManagedCuda.CudaRand.CurandGenerator,System.UInt64)">curandSetPseudoRandomGeneratorSeed(CurandGenerator, UInt64)</h4>
+  <div class="markdown level1 summary"><p>Set the seed value of the pseudorandom number generator.
+All values of seed are valid.  Different seeds will produce different sequences.
+Different seeds will often not be statistically correlated with each other,
+but some pairs of seed values may generate sequences which are statistically correlated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandSetPseudoRandomGeneratorSeed(CurandGenerator generator, ulong seed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandGenerator.html">CurandGenerator</a></td>
+        <td><span class="parametername">generator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">seed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandSetQuasiRandomGeneratorDimensions_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandSetQuasiRandomGeneratorDimensions*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandSetQuasiRandomGeneratorDimensions_ManagedCuda_CudaRand_CurandGenerator_System_UInt32_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandSetQuasiRandomGeneratorDimensions(ManagedCuda.CudaRand.CurandGenerator,System.UInt32)">curandSetQuasiRandomGeneratorDimensions(CurandGenerator, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Set the number of dimensions to be generated by the quasirandom number generator.</p>
+<p>
+Legal values for num_dimensions are 1 to 20000.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandSetQuasiRandomGeneratorDimensions(CurandGenerator generator, uint num_dimensions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandGenerator.html">CurandGenerator</a></td>
+        <td><span class="parametername">generator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">num_dimensions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandSetStream_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandSetStream*"></a>
+  <h4 id="ManagedCuda_CudaRand_CudaRandNativeMethods_curandSetStream_ManagedCuda_CudaRand_CurandGenerator_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaRand.CudaRandNativeMethods.curandSetStream(ManagedCuda.CudaRand.CurandGenerator,ManagedCuda.BasicTypes.CUstream)">curandSetStream(CurandGenerator, CUstream)</h4>
+  <div class="markdown level1 summary"><p>Set the current stream for CURAND kernel launches.  All library functions
+will use this stream until set again.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CurandStatus curandSetStream(CurandGenerator generator, CUstream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandGenerator.html">CurandGenerator</a></td>
+        <td><span class="parametername">generator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.CudaRand.CurandStatus.html">CurandStatus</a></td>
+        <td><p>Status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaRand_CudaRandNativeMethods.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaRand.CudaRandNativeMethods%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/CudaRand/CudaRandNativeMethods.cs/#L35" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,973 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CudaStream
+   | ManagedCuda.NETStandard </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CudaStream
+   | ManagedCuda.NETStandard ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ManagedCuda.CudaStream">
+  
+  
+  <h1 id="ManagedCuda_CudaStream" data-uid="ManagedCuda.CudaStream" class="text-break">Class CudaStream
+  </h1>
+  <div class="markdown level0 summary"><p>Wrapps a CUstream handle.
+In case of a so called NULL stream, use the native CUstream struct instead.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CudaStream</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ManagedCuda.html">ManagedCuda</a></h6>
+  <h6><strong>Assembly</strong>: ManagedCuda.dll</h6>
+  <h5 id="ManagedCuda_CudaStream_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CudaStream : IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaStream__ctor.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaStream.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaStream.cs/#L46">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaStream__ctor_" data-uid="ManagedCuda.CudaStream.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaStream__ctor" data-uid="ManagedCuda.CudaStream.#ctor">CudaStream()</h4>
+  <div class="markdown level1 summary"><p>Creates a new Stream using <a class="xref" href="ManagedCuda.BasicTypes.CUStreamFlags.html#ManagedCuda_BasicTypes_CUStreamFlags_None">None</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaStream()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaStream__ctor_ManagedCuda_BasicTypes_CUstream_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaStream.%23ctor(ManagedCuda.BasicTypes.CUstream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaStream.cs/#L54">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaStream__ctor_" data-uid="ManagedCuda.CudaStream.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaStream__ctor_ManagedCuda_BasicTypes_CUstream_" data-uid="ManagedCuda.CudaStream.#ctor(ManagedCuda.BasicTypes.CUstream)">CudaStream(CUstream)</h4>
+  <div class="markdown level1 summary"><p>Creates a new wrapper for an existing stream</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaStream(CUstream _stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td><span class="parametername">_stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaStream__ctor_ManagedCuda_BasicTypes_CUStreamFlags_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaStream.%23ctor(ManagedCuda.BasicTypes.CUStreamFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaStream.cs/#L63">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaStream__ctor_" data-uid="ManagedCuda.CudaStream.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaStream__ctor_ManagedCuda_BasicTypes_CUStreamFlags_" data-uid="ManagedCuda.CudaStream.#ctor(ManagedCuda.BasicTypes.CUStreamFlags)">CudaStream(CUStreamFlags)</h4>
+  <div class="markdown level1 summary"><p>Creates a new Stream</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaStream(CUStreamFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUStreamFlags.html">CUStreamFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Parameters for stream creation (must be <a class="xref" href="ManagedCuda.BasicTypes.CUStreamFlags.html#ManagedCuda_BasicTypes_CUStreamFlags_None">None</a>)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaStream__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaStream.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaStream.cs/#L81">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaStream__ctor_" data-uid="ManagedCuda.CudaStream.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaStream__ctor_System_Int32_" data-uid="ManagedCuda.CudaStream.#ctor(System.Int32)">CudaStream(Int32)</h4>
+  <div class="markdown level1 summary"><p>Creates a new Stream using <a class="xref" href="ManagedCuda.BasicTypes.CUStreamFlags.html#ManagedCuda_BasicTypes_CUStreamFlags_None">None</a> and with the given priority<p>
+This API alters the scheduler priority of work in the stream. Work in a higher priority stream
+may preempt work already executing in a low priority stream.<p>
+<code>priority</code> follows a convention where lower numbers represent higher priorities.<p>
+'0' represents default priority.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaStream(int priority)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">priority</span></td>
+        <td><p>Stream priority. Lower numbers represent higher priorities.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaStream__ctor_System_Int32_ManagedCuda_BasicTypes_CUStreamFlags_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaStream.%23ctor(System.Int32%2CManagedCuda.BasicTypes.CUStreamFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaStream.cs/#L95">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaStream__ctor_" data-uid="ManagedCuda.CudaStream.#ctor*"></a>
+  <h4 id="ManagedCuda_CudaStream__ctor_System_Int32_ManagedCuda_BasicTypes_CUStreamFlags_" data-uid="ManagedCuda.CudaStream.#ctor(System.Int32,ManagedCuda.BasicTypes.CUStreamFlags)">CudaStream(Int32, CUStreamFlags)</h4>
+  <div class="markdown level1 summary"><p>Creates a new Stream using <a class="xref" href="ManagedCuda.BasicTypes.CUStreamFlags.html#ManagedCuda_BasicTypes_CUStreamFlags_None">None</a> and with the given priority<p>
+This API alters the scheduler priority of work in the stream. Work in a higher priority stream
+may preempt work already executing in a low priority stream.<p>
+<code>priority</code> follows a convention where lower numbers represent higher priorities.<p>
+'0' represents default priority.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CudaStream(int priority, CUStreamFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">priority</span></td>
+        <td><p>Stream priority. Lower numbers represent higher priorities.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUStreamFlags.html">CUStreamFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Parameters for stream creation (must be <a class="xref" href="ManagedCuda.BasicTypes.CUStreamFlags.html#ManagedCuda_BasicTypes_CUStreamFlags_None">None</a>)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaStream_Stream.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaStream.Stream%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaStream.cs/#L145">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaStream_Stream_" data-uid="ManagedCuda.CudaStream.Stream*"></a>
+  <h4 id="ManagedCuda_CudaStream_Stream" data-uid="ManagedCuda.CudaStream.Stream">Stream</h4>
+  <div class="markdown level1 summary"><p>returns the wrapped CUstream handle</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUstream Stream { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstream.html">CUstream</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaStream_AddCallback_ManagedCuda_BasicTypes_CUstreamCallback_System_IntPtr_ManagedCuda_BasicTypes_CUStreamAddCallbackFlags_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaStream.AddCallback(ManagedCuda.BasicTypes.CUstreamCallback%2CSystem.IntPtr%2CManagedCuda.BasicTypes.CUStreamAddCallbackFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaStream.cs/#L235">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaStream_AddCallback_" data-uid="ManagedCuda.CudaStream.AddCallback*"></a>
+  <h4 id="ManagedCuda_CudaStream_AddCallback_ManagedCuda_BasicTypes_CUstreamCallback_System_IntPtr_ManagedCuda_BasicTypes_CUStreamAddCallbackFlags_" data-uid="ManagedCuda.CudaStream.AddCallback(ManagedCuda.BasicTypes.CUstreamCallback,System.IntPtr,ManagedCuda.BasicTypes.CUStreamAddCallbackFlags)">AddCallback(CUstreamCallback, IntPtr, CUStreamAddCallbackFlags)</h4>
+  <div class="markdown level1 summary"><p>Adds a callback to be called on the host after all currently enqueued
+items in the stream have completed.  For each
+cuStreamAddCallback call, the callback will be executed exactly once.
+The callback will block later work in the stream until it is finished.</p>
+<p>
+The callback may be passed <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a> or an error code.  In the event
+of a device error, all subsequently executed callbacks will receive an
+appropriate <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a>.
+<p>
+Callbacks must not make any CUDA API calls.  Attempting to use a CUDA API
+will result in <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotPermitted">ErrorNotPermitted</a>.  Callbacks must not perform any
+synchronization that may depend on outstanding device work or other callbacks
+that are not mandated to run earlier.  Callbacks without a mandated order
+(in independent streams) execute in undefined order and may be serialized.
+<p>
+This API requires compute capability 1.1 or greater.  See
+cuDeviceGetAttribute or ::cuDeviceGetProperties to query compute
+capability.  Attempting to use this API with earlier compute versions will
+return <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotSupported">ErrorNotSupported</a>.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddCallback(CUstreamCallback callback, IntPtr userData, CUStreamAddCallbackFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstreamCallback.html">CUstreamCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>The function to call once preceding stream operations are complete</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">userData</span></td>
+        <td><p>User specified data to be passed to the callback function. Use GCAlloc to pin a managed object</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUStreamAddCallbackFlags.html">CUStreamAddCallbackFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Callback flags (must be CUStreamAddCallbackFlags.None)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaStream_AddCallbackToNullStream_ManagedCuda_BasicTypes_CUstreamCallback_System_IntPtr_ManagedCuda_BasicTypes_CUStreamAddCallbackFlags_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaStream.AddCallbackToNullStream(ManagedCuda.BasicTypes.CUstreamCallback%2CSystem.IntPtr%2CManagedCuda.BasicTypes.CUStreamAddCallbackFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaStream.cs/#L270">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaStream_AddCallbackToNullStream_" data-uid="ManagedCuda.CudaStream.AddCallbackToNullStream*"></a>
+  <h4 id="ManagedCuda_CudaStream_AddCallbackToNullStream_ManagedCuda_BasicTypes_CUstreamCallback_System_IntPtr_ManagedCuda_BasicTypes_CUStreamAddCallbackFlags_" data-uid="ManagedCuda.CudaStream.AddCallbackToNullStream(ManagedCuda.BasicTypes.CUstreamCallback,System.IntPtr,ManagedCuda.BasicTypes.CUStreamAddCallbackFlags)">AddCallbackToNullStream(CUstreamCallback, IntPtr, CUStreamAddCallbackFlags)</h4>
+  <div class="markdown level1 summary"><p>Here the Stream is the NULL stream<p>
+Adds a callback to be called on the host after all currently enqueued
+items in the stream have completed.  For each
+cuStreamAddCallback call, the callback will be executed exactly once.
+The callback will block later work in the stream until it is finished.</p>
+<p>
+The callback may be passed <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_Success">Success</a> or an error code.  In the event
+of a device error, all subsequently executed callbacks will receive an
+appropriate <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html">CUResult</a>.
+<p>
+Callbacks must not make any CUDA API calls.  Attempting to use a CUDA API
+will result in <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotPermitted">ErrorNotPermitted</a>.  Callbacks must not perform any
+synchronization that may depend on outstanding device work or other callbacks
+that are not mandated to run earlier.  Callbacks without a mandated order
+(in independent streams) execute in undefined order and may be serialized.
+<p>
+This API requires compute capability 1.1 or greater.  See
+cuDeviceGetAttribute or ::cuDeviceGetProperties to query compute
+capability.  Attempting to use this API with earlier compute versions will
+return <a class="xref" href="ManagedCuda.BasicTypes.CUResult.html#ManagedCuda_BasicTypes_CUResult_ErrorNotSupported">ErrorNotSupported</a>.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddCallbackToNullStream(CUstreamCallback callback, IntPtr userData, CUStreamAddCallbackFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstreamCallback.html">CUstreamCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>The function to call once preceding stream operations are complete</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">userData</span></td>
+        <td><p>User specified data to be passed to the callback function. Use GCAlloc to pin a managed object</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUStreamAddCallbackFlags.html">CUStreamAddCallbackFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Callback flags (must be CUStreamAddCallbackFlags.None)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaStream_cuStreamGetFlags.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaStream.cuStreamGetFlags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaStream.cs/#L297">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaStream_cuStreamGetFlags_" data-uid="ManagedCuda.CudaStream.cuStreamGetFlags*"></a>
+  <h4 id="ManagedCuda_CudaStream_cuStreamGetFlags" data-uid="ManagedCuda.CudaStream.cuStreamGetFlags">cuStreamGetFlags()</h4>
+  <div class="markdown level1 summary"><p>Query the flags of this stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CUStreamFlags cuStreamGetFlags()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUStreamFlags.html">CUStreamFlags</a></td>
+        <td><p>the stream's flags<p>
+The value returned in <code>flags</code> is a logical 'OR' of all flags that
+were used while creating this stream.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaStream_Dispose.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaStream.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaStream.cs/#L118">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaStream_Dispose_" data-uid="ManagedCuda.CudaStream.Dispose*"></a>
+  <h4 id="ManagedCuda_CudaStream_Dispose" data-uid="ManagedCuda.CudaStream.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Dispose</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaStream_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaStream.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaStream.cs/#L128">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaStream_Dispose_" data-uid="ManagedCuda.CudaStream.Dispose*"></a>
+  <h4 id="ManagedCuda_CudaStream_Dispose_System_Boolean_" data-uid="ManagedCuda.CudaStream.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>For IDisposable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool fDisposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">fDisposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaStream_Finalize.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaStream.Finalize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaStream.cs/#L108">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaStream_Finalize_" data-uid="ManagedCuda.CudaStream.Finalize*"></a>
+  <h4 id="ManagedCuda_CudaStream_Finalize" data-uid="ManagedCuda.CudaStream.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"><p>For dispose</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaStream_GetPriority.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaStream.GetPriority%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaStream.cs/#L282">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaStream_GetPriority_" data-uid="ManagedCuda.CudaStream.GetPriority*"></a>
+  <h4 id="ManagedCuda_CudaStream_GetPriority" data-uid="ManagedCuda.CudaStream.GetPriority">GetPriority()</h4>
+  <div class="markdown level1 summary"><p>Query the priority of this stream</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetPriority()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>the stream's priority</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaStream_Query.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaStream.Query%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaStream.cs/#L171">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaStream_Query_" data-uid="ManagedCuda.CudaStream.Query*"></a>
+  <h4 id="ManagedCuda_CudaStream_Query" data-uid="ManagedCuda.CudaStream.Query">Query()</h4>
+  <div class="markdown level1 summary"><p>Returns true if all operations in the stream have completed, or
+false if not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Query()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaStream_Synchronize.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaStream.Synchronize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaStream.cs/#L158">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaStream_Synchronize_" data-uid="ManagedCuda.CudaStream.Synchronize*"></a>
+  <h4 id="ManagedCuda_CudaStream_Synchronize" data-uid="ManagedCuda.CudaStream.Synchronize">Synchronize()</h4>
+  <div class="markdown level1 summary"><p>Waits until the device has completed all operations in the stream. If the context was created
+with the <a class="xref" href="ManagedCuda.BasicTypes.CUCtxFlags.html#ManagedCuda_BasicTypes_CUCtxFlags_BlockingSync">BlockingSync</a> flag, the CPU thread will block until the stream is finished with all of its
+tasks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Synchronize()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaStream_WaitEvent_ManagedCuda_BasicTypes_CUevent_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaStream.WaitEvent(ManagedCuda.BasicTypes.CUevent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaStream.cs/#L202">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaStream_WaitEvent_" data-uid="ManagedCuda.CudaStream.WaitEvent*"></a>
+  <h4 id="ManagedCuda_CudaStream_WaitEvent_ManagedCuda_BasicTypes_CUevent_" data-uid="ManagedCuda.CudaStream.WaitEvent(ManagedCuda.BasicTypes.CUevent)">WaitEvent(CUevent)</h4>
+  <div class="markdown level1 summary"><p>Make a compute stream wait on an event<p>
+Makes all future work submitted to the Stream wait until <code>hEvent</code>
+reports completion before beginning execution. This synchronization
+will be performed efficiently on the device.</p>
+<p>
+The stream will wait only for the completion of the most recent
+host call to <a class="xref" href="ManagedCuda.CudaEvent.html#ManagedCuda_CudaEvent_Record">Record()</a> on <code>hEvent</code>. Once this call has returned,
+any functions (including <a class="xref" href="ManagedCuda.CudaEvent.html#ManagedCuda_CudaEvent_Record">Record()</a> and <a class="xref" href="ManagedCuda.CudaStream.html#ManagedCuda_CudaStream_Dispose">Dispose()</a> may be
+called on <code>hEvent</code> again, and the subsequent calls will not have any
+effect on this stream.
+<p>
+If <code>hStream</code> is 0 (the NULL stream) any future work submitted in any stream
+will wait for <code>hEvent</code> to complete before beginning execution. This
+effectively creates a barrier for all future work submitted to the context.
+<p>
+If <a class="xref" href="ManagedCuda.CudaEvent.html#ManagedCuda_CudaEvent_Record">Record()</a> has not been called on <code>hEvent</code>, this call acts as if
+the record has already completed, and so is a functional no-op.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WaitEvent(CUevent cuevent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUevent.html">CUevent</a></td>
+        <td><span class="parametername">cuevent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaStream_WaitValue_ManagedCuda_BasicTypes_CUdeviceptr_System_UInt32_ManagedCuda_BasicTypes_CUstreamWaitValue_flags_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaStream.WaitValue(ManagedCuda.BasicTypes.CUdeviceptr%2CSystem.UInt32%2CManagedCuda.BasicTypes.CUstreamWaitValue_flags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaStream.cs/#L325">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaStream_WaitValue_" data-uid="ManagedCuda.CudaStream.WaitValue*"></a>
+  <h4 id="ManagedCuda_CudaStream_WaitValue_ManagedCuda_BasicTypes_CUdeviceptr_System_UInt32_ManagedCuda_BasicTypes_CUstreamWaitValue_flags_" data-uid="ManagedCuda.CudaStream.WaitValue(ManagedCuda.BasicTypes.CUdeviceptr,System.UInt32,ManagedCuda.BasicTypes.CUstreamWaitValue_flags)">WaitValue(CUdeviceptr, UInt32, CUstreamWaitValue_flags)</h4>
+  <div class="markdown level1 summary"><p>Wait on a memory location<p>
+Enqueues a synchronization of the stream on the given memory location. Work
+ordered after the operation will block until the given condition on the
+memory is satisfied. By default, the condition is to wait for (int32_t)(*addr - value) &gt;= 0, a cyclic greater-or-equal.</p>
+<p>
+Other condition types can be specified via \p flags.
+<p>
+If the memory was registered via ::cuMemHostRegister(), the device pointer
+should be obtained with::cuMemHostGetDevicePointer(). This function cannot
+be used with managed memory(::cuMemAllocManaged).
+<p>
+Support for this can be queried with ::cuDeviceGetAttribute() and
+::CU_DEVICE_ATTRIBUTE_CAN_USE_STREAM_MEM_OPS. The only requirement for basic
+support is that on Windows, a device must be in TCC mode.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WaitValue(CUdeviceptr addr, uint value, CUstreamWaitValue_flags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">addr</span></td>
+        <td><p>The memory location to wait on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to compare with the memory location.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstreamWaitValue_flags.html">CUstreamWaitValue_flags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>See::CUstreamWaitValue_flags.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaStream_WaitValue_ManagedCuda_BasicTypes_CUdeviceptr_System_UInt64_ManagedCuda_BasicTypes_CUstreamWaitValue_flags_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaStream.WaitValue(ManagedCuda.BasicTypes.CUdeviceptr%2CSystem.UInt64%2CManagedCuda.BasicTypes.CUstreamWaitValue_flags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaStream.cs/#L352">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaStream_WaitValue_" data-uid="ManagedCuda.CudaStream.WaitValue*"></a>
+  <h4 id="ManagedCuda_CudaStream_WaitValue_ManagedCuda_BasicTypes_CUdeviceptr_System_UInt64_ManagedCuda_BasicTypes_CUstreamWaitValue_flags_" data-uid="ManagedCuda.CudaStream.WaitValue(ManagedCuda.BasicTypes.CUdeviceptr,System.UInt64,ManagedCuda.BasicTypes.CUstreamWaitValue_flags)">WaitValue(CUdeviceptr, UInt64, CUstreamWaitValue_flags)</h4>
+  <div class="markdown level1 summary"><p>Wait on a memory location<p>
+Enqueues a synchronization of the stream on the given memory location. Work
+ordered after the operation will block until the given condition on the
+memory is satisfied. By default, the condition is to wait for (int32_t)(*addr - value) &gt;= 0, a cyclic greater-or-equal.</p>
+<p>
+Other condition types can be specified via \p flags.
+<p>
+If the memory was registered via ::cuMemHostRegister(), the device pointer
+should be obtained with::cuMemHostGetDevicePointer(). This function cannot
+be used with managed memory(::cuMemAllocManaged).
+<p>
+Support for this can be queried with ::cuDeviceGetAttribute() and
+::CU_DEVICE_ATTRIBUTE_CAN_USE_STREAM_MEM_OPS. The requirements are
+compute capability 7.0 or greater, and on Windows, that the device be in
+TCC mode.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WaitValue(CUdeviceptr addr, ulong value, CUstreamWaitValue_flags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">addr</span></td>
+        <td><p>The memory location to wait on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to compare with the memory location.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstreamWaitValue_flags.html">CUstreamWaitValue_flags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>See::CUstreamWaitValue_flags.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaStream_WriteValue_ManagedCuda_BasicTypes_CUdeviceptr_System_UInt32_ManagedCuda_BasicTypes_CUstreamWriteValue_flags_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaStream.WriteValue(ManagedCuda.BasicTypes.CUdeviceptr%2CSystem.UInt32%2CManagedCuda.BasicTypes.CUstreamWriteValue_flags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaStream.cs/#L378">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaStream_WriteValue_" data-uid="ManagedCuda.CudaStream.WriteValue*"></a>
+  <h4 id="ManagedCuda_CudaStream_WriteValue_ManagedCuda_BasicTypes_CUdeviceptr_System_UInt32_ManagedCuda_BasicTypes_CUstreamWriteValue_flags_" data-uid="ManagedCuda.CudaStream.WriteValue(ManagedCuda.BasicTypes.CUdeviceptr,System.UInt32,ManagedCuda.BasicTypes.CUstreamWriteValue_flags)">WriteValue(CUdeviceptr, UInt32, CUstreamWriteValue_flags)</h4>
+  <div class="markdown level1 summary"><p>Write a value to memory</p>
+<p>
+Write a value to memory.Unless the ::CU_STREAM_WRITE_VALUE_NO_MEMORY_BARRIER
+flag is passed, the write is preceded by a system-wide memory fence,
+equivalent to a __threadfence_system() but scoped to the stream
+rather than a CUDA thread.
+<p>
+If the memory was registered via ::cuMemHostRegister(), the device pointer
+should be obtained with::cuMemHostGetDevicePointer(). This function cannot
+be used with managed memory(::cuMemAllocManaged).
+<p>
+Support for this can be queried with ::cuDeviceGetAttribute() and
+::CU_DEVICE_ATTRIBUTE_CAN_USE_STREAM_MEM_OPS. The only requirement for basic
+support is that on Windows, a device must be in TCC mode.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteValue(CUdeviceptr addr, uint value, CUstreamWriteValue_flags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">addr</span></td>
+        <td><p>The device address to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to write.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstreamWriteValue_flags.html">CUstreamWriteValue_flags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>See::CUstreamWriteValue_flags.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaStream_WriteValue_ManagedCuda_BasicTypes_CUdeviceptr_System_UInt64_ManagedCuda_BasicTypes_CUstreamWriteValue_flags_.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaStream.WriteValue(ManagedCuda.BasicTypes.CUdeviceptr%2CSystem.UInt64%2CManagedCuda.BasicTypes.CUstreamWriteValue_flags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaStream.cs/#L405">View Source</a>
+  </span>
+  <a id="ManagedCuda_CudaStream_WriteValue_" data-uid="ManagedCuda.CudaStream.WriteValue*"></a>
+  <h4 id="ManagedCuda_CudaStream_WriteValue_ManagedCuda_BasicTypes_CUdeviceptr_System_UInt64_ManagedCuda_BasicTypes_CUstreamWriteValue_flags_" data-uid="ManagedCuda.CudaStream.WriteValue(ManagedCuda.BasicTypes.CUdeviceptr,System.UInt64,ManagedCuda.BasicTypes.CUstreamWriteValue_flags)">WriteValue(CUdeviceptr, UInt64, CUstreamWriteValue_flags)</h4>
+  <div class="markdown level1 summary"><p>Write a value to memory</p>
+<p>
+Write a value to memory.Unless the ::CU_STREAM_WRITE_VALUE_NO_MEMORY_BARRIER
+flag is passed, the write is preceded by a system-wide memory fence,
+equivalent to a __threadfence_system() but scoped to the stream
+rather than a CUDA thread.
+<p>
+If the memory was registered via ::cuMemHostRegister(), the device pointer
+should be obtained with::cuMemHostGetDevicePointer(). This function cannot
+be used with managed memory(::cuMemAllocManaged).
+<p>
+Support for this can be queried with ::cuDeviceGetAttribute() and
+::CU_DEVICE_ATTRIBUTE_CAN_USE_STREAM_MEM_OPS. The requirements are
+compute capability 7.0 or greater, and on Windows, that the device be in
+TCC mode.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteValue(CUdeviceptr addr, ulong value, CUstreamWriteValue_flags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUdeviceptr.html">CUdeviceptr</a></td>
+        <td><span class="parametername">addr</span></td>
+        <td><p>The device address to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to write.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ManagedCuda.BasicTypes.CUstreamWriteValue_flags.html">CUstreamWriteValue_flags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>See::CUstreamWriteValue_flags.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/new/master/apiSpec/new?filename=ManagedCuda_CudaStream.md&amp;value=---%0Auid%3A%20ManagedCuda.CudaStream%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/managedCuda/blob/master/ManagedCUDA/CudaStream.cs/#L35" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
