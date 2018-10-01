@@ -3,7 +3,7 @@
   <metadata>
     <!-- The identifier that must be unique within the hosting gallery -->
     <id>UnmanageableCuda</id>
-    <title>UnmanageableCuda -- Another fork of ManagedCuda, for .NET Standard, CUDA 9.2</title>
+    <title>UnmanageableCuda -- Another fork of ManagedCuda, for .NET Standard, slightly better/cleaner.</title>
 
     <version>9.2148.1</version>
 
@@ -16,13 +16,14 @@
     <owners>Ken Domino</owners>
 
     <!-- License, project, icon links for the gallery -->
-    <projectUrl>https://github.com/kaby76/UnmanageableCuda</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/kaby76/UnmanageableCuda/master/Nvidia_CUDA_Logo.jpg</iconUrl>
-    <licenseUrl>https://github.com/kaby76/UnmanageableCuda/blob/master/license</licenseUrl>
+    <projectUrl>https://github.com/kaby76/ManagedCuda</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/kaby76/ManagedCuda/master/Nvidia_CUDA_Logo.jpg</iconUrl>
+    <licenseUrl>https://github.com/kaby76/ManagedCuda/blob/master/LICENSE.txt</licenseUrl>
 
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Forked from Surban (https://surban.github.io/managedCuda/),
-       which was forked from Kunzmi (https://kunzmi.github.io/managedCuda/).</description>
+       which was forked from Kunzmi (https://kunzmi.github.io/managedCuda/),
+       slightly newer and improved.</description>
     <releaseNotes>
     </releaseNotes>
 
@@ -30,7 +31,7 @@
     <copyright>Copyright © 2017-2018</copyright>
 
     <!-- Tags appear in the gallery and can be used for tag searches -->
-    <tags>CUDA GPU NVIDIA native c# compilers bindings pinvoke Windows </tags>
+    <tags>CUDA GPU NVIDIA c#</tags>
 
     <!-- Dependencies are automatically installed when the package is
     installed -->
