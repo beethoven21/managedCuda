@@ -93,41 +93,41 @@
 
     <file src="UnmanageableCuda.targets" target="build\UnmanageableCuda.targets" />
 
-    <file src="..\CudaBlas\bin\Release\netstandard2.0\CudaBlas.deps.json" target="lib/" />
-    <file src="..\CudaBlas\bin\Release\netstandard2.0\CudaBlas.xml" target="lib/" />
-    <file src="..\CudaBlas\bin\Release\netstandard2.0\CudaBlas.dll" target="lib/" />
+    <file src="..\CudaBlas\bin\Release\netstandard2.0\CudaBlas.deps.json" target="lib/netstandard2.0/" />
+    <file src="..\CudaBlas\bin\Release\netstandard2.0\CudaBlas.xml" target="lib/netstandard2.0/" />
+    <file src="..\CudaBlas\bin\Release\netstandard2.0\CudaBlas.dll" target="lib/netstandard2.0/" />
 
-    <file src="..\CudaDNN\bin\Release\netstandard2.0\CudaDNN.deps.json" target="lib/" />
-    <file src="..\CudaDNN\bin\Release\netstandard2.0\CudaDNN.xml" target="lib/" />
-    <file src="..\CudaDNN\bin\Release\netstandard2.0\CudaDNN.dll" target="lib/" />
+    <file src="..\CudaDNN\bin\Release\netstandard2.0\CudaDNN.deps.json" target="lib/netstandard2.0/" />
+    <file src="..\CudaDNN\bin\Release\netstandard2.0\CudaDNN.xml" target="lib/netstandard2.0/" />
+    <file src="..\CudaDNN\bin\Release\netstandard2.0\CudaDNN.dll" target="lib/netstandard2.0/" />
 
-    <file src="..\CudaFFT\bin\Release\netstandard2.0\CudaFFT.deps.json" target="lib/" />
-    <file src="..\CudaFFT\bin\Release\netstandard2.0\CudaFFT.xml" target="lib/" />
-    <file src="..\CudaFFT\bin\Release\netstandard2.0\CudaFFT.dll" target="lib/" />
+    <file src="..\CudaFFT\bin\Release\netstandard2.0\CudaFFT.deps.json" target="lib/netstandard2.0/" />
+    <file src="..\CudaFFT\bin\Release\netstandard2.0\CudaFFT.xml" target="lib/netstandard2.0/" />
+    <file src="..\CudaFFT\bin\Release\netstandard2.0\CudaFFT.dll" target="lib/netstandard2.0/" />
 
-    <file src="..\CudaRand\bin\Release\netstandard2.0\CudaRand.deps.json" target="lib/" />
-    <file src="..\CudaRand\bin\Release\netstandard2.0\CudaRand.xml" target="lib/" />
-    <file src="..\CudaRand\bin\Release\netstandard2.0\CudaRand.dll" target="lib/" />
+    <file src="..\CudaRand\bin\Release\netstandard2.0\CudaRand.deps.json" target="lib/netstandard2.0/" />
+    <file src="..\CudaRand\bin\Release\netstandard2.0\CudaRand.xml" target="lib/netstandard2.0/" />
+    <file src="..\CudaRand\bin\Release\netstandard2.0\CudaRand.dll" target="lib/netstandard2.0/" />
 
-    <file src="..\CudaSolve\bin\Release\netstandard2.0\CudaSolve.deps.json" target="lib/" />
-    <file src="..\CudaSolve\bin\Release\netstandard2.0\CudaSolve.xml" target="lib/" />
-    <file src="..\CudaSolve\bin\Release\netstandard2.0\CudaSolve.dll" target="lib/" />
+    <file src="..\CudaSolve\bin\Release\netstandard2.0\CudaSolve.deps.json" target="lib/netstandard2.0/" />
+    <file src="..\CudaSolve\bin\Release\netstandard2.0\CudaSolve.xml" target="lib/netstandard2.0/" />
+    <file src="..\CudaSolve\bin\Release\netstandard2.0\CudaSolve.dll" target="lib/netstandard2.0/" />
 
-    <file src="..\CudaSparse\bin\Release\netstandard2.0\CudaSparse.deps.json" target="lib/" />
-    <file src="..\CudaSparse\bin\Release\netstandard2.0\CudaSparse.xml" target="lib/" />
-    <file src="..\CudaSparse\bin\Release\netstandard2.0\CudaSparse.dll" target="lib/" />
+    <file src="..\CudaSparse\bin\Release\netstandard2.0\CudaSparse.deps.json" target="lib/netstandard2.0/" />
+    <file src="..\CudaSparse\bin\Release\netstandard2.0\CudaSparse.xml" target="lib/netstandard2.0/" />
+    <file src="..\CudaSparse\bin\Release\netstandard2.0\CudaSparse.dll" target="lib/netstandard2.0/" />
 
-    <file src="..\NVGraph\bin\Release\netstandard2.0\NVGraph.deps.json" target="lib/" />
-    <file src="..\NVGraph\bin\Release\netstandard2.0\NVGraph.xml" target="lib/" />
-    <file src="..\NVGraph\bin\Release\netstandard2.0\NVGraph.dll" target="lib/" />
+    <file src="..\NVGraph\bin\Release\netstandard2.0\NVGraph.deps.json" target="lib/netstandard2.0/" />
+    <file src="..\NVGraph\bin\Release\netstandard2.0\NVGraph.xml" target="lib/netstandard2.0/" />
+    <file src="..\NVGraph\bin\Release\netstandard2.0\NVGraph.dll" target="lib/netstandard2.0/" />
 
-    <file src="..\NVml\bin\Release\netstandard2.0\NVml.deps.json" target="lib/" />
-    <file src="..\NVml\bin\Release\netstandard2.0\NVml.xml" target="lib/" />
-    <file src="..\NVml\bin\Release\netstandard2.0\NVml.dll" target="lib/" />
+    <file src="..\NVml\bin\Release\netstandard2.0\ManagedNVml.deps.json" target="lib/netstandard2.0/" />
+    <file src="..\NVml\bin\Release\netstandard2.0\ManagedNVml.xml" target="lib/netstandard2.0/" />
+    <file src="..\NVml\bin\Release\netstandard2.0\ManagedNVml.dll" target="lib/netstandard2.0/" />
 
-    <file src="..\NVRTC\bin\Release\netstandard2.0\NVRTC.deps.json" target="lib/" />
-    <file src="..\NVRTC\bin\Release\netstandard2.0\NVRTC.xml" target="lib/" />
-    <file src="..\NVRTC\bin\Release\netstandard2.0\NVRTC.dll" target="lib/" />
+    <file src="..\NVRTC\bin\Release\netstandard2.0\NVRTC.deps.json" target="lib/netstandard2.0/" />
+    <file src="..\NVRTC\bin\Release\netstandard2.0\NVRTC.xml" target="lib/netstandard2.0/" />
+    <file src="..\NVRTC\bin\Release\netstandard2.0\NVRTC.dll" target="lib/netstandard2.0/" />
 
   </files>
 </package>
