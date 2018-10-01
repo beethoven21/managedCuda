@@ -1,27 +1,27 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
-  <Import Project="../ManagedCUDA.targets" />
-
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  <Import Project="..\ManagedCUDA.targets" />
   <PropertyGroup>
     <PackageId>ManagedCuda-CUSOLVE.NETStandard</PackageId>
     <title>ManagedCuda $(BaseVersion) CUSOLVE for .NET Standard</title>
     <description>
     managedCuda-wrapper for CUSOLVE, only for x64-platform. $(NETStandardNote)  
-    </description>   
-
+    </description>
     <RootNamespace>ManagedCuda.CudaSolve</RootNamespace>
     <AssemblyName>CudaSolve</AssemblyName>
     <ProjectGuid>{B5DE3857-D0B2-4EBB-B2CB-4BFCF57A7488}</ProjectGuid>
-    <SignAssembly>false</SignAssembly>  
-    <PublicSign>false</PublicSign>    
+    <SignAssembly>false</SignAssembly>
+    <PublicSign>false</PublicSign>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
   </PropertyGroup>
-
   <ItemGroup>
-    <ProjectReference Include="../ManagedCUDA/ManagedCUDA.csproj" />
-    <ProjectReference Include="../CudaBlas/CudaBlas.csproj" />
-    <ProjectReference Include="../CudaSparse/CudaSparse.csproj" />
+    <ProjectReference Include="..\ManagedCUDA\ManagedCUDA.csproj" />
+    <ProjectReference Include="..\CudaBlas\CudaBlas.csproj" />
+    <ProjectReference Include="..\CudaSparse\CudaSparse.csproj" />
   </ItemGroup>
-
   <ItemGroup>
     <Compile Include="CsrQrInfo.cs" />
     <Compile Include="CudaSolveDense.cs" />
@@ -30,19 +30,16 @@
     <Compile Include="CudaSolveSparse.cs" />
     <Compile Include="CudaSolveTypes.cs" />
     <Compile Include="Refactorization.cs" />
-  </ItemGroup> 
-
-  <ItemGroup>  
-    <Content Include="../StubsForLinux/libcusolver64_91.so" PackagePath="runtimes/linux-x64/native">
+  </ItemGroup>
+  <!-- ItemGroup>
+    <Content Include="..\StubsForLinux\libcusolver64_91.so" PackagePath="runtimes\linux-x64\native">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>    
-    <Content Include="../Redist/Linux/libcusolver.so.9.1" PackagePath="runtimes/linux-x64/native">
+    </Content>
+    <Content Include="..\Redist\Linux\libcusolver.so.9.1" PackagePath="runtimes\linux-x64\native">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>    
-    <Content Include="../Redist/Windows/cusolver64_91.dll" PackagePath="runtimes/win-x64/native">
+    </Content>
+    <Content Include="..\Redist\Windows\cusolver64_91.dll" PackagePath="runtimes\win-x64\native">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>            
-  </ItemGroup>     
-
+    </Content>
+  </ItemGroup -->
 </Project>
-

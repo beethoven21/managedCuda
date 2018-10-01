@@ -1,41 +1,39 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
   <Import Project="../ManagedCUDA.targets" />
-
   <PropertyGroup>
     <PackageId>ManagedCuda-CUBLAS.NETStandard</PackageId>
     <title>ManagedCuda $(BaseVersion) CUBLAS for .NET Standard</title>
     <description>
     managedCuda-wrapper for CUBLAS, only for x64-platform. $(NETStandardNote)
-    </description>   
-
+    </description>
     <RootNamespace>ManagedCuda.CudaBlas</RootNamespace>
     <AssemblyName>CudaBlas</AssemblyName>
     <ProjectGuid>{A4F79FC4-65E9-4568-9660-BB0294FC5931}</ProjectGuid>
-    <AssemblyOriginatorKeyFile>CudaBlasKey.snk</AssemblyOriginatorKeyFile>    
+    <AssemblyOriginatorKeyFile>CudaBlasKey.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
   </PropertyGroup>
-
   <ItemGroup>
-    <ProjectReference Include="../ManagedCUDA/ManagedCUDA.csproj" />
+    <ProjectReference Include="..\ManagedCUDA\ManagedCUDA.csproj" />
   </ItemGroup>
-
   <ItemGroup>
     <Compile Include="CudaBlasNativeMethods.cs" />
     <Compile Include="CudaBlasException.cs" />
     <Compile Include="CudaBlasHandler.cs" />
     <Compile Include="CudaBlasTypes.cs" />
-  </ItemGroup> 
-
-  <ItemGroup>  
-    <Content Include="../StubsForLinux/libcublas64_91.so" PackagePath="runtimes/linux-x64/native">
+  </ItemGroup>
+  <!-- ItemGroup>
+    <Content Include="..\StubsForLinux\libcublas64_91.so" PackagePath="runtimes\linux-x64\native">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>    
-    <Content Include="../Redist/Linux/libcublas.so.9.1" PackagePath="runtimes/linux-x64/native">
+    </Content>
+    <Content Include="..\Redist\Linux\libcublas.so.9.1" PackagePath="runtimes\linux-x64\native">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>    
-    <Content Include="../Redist/Windows/cublas64_91.dll" PackagePath="runtimes/win-x64/native">
+    </Content>
+    <Content Include="..\Redist\Windows\cublas64_91.dll" PackagePath="runtimes\win-x64\native">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>        
-  </ItemGroup>      
-
+    </Content>
+  </ItemGroup -->
 </Project>

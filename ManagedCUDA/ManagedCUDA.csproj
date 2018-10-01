@@ -1,7 +1,5 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <Import Project="../ManagedCUDA.targets" />
-
+<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  <Import Project="..\ManagedCUDA.targets" />
   <PropertyGroup>
     <PackageId>ManagedCuda.NETStandard</PackageId>
     <title>ManagedCuda $(BaseVersion) for .NET Standard</title>
@@ -9,14 +7,17 @@
     ManagedCuda aims an easy integration of NVidia's CUDA in .NET applications written in C#, 
     Visual Basic or any other .NET language. This package includes only the core ManagedCuda 
     library and no additional CUDA libraries. $(NETStandardNote)
-    </description>   
-
+    </description>
     <RootNamespace>ManagedCuda</RootNamespace>
     <AssemblyName>ManagedCuda</AssemblyName>
     <ProjectGuid>{F5A866CC-151E-472A-8020-75F62D74D687}</ProjectGuid>
-    <AssemblyOriginatorKeyFile>ManagedCUDAKey.snk</AssemblyOriginatorKeyFile>    
+    <AssemblyOriginatorKeyFile>ManagedCUDAKey.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
   </PropertyGroup>
-
   <ItemGroup>
     <Compile Include="BasicTypes.cs" />
     <Compile Include="CudaContext.cs" />
@@ -109,11 +110,12 @@
       <LastGenOutput>CudaRegisteredHostMemoryFixedTypes.cs</LastGenOutput>
     </None>
   </ItemGroup>
-
-  <ItemGroup>  
-    <Content Include="../StubsForLinux/libnvcuda.so" PackagePath="runtimes/linux-x64/native">
+  <!-- ItemGroup>
+    <Content Include="..\StubsForLinux\libnvcuda.so" PackagePath="runtimes\linux-x64\native">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>     
-  </ItemGroup>      
-
+    </Content>
+  </ItemGroup -->
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
 </Project>
