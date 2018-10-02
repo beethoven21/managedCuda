@@ -37,13 +37,13 @@ namespace ManagedCuda.CudaSparse
 	{
 		//unfortunately Nvidia provides different dll-names for x86 and x64. Use preprocessor macro to switch names:
 #if _x64
-		internal const string CUSPARSE_API_DLL_NAME = "cusparse64_91";
+		internal const string CUSPARSE_API_DLL_NAME = "cusparse64_100";
 #else
-		internal const string CUSPARSE_API_DLL_NAME = "cusparse32_91";
+		internal const string CUSPARSE_API_DLL_NAME = "cusparse32_100";
 #endif
-		#region CUSPARSE initialization and managment routines
-		/// <summary/>
-		[DllImport(CUSPARSE_API_DLL_NAME)]
+        #region CUSPARSE initialization and managment routines
+        /// <summary/>
+        [DllImport(CUSPARSE_API_DLL_NAME)]
 		public static extern cusparseStatus cusparseCreate(ref cusparseContext handle);
 		/// <summary/>
 		[DllImport(CUSPARSE_API_DLL_NAME)]

@@ -36,14 +36,14 @@ namespace ManagedCuda.CudaSolve
 	public static class CudaSolveNativeMethods
 	{
 #if _x64
-		internal const string CUSOLVE_API_DLL_NAME = "cusolver64_91";
+		internal const string CUSOLVE_API_DLL_NAME = "cusolver64_100";
 #else
-		internal const string CUSOLVE_API_DLL_NAME = "cusolver32_91";
+		internal const string CUSOLVE_API_DLL_NAME = "cusolver32_100";
 #endif
-		/// <summary>
-		/// The cuSolverDN library was designed to solve dense linear systems of the form Ax=B
-		/// </summary>
-		public static class Dense
+        /// <summary>
+        /// The cuSolverDN library was designed to solve dense linear systems of the form Ax=B
+        /// </summary>
+        public static class Dense
 		{
 			#region Init
 			/// <summary>

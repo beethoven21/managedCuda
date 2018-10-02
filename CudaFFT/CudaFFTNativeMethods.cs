@@ -35,26 +35,26 @@ namespace ManagedCuda.CudaFFT
 	{        
 		//unfortunately Nvidia provides different dll-names for x86 and x64. Use preprocessor macro to switch names:
 #if _x64
-		internal const string CUFFT_API_DLL_NAME = "cufft64_91";
+		internal const string CUFFT_API_DLL_NAME = "cufft64_100";
 #else
-		internal const string CUFFT_API_DLL_NAME = "cufft32_91";
+		internal const string CUFFT_API_DLL_NAME = "cufft32_100";
 #endif
 
 
-		/// <summary>
-		/// Creates a 1D FFT plan configuration for a specified signal size and data
-		/// type. The <c>batch</c> input parameter tells CUFFT how many 1D
-		/// transforms to configure.
-		/// </summary>
-		/// <param name="plan">Pointer to a <see cref="cufftHandle"/> object</param>
-		/// <param name="nx">The transform size (e.g., 256 for a 256-point FFT)</param>
-		/// <param name="type">The transform data type (e.g., C2C for complex to complex)</param>
-		/// <param name="batch">Number of transforms of size nx</param>
-		/// <returns>cufftResult Error Codes: <see cref="cufftResult.Success"/>, <see cref="cufftResult.AllocFailed"/>, 
-		/// <see cref="cufftResult.InvalidType"/>, <see cref="cufftResult.InvalidValue"/>, <see cref="cufftResult.InternalError"/>, 
-		/// <see cref="cufftResult.SetupFailed"/>, <see cref="cufftResult.InvalidSize"/>, 
-		/// </returns>
-		[DllImport(CUFFT_API_DLL_NAME)]
+        /// <summary>
+        /// Creates a 1D FFT plan configuration for a specified signal size and data
+        /// type. The <c>batch</c> input parameter tells CUFFT how many 1D
+        /// transforms to configure.
+        /// </summary>
+        /// <param name="plan">Pointer to a <see cref="cufftHandle"/> object</param>
+        /// <param name="nx">The transform size (e.g., 256 for a 256-point FFT)</param>
+        /// <param name="type">The transform data type (e.g., C2C for complex to complex)</param>
+        /// <param name="batch">Number of transforms of size nx</param>
+        /// <returns>cufftResult Error Codes: <see cref="cufftResult.Success"/>, <see cref="cufftResult.AllocFailed"/>, 
+        /// <see cref="cufftResult.InvalidType"/>, <see cref="cufftResult.InvalidValue"/>, <see cref="cufftResult.InternalError"/>, 
+        /// <see cref="cufftResult.SetupFailed"/>, <see cref="cufftResult.InvalidSize"/>, 
+        /// </returns>
+        [DllImport(CUFFT_API_DLL_NAME)]
 		public static extern cufftResult cufftPlan1d([In, Out] ref cufftHandle plan, [In] int nx, [In] cufftType type, [In] int batch);
 
 		/// <summary>

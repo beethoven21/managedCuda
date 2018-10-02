@@ -15,18 +15,20 @@
       <EmbedAllSources>true</EmbedAllSources>      
       <Platform>x64</Platform>      
 
-      <BaseVersion>9.1</BaseVersion>
+      <BaseVersion>10.0</BaseVersion>
       <PackageVersion>$(BaseVersion).$(Rev)$(Prerelease)</PackageVersion>
       <AssemblyVersion>$(BaseVersion).$(Rev)</AssemblyVersion>
       <FileVersion>$(AssemblyVersion)</FileVersion>  
 
       <NETStandardNote>
 
-      CUDA Toolkit: 9.1.85.3
-      Minimum NVIDIA GPU driver: 387.92
+      CUDA Toolkit: 10.0.130
+      Minimum NVIDIA GPU driver: >= 411.31 (see https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html , Table 1)
 
-      This package is an unofficial port of ManagedCUDA to .NET Standard 2.0 and was tested 
-      on Linux and Windows (x64). 
+      This package is an unofficial fork of ManagedCUDA, from Surban (https://github.com/surban/managedCuda),
+      which was forked from Kunzmi (https://github.com/kunzmi/managedCuda). This is an updated version
+      of ManagedCUDA for CUDA GPU Toolkit 10, nuget package scripts (missing from the other sources),
+      and with other clean ups.
       
       This package contains components that are property of Nvidia Corporation and redistributed
       according to the "CUDA Supplement to Software License Agreement" of the 

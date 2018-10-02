@@ -52,7 +52,7 @@ namespace ManagedCuda
         /// </summary>
         public static Version Version
         {
-            get { return new Version(9, 1); }
+            get { return new Version(10, 0); }
         }
 
         #region Initialization

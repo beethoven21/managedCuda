@@ -35,15 +35,15 @@ namespace ManagedCuda.CudaBlas
 	{
 		//unfortunately Nvidia provides different dll-names for x86 and x64. Use preprocessor macro to switch names:
 #if _x64
-		internal const string CUBLAS_API_DLL_NAME = "cublas64_91";
+		internal const string CUBLAS_API_DLL_NAME = "cublas64_100";
 #else
-		internal const string CUBLAS_API_DLL_NAME = "cublas32_91";
+		internal const string CUBLAS_API_DLL_NAME = "cublas32_100";
 #endif
 
-		#region Basics
-		/// <summary>
-		/// </summary>
-		[DllImport(CUBLAS_API_DLL_NAME)]
+        #region Basics
+        /// <summary>
+        /// </summary>
+        [DllImport(CUBLAS_API_DLL_NAME)]
 		public static extern CublasStatus cublasCreate_v2(ref CudaBlasHandle handle);
 		/// <summary>
 		/// </summary>

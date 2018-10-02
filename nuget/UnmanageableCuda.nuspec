@@ -5,7 +5,7 @@
     <id>UnmanageableCuda</id>
     <title>UnmanageableCuda</title>
 
-    <version>9.2148.1</version>
+    <version>10.130.1</version>
 
     <!-- Authors contain text that appears directly on the gallery -->
     <authors>Ken Domino</authors>
@@ -23,7 +23,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Forked from Surban (https://surban.github.io/managedCuda/),
        which was forked from Kunzmi (https://kunzmi.github.io/managedCuda/),
-       slightly newer and improved.</description>
+       slightly newer and improved.
+       You must install NVIDIA GPU Toolkit 10.0.130.
+    </description>
     <releaseNotes>
     </releaseNotes>
 

@@ -36,17 +36,17 @@ namespace ManagedCuda.CudaRand
 	{
 		//unfortunately Nvidia provides different dll-names for x86 and x64. Use preprocessor macro to switch names:
 #if _x64
-		internal const string CURAND_API_DLL_NAME = "curand64_91";
+		internal const string CURAND_API_DLL_NAME = "curand64_100";
 #else
-		internal const string CURAND_API_DLL_NAME = "curand32_91";
+		internal const string CURAND_API_DLL_NAME = "curand32_100";
 #endif
 
 
-		/// <summary>
-		/// Creates a new random number generator of type rng_type and returns it in ref generator.
-		/// </summary>
-		/// <returns>Status</returns>
-		[DllImport(CURAND_API_DLL_NAME)]
+        /// <summary>
+        /// Creates a new random number generator of type rng_type and returns it in ref generator.
+        /// </summary>
+        /// <returns>Status</returns>
+        [DllImport(CURAND_API_DLL_NAME)]
 		public static extern CurandStatus curandCreateGenerator(ref CurandGenerator generator, GeneratorType rng_type);
 
 

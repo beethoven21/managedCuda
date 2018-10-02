@@ -1,2 +1,2 @@
-nuget pack UnmanageableCuda.nuspec -Version 9.2148.1
+nuget pack UnmanageableCuda.nuspec -Version 10.130.1
 
