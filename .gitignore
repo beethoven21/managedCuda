@@ -63,3 +63,4 @@ Redist/Windows/*.dll
 Redist/pack.sh
 Redist/redist.7z
 .vs/
+nuget/

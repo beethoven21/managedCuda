@@ -3,7 +3,7 @@
   <metadata>
     <!-- The identifier that must be unique within the hosting gallery -->
     <id>UnmanageableCuda</id>
-    <title>UnmanageableCuda -- Another fork of ManagedCuda, for .NET Standard, slightly better/cleaner.</title>
+    <title>UnmanageableCuda</title>
 
     <version>9.2148.1</version>
 
@@ -129,6 +129,10 @@
     <file src="..\NVRTC\bin\Release\netstandard2.0\NVRTC.deps.json" target="lib/netstandard2.0/" />
     <file src="..\NVRTC\bin\Release\netstandard2.0\NVRTC.xml" target="lib/netstandard2.0/" />
     <file src="..\NVRTC\bin\Release\netstandard2.0\NVRTC.dll" target="lib/netstandard2.0/" />
+
+    <file src="..\ManagedCUDA\bin\Release\netstandard2.0\ManagedCuda.deps.json" target="lib/netstandard2.0/" />
+    <file src="..\ManagedCUDA\bin\Release\netstandard2.0\ManagedCuda.xml" target="lib/netstandard2.0/" />
+    <file src="..\ManagedCUDA\bin\Release\netstandard2.0\ManagedCuda.dll" target="lib/netstandard2.0/" />
 
   </files>
 </package>
