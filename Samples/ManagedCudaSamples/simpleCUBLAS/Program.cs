@@ -110,10 +110,10 @@ namespace simpleCUBLAS
                 ref_norm += h_C_ref[i] * h_C_ref[i];
             }
 
-            error_norm = (float)Math.Sqrt((double)error_norm);
-            ref_norm = (float)Math.Sqrt((double)ref_norm);
+            error_norm = (float)System.Math.Sqrt((double)error_norm);
+            ref_norm = (float)System.Math.Sqrt((double)ref_norm);
 
-            if (Math.Abs(ref_norm) < 1e-7)
+            if (System.Math.Abs(ref_norm) < 1e-7)
             {
                 Console.WriteLine("!!!! reference norm is 0");
                 return;
