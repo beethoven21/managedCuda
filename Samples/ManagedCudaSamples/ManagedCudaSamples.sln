@@ -85,14 +85,18 @@ Global
 		{D9771D42-37D2-4831-ABB9-8C8D3B961C8D}.Release|x64.ActiveCfg = Release|x64
 		{D9771D42-37D2-4831-ABB9-8C8D3B961C8D}.Release|x64.Build.0 = Release|x64
 		{D9771D42-37D2-4831-ABB9-8C8D3B961C8D}.Release|x86.ActiveCfg = Release|x64
-		{DB954399-7AA4-4835-BD98-C11E130049EA}.Debug|Any CPU.ActiveCfg = Debug|x64
-		{DB954399-7AA4-4835-BD98-C11E130049EA}.Debug|x64.ActiveCfg = Debug|x64
-		{DB954399-7AA4-4835-BD98-C11E130049EA}.Debug|x64.Build.0 = Debug|x64
-		{DB954399-7AA4-4835-BD98-C11E130049EA}.Debug|x86.ActiveCfg = Debug|x64
-		{DB954399-7AA4-4835-BD98-C11E130049EA}.Release|Any CPU.ActiveCfg = Release|x64
-		{DB954399-7AA4-4835-BD98-C11E130049EA}.Release|x64.ActiveCfg = Release|x64
-		{DB954399-7AA4-4835-BD98-C11E130049EA}.Release|x64.Build.0 = Release|x64
-		{DB954399-7AA4-4835-BD98-C11E130049EA}.Release|x86.ActiveCfg = Release|x64
+		{DB954399-7AA4-4835-BD98-C11E130049EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB954399-7AA4-4835-BD98-C11E130049EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB954399-7AA4-4835-BD98-C11E130049EA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DB954399-7AA4-4835-BD98-C11E130049EA}.Debug|x64.Build.0 = Debug|Any CPU
+		{DB954399-7AA4-4835-BD98-C11E130049EA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DB954399-7AA4-4835-BD98-C11E130049EA}.Debug|x86.Build.0 = Debug|Any CPU
+		{DB954399-7AA4-4835-BD98-C11E130049EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB954399-7AA4-4835-BD98-C11E130049EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB954399-7AA4-4835-BD98-C11E130049EA}.Release|x64.ActiveCfg = Release|Any CPU
+		{DB954399-7AA4-4835-BD98-C11E130049EA}.Release|x64.Build.0 = Release|Any CPU
+		{DB954399-7AA4-4835-BD98-C11E130049EA}.Release|x86.ActiveCfg = Release|Any CPU
+		{DB954399-7AA4-4835-BD98-C11E130049EA}.Release|x86.Build.0 = Release|Any CPU
 		{D14002D9-E62F-42CF-8281-8ADB964EE850}.Debug|Any CPU.ActiveCfg = Debug|x64
 		{D14002D9-E62F-42CF-8281-8ADB964EE850}.Debug|x64.ActiveCfg = Debug|x64
 		{D14002D9-E62F-42CF-8281-8ADB964EE850}.Debug|x64.Build.0 = Debug|x64
@@ -260,5 +264,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF90A5E3-5481-43C9-A68C-AE229132E9C0}
 	EndGlobalSection
 EndGlobal
