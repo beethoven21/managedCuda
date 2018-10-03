@@ -87,3 +87,9 @@ Samples/ManagedCudaSamples/vectorAdd/obj/
 Samples/ManagedCudaSamples/vectorAdd_nvrtc/bin/
 Samples/ManagedCudaSamples/vectorAdd_nvrtc/obj/
 *.nupkg
+Samples/ManagedCudaSamples/simpleCUFFTKernel/x64/
+Samples/ManagedCudaSamples/simpleOccupancyKernel/x64/
+Samples/ManagedCudaSamples/simplePitchLinearTextureKernel/x64/
+Samples/ManagedCudaSamples/simpleStreamsKernel/x64/
+Samples/ManagedCudaSamples/vectorAddKernel/x64/
+Samples/ManagedCudaSamples/FluidKernel/x64/

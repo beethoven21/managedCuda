@@ -20,7 +20,6 @@ ManagedCUDA aims an easy integration of NVidia's CUDA in .NET applications writt
 * Added project files to SLN project.
 * Fixed documentation of what StubsForLinux is and how to rebuild.
 * Added explicit Nuget package creation as I have no idea where or how it was originally done.
-* Disambiguate Math calls (conflict between System.Math and Cuda Math).
 
 
 

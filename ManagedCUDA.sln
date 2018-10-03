@@ -24,6 +24,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nvml", "Nvml\Nvml.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CudaDNN", "CudaDNN\CudaDNN.csproj", "{CC7EF2DB-3CE2-4621-9B65-26DF3AD045BB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{25D39299-A138-4C93-A750-A57AA6E1A9B1}"
+	ProjectSection(SolutionItems) = preProject
+		.travis.yml = .travis.yml
+		global.json = global.json
+		LICENSE.txt = LICENSE.txt
+		ManagedCUDA.targets = ManagedCUDA.targets
+		Nvidia_CUDA_Logo.jpg = Nvidia_CUDA_Logo.jpg
+		README.md = README.md
+		Revision.targets = Revision.targets
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
