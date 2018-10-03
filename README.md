@@ -12,6 +12,18 @@ It has been tested on Linux and Microsoft Windows.
 
 ManagedCUDA aims an easy integration of NVidia's CUDA in .NET applications written in C#, F#, Visual Basic or any other .NET language.
 
+
+## Updates from Surban fork
+
+* Upgrade to Visual Studio 2017.
+* Upgrade to NVIDIA GPU Toolkit 10.0.
+* Added project files to SLN project.
+* Fixed documentation of what StubsForLinux is and how to rebuild.
+* Added explicit Nuget package creation as I have no idea where or how it was originally done.
+* Disambiguate Math calls (conflict between System.Math and Cuda Math).
+
+
+
 ## Documentation
 
 Reference documentation is available at <http://surban.github.io/managedCuda>.
