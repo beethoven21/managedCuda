@@ -3,15 +3,8 @@
   <Import Project="Revision.targets" />
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-  </PropertyGroup>
-
-  <PropertyGroup>
-      <EnableDefaultCompileItems>False</EnableDefaultCompileItems>    
       <SignAssembly>true</SignAssembly>    
       <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>    
-      <AllowUnsafeBlocks>true</AllowUnsafeBlocks>    
       <GenerateAssemblyInfo>true</GenerateAssemblyInfo>    
       <GenerateDocumentationFile>true</GenerateDocumentationFile>
       <DebugSymbols>true</DebugSymbols>

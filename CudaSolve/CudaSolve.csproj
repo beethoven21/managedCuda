@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CudaSparse\CudaSparse.csproj" />
     <ProjectReference Include="..\ManagedCUDA\ManagedCUDA.csproj" />
     <ProjectReference Include="..\CudaBlas\CudaBlas.csproj" />
   </ItemGroup>
