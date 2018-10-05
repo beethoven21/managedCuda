@@ -1,17 +1,14 @@
 # ManagedCuda.NETStandard
 
-[![Build Status](https://travis-ci.org/surban/managedCuda.svg?branch=master)](https://travis-ci.org/surban/managedCuda)
+This is a forked version of ManagedCuda from Surban (https://github.com/surban/managedCuda),
+which was forked from original author Kunzmi (https://github.com/kunzmi/managedCuda).
 
-Donate a beer to help the original author keep managedCuda up to date :)
-[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=kunzmi&url=https://github.com/kunzmi/managedCuda&title=managedCuda&language=&tags=github&category=software)
-or
-[![Support via PayPal](https://www.paypalobjects.com/en_GB/i/btn/btn_donate_SM.gif)](https://www.paypal.me/kunzmi/)
-
-This is a port of [ManagedCuda](https://kunzmi.github.io/managedCuda/) to .NET Standard 2.0.
-It has been tested on Linux and Microsoft Windows.
-
-ManagedCUDA aims an easy integration of NVidia's CUDA in .NET applications written in C#, F#, Visual Basic or any other .NET language.
-
+Unfortunately, Surban''s port did not address some fundamentals of rolling forward to CUDA 9,
+and introduced several non-portable problems. This version addresses those issues, and rolls forward
+to the GPU Toolkit version 10. But, the fundamental problem here is that with each release,
+the code has to be hand-edited for the newest version. This fork stops with this release. I will be
+working out a whole new, automatic-generated API from header files. SWIG is too labor intensive. In addition,
+I plan on working out an API to handle older versions that a user may have installed.
 
 ## Updates from Surban fork
 
@@ -23,11 +20,11 @@ ManagedCUDA aims an easy integration of NVidia's CUDA in .NET applications writt
 * Fixed documentation of what StubsForLinux is and how to rebuild.
 * Added explicit Nuget package creation as I have no idea where or how it was originally done.
 * Samples updated--netstandard2.0 framework incompatible with Net Framework <4.6.1. Hangover from Surban, did not port samples as far as I can tell. See https://docs.microsoft.com/en-us/dotnet/standard/net-standard
-
+* To do: Update the API for version 10. Surban's fork says it works with version 9, but it was never updated with new declarations, e.g., CUdevice_attribute, cuDeviceGetUuid().
 
 ## Documentation
 
-Reference documentation is available at <http://surban.github.io/managedCuda>.
+Older reference documentation is available at <http://surban.github.io/managedCuda> or <https://kunzmi.github.io/managedCuda/>.
 
 ## NuGet packages
 
