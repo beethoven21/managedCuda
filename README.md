@@ -5,10 +5,13 @@ which was forked from original author Kunzmi (https://github.com/kunzmi/managedC
 
 Unfortunately, Surban's port did not address some fundamentals of rolling forward to CUDA 9,
 and introduced several non-portable problems. This version addresses those issues, and rolls forward
-to the GPU Toolkit version 10. But, the fundamental problem here is that with each release,
-the code has to be hand-edited for the newest version. This fork stops with this release. I will be
-working out a whole new, automatic-generated API from header files. SWIG is too labor intensive. In addition,
-I plan on working out an API to handle older versions that a user may have installed.
+to the GPU Toolkit version 10. I'm planning on just this release, no others.
+
+The fundamental problem with ManagedCuda is that with each release
+the code has to be hand-edited for the newest version. I will be
+working out a whole new, automatic-generated API from header files.
+I currently maintain Swigged.CUDA, which is a similar API to ManagedCuda. However,
+the SWIG-generated API for CUDA requires still too much labor.
 
 ## Updates from Surban fork
 
