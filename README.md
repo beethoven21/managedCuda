@@ -3,7 +3,7 @@
 This is a forked version of ManagedCuda from Surban (https://github.com/surban/managedCuda),
 which was forked from original author Kunzmi (https://github.com/kunzmi/managedCuda).
 
-Unfortunately, Surban''s port did not address some fundamentals of rolling forward to CUDA 9,
+Unfortunately, Surban's port did not address some fundamentals of rolling forward to CUDA 9,
 and introduced several non-portable problems. This version addresses those issues, and rolls forward
 to the GPU Toolkit version 10. But, the fundamental problem here is that with each release,
 the code has to be hand-edited for the newest version. This fork stops with this release. I will be
@@ -28,4 +28,4 @@ Older reference documentation is available at <http://surban.github.io/managedCu
 
 ## NuGet packages
 
-Prebuilt NuGet packages are [available on nuget.org](https://www.nuget.org/packages?q=ManagedCuda+NETStandard).
+Prebuilt NuGet packages are [available on nuget.org](https://www.nuget.org/packages/UnmanageableCuda/).
