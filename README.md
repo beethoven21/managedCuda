@@ -1,4 +1,4 @@
-# ManagedCuda.NETStandard
+# UnmanageableCuda (aka ManagedCuda)
 
 This is a forked version of ManagedCuda from Surban (https://github.com/surban/managedCuda),
 which was forked from original author Kunzmi (https://github.com/kunzmi/managedCuda).
