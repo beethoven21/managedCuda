@@ -16,12 +16,13 @@ ManagedCUDA aims an easy integration of NVidia's CUDA in .NET applications writt
 ## Updates from Surban fork
 
 * Upgrade to Visual Studio 2017.
+* Fixed CSPROJ file issues introduced by Surban. In doing an upgrade of CSPROJ files to VS 2017, I found
+  that the generated CSPROJ files did not work within VS (see https://developercommunity.visualstudio.com/content/problem/349096/multiple-issues-with-vs2017-reading-dotnet-generat.html).
 * Upgrade to NVIDIA GPU Toolkit 10.0.
-* Added project files to SLN project.
+* Added unknown/unlisted project files to SLN project.
 * Fixed documentation of what StubsForLinux is and how to rebuild.
 * Added explicit Nuget package creation as I have no idea where or how it was originally done.
-* Samples updated--netstandard2.0 framework incompatible with Net Framework <4.6.1. Hangover from Surban, never ported/checked. See https://docs.microsoft.com/en-us/dotnet/standard/net-standard
-
+* Samples updated--netstandard2.0 framework incompatible with Net Framework <4.6.1. Hangover from Surban, did not port samples as far as I can tell. See https://docs.microsoft.com/en-us/dotnet/standard/net-standard
 
 
 ## Documentation

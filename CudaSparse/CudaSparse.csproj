@@ -1,53 +1,14 @@
-﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <Import Project="..\ManagedCUDA.targets" />
+
   <PropertyGroup>
-    <PackageId>ManagedCuda-CUSPARSE.NETStandard</PackageId>
-    <title>ManagedCuda $(BaseVersion) CUSPARSE for .NET Standard</title>
-    <description>
-    managedCuda-wrapper for CUSPARSE, only for x64-platform. $(NETStandardNote)  
-    </description>
-    <RootNamespace>ManagedCuda.CudaSparse</RootNamespace>
-    <AssemblyName>CudaSparse</AssemblyName>
-    <ProjectGuid>{6F782AA1-E9CF-4CE9-83FD-4FC035D45BC3}</ProjectGuid>
-    <AssemblyOriginatorKeyFile>CudaSparseKey.snk</AssemblyOriginatorKeyFile>
-    <FileUpgradeFlags>
-    </FileUpgradeFlags>
-    <UpgradeBackupLocation>
-    </UpgradeBackupLocation>
-    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\ManagedCUDA\ManagedCUDA.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="CudaSparseBsrsm2Info.cs" />
-    <Compile Include="CudaSparseColorInfo.cs" />
-    <Compile Include="CudaSparseContext.cs" />
-    <Compile Include="CudaSparseCsrgemm2Info.cs" />
-    <Compile Include="CudaSparseCsru2csrInfo.cs" />
-    <Compile Include="CudaSparseException.cs" />
-    <Compile Include="CudaSparseHybMat.cs" />
-    <Compile Include="CudaSparseMatrixDescriptor.cs" />
-    <Compile Include="CudaSparseNativeMethods.cs" />
-    <Compile Include="CudaSparsePruneInfo.cs" />
-    <Compile Include="CudaSparseSolveAnalysisInfo.cs" />
-    <Compile Include="CudaSparseTypes.cs" />
-    <Compile Include="CudaSparseCsrsv2Info.cs" />
-    <Compile Include="CudaSparseCsric02Info.cs" />
-    <Compile Include="CudaSparseCsrilu02Info.cs" />
-    <Compile Include="CudaSparseBsrilu02Info.cs" />
-    <Compile Include="CudaSparseBsrsv2Info.cs" />
-    <Compile Include="CudaSparseBsric02Info.cs" />
-  </ItemGroup>
-  <!-- ItemGroup>
-    <Content Include="..\StubsForLinux\libcusparse64_91.so" PackagePath="runtimes\linux-x64\native">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Redist\Linux\libcusparse.so.9.1" PackagePath="runtimes\linux-x64\native">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Redist\Windows\cusparse64_91.dll" PackagePath="runtimes\win-x64\native">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup -->
+
 </Project>

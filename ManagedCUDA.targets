@@ -3,7 +3,11 @@
   <Import Project="Revision.targets" />
 
   <PropertyGroup>
-      <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup>
       <EnableDefaultCompileItems>False</EnableDefaultCompileItems>    
       <SignAssembly>true</SignAssembly>    
       <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>    
@@ -14,35 +18,10 @@
       <DebugType>embedded</DebugType>
       <EmbedAllSources>true</EmbedAllSources>      
       <Platform>x64</Platform>      
-
       <BaseVersion>10.0</BaseVersion>
       <PackageVersion>$(BaseVersion).$(Rev)$(Prerelease)</PackageVersion>
       <AssemblyVersion>$(BaseVersion).$(Rev)</AssemblyVersion>
       <FileVersion>$(AssemblyVersion)</FileVersion>  
-
-      <NETStandardNote>
-
-      CUDA Toolkit: 10.0.130
-      Minimum NVIDIA GPU driver: >= 411.31 (see https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html , Table 1)
-
-      This package is an unofficial fork of ManagedCUDA, from Surban (https://github.com/surban/managedCuda),
-      which was forked from Kunzmi (https://github.com/kunzmi/managedCuda). This is an updated version
-      of ManagedCUDA for CUDA GPU Toolkit 10, nuget package scripts (missing from the other sources),
-      and with other clean ups.
-      
-      This package contains components that are property of Nvidia Corporation and redistributed
-      according to the "CUDA Supplement to Software License Agreement" of the 
-      "NVIDIA Software License Agreement". See the package license for details.
-      </NETStandardNote>
-      <authors>Michael Kunz, Sebastian Urban (.NET Standard port)</authors>
-      <Company>Michael Kunz, Sebastian Urban (.NET Standard port)</Company>      
-      <owners>Sebastian Urban</owners>
-      <Copyright>Copyright (C) 2016-2018</Copyright>
-      <requireLicenseAcceptance>true</requireLicenseAcceptance>
-      <PackageLicenseUrl>https://raw.githubusercontent.com/surban/managedCuda/v9.1/LICENSE.txt</PackageLicenseUrl>
-      <PackageProjectUrl>http://surban.github.io/managedCuda/</PackageProjectUrl>
-      <PackageTags>gpu cuda</PackageTags>
-      <PackageOutputPath>../Packages/$(Configuration)/</PackageOutputPath>      
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
