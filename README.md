@@ -11,7 +11,11 @@ The fundamental problem with ManagedCuda is that with each release
 the code has to be hand-edited for the newest version. I will be
 working out a whole new, automatic-generated API from header files.
 I currently maintain Swigged.CUDA, which is a similar API to ManagedCuda. However,
-the SWIG-generated API for CUDA requires still too much labor.
+the SWIG-generated API for CUDA requires still too much labor. I am forking ClangSharp
+and enhancing it to work with CUDA. Please use that when it is finished. Although
+it is not as nice as ManagedCuda (it is a lower-level API, much closer in appearance to
+the CUDA Driver API), it will be easier to maintain, and work with different versions
+of CUDA.
 
 ## Updates from Surban fork
 
