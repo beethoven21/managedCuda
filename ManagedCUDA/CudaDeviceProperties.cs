@@ -125,6 +125,14 @@ namespace ManagedCuda
         private bool _cooperativeLaunch;
         private bool _cooperativeMultiDeviceLaunch;
         private int _maxSharedMemoryPerBlockOptin;
+        private bool _canFlushRemoteWrites;
+        private bool _hostRegisterSupported;
+        private bool _pageableMemoryAccessUsesHostPageTables;
+        private bool _directManagedMemoryAccessFromHost;
+		private bool _virtualAddressManagementSupported;
+		private bool _handleTypePosixFileDescriptorSupported;
+		private bool _handleTypeWin32HandleSupported;
+		private bool _handleTypeWin32KMTHandleSupported;
 
 		// Properties
 		/// <summary>
@@ -974,5 +982,69 @@ namespace ManagedCuda
             get { return this._maxSharedMemoryPerBlockOptin; }
             internal set { this._maxSharedMemoryPerBlockOptin = value; }
         }
-    }
+        /// <summary>
+        /// Both the ::CU_STREAM_WAIT_VALUE_FLUSH flag and the ::CU_STREAM_MEM_OP_FLUSH_REMOTE_WRITES MemOp are supported on the device. See \ref CUDA_MEMOP for additional details.
+        /// </summary>
+        public bool CanFlushRemoteWrites
+        {
+            get { return this._canFlushRemoteWrites; }
+            internal set { this._canFlushRemoteWrites = value; }
+        }
+        /// <summary>
+        /// Device supports host memory registration via ::cudaHostRegister.
+        /// </summary>
+        public bool HostRegisterSupported
+        {
+            get { return this._hostRegisterSupported; }
+            internal set { this._hostRegisterSupported = value; }
+        }
+        /// <summary>
+        /// Device accesses pageable memory via the host's page tables.
+        /// </summary>
+        public bool PageableMemoryAccessUsesHostPageTables
+        {
+            get { return this._pageableMemoryAccessUsesHostPageTables; }
+            internal set { this._pageableMemoryAccessUsesHostPageTables = value; }
+        }
+        /// <summary>
+        /// The host can directly access managed memory on the device without migration.
+        /// </summary>
+        public bool DirectManagedMemoryAccessFromHost
+        {
+            get { return this._directManagedMemoryAccessFromHost; }
+            internal set { this._directManagedMemoryAccessFromHost = value; }
+		}
+		/// <summary>
+		/// Device supports virtual address management APIs like ::cuMemAddressReserve, ::cuMemCreate, ::cuMemMap and related APIs
+		/// </summary>
+		public bool VirtualAddressManagementSupported
+		{
+			get { return this._virtualAddressManagementSupported; }
+			internal set { this._virtualAddressManagementSupported = value; }
+		}
+		/// <summary>
+		/// Device supports exporting memory to a posix file descriptor with ::cuMemExportToShareableHandle, if requested via ::cuMemCreate
+		/// </summary>
+		public bool HandleTypePosixFileDescriptorSupported
+		{
+			get { return this._handleTypePosixFileDescriptorSupported; }
+			internal set { this._handleTypePosixFileDescriptorSupported = value; }
+		}
+		/// <summary>
+		/// Device supports exporting memory to a Win32 NT handle with ::cuMemExportToShareableHandle, if requested via ::cuMemCreate
+		/// </summary>
+		public bool HandleTypeWin32HandleSupported
+		{
+			get { return this._handleTypeWin32HandleSupported; }
+			internal set { this._handleTypeWin32HandleSupported = value; }
+		}
+		/// <summary>
+		/// Device supports exporting memory to a Win32 KMT handle with ::cuMemExportToShareableHandle, if requested ::cuMemCreate
+		/// </summary>
+		public bool HandleTypeWin32KMTHandleSupported
+		{
+			get { return this._handleTypeWin32KMTHandleSupported; }
+			internal set { this._handleTypeWin32KMTHandleSupported = value; }
+		}
+	}
 }

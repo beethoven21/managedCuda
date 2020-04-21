@@ -31,7 +31,7 @@ namespace ManagedCuda.NPP
 	/// <summary>
 	/// 
 	/// </summary>
-	public class NPPImage_32fC1 : NPPImageBase
+	public partial class NPPImage_32fC1 : NPPImageBase
 	{
 		#region Constructors
 		/// <summary>
@@ -201,14 +201,41 @@ namespace ManagedCuda.NPP
 			status = NPPNativeMethods.NPPi.MemCopy.nppiCopy_32f_C1MR(_devPtrRoi, _pitch, dst.DevicePointerRoi, dst.Pitch, _sizeRoi, mask.DevicePointerRoi, mask.Pitch);
 			Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "nppiCopy_32f_C1MR", status));
 			NPPException.CheckNppStatus(status, this);
-		}
+        }
 
-		/// <summary>
-		/// Image copy.
-		/// </summary>
-		/// <param name="dst">Destination image</param>
-		/// <param name="channel">Channel number. This number is added to the dst pointer</param>
-		public void Copy(NPPImage_32fC3 dst, int channel)
+        /// <summary>
+        /// Image copy.
+        /// </summary>
+        /// <param name="dst">Destination image</param>
+        /// <param name="channel">Channel number. This number is added to the dst pointer</param>
+        public void Copy(NPPImage_32fC2 dst, int channel)
+        {
+            if (channel < 0 | channel >= dst.Channels) throw new ArgumentOutOfRangeException("channel", "channel must be in range [0..1].");
+            status = NPPNativeMethods.NPPi.MemCopy.nppiCopy_32f_C1C2R(_devPtrRoi, _pitch, dst.DevicePointerRoi + channel * _typeSize, dst.Pitch, _sizeRoi);
+            Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "nppiCopy_32f_C1C2R", status));
+            NPPException.CheckNppStatus(status, this);
+        }
+
+        /// <summary>
+        /// Image copy.
+        /// </summary>
+        /// <param name="dst">Destination image</param>
+        /// <param name="channel">Channel indicator (real or imaginary part of the complex number)</param>
+        public void Copy(NPPImage_32fcC1 dst, ComplexChannel channel)
+        {
+            int c = (int)channel;
+            //typesize is sizeof(float), so only the real or imag part of the complex number!
+            status = NPPNativeMethods.NPPi.MemCopy.nppiCopy_32f_C1C2R(_devPtrRoi, _pitch, dst.DevicePointerRoi + c * _typeSize, dst.Pitch, _sizeRoi);
+            Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "nppiCopy_32f_C1C2R", status));
+            NPPException.CheckNppStatus(status, this);
+        }
+
+        /// <summary>
+        /// Image copy.
+        /// </summary>
+        /// <param name="dst">Destination image</param>
+        /// <param name="channel">Channel number. This number is added to the dst pointer</param>
+        public void Copy(NPPImage_32fC3 dst, int channel)
 		{
 			if (channel < 0 | channel >= dst.Channels) throw new ArgumentOutOfRangeException("channel", "channel must be in range [0..2].");
 			status = NPPNativeMethods.NPPi.MemCopy.nppiCopy_32f_C1C3R(_devPtrRoi, _pitch, dst.DevicePointerRoi + channel * _typeSize, dst.Pitch, _sizeRoi);
@@ -268,6 +295,17 @@ namespace ManagedCuda.NPP
 		{
 			status = NPPNativeMethods.NPPi.BitDepthConversion.nppiConvert_32f16u_C1R(_devPtrRoi, _pitch, dst.DevicePointerRoi, dst.Pitch, _sizeRoi, roundMode);
 			Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "nppiConvert_32f16u_C1R", status));
+			NPPException.CheckNppStatus(status, this);
+		}
+		/// <summary>
+		/// 32-bit floating point to 16-bit conversion.
+		/// </summary>
+		/// <param name="dst">Destination image</param>
+		/// <param name="roundMode">Flag specifying how fractional float values are rounded to integer values.</param>
+		public void Convert(NPPImage_16fC1 dst, NppRoundMode roundMode)
+		{
+			status = NPPNativeMethods.NPPi.BitDepthConversion.nppiConvert_32f16f_C1R(_devPtrRoi, _pitch, dst.DevicePointerRoi, dst.Pitch, _sizeRoi, roundMode);
+			Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "nppiConvert_32f16f_C1R", status));
 			NPPException.CheckNppStatus(status, this);
 		}
 
@@ -1279,7 +1317,7 @@ namespace ManagedCuda.NPP
 		/// </summary>
 		/// <param name="histogram">array that receives the computed histogram. The array must be of size nLevels-1.</param>
 		/// <param name="pLevels">Array in device memory containing the level sizes of the bins. The array must be of size nLevels</param>
-		/// <param name="buffer">Allocated device memory with size of at <see cref="HistogramRangeGetBufferSize"/></param>
+		/// <param name="buffer">Allocated device memory with size of at <see cref="HistogramRangeGetBufferSize(int)"/></param>
 		public void HistogramRange(CudaDeviceVariable<int> histogram, CudaDeviceVariable<int> pLevels, CudaDeviceVariable<byte> buffer)
 		{
 			int bufferSize = HistogramRangeGetBufferSize(histogram.Size);
@@ -2499,7 +2537,7 @@ namespace ManagedCuda.NPP
 		public void CopySubpix(NPPImage_32fC1 dst, float nDx, float nDy)
 		{
 			status = NPPNativeMethods.NPPi.CopySubpix.nppiCopySubpix_32f_C1R(_devPtrRoi, _pitch, dst.DevicePointerRoi, dst.Pitch, _sizeRoi, nDx, nDy);
-			Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "nppiCopySubpix_8u_C1R", status));
+			Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "nppiCopySubpix_32f_C1R", status));
 			NPPException.CheckNppStatus(status, this);
 		}
 		#endregion
@@ -3011,7 +3049,7 @@ namespace ManagedCuda.NPP
 		public void FilterScharrHoriz(NPPImage_32fC1 dst, NppiBorderType eBorderType)
 		{
 			status = NPPNativeMethods.NPPi.FilterScharrHorizBorder.nppiFilterScharrHorizBorder_32f_C1R(_devPtr, _pitch, _sizeOriginal, _pointRoi, dst.DevicePointerRoi, dst.Pitch, _sizeRoi, eBorderType);
-			Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "nppiFilterScharrHoriz_32f_C1R", status));
+			Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "nppiFilterScharrHorizBorder_32f_C1R", status));
 			NPPException.CheckNppStatus(status, this);
 		}
 		#endregion
@@ -3884,7 +3922,7 @@ namespace ManagedCuda.NPP
 		{
 			int bufferSize = 0;
 			status = NPPNativeMethods.NPPi.QualityIndex.nppiQualityIndexGetBufferHostSize_32f_C1R(_sizeRoi, ref bufferSize);
-			Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "nppiQualityIndexGetBufferHostSize_32f_C3R", status));
+			Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "nppiQualityIndexGetBufferHostSize_32f_C1R", status));
 			NPPException.CheckNppStatus(status, this);
 			return bufferSize;
 		}
@@ -4175,7 +4213,7 @@ namespace ManagedCuda.NPP
 			if (bufferSize > buffer.Size) throw new NPPException("Provided buffer is too small.");
 
 			status = NPPNativeMethods.NPPi.MaximumError.nppiMaximumError_32f_C1R(_devPtrRoi, _pitch, src2.DevicePointerRoi, src2.Pitch, _sizeRoi, pError.DevicePointer, buffer.DevicePointer);
-			Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "nppiFilterMedian_32f_C1R", status));
+			Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "nppiMaximumError_32f_C1R", status));
 			NPPException.CheckNppStatus(status, this);
 		}
 		/// <summary>
@@ -5188,6 +5226,47 @@ namespace ManagedCuda.NPP
             status = NPPNativeMethods.NPPi.ComplexImageMorphology.nppiMorphGradientBorder_32f_C1R(_devPtr, _pitch, _sizeOriginal, _pointRoi, dest.DevicePointerRoi, dest.Pitch, _sizeRoi, pMask.DevicePointer, oMaskSize, oAnchor, pBuffer.DevicePointer, eBorderType);
             Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "nppiMorphGradientBorder_32f_C1R", status));
             NPPException.CheckNppStatus(status, this);
+        }
+        #endregion
+
+        #region new in Cuda 9.2
+
+        /// <summary>
+        /// floating point image warp perspective batch.
+        /// </summary>
+        /// <param name="oSmallestSrcSize">Size in pixels of the entire smallest source image width and height, may be from different images.</param>
+        /// <param name="oSrcRectROI">Region of interest in the source images (may overlap source image size width and height).</param>
+        /// <param name="oDstRectROI">Region of interest in the destination images (may overlap destination image size width and height).</param>
+        /// <param name="eInterpolation">The type of eInterpolation to perform resampling. Currently limited to NPPI_INTER_NN, NPPI_INTER_LINEAR, or NPPI_INTER_CUBIC. </param>
+        /// <param name="pBatchList">Device memory pointer to nBatchSize list of NppiWarpPerspectiveBatchCXR structures.</param>
+        public static void WarpPerspectiveBatch(NppiSize oSmallestSrcSize, NppiRect oSrcRectROI, NppiRect oDstRectROI, InterpolationMode eInterpolation, CudaDeviceVariable<NppiWarpPerspectiveBatchCXR> pBatchList)
+        {
+            NppStatus status = NPPNativeMethods.NPPi.GeometricTransforms.nppiWarpPerspectiveBatch_32f_C1R(oSmallestSrcSize, oSrcRectROI, oDstRectROI, eInterpolation, pBatchList.DevicePointer, pBatchList.Size);
+            Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "nppiWarpPerspectiveBatch_32f_C1R", status));
+            NPPException.CheckNppStatus(status, null);
+        }
+        #endregion
+
+        #region new in Cuda 10.0
+
+
+        /// <summary>
+        /// image resize batch for variable ROI.
+        /// </summary>
+        /// <param name="nMaxWidth">Size in pixels of the entire smallest source image width and height, may be from different images.</param>
+        /// <param name="nMaxHeight">Region of interest in the source images (may overlap source image size width and height).</param>
+        /// <param name="pBatchSrc">Size in pixels of the entire smallest destination image width and height, may be from different images.</param>
+        /// <param name="pBatchDst">Region of interest in the destination images (may overlap destination image size width and height).</param>
+        /// <param name="nBatchSize">Device memory pointer to nBatchSize list of NppiResizeBatchCXR structures.</param>
+        /// <param name="pBatchROI">Device pointer to NppiResizeBatchROI_Advanced list of per-image variable ROIs.User needs to initialize this structure and copy it to device.</param>
+        /// <param name="eInterpolation">The type of eInterpolation to perform resampling.</param>
+        public static void ResizeBatchAdvanced(int nMaxWidth, int nMaxHeight, CudaDeviceVariable<NppiImageDescriptor> pBatchSrc, CudaDeviceVariable<NppiImageDescriptor> pBatchDst,
+                                        CudaDeviceVariable<NppiResizeBatchROI_Advanced> pBatchROI, uint nBatchSize, InterpolationMode eInterpolation)
+        {
+            NppStatus status = NPPNativeMethods.NPPi.GeometricTransforms.nppiResizeBatch_32f_C1R_Advanced(nMaxWidth, nMaxHeight, pBatchSrc.DevicePointer, pBatchDst.DevicePointer,
+                pBatchROI.DevicePointer, pBatchDst.Size, eInterpolation);
+            Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "nppiResizeBatch_32f_C1R_Advanced", status));
+            NPPException.CheckNppStatus(status, null);
         }
         #endregion
     }

@@ -110,6 +110,7 @@ namespace simpleCUBLAS
                 ref_norm += h_C_ref[i] * h_C_ref[i];
             }
 
+            error_norm = (float)Math.Sqrt((double)error_norm);
             ref_norm = (float)Math.Sqrt((double)ref_norm);
 
             if (Math.Abs(ref_norm) < 1e-7)
